@@ -211,7 +211,7 @@
             "Journalist": "Person",
             "Patient": "Loved One",
             "Nurse": "Conspiracy Theorist",
-            "Henchman": "Coward"
+            "Henchman": ["Coward", {"Start Location": "Decide per Loop"}]
         },
         "incidents": [
             {
@@ -227,7 +227,7 @@
             {
                 "day": 4,
                 "incident": "Night of Madness",
-                "culprit": "Shirne"
+                "culprit": "Shrine"
             },
             {
                 "day": 5,
@@ -612,7 +612,7 @@
             "Office Worker": "Person",
             "Journalist": "Wizard",
             "Nurse": "Faceless",
-            "Henchman": "Conspiracy Theorist"
+            "Henchman": ["Conspiracy Theorist", {"Start Location": "Decide per Loop"}]
         },
         "incidents": [
             {

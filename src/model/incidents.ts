@@ -8,6 +8,7 @@ import type { AbilityTypeLose, OncePer } from "./roles";
 //     name: IncidentName,
 // }
 
+
 export type Incident = Union<IncidentsHelper['incidents']>;
 export type Incidents = IncidentsHelper['incidents'];
 
@@ -66,17 +67,19 @@ export function isIncident(obj: unknown): obj is Incident {
 type IncidentInternal = OncePer<'game', void, {
     name: string,
 
-    effect: readonly (
+    effect: readonly (OncePer<'game', void,
         {
+            special?: string,
             description: string,
             prerequisite?: string,
         } |
         {
             type: AbilityTypeLose,
+            special?: string,
             description?: string,
             prerequisite?: string,
         }
-    )[],
+    >)[],
     faked?: true,
     repeatedCulprit?: true,
     mob?: number,
@@ -94,53 +97,110 @@ export type FakedIncident = FakedIncidentHelper<Incident>['name'];
 class IncidentsHelper {
     public readonly incidents = toRecord([
         ...data.incedents,
+
         {
-            name: 'Drifting to Another World',
+            name: 'Crime of Passion',
             effect: [
                 {
-                    prerequisite: '1 Intrigue on the School',
-                    description: 'Everyone in the School dies.'
+                    special: 'Paranoia Limit -1',
+                    description: 'One ether character at the culprit’s location dies.'
+                }
+            ]
+        },
+        {
+            name: 'Dimensional Distortion',
+            effect: [
+                {
+                    special: 'Always triggers if culprit is alive',
+                    description: 'Trigger a Warp.'
+                }
+            ]
+        },
+        {
+            name: 'Dimensional Perversion',
+            effect: [
+                {
+                    description: 'You may Trigger a warp. Place 2 Paranoia on any character, and 2 Goodwill an any other character.'
+                }
+            ]
+        },
+        {
+            name: 'Dimensional Fracture',
+            effect: [
+                {
+                    description: 'You may Trigger a warp. 3+ kinds of counters on the culprit.'
                 },
                 {
-                    type: "Mandatory Loss condition: Character Death",
-                    prerequisite: '2 Intrigue on the School',
+                    type: 'Mandatory Loss condition: Character Death',
+                    prerequisite: '3+ kinds of counters on the culprit'
                 }
             ]
         },
         {
-            name: 'Assassination',
+            name: 'Left Behind',
             effect: [
                 {
-                    description: 'Kill any other character in this location or on the diagonally opposite location. When determining whether this incident occurs or not, count Intrigue instead of Paranoia. Everyone in the School dies.'
-                }
+                    description: 'Place 1 Intrigue on a character at the culprit’s location, then move the culprit to any location.'
+                },
             ]
         },
         {
-            name: 'World End',
+            name: 'Phantasmal Incident',
             effect: [
+                {
+                    special: 'Triggers with Intrigue',
+                    description: 'Reslove the effect of Crime of Passion, Dimensional Perverson or Left Behind.'
+                },
+            ]
+        },
+        {
+            name: 'Last Will',
+            effect: [
+                {
+                    description: 'The culprit dies. Protagonists gain Hope +1 at the start of next loop.'
+                },
+            ]
+        },
+        {
+            name: 'The Singularity',
+            effect: [
+                {
+
+                    prerequisite: 'In the Light World',
+                    description: 'Trigger a Warp'
+                },
                 {
                     type: 'Mandatory Loss condition: Character Death',
-                    prerequisite: 'In Normal world',
-                    description: 'All characters die.'
-                }
+                    timesPerGame: 1,
+                    prerequisite: 'In the Light World',
+                },
+                {
+                    type: 'Mandatory Loss condition: Character Death',
+                    prerequisite: 'In the Dark World, and 1+ Intrigue on culprit’s starting location',
+                },
             ]
         },
+
         {
-            name: 'World Convergence',
+            name: 'Seeping Daylight',
             effect: [
                 {
-                    description: 'Switch world to Normal world. The world cannot be switched for the remainder of this loop'
-                }
+                    description: 'The leader chooses a character. Place 1 Hope on that character.',
+
+                },
             ]
         },
+
         {
-            name: 'Small Force',
+            name: 'The Murk of Despair',
             effect: [
                 {
-                    description: 'The Protagonist Leader chooses any character and 1 Goodwill, or 1 Paranoia, or 1 Intrigue. Put one chosen counter on that character. When determining whether this incident occurs or not, the culprit is regarded as having Paranoia Limit -1.'
-                }
+                    description: 'Place 1 Despair on any character.',
+                },
             ]
-        }
+        },
+
+
     ] as const satisfies readonly IncidentInternal[], 'name');
 }
 

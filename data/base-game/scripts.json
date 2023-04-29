@@ -450,7 +450,7 @@
             "Informer": "Conspiracy Theorist",
             "Doctor": "Person",
             "Patient": "Person",
-            "Henchman": "Time Traveler"
+            "Henchman": ["Time Traveler", {"Start Location": "Decide per Loop"}]
         },
         "incidents": [
             {

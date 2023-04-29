@@ -17,7 +17,7 @@ export const loseTypes = [
 ] as const;
 
 export type timing = 'Always' | 'Day Start' | 'Day End' | 'Mastermind Ability' | 'Card resolve' | 'Loop End' | 'Loop Start'
-    | 'Last Day' | 'First Day' | 'Incident step' | 'Incident trigger' | 'On character death' | 'When this role is to be reveald'
+    | 'Last Day' | 'First Day' | 'Last Loop' | 'First Loop' | 'Incident step' | 'Incident trigger' | 'On character death' | 'When this role is to be reveald'
     | 'Mastermind Action step' | 'Goodwill ablility step' | 'After Goodwill Ability used';
 
 
@@ -26,8 +26,7 @@ type RoleInternal = {
     max?: number,
     unkillable?: true,
     afterDeath?: true,
-    goodwillOutburst?: true,
-    goodwillRefusel?: 'Optional' | 'Mandatory',
+    goodwillRefusel?: 'Optional' | 'Mandatory' | 'Puppeted',
     abilities: readonly Abilitie<{ 'Over all Roles'?: true }>[]
 } & ScriptSpecified & DoseNotTriggerIncident;
 
@@ -66,160 +65,151 @@ export const rolesInternal = toRecord([
     ...data.roles,
 
     {
-        name: 'Agent',
+        name: 'Marionette',
+        goodwillRefusel: 'Puppeted',
         abilities: [
-            {
-                type: 'Loss condition: Tragedy',
-                timing: ['On character death'],
-                prerequisite: ''
-            },
             {
                 type: 'Mandatory',
                 timing: ['After Goodwill Ability used'],
-                description: 'Remove 1 Intrigue in this Location or on any character in this Location'
-            },
+                prerequisite: '2 or more kinds of counters',
+                description: 'This Character Dies, and triggers Warp'
+            }
         ]
     },
+
     {
-        name: 'Invader',
-        goodwillRefusel: 'Optional',
+        name: 'Storyteller',
+        unkillable: true,
+
         abilities: [
             {
                 type: 'Optional',
                 timing: ['Mastermind Ability'],
-                description: 'If there are at least 2 Intrigue in this location: Switch the world.'
+                prerequisite: 'Extar Gauge 1+',
+                description: 'Move a counter between two other characters at this location.'
+            },
+            {
+                type: 'Mandatory',
+                timing: ['Loop Start'],
+                prerequisite: 'Extar Gauge was 3+ at the end of last loop',
+                description: 'Protagonists gain +1 Hope.'
             },
         ]
     },
     {
-        name: 'Twilight',
-        goodwillRefusel: 'Optional',
-        goodwillOutburst: true,
+        name: 'Lullaby',
+        goodwillRefusel: 'Puppeted',
+        abilities: [
+            {
+                type: 'Mandatory',
+                timing: ['After Goodwill Ability used'],
+                description: 'The Target(s) of that abilty Dies.'
+            },
+            {
+                type: 'Optional',
+                timing: ['Mastermind Ability'],
+                timesPerLoop: 1,
+                description: 'Place 1 Paranoia or 1 Goodwill on character at same location.'
+            },
+            {
+                type: 'Optional Loss condition: Character Death',
+                timing: ['Day End'],
+                prerequisite: '4+ kinds of counter on this Character',
+            },
+        ]
+    },
+    {
+        name: 'Shifter',
         unkillable: true,
         abilities: [
             {
                 type: 'Mandatory',
-                timing: ['Always'],
-                description: 'If there are at least 2 Intrigue in this location: Switch the world.'
+                timing: ['Card resolve'],
+                description: 'Ignore Forbid Goodwill on this Character.'
+            },
+            {
+                type: 'Optional Loss condition: Character Death',
+                timing: ['Day End', 'Last Day'],
+                prerequisite: '+2 Kinds of counters on this character'
             },
         ]
     },
     {
-        name: 'Hider',
-        goodwillRefusel: 'Mandatory',
-        scriptSpecified: [
-            {
-                name: 'world',
-                type: ['abnormal', 'normal'],
-            }
-        ],
+        name: 'Fragment',
+
         abilities: [
             {
-                type: 'Loss condition: Tragedy',
-                timing: ['Loop End'],
-                prerequisite: 'This character has at least 1 Intrigue'
+                type: 'Mandatory',
+                timing: ['Loop Start'],
+                prerequisite: 'This Character was dead at the end of last loop',
+                description: 'Mastermind gets +1 Despair.'
+            },
+            {
+                type: 'Mandatory',
+                timing: ['Loop Start'],
+                prerequisite: 'This Character was alive and head +2 Goodwill',
+                description: 'Proagonists gets +1 Hope.'
             },
         ]
     },
     {
-        name: 'Quidnunc',
+        name: 'Pied Piper',
+        goodwillRefusel: 'Optional',
+        abilities: [
+            {
+                type: 'Mandatory',
+                timing: ['Day End'],
+                timesPerLoop: 1,
+                prerequisite: 'The Extra Gauge is 2+',
+                description: 'A Character at the same Location dies.'
+            },
+            {
+                type: 'Optional',
+                timing: ['Day End'],
+                prerequisite: 'Extra Gauge is 2+',
+                description: 'Place 1 Intrgue on a corpse at same location.'
+            },
+            {
+                type: 'Mandatory Loss condition: Character Death',
+                timing: ['Day End'],
+                prerequisite: 'When previobus Ability was used and 3+ total intrigue on all corpses',
+            },
+        ]
+    },
+    {
+        name: 'Gossip',
+        max: 1,
         abilities: [
             {
                 type: 'Optional',
                 timing: ['Mastermind Ability'],
-                description: 'You may place 1 Goodwill on any character in this location.'
+                description: 'Place 1 Goodwil on character at same location.'
+            },
+            {
+                type: 'Mandatory',
+                timing: ['On character death'],
+                description: 'Place 1 Despair on character at same location. You may trigger Warp.'
             },
         ]
     },
     {
-        name: 'Fanatic',
-        goodwillOutburst: true,
+        name: 'Alice',
         abilities: [
+            {
+                type: 'Loss condition: Tragedy',
+                timing: ['Loop End'],
+                prerequisite: 'This character is dead'
+            },
             {
                 type: 'Mandatory',
                 timing: ['After Goodwill Ability used'],
-                description: 'Choose any character in this location and kill it.'
+                timesPerLoop: 1,
+                prerequisite: 'Extra Gauge is 1+',
+                description: 'Place 1 Hope on each other character at same location.'
             },
         ]
     },
-    {
-        name: 'Animus',
-        scriptSpecified: [
-            {
-                name: 'world',
-                type: ['abnormal', 'normal'],
-            }
-        ],
-        abilities: [
-            {
-                type: 'Mandatory',
-                timing: ['Always'],
-                description: 'The sex of this character is reversed.'
-            },
-            {
-                type: 'Mandatory',
-                timing: ['Incident step'],
-                description: 'This character always triggers its incidents (if alive), regardless the amount of Paranoia on it. After resolving the Incident, the Mastermind declared that “Animus abilities were used.”.'
-            },
-        ]
-    },
-    {
-        name: 'Neurosis',
-        goodwillRefusel: 'Mandatory',
-        abilities: [
-            {
-                type: 'Mandatory',
-                timing: ['Incident step'],
-                description: 'When determining whether an Incident, for which this character is the culprit, will occur or not, this character is regarded as having Paranoia Limit -1.'
-            },
-        ]
-    },
-    {
-        name: 'Agitator',
-        abilities: [
-            {
-                type: 'Optional',
-                timing: ['Incident trigger'],
-                prerequisite: 'This Character resolved an incident',
-                description: 'Put 1 Goodwill, or 1 Paranoia, or 1 Intrigue on any character in this location.'
-            },
-        ]
-    },
-    {
-        name: 'Enchanter',
-        goodwillOutburst: true,
-        abilities: [
-            {
-                type: 'Optional',
-                timing: ['After Goodwill Ability used'],
-                description: 'The Mastermind may declare that “Enchanter‘s abilities were used.” If you do, the next day Leader are prohibited from switching the world and setting action cards.'
-            },
-        ]
-    },
-    {
-        name: 'Marionette',
-        goodwillOutburst: true,
-        abilities: [
-            {
-                type: 'Delayed Loss condition: Character Death',
-                timing: ['After Goodwill Ability used'],
-                prerequisite: '',
-                description: '(optional) The protagonists die during the Day end.'
-            },
-        ]
-    },
-    {
-        name: 'Shadow',
-        goodwillRefusel: "Mandatory",
-        abilities: [
-            {
-                type: 'Delayed Loss condition: Character Death',
-                timing: ['Incident trigger'],
-                prerequisite: 'This Character resolves an incident',
-                description: '(optional) The protagonists die during the Day end.'
-            },
-        ]
-    },
+
 
 ] as const satisfies readonly RoleInternal[], 'name');
 

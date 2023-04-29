@@ -738,7 +738,7 @@
             "Pop Idol": "Frind",
             "Patient": "Brain",
             "Scientist": "Person",
-            "Henchman": "Person"
+            "Henchman": ["Person", {"Start Location": "Decide per Loop"}]
         },
         "incidents": [
             {

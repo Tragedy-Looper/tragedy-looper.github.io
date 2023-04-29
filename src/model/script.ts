@@ -1,8 +1,8 @@
 /* eslint-disable no-extra-boolean-cast */
 import type { SetIntersection } from "utility-types";
 import { type KeysOfUnion, type Union, toRecord, require } from "../misc";
-import { isCharacterName, type CharacterName, type LocationName, isLocationName } from "./characters";
-import type { DefinitionRecord, Options, WithScriptSpecification } from "./core";
+import { isCharacterName, type CharacterName, type LocationName, isLocationName, type CharactersAvailableAtScriptCreation } from "./characters";
+import type { DefinitionRecord, Options } from "./core";
 import { isIncidentName, type IncidentName, type FakedIncident, type MobIncident, isIncident, incidents, type Incident } from "./incidents";
 import { isPlotName, type Plots } from "./plots";
 import { isRoleName, type RoleName } from "./roles";
@@ -216,7 +216,106 @@ type getCastOptions2<t> = t extends Required<CastOptions> ? t['castOptions'] : r
 type getAdditionalRoles<t> = t extends { aditionalRoles: readonly RoleName[] } ? t['aditionalRoles'] : never
     ;
 
-type roleToTragedySet<T extends keyof TragedySets> = 'Person' | getAdditionalRoles<TragedySets[T]>[never] | KeysOfUnion<Plots[TragedySets[T]['subPlots'][never]]['roles'] | Plots[TragedySets[T]['mainPlots'][never]]['roles']>;
+type roleToPlot<T extends keyof TragedySets, P extends keyof Plots> =
+    'Person'
+    | getAdditionalRoles<TragedySets[T]>[never]
+    | Exclude<KeysOfUnion<Plots[P]['roles']>, 'conditonal'>
+    ;
+
+type roleToTragedySet<T extends keyof TragedySets> =
+    'Person'
+    | getAdditionalRoles<TragedySets[T]>[never]
+    | Exclude<KeysOfUnion<Plots[TragedySets[T]['subPlots'][never]]['roles']
+        | Plots[TragedySets[T]['mainPlots'][never]]['roles']>, 'conditonal'>
+    | ((Plots[TragedySets[T]['subPlots'][never]]['roles']
+        | Plots[TragedySets[T]['mainPlots'][never]]['roles']) extends infer K
+        ? K extends { 'conditonal': Array<Partial<Record<RoleName, string>>> }
+        ? KeysOfUnion<K['conditonal']>
+        : never
+        : never)
+    ;
+
+
+type ScriptPlot<set extends keyof TragedySets, plotType extends 'mainPlots' | 'subPlots'> = Partial<{
+    [plot in TragedySets[set][plotType][number]]: {
+        cast: DefinitionRecord<'role', 'character', Exclude<roleToPlot<set, plot>, 'Person'>, CharactersAvailableAtScriptCreation, false, getCastOptions<set>>,
+
+
+
+    }
+}>
+
+
+type bar<T extends readonly unknown[], allowed extends number> =
+    T['length'] extends allowed ? T
+    : never
+    ;
+type lengthT<x extends readonly unknown[]> = x['length'];
+
+
+type Range<min extends number, max extends number> =
+    min extends 0
+    ? max extends 3
+    ? 0 | 1 | 2 | 3
+    : max extends 2
+    ? 0 | 1 | 2
+    : max extends 1
+    ? 0 | 1
+    : max extends 0
+    ? 0
+    : never
+    : min extends 1
+    ? max extends 3
+    ? 1 | 2 | 3
+    : max extends 2
+    ? 1 | 2
+    : max extends 1
+    ? 1
+    : never
+    : min extends 2
+    ? max extends 3
+    ? 2 | 3
+    : max extends 2
+    ? 2
+    : never
+    : min extends 3
+    ? max extends 3
+    ? 3
+    : never
+    : never;
+    
+function xx<T extends object>(params: T): bar< KeysOfUnion< T> , Range<1,3> > {
+
+}
+const aa = xx({foo:2,bar:2} as const);
+const aai = xx({foo:2,bar:2,t1:3,t2:3,i3:3} as const);
+
+const xxx: ScriptPlot<'First Steps', 'mainPlots'> = {
+    "Light of the Avenger": {
+        cast: {
+            Brain: {
+                Henchman: {
+                    "Start Location": 'City'
+                },
+
+            },
+        }
+    },
+    "A Place to Protect": {
+        cast: {
+            "Key Person": {
+                "A.I.": {},
+                'Alien': {}
+            },
+            Cultist: {
+                Servant: {
+                    "Start Location": 'School'
+                }
+            }
+        }
+    }
+} as const;
+
 
 
 type ScriptInternal = Union<{
@@ -233,11 +332,12 @@ type ScriptInternal = Union<{
             difficulty: number,
         }[],
         tragedySet: TragedySets[k]['name'],
-        mainPlot: readonly WithScriptSpecification<'plot', TragedySets[k]['mainPlots'][number]>[],
-        subPlots: readonly WithScriptSpecification<'plot', TragedySets[k]['subPlots'][number]>[],
+        mainPlots: ScriptPlot<k, 'mainPlots'>,
+        subPlots: ScriptPlot<k, 'subPlots'>,
         daysPerLoop: number,
-        cast: DefinitionRecord<'character', 'role', CharacterName, roleToTragedySet<k>, true, getCastOptions<k>>,
+        cast: DefinitionRecord<'character', 'role', CharactersAvailableAtScriptCreation, roleToTragedySet<k>, true, getCastOptions<k>>,
         castOptions?: Options,
+        // test: Record<roleToTragedySet<k>, 'foo'>,
 
         incidents: readonly ScriptIncident<k>[],
         specialRules?: readonly string[],
@@ -245,342 +345,78 @@ type ScriptInternal = Union<{
         story: string,
         mastermindHints: string,
     }
+
 }>
 
 
 export type ScriptName = keyof Scripts;
 
 export const scripts = toRecord([
-    ...data.scripts.filter(x => isScript(x)),
+    // ...data.scripts.filter(x => isScript(x)),
 
     {
-        title: 'I’m Actually…',
-        creator: 'translated by megakun',
+        title: 'Beyond Praying Stage',
+        creator: 'NAOKI',
         set: {
             name: 'Another Horizon',
             number: 1,
         },
+
         tragedySet: 'Another Horizon',
-        mainPlot: ['Shadow Demon King'],
-        subPlots: ['The World of Dollhouse', 'Threads of Fate'],
         difficultySets: [
             {
-                difficulty: 1,
+                difficulty: 3,
+                numberOfLoops: 4,
+            },
+            {
+                difficulty: 5,
                 numberOfLoops: 3,
-            }
+            },
         ],
-        daysPerLoop: 5,
+        mainPlots: {
+            "Into Nothingness":
+            {
+                cast:
+                {
+                    Marionette: 'Office Worker',
+                    Brain: 'Part-Timer',
+                    Obstinate: 'Pop Idol',
+                }
+            }
+        },
+        subPlots: {
+            "Jekyll and Hyde": {
+                cast: {
+                    Marionette: 'Shrine Maiden',
+                }
+            },
+            "Throguh the Looking-Glass": {
+                cast: {
+                    Alice: 'Girl Student',
+                }
+            }
+        },
+
+        // ['Jekyll and Hyde', 'Throguh the Looking-Glass'],
+        daysPerLoop: 4,
         cast: {
-            "Boy Student": 'Person',
+            "Girl Student": 'Alice',
             "Rich Man’s Daughter": 'Person',
-            "Shrine Maiden": 'Person',
-            "Doctor": 'Person',
-            "Class Rep": 'Person',
-            "Alien": 'Person',
-            "Pop Idol": 'Person',
-            "Journalist": 'Quidnunc',
-            "Henchman": 'Twilight',
+
+
         },
         incidents: [
             {
-                day: 1,
-                incident: 'Confession',
+                day: 3,
+                incident: 'Last Will',
                 culprit: 'Rich Man’s Daughter',
             },
             {
-                day: 2,
-                incident: 'Confession',
+                day: 4,
+                incident: 'Crime of Passion',
                 culprit: 'Pop Idol',
             },
-            {
-                day: 3,
-                incident: 'Confession',
-                culprit: 'Alien',
-            },
-            {
-                day: 4,
-                incident: 'Confession',
-                culprit: 'Rich Man’s Daughter', // <-- TODO: this is not possible already day 1 culprit
-            },
-            {
-                day: 5,
-                incident: 'Confession',
-                culprit: 'Shrine Maiden',
-            },
-        ],
-        specifics: '',
-        mastermindHints: '',
-        story: '',
-    },
-    {
-        title: 'I‘m A Normal Human',
-        creator: 'translated by megakun',
-        set: {
-            name: 'Another Horizon',
-            number: 2,
-        },
-        tragedySet: 'Another Horizon',
-        mainPlot: ['Parallel World War'],
-        subPlots: ['Threads of Fate', 'The World of Dollhouse'],
-        difficultySets: [
-            {
-                difficulty: 1,
-                numberOfLoops: 3,
-            }
-        ],
-        daysPerLoop: 6,
-        cast: {
-            "Girl Student": 'Person',
-            "Shrine Maiden": 'Person',
-            "Informer": 'Person',
-            "Doctor": 'Person',
-            "Alien": 'Person',
-            "Godly Being": ['Agent', { "enters on loop": 2 }],
-            "Pop Idol": 'Person',
-            "Boss": ['Quidnunc', { Turf: 'Hospital' }],
-        },
-        incidents: [
-            {
-                day: 1,
-                incident: 'Confession',
-                culprit: 'Alien',
-            },
-            {
-                day: 2,
-                incident: 'World Convergence',
-                culprit: 'Godly Being',
-            },
-            {
-                day: 3,
-                incident: 'Confession',
-                culprit: 'Girl Student',
-            },
-            {
-                day: 4,
-                incident: 'Confession',
-                culprit: 'Alien', // <-- TODO: this is not possible already day 1 culprit
-            },
-            {
-                day: 5,
-                incident: 'Confession',
-                culprit: 'Informer',
-            },
-            {
-                day: 6,
-                incident: 'Confession',
-                culprit: 'Doctor',
-            },
-        ],
-        specifics: '',
-        mastermindHints: '',
-        story: '',
-    },
-    {
-        title: 'Packed Tragedy',
-        creator: 'translated by megakun',
-        set: {
-            name: 'Another Horizon',
-            number: 3,
-        },
-        tragedySet: 'Another Horizon',
-        mainPlot: ['Lost Heart'],
-        subPlots: ['Ego Wave', 'Moonside City'],
-        difficultySets: [
-            {
-                difficulty: 1,
-                numberOfLoops: 7,
-            }
-        ],
-        daysPerLoop: 2,
-        cast: {
-            "Boy Student": 'Quidnunc',
-            "Girl Student": 'Agitator',
-            "Rich Man’s Daughter": 'Neurosis',
-            "Police Officer": 'Agent',
-            "Doctor": 'Person',
-            "Patient": 'Brain',
-            "Journalist": 'Person',
-            "Henchman": ['Animus', { world: 'abnormal' }],
-            "Illusion": 'Person',
-        },
-        incidents: [
-            {
-                day: 1,
-                incident: 'Small Force',
-                culprit: 'Alien',
-            },
-            {
-                day: 2,
-                incident: 'Hospital Incident',
-                culprit: 'Rich Man’s Daughter',
-            },
 
-        ],
-        specifics: '',
-        mastermindHints: '',
-        story: '',
-    },
-    {
-        title: 'The Only One in the World',
-        creator: 'translated by megakun',
-        set: {
-            name: 'Another Horizon',
-            number: 4,
-        },
-        tragedySet: 'Another Horizon',
-        mainPlot: ['Shadow Demon King'],
-        subPlots: ['Ego Wave', 'Moonside City'],
-        difficultySets: [
-            {
-                difficulty: 1,
-                numberOfLoops: 5,
-            }
-        ],
-        daysPerLoop: 6,
-        cast: {
-            "Boy Student": 'Person',
-            "Rich Man’s Daughter": 'Quidnunc',
-            "Office Worker": 'Person',
-            "Patient": 'Neurosis',
-            "Mystery Boy": 'Agent',
-            "Pop Idol": "Twilight",
-            "Journalist": 'Person',
-            "Scientist": 'Agitator',
-            "Illusion": ['Animus', { world: 'normal' }],
-        },
-        incidents: [
-            {
-                day: 1,
-                incident: 'World End',
-                culprit: 'Rich Man’s Daughter',
-            },
-            {
-                day: 2,
-                incident: 'World Convergence',
-                culprit: 'Mystery Boy',
-            },
-            {
-                day: 3,
-                incident: 'Increasing Unease',
-                culprit: 'Patient',
-            },
-            {
-                day: 4,
-                incident: 'Assassination',
-                culprit: 'Journalist',
-            },
-            {
-                day: 5,
-                incident: 'Drifting to Another World',
-                culprit: 'Illusion',
-            },
-            {
-                day: 6,
-                incident: 'Missing Person',
-                culprit: 'Office Worker',
-            },
-
-        ],
-        specifics: '',
-        mastermindHints: '',
-        story: '',
-    },
-    {
-        title: 'Fictional Collapse',
-        creator: 'translated by megakun',
-        set: {
-            name: 'Another Horizon',
-            number: 5,
-        },
-        tragedySet: 'Another Horizon',
-        mainPlot: ['Parallel World War'],
-        subPlots: ['Fanatic Fox', 'Ego Wave'],
-        difficultySets: [
-            {
-                difficulty: 1,
-                numberOfLoops: 5,
-            }
-        ],
-        daysPerLoop: 6,
-        cast: {
-            "Boy Student": 'Person',
-            "Rich Man’s Daughter": 'Person',
-            "Shrine Maiden": 'Person',
-            "Office Worker": 'Person',
-            "Informer": 'Agitator',
-            "Doctor": ['Animus', { world: 'abnormal' }],
-            "Class Rep": "Person",
-            "Godly Being": ['Agent', { "enters on loop": 3 }],
-            "Pop Idol": 'Agitator',
-            "Illusion": ['Animus', { world: 'normal' }],
-        },
-        incidents: [
-            {
-                day: 3,
-                incident: 'World Convergence',
-                culprit: 'Doctor',
-            },
-            {
-                day: 4,
-                incident: 'World Convergence',
-                culprit: 'Godly Being',
-            },
-            {
-                day: 6,
-                incident: 'World End',
-                culprit: 'Illusion',
-            },
-        ],
-        specifics: '',
-        mastermindHints: '',
-        story: '',
-    },
-    {
-        title: 'Unknown',
-        creator: 'Hallycon translated by megakun',
-
-        tragedySet: 'Another Horizon',
-        mainPlot: ['Shadow Demon King'],
-        subPlots: ['Fanatic Fox', 'Ego Wave'],
-        difficultySets: [
-            {
-                difficulty: 1,
-                numberOfLoops: 4,
-            }
-        ],
-        daysPerLoop: 6,
-        cast: {
-            "Doctor": 'Person',
-            "Patient": 'Person',
-            "Police Officer": 'Person',
-            "Office Worker": 'Fanatic',
-            "Informer": ['Animus', { world: 'normal' }],
-            "Girl Student": 'Person',
-            "Rich Man’s Daughter": "Agitator",
-            "Shrine Maiden": 'Twilight',
-            "Class Rep": ['Animus', { world: 'abnormal' }],
-        },
-        incidents: [
-            {
-                day: 3,
-                incident: 'Assassination',
-                culprit: 'Class Rep',
-            },
-            {
-                day: 4,
-                incident: 'World End',
-                culprit: 'Patient',
-            },
-            {
-                day: 5,
-                incident: 'Small Force',
-                culprit: 'Rich Man’s Daughter',
-            },
-            {
-                day: 6,
-                incident: 'Insane Murder',
-                culprit: 'Police Officer',
-            },
         ],
         specifics: '',
         mastermindHints: '',

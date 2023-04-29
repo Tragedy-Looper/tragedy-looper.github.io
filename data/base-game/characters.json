@@ -97,13 +97,13 @@
             "student",
             "girl"
         ],
-        "startLocation": "Shirne",
+        "startLocation": "Shrine",
         "abilitys": [
             {
                 "type": "active",
                 "goodwillRank": 3,
                 "restrictedToLocation": [
-                    "Shirne"
+                    "Shrine"
                 ],
                 "description": "-1 Intrigue on Shrine."
             },
@@ -121,7 +121,7 @@
         "tags": [
             "girl"
         ],
-        "startLocation": "Shirne",
+        "startLocation": "Shrine",
         "abilitys": [
             {
                 "type": "active",
@@ -144,7 +144,7 @@
             "man",
             "woman"
         ],
-        "startLocation": "Shirne",
+        "startLocation": "Shrine",
         "comesInLater": true,
         "scriptSpecified": [
             {
@@ -326,7 +326,7 @@
         "forbiddenLocation": [
             "City",
             "School",
-            "Shirne"
+            "Shrine"
         ],
         "abilitys": []
     },
@@ -354,7 +354,13 @@
             "adult",
             "man"
         ],
-        "startLocation": "City",
+        "switchingStartLocation": true,
+        "startLocation": [
+            "City",
+            "Hospital",
+            "Shrine",
+            "School"
+        ],
         "abilitys": [
             {
                 "type": "passive",

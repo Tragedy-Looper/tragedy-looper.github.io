@@ -309,7 +309,7 @@
         "Patient": "Person",
         "Pop Idol": "Horror",
         "Journalist": "Person",
-        "Henchman": "Ghost (Haunted Stage)",
+        "Henchman": ["Ghost (Haunted Stage)", {"Start Location": "Decide per Loop"}],
         "Scientist": "Curse God"
       },
       "incidents": [

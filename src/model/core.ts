@@ -1,6 +1,6 @@
 import type { RequiredKeys } from "utility-types";
-import type { RequireAtLeastOne } from "../misc";
-import type { CharacterName, Characters, LocationName } from "./characters";
+import type { ExactlyOne, RequireAtLeastOne, Union } from "../misc";
+import type { CharacterName, Characters, CharactersMultipleStartLocations, CharactersSwitchingStartLocation, LocationName } from "./characters";
 import type { IncidentName, Incidents } from "./incidents";
 import type { PlotName, Plots } from "./plots";
 import type { RoleName, Roles } from "./roles";
@@ -26,12 +26,36 @@ export function isScriptSpecified<T>(params: T): params is T & Required<ScriptSp
 }
 
 
-export type WithScriptSpecification<Type extends 'role' | 'character' | 'incident' | 'plot', Key extends NameDefinition<Type> = NameDefinition<Type>, AlwaysOptions extends Options = []> =
-    ToSpecificationTuple<Type, Extended<Type, Key>, ToSpecificationObject<AlwaysOptions>>
-    | (RequiredKeys<ToSpecificationObject<AlwaysOptions>> extends never ? NotExtended<Type, Key> : never)
-    | (ToSpecificationObject<AlwaysOptions> extends Record<string, never> ? never : ToSpecificationTuple<Type, NotExtended<Type, Key>, RequireAtLeastOne<ToSpecificationObject<AlwaysOptions>>>)
+
+export type DefinitionPlotRolesRecord<Plot extends PlotName, C extends CharacterName, AlwaysOptions extends Options = []> =
+    {
+        [r in keyof Plots[Plot]['roles']]:
+        r extends RoleName
+        ? Def2<r, Plot, C, AlwaysOptions>
+        : never
+    };
+
+type Def2<Role extends RoleName, P extends PlotName, C extends CharacterName, AlwaysOptions extends Options = []> =
+    hasValues<AdditonalParameter<'role', Role>> extends true
+    ? ToSpecificationTuple2<C, P, AdditonalParameter<'role', Role> & (hasValues<ToSpecificationObject<AlwaysOptions>> extends true ? ToSpecificationObject<AlwaysOptions> : object)>
+    : ToSpecificationTuple2<C, P, ToSpecificationObject<AlwaysOptions>> //WithScriptSpecification<Type, Key, AlwaysOptions>;
     ;
-;
+
+
+type ToSpecificationTuple2<C extends CharacterName, P extends PlotName, AdditionalArguments extends object> =
+    //   T extends keyof InstancesDefinition<Type>
+    // ? hasValues<AdditonalParameter<Type, T>> extends true
+    // ?
+    ExactlyOne<
+        {
+            [k in C]: P extends 
+            ? AdditonalParameter<'character', k> & (hasValues<AdditionalArguments> extends false ? object : AdditionalArguments)
+        }
+    >
+    // : never
+    // : hasValues<AdditionalArguments> extends false ? T : { [k in T]: AdditionalArguments }
+    // : "{}"
+    ;
 
 
 export type DefinitionRecord<Key extends 'role' | 'character' | 'incident' | 'plot', Value extends 'role' | 'character' | 'incident' | 'plot', KeysKeys extends NameDefinition<Key> = NameDefinition<Key>, ValueKeys extends NameDefinition<Value> = NameDefinition<Value>, optional extends boolean = true, AlwaysOptions extends Options = []> =
@@ -69,56 +93,6 @@ type InstancesDefinition<Type extends 'role' | 'character' | 'incident' | 'plot'
     ;
 
 
-type NotExtended<Type extends 'role' | 'character' | 'incident' | 'plot', Keys extends NameDefinition<Type>> =
-
-    Type extends 'role'
-    ? Keys extends NameDefinition<'role'>
-    ? Roles[Keys] extends Required<ScriptSpecified> ? never : Roles[Keys]['name']
-    : never
-
-    : Type extends 'character'
-    ? Keys extends NameDefinition<'character'>
-    ? Characters[Keys] extends Required<ScriptSpecified> ? never : Characters[Keys]['name']
-    : never
-
-    : Type extends 'incident'
-    ? Keys extends NameDefinition<'incident'>
-    ? Incidents[Keys] extends Required<ScriptSpecified> ? never : Incidents[Keys]['name']
-    : never
-
-
-    : Type extends 'plot'
-    ? Keys extends NameDefinition<'plot'>
-    ? Plots[Keys] extends Required<ScriptSpecified> ? never : Plots[Keys]['name']
-    : never
-    : never
-    ;
-
-type Extended<Type extends 'role' | 'character' | 'incident' | 'plot', Keys extends NameDefinition<Type>> =
-
-    Type extends 'role'
-    ? Keys extends NameDefinition<'role'>
-    ? Roles[Keys] extends Required<ScriptSpecified> ? Roles[Keys]['name'] : never
-    : never
-
-    : Type extends 'character'
-    ? Keys extends NameDefinition<'character'>
-    ? Characters[Keys] extends Required<ScriptSpecified> ? Characters[Keys]['name'] : never
-    : never
-
-    : Type extends 'incident'
-    ? Keys extends NameDefinition<'incident'>
-    ? Incidents[Keys] extends Required<ScriptSpecified> ? Incidents[Keys]['name'] : never
-    : never
-
-
-    : Type extends 'plot'
-    ? Keys extends NameDefinition<'plot'>
-    ? Plots[Keys] extends Required<ScriptSpecified> ? Plots[Keys]['name'] : never
-    : never
-    : never
-    ;
-
 
 
 type typeLookup<x> =
@@ -147,27 +121,84 @@ type ToSpecification<Type extends 'role' | 'character' | 'incident' | 'plot', T>
     T extends keyof InstancesDefinition<Type>
     ? InstancesDefinition<Type>[T] extends Required<ScriptSpecified>
     ? ToSpecificationObject<InstancesDefinition<Type>[T]['scriptSpecified'][number]>
-    : never
-    : never
+    : {}
+    : {}
     ;
 
 
 
+const xxxx: ToSpecificationTuple<'character', 'Godly Being' | 'Henchman' | 'Alien', { foo: string }> = {
+    Henchman: {
+        "Start Location": 'City',
+        foo: 'ires'
+    },
+    "Godly Being": {
+        'enters on loop': 3,
+        foo: ''
+    }
 
-type ToSpecificationTuple<Type extends 'role' | 'character' | 'incident' | 'plot', T, AdditionalArguments extends object> =
-    T extends keyof InstancesDefinition<Type>
-    ? InstancesDefinition<Type>[T] extends Required<ScriptSpecified>
-    ? readonly [T, ToSpecificationObject<InstancesDefinition<Type>[T]['scriptSpecified'][number]> & (AdditionalArguments extends Record<string, never> ? object : AdditionalArguments)]
-    : AdditionalArguments extends Record<string, never> ? never : readonly [T, AdditionalArguments]
-    : never
+};
+
+
+type xx<Type extends 'role' | 'character' | 'incident' | 'plot', T extends NameDefinition<Type>, AdditionalArguments extends object> =
+    ExactlyOne<
+        {
+            [k in T]: AdditonalParameter<Type, k> & (hasValues<AdditionalArguments> extends false ? object : AdditionalArguments)
+
+        }
+    >
+
+    ;
+;
+type NumberCharacters<R extends RoleName, P extends PlotName> =
+    R extends keyof Plots[P]['roles']
+    ? Plots[P]['roles'][R] extends number
+    ? [Plots[P]['roles'][R], Plots[P]['roles'][R]]
+    : Plots[P]['roles'][R] extends readonly [number, number]
+    ? Plots[P]['roles'][R]
+    : [0, 0]
+    : [0, 0]
     ;
 
+
+type ToSpecificationTuple<Type extends 'role' | 'character' | 'incident' | 'plot', T extends NameDefinition<Type>, AdditionalArguments extends object> =
+    //   T extends keyof InstancesDefinition<Type>
+    // ? hasValues<AdditonalParameter<Type, T>> extends true
+    // ?
+    ExactlyOne<
+        {
+            [k in T]: AdditonalParameter<Type, k> & (hasValues<AdditionalArguments> extends false ? object : AdditionalArguments)
+        }
+    >
+    // : never
+    // : hasValues<AdditionalArguments> extends false ? T : { [k in T]: AdditionalArguments }
+    // : "{}"
+    ;
+
+
+type AdditonalParameter<Type extends 'role' | 'character' | 'incident' | 'plot', T> =
+    (Type extends 'character'
+        ? T extends CharactersMultipleStartLocations
+        ? T extends CharactersSwitchingStartLocation
+        ? { "Start Location": LocationName | 'Decide per Loop' }
+        : { "Start Location": LocationName }
+
+        : {}
+        : {})
+    & ToSpecification<Type, T>
+
+
+    ;
+
+
+
+type hasValues<T> = T extends Record<string, never> ? false : true;
 
 type Def<Type extends 'role' | 'character' | 'incident' | 'plot', Key extends NameDefinition<Type>, OtherType extends 'role' | 'character' | 'incident' | 'plot', OtherKey extends NameDefinition<OtherType>, AlwaysOptions extends Options = []> =
-    isSpecified<OtherType, OtherKey> extends true
-    ? ToSpecificationTuple<Type, Key, ToSpecification<OtherType, OtherKey> & (ToSpecificationObject<AlwaysOptions> extends Record<string, never> ? object : ToSpecificationObject<AlwaysOptions>)>
-    : WithScriptSpecification<Type, Key, AlwaysOptions>;
-;
+    hasValues<AdditonalParameter<OtherType, OtherKey>> extends true
+    ? ToSpecificationTuple<Type, Key, AdditonalParameter<OtherType, OtherKey> & (hasValues<ToSpecificationObject<AlwaysOptions>> extends true ? ToSpecificationObject<AlwaysOptions> : object)>
+    : ToSpecificationTuple<Type, Key, ToSpecificationObject<AlwaysOptions>> //WithScriptSpecification<Type, Key, AlwaysOptions>;
+    ;
 
 type ToSpecificationObject<T> =
     T extends readonly [] ? Record<string, never>

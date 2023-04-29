@@ -70,7 +70,14 @@ export type RequireAtLeastOne<T, Keys extends keyof T = keyof T> =
         [K in Keys]-?: Required<Pick<T, K>> & Partial<Pick<T, Exclude<Keys, K>>>
     }[Keys]
 
-
+type Explode<T> = keyof T extends infer K
+    ? K extends unknown
+    ? { [I in keyof T]: I extends K ? T[I] : never }
+    : never
+    : never;
+type AtLeastOne<T, U = { [K in keyof T]: Pick<T, K> }> = Partial<T> & U[keyof U]
+export type ExactlyOne<T> = AtMostOne<T> & AtLeastOne<T>
+export type AtMostOne<T> = Explode<Partial<T>>;
 export function toRecord<ELEMENT extends readonly any[], Key extends keyof ELEMENT[number]>(entries: ELEMENT, key: Key): Intersection<SRecord<ELEMENT, Key>> {
     return Object.fromEntries((entries.map(x => [x[key], x]))) as any;
 }

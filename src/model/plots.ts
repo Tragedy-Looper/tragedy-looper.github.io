@@ -7,7 +7,7 @@ export type Plot = Plots[PlotName];
 export type Plots = typeof plotsInternal;
 type PlotInternal = {
     name: string,
-    roles: Readonly<Partial<Record<RoleName, number | readonly [number, number]>>>,
+    roles: Readonly<Partial<Record<RoleName, number | readonly [number, number]>> & { conditonal?: readonly (Readonly<Partial<Record<RoleName, string>>>)[] }>,
     rules: readonly Abilitie[]
 } & ScriptSpecified;
 
@@ -21,155 +21,198 @@ const plotsInternal = toRecord([
     ...data.plots,
 
     {
-        name: 'Lost Heart',
-        roles: {
-            Agent: 1,
-            Brain: 1
-        },
-        rules: [
-            {
-                type: 'Mandatory',
-                timing: ['Always'],
-                prerequisite: 'At least 1 Intrigue, 1 Goodwill, and 1 Paranoia are placed on the character whose original role is a Person',
-                description: 'The character gains Goodwill Outburst and Marionette’s ability.'
-            }
-        ]
-    },
-    {
-        name: 'Shadow Demon King',
-        roles: {
-            Twilight: 1,
-        },
-        rules: [
-        ]
-    },
-    {
-        name: 'The Devil’s Will',
-        roles: {
-            Agent: 1,
-            Invader: 1,
-            Hider: 1,
-        },
-        rules: [
-        ]
-    },
-    {
-        name: 'Parallel World War',
-        roles: {
-            Agent: 1,
-        },
+        name: 'The Forbidden Future',
         rules: [
             {
                 type: 'Loss condition: Tragedy',
                 timing: ['Loop End'],
-                prerequisite: 'World Convergence hasn‘t occured this loop.'
+                prerequisite: 'Be in the Light World',
             },
+        ],
+        roles: {
+            conditonal: [
+                {
+                    Obstinate: 'In The Light World',
+                    "Key Person": 'In The Dark World',
+                }
+            ],
+            Marionette: 1,
+            Storyteller: 1,
+        }
+    },
+    {
+        name: 'Fairy-Tale Murderer',
+        rules: [
+        ],
+        roles: {
+            "Key Person": 1,
+            Lullaby: 1,
+            Brain: 1,
+        }
+    },
+    {
+        name: 'Mother Goose Mystery',
+        rules: [
+            {
+                type: 'Loss condition: Tragedy',
+                timing: ['Loop End'],
+                prerequisite: 'There are X+ corpses. (X is the current loop number, max: 3)',
+            },
+        ],
+        roles: {
+            "Marionette": 1,
+            Storyteller: 1,
+        }
+    },
+    {
+        name: 'Dimensional Merger',
+        rules: [
+            {
+                type: 'Loss condition: Tragedy',
+                timing: ['Loop End'],
+                prerequisite: 'Last Will or Left Behind triggered this loop',
+            },
+        ],
+        roles: {
+            Storyteller: 1,
+            "Shifter": 1,
+            "Fragment": 1,
+        }
+    },
+    {
+        name: 'Into Nothingness',
+        rules: [
+            {
+                type: 'Loss condition: Tragedy',
+                timing: ['Loop End'],
+                prerequisite: '3+ total Extra Gauge and Intrigue on this Plot’s (living or dead) Obstinate',
+            },
+        ],
+        roles: {
+            Obstinate: 1,
+            "Marionette": 1,
+            "Brain": 1,
+        }
+    },
+
+    {
+        name: 'Jekyll and Hyde',
+        rules: [
+        ],
+        roles: {
+            conditonal: [
+                {
+                    "Key Person": "In The Light World",
+                    "Brain": "In The Dark World",
+                }
+            ],
+            "Marionette": 1,
+        }
+    },
+    {
+        name: 'The Plaguebringer',
+        rules: [
+        ],
+        roles: {
+            conditonal: [
+                {
+                    "Pied Piper": "In The Light World",
+                    "Gossip": "In The Dark World",
+                }
+            ],
+        }
+    },
+    {
+        name: 'Puppeteer’s Strings',
+        rules: [
+            {
+                type: 'Mandatory',
+                timing: ['Always'],
+                description: 'All Goodwill Refusal becomes Puppeted Goodwill Refusal.'
+            },
+        ],
+        roles: {
+            conditonal: [
+                {
+                    "Serial Killer": "In The Dark World",
+                }
+            ],
+            "Fragment": 1,
+            "Alice": 1,
+        }
+    },
+    {
+        name: 'Throguh the Looking-Glass',
+        rules: [
             {
                 type: 'Script creation',
-                description: 'The Agent must be the World Convergent culprit.'
+                description: 'Alice must be a Girl.'
             },
-        ]
+        ],
+        roles: {
+            conditonal: [
+                {
+                    "Conspiracy Theorist": "In The Light World",
+                    "Serial Killer": "In The Dark World",
+                }
+            ],
+            "Alice": 1,
+        }
     },
     {
-        name: 'Alien Erosion',
-        roles: {
-            Brain: 1,
-            Invader: 1,
-        },
+        name: 'Crossing World Lines',
         rules: [
             {
-                type: 'Loss condition: Tragedy',
-                timing: ['Loop End'],
-                prerequisite: 'The current world is Normal world and there are at least 2 Intrigue on the Brain‘s starting Location'
+                type: 'Mandatory',
+                timing: ['Loop Start'],
+                prerequisite: 'even numbered loops',
+                description: 'Mastermind gains Despair +1.'
             },
             {
-                type: 'Loss condition: Tragedy',
-                timing: ['Loop End'],
-                prerequisite: 'The current world is Abnormal world and there are at least 2 Intrigue on the Invader‘s starting Location'
+                type: 'Mandatory',
+                timing: ['Loop Start', 'Last Day'],
+                description: 'Protagonists gain Hope +1.'
             },
-        ]
+        ],
+        roles: {
+            "Conspiracy Theorist": 1,
+        }
     },
     {
-        name: 'The World of Dollhouse',
+        name: 'Unspeakable Horrors',
+        rules: [
+            {
+                type: 'Optional Loss condition: Character Death',
+                timing: ['Day End'],
+                prerequisite: 'Extra Gauge is 3+',
+            },
+        ],
         roles: {
-            Quidnunc: 1,
-        },
+            conditonal: [
+                {
+                    "Conspiracy Theorist": "In The Light World",
+                    "Obstinate": "In The Dark World",
+                }
+            ],
+            "Gossip": 1,
+        }
+    },
+    {
+        name: 'Hysteria Virus',
         rules: [
             {
                 type: 'Mandatory',
                 timing: ['Always'],
-                description: 'All characters whose original role is Person gain Goodwill Outburst.'
+                prerequisite: 'In the Dark World',
+                description: 'Persons/Fragments with 2+ kinds of counters become Serial Killers.'
             },
-        ]
-    },
-    {
-        name: 'Ego Wave',
+        ],
         roles: {
-            Animus: 1,
-            Agitator: 1,
-        },
-        rules: [
-
-        ]
+            "Fragment": 1,
+            "Conspiracy Theorist": 1,
+            "Gossip": 1,
+        }
     },
-    {
-        name: 'The Closed Door',
-        roles: {
-            Quidnunc: 1,
-            Agitator: 1,
-        },
-        rules: [
-            {
-                type: 'Optional',
-                timing: ['Day Start'],
-                description: 'When the Protagonist Leader declares to switch the world, you may refuse it'
-            }
-        ]
-    },
-    {
-        name: 'Moonside City',
-        roles: {
-            Quidnunc: 1,
-            Neurosis: 1,
-        },
-        rules: [
-            {
-                type: 'Mandatory',
-                timing: ['Always'],
-                prerequisite: 'At least 2 Intrigue on the City',
-                description: 'Switching the world is prohibited except for this plot rule ability.'
-            },
-            {
-                type: 'Mandatory',
-                timing: ['Always'],
-                prerequisite: 'At least 2 Intrigue on the City',
-                description: 'Switch the world to Abnormal World.'
-            },
-        ]
-    },
-    {
-        name: 'Fanatic Fox',
-        roles: {
-            Animus: 1,
-            Fanatic: 1,
-        },
-        rules: [
-            {
-                type: 'Loss condition: Tragedy',
-                timing: ['Loop End'],
-                prerequisite: 'At least three other characters with the same sex as Fanatic died',
-            },
-        ]
-    },
-    {
-        name: 'Somthing to invite',
-        roles: {
-            Enchanter: 1,
-
-        },
-        rules: []
-    },
-
 
 ] as const satisfies readonly PlotInternal[], 'name');
 
