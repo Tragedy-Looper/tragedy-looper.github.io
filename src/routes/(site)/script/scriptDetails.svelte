@@ -58,7 +58,7 @@
       url: shareLink,
     };
     const shareFunction = navigator.canShare ?? ((data:any)=>false);
-    const isSharable = navigator.canShare(shareData);
+    const isSharable = shareFunction(shareData);
     if (isSharable) {
       try {
         await navigator.share(shareData);
