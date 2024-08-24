@@ -57,15 +57,19 @@
       text: text,
       url: shareLink,
     };
-    const shareFunction = navigator.canShare ?? ((data:any)=>false);
-    const isSharable = shareFunction(shareData);
-    if (isSharable) {
-      try {
-        await navigator.share(shareData);
-        return;
-      } catch (error) {
-        console.error(error);
+    try {
+      const shareFunction = navigator.canShare ?? ((data:any)=>false);
+      const isSharable = shareFunction(shareData);
+      if (isSharable) {
+        try {
+          await navigator.share(shareData);
+          return;
+        } catch (error) {
+          console.error(error);
+        }
       }
+    } catch (error) {
+      console.error(error);
     }
     try {
       await navigator.clipboard.writeText(shareLink);
@@ -93,7 +97,9 @@
     >
       <a
         aria-disabled={script == undefined}
-        href={`${base}/script/customScript/?script=${encodeURIComponent(JSON.stringify(script))}`}
+        href={`${base}/script/customScript/?script=${encodeURIComponent(
+          JSON.stringify(script)
+        )}`}
         class="outline"
         style="grid-row: 1; grid-column: 2; margin-bottom: var(--spacing);"
         role="button">Edit</a
@@ -105,9 +111,11 @@
         class="outline"
         on:click={() =>
           share(
-            `${base}/script/?script=${encodeURIComponent(JSON.stringify(script))}`,
+            `${base}/script/?script=${encodeURIComponent(
+              JSON.stringify(script)
+            )}`,
             script.title,
-            'A Tragedy Looper Script'
+            "A Tragedy Looper Script"
           )}
         style="grid-row: 1; grid-column: 1;"
         >Share Script
@@ -117,13 +125,19 @@
         aria-disabled={script == undefined}
         class="outline"
         on:click={() =>
-          share(`${base}/player/?${parameter}`, 'Player Aid', 'A Tragedy Looper Player Aid')}
+          share(
+            `${base}/player/?${parameter}`,
+            "Player Aid",
+            "A Tragedy Looper Player Aid"
+          )}
         style=" grid-row: 2; grid-column: 1 / span 2"
         >Share Player Aid
       </button>
       <a
         aria-disabled={script == undefined}
-        href={`${base}/gm/?script=${encodeURIComponent(JSON.stringify(script))}`}
+        href={`${base}/gm/?script=${encodeURIComponent(
+          JSON.stringify(script)
+        )}`}
         class="outline"
         target="_blank"
         style="grid-row: 3; grid-column: 1 / span 2"
@@ -161,13 +175,15 @@
   <div>
     <strong>{script.tragedySet}</strong>
   </div>
-  <div style="display: grid; justify-content: start; align-content:  baseline; gap: 0.3em;">
+  <div
+    style="display: grid; justify-content: start; align-content:  baseline; gap: 0.3em;"
+  >
     <strong style="grid-column: 1; grid-row: 1;">Main Plot:</strong>
     <span style="grid-column: 2; grid-row: 1;">{script.mainPlot}</span>
     <strong style="grid-column: 1; grid-row: 2;">Sub Plot :</strong>
     {#each script.subPlots as s, i}
       <span style="grid-column: 2; grid-row: {i + 2};">
-        {#if typeof s == 'string'}
+        {#if typeof s == "string"}
           {s}
         {:else}
           {s[0]}
@@ -277,7 +293,11 @@
         {#each characterscomesInLater as a, i}
           <li>
             <lable>
-              <input type="checkbox" role="switch" bind:checked={alwaysTransmitCharacters[i]} />
+              <input
+                type="checkbox"
+                role="switch"
+                bind:checked={alwaysTransmitCharacters[i]}
+              />
               {a}
             </lable>
           </li>
