@@ -5,8 +5,8 @@ import * as data from "../data";
 
 
 
-export type LocationName = 'Hospital' | 'Shirne' | 'City' | 'School';
-export const locations = ['Hospital', 'Shirne', 'City', 'School'] as const;
+export type LocationName = 'Hospital' | 'Shrine' | 'City' | 'School';
+export const locations = ['Hospital', 'Shrine', 'City', 'School'] as const;
 export type Tag = 'boy' | 'girl' | 'student' | "man" | "woman" | "adult" | 'construct' | 'animal';
 
 
@@ -27,7 +27,7 @@ type CharacterIntern = {
     name: string,
     paranoiaLimit: number,
     tags: readonly Tag[],
-    abilitys: readonly Ability[],
+    abilities: readonly Ability[],
     startLocation: LocationName;
     forbiddenLocation?: readonly LocationName[],
     comesInLater?: true,

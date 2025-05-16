@@ -28,9 +28,9 @@
         "cast": {
             "Rich Man’s Daughter": "Conspiracy Theorist",
             "Class Rep": "Person",
-            "Alien": "Frind",
+            "Alien": "Friend",
             "Informer": "Loved One",
-            "Forensic Specialist": "Frind",
+            "Forensic Specialist": "Friend",
             "A.I.": "Time Traveler",
             "Patient": "Cultist",
             "Scientist": "Lover"
@@ -62,7 +62,7 @@
         "mastermindHints": "See Tragedy Looper: Midnight Circle Mastermind Handbook"
     },
     {
-        "title": "Traditonal ensamble murder",
+        "title": "Traditional Ensemble Murder",
         "creator": "BakaFire",
         "set": {
             "name": "Midnight Circle",
@@ -95,7 +95,7 @@
             "Boy Student": "Serial Killer",
             "Girl Student": "Key Person",
             "Rich Man’s Daughter": "Killer",
-            "Shrine Maiden": "Frind",
+            "Shrine Maiden": "Friend",
             "Police Officer": "Brain",
             "Office Worker": "Person",
             "Informer": "Person",
@@ -156,8 +156,8 @@
         "daysPerLoop": 5,
         "cast": {
             "Girl Student": "Person",
-            "Class Rep": "Frind",
-            "Shrine Maiden": "Frind",
+            "Class Rep": "Friend",
+            "Shrine Maiden": "Friend",
             "Alien": "Person",
             "Informer": "Conspiracy Theorist",
             "Pop Idol": "Cultist",
@@ -215,7 +215,7 @@
         "cast": {
             "Boy Student": "Person",
             "Girl Student": "Obstinate",
-            "Rich Man’s Daughter": "Frind",
+            "Rich Man’s Daughter": "Friend",
             "Shrine Maiden": "Person",
             "Alien": "Factor",
             "Police Officer": "Person",
@@ -340,7 +340,7 @@
         "daysPerLoop": 4,
         "cast": {
             "Boy Student": "Obstinate",
-            "Class Rep": "Frind",
+            "Class Rep": "Friend",
             "Mystery Boy": "Immortal",
             "Shrine Maiden": "Person",
             "Illusion": "Brain",
@@ -417,7 +417,7 @@
             "Mystery Boy": "Prophet",
             "Shrine Maiden": "Serial Killer",
             "Police Officer": "Magician",
-            "Pop Idol": "Frind",
+            "Pop Idol": "Friend",
             "Journalist": "Conspiracy Theorist",
             "Doctor": "Person",
             "Patient": "Immortal"
@@ -449,7 +449,7 @@
         "mastermindHints": "See Tragedy Looper: Midnight Circle Mastermind Handbook"
     },
     {
-        "title": "Obsession Tetection",
+        "title": "Obsession Detection",
         "creator": "BakaFire",
         "set": {
             "name": "Midnight Circle",
@@ -478,7 +478,7 @@
             "Police Officer": "Paranoiac",
             "Office Worker": "Person",
             "Journalist": "Person",
-            "Patient": "Frind"
+            "Patient": "Friend"
         },
         "incidents": [
             {
@@ -597,12 +597,12 @@
         ],
         "daysPerLoop": 7,
         "cast": {
-            "Girl Student": "Frind",
+            "Girl Student": "Friend",
             "Rich Man’s Daughter": "Private Investigator",
             "Shrine Maiden": "Poisoner",
             "Alien": "Key Person",
             "Informer": "Person",
-            "Pop Idol": "Frind",
+            "Pop Idol": "Friend",
             "Boss": [
                 "Conspiracy Theorist",
                 {
@@ -665,7 +665,7 @@
             "Class Rep": "Person",
             "Shrine Maiden": "Paranoiac",
             "Police Officer": "Therapist",
-            "Office Worker": "Frind",
+            "Office Worker": "Friend",
             "Journalist": "Person",
             "Doctor": "Person",
             "Patient": "Person",
@@ -735,7 +735,7 @@
             "Alien": "Obstinate",
             "Police Officer": "Private Investigator",
             "Informer": "Person",
-            "Pop Idol": "Frind",
+            "Pop Idol": "Friend",
             "Patient": "Brain",
             "Scientist": "Person",
             "Henchman": "Person"

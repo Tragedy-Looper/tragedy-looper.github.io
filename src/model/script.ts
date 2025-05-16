@@ -254,7 +254,7 @@ export const scripts = toRecord([
     ...data.scripts.filter(x => isScript(x)),
 
     {
-        title: 'I’m Actually…',
+        title: 'Actually, I Am...',
         creator: 'translated by megakun',
         set: {
             name: 'Another Horizon',
@@ -488,6 +488,56 @@ export const scripts = toRecord([
     {
         title: 'Fictional Collapse',
         creator: 'translated by megakun',
+        set: {
+            name: 'Another Horizon',
+            number: 5,
+        },
+        tragedySet: 'Another Horizon',
+        mainPlot: ['Parallel World War'],
+        subPlots: ['Fanatic Fox', 'Ego Wave'],
+        difficultySets: [
+            {
+                difficulty: 1,
+                numberOfLoops: 5,
+            }
+        ],
+        daysPerLoop: 6,
+        cast: {
+            "Boy Student": 'Person',
+            "Rich Man’s Daughter": 'Person',
+            "Shrine Maiden": 'Person',
+            "Office Worker": 'Person',
+            "Informer": 'Agitator',
+            "Doctor": ['Animus', { world: 'abnormal' }],
+            "Class Rep": "Person",
+            "Godly Being": ['Agent', { "enters on loop": 3 }],
+            "Pop Idol": 'Agitator',
+            "Illusion": ['Animus', { world: 'normal' }],
+        },
+        incidents: [
+            {
+                day: 3,
+                incident: 'World Convergence',
+                culprit: 'Doctor',
+            },
+            {
+                day: 4,
+                incident: 'World Convergence',
+                culprit: 'Godly Being',
+            },
+            {
+                day: 6,
+                incident: 'World End',
+                culprit: 'Illusion',
+            },
+        ],
+        specifics: '',
+        mastermindHints: '',
+        story: '',
+    },
+    {
+        title: 'Beyond Praying Stage',
+        creator: 'translated by andrewshen123',
         set: {
             name: 'Another Horizon',
             number: 5,

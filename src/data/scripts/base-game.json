@@ -1,6 +1,6 @@
 [
     {
-        "title": "The frist Script",
+        "title": "The First Script",
         "creator": "BakaFire",
         "set": {
             "name": "Tragedy Looper",
@@ -125,7 +125,7 @@
         ],
         "cast": {
             "Boy Student": "Person",
-            "Girl Student": "Frind",
+            "Girl Student": "Friend",
             "Class Rep": "Loved One",
             "Shrine Maiden": "Key Person",
             "Police Officer": "Person",
@@ -156,7 +156,7 @@
         "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
     {
-        "title": "Lesser of two Evils",
+        "title": "Lesser of Two Evils",
         "creator": "GEnd",
         "set": {
             "name": "Tragedy Looper",
@@ -185,7 +185,7 @@
             "Boy Student": "Person",
             "Girl Student": "Person",
             "Rich Man’s Daughter": "Brain",
-            "Shrine Maiden": "Frind",
+            "Shrine Maiden": "Friend",
             "Office Worker": "Serial Killer",
             "Informer": "Person",
             "Journalist": "Factor",
@@ -219,7 +219,7 @@
         "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
     {
-        "title": "The Secret that was keept",
+        "title": "The Secret That Was Kept",
         "creator": "BakaFire",
         "set": {
             "name": "Tragedy Looper",
@@ -248,8 +248,8 @@
             "Rich Man’s Daughter": "Witch",
             "Class Rep": "Person",
             "Shrine Maiden": "Person",
-            "Alien": "Frind",
-            "Office Worker": "Frind",
+            "Alien": "Friend",
+            "Office Worker": "Friend",
             "Informer": "Conspiracy Theorist",
             "Pop Idol": "Person",
             "Journalist": "Person",
@@ -287,7 +287,7 @@
         "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
     {
-        "title": "The Future of the Goods",
+        "title": "The Future of the Gods",
         "creator": "Nightly Moonfire group",
         "set": {
             "name": "Tragedy Looper",
@@ -322,7 +322,7 @@
             "Office Worker": "Serial Killer",
             "Pop Idol": "Lover",
             "Patient": "Person",
-            "Nurse": "Frind"
+            "Nurse": "Friend"
         },
         "incidents": [
             {
@@ -479,7 +479,7 @@
     },
     {
         "title": "Prologue",
-        "creator": "BakaFrie",
+        "creator": "BakaFire",
         "set": {
             "name": "Tragedy Looper",
             "number": 9
@@ -510,9 +510,9 @@
             "Shrine Maiden": "Key Person",
             "Police Officer": "Conspiracy Theorist",
             "Office Worker": "Person",
-            "Informer": "Frind",
+            "Informer": "Friend",
             "Doctor": "Brain",
-            "Patient": "Frind"
+            "Patient": "Friend"
         },
         "incidents": [
             {
