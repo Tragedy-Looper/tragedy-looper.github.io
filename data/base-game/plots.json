@@ -163,9 +163,10 @@
         "rules": []
     },
     {
-        "name": "The hidden Freak",
+        "name": "The Hidden Freak",
         "roles": {
-            "Serial Killer": 1
+            "Serial Killer": 1,
+            "Friend": 1
         },
         "rules": []
     },
