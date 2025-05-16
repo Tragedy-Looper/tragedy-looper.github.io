@@ -113,7 +113,7 @@
         "effect": [
             {
                 "type": "Delayed Loss condition: Character Death",
-                "description": "When determinig whether this incident occours or not, count Intrigde instead of Paranoia. For the rest of the loop, if another Incident occours, the Protagonists are killed after the Incident step."
+                "description": "When determinig whether this incident occours or not, count Intrigue instead of Paranoia. For the rest of the loop, if another Incident occours, the Protagonists are killed after the Incident step."
             }
         ]
     },

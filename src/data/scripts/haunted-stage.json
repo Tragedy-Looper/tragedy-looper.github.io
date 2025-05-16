@@ -133,7 +133,7 @@
         "Boy Student": "Horror",
         "Girl Student": "Person",
         "Rich Man’s Daughter": "Spellcaster",
-        "Shrine Maiden": "Werwolf (Haunted Stage)",
+        "Shrine Maiden": "Werewolf (Haunted Stage)",
         "Police Officer": "Monster",
         "Office Worker": "Nightmare (Haunted Stage)",
         "Informer": "Overlorad",
@@ -185,7 +185,7 @@
       "daysPerLoop": 5,
       "cast": {
         "Boy Student": "Nightmare (Haunted Stage)",
-        "Girl Student": "Werwolf (Haunted Stage)",
+        "Girl Student": "Werewolf (Haunted Stage)",
         "Rich Man’s Daughter": "Spellcaster",
         "Shrine Maiden": "Spellcaster",
         "Police Officer": "Person",
@@ -431,7 +431,7 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "Boy Student": "Werwolf (Haunted Stage)",
+        "Boy Student": "Werewolf (Haunted Stage)",
         "Shrine Maiden": "Person",
         "Office Worker": "Ghost (Haunted Stage)",
         "Informer": "Horror",

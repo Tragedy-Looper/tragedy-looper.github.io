@@ -15,7 +15,7 @@
     {
         "name": "Moonlight Beast",
         "roles": {
-            "Werwolf": 1
+            "Werewolf": 1
         },
         "rules": []
     },
@@ -153,7 +153,7 @@
         ]
     },
     {
-        "name": "The Sacred Wrods of Dagon",
+        "name": "The Sacred Words of Dagon",
         "roles": {
             "Key Person": 1,
             "Cultist": 1,
@@ -220,7 +220,7 @@
         ]
     },
     {
-        "name": "The Resistacne",
+        "name": "The Resistance",
         "roles": {
             "Conspiracy Theorist": 1,
             "Wizard": 1,

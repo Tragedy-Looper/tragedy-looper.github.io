@@ -48,19 +48,19 @@
   <h1>{getString('Missing Translations', lang)} 🏗️</h1>
   <p>
     {getString(
-      "This shoould list all texts used and not yet translated in your language. However it's not applied everywhere yet. Player Aid should be colpletly set, but others are missing.",
+      "This should list all texts and keywords used, but not yet translated into your language. However, it's not applied everywhere yet. The Player Aid should be completely set, but others are missing.",
       lang
     )}
   </p>
   <p>
     {getString(
-      'If You translated somthing please open an issue on Github, and post the exported text, or if you know how to do it directly open a pull request.',
+      'If you translated something, please open an issue on Github and post the exported text, or submit a pull request.',
       lang
     )}
   </p>
   <p>
     {getString(
-      'After I inculdede your text, everyone should see your texts online. Currently your translations are stored in your borwesr, so you can check if it works like expocted. Those are marked with `«»` .',
+      'After I include your text, everyone should be able to see the translations online  Currently, your translations are stored in your browser, so you can check if it works as intended. These are marked with «»',
       lang
     )}
   </p>

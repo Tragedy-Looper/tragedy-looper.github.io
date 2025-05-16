@@ -1,620 +1,676 @@
 [
-    {
-        "title": "The First Script",
-        "creator": "BakaFire",
-        "set": {
-            "name": "Tragedy Looper",
-            "number": 1
-        },
-        "tragedySet": "First Steps",
-        "daysPerLoop": 4,
-        "difficultySets": [
-            {
-                "numberOfLoops": 3,
-                "difficulty": 1
-            }
-        ],
-        "mainPlot": [
-            "Murder Plan"
-        ],
-        "subPlots": [
-            "Shadow of the Ripper"
-        ],
-        "cast": {
-            "Boy Student": "Person",
-            "Girl Student": "Key Person",
-            "Shrine Maiden": "Serial Killer",
-            "Police Officer": "Conspiracy Theorist",
-            "Doctor": "Brain"
-        },
-        "incidents": [
-            {
-                "day": 2,
-                "incident": "Murder",
-                "culprit": "Office Worker"
-            },
-            {
-                "day": 3,
-                "incident": "Suicide",
-                "culprit": "Girl Student"
-            }
-        ],
-        "specifics": "See Tragedy Looper Mastermind Handbook",
-        "story": "See Tragedy Looper Mastermind Handbook",
-        "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+  {
+    "title": "The First Script",
+    "creator": "BakaFire",
+    "set": {
+      "name": "Tragedy Looper",
+      "number": 1
     },
-    {
-        "title": "Prevailing Secrecy",
-        "creator": "BakaFire",
-        "set": {
-            "name": "Tragedy Looper",
-            "number": 2
-        },
-        "tragedySet": "First Steps",
-        "daysPerLoop": 5,
-        "difficultySets": [
-            {
-                "numberOfLoops": 4,
-                "difficulty": 1
-            },
-            {
-                "numberOfLoops": 3,
-                "difficulty": 3
-            }
-        ],
-        "mainPlot": [
-            "A Place to Protect"
-        ],
-        "subPlots": [
-            "An Unsettling Rumor"
-        ],
-        "cast": {
-            "Boy Student": "Cultist",
-            "Girl Student": "Person",
-            "Shrine Maiden": "Conspiracy Theorist",
-            "Office Worker": "Person",
-            "Doctor": "Key Person",
-            "Patient": "Person"
-        },
-        "incidents": [
-            {
-                "day": 1,
-                "incident": "Increasing Unease",
-                "culprit": "Shrine Maiden"
-            },
-            {
-                "day": 3,
-                "incident": "Hospital Incident",
-                "culprit": "Boy Student"
-            },
-            {
-                "day": 5,
-                "incident": "Faraway Murder",
-                "culprit": "Patient"
-            }
-        ],
-        "specifics": "See Tragedy Looper Mastermind Handbook",
-        "story": "See Tragedy Looper Mastermind Handbook",
-        "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+    "tragedySet": "First Steps",
+    "daysPerLoop": 4,
+    "difficultySets": [
+      {
+        "numberOfLoops": 3,
+        "difficulty": 1
+      }
+    ],
+    "mainPlot": [
+      "Murder Plan"
+    ],
+    "subPlots": [
+      "Shadow of the Ripper"
+    ],
+    "cast": {
+      "Boy Student": "Person",
+      "Girl Student": "Key Person",
+      "Shrine Maiden": "Serial Killer",
+      "Police Officer": "Conspiracy Theorist",
+      "Doctor": "Brain"
     },
-    {
-        "title": "Young Women’s Battlefield",
-        "creator": "Gayusu",
-        "set": {
-            "name": "Tragedy Looper",
-            "number": 3
-        },
-        "tragedySet": "Basic Tragedy",
-        "daysPerLoop": 6,
-        "difficultySets": [
-            {
-                "numberOfLoops": 4,
-                "difficulty": 2
-            },
-            {
-                "numberOfLoops": 3,
-                "difficulty": 4
-            }
-        ],
-        "mainPlot": [
-            "Sign with me!"
-        ],
-        "subPlots": [
-            "A Love Affair",
-            "The hidden Freak"
-        ],
-        "cast": {
-            "Boy Student": "Person",
-            "Girl Student": "Friend",
-            "Class Rep": "Loved One",
-            "Shrine Maiden": "Key Person",
-            "Police Officer": "Person",
-            "Office Worker": "Lover",
-            "Informer": "Serial Killer",
-            "Patient": "Person",
-            "Nurse": "Person"
-        },
-        "incidents": [
-            {
-                "day": 3,
-                "incident": "Foul Evil",
-                "culprit": "Office Worker"
-            },
-            {
-                "day": 4,
-                "incident": "Increasing Unease",
-                "culprit": "Class Rep"
-            },
-            {
-                "day": 6,
-                "incident": "Suicide",
-                "culprit": "Girl Student"
-            }
-        ],
-        "specifics": "See Tragedy Looper Mastermind Handbook",
-        "story": "See Tragedy Looper Mastermind Handbook",
-        "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+    "incidents": [
+      {
+        "day": 2,
+        "incident": "Murder",
+        "culprit": "Office Worker"
+      },
+      {
+        "day": 3,
+        "incident": "Suicide",
+        "culprit": "Girl Student"
+      }
+    ],
+    "specifics": "See Tragedy Looper Mastermind Handbook",
+    "story": "See Tragedy Looper Mastermind Handbook",
+    "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+  },
+  {
+    "title": "In the Godless Temple",
+    "creator": "Kaijin",
+    "difficultySets": [
+      {
+        "numberOfLoops": 3,
+        "difficulty": 1
+      }
+    ],
+    "tragedySet": "First Steps",
+    "mainPlot": [
+      "Light of the Avenger"
+    ],
+    "subPlots": [
+      "A Hideous Script"
+    ],
+    "daysPerLoop": 4,
+    "cast": {
+      "Alien": "Brain",
+      "Police Officer": "Conspiracy Theorist",
+      "Office Worker": "Curmudgeon",
+      "Patient": "Frind",
+      "Shrine Maiden": "Person",
+      "Pop Idol": "Person"
     },
-    {
-        "title": "Lesser of Two Evils",
-        "creator": "GEnd",
-        "set": {
-            "name": "Tragedy Looper",
-            "number": 4
-        },
-        "tragedySet": "Basic Tragedy",
-        "daysPerLoop": 7,
-        "difficultySets": [
-            {
-                "numberOfLoops": 4,
-                "difficulty": 3
-            },
-            {
-                "numberOfLoops": 3,
-                "difficulty": 4
-            }
-        ],
-        "mainPlot": [
-            "The Sealed Item"
-        ],
-        "subPlots": [
-            "The hidden Freak",
-            "Unknown Factor X"
-        ],
-        "cast": {
-            "Boy Student": "Person",
-            "Girl Student": "Person",
-            "Rich Man’s Daughter": "Brain",
-            "Shrine Maiden": "Friend",
-            "Office Worker": "Serial Killer",
-            "Informer": "Person",
-            "Journalist": "Factor",
-            "Patient": "Person",
-            "Nurse": "Cultist"
-        },
-        "incidents": [
-            {
-                "day": 2,
-                "incident": "Increasing Unease",
-                "culprit": "Rich Man’s Daughter"
-            },
-            {
-                "day": 4,
-                "incident": "Missing Person",
-                "culprit": "Nurse"
-            },
-            {
-                "day": 5,
-                "incident": "Missing Person",
-                "culprit": "Boy Student"
-            },
-            {
-                "day": 7,
-                "incident": "Suicide",
-                "culprit": "Journalist"
-            }
-        ],
-        "specifics": "See Tragedy Looper Mastermind Handbook",
-        "story": "See Tragedy Looper Mastermind Handbook",
-        "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+    "incidents": [
+      {
+        "day": 2,
+        "incident": "Missing Person",
+        "culprit": "Office Worker"
+      },
+      {
+        "day": 3,
+        "incident": "Hospital Incident",
+        "culprit": "Shrine Maiden"
+      }
+    ],
+    "specialRules": [
+      [
+        [
+          [
+            [
+              [
+                ""
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "specifics": "In the Godless Temple is an advanced training script, to be played after the First Script. This is a perfect script to learn how to use Intrigue counters. After The First Script and this, you’ll get the hang of most victory tactics for the Mastermind.",
+    "story": "A decrepit shrine at the outskirts of town. Whatever is hallowed there, it’s not a god. And it wants revenge. Revenge on the shrine maiden that summoned it and consequently all humans. \n\nThis being confuses people and pushes the ill will of the broken shrine maiden and less-than-good-tempered people onto the Protagonists. Will the heroes be able to stop this incarnation of darkness and evil from getting its revenge?",
+    "mastermindHints": "The basic way to win is to have 2 Intrigue on the Shrine at the end of the loop. It’s good to also have 2 Intrigue on the City, so that you can hide who the Brain is. When you use the Brain’s ability, see to it that the Office Worker and the Alien are in the same area.\n\nAnother way to win is the Hospital Horror, while having 1 or more Intrigue on the Hospital, killing the Patient who is the Friend, triggering a win condition for you.\n\nIn either case, you should get the Office Worker to trigger Missing Person to help place Intrigue. Use the Conspiracy Theorist ability from Day 1. But if you think you can win with 2 Intrigue on the Shrine, don’t aim for the Hospital Horror. It’s best to hide who the culprit is there, and to place a lot of Unease on them once you need to.\n\nVictory conditions:\n1. At loop end, have 2 Intrigue on the Shrine, triggering the loss condition of Fire of the Avenger.\n\n2. At end of day 3, have at least 1 Intrigue on the Hospital and at least 2 Unease on the Shrine Maiden, triggering the Hospital Horror, killing the Patient, and triggering the Friend’s loss condition at loop end.\n\n3. At end of day 3, have at least 2 Intrigue on the Hospital and at least 2 Unease on the Shrine Maiden, triggering the Hospital Horror, killing the Protagonists.\n\nA PLAY GUIDE FOR “IN THE GODLESS TEMPLE”\nWe present a briefer play-through guide for this script.\n\nDay 1: Card playing phase\nOn loop 1, play these cards:\n• City: Intrigue +2\n• Shrine: Intrigue +1\n• Hospital: Any card (mainly to bluff)\n\nOn loop 2, play any of the below:\n• City or Shrine: Intrigue +1, Intrigue +2, or any other card\n• Hospital: Intrigue +1 or any other card\n• Office Worker: Unease +1\n• Shrine Maiden: Vertical Movement\n\nDay 1-4: Mastermind ability step\n• If it’s day 1 or 2, and the Office Worker and Police Officer are in the same area, place an Unease token on the Office Worker.\n• If it’s day 1, 2 or 3, and the Shrine Maiden and Police Officer are in the same area, and you have 1 or more Intrigue on the Hospital, put an Unease on the Shrine Maiden.\n• If the Alien and Police Officer are together at the City or Shrine, and you have 1 or less Intrigue on that location, place one Intrigue there.\n• If the Alien is in the Shrine, and you really need to, place 1 Intrigue there.\n\nDay 2-4: Card playing phase\nPlay cards or move, as needed:\n• City or Shrine: Intrigue +1, Intrigue +2 or any other card.\n• Hospital: Intrigue +1 or any other card.\n• Shrine Maiden: Unease +1, Forbid Goodwill, or move her away from the Shrine.\n• Alien: Move it to Shrine or City.\n• Police Officer: Move to same location as Shrine Maiden or Office Worker.\n• Office Worker: Unease +1 or move to same location as Alien.\n• Pop Idol: Forbid Goodwill or move her so she can’t use her Goodwill ability.\n• Patient: Don’t place anything on him."
+  },
+  {
+    "title": "Prevailing Secrecy",
+    "creator": "BakaFire",
+    "set": {
+      "name": "Tragedy Looper",
+      "number": 2
     },
-    {
-        "title": "The Secret That Was Kept",
-        "creator": "BakaFire",
-        "set": {
-            "name": "Tragedy Looper",
-            "number": 5
-        },
-        "tragedySet": "Basic Tragedy",
-        "daysPerLoop": 7,
-        "difficultySets": [
-            {
-                "numberOfLoops": 4,
-                "difficulty": 3
-            },
-            {
-                "numberOfLoops": 3,
-                "difficulty": 5
-            }
-        ],
-        "mainPlot": [
-            "Giant Time Bomb"
-        ],
-        "subPlots": [
-            "Threads of Fate",
-            "Circle of Friends"
-        ],
-        "cast": {
-            "Rich Man’s Daughter": "Witch",
-            "Class Rep": "Person",
-            "Shrine Maiden": "Person",
-            "Alien": "Friend",
-            "Office Worker": "Friend",
-            "Informer": "Conspiracy Theorist",
-            "Pop Idol": "Person",
-            "Journalist": "Person",
-            "Patient": "Person"
-        },
-        "incidents": [
-            {
-                "day": 2,
-                "incident": "Suicide",
-                "culprit": "Rich Man’s Daughter"
-            },
-            {
-                "day": 3,
-                "incident": "Missing Person",
-                "culprit": "Office Worker"
-            },
-            {
-                "day": 4,
-                "incident": "Hospital Incident",
-                "culprit": "Journalist"
-            },
-            {
-                "day": 6,
-                "incident": "Spreading",
-                "culprit": "Shrine Maiden"
-            },
-            {
-                "day": 7,
-                "incident": "Foul Evil",
-                "culprit": "Pop Idol"
-            }
-        ],
-        "specifics": "See Tragedy Looper Mastermind Handbook",
-        "story": "See Tragedy Looper Mastermind Handbook",
-        "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+    "tragedySet": "First Steps",
+    "daysPerLoop": 5,
+    "difficultySets": [
+      {
+        "numberOfLoops": 4,
+        "difficulty": 1
+      },
+      {
+        "numberOfLoops": 3,
+        "difficulty": 3
+      }
+    ],
+    "mainPlot": [
+      "A Place to Protect"
+    ],
+    "subPlots": [
+      "An Unsettling Rumor"
+    ],
+    "cast": {
+      "Boy Student": "Cultist",
+      "Girl Student": "Person",
+      "Shrine Maiden": "Conspiracy Theorist",
+      "Office Worker": "Person",
+      "Doctor": "Key Person",
+      "Patient": "Person"
     },
-    {
-        "title": "The Future of the Gods",
-        "creator": "Nightly Moonfire group",
-        "set": {
-            "name": "Tragedy Looper",
-            "number": 6
-        },
-        "tragedySet": "Basic Tragedy",
-        "daysPerLoop": 7,
-        "difficultySets": [
-            {
-                "numberOfLoops": 4,
-                "difficulty": 4
-            }
-        ],
-        "mainPlot": [
-            "Change of Future"
-        ],
-        "subPlots": [
-            "The hidden Freak",
-            "A Love Affair"
-        ],
-        "cast": {
-            "Boy Student": "Time Traveler",
-            "Rich Man’s Daughter": "Person",
-            "Shrine Maiden": "Cultist",
-            "Godly Being": [
-                "Loved One",
-                {
-                    "enters on loop": 3
-                }
-            ],
-            "Police Officer": "Person",
-            "Office Worker": "Serial Killer",
-            "Pop Idol": "Lover",
-            "Patient": "Person",
-            "Nurse": "Friend"
-        },
-        "incidents": [
-            {
-                "day": 2,
-                "incident": "Suicide",
-                "culprit": "Pop Idol"
-            },
-            {
-                "day": 4,
-                "incident": "Increasing Unease",
-                "culprit": "Shrine Maiden"
-            },
-            {
-                "day": 5,
-                "incident": "Butterfly Effect",
-                "culprit": "Police Officer"
-            },
-            {
-                "day": 7,
-                "incident": "Foul Evil",
-                "culprit": "Patient"
-            }
-        ],
-        "specifics": "See Tragedy Looper Mastermind Handbook",
-        "story": "See Tragedy Looper Mastermind Handbook",
-        "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+    "incidents": [
+      {
+        "day": 1,
+        "incident": "Increasing Unease",
+        "culprit": "Shrine Maiden"
+      },
+      {
+        "day": 3,
+        "incident": "Hospital Incident",
+        "culprit": "Boy Student"
+      },
+      {
+        "day": 5,
+        "incident": "Faraway Murder",
+        "culprit": "Patient"
+      }
+    ],
+    "specifics": "See Tragedy Looper Mastermind Handbook",
+    "story": "See Tragedy Looper Mastermind Handbook",
+    "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+  },
+  {
+    "title": "Young Women’s Battlefield",
+    "creator": "Gayusu",
+    "set": {
+      "name": "Tragedy Looper",
+      "number": 3
     },
-    {
-        "title": "Mirror Passcode",
-        "creator": "M. Hydromel",
-        "set": {
-            "name": "Tragedy Looper",
-            "number": 7
-        },
-        "tragedySet": "Basic Tragedy",
-        "daysPerLoop": 7,
-        "difficultySets": [
-            {
-                "numberOfLoops": 4,
-                "difficulty": 4
-            },
-            {
-                "numberOfLoops": 3,
-                "difficulty": 6
-            }
-        ],
-        "mainPlot": [
-            "Sign with me!"
-        ],
-        "subPlots": [
-            "Unknown Factor X",
-            "Paranoia Virus"
-        ],
-        "cast": {
-            "Boy Student": "Person",
-            "Girl Student": "Key Person",
-            "Rich Man’s Daughter": "Factor",
-            "Mystery Boy": "Cultist",
-            "Office Worker": "Person",
-            "Informer": "Conspiracy Theorist",
-            "Journalist": "Person",
-            "Patient": "Person",
-            "Nurse": "Person"
-        },
-        "incidents": [
-            {
-                "day": 3,
-                "incident": "Missing Person",
-                "culprit": "Rich Man’s Daughter"
-            },
-            {
-                "day": 4,
-                "incident": "Increasing Unease",
-                "culprit": "Journalist"
-            },
-            {
-                "day": 5,
-                "incident": "Hospital Incident",
-                "culprit": "Mystery Boy"
-            },
-            {
-                "day": 7,
-                "incident": "Murder",
-                "culprit": "Boy Student"
-            }
-        ],
-        "specifics": "See Tragedy Looper Mastermind Handbook",
-        "story": "See Tragedy Looper Mastermind Handbook",
-        "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+    "tragedySet": "Basic Tragedy",
+    "daysPerLoop": 6,
+    "difficultySets": [
+      {
+        "numberOfLoops": 4,
+        "difficulty": 2
+      },
+      {
+        "numberOfLoops": 3,
+        "difficulty": 4
+      }
+    ],
+    "mainPlot": [
+      "Sign with me!"
+    ],
+    "subPlots": [
+      "A Love Affair",
+      "The hidden Freak"
+    ],
+    "cast": {
+      "Boy Student": "Person",
+      "Girl Student": "Friend",
+      "Class Rep": "Loved One",
+      "Shrine Maiden": "Key Person",
+      "Police Officer": "Person",
+      "Office Worker": "Lover",
+      "Informer": "Serial Killer",
+      "Patient": "Person",
+      "Nurse": "Person"
     },
-    {
-        "title": "Those with Antibodies",
-        "creator": "Satoshi Sawamura",
-        "set": {
-            "name": "Tragedy Looper",
-            "number": 8
-        },
-        "tragedySet": "Basic Tragedy",
-        "daysPerLoop": 4,
-        "difficultySets": [
-            {
-                "numberOfLoops": 5,
-                "difficulty": 5
-            },
-            {
-                "numberOfLoops": 4,
-                "difficulty": 6
-            }
-        ],
-        "mainPlot": [
-            "Change of Future"
-        ],
-        "subPlots": [
-            "Threads of Fate",
-            "Paranoia Virus"
-        ],
-        "cast": {
-            "Girl Student": "Person",
-            "Rich Man’s Daughter": "Conspiracy Theorist",
-            "Class Rep": "Person",
-            "Shrine Maiden": "Cultist",
-            "Police Officer": "Person",
-            "Office Worker": "Person",
-            "Informer": "Conspiracy Theorist",
-            "Doctor": "Person",
-            "Patient": "Person",
-            "Henchman": "Time Traveler"
-        },
-        "incidents": [
-            {
-                "day": 1,
-                "incident": "Butterfly Effect",
-                "culprit": "Rich Man’s Daughter"
-            },
-            {
-                "day": 2,
-                "incident": "Foul Evil",
-                "culprit": "Henchman"
-            },
-            {
-                "day": 3,
-                "incident": "Spreading",
-                "culprit": "Doctor"
-            },
-            {
-                "day": 4,
-                "incident": "Missing Person",
-                "culprit": "Police Officer"
-            }
-        ],
-        "specifics": "See Tragedy Looper Mastermind Handbook",
-        "story": "See Tragedy Looper Mastermind Handbook",
-        "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+    "incidents": [
+      {
+        "day": 3,
+        "incident": "Foul Evil",
+        "culprit": "Office Worker"
+      },
+      {
+        "day": 4,
+        "incident": "Increasing Unease",
+        "culprit": "Class Rep"
+      },
+      {
+        "day": 6,
+        "incident": "Suicide",
+        "culprit": "Girl Student"
+      }
+    ],
+    "specifics": "See Tragedy Looper Mastermind Handbook",
+    "story": "See Tragedy Looper Mastermind Handbook",
+    "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+  },
+  {
+    "title": "Lesser of Two Evils",
+    "creator": "GEnd",
+    "set": {
+      "name": "Tragedy Looper",
+      "number": 4
     },
-    {
-        "title": "Prologue",
-        "creator": "BakaFire",
-        "set": {
-            "name": "Tragedy Looper",
-            "number": 9
-        },
-        "tragedySet": "Basic Tragedy",
-        "daysPerLoop": 7,
-        "difficultySets": [
-            {
-                "numberOfLoops": 5,
-                "difficulty": 5
-            },
-            {
-                "numberOfLoops": 4,
-                "difficulty": 7
-            }
-        ],
-        "mainPlot": [
-            "Murder Plan"
-        ],
-        "subPlots": [
-            "Circle of Friends",
-            "A Love Affair"
-        ],
-        "cast": {
-            "Boy Student": "Lover",
-            "Girl Student": "Loved One",
-            "Rich Man’s Daughter": "Killer",
-            "Shrine Maiden": "Key Person",
-            "Police Officer": "Conspiracy Theorist",
-            "Office Worker": "Person",
-            "Informer": "Friend",
-            "Doctor": "Brain",
-            "Patient": "Friend"
-        },
-        "incidents": [
-            {
-                "day": 2,
-                "incident": "Increasing Unease",
-                "culprit": "Office Worker"
-            },
-            {
-                "day": 4,
-                "incident": "Suicide",
-                "culprit": "Girl Student"
-            },
-            {
-                "day": 5,
-                "incident": "Hospital Incident",
-                "culprit": "Boy Student"
-            },
-            {
-                "day": 7,
-                "incident": "Murder",
-                "culprit": "Police Officer"
-            }
-        ],
-        "specifics": "See Tragedy Looper Mastermind Handbook",
-        "story": "See Tragedy Looper Mastermind Handbook",
-        "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+    "tragedySet": "Basic Tragedy",
+    "daysPerLoop": 7,
+    "difficultySets": [
+      {
+        "numberOfLoops": 4,
+        "difficulty": 3
+      },
+      {
+        "numberOfLoops": 3,
+        "difficulty": 4
+      }
+    ],
+    "mainPlot": [
+      "The Sealed Item"
+    ],
+    "subPlots": [
+      "The hidden Freak",
+      "Unknown Factor X"
+    ],
+    "cast": {
+      "Boy Student": "Person",
+      "Girl Student": "Person",
+      "Rich Man’s Daughter": "Brain",
+      "Shrine Maiden": "Friend",
+      "Office Worker": "Serial Killer",
+      "Informer": "Person",
+      "Journalist": "Factor",
+      "Patient": "Person",
+      "Nurse": "Cultist"
     },
-    {
-        "title": "Neverending Happy & Sad Story",
-        "creator": "BF + 3G",
-        "set": {
-            "name": "Tragedy Looper",
-            "number": 10
-        },
-        "tragedySet": "Basic Tragedy",
-        "daysPerLoop": 6,
-        "difficultySets": [
-            {
-                "numberOfLoops": 4,
-                "difficulty": 8
-            }
-        ],
-        "mainPlot": [
-            "Giant Time Bomb"
-        ],
-        "subPlots": [
-            "An Unsettling Rumor",
-            "A Love Affair"
-        ],
-        "cast": {
-            "Girl Student": "Person",
-            "Rich Man’s Daughter": "Loved One",
-            "Class Rep": "Person",
-            "Mystery Boy": "Brain",
-            "Alien": "Person",
-            "Godly Being": [
-                "Witch",
-                {
-                    "enters on loop": 4
-                }
-            ],
-            "Office Worker": "Person",
-            "Pop Idol": "Person",
-            "Boss": [
-                "Conspiracy Theorist",
-                {
-                    "Turf": "School"
-                }
-            ],
-            "Patient": "Lover",
-            "Nurse": "Person"
-        },
-        "incidents": [
-            {
-                "day": 2,
-                "incident": "Butterfly Effect",
-                "culprit": "Class Rep"
-            },
-            {
-                "day": 3,
-                "incident": "Increasing Unease",
-                "culprit": "Alien"
-            },
-            {
-                "day": 4,
-                "incident": "Missing Person",
-                "culprit": "Office Worker"
-            },
-            {
-                "day": 5,
-                "incident": "Missing Person",
-                "culprit": "Nurse"
-            },
-            {
-                "day": 6,
-                "incident": "Missing Person",
-                "culprit": "Patient"
-            }
-        ],
-        "specialRules": ["Mastermind removes \"Forbid Goodwill\" from his hand. It cannot be used in any loop"],
-        "specifics": "See Tragedy Looper Mastermind Handbook",
-        "story": "See Tragedy Looper Mastermind Handbook",
-        "mastermindHints": "See Tragedy Looper Mastermind Handbook"
-    }
+    "incidents": [
+      {
+        "day": 2,
+        "incident": "Increasing Unease",
+        "culprit": "Rich Man’s Daughter"
+      },
+      {
+        "day": 4,
+        "incident": "Missing Person",
+        "culprit": "Nurse"
+      },
+      {
+        "day": 5,
+        "incident": "Missing Person",
+        "culprit": "Boy Student"
+      },
+      {
+        "day": 7,
+        "incident": "Suicide",
+        "culprit": "Journalist"
+      }
+    ],
+    "specifics": "See Tragedy Looper Mastermind Handbook",
+    "story": "See Tragedy Looper Mastermind Handbook",
+    "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+  },
+  {
+    "title": "The Secret That Was Kept",
+    "creator": "BakaFire",
+    "set": {
+      "name": "Tragedy Looper",
+      "number": 5
+    },
+    "tragedySet": "Basic Tragedy",
+    "daysPerLoop": 7,
+    "difficultySets": [
+      {
+        "numberOfLoops": 4,
+        "difficulty": 3
+      },
+      {
+        "numberOfLoops": 3,
+        "difficulty": 5
+      }
+    ],
+    "mainPlot": [
+      "Giant Time Bomb"
+    ],
+    "subPlots": [
+      "Threads of Fate",
+      "Circle of Friends"
+    ],
+    "cast": {
+      "Rich Man’s Daughter": "Witch",
+      "Class Rep": "Person",
+      "Shrine Maiden": "Person",
+      "Alien": "Friend",
+      "Office Worker": "Friend",
+      "Informer": "Conspiracy Theorist",
+      "Pop Idol": "Person",
+      "Journalist": "Person",
+      "Patient": "Person"
+    },
+    "incidents": [
+      {
+        "day": 2,
+        "incident": "Suicide",
+        "culprit": "Rich Man’s Daughter"
+      },
+      {
+        "day": 3,
+        "incident": "Missing Person",
+        "culprit": "Office Worker"
+      },
+      {
+        "day": 4,
+        "incident": "Hospital Incident",
+        "culprit": "Journalist"
+      },
+      {
+        "day": 6,
+        "incident": "Spreading",
+        "culprit": "Shrine Maiden"
+      },
+      {
+        "day": 7,
+        "incident": "Foul Evil",
+        "culprit": "Pop Idol"
+      }
+    ],
+    "specifics": "See Tragedy Looper Mastermind Handbook",
+    "story": "See Tragedy Looper Mastermind Handbook",
+    "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+  },
+  {
+    "title": "The Future of the Gods",
+    "creator": "Nightly Moonfire group",
+    "set": {
+      "name": "Tragedy Looper",
+      "number": 6
+    },
+    "tragedySet": "Basic Tragedy",
+    "daysPerLoop": 7,
+    "difficultySets": [
+      {
+        "numberOfLoops": 4,
+        "difficulty": 4
+      }
+    ],
+    "mainPlot": [
+      "Change of Future"
+    ],
+    "subPlots": [
+      "The hidden Freak",
+      "A Love Affair"
+    ],
+    "cast": {
+      "Boy Student": "Time Traveler",
+      "Rich Man’s Daughter": "Person",
+      "Shrine Maiden": "Cultist",
+      "Godly Being": [
+        "Loved One",
+        {
+          "enters on loop": 3
+        }
+      ],
+      "Police Officer": "Person",
+      "Office Worker": "Serial Killer",
+      "Pop Idol": "Lover",
+      "Patient": "Person",
+      "Nurse": "Friend"
+    },
+    "incidents": [
+      {
+        "day": 2,
+        "incident": "Suicide",
+        "culprit": "Pop Idol"
+      },
+      {
+        "day": 4,
+        "incident": "Increasing Unease",
+        "culprit": "Shrine Maiden"
+      },
+      {
+        "day": 5,
+        "incident": "Butterfly Effect",
+        "culprit": "Police Officer"
+      },
+      {
+        "day": 7,
+        "incident": "Foul Evil",
+        "culprit": "Patient"
+      }
+    ],
+    "specifics": "See Tragedy Looper Mastermind Handbook",
+    "story": "See Tragedy Looper Mastermind Handbook",
+    "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+  },
+  {
+    "title": "Mirror Passcode",
+    "creator": "M. Hydromel",
+    "set": {
+      "name": "Tragedy Looper",
+      "number": 7
+    },
+    "tragedySet": "Basic Tragedy",
+    "daysPerLoop": 7,
+    "difficultySets": [
+      {
+        "numberOfLoops": 4,
+        "difficulty": 4
+      },
+      {
+        "numberOfLoops": 3,
+        "difficulty": 6
+      }
+    ],
+    "mainPlot": [
+      "Sign with me!"
+    ],
+    "subPlots": [
+      "Unknown Factor X",
+      "Paranoia Virus"
+    ],
+    "cast": {
+      "Boy Student": "Person",
+      "Girl Student": "Key Person",
+      "Rich Man’s Daughter": "Factor",
+      "Mystery Boy": "Cultist",
+      "Office Worker": "Person",
+      "Informer": "Conspiracy Theorist",
+      "Journalist": "Person",
+      "Patient": "Person",
+      "Nurse": "Person"
+    },
+    "incidents": [
+      {
+        "day": 3,
+        "incident": "Missing Person",
+        "culprit": "Rich Man’s Daughter"
+      },
+      {
+        "day": 4,
+        "incident": "Increasing Unease",
+        "culprit": "Journalist"
+      },
+      {
+        "day": 5,
+        "incident": "Hospital Incident",
+        "culprit": "Mystery Boy"
+      },
+      {
+        "day": 7,
+        "incident": "Murder",
+        "culprit": "Boy Student"
+      }
+    ],
+    "specifics": "See Tragedy Looper Mastermind Handbook",
+    "story": "See Tragedy Looper Mastermind Handbook",
+    "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+  },
+  {
+    "title": "Those with Antibodies",
+    "creator": "Satoshi Sawamura",
+    "set": {
+      "name": "Tragedy Looper",
+      "number": 8
+    },
+    "tragedySet": "Basic Tragedy",
+    "daysPerLoop": 4,
+    "difficultySets": [
+      {
+        "numberOfLoops": 5,
+        "difficulty": 5
+      },
+      {
+        "numberOfLoops": 4,
+        "difficulty": 6
+      }
+    ],
+    "mainPlot": [
+      "Change of Future"
+    ],
+    "subPlots": [
+      "Threads of Fate",
+      "Paranoia Virus"
+    ],
+    "cast": {
+      "Girl Student": "Person",
+      "Rich Man’s Daughter": "Conspiracy Theorist",
+      "Class Rep": "Person",
+      "Shrine Maiden": "Cultist",
+      "Police Officer": "Person",
+      "Office Worker": "Person",
+      "Informer": "Conspiracy Theorist",
+      "Doctor": "Person",
+      "Patient": "Person",
+      "Henchman": "Time Traveler"
+    },
+    "incidents": [
+      {
+        "day": 1,
+        "incident": "Butterfly Effect",
+        "culprit": "Rich Man’s Daughter"
+      },
+      {
+        "day": 2,
+        "incident": "Foul Evil",
+        "culprit": "Henchman"
+      },
+      {
+        "day": 3,
+        "incident": "Spreading",
+        "culprit": "Doctor"
+      },
+      {
+        "day": 4,
+        "incident": "Missing Person",
+        "culprit": "Police Officer"
+      }
+    ],
+    "specifics": "See Tragedy Looper Mastermind Handbook",
+    "story": "See Tragedy Looper Mastermind Handbook",
+    "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+  },
+  {
+    "title": "Prologue",
+    "creator": "BakaFire",
+    "set": {
+      "name": "Tragedy Looper",
+      "number": 9
+    },
+    "tragedySet": "Basic Tragedy",
+    "daysPerLoop": 7,
+    "difficultySets": [
+      {
+        "numberOfLoops": 5,
+        "difficulty": 5
+      },
+      {
+        "numberOfLoops": 4,
+        "difficulty": 7
+      }
+    ],
+    "mainPlot": [
+      "Murder Plan"
+    ],
+    "subPlots": [
+      "Circle of Friends",
+      "A Love Affair"
+    ],
+    "cast": {
+      "Boy Student": "Lover",
+      "Girl Student": "Loved One",
+      "Rich Man’s Daughter": "Killer",
+      "Shrine Maiden": "Key Person",
+      "Police Officer": "Conspiracy Theorist",
+      "Office Worker": "Person",
+      "Informer": "Friend",
+      "Doctor": "Brain",
+      "Patient": "Friend"
+    },
+    "incidents": [
+      {
+        "day": 2,
+        "incident": "Increasing Unease",
+        "culprit": "Office Worker"
+      },
+      {
+        "day": 4,
+        "incident": "Suicide",
+        "culprit": "Girl Student"
+      },
+      {
+        "day": 5,
+        "incident": "Hospital Incident",
+        "culprit": "Boy Student"
+      },
+      {
+        "day": 7,
+        "incident": "Murder",
+        "culprit": "Police Officer"
+      }
+    ],
+    "specifics": "See Tragedy Looper Mastermind Handbook",
+    "story": "See Tragedy Looper Mastermind Handbook",
+    "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+  },
+  {
+    "title": "Neverending Happy & Sad Story",
+    "creator": "BF + 3G",
+    "set": {
+      "name": "Tragedy Looper",
+      "number": 10
+    },
+    "tragedySet": "Basic Tragedy",
+    "daysPerLoop": 6,
+    "difficultySets": [
+      {
+        "numberOfLoops": 4,
+        "difficulty": 8
+      }
+    ],
+    "mainPlot": [
+      "Giant Time Bomb"
+    ],
+    "subPlots": [
+      "An Unsettling Rumor",
+      "A Love Affair"
+    ],
+    "cast": {
+      "Girl Student": "Person",
+      "Rich Man’s Daughter": "Loved One",
+      "Class Rep": "Person",
+      "Mystery Boy": "Brain",
+      "Alien": "Person",
+      "Godly Being": [
+        "Witch",
+        {
+          "enters on loop": 4
+        }
+      ],
+      "Office Worker": "Person",
+      "Pop Idol": "Person",
+      "Boss": [
+        "Conspiracy Theorist",
+        {
+          "Turf": "School"
+        }
+      ],
+      "Patient": "Lover",
+      "Nurse": "Person"
+    },
+    "incidents": [
+      {
+        "day": 2,
+        "incident": "Butterfly Effect",
+        "culprit": "Class Rep"
+      },
+      {
+        "day": 3,
+        "incident": "Increasing Unease",
+        "culprit": "Alien"
+      },
+      {
+        "day": 4,
+        "incident": "Missing Person",
+        "culprit": "Office Worker"
+      },
+      {
+        "day": 5,
+        "incident": "Missing Person",
+        "culprit": "Nurse"
+      },
+      {
+        "day": 6,
+        "incident": "Missing Person",
+        "culprit": "Patient"
+      }
+    ],
+    "specialRules": [
+      "Mastermind removes \"Forbid Goodwill\" from his hand. It cannot be used in any loop"
+    ],
+    "specifics": "See Tragedy Looper Mastermind Handbook",
+    "story": "See Tragedy Looper Mastermind Handbook",
+    "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+  }
 ]

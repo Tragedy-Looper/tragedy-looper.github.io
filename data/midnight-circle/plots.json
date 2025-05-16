@@ -141,7 +141,7 @@
                 "timing": [
                     "Loop End"
                 ],
-                "prerequisite": "There are at least 2 Intrigde counters on the Shrine."
+                "prerequisite": "There are at least 2 Intrigue counters on the Shrine."
             }
         ]
     },
@@ -165,7 +165,7 @@
                 "timing": [
                     "Loop End"
                 ],
-                "prerequisite": "The Ninja (or its corpse) has at least 2 Intrigde counters."
+                "prerequisite": "The Ninja (or its corpse) has at least 2 Intrigue counters."
             },
             {
                 "type": "Script creation",
