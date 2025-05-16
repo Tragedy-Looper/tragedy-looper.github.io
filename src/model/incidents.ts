@@ -93,7 +93,7 @@ export type FakedIncident = FakedIncidentHelper<Incident>['name'];
 
 class IncidentsHelper {
     public readonly incidents = toRecord([
-        ...data.incedents,
+        ...data.incidents,
         {
             name: 'Drifting to Another World',
             effect: [

@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 
-const types = ['characters', 'scripts', 'plots', 'roles', 'tragedys', 'incedents'] as const;
+const types = ['characters', 'scripts', 'plots', 'roles', 'tragedys', 'incidents'] as const;
 
 const dirs = fs.readdirSync('./data');
 const data =

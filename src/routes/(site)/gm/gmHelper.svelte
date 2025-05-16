@@ -20,7 +20,7 @@
 
   export let selectedScript: Script;
 
-  $: usedIncedents = showAll(
+  $: usedIncidents = showAll(
     selectedScript.incidents.map(
       (x) => [x, incidents[typeof x.incident === 'string' ? x.incident : x.incident[0]]] as const
     )
@@ -425,7 +425,7 @@
         </tr>
       {/each}
     {/if}
-    {#if showAll(abilities).filter( (x) => includes(x['timing'], 'Incident trigger') ).length + usedIncedents.length + showAll(abilities).filter( (x) => includes(x['timing'], 'Incident step') ).length > 0}
+    {#if showAll(abilities).filter( (x) => includes(x['timing'], 'Incident trigger') ).length + usedIncidents.length + showAll(abilities).filter( (x) => includes(x['timing'], 'Incident step') ).length > 0}
       <tr>
         <td colspan="7">Incidents</td>
       </tr>
@@ -480,7 +480,7 @@
           </td>
         </tr>
       {/each}
-      {#each usedIncedents as i}
+      {#each usedIncidents as i}
         {@const char = isCharacterName(i.culprit) ? characters[i.culprit] : undefined}
         {@const limit = char ? char.paranoiaLimit : require(i).mob}
         {#each i.effect as e}

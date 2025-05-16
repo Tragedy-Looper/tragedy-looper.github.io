@@ -211,6 +211,61 @@
     "mastermindHints": "See Tragedy Looper Mastermind Handbook"
   },
   {
+    "title": "Magical Girls' Superiority",
+    "creator": "M.Hydrome",
+    "difficultySets": [
+      {
+        "numberOfLoops": 4,
+        "difficulty": 2
+      },
+      {
+        "numberOfLoops": 3,
+        "difficulty": 3
+      }
+    ],
+    "tragedySet": "Basic Tragedy",
+    "mainPlot": [
+      "Sign with me!"
+    ],
+    "subPlots": [
+      "An Unsettling Rumor",
+      "The hidden Freak"
+    ],
+    "daysPerLoop": 5,
+    "cast": {
+      "Pop Idol": "Key Person",
+      "Doctor": "Conspiracy Theorist",
+      "Boy Student": "Serial Killer",
+      "Patient": "Person",
+      "Teacher": "Person",
+      "Rich Man’s Daughter": "Person",
+      "Shrine Maiden": "Friend"
+    },
+    "incidents": [
+      {
+        "day": 2,
+        "incident": "Increasing Unease",
+        "culprit": "Patient"
+      },
+      {
+        "day": 3,
+        "incident": "Hospital Incident",
+        "culprit": "Shrine Maiden"
+      },
+      {
+        "day": 5,
+        "incident": "Missing Person",
+        "culprit": "Boy Student"
+      }
+    ],
+    "specialRules": [
+      ""
+    ],
+    "specifics": "This is a script recommended for those who are playing Basic Tragedy for the first time. This is where it begins for real. Now you have 2 Subplots and seven people in the cast. Also, there are 5 days each loop!\n\nThat said, the difficulty is still set to very low. Protagonists who come from First Steps won’t feel super confused and will be able to enjoy the extra additions well enough. It’s not difficult to play as Mastermind either. But beware of the Final Guess. If all roles are clear, then you will lose, and that is more stressful than it may seem.",
+    "story": "For boys and girls, the world is a constant battlefield. Each tiny little disturbance will shake their inexperienced souls. Especially in this town, where seductors lure with the promise of magic powers – without explaining the consequences!\n\nThe school was bubbling with talk. “Spells” and “magic”, and everyone knows that you CAN become a magical girl, if you just sign the contract. Eventually, the pop idol will sign, and she will die. Can the Protagonists stop this tragedy from happening?",
+    "mastermindHints": "The best way to win is through the Hospital Horror and to place Intrigue on the Idol. This reveals the least information.\n\nStart day 1 and 2 with Unease +1 on the Patient, and a bluff and Intrigue +1 on the Shrine and Hospital respectively.\n\nAlso from day 1, use the Conspiracy Theorist and trigger Spreading Unease. If you get some Intrigue on the Hospital, put 2 Unease on the Shrine Maiden, and trigger the Hospital Horror.\n\nOn day 3, you can use the Unsettling Rumor effect to put the second Intrigue on the Hospital and kill the Protagonists.\n\nIf you can’t seem to get any Intrigue on the Hospital, put instead 2 Intrigue on the Idol and if possible, also on the Shrine, Rich Student, and Shrine Maiden. For this, Spreading Unease and An Unsettling Rumor will help you.\n\nHide the Serial Killer as long as you can and use him to kill the Key Person as your last resort. Killing the Friend will make the Final Guess easy for the Protagonists, so avoid that as much as possible.\n\nThe Final Guess can easily become your downfall. Either you hide the Conspiracy Theorist or the Friend. Try to make it look like a Murderer or a Brain instead.\n\nVictory conditions\n1. At any day end, have the Pop Idol and the Boy Student alone in a location, triggering the Serial Killer effect and thus the Key Person’s loss condition immediately.\n\n2. At end of day 3, have at least 1 Intrigue on the Hospital, at least 2 Unease on the Shrine Maiden, and the Pop Idol in the Hospital, triggering Hospital Horror, killing the Pop Idol and triggering the Key Person’s loss condition immediately.\n\n3. At loop end, have 2 Intrigue on the Pop Idol, triggering the loss condition for “Sign with Me!”.\n\n4. At any day end, have the Shrine Maiden and the Boy Student alone in a location, triggering the Serial Killer effect and thus the Friend’s loss condition at loop end.\n\n5. At end of day 3, have at least 1 Intrigue on the Hospital, at least 2 Unease on the Shrine Maiden who should be in the Hospital, triggering the Hospital Horror, killing the Shrine Maiden, and triggering the Friend’s loss condition at loop end.\n\n6. At the end of day 3, have at least 2 Intrigue on the Hospital, at least 2 Unease on the Shrine Maiden, triggering the Hospital Horror killing the Protagonists."
+  },
+  {
     "title": "Lesser of Two Evils",
     "creator": "GEnd",
     "set": {

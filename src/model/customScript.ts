@@ -708,20 +708,20 @@ export class CustomScript {
 
         this.incidentGroup.selectedNumber.set(script.incidents.length);
 
-        const incedents = get(this.incidentGroup.selectors)
+        const incidents = get(this.incidentGroup.selectors)
 
         script.incidents.forEach((ince, i) => {
-            incedents[i].selectedDay.set(ince.day);
-            incedents[i].selectedCharacter.set(ince.culprit as any); // Its not correct typed for mob incedents…
+            incidents[i].selectedDay.set(ince.day);
+            incidents[i].selectedCharacter.set(ince.culprit as any); // Its not correct typed for mob incidents…
 
             if (typeof ince.incident == 'string') {
                 const name = ince.incident;
-                incedents[i].selectedIncident.set(name);
+                incidents[i].selectedIncident.set(name);
             } else {
                 const name = ince.incident[0];
-                incedents[i].selectedIncident.set(name);
+                incidents[i].selectedIncident.set(name);
 
-                const opt = get(incedents[i].options);
+                const opt = get(incidents[i].options);
                 opt.forEach(o => {
                     if (o.option.name == 'Faked as') {
                         o.value.set(ince.incident[1]);
