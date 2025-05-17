@@ -76,7 +76,7 @@ export const tragedySets = toRecord([
     ...data.tragedys,
     {
         name: 'Another Horizon',
-        mainPlots: ['Lost Heart', 'Shadow Demon King', 'The Devil’s Will', 'Parallel World War', 'Alien Erosion','Into Nothingness','Jekyll and Hyde','Through the Looking-Glass',],
+        mainPlots: ['Lost Heart', 'Shadow Demon King', 'The Devil’s Will', 'Parallel World War', 'Alien Erosion'],
         subPlots: ['The World of Dollhouse', 'Ego Wave', 'The Closed Door', 'Threads of Fate', 'Moonside City', 'Fanatic Fox', 'Somthing to invite'],
         incidents: [
             'Insane Murder',
