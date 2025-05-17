@@ -65,7 +65,7 @@
       "Alien": "Brain",
       "Police Officer": "Conspiracy Theorist",
       "Office Worker": "Curmudgeon",
-      "Patient": "Frind",
+      "Patient": "Friend",
       "Shrine Maiden": "Person",
       "Pop Idol": "Person"
     },
@@ -82,17 +82,7 @@
       }
     ],
     "specialRules": [
-      [
-        [
-          [
-            [
-              [
-                ""
-              ]
-            ]
-          ]
-        ]
-      ]
+        ""
     ],
     "specifics": "In the Godless Temple is an advanced training script, to be played after the First Script. This is a perfect script to learn how to use Intrigue counters. After The First Script and this, you’ll get the hang of most victory tactics for the Mastermind.",
     "story": "A decrepit shrine at the outskirts of town. Whatever is hallowed there, it’s not a god. And it wants revenge. Revenge on the shrine maiden that summoned it and consequently all humans. \n\nThis being confuses people and pushes the ill will of the broken shrine maiden and less-than-good-tempered people onto the Protagonists. Will the heroes be able to stop this incarnation of darkness and evil from getting its revenge?",
@@ -176,7 +166,7 @@
     ],
     "subPlots": [
       "A Love Affair",
-      "The hidden Freak"
+      "The Hidden Freak"
     ],
     "cast": {
       "Boy Student": "Person",
@@ -229,7 +219,7 @@
     ],
     "subPlots": [
       "An Unsettling Rumor",
-      "The hidden Freak"
+      "The Hidden Freak"
     ],
     "daysPerLoop": 5,
     "cast": {
@@ -288,7 +278,7 @@
       "The Sealed Item"
     ],
     "subPlots": [
-      "The hidden Freak",
+      "The Hidden Freak",
       "Unknown Factor X"
     ],
     "cast": {
@@ -415,7 +405,7 @@
       "Change of Future"
     ],
     "subPlots": [
-      "The hidden Freak",
+      "The Hidden Freak",
       "A Love Affair"
     ],
     "cast": {
