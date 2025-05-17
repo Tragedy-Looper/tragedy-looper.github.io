@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"prepare": "npx ts-node --esm scripts/perBulid.ts",
+		"prepare": "npx tsx scripts/perBulid.ts",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
