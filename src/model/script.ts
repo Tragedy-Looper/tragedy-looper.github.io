@@ -88,7 +88,7 @@ export function isScriptIncident(obj: unknown, omitCulprit?: true): obj is Scrip
         }
         if (typeof obj.culprit === 'string') {
 
-            if (require(currentIncident).mob !== undefined) {
+            if ('mob' in require(currentIncident)) {
                 if (!isLocationName(obj.culprit)) {
                     console.error('Not a Locaion name', obj.culprit)
                     return false;
