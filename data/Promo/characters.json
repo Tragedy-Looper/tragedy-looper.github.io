@@ -25,7 +25,7 @@
                 "timesPerLoop": 1
             }
         ]
-    }
+    },
     {
         "name": "Part-Timer",
         "paranoiaLimit": 1,
@@ -43,13 +43,13 @@
             {
                 "type": "passive",
                 "description": "At the end of the day, if there are 3 or more total counters on this character, he dies."
-            }
+            },
             {
                 "type": "passive",
                 "description": "At the start of the day, if this character is dead, place 'Part-Timer(?)' in the City."
             }
         ]
-    }
+    },
     {
         "name": "Part-Timer(?)",
         "paranoiaLimit": 3,
@@ -70,7 +70,7 @@
                 "timesPerLoop": 1
             }
         ]
-    }
+    },
     {
         "name": "Sect Founder",
         "paranoiaLimit": 1,
@@ -97,7 +97,7 @@
                 "timesPerLoop": 1
             }
         ]
-    }
+    },
     {
         "name": "Copycat",
         "paranoiaLimit": 2,
@@ -118,7 +118,7 @@
                 "description": "Reveal the name of each character that shares this character's Role. This cannot be refused by Goodwill Refusal. This can only be used on Loop 2 onward."
             }
         ]
-    }
+    },
     {
         "name": "Servant",
         "paranoiaLimit": 3,
@@ -140,10 +140,10 @@
                 "timesPerLoop": 1
             }
         ]
-    }
+    },
     {
         "name": "Metaworld Denizen",
-        "paranoiaLimit": 2
+        "paranoiaLimit": 2,
         "tags": [
             "girl"
         ],
@@ -157,7 +157,7 @@
                 "timesPerLoop": 1
             }
         ]
-    }
+    },
     {
         "name": "Little Sister",
         "paranoiaLimit": 3,
@@ -166,7 +166,7 @@
             "girl"
         ],
         "startLocation": "Shrine",
-        "forbiddenLocation": []
+        "forbiddenLocation": [],
         "abilities": [
             {
                 "type": "passive",
@@ -174,11 +174,11 @@
             },
             {
                 "type": "active",
-                "goodwillRank": 5
-                "description": "Use a Goodwill ability from an Adult at this location, ignoring Goodwill counters. It cannot be refused by Goodwill Refusal, but counts towards that ability's 'Once per Loop' limit.",
+                "goodwillRank": 5,
+                "description": "Use a Goodwill ability from an Adult at this location, ignoring Goodwill counters. It cannot be refused by Goodwill Refusal, but counts towards that ability's 'Once per Loop' limit."
             }
         ]
-    }
+    },
     {
         "name": "Sacred Tree",
         "paranoiaLimit": 4,
@@ -189,12 +189,12 @@
         "forbiddenLocation": [
             "City",
             "Hospital",
-            "School"
+            "School"],
         "abilities": [
             {
                 "type": "passive",
                 "description": "During each Goodwill ability phase, the Leader may move 1 counter from this character to another character at this location. If this character has Goodwill Refusal, the Mastermind must also do this during the Mastermind's ability phase."
-            },
+            }
         ]
     }
     

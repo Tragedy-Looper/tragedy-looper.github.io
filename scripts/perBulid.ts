@@ -11,12 +11,12 @@ const data =
         dirs.flatMap(folder => types.map(t => [folder, t] as const))
             .map(([folder, type]) => [`./data/${folder}/${type}.json`, type] as const)
             .filter(([x]) => fs.existsSync(x))
-            .map(([scriptLocation, type]) => new Promise<readonly [string, typeof types[number]]>((resolve, reject) => {
+            .map(([scriptLocation, type]) => new Promise<readonly [string, typeof types[number], string]>((resolve, reject) => {
                 fs.readFile(scriptLocation, 'utf-8', (err, data) => {
                     if (err !== null) {
                         reject(err);
                     } else {
-                        resolve([data, type] as const);
+                        resolve([data, type,scriptLocation] as const);
                     }
                 })
             }))
@@ -27,15 +27,15 @@ const data =
 data.then(x => {
 
     const data = types.map(type => {
-        return [type, x.filter(([, t]) => t == type).map(([x]) => x).filter(x => {
+        return [type, x.filter(([, t]) => t == type).filter(([x,,location]) => {
             try {
                 const parsed = JSON.parse(x);
                 return typeof parsed == 'object' && Array.isArray(parsed);
             } catch (error) {
-                console.error(error);
+                console.error(`Error parsing ${location}`,error);
                 return false;
             }
-        })] as const;
+        }).map(([x]) => x)] as const;
     });
 
     return data.map(([type, arrays]) => {
@@ -80,7 +80,7 @@ translationData.then((translations) => {
 
     const innerObject = translations.map(([data, lang]) => {
         return `"${lang}": ${data}`;
-    }).reduce((p, c) => `${p}\n${c}`, "");
+    }).reduce((p, c) => `${p}${p.length>0?',':''}\n${c}`, "");
 
     return `export const translations = {\n${innerObject}\n}`
 
