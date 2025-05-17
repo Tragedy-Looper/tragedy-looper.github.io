@@ -88,7 +88,7 @@ export function isScriptIncident(obj: unknown, omitCulprit?: true): obj is Scrip
         }
         if (typeof obj.culprit === 'string') {
 
-            if ('mob' in require(currentIncident)) {
+            if (require(currentIncident).mob !== undefined) {
                 if (!isLocationName(obj.culprit)) {
                     console.error('Not a Locaion name', obj.culprit)
                     return false;
@@ -180,8 +180,15 @@ export function isScript(obj: unknown): obj is Script {
     if (!(Object.keys(obj.cast).every(isCharacterName))) { console.error("faild test Object.keys(obj.cast).every(isCharacterName)"); return false; }
     if (!(Object.values(obj.cast).every((value: unknown) => {
         if (typeof value == 'string') {
-            return isRoleName(value);
+            const isName = isRoleName(value);
+            if (!isName) {
+                console.error("faild test isRoleName(value)", value);
+            }
+            return isName;
         } else if (Array.isArray(value) && typeof value[0] == 'string') {
+            if (!isRoleName(value[0])) {
+                console.error("faild test isRoleName(value[0])", value);
+            }
             return isRoleName(value[0]) && typeof value[1] == 'object' && value[1] !== null && Object.keys(value[1]).every(x => typeof x == 'string');
         }
     }))) { console.error("faild test cast"); return false; }
@@ -193,7 +200,28 @@ export function isScript(obj: unknown): obj is Script {
             && Array.isArray(obj.specialRules)
             && obj.specialRules.every(x => typeof x == 'string')
         )
-    )) { console.error("faild test incidents"); return false; }
+    )) {
+
+        if (!obj.specialRules) {
+            console.error("faild test obj.specialRules");
+            return false;
+        }
+        if (typeof obj.specialRules !== 'object') {
+            console.error("faild test typeof obj.specialRules == 'object'");
+            return false;
+        }
+        if (!Array.isArray(obj.specialRules)) {
+            console.error("faild test Array.isArray(obj.specialRules)");
+            return false;
+        }
+        if (!obj.specialRules.every(x => typeof x == 'string')) {
+            console.error(`faild test obj.specialRules.every(x => typeof x == 'string')`, obj.specialRules);
+        }
+
+        console.error("faild test spectial rules", obj.title);
+
+        return false;
+    }
     if (!('specifics' in obj)) { console.error("faild test 'specifics' in obj"); return false; }
     if (!(typeof obj.specifics == 'string')) { console.error("faild test typeof obj.specifics == 'string'"); return false; }
     if (!('story' in obj)) { console.error("faild test 'story' in obj"); return false; }
