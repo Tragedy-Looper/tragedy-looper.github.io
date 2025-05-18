@@ -24,7 +24,7 @@
                 "description": "Everyone in the City dies."
             },
             {
-                "type": "Mandatory Loss condition: Character Death",
+                "type": "Mandatory Loss condition: Protagonists Death",
                 "prerequisite": "2 Intrigue on the City"
             }
         ]
@@ -94,7 +94,7 @@
         "name": "Fake Incident",
         "effect": [
             {
-                "type": "Mandatory Loss condition: Character Death",
+                "type": "Mandatory Loss condition: Protagonists Death",
                 "prerequisite": "2 Intrigue on the culprit’s starting location"
             }
         ],

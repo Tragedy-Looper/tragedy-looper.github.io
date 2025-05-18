@@ -4,7 +4,7 @@
         "unkillable": true,
         "abilities": [
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "Day End"
                 ],
@@ -115,7 +115,7 @@
                 "description": "You may kill the Key Person."
             },
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "Day End"
                 ],
@@ -128,7 +128,7 @@
         "goodwillRefusel": "Optional",
         "abilities": [
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "Day End"
                 ],
@@ -156,7 +156,7 @@
                 "description": "You may kill one character who is in this location."
             },
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "Day End"
                 ],

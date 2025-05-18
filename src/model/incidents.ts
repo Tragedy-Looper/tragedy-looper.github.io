@@ -102,7 +102,7 @@ class IncidentsHelper {
                     description: 'Everyone in the School dies.'
                 },
                 {
-                    type: "Mandatory Loss condition: Character Death",
+                    type: "Mandatory Loss condition: Protagonists Death",
                     prerequisite: '2 Intrigue on the School',
                 }
             ]
@@ -111,7 +111,7 @@ class IncidentsHelper {
             name: 'Assassination',
             effect: [
                 {
-                    description: 'Kill any other character in this location or on the diagonally opposite location. When determining whether this incident occurs or not, count Intrigue instead of Paranoia. Everyone in the School dies.'
+                    description: 'Kill any other character in this location or on the diagonally opposite location. When determining whether this incident occurs or not, count Intrigue instead of Paranoia.'
                 }
             ]
         },
@@ -119,7 +119,7 @@ class IncidentsHelper {
             name: 'World End',
             effect: [
                 {
-                    type: 'Mandatory Loss condition: Character Death',
+                    type: 'Mandatory Loss condition: Protagonists Death',
                     prerequisite: 'In Normal world',
                     description: 'All characters die.'
                 }

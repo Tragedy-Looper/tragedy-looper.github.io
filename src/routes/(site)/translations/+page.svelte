@@ -25,6 +25,7 @@
   $: browser ? setLocalisatio(lang, table) : undefined;
 
   let exportJson: string | undefined;
+  let exportAllJson: string | undefined;
 
   let filterMissing = true;
 
@@ -40,8 +41,18 @@
       2
     );
   }
+  function exportAllData() {
+    console.log('exportng');
+    const localisation = getLocalisatio(lang);
+    exportAllJson = JSON.stringify(
+      Object.fromEntries(allKeys.map((key) => [key, table[key]?.trim() ?? ''] as const).sort(([keya,a],[keyB,b])=>(a.length>0)==(b.length>0)? keya.localeCompare(keyB):b.length-a.length)),
+      undefined,
+      2
+    );
+  }
 </script>
 
+<ExportView bind:exportJson={exportAllJson} />
 <ExportView bind:exportJson />
 
 <main class="container">
@@ -74,6 +85,7 @@
   </label>
 
   <button on:click={() => exportData()}>Export</button>
+  <button on:click={() => exportAllData()}>Export All tags</button>
 
   <label>
     {getString('Only show Missing', lang)}

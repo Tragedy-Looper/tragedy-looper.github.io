@@ -17,7 +17,7 @@
         "afterDeath": true,
         "abilities": [
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "Day End"
                 ],
@@ -30,14 +30,14 @@
         "afterDeath": true,
         "abilities": [
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "Mastermind Ability"
                 ],
                 "prerequisite": "If there are at least 2 Intrigue in this location, and at least 1 Paranoia on this card"
             },
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "On character death"
                 ],
@@ -50,7 +50,7 @@
         "goodwillRefusel": "Mandatory",
         "abilities": [
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "Day End"
                 ],
@@ -77,7 +77,7 @@
                 "description": "Kill one character of the opposite sex in this location who has at least 1 Paranoia and 1 Intrigue."
             },
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "Day End"
                 ],
@@ -167,7 +167,7 @@
         ]
     },
     {
-        "name": "Overlorad",
+        "name": "Overlord",
         "afterDeath": true,
         "abilities": [
             {

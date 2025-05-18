@@ -9,9 +9,17 @@ import { getLocalisatio } from './storage';
 
 const toCheck = [characters, incidents, plots, roles, tragedySets,
     ...[
+        'Tragedy Looper Deduction overview',
+        'If your are the Mastermind',
+        'choose a script (SPOILER!!)',
+        'Otherwise ask your Mastermind to choose a script and send you the link.',
+        'Feedback (in english) is appriciated on',
+        'or',
         "Missing Translations",
         "Key",
         "Translation",
+        "Language",
+        "Only show Missing",
 
         "For your Language there are missing translations, if you have time and fun you can help and add some localisations using the below. And post them on Github.",
         "Translation Overview",
@@ -20,7 +28,8 @@ const toCheck = [characters, incidents, plots, roles, tragedySets,
         "Characters",
         "Goodwill Refusel",
         "Once per {type}",
-        "(Immortal)",
+        "Immortal",
+        "After Death",
         "Day {day}",
         "Goodwill refusal",
         "If you translated something, please open an issue on Github and post the exported text, or submit a pull request.",
@@ -65,13 +74,13 @@ export function getString(key: string | undefined, lang: string | undefined, ...
         translated = translated.replaceAll(`{${e.name}}`, `${e.value}`);
     })
 
-    return translated;
+    return translated.length>0 ? translated : key;
 
 
 }
 
 export function getAllTranslationsForLanguage(lang: string) {
-    const currentTranslation = { ...translation[lang], ...((browser && getLocalisatio(lang)) ? getLocalisatio(lang) : undefined) } ?? {};
+    const currentTranslation = { ...translation[lang], ...((browser && getLocalisatio(lang)) ? getLocalisatio(lang) : undefined) };
 
 
     if (lang == 'en') {

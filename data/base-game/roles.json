@@ -34,7 +34,7 @@
                 "description": "Kill the Key Person"
             },
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "Day End"
                 ],
@@ -155,7 +155,7 @@
                 "description": "This character gets 6 Paranoia."
             },
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "Day End"
                 ],

@@ -136,7 +136,7 @@
         "Shrine Maiden": "Werewolf (Haunted Stage)",
         "Police Officer": "Monster",
         "Office Worker": "Nightmare (Haunted Stage)",
-        "Informer": "Overlorad",
+        "Informer": "Overlord",
         "Doctor": "Monster",
         "Patient": "Person"
       },
@@ -246,7 +246,7 @@
         "Office Worker": "Person",
         "Informer": "Person",
         "Doctor": "Ghost (Haunted Stage)",
-        "Patient": "Overlorad"
+        "Patient": "Overlord"
       },
       "incidents": [
         {

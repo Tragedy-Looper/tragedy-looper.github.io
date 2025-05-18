@@ -9,10 +9,10 @@ export type AbilityTypeCreation = 'Script creation';
 export type AbilityTypeDefault = 'Optional' | 'Mandatory';
 
 export const loseTypes = [
-    'Mandatory Loss condition: Character Death',
-    'Mandatory Loss condition: Character Death',
-    'Optional Loss condition: Character Death',
-    'Delayed Loss condition: Character Death',
+    'Mandatory Loss condition: Protagonists Death',
+    'Mandatory Loss condition: Protagonists Death',
+    'Optional Loss condition: Protagonists Death',
+    'Delayed Loss condition: Protagonists Death',
     'Loss condition: Tragedy'
 ] as const;
 
@@ -201,7 +201,7 @@ export const rolesInternal = toRecord([
         goodwillOutburst: true,
         abilities: [
             {
-                type: 'Delayed Loss condition: Character Death',
+                type: 'Delayed Loss condition: Protagonists Death',
                 timing: ['After Goodwill Ability used'],
                 prerequisite: '',
                 description: '(optional) The protagonists die during the Day end.'
@@ -213,7 +213,7 @@ export const rolesInternal = toRecord([
         goodwillRefusel: "Mandatory",
         abilities: [
             {
-                type: 'Delayed Loss condition: Character Death',
+                type: 'Delayed Loss condition: Protagonists Death',
                 timing: ['Incident trigger'],
                 prerequisite: 'This Character resolves an incident',
                 description: '(optional) The protagonists die during the Day end.'

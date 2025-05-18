@@ -54,7 +54,7 @@
                 "description": "Place a Curse on the Ghost’s starting location"
             },
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "Day End"
                 ],

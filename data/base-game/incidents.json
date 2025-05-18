@@ -39,7 +39,7 @@
                 "description": "Everyone in the Hospital dies."
             },
             {
-                "type": "Mandatory Loss condition: Character Death",
+                "type": "Mandatory Loss condition: Protagonists Death",
                 "prerequisite": "2 Intrigue on the Hospital"
             }
         ]

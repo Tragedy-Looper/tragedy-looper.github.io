@@ -13,7 +13,7 @@
                 "description": "One charcters in the same location dies."
             },
             {
-                "type": "Mandatory Loss condition: Character Death",
+                "type": "Mandatory Loss condition: Protagonists Death",
                 "timing": [
                     "Day End"
                 ],
@@ -155,7 +155,7 @@
                 "description": "You may, insead of saying the truth, state any other non-Person role that is in this script"
             },
             {
-                "type": "Optional Loss condition: Character Death",
+                "type": "Optional Loss condition: Protagonists Death",
                 "timing": [
                     "Day End"
                 ],

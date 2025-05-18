@@ -44,7 +44,7 @@
         "mob": 0,
         "effect": [
             {
-                "type": "Delayed Loss condition: Character Death",
+                "type": "Delayed Loss condition: Protagonists Death",
                 "prerequisite": "6 or more zombies when this incident occurs.",
                 "description": "The Protagonists will die after the day has ended."
             }
@@ -76,7 +76,7 @@
                 "description": "Kill all characters in the culprits location."
             },
             {
-                "type": "Mandatory Loss condition: Character Death",
+                "type": "Mandatory Loss condition: Protagonists Death",
                 "prerequisite": "After that, if that location has 5 or more corpses"
             }
         ]
@@ -103,7 +103,7 @@
         "timesPerGame": 1,
         "effect": [
             {
-                "type": "Mandatory Loss condition: Character Death",
+                "type": "Mandatory Loss condition: Protagonists Death",
                 "description": "All characters and the Protagonists are killed."
             }
         ]
@@ -112,7 +112,7 @@
         "name": "Hound Dog Scent",
         "effect": [
             {
-                "type": "Delayed Loss condition: Character Death",
+                "type": "Delayed Loss condition: Protagonists Death",
                 "description": "When determinig whether this incident occours or not, count Intrigue instead of Paranoia. For the rest of the loop, if another Incident occours, the Protagonists are killed after the Incident step."
             }
         ]
