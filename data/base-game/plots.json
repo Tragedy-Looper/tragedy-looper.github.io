@@ -62,7 +62,7 @@
                 0,
                 2
             ],
-            "Frind": 1
+            "Friend": 1
         },
         "rules": [
             {
@@ -149,7 +149,7 @@
     {
         "name": "Circle of Friends",
         "roles": {
-            "Frind": 2,
+            "Friend": 2,
             "Conspiracy Theorist": 1
         },
         "rules": []
@@ -163,9 +163,10 @@
         "rules": []
     },
     {
-        "name": "The hidden Freak",
+        "name": "The Hidden Freak",
         "roles": {
-            "Serial Killer": 1
+            "Serial Killer": 1,
+            "Friend": 1
         },
         "rules": []
     },

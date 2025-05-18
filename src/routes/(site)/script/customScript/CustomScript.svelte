@@ -14,7 +14,7 @@
   import { CustomScript } from '../../../../model/customScript';
   import PlotSelection from './plotSelection.svelte';
   import RoleGroup from './roleGroup.svelte';
-  import Incedent from './incedents.svelte';
+  import Incedent from './incidents.svelte';
   import Difficulty from './difficulty.svelte';
   import { goto } from '$app/navigation';
   import { base } from '$app/paths';

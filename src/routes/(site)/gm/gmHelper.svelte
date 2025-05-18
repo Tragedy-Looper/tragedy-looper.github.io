@@ -20,7 +20,7 @@
 
   export let selectedScript: Script;
 
-  $: usedIncedents = showAll(
+  $: usedIncidents = showAll(
     selectedScript.incidents.map(
       (x) => [x, incidents[typeof x.incident === 'string' ? x.incident : x.incident[0]]] as const
     )
@@ -42,7 +42,7 @@
     }
   });
 
-  $: plotAbilitys = [...selectedScript.mainPlot, ...selectedScript.subPlots]
+  $: plotabilities = [...selectedScript.mainPlot, ...selectedScript.subPlots]
     .map((x) => {
       if (typeof x == 'string') {
         return { plot: x };
@@ -66,9 +66,9 @@
       const { name, ...rest } = x;
       return { role: name, ...rest };
     });
-  $: roleAbilitys = scriptRoles.flatMap((x) => x.abilities.map((a) => ({ ...a, ...x })));
+  $: roleabilities = scriptRoles.flatMap((x) => x.abilities.map((a) => ({ ...a, ...x })));
 
-  $: abilitys = [...plotAbilitys, ...roleAbilitys].map((x) => ({
+  $: abilities = [...plotabilities, ...roleabilities].map((x) => ({
     ...x,
     type: renderCharacterDeath(x.type),
   }));
@@ -77,7 +77,7 @@
   // 	x.abilities.map((y) => ({ ...y, name: x.name }))
   // );
 
-  function sortAbilitys(
+  function sortabilities(
     a: { type?: RenderCharacterDeath<AbilityType> },
     b: { type?: RenderCharacterDeath<AbilityType> }
   ) {
@@ -114,9 +114,9 @@
     <th>Role / Plot / Incident</th>
   </thead>
   <tbody>
-    {#if showAll(scriptRoles).filter((x) => x.unkillable === true).length + showAll(abilitys)
+    {#if showAll(scriptRoles).filter((x) => x.unkillable === true).length + showAll(abilities)
         .filter((x) => includes(x['timing'], 'Always'))
-        .sort(sortAbilitys).length > 0}
+        .sort(sortabilities).length > 0}
       <tr>
         <td colspan="7">Always </td>
       </tr>
@@ -133,9 +133,9 @@
           </td>
         </tr>
       {/each}
-      {#each showAll(abilitys)
+      {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Always'))
-        .sort(sortAbilitys) as map}
+        .sort(sortabilities) as map}
         <tr>
           <td>
             {map.type}
@@ -158,13 +158,13 @@
         </tr>
       {/each}
     {/if}
-    {#if showAll(abilitys).filter((x) => includes(x['timing'], 'On character death')).length > 0}
+    {#if showAll(abilities).filter((x) => includes(x['timing'], 'On character death')).length > 0}
       <tr>
         <td colspan="7">On Character Death</td>
       </tr>
-      {#each showAll(abilitys)
+      {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'On character death'))
-        .sort(sortAbilitys) as map}
+        .sort(sortabilities) as map}
         <tr>
           <td>
             {map.type}
@@ -187,13 +187,13 @@
         </tr>
       {/each}
     {/if}
-    {#if showAll(abilitys).filter( (x) => includes(x['timing'], 'When this role is to be reveald') ).length > 0}
+    {#if showAll(abilities).filter( (x) => includes(x['timing'], 'When this role is to be reveald') ).length > 0}
       <tr>
         <td colspan="7">On Role reveal</td>
       </tr>
-      {#each showAll(abilitys)
+      {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'When this role is to be reveald'))
-        .sort(sortAbilitys) as map}
+        .sort(sortabilities) as map}
         <tr>
           <td>
             {map.type}
@@ -216,7 +216,7 @@
         </tr>
       {/each}
     {/if}
-    {#if showAll(abilitys).filter( (x) => includes(x['timing'], 'Loop Start') ).length + showAll(usedCharacters).filter((x) => x['enters on loop'] !== undefined).length > 0}
+    {#if showAll(abilities).filter( (x) => includes(x['timing'], 'Loop Start') ).length + showAll(usedCharacters).filter((x) => x['enters on loop'] !== undefined).length > 0}
       <tr>
         <td colspan="7">Loop Start</td>
       </tr>
@@ -237,9 +237,9 @@
         </tr>
       {/each}
 
-      {#each showAll(abilitys)
+      {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Loop Start'))
-        .sort(sortAbilitys) as map}
+        .sort(sortabilities) as map}
         <tr>
           <td>
             {map.type}
@@ -285,13 +285,13 @@
         </tr>
       {/each}
     {/if}
-    {#if showAll(abilitys).filter( (x) => includes(x['timing'], 'Mastermind Action step') ).length > 0}
+    {#if showAll(abilities).filter( (x) => includes(x['timing'], 'Mastermind Action step') ).length > 0}
       <tr>
         <td colspan="7">Placing Cards</td>
       </tr>
-      {#each showAll(abilitys)
+      {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Mastermind Action step'))
-        .sort(sortAbilitys) as map}
+        .sort(sortabilities) as map}
         <tr>
           <td>
             {map.type}
@@ -316,13 +316,13 @@
         </tr>
       {/each}
     {/if}
-    {#if showAll(abilitys).filter((x) => includes(x['timing'], 'Card resolve')).length > 0}
+    {#if showAll(abilities).filter((x) => includes(x['timing'], 'Card resolve')).length > 0}
       <tr>
         <td colspan="7">Resolving Cards</td>
       </tr>
-      {#each showAll(abilitys)
+      {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Card resolve'))
-        .sort(sortAbilitys) as map}
+        .sort(sortabilities) as map}
         <tr>
           <td>
             {map.type}
@@ -347,13 +347,13 @@
         </tr>
       {/each}
     {/if}
-    {#if showAll(abilitys).filter((x) => includes(x['timing'], 'Mastermind Ability')).length > 0}
+    {#if showAll(abilities).filter((x) => includes(x['timing'], 'Mastermind Ability')).length > 0}
       <tr>
         <td colspan="7">Abilities Mastermind</td>
       </tr>
-      {#each showAll(abilitys)
+      {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Mastermind Ability'))
-        .sort(sortAbilitys) as map}
+        .sort(sortabilities) as map}
         <tr>
           <td>
             {map.type}
@@ -378,13 +378,13 @@
         </tr>
       {/each}
     {/if}
-    {#if scriptRoles.filter((x) => x['goodwillRefusel'] !== undefined).length + showAll(abilitys).filter( (x) => includes(x['timing'], 'Goodwill ablility step') ).length > 0}
+    {#if scriptRoles.filter((x) => x['goodwillRefusel'] !== undefined).length + showAll(abilities).filter( (x) => includes(x['timing'], 'Goodwill ablility step') ).length > 0}
       <tr>
         <td colspan="7">Abilities Protagonists</td>
       </tr>
-      {#each showAll(abilitys)
+      {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Goodwill ablility step'))
-        .sort(sortAbilitys) as map}
+        .sort(sortabilities) as map}
         <tr>
           <td>
             {map.type}
@@ -409,7 +409,7 @@
       {/each}
       {#each scriptRoles
         .filter((x) => x['goodwillRefusel'] !== undefined)
-        .sort( (a, b) => sortAbilitys({ type: a.goodwillRefusel ?? 'Optional' }, { type: b.goodwillRefusel ?? 'Optional' }) ) as map}
+        .sort( (a, b) => sortabilities({ type: a.goodwillRefusel ?? 'Optional' }, { type: b.goodwillRefusel ?? 'Optional' }) ) as map}
         <tr>
           <td>
             {map.goodwillRefusel}
@@ -425,13 +425,13 @@
         </tr>
       {/each}
     {/if}
-    {#if showAll(abilitys).filter( (x) => includes(x['timing'], 'Incident trigger') ).length + usedIncedents.length + showAll(abilitys).filter( (x) => includes(x['timing'], 'Incident step') ).length > 0}
+    {#if showAll(abilities).filter( (x) => includes(x['timing'], 'Incident trigger') ).length + usedIncidents.length + showAll(abilities).filter( (x) => includes(x['timing'], 'Incident step') ).length > 0}
       <tr>
         <td colspan="7">Incidents</td>
       </tr>
-      {#each showAll(abilitys)
+      {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Incident trigger'))
-        .sort(sortAbilitys) as map}
+        .sort(sortabilities) as map}
         <tr>
           <td>
             {map.type}
@@ -454,9 +454,9 @@
           </td>
         </tr>
       {/each}
-      {#each showAll(abilitys)
+      {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Incident step'))
-        .sort(sortAbilitys) as map}
+        .sort(sortabilities) as map}
         <tr>
           <td>
             {map.type}
@@ -480,7 +480,7 @@
           </td>
         </tr>
       {/each}
-      {#each usedIncedents as i}
+      {#each usedIncidents as i}
         {@const char = isCharacterName(i.culprit) ? characters[i.culprit] : undefined}
         {@const limit = char ? char.paranoiaLimit : require(i).mob}
         {#each i.effect as e}
@@ -521,13 +521,13 @@
         {/each}
       {/each}
     {/if}
-    {#if showAll(abilitys).filter((x) => includes(x['timing'], 'Day End')).length > 0}
+    {#if showAll(abilities).filter((x) => includes(x['timing'], 'Day End')).length > 0}
       <tr>
         <td colspan="7">Night: Day End</td>
       </tr>
-      {#each showAll(abilitys)
+      {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Day End'))
-        .sort(sortAbilitys) as map}
+        .sort(sortabilities) as map}
         <tr>
           <td>
             {map.type}
@@ -551,13 +551,13 @@
         </tr>
       {/each}
     {/if}
-    {#if showAll(abilitys).filter((x) => includes(x['timing'], 'Loop End')).length > 0}
+    {#if showAll(abilities).filter((x) => includes(x['timing'], 'Loop End')).length > 0}
       <tr>
         <td colspan="7">Night: Loop End</td>
       </tr>
-      {#each showAll(abilitys)
+      {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Loop End'))
-        .sort(sortAbilitys) as map}
+        .sort(sortabilities) as map}
         <tr>
           <td>
             {map.type}

@@ -7,7 +7,7 @@
             "man"
         ],
         "startLocation": "City",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "passive",
                 "description": "At the start of a loop, place either a Paranoia counter, a Goodwill counter or an Intrigue counter on this character."
@@ -27,7 +27,7 @@
             "man"
         ],
         "startLocation": "City",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 2,
@@ -49,7 +49,7 @@
             "construct"
         ],
         "startLocation": "City",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "passive",
                 "description": "At script creation, this character cannot be a Person."
@@ -74,7 +74,7 @@
             "woman"
         ],
         "startLocation": "City",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "passive",
                 "description": "No action cards can be placed on this characte. All cards palced on this location are also applied to this character."

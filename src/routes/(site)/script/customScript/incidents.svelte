@@ -7,12 +7,12 @@
 
 	$: numberOfIncidetns = incedentGroup.selectedNumber;
 	$: incidents = incedentGroup.selectors;
-	$: maxIncedents = incedentGroup.script.daysPerLoop;
+	$: maxIncidents = incedentGroup.script.daysPerLoop;
 </script>
 
 <label>
-	Number of Incedents
-	<input type="number" bind:value={$numberOfIncidetns} max={$maxIncedents} />
+	Number of Incidents
+	<input type="number" bind:value={$numberOfIncidetns} max={$maxIncidents} />
 </label>
 
 <table>

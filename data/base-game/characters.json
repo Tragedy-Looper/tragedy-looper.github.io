@@ -7,7 +7,7 @@
             "boy"
         ],
         "startLocation": "School",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 2,
@@ -23,7 +23,7 @@
             "girl"
         ],
         "startLocation": "School",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 2,
@@ -39,7 +39,7 @@
             "girl"
         ],
         "startLocation": "School",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 3,
@@ -59,7 +59,7 @@
             "girl"
         ],
         "startLocation": "School",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 2,
@@ -77,7 +77,7 @@
         ],
         "startLocation": "School",
         "plotLessRole": true,
-        "abilitys": [
+        "abilities": [
             {
                 "type": "passive",
                 "description": "Always has a role not associated with current plot."
@@ -97,13 +97,13 @@
             "student",
             "girl"
         ],
-        "startLocation": "Shirne",
-        "abilitys": [
+        "startLocation": "Shrine",
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 3,
                 "restrictedToLocation": [
-                    "Shirne"
+                    "Shrine"
                 ],
                 "description": "-1 Intrigue on Shrine."
             },
@@ -121,8 +121,8 @@
         "tags": [
             "girl"
         ],
-        "startLocation": "Shirne",
-        "abilitys": [
+        "startLocation": "Shrine",
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 4,
@@ -144,7 +144,7 @@
             "man",
             "woman"
         ],
-        "startLocation": "Shirne",
+        "startLocation": "Shrine",
         "comesInLater": true,
         "scriptSpecified": [
             {
@@ -152,7 +152,7 @@
                 "type": "number"
             }
         ],
-        "abilitys": [
+        "abilities": [
             {
                 "type": "passive",
                 "description": "Enters game on predefined loop"
@@ -178,7 +178,7 @@
             "adult"
         ],
         "startLocation": "City",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 4,
@@ -201,7 +201,7 @@
             "adult"
         ],
         "startLocation": "City",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 3,
@@ -217,7 +217,7 @@
             "adult"
         ],
         "startLocation": "City",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 5,
@@ -234,7 +234,7 @@
             "student"
         ],
         "startLocation": "City",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 3,
@@ -255,7 +255,7 @@
             "man"
         ],
         "startLocation": "City",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 2,
@@ -282,7 +282,7 @@
                 "type": "location"
             }
         ],
-        "abilitys": [
+        "abilities": [
             {
                 "type": "passive",
                 "description": "May be regarded as in his turf."
@@ -303,7 +303,7 @@
             "man"
         ],
         "startLocation": "City",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 2,
@@ -326,9 +326,9 @@
         "forbiddenLocation": [
             "City",
             "School",
-            "Shirne"
+            "Shrine"
         ],
-        "abilitys": []
+        "abilities": []
     },
     {
         "name": "Nurse",
@@ -338,7 +338,7 @@
             "woman"
         ],
         "startLocation": "Hospital",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "active",
                 "goodwillRank": 2,
@@ -355,7 +355,7 @@
             "man"
         ],
         "startLocation": "City",
-        "abilitys": [
+        "abilities": [
             {
                 "type": "passive",
                 "description": "Mastermind chooses start location each loop"

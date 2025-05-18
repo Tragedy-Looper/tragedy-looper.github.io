@@ -227,7 +227,7 @@
             {
                 "day": 4,
                 "incident": "Night of Madness",
-                "culprit": "Shirne"
+                "culprit": "Shrine"
             },
             {
                 "day": 5,
@@ -285,7 +285,7 @@
             "Pop Idol": "Person",
             "Forensic Specialist": "Conspiracy Theorist",
             "Soldier": "Show-Off",
-            "Patient": "Werwolf"
+            "Patient": "Werewolf"
         },
         "incidents": [
             {
@@ -336,7 +336,7 @@
             "Giant Time Bomb Again"
         ],
         "subPlots": [
-            "The Resistacne",
+            "The Resistance",
             "An Unsettling Rumor"
         ],
         "difficultySets": [
@@ -521,7 +521,7 @@
         },
         "tragedySet": "Cosmic Mythology",
         "mainPlot": [
-            "The Sacred Wrods of Dagon"
+            "The Sacred Words of Dagon"
         ],
         "subPlots": [
             "The Faceless God",
@@ -588,7 +588,7 @@
         ],
         "subPlots": [
             "The Faceless God",
-            "The Resistacne"
+            "The Resistance"
         ],
         "difficultySets": [
             {

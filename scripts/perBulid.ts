@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 
-const types = ['characters', 'scripts', 'plots', 'roles', 'tragedys', 'incedents'] as const;
+const types = ['characters', 'scripts', 'plots', 'roles', 'tragedys', 'incidents'] as const;
 
 const dirs = fs.readdirSync('./data');
 const data =
@@ -80,7 +80,7 @@ translationData.then((translations) => {
 
     const innerObject = translations.map(([data, lang]) => {
         return `"${lang}": ${data}`;
-    }).reduce((p, c) => `${p}\n${c}`, "");
+    }).reduce((p, c) => `${p}${p.length == 0 ? '' : ','}\n${c}`, "");
 
     return `export const translations = {\n${innerObject}\n}`
 

@@ -66,7 +66,7 @@
     {
         "name": "Dance of Fools",
         "roles": {
-            "Frind": 1,
+            "Friend": 1,
             "Fool": 1
         },
         "rules": []
@@ -123,7 +123,7 @@
         "name": "I am a Master Detective",
         "roles": {
             "Conspiracy Theorist": 1,
-            "Frind": 1,
+            "Friend": 1,
             "Private Investigator": 1
         },
         "rules": []
@@ -141,7 +141,7 @@
                 "timing": [
                     "Loop End"
                 ],
-                "prerequisite": "There are at least 2 Intrigde counters on the Shrine."
+                "prerequisite": "There are at least 2 Intrigue counters on the Shrine."
             }
         ]
     },
@@ -165,7 +165,7 @@
                 "timing": [
                     "Loop End"
                 ],
-                "prerequisite": "The Ninja (or its corpse) has at least 2 Intrigde counters."
+                "prerequisite": "The Ninja (or its corpse) has at least 2 Intrigue counters."
             },
             {
                 "type": "Script creation",
@@ -177,7 +177,7 @@
         "name": "Fated Connections",
         "roles": {
             "Conspiracy Theorist": 1,
-            "Frind": 1,
+            "Friend": 1,
             "Serial Killer": 1
         },
         "rules": [
@@ -194,7 +194,7 @@
     {
         "name": "Love-Hate Spiral",
         "roles": {
-            "Frind": 1,
+            "Friend": 1,
             "Obstinate": 1
         },
         "rules": []
@@ -219,7 +219,7 @@
         "name": "Witches Tea Time",
         "roles": {
             "Conspiracy Theorist": 1,
-            "Frind": 1,
+            "Friend": 1,
             "Witch": 2
         },
         "rules": []
