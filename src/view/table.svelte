@@ -518,14 +518,18 @@
     </div>
     {#each r as ri}
       <div class="vertical-header role" style="grid-area: goodwillrefusal-{cssesc(ri.name)};">
-        {getString(ri.goodwillRefusel ?? '', lang)}
-        {#if ri.goodwillRefusel && (ri.goodwillOutburst || ri.scriptSpecified?.some((x) => x.name == 'world'))}|{/if}
-        {getString(ri.goodwillOutburst ? 'Goodwill Outburst' : '', lang)}
-        {#if ri.goodwillOutburst && ri.scriptSpecified?.some((x) => x.name == 'world')}|{/if}
-        {getString(
-          ri.scriptSpecified?.some((x) => x.name == 'world') ? 'World Selection' : '',
-          lang
-        )}
+
+        {#each [getString(ri.goodwillRefusel ?? '', lang),
+          getString(ri.goodwillOutburst ? 'Goodwill Outburst' : '', lang),
+          getString(ri.afterDeath?'After Death':'',lang),
+          getString(
+            ri.scriptSpecified?.some((x) => x.name == 'world') ? 'World Selection' : '',
+            lang
+          )
+        ].filter(x=>x?.length>0) as tag,i}
+          {#if i > 0} | {/if}
+          {tag}
+        {/each}
       </div>
     {/each}
 
@@ -595,6 +599,9 @@
       </h2>
       {#if ri.unkillable}
         <h2>{getString('Immortal', lang)}</h2>
+      {/if}
+      {#if ri.afterDeath}
+        <h2>{getString('After Death', lang)}</h2>
       {/if}
       {#each ri.abilities as a}
         <Ability {a} compact />
