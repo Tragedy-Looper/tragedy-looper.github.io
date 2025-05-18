@@ -471,11 +471,18 @@
     <!-- <div class="header vertical-header role" style="grid-area: role-ability-header;">Abbiliy</div> -->
     <div class="header vertical-header role" style="grid-area: role-header;">Roles</div>
     {#each r as ri}
+      {@const tags = [ri.unkillable ? 'Immortal' : '', ri.afterDeath ? 'After Death' : ''].filter(
+        (x) => x.length > 0
+      )}
       <div class="vertical-header role" style="grid-area: role-header-{cssesc(ri.name)};">
         {ri.name}
-        {#if ri.unkillable}
-          <!-- <small>(Unkillable)</small> -->
-          <small>{getString('(Immortal)', lang)}</small>
+        {#if tags.length > 0}
+          <small>
+            (
+            {tags.map((x) => getString(x, lang)).join(', ')}
+
+            )
+          </small>
         {/if}
       </div>
     {/each}
@@ -518,15 +525,7 @@
     </div>
     {#each r as ri}
       <div class="vertical-header role" style="grid-area: goodwillrefusal-{cssesc(ri.name)};">
-
-        {#each [getString(ri.goodwillRefusel ?? '', lang),
-          getString(ri.goodwillOutburst ? 'Goodwill Outburst' : '', lang),
-          getString(ri.afterDeath?'After Death':'',lang),
-          getString(
-            ri.scriptSpecified?.some((x) => x.name == 'world') ? 'World Selection' : '',
-            lang
-          )
-        ].filter(x=>x?.length>0) as tag,i}
+        {#each [getString(ri.goodwillRefusel ?? '', lang), getString(ri.goodwillOutburst ? 'Goodwill Outburst' : '', lang), getString(ri.scriptSpecified?.some((x) => x.name == 'world') ? 'World Selection' : '', lang)].filter((x) => x?.length > 0) as tag, i}
           {#if i > 0} | {/if}
           {tag}
         {/each}
