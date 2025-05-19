@@ -6,7 +6,7 @@
             "adult",
             "man"
         ],
-        "startLocation": "City",
+        "startLocation": ["City"],
         "abilities": [
             {
                 "type": "active",
@@ -35,7 +35,7 @@
                 "type": "number"
             }
         ],
-        "startLocation": "School",
+        "startLocation": ["School"],
         "abilities": [
             {
                 "type": "passive",
@@ -55,7 +55,7 @@
             "adult",
             "man"
         ],
-        "startLocation": "School",
+        "startLocation": ["School"],
         "abilities": [
             {
                 "type": "active",
@@ -78,7 +78,7 @@
             "animal"
         ],
         "doseNotTriggerIncidentEffect": true,
-        "startLocation": "School",
+        "startLocation": ["School"],
         "abilities": [
             {
                 "type": "passive",

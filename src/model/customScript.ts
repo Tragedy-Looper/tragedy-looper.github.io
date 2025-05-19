@@ -736,7 +736,7 @@ export class CustomScript {
         });
 
 
-        this.specialRules.set(require(script).specialRules ?? '');
+        this.specialRules.set(require(script).specialRules?.join('\n\n') ?? '');
         this.specifics.set(script.specifics);
         this.story.set(script.story);
         this.mastermindHints.set(script.mastermindHints);

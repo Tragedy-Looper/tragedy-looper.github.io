@@ -6,7 +6,7 @@
             "student",
             "boy"
         ],
-        "startLocation": "School",
+        "startLocation": ["School"],
         "abilities": [
             {
                 "type": "active",
@@ -22,7 +22,7 @@
             "student",
             "girl"
         ],
-        "startLocation": "School",
+        "startLocation": ["School"],
         "abilities": [
             {
                 "type": "active",
@@ -38,7 +38,7 @@
             "student",
             "girl"
         ],
-        "startLocation": "School",
+        "startLocation": ["School"],
         "abilities": [
             {
                 "type": "active",
@@ -58,7 +58,7 @@
             "student",
             "girl"
         ],
-        "startLocation": "School",
+        "startLocation": ["School"],
         "abilities": [
             {
                 "type": "active",
@@ -75,7 +75,7 @@
             "student",
             "boy"
         ],
-        "startLocation": "School",
+        "startLocation": ["School"],
         "plotLessRole": true,
         "abilities": [
             {
@@ -97,7 +97,7 @@
             "student",
             "girl"
         ],
-        "startLocation": "Shrine",
+        "startLocation": ["Shrine"],
         "abilities": [
             {
                 "type": "active",
@@ -121,7 +121,7 @@
         "tags": [
             "girl"
         ],
-        "startLocation": "Shrine",
+        "startLocation": ["Shrine"],
         "abilities": [
             {
                 "type": "active",
@@ -144,7 +144,7 @@
             "man",
             "woman"
         ],
-        "startLocation": "Shrine",
+        "startLocation": ["Shrine"],
         "comesInLater": true,
         "scriptSpecified": [
             {
@@ -177,7 +177,7 @@
             "man",
             "adult"
         ],
-        "startLocation": "City",
+        "startLocation": ["City"],
         "abilities": [
             {
                 "type": "active",
@@ -200,7 +200,7 @@
             "man",
             "adult"
         ],
-        "startLocation": "City",
+        "startLocation": ["City"],
         "abilities": [
             {
                 "type": "active",
@@ -216,7 +216,7 @@
             "woman",
             "adult"
         ],
-        "startLocation": "City",
+        "startLocation": ["City"],
         "abilities": [
             {
                 "type": "active",
@@ -233,7 +233,7 @@
             "girl",
             "student"
         ],
-        "startLocation": "City",
+        "startLocation": ["City"],
         "abilities": [
             {
                 "type": "active",
@@ -254,7 +254,7 @@
             "adult",
             "man"
         ],
-        "startLocation": "City",
+        "startLocation": ["City"],
         "abilities": [
             {
                 "type": "active",
@@ -275,7 +275,7 @@
             "adult",
             "man"
         ],
-        "startLocation": "City",
+        "startLocation": ["City"],
         "scriptSpecified": [
             {
                 "name": "Turf",
@@ -302,7 +302,7 @@
             "adult",
             "man"
         ],
-        "startLocation": "City",
+        "startLocation": ["City"],
         "abilities": [
             {
                 "type": "active",
@@ -322,7 +322,7 @@
         "tags": [
             "boy"
         ],
-        "startLocation": "Hospital",
+        "startLocation": ["Hospital"],
         "forbiddenLocation": [
             "City",
             "School",
@@ -337,7 +337,7 @@
             "adult",
             "woman"
         ],
-        "startLocation": "Hospital",
+        "startLocation": ["Hospital"],
         "abilities": [
             {
                 "type": "active",
@@ -354,7 +354,7 @@
             "adult",
             "man"
         ],
-        "startLocation": "City",
+        "startLocation": ["City", "School", "Shrine", "Hospital"],
         "abilities": [
             {
                 "type": "passive",

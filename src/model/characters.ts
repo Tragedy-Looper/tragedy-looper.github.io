@@ -7,7 +7,7 @@ import * as data from "../data";
 
 export type LocationName = 'Hospital' | 'Shrine' | 'City' | 'School';
 export const locations = ['Hospital', 'Shrine', 'City', 'School'] as const;
-export type Tag = 'boy' | 'girl' | 'student' | "man" | "woman" | "adult" | 'construct' | 'animal';
+export type Tag = 'boy' | 'girl' | 'student' | "man" | "woman" | "adult" | 'construct' | 'animal' | 'tree' | 'little sister';
 
 
 export type Character = Characters[keyof Characters];
@@ -28,7 +28,7 @@ type CharacterIntern = {
     paranoiaLimit: number,
     tags: readonly Tag[],
     abilities: readonly Ability[],
-    startLocation: LocationName;
+    startLocation: readonly LocationName[];
     forbiddenLocation?: readonly LocationName[],
     comesInLater?: true,
     plotLessRole?: true,

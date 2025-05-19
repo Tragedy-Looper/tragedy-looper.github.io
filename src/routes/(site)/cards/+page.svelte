@@ -12,7 +12,7 @@
   import ExportView from '../../../view/exportView.svelte';
   import { getLocalisatio, setLocalisatio } from '../../../storage';
   import { browser } from '$app/environment';
-  import { characters } from '../../../model/characters';
+  import { characters, locations } from '../../../model/characters';
 
   let lang: string;
   onMount(() => {
@@ -59,7 +59,7 @@
     >
       <img src={card.image} alt="character image" class="back image" />
 
-      {#each ['City', 'School', 'Shrine', 'Hospital'] as location}
+      {#each locations as location}
         {#if card.startLocation.includes(location)}
           <img
             src="/cards/general/location-{location.toLocaleLowerCase()}-start.png"
