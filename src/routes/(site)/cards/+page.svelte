@@ -1,17 +1,8 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
-  import {
-    getAllKeys,
-    getAllTranslationsForLanguage,
-    getMissingForLanguage,
-    getString as getStringOriginal,
-  } from '../../../translations';
-  import { distinct } from '../../../misc';
+  import { getString as getStringOriginal } from '../../../translations';
   import { onMount } from 'svelte';
-  import ExportView from '../../../view/exportView.svelte';
-  import { getLocalisatio, setLocalisatio } from '../../../storage';
-  import { browser } from '$app/environment';
   import { characters, locations } from '../../../model/characters';
 
   let lang: string;
@@ -62,32 +53,32 @@
       {#each locations as location}
         {#if card.startLocation.includes(location)}
           <img
-            src="/cards/general/location-{location.toLocaleLowerCase()}-start.png"
+            src="{base}/cards/general/location-{location.toLocaleLowerCase()}-start.png"
             alt={getString(location)}
             class="location back"
           />
         {:else if card.forbiddenLocation.includes(location)}
           <img
-            src="/cards/general/location-{location.toLocaleLowerCase()}-forbidden.png"
+            src="{base}/cards/general/location-{location.toLocaleLowerCase()}-forbidden.png"
             alt={getString(location)}
             class="location back"
           />
         {:else if card.startLocation.length == 0}
           <img
-            src="/cards/general/location-{location.toLocaleLowerCase()}-start.png"
+            src="{base}/cards/general/location-{location.toLocaleLowerCase()}-start.png"
             alt={getString(location)}
             class="location back"
           />
         {:else}
           <img
-            src="/cards/general/location-{location.toLocaleLowerCase()}-blank.png"
+            src="{base}/cards/general/location-{location.toLocaleLowerCase()}-blank.png"
             alt={getString(location)}
             class="location back"
           />
         {/if}
       {/each}
       <img
-        src="/cards/general/paranoia-{card.paranoiaLimit}.png"
+        src="{base}/cards/general/paranoia-{card.paranoiaLimit}.png"
         alt={getString('paranoia')}
         class="paranoia back"
       />
@@ -101,14 +92,14 @@
               <ul class="perLoop">
                 {#each Array.from({ length: ability.timesPerLoop }) as _, i}
                   <li>
-                    <img src="/cards/general/loop.png" alt="loop icon" />
+                    <img src="{base}/cards/general/loop.png" alt="loop icon" />
                   </li>
                 {/each}
               </ul>
               <ul class="goodwillRank">
                 {#each Array.from({ length: ability.goodwillRank }) as _, i}
                   <li>
-                    <img src="/cards/general/goodwill.png" alt="goodwill icon" />
+                    <img src="{base}/cards/general/goodwill.png" alt="goodwill icon" />
                   </li>
                 {/each}
               </ul>
