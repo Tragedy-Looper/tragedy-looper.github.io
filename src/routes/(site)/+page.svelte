@@ -21,6 +21,10 @@
     {getString('If your are the Mastermind')} <a href="{base}/script">{getString('choose a script (SPOILER!!)')}</a>.
   </p>
   <p>{getString('Otherwise ask your Mastermind to choose a script and send you the link.')}</p>
+  
+  <p>
+    <a href="{base}/cards">{getString('If translations exists, you find localized character cards by following this link.')}</a>
+  </p>
 
   <p>
     {getString('Feedback (in english) is appriciated on')} <a

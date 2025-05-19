@@ -317,6 +317,8 @@
   "normal": "normal",
   "number": "Nummer",
   "Nurse": "Krankenschwester",
+  "paranoia": "Paranoia",
+  "If translations exists, you find localized character cards by following this link.":"Falls Übersetzungen existieren, findet man lokalisierte Charakterkarten über diesen Link.",
   "Obstinate": "Stur",
   "Office Worker": "Büroangestellter",
   "On character death": "Beim Tod eines Charakters",
@@ -326,6 +328,7 @@
   "One charcters in the same location dies.": "Ein Charakter am selben Ort stirbt.",
   "One or more Location Curses can’t be attached to characters": "Ein oder mehrere Ortsflüche können nicht an Charaktere angehängt werden",
   "One other character in the culprit’s location dies. The same character may be the culprit of several Serial Murder Incidents.": "Ein anderer Charakter am Ort des Täters stirbt. Derselbe Charakter kann der Täter mehrerer Serienmord-Vorfälle sein.",
+  "Only at": "Nur in",
   "Only show Missing": "Nur fehlende anzeigen",
   "Optional": "Optional",
   "Optional Loss condition: Protagonists Death": "Optionale Niederlage: Charaktertod",
@@ -626,5 +629,4 @@
   "Kill one character in the same location as Overlord.": "Töte einen Charakter am selben Ort wie den Gebieter.",
   "Kill one character of the opposite sex in this location who has at least 1 Paranoia and 1 Intrigue.": "Töte einen Charakter des anderen Geschlechts an diesem Ort, der mindestens 1 Paranoia und 1 Intrige hat.",
   "Kill the Key Person": "Töte die Schlüsselperson"
-
 }

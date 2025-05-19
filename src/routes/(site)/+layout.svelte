@@ -5,3 +5,11 @@
 <a href={`${base}/`}>Home</a>
 
 <slot />
+
+<style>
+  @media print {
+    a {
+      display: none;
+    }
+  }
+</style>
