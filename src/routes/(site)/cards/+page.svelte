@@ -17,9 +17,9 @@
       ...value,
       forbiddenLocation: 'forbiddenLocation' in value ? value.forbiddenLocation : [],
       name: getString(value.name),
-      gender: value.tags.includes('boy' as never)
+      gender: value.tags.includes('boy' as never)|| value.tags.includes('man' as never)
         ? ('male' as const)
-        : value.tags.includes('girl' as never)
+        : value.tags.includes('girl' as never) || value.tags.includes('woman' as never)
         ? ('female' as const)
         : ('diverse' as const),
       tags: value.tags.map(getString),
