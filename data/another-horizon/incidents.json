@@ -1,0 +1,52 @@
+{
+    "$schema": "../incidents.schema.json",
+    "incidents": [
+        {
+            "name": "Drifting to Another World",
+            "effect": [
+                {
+                    "prerequisite": "1 Intrigue on the School",
+                    "description": "Everyone in the School dies."
+                },
+                {
+                    "type": "Mandatory Loss condition: Protagonists Death",
+                    "prerequisite": "2 Intrigue on the School"
+                }
+            ]
+        },
+        {
+            "name": "Assassination",
+            "effect": [
+                {
+                    "description": "Kill any other character in this location or on the diagonally opposite location. When determining whether this incident occurs or not, count Intrigue instead of Paranoia."
+                }
+            ]
+        },
+        {
+            "name": "World End",
+            "effect": [
+                {
+                    "type": "Mandatory Loss condition: Protagonists Death",
+                    "prerequisite": "In Normal world",
+                    "description": "All characters die."
+                }
+            ]
+        },
+        {
+            "name": "World Convergence",
+            "effect": [
+                {
+                    "description": "Switch world to Normal world. The world cannot be switched for the remainder of this loop"
+                }
+            ]
+        },
+        {
+            "name": "Small Force",
+            "effect": [
+                {
+                    "description": "The Protagonist Leader chooses any character and 1 Goodwill, or 1 Paranoia, or 1 Intrigue. Put one chosen counter on that character. When determining whether this incident occurs or not, the culprit is regarded as having Paranoia Limit -1."
+                }
+            ]
+        }
+    ]
+}

@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
+		"generateSchema": "npx tsx scripts/generateTragedysSchema.ts",
 		"prepare": "npx tsx scripts/perBulid.ts",
 		"dev": "vite dev",
 		"build": "vite build",

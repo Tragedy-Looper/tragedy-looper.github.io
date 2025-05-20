@@ -521,7 +521,7 @@
   "These Incidents do not specify a character as a culprit, but a location. If there are enough corpses (specified by the incident) on the specific location, the incident happens.": "Diese Vorfälle geben keinen Täter, sondern einen Ort an. Wenn sich genügend Leichen (wie im Vorfall angegeben) an diesem Ort befinden, tritt der Vorfall ein.",
   "This card is a corpse": "Diese Karte ist eine Leiche.",
   "This character always triggers its incidents (if alive), regardless the amount of Paranoia on it. After resolving the Incident, the Mastermind declared that “Animus abilities were used.”.": "Dieser Charakter löst seine Vorfälle immer aus (wenn er lebt), unabhängig von der Menge an Paranoia. Nach der Abhandlung des Vorfalls erklärt der Mastermind, dass die Animus-Fähigkeiten genutzt wurden.",
-  "This character amways triggers its Incidents (if alive), regardless of the amount of Paranoia counters on it.": "Dieser Charakter löst seine Vorfälle immer aus (wenn er lebt), unabhängig von der Anzahl der Paranoia-Marker.",
+  "This character always triggers its Incidents (if alive), regardless of the amount of Paranoia counters on it.": "Dieser Charakter löst seine Vorfälle immer aus (wenn er lebt), unabhängig von der Anzahl der Paranoia-Marker.",
   "This character can never be a culprit.": "Dieser Charakter kann niemals ein Täter sein.",
   "This character dies.": "Dieser Charakter stirbt.",
   "This character does not appear on the board until the start of the day specified by the script.": "Dieser Charakter erscheint erst zu Beginn des im Skript angegebenen Tages auf dem Spielbrett.",

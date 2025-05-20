@@ -1,93 +1,104 @@
-[
-    {
-        "name": "Teacher",
-        "paranoiaLimit": 2,
-        "tags": [
-            "adult",
-            "man"
-        ],
-        "startLocation": ["City"],
-        "abilities": [
-            {
-                "type": "active",
-                "goodwillRank": 3,
-                "description": "Pick a Student in this location, and add or remove a Paranoia from that student."
-            },
-            {
-                "type": "active",
-                "goodwillRank": 4,
-                "timesPerLoop": 1,
-                "description": "Reveal the role of one Student in this location."
-            }
-        ]
-    },
-    {
-        "name": "Transfer Student",
-        "paranoiaLimit": 2,
-        "tags": [
-            "student",
-            "girl"
-        ],
-        "comesInLater": true,
-        "scriptSpecified": [
-            {
-                "name": "enters on day",
-                "type": "number"
-            }
-        ],
-        "startLocation": ["School"],
-        "abilities": [
-            {
-                "type": "passive",
-                "description": "This character does not appear on the board until the start of the day specified by the script."
-            },
-            {
-                "type": "active",
-                "goodwillRank": 2,
-                "description": "Change an Intrigue conuter on any other character in this location to a Goodwill counter."
-            }
-        ]
-    },
-    {
-        "name": "Soldier",
-        "paranoiaLimit": 3,
-        "tags": [
-            "adult",
-            "man"
-        ],
-        "startLocation": ["School"],
-        "abilities": [
-            {
-                "type": "active",
-                "goodwillRank": 2,
-                "timesPerLoop": 1,
-                "description": "Place 2 Paranoia on another character in this location."
-            },
-            {
-                "type": "active",
-                "goodwillRank": 5,
-                "timesPerLoop": 1,
-                "description": "The Protagonists cannot die for the reminder of the loop."
-            }
-        ]
-    },
-    {
-        "name": "Black Cat",
-        "paranoiaLimit": 0,
-        "tags": [
-            "animal"
-        ],
-        "doseNotTriggerIncidentEffect": true,
-        "startLocation": ["School"],
-        "abilities": [
-            {
-                "type": "passive",
-                "description": "At the start of each loop, place an Intrigue on the Shrine."
-            },
-            {
-                "type": "passive",
-                "description": "Incidents of which this character is the culprit, change their effect into \"no effect\". (rule-wise they occur)"
-            }
-        ]
-    }
-]
+{
+    "$schema": "../characters.schema.json",
+    "characters": [
+        {
+            "name": "Teacher",
+            "paranoiaLimit": 2,
+            "tags": [
+                "adult",
+                "man"
+            ],
+            "startLocation": [
+                "City"
+            ],
+            "abilities": [
+                {
+                    "type": "active",
+                    "goodwillRank": 3,
+                    "description": "Pick a Student in this location, and add or remove a Paranoia from that student."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 4,
+                    "timesPerLoop": 1,
+                    "description": "Reveal the role of one Student in this location."
+                }
+            ]
+        },
+        {
+            "name": "Transfer Student",
+            "paranoiaLimit": 2,
+            "tags": [
+                "student",
+                "girl"
+            ],
+            "comesInLater": true,
+            "scriptSpecified": [
+                {
+                    "name": "enters on day",
+                    "type": "number"
+                }
+            ],
+            "startLocation": [
+                "School"
+            ],
+            "abilities": [
+                {
+                    "type": "passive",
+                    "description": "This character does not appear on the board until the start of the day specified by the script."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 2,
+                    "description": "Change an Intrigue conuter on any other character in this location to a Goodwill counter."
+                }
+            ]
+        },
+        {
+            "name": "Soldier",
+            "paranoiaLimit": 3,
+            "tags": [
+                "adult",
+                "man"
+            ],
+            "startLocation": [
+                "School"
+            ],
+            "abilities": [
+                {
+                    "type": "active",
+                    "goodwillRank": 2,
+                    "timesPerLoop": 1,
+                    "description": "Place 2 Paranoia on another character in this location."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 5,
+                    "timesPerLoop": 1,
+                    "description": "The Protagonists cannot die for the reminder of the loop."
+                }
+            ]
+        },
+        {
+            "name": "Black Cat",
+            "paranoiaLimit": 0,
+            "tags": [
+                "animal"
+            ],
+            "doseNotTriggerIncidentEffect": true,
+            "startLocation": [
+                "School"
+            ],
+            "abilities": [
+                {
+                    "type": "passive",
+                    "description": "At the start of each loop, place an Intrigue on the Shrine."
+                },
+                {
+                    "type": "passive",
+                    "description": "Incidents of which this character is the culprit, change their effect into \"no effect\". (rule-wise they occur)"
+                }
+            ]
+        }
+    ]
+}

@@ -1,297 +1,300 @@
-[
-    {
-        "name": "The Noble Bloodline",
-        "roles": {
-            "Key Person": 1,
-            "Vampire": 1
-        },
-        "rules": [
-            {
-                "type": "Script creation",
-                "description": "Key Person and Vampire must be of oposing sex."
-            }
-        ]
-    },
-    {
-        "name": "Moonlight Beast",
-        "roles": {
-            "Werewolf": 1
-        },
-        "rules": []
-    },
-    {
-        "name": "Night Mist Nightmare",
-        "roles": {
-            "Nightmare": 1
-        },
-        "rules": []
-    },
-    {
-        "name": "The Ones from the Grave",
-        "roles": {},
-        "rules": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Always"
-                ],
-                "description": "All corpses that had the role Person, Coward or Show-Off change into having the role of Zombie"
-            }
-        ]
-    },
-    {
-        "name": "The Cursed Land",
-        "roles": {
-            "Ghost": 1,
-            "Show-Off": 1
-        },
-        "rules": [
-            {
-                "type": "Optional",
-                "timing": [
-                    "Loop Start"
-                ],
-                "description": "Place a Curse on the Ghost’s starting location"
+{
+    "$schema": "../plots.schema.json",
+    "plots": [
+        {
+            "name": "The Noble Bloodline",
+            "roles": {
+                "Key Person": 1,
+                "Vampire": 1
             },
-            {
-                "type": "Optional Loss condition: Protagonists Death",
-                "timing": [
-                    "Day End"
-                ],
-                "prerequisite": "One or more Location Curses can’t be attached to characters"
-            }
-        ]
-    },
-    {
-        "name": "Those with Habits",
-        "roles": {
-            "Ghost": 1,
-            "Serial Killer": 1,
-            "Loved One": 1
+            "rules": [
+                {
+                    "type": "Script creation",
+                    "description": "Key Person and Vampire must be of oposing sex."
+                }
+            ]
         },
-        "rules": []
-    },
-    {
-        "name": "Witch’s Curse",
-        "roles": {
-            "Conspiracy Theorist": 1,
-            "Witch": 1
-        },
-        "rules": [
-            {
-                "type": "Optional",
-                "timing": [
-                    "Loop Start"
-                ],
-                "description": "Place a Curse on the Witch’s startiong location."
-            }
-        ]
-    },
-    {
-        "name": "The Key Girl",
-        "roles": {
-            "Key Person": 1
-        },
-        "rules": [
-            {
-                "type": "Script creation",
-                "description": "The Key Person must be a Girl."
-            }
-        ]
-    },
-    {
-        "name": "Monster Intrigue",
-        "roles": {
-            "Conspiracy Theorist": 1
-        },
-        "rules": [
-            {
-                "type": "Optional",
-                "timesPerLoop": 2,
-                "timesPerDay": 1,
-                "timing": [
-                    "Mastermind Ability"
-                ],
-                "prerequisite": "A Location where a character with Goodwill Refusal is.",
-                "description": "Place an Intrigue on one location."
-            }
-        ]
-    },
-    {
-        "name": "Panic and Obsession",
-        "roles": {
-            "Serial Killer": 1,
-            "Coward": 1,
-            "Witch": 1
-        },
-        "rules": []
-    },
-    {
-        "name": "People Who Don’t Listen",
-        "roles": {
-            "Show-Off": 1,
-            "Conspiracy Theorist": 1,
-            "Coward": 1
-        },
-        "rules": []
-    },
-    {
-        "name": "Choir to the Outside God",
-        "roles": {
-            "Key Person": 1,
-            "Sacrifice": 1,
-            "Immortal": 1
-        },
-        "rules": [
-            {
-                "type": "Loss condition: Tragedy",
-                "timing": [
-                    "Loop End"
-                ],
-                "prerequisite": "At least 5 characters with Intrigue on them."
-            }
-        ]
-    },
-    {
-        "name": "The Sacred Words of Dagon",
-        "roles": {
-            "Key Person": 1,
-            "Cultist": 1,
-            "Deep One": 1
-        },
-        "rules": [
-            {
-                "type": "Loss condition: Tragedy",
-                "timing": [
-                    "Loop End"
-                ],
-                "prerequisite": "As manay or more Intrigue on the Shrine then the Extra Gauge shows.",
-                "description": " (If the Extra Gauge is at zero, the Protagonists always lose)"
-            }
-        ]
-    },
-    {
-        "name": "The King in Yellow",
-        "roles": {
-            "Sacrifice": 1,
-            "Cultist": 1
-        },
-        "rules": [
-            {
-                "type": "Loss condition: Tragedy",
-                "timing": [
-                    "Loop End"
-                ],
-                "prerequisite": "The Extra Gauge has increased at all this loop."
-            }
-        ]
-    },
-    {
-        "name": "Giant Time Bomb Again",
-        "roles": {
-            "Witch": 1,
-            "Deep One": 1
-        },
-        "rules": [
-            {
-                "type": "Loss condition: Tragedy",
-                "timing": [
-                    "Loop End"
-                ],
-                "prerequisite": "2 Intrigue on the Witch’s starting location."
-            }
-        ]
-    },
-    {
-        "name": "Bloody Rites",
-        "roles": {
-            "Witch": 1,
-            "Immortal": 1
-        },
-        "rules": [
-            {
-                "type": "Loss condition: Tragedy",
-                "timing": [
-                    "Loop End"
-                ],
-                "prerequisite": "As many or more corpses as the Extra Gauge shows.",
-                "description": "(If the Extra Gauge is at zero, the Protagonists always lose)"
-            }
-        ]
-    },
-    {
-        "name": "The Resistance",
-        "roles": {
-            "Conspiracy Theorist": 1,
-            "Wizard": 1,
-            "Serial Killer": 1
-        },
-        "rules": []
-    },
-    {
-        "name": "People Who Saw",
-        "roles": {
-            "Conspiracy Theorist": 1,
-            "Witness": 1
-        },
-        "rules": []
-    },
-    {
-        "name": "The Profound Race",
-        "roles": {
-            "Serial Killer": 1,
-            "Time Traveler": 1
-        },
-        "rules": []
-    },
-    {
-        "name": "Whispers from the Deep",
-        "roles": {
-            "Deep One": 1,
-            "Paranoiac": 1
-        },
-        "rules": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Always"
-                ],
-                "description": "The Paranoiac gains all the abilities of the Key Person"
-            }
-        ]
-    },
-    {
-        "name": "The Faceless God",
-        "roles": {
-            "Wizard": 1,
-            "Faceless": 1
-        },
-        "rules": []
-    },
-    {
-        "name": "Twisted Truth",
-        "roles": {
-            "Paranoiac": 1
-        },
-        "scriptSpecified": [
-            {
-                "name": "Extra Plot",
-                "type": "plot"
-            }
-        ],
-        "rules": [
-            {
-                "type": "Script creation",
-                "description": "The Informer must be included. The script writer then chooses one \"extra\" main plot."
+        {
+            "name": "Moonlight Beast",
+            "roles": { 
+                "Werewolf": 1
             },
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Loop Start"
-                ],
-                "prerequisite": "The Extra Gauge is on 2 or more.",
-                "description": "Druing this loop, the original main plot is replaced by the \"extra\" main plot."
-            }
-        ]
-    }
-]
+            "rules": []
+        },
+        {
+            "name": "Night Mist Nightmare",
+            "roles": {
+                "Nightmare": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "The Ones from the Grave",
+            "roles": {},
+            "rules": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Always"
+                    ],
+                    "description": "All corpses that had the role Person, Coward or Show-Off change into having the role of Zombie"
+                }
+            ]
+        },
+        {
+            "name": "The Cursed Land",
+            "roles": {
+                "Ghost": 1,
+                "Show-Off": 1
+            },
+            "rules": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Loop Start"
+                    ],
+                    "description": "Place a Curse on the Ghost’s starting location"
+                },
+                {
+                    "type": "Optional Loss condition: Protagonists Death",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "One or more Location Curses can’t be attached to characters"
+                }
+            ]
+        },
+        {
+            "name": "Those with Habits",
+            "roles": {
+                "Ghost": 1,
+                "Serial Killer": 1,
+                "Loved One": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "Witch’s Curse",
+            "roles": {
+                "Conspiracy Theorist": 1,
+                "Witch": 1
+            },
+            "rules": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Loop Start"
+                    ],
+                    "description": "Place a Curse on the Witch’s startiong location."
+                }
+            ]
+        },
+        {
+            "name": "The Key Girl",
+            "roles": {
+                "Key Person": 1
+            },
+            "rules": [
+                {
+                    "type": "Script creation",
+                    "description": "The Key Person must be a Girl."
+                }
+            ]
+        },
+        {
+            "name": "Monster Intrigue",
+            "roles": {
+                "Conspiracy Theorist": 1
+            },
+            "rules": [
+                {
+                    "type": "Optional",
+                    "timesPerLoop": 2,
+                    "timesPerDay": 1,
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "prerequisite": "A Location where a character with Goodwill Refusal is.",
+                    "description": "Place an Intrigue on one location."
+                }
+            ]
+        },
+        {
+            "name": "Panic and Obsession",
+            "roles": {
+                "Serial Killer": 1,
+                "Coward": 1,
+                "Witch": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "People Who Don’t Listen",
+            "roles": {
+                "Show-Off": 1,
+                "Conspiracy Theorist": 1,
+                "Coward": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "Choir to the Outside God",
+            "roles": {
+                "Key Person": 1,
+                "Sacrifice": 1,
+                "Immortal": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "At least 5 characters with Intrigue on them."
+                }
+            ]
+        },
+        {
+            "name": "The Sacred Words of Dagon",
+            "roles": {
+                "Key Person": 1,
+                "Cultist": 1,
+                "Deep One": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "As manay or more Intrigue on the Shrine then the Extra Gauge shows.",
+                    "description": " (If the Extra Gauge is at zero, the Protagonists always lose)"
+                }
+            ]
+        },
+        {
+            "name": "The King in Yellow",
+            "roles": {
+                "Sacrifice": 1,
+                "Cultist": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "The Extra Gauge has increased at all this loop."
+                }
+            ]
+        },
+        {
+            "name": "Giant Time Bomb Again",
+            "roles": {
+                "Witch": 1,
+                "Deep One": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "2 Intrigue on the Witch’s starting location."
+                }
+            ]
+        },
+        {
+            "name": "Bloody Rites",
+            "roles": {
+                "Witch": 1,
+                "Immortal": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "As many or more corpses as the Extra Gauge shows.",
+                    "description": "(If the Extra Gauge is at zero, the Protagonists always lose)"
+                }
+            ]
+        },
+        {
+            "name": "The Resistance",
+            "roles": {
+                "Conspiracy Theorist": 1,
+                "Wizard": 1,
+                "Serial Killer": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "People Who Saw",
+            "roles": {
+                "Conspiracy Theorist": 1,
+                "Witness": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "The Profound Race",
+            "roles": {
+                "Serial Killer": 1,
+                "Time Traveler": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "Whispers from the Deep",
+            "roles": {
+                "Deep One": 1,
+                "Paranoiac": 1
+            },
+            "rules": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Always"
+                    ],
+                    "description": "The Paranoiac gains all the abilities of the Key Person"
+                }
+            ]
+        },
+        {
+            "name": "The Faceless God",
+            "roles": {
+                "Wizard": 1,
+                "Faceless": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "Twisted Truth",
+            "roles": {
+                "Paranoiac": 1
+            },
+            "scriptSpecified": [
+                {
+                    "name": "Extra Plot",
+                    "type": "plot"
+                }
+            ],
+            "rules": [
+                {
+                    "type": "Script creation",
+                    "description": "The Informer must be included. The script writer then chooses one \"extra\" main plot."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Loop Start"
+                    ],
+                    "prerequisite": "The Extra Gauge is on 2 or more.",
+                    "description": "Druing this loop, the original main plot is replaced by the \"extra\" main plot."
+                }
+            ]
+        }
+    ]
+}

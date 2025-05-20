@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Incidents",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "incidents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "faked": {
+            "type": "boolean"
+          },
+          "repeatedCulprit": {
+            "type": "boolean"
+          },
+          "mob": {
+            "type": "number"
+          },
+          "scriptSpecified": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "location",
+                    "incident",
+                    "role",
+                    "character",
+                    "plot",
+                    "number",
+                    "text"
+                  ]
+                },
+                "optional": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "name",
+                "type"
+              ]
+            }
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "location",
+              "incident",
+              "role",
+              "character",
+              "plot",
+              "number",
+              "text"
+            ]
+          },
+          "optional": {
+            "type": "boolean"
+          },
+          "effect": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "description": {
+                  "type": "string"
+                },
+                "prerequisite": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "Mandatory Loss condition: Protagonists Death",
+                    "Optional Loss condition: Protagonists Death",
+                    "Delayed Loss condition: Protagonists Death",
+                    "Loss condition: Tragedy",
+                    "Script creation",
+                    "Optional",
+                    "Mandatory"
+                  ]
+                }
+              },
+              "anyOf": [
+                {
+                  "required": [
+                    "description"
+                  ]
+                },
+                {
+                  "required": [
+                    "type"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "name",
+          "effect"
+        ]
+      }
+    }
+  }
+}

@@ -1,79 +1,82 @@
-[
-    {
-        "name": "Murder",
-        "effect": [
-            {
-                "description": "One (1) other character in culprit’s Location dies"
-            }
-        ]
-    },
-    {
-        "name": "Increasing Unease",
-        "effect": [
-            {
-                "description": "Place 2 Paranoia on any character, then 1 Intrigue on any other character."
-            }
-        ]
-    },
-    {
-        "name": "Foul Evil",
-        "effect": [
-            {
-                "description": "Place 2 Intrigue on the Shrine."
-            }
-        ]
-    },
-    {
-        "name": "Suicide",
-        "effect": [
-            {
-                "description": "The culprit dies."
-            }
-        ]
-    },
-    {
-        "name": "Hospital Incident",
-        "effect": [
-            {
-                "prerequisite": "1 Intrigue on the Hospital",
-                "description": "Everyone in the Hospital dies."
-            },
-            {
-                "type": "Mandatory Loss condition: Protagonists Death",
-                "prerequisite": "2 Intrigue on the Hospital"
-            }
-        ]
-    },
-    {
-        "name": "Faraway Murder",
-        "effect": [
-            {
-                "description": "One character with at least 2 Intrigue dies."
-            }
-        ]
-    },
-    {
-        "name": "Missing Person",
-        "effect": [
-            {
-                "description": "Move culprit to any Location. Put 1 Intrigue on that Location."
-            }
-        ]
-    },
-    {
-        "name": "Spreading",
-        "effect": [
-            {
-                "description": "Move 2 Goodwill from any character to any other character."
-            }
-        ]
-    },
-    {
-        "name": "Butterfly Effect",
-        "effect": [
-            {
-                "description": "Put any counter on any character in culprit’s Location."
-            }
-        ]
-    }
-]
+{
+    "$schema": "../incidents.schema.json",
+    "incidents": [
+        {
+            "name": "Murder",
+            "effect": [
+                {
+                    "description": "One (1) other character in culprit’s Location dies"
+                }
+            ]
+        },
+        {
+            "name": "Increasing Unease",
+            "effect": [
+                {
+                    "description": "Place 2 Paranoia on any character, then 1 Intrigue on any other character."
+                }
+            ]
+        },
+        {
+            "name": "Foul Evil",
+            "effect": [
+                {
+                    "description": "Place 2 Intrigue on the Shrine."
+                }
+            ]
+        },
+        {
+            "name": "Suicide",
+            "effect": [
+                {
+                    "description": "The culprit dies."
+                }
+            ]
+        },
+        {
+            "name": "Hospital Incident",
+            "effect": [
+                {
+                    "prerequisite": "1 Intrigue on the Hospital",
+                    "description": "Everyone in the Hospital dies."
+                },
+                {
+                    "type": "Mandatory Loss condition: Protagonists Death",
+                    "prerequisite": "2 Intrigue on the Hospital"
+                }
+            ]
+        },
+        {
+            "name": "Faraway Murder",
+            "effect": [
+                {
+                    "description": "One character with at least 2 Intrigue dies."
+                }
+            ]
+        },
+        {
+            "name": "Missing Person",
+            "effect": [
+                {
+                    "description": "Move culprit to any Location. Put 1 Intrigue on that Location."
+                }
+            ]
+        },
+        {
+            "name": "Spreading",
+            "effect": [
+                {
+                    "description": "Move 2 Goodwill from any character to any other character."
+                }
+            ]
+        },
+        {
+            "name": "Butterfly Effect",
+            "effect": [
+                {
+                    "description": "Put any counter on any character in culprit’s Location."
+                }
+            ]
+        }
+    ]
+}

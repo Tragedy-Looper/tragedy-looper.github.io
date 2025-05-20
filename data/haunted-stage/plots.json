@@ -1,166 +1,169 @@
-[
-    {
-        "name": "Ancient Shrine",
-        "roles": {
-            "Nightmare (Haunted Stage)": 1,
-            "Curse God": 1,
-            "Ghost (Haunted Stage)": 1,
-            "Spellcaster": 1
+{
+    "$schema": "../plots.schema.json",
+    "plots": [
+        {
+            "name": "Ancient Shrine",
+            "roles": {
+                "Nightmare (Haunted Stage)": 1,
+                "Curse God": 1,
+                "Ghost (Haunted Stage)": 1,
+                "Spellcaster": 1
+            },
+            "rules": []
         },
-        "rules": []
-    },
-    {
-        "name": "The Cursed Doll",
-        "roles": {
-            "Nightmare (Haunted Stage)": 1,
-            "Human Doll": 1,
-            "Ghost (Haunted Stage)": 1,
-            "Spellcaster": 1
+        {
+            "name": "The Cursed Doll",
+            "roles": {
+                "Nightmare (Haunted Stage)": 1,
+                "Human Doll": 1,
+                "Ghost (Haunted Stage)": 1,
+                "Spellcaster": 1
+            },
+            "rules": []
         },
-        "rules": []
-    },
-    {
-        "name": "Full Moon Night",
-        "roles": {
-            "Nightmare (Haunted Stage)": 1,
-            "Werewolf (Haunted Stage)": 1,
-            "Spellcaster": 1
+        {
+            "name": "Full Moon Night",
+            "roles": {
+                "Nightmare (Haunted Stage)": 1,
+                "Werewolf (Haunted Stage)": 1,
+                "Spellcaster": 1
+            },
+            "rules": []
         },
-        "rules": []
-    },
-    {
-        "name": "A Strange Story",
-        "roles": {
-            "Nightmare (Haunted Stage)": 1,
-            "Vampire (Haunted Stage)": 1,
-            "Monster": 1
+        {
+            "name": "A Strange Story",
+            "roles": {
+                "Nightmare (Haunted Stage)": 1,
+                "Vampire (Haunted Stage)": 1,
+                "Monster": 1
+            },
+            "rules": [
+                {
+                    "type": "Script creation",
+                    "description": "Vampire and Nightmare must be the same sex."
+                }
+            ]
         },
-        "rules": [
-            {
-                "type": "Script creation",
-                "description": "Vampire and Nightmare must be the same sex."
-            }
-        ]
-    },
-    {
-        "name": "Prim Evil",
-        "roles": {
-            "Nightmare (Haunted Stage)": 1,
-            "Ghost (Haunted Stage)": 1,
-            "Monster": 1
+        {
+            "name": "Prim Evil",
+            "roles": {
+                "Nightmare (Haunted Stage)": 1,
+                "Ghost (Haunted Stage)": 1,
+                "Monster": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "The number of surviving characters is 4 or less"
+                }
+            ]
         },
-        "rules": [
-            {
-                "type": "Loss condition: Tragedy",
-                "timing": [
-                    "Loop End"
-                ],
-                "prerequisite": "The number of surviving characters is 4 or less"
-            }
-        ]
-    },
-    {
-        "name": "The Deep Hole",
-        "roles": {
-            "Monster": 1,
-            "Horror": 1
+        {
+            "name": "The Deep Hole",
+            "roles": {
+                "Monster": 1,
+                "Horror": 1
+            },
+            "rules": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "description": "Increase Extra Gauge by X. X is equal to the number of Intrigue on the City. (Max 3)."
+                }
+            ]
         },
-        "rules": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Loop End"
-                ],
-                "description": "Increase Extra Gauge by X. X is equal to the number of Intrigue on the City. (Max 3)."
-            }
-        ]
-    },
-    {
-        "name": "Zombie Apocalypse",
-        "roles": {
-            "Spellcaster": 1,
-            "Horror": 1
+        {
+            "name": "Zombie Apocalypse",
+            "roles": {
+                "Spellcaster": 1,
+                "Horror": 1
+            },
+            "rules": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Always"
+                    ],
+                    "description": "A corpse whose original role does not have After Death activity will be changed to a Zombie as long as it has at least 1 Intrigue."
+                }
+            ]
         },
-        "rules": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Always"
-                ],
-                "description": "A corpse whose original role does not have After Death activity will be changed to a Zombie as long as it has at least 1 Intrigue."
-            }
-        ]
-    },
-    {
-        "name": "Expanding Urban Legend",
-        "roles": {
-            "Poltergeist": 1,
-            "Horror": 1
+        {
+            "name": "Expanding Urban Legend",
+            "roles": {
+                "Poltergeist": 1,
+                "Horror": 1
+            },
+            "rules": []
         },
-        "rules": []
-    },
-    {
-        "name": "Haunted City",
-        "roles": {
-            "Ghost (Haunted Stage)": 1,
-            "Poltergeist": 1
+        {
+            "name": "Haunted City",
+            "roles": {
+                "Ghost (Haunted Stage)": 1,
+                "Poltergeist": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "There are at least 3 Paranoia on the Ghost’s corpse."
+                }
+            ]
         },
-        "rules": [
-            {
-                "type": "Loss condition: Tragedy",
-                "timing": [
-                    "Loop End"
-                ],
-                "prerequisite": "There are at least 3 Paranoia on the Ghost’s corpse."
-            }
-        ]
-    },
-    {
-        "name": "Dance Party of the Dead",
-        "roles": {
-            "Ghost (Haunted Stage)": 1,
-            "Horror": 1
+        {
+            "name": "Dance Party of the Dead",
+            "roles": {
+                "Ghost (Haunted Stage)": 1,
+                "Horror": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "There are at least 3 corpses on the location where 1 or more Intrigue are placed."
+                }
+            ]
         },
-        "rules": [
-            {
-                "type": "Loss condition: Tragedy",
-                "timing": [
-                    "Loop End"
-                ],
-                "prerequisite": "There are at least 3 corpses on the location where 1 or more Intrigue are placed."
-            }
-        ]
-    },
-    {
-        "name": "Max Crazy Gauge",
-        "roles": {
-            "Ghost (Haunted Stage)": 1
+        {
+            "name": "Max Crazy Gauge",
+            "roles": {
+                "Ghost (Haunted Stage)": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "The number of corpses is 2 or less."
+                }
+            ]
         },
-        "rules": [
-            {
-                "type": "Loss condition: Tragedy",
-                "timing": [
-                    "Loop End"
-                ],
-                "prerequisite": "The number of corpses is 2 or less."
-            }
-        ]
-    },
-    {
-        "name": "Boundary Between Life and Death",
-        "roles": {
-            "Monster": 1,
-            "Overlord": 1
-        },
-        "rules": [
-            {
-                "type": "Optional",
-                "timing": [
-                    "Day End",
-                    "First Day"
-                ],
-                "description": "Kill one character in the same location as Overlord."
-            }
-        ]
-    }
-]
+        {
+            "name": "Boundary Between Life and Death",
+            "roles": {
+                "Monster": 1,
+                "Overlord": 1
+            },
+            "rules": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Day End",
+                        "First Day"
+                    ],
+                    "description": "Kill one character in the same location as Overlord."
+                }
+            ]
+        }
+    ]
+}

@@ -1,201 +1,204 @@
-[
-    {
-        "name": "Person",
-        "abilities": []
-    },
-    {
-        "name": "Key Person",
-        "abilities": [
-            {
-                "type": "Loss condition: Tragedy",
-                "timing": [
-                    "Always"
-                ],
-                "prerequisite": "This character dies.",
-                "description": "The loop ends immediately."
-            }
-        ]
-    },
-    {
-        "name": "Curmudgeon",
-        "goodwillRefusel": "Optional",
-        "abilities": []
-    },
-    {
-        "name": "Killer",
-        "goodwillRefusel": "Optional",
-        "abilities": [
-            {
-                "type": "Optional",
-                "timing": [
-                    "Day End"
-                ],
-                "prerequisite": "The Key Person has at least 2 Intrigue and is in this char acter‘s location",
-                "description": "Kill the Key Person"
-            },
-            {
-                "type": "Optional Loss condition: Protagonists Death",
-                "timing": [
-                    "Day End"
-                ],
-                "prerequisite": "This character has at least 4 Intrigue"
-            }
-        ]
-    },
-    {
-        "name": "Brain",
-        "goodwillRefusel": "Optional",
-        "abilities": [
-            {
-                "type": "Optional",
-                "timing": [
-                    "Mastermind Ability"
-                ],
-                "description": "You may place 1 Intrigue on this location or on any character in this location."
-            }
-        ]
-    },
-    {
-        "name": "Cultist",
-        "goodwillRefusel": "Mandatory",
-        "abilities": [
-            {
-                "type": "Optional",
-                "timing": [
-                    "Card resolve"
-                ],
-                "description": "You may ignore all Forbid Intrigue effects on this location and on all characters in this location."
-            }
-        ]
-    },
-    {
-        "name": "Time Traveler",
-        "unkillable": true,
-        "abilities": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Card resolve"
-                ],
-                "description": "Ignore Forbid Goodwill on this character."
-            },
-            {
-                "type": "Loss condition: Tragedy",
-                "timing": [
-                    "Day End",
-                    "Last Day"
-                ],
-                "prerequisite": "There is 2 or less Goodwill on this character.",
-                "description": "Loop ends"
-            }
-        ]
-    },
-    {
-        "name": "Witch",
-        "goodwillRefusel": "Mandatory",
-        "abilities": []
-    },
-    {
-        "name": "Friend",
-        "max": 2,
-        "abilities": [
-            {
-                "type": "Loss condition: Tragedy",
-                "timing": [
-                    "Loop End"
-                ],
-                "prerequisite": "This character is dead.",
-                "description": "Reveal its role."
-            },
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Loop Start"
-                ],
-                "prerequisite": "This role has been revealed",
-                "description": "This character gets 1 Goodwill."
-            }
-        ]
-    },
-    {
-        "name": "Conspiracy Theorist",
-        "max": 1,
-        "abilities": [
-            {
-                "type": "Optional",
-                "timing": [
-                    "Mastermind Ability"
-                ],
-                "description": "You may place 1 Paranoia on any character in this location."
-            }
-        ]
-    },
-    {
-        "name": "Lover",
-        "abilities": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Always"
-                ],
-                "prerequisite": "The Loved One dies",
-                "description": "This character gets 6 Paranoia."
-            }
-        ]
-    },
-    {
-        "name": "Loved One",
-        "abilities": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Always"
-                ],
-                "prerequisite": "The Lover dies",
-                "description": "This character gets 6 Paranoia."
-            },
-            {
-                "type": "Optional Loss condition: Protagonists Death",
-                "timing": [
-                    "Day End"
-                ],
-                "prerequisite": "This character has at least 3 Paranoia and at least 1 Intrigue."
-            }
-        ]
-    },
-    {
-        "name": "Serial Killer",
-        "abilities": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Day End"
-                ],
-                "prerequisite": "There is exactly 1 other (living) character in this location",
-                "description": "That character dies."
-            }
-        ]
-    },
-    {
-        "name": "Factor",
-        "goodwillRefusel": "Optional",
-        "abilities": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Always"
-                ],
-                "prerequisite": "There is at least 2 Intrigue on the School",
-                "description": "This character gains the Conspiracy Theorist‘s ability, but not its role."
-            },
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Always"
-                ],
-                "prerequisite": "There is at least 2 Intrigue on the City",
-                "description": "This character gains the Key Person’s ability, but not its role."
-            }
-        ]
-    }
-]
+{
+    "$schema": "../roles.schema.json", 
+    "roles": [
+        {
+            "name": "Person",
+            "abilities": []
+        },
+        {
+            "name": "Key Person",
+            "abilities": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Always"
+                    ],
+                    "prerequisite": "This character dies.",
+                    "description": "The loop ends immediately."
+                }
+            ]
+        },
+        {
+            "name": "Curmudgeon",
+            "goodwillRefusel": "Optional",
+            "abilities": []
+        },
+        {
+            "name": "Killer",
+            "goodwillRefusel": "Optional",
+            "abilities": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "The Key Person has at least 2 Intrigue and is in this char acter‘s location",
+                    "description": "Kill the Key Person"
+                },
+                {
+                    "type": "Optional Loss condition: Protagonists Death",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "This character has at least 4 Intrigue"
+                }
+            ]
+        },
+        {
+            "name": "Brain",
+            "goodwillRefusel": "Optional",
+            "abilities": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "description": "You may place 1 Intrigue on this location or on any character in this location."
+                }
+            ]
+        },
+        {
+            "name": "Cultist",
+            "goodwillRefusel": "Mandatory",
+            "abilities": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Card resolve"
+                    ],
+                    "description": "You may ignore all Forbid Intrigue effects on this location and on all characters in this location."
+                }
+            ]
+        },
+        {
+            "name": "Time Traveler",
+            "unkillable": true,
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Card resolve"
+                    ],
+                    "description": "Ignore Forbid Goodwill on this character."
+                },
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Day End",
+                        "Last Day"
+                    ],
+                    "prerequisite": "There is 2 or less Goodwill on this character.",
+                    "description": "Loop ends"
+                }
+            ]
+        },
+        {
+            "name": "Witch",
+            "goodwillRefusel": "Mandatory",
+            "abilities": []
+        },
+        {
+            "name": "Friend",
+            "max": 2,
+            "abilities": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "This character is dead.",
+                    "description": "Reveal its role."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Loop Start"
+                    ],
+                    "prerequisite": "This role has been revealed",
+                    "description": "This character gets 1 Goodwill."
+                }
+            ]
+        },
+        {
+            "name": "Conspiracy Theorist",
+            "max": 1,
+            "abilities": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "description": "You may place 1 Paranoia on any character in this location."
+                }
+            ]
+        },
+        {
+            "name": "Lover",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Always"
+                    ],
+                    "prerequisite": "The Loved One dies",
+                    "description": "This character gets 6 Paranoia."
+                }
+            ]
+        },
+        {
+            "name": "Loved One",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Always"
+                    ],
+                    "prerequisite": "The Lover dies",
+                    "description": "This character gets 6 Paranoia."
+                },
+                {
+                    "type": "Optional Loss condition: Protagonists Death",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "This character has at least 3 Paranoia and at least 1 Intrigue."
+                }
+            ]
+        },
+        {
+            "name": "Serial Killer",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "There is exactly 1 other (living) character in this location",
+                    "description": "That character dies."
+                }
+            ]
+        },
+        {
+            "name": "Factor",
+            "goodwillRefusel": "Optional",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Always"
+                    ],
+                    "prerequisite": "There is at least 2 Intrigue on the School",
+                    "description": "This character gains the Conspiracy Theorist‘s ability, but not its role."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Always"
+                    ],
+                    "prerequisite": "There is at least 2 Intrigue on the City",
+                    "description": "This character gains the Key Person’s ability, but not its role."
+                }
+            ]
+        }
+    ]
+}

@@ -1,60 +1,64 @@
-[
-    {
-        "name": "First Steps",
-        "numberOfMainPlots": 1,
-        "numberOfSubPlots": 1,
-        "mainPlots": [
-            "Murder Plan",
-            "Light of the Avenger",
-            "A Place to Protect"
-        ],
-        "subPlots": [
-            "Shadow of the Ripper",
-            "An Unsettling Rumor",
-            "A Hideous Script"
-        ],
-        "incidents": [
-            "Murder",
-            "Increasing Unease",
-            "Suicide",
-            "Hospital Incident",
-            "Faraway Murder",
-            "Missing Person",
-            "Spreading"
-        ],
-        "extraRules": []
-    },
-    {
-        "name": "Basic Tragedy",
-        "mainPlots": [
-            "Murder Plan",
-            "The Sealed Item",
-            "Sign with me!",
-            "Change of Future",
-            "Giant Time Bomb"
-        ],
-        "subPlots": [
-            "Circle of Friends",
-            "A Love Affair",
-            "The Hidden Freak",
-            "An Unsettling Rumor",
-            "Paranoia Virus",
-            "Threads of Fate",
-            "Unknown Factor X"
-        ],
-        "numberOfMainPlots": 1,
-        "numberOfSubPlots": 2,
-        "extraRules": [],
-        "incidents": [
-            "Butterfly Effect",
-            "Faraway Murder",
-            "Foul Evil",
-            "Hospital Incident",
-            "Increasing Unease",
-            "Missing Person",
-            "Murder",
-            "Spreading",
-            "Suicide"
-        ]
-    }
-]
+{
+    "$schema": "../tragedys.schema.json",
+    "tragedys": [
+        {
+            "name": "First Steps",
+            "numberOfMainPlots": 1,
+            "numberOfSubPlots": 1,
+            "mainPlots": [
+                "Murder Plan",
+                "Light of the Avenger",
+                "A Place to Protect"
+            ],
+            "subPlots": [
+                "Shadow of the Ripper",
+                "An Unsettling Rumor",
+                "A Hideous Script"
+            ],
+            "incidents": [
+                "Murder",
+                "Increasing Unease",
+                "Suicide",
+                "Hospital Incident",
+                "Faraway Murder",
+                "Missing Person",
+                "Spreading"
+            ],
+
+            "extraRules": []
+        },
+        {
+            "name": "Basic Tragedy",
+            "mainPlots": [
+                "Murder Plan",
+                "The Sealed Item",
+                "Sign with me!",
+                "Change of Future",
+                "Giant Time Bomb"
+            ],
+            "subPlots": [
+                "Circle of Friends",
+                "A Love Affair",
+                "The Hidden Freak",
+                "An Unsettling Rumor",
+                "Paranoia Virus",
+                "Threads of Fate",
+                "Unknown Factor X"
+            ],
+            "numberOfMainPlots": 1,
+            "numberOfSubPlots": 2,
+            "extraRules": [],
+            "incidents": [
+                "Butterfly Effect",
+                "Faraway Murder",
+                "Foul Evil",
+                "Hospital Incident",
+                "Increasing Unease",
+                "Missing Person",
+                "Murder",
+                "Spreading",
+                "Suicide"
+            ]
+        }
+    ]
+}

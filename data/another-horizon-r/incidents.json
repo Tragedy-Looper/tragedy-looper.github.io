@@ -1,0 +1,95 @@
+{
+    "$schema": "../incidents.schema.json",
+    "incidents": [
+        {
+            "name": "Crime of Passion",
+            "effect": [
+                {
+                    "description": "One other character at the culprit’s location dies, if possible. When determining if this Incident triggers, treat the culprit’s Paranoia Limit as 1 lower."
+                }
+            ]
+        },
+        {
+            "name": "Dimensional Distortion",
+            "effect": [
+                {
+                    "description": "You may trigger a Warp. When determining if this Incident triggers, it always triggers regardless of the number of counters on the culprit."
+                }
+            ]
+        },
+        {
+            "name": "Dimensional Perversion",
+            "effect": [
+                {
+                    "description": "You may trigger a Warp. Place 2 Paranoia counters on any character, and 2 Goodwill counters on any other character."
+                }
+            ]
+        },
+        {
+            "name": "Dimensional Fracture",
+            "effect": [
+                {
+                    "type": "Mandatory Loss condition: Protagonists Death",
+                    "prerequisite": "If there are 3 or more kinds of counters on the culprit"
+                }
+            ]
+        },
+        {
+            "name": "Left Behind",
+            "effect": [
+                {
+                    "description": "Place 1 Intrigue counter on a character at the culprit’s location, then move the culprit to any location."
+                }
+            ]
+        },
+        {
+            "name": "Phantasmal Incident",
+            "effect": [
+                {
+                    "description": "Resolve the effect of Crime of Passion, Dimensional Perversion, or Left Behind. When determining if this Incident triggers, refer to the number of Intrigue counters on the culprit instead of the original type of counter."
+                }
+            ]
+        },
+        {
+            "name": "Last Will",
+            "effect": [
+                {
+                    "description": "The culprit dies. At the start of the next loop, the Protagonists add \"Hope +1\" to hand."
+                }
+            ]
+        },
+        {
+            "name": "The Singularity",
+            "effect": [
+                {
+                    "type": "Mandatory Loss condition: Protagonists Death",
+                    "prerequisite": "If the players are in the Light World and if this is the first time this game that this Incident triggered."
+                },
+                {
+                    "prerequisite": "If the players are in the Light World",
+                    "description": "Trigger a Warp."
+                },
+                {
+                    "type": "Mandatory Loss condition: Protagonists Death",
+                    "prerequisite": "If the players are in the Dark World and there is 1 or more Intrigue counter on the culprit’s starting location"
+                }
+            ]
+        },
+        {
+            "name": "Seeping Daylight",
+            "effect": [
+                {
+                    "description": "The Leader chooses a character. Place 1 Hope counter on that character."
+                }
+            ]
+        },
+        {
+            "name": "The Murk of Despair",
+            "effect": [
+                {
+                    "description": "Place 1 Despair counter on any character."
+                }
+            ]
+        }
+    ]
+}

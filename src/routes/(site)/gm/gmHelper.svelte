@@ -58,9 +58,20 @@
       return { ...rest, plot: name };
     });
   $: scriptRoles = Object.entries(selectedScript.cast)
-    .map(([character, x]) => {
-      if (typeof x == 'string') return { ...roles[x], character };
-      else return { ...roles[x[0]], character, ...x[1] };
+    .flatMap(([character, x]) => {
+      if (typeof x == 'string') {
+        if (x.includes('|')) {
+          const [role, ...rest] = x.split('|');
+
+          return x.split('|').map((x) => {
+            return { ...roles[x as keyof typeof roles], character };
+          });
+        } else {
+          return [{ ...roles[x as keyof typeof roles], character }];
+        }
+      } else {
+        return [{ ...roles[x[0]], character, ...x[1] }];
+      }
     })
     .map((x) => {
       const { name, ...rest } = x;

@@ -1,191 +1,194 @@
-[
-    {
-        "name": "Poisoner",
-        "goodwillRefusel": "Optional",
-        "abilities": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Day End"
-                ],
-                "prerequisite": "the Extra Gauge is on 2 or more",
-                "timesPerLoop": 1,
-                "description": "One charcters in the same location dies."
-            },
-            {
-                "type": "Mandatory Loss condition: Protagonists Death",
-                "timing": [
-                    "Day End"
-                ],
-                "prerequisite": "The Extra Gauge is on 4 or more."
-            }
-        ]
-    },
-    {
-        "name": "Fool",
-        "max": 1,
-        "abilities": [
-            {
-                "type": "Script creation",
-                "description": "This character must be the culprit of an Incident"
-            },
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Incident step"
-                ],
-                "description": "After this character has triggered an Incident, remove all Paranoia counters from this card."
-            }
-        ]
-    },
-    {
-        "name": "Private Investigator",
-        "unkillable": true,
-        "abilities": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Always"
-                ],
-                "description": "This character can never be a culprit."
-            },
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Incident step"
-                ],
-                "prerequisite": "the Extra Gauge is 0, and the culprit is in this location",
-                "description": "The Incident triggers regardless of the number of Paranoia counters on the culprit."
-            }
-        ]
-    },
-    {
-        "name": "Paranoiac",
-        "goodwillRefusel": "Mandatory",
-        "abilities": [
-            {
-                "type": "Optional",
-                "timing": [
-                    "Mastermind Ability"
-                ],
-                "description": "You may place 1 Intrigue counter on this location or an any character in this location."
-            }
-        ]
-    },
-    {
-        "name": "Twin",
-        "abilities": [
-            {
-                "type": "Script creation",
-                "description": "This character must be the culprit of an Incident."
-            },
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Incident trigger"
-                ],
-                "description": "When this character triggers an Incident, it is considered as being on the diagonally opposit location."
-            }
-        ]
-    },
-    {
-        "name": "Obstinate",
-        "goodwillRefusel": "Mandatory",
-        "abilities": [
-            {
-                "type": "Script creation",
-                "description": "This character must be the culprit of an Incident."
-            },
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Incident step"
-                ],
-                "description": "This character amways triggers its Incidents (if alive), regardless of the amount of Paranoia counters on it."
-            }
-        ]
-    },
-    {
-        "name": "Therapist",
-        "abilities": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Mastermind Ability"
-                ],
-                "prerequisite": "The Extra Gauge is 1 or above",
-                "description": "Remove 1 Paranoia counter from any other character in this location."
-            }
-        ]
-    },
-    {
-        "name": "Magician",
-        "abilities": [
-            {
-                "type": "Optional",
-                "timing": [
-                    "Mastermind Ability"
-                ],
-                "timesPerLoop": [
-                    1,
-                    {
-                        "Over all Roles": true
-                    }
-                ],
-                "description": "You may move one character with at least one Paranoia counter from this location to an adjacent location (not diagonal)."
-            },
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "On character death"
-                ],
-                "description": "Remove all Paranoia counters from its corpse."
-            }
-        ]
-    },
-    {
-        "name": "Ninja",
-        "goodwillRefusel": "Optional",
-        "abilities": [
-            {
-                "type": "Optional",
-                "timing": [
-                    "When this role is to be reveald"
-                ],
-                "description": "You may, insead of saying the truth, state any other non-Person role that is in this script"
-            },
-            {
-                "type": "Optional Loss condition: Protagonists Death",
-                "timing": [
-                    "Day End"
-                ],
-                "prerequisite": "There is any charcter with at least 2 Intrigue Counters in this location"
-            }
-        ]
-    },
-    {
-        "name": "Prophet",
-        "abilities": [
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Mastermind Action step"
-                ],
-                "description": "The Mastermind cannot place cards on this character."
-            },
-            {
-                "type": "Mandatory",
-                "timing": [
-                    "Incident step"
-                ],
-                "prerequisite": "The culprit of an incident that would trigger is in another location",
-                "description": "That incident does not trigger, regardless of the number of Paranoia conters on the culprit."
-            }
-        ]
-    },
-    {
-        "name": "Immortal",
-        "unkillable": true,
-        "abilities": []
-    }
-]
+{
+    "$schema": "../roles.schema.json",
+    "roles": [
+        {
+            "name": "Poisoner",
+            "goodwillRefusel": "Optional",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "the Extra Gauge is on 2 or more",
+                    "timesPerLoop": 1,
+                    "description": "One charcters in the same location dies."
+                },
+                {
+                    "type": "Mandatory Loss condition: Protagonists Death",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "The Extra Gauge is on 4 or more."
+                }
+            ]
+        },
+        {
+            "name": "Fool",
+            "max": 1,
+            "abilities": [
+                {
+                    "type": "Script creation",
+                    "description": "This character must be the culprit of an Incident"
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Incident step"
+                    ],
+                    "description": "After this character has triggered an Incident, remove all Paranoia counters from this card."
+                }
+            ]
+        },
+        {
+            "name": "Private Investigator",
+            "unkillable": true,
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Always"
+                    ],
+                    "description": "This character can never be a culprit."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Incident step"
+                    ],
+                    "prerequisite": "the Extra Gauge is 0, and the culprit is in this location",
+                    "description": "The Incident triggers regardless of the number of Paranoia counters on the culprit."
+                }
+            ]
+        },
+        {
+            "name": "Paranoiac",
+            "goodwillRefusel": "Mandatory",
+            "abilities": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "description": "You may place 1 Intrigue counter on this location or an any character in this location."
+                }
+            ]
+        },
+        {
+            "name": "Twin",
+            "abilities": [
+                {
+                    "type": "Script creation",
+                    "description": "This character must be the culprit of an Incident."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Incident trigger"
+                    ],
+                    "description": "When this character triggers an Incident, it is considered as being on the diagonally opposit location."
+                }
+            ]
+        },
+        {
+            "name": "Obstinate",
+            "goodwillRefusel": "Mandatory",
+            "abilities": [
+                {
+                    "type": "Script creation",
+                    "description": "This character must be the culprit of an Incident."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Incident step"
+                    ],
+                    "description": "This character always triggers its Incidents (if alive), regardless of the amount of Paranoia counters on it."
+                }
+            ]
+        },
+        {
+            "name": "Therapist",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "prerequisite": "The Extra Gauge is 1 or above",
+                    "description": "Remove 1 Paranoia counter from any other character in this location."
+                }
+            ]
+        },
+        {
+            "name": "Magician",
+            "abilities": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "timesPerLoop": [
+                        1,
+                        {
+                            "Over all Roles": true
+                        }
+                    ],
+                    "description": "You may move one character with at least one Paranoia counter from this location to an adjacent location (not diagonal)."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "On character death"
+                    ],
+                    "description": "Remove all Paranoia counters from its corpse."
+                }
+            ]
+        },
+        {
+            "name": "Ninja",
+            "goodwillRefusel": "Optional",
+            "abilities": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "When this role is to be reveald"
+                    ],
+                    "description": "You may, insead of saying the truth, state any other non-Person role that is in this script"
+                },
+                {
+                    "type": "Optional Loss condition: Protagonists Death",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "There is any charcter with at least 2 Intrigue Counters in this location"
+                }
+            ]
+        },
+        {
+            "name": "Prophet",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Mastermind Action step"
+                    ],
+                    "description": "The Mastermind cannot place cards on this character."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Incident step"
+                    ],
+                    "prerequisite": "The culprit of an incident that would trigger is in another location",
+                    "description": "That incident does not trigger, regardless of the number of Paranoia conters on the culprit."
+                }
+            ]
+        },
+        {
+            "name": "Immortal",
+            "unkillable": true,
+            "abilities": []
+        }
+    ]
+}

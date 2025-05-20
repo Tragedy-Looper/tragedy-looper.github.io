@@ -9,7 +9,7 @@
   } from '../model/characters';
   import { incidents as incidentsLookup } from '../model/incidents';
   import { plots } from '../model/plots';
-  import { roles, type Abilitie, type RoleName } from '../model/roles';
+  import { type RoleInternal, roles, type Abilitie, type RoleName } from '../model/roles';
   import type { Script, ScriptIncident, ScriptIncidentPlayer } from '../model/script';
   import { tragedySets, type TragedySet, type TragedySetName } from '../model/tragedySets';
   import Selection from './selection.svelte';
@@ -220,8 +220,23 @@
     [...tg.mainPlots, ...tg.subPlots].flatMap((x) => keys(plots[x].roles) as RoleName[])
   )
     .concat(require(tg).aditionalRoles ?? [])
-    .sort()
-    .map((x) => roles[x]);
+    .flatMap((x) => {
+      if (x.includes('|')) {
+        return [{ name: x, skip: false }, ...x.split('|').map((x) => ({ name: x, skip: true }))];
+      } else {
+        return [{ name: x, skip: false }];
+      }
+    })
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map(({ name, skip }) => {
+      if (name.includes('|')) {
+        return { name: name, abilities: [], skip, combined: true } satisfies RoleInternal & {
+          skip: boolean;
+          combined: boolean;
+        };
+      }
+      return { ...roles[name as keyof typeof roles], skip, combined: false };
+    });
 
   $: mainPlots = tragedySets[tragedySet].mainPlots.map((x) => plots[x]);
   $: subPlots = tragedySets[tragedySet].subPlots.map((x) => plots[x]);
@@ -254,7 +269,7 @@
       join(
         [
           'min-content',
-          ...r.map(() => 'auto'),
+          ...r.filter(x=>!x.skip).map(() => 'auto'),
           'auto',
           'min-content',
           ...ince.map(() => 'min-content'),
@@ -281,12 +296,12 @@
   $: {
     [gird_template_area, gird_template_column, gird_template_row] = WriteLiens([
       () => {
-        return Array.from({ length: r.length + ince.length + 5 }).map(() => 'top');
+        return Array.from({ length: r.filter(x=>!x.skip).length + ince.length + 5 }).map(() => 'top');
       },
       ...mainPlots.map((mp) => () => {
         return [
           'main-plot-header',
-          ...r.map(
+          ...r.filter(x=>!x.skip).map(
             (role) =>
               ` main-role-plot-${cssesc(role.name, {
                 isIdentifier: true,
@@ -305,14 +320,14 @@
         ];
       }),
       () => {
-        return Array.from({ length: r.length + ince.length + 4 })
+        return Array.from({ length: r.filter(x=>!x.skip).length + ince.length + 4 })
           .map(() => 'seccond')
           .concat(['rest-3']);
       },
       ...subPlots.map((mp) => () => {
         return [
           'sub-plot-header',
-          ...r.map(
+          ...r.filter(x=>!x.skip).map(
             (role) =>
               ` sub-role-plot-${cssesc(role.name, {
                 isIdentifier: true,
@@ -333,7 +348,7 @@
       () => {
         return [
           'role-header',
-          ...r.map((role) => `role-header-${cssesc(role.name, { isIdentifier: true })}`),
+          ...r.filter(x=>!x.skip).map((role) => `role-header-${cssesc(role.name, { isIdentifier: true })}`),
           '.',
           'incident-header',
           ...ince.map((incident) => `incident-header-${incident.day}`),
@@ -344,7 +359,7 @@
       () => {
         return [
           'role-header',
-          ...r.map((role) => `role-header-${cssesc(role.name, { isIdentifier: true })}`),
+          ...r.filter(x=>!x.skip).map((role) => `role-header-${cssesc(role.name, { isIdentifier: true })}`),
           '.',
           'incident-header-day',
           ...ince.map((incident) => `incident-day-${incident.day}`),
@@ -354,7 +369,7 @@
       },
       ...chars.map((char) => () => [
         `character-header`,
-        ...r.map(
+        ...r.filter(x=>!x.skip).map(
           (role) =>
             ` role-char-${cssesc(role.name, { isIdentifier: true })}-${cssesc(char.name, {
               isIdentifier: true,
@@ -371,7 +386,7 @@
       ]),
       () => [
         'goodwillrefusal-header',
-        ...r.map((role) => `goodwillrefusal-${cssesc(role.name, { isIdentifier: true })}`),
+        ...r.filter(x=>!x.skip).map((role) => `goodwillrefusal-${cssesc(role.name, { isIdentifier: true })}`),
         '.',
         '.',
         ...ince.map((incident) => `incident-rule-${incident.day}`),
@@ -381,7 +396,7 @@
 
       () => [
         'rest-1',
-        ...r.map((role) => `rest-1`),
+        ...r.filter(x=>!x.skip).map((role) => `rest-1`),
         'rest-1',
         'rest-1',
         ...ince.map((role) => `rest-1`),
@@ -412,12 +427,12 @@
         {getString(p.name, lang)}
       </div>
       <div class="plot-main rules" style="grid-area: main-role-plot-rule-{cssesc(p.name)};">
-        {#each p.rules as a}
+        {#each p.rules??[] as a}
           <Ability {a} compact />
         {/each}
       </div>
 
-      {#each r as ri}
+      {#each r.filter(x=>!x.skip) as ri}
         <div
           class="plot-main role-counter"
           style="grid-area: main-role-plot-{cssesc(ri.name)}-{cssesc(p.name)};"
@@ -447,7 +462,7 @@
         {/each}
       </div>
 
-      {#each r as ri}
+      {#each r.filter(x=>!x.skip) as ri}
         {@const roles = p.roles}
         {@const name = ri.name}
         <div
@@ -470,7 +485,7 @@
 
     <!-- <div class="header vertical-header role" style="grid-area: role-ability-header;">Abbiliy</div> -->
     <div class="header vertical-header role" style="grid-area: role-header;">Roles</div>
-    {#each r as ri}
+    {#each r.filter(x=>!x.skip) as ri}
       {@const tags = [ri.unkillable ? 'Immortal' : '', ri.afterDeath ? 'After Death' : ''].filter(
         (x) => x.length > 0
       )}
@@ -506,7 +521,7 @@
         {#if isCharacterLate(ci.name)} <i>(?)</i>{/if}
       </div>
 
-      {#each r as ri}
+      {#each r.filter(x=>!x.skip) as ri}
         <div class="role-char" style="grid-area: role-char-{cssesc(ri.name)}-{cssesc(ci.name)};">
           <Selection />
         </div>
@@ -523,7 +538,7 @@
         {getString('Goodwill Refusel', lang)}
       </div>
     </div>
-    {#each r as ri}
+    {#each r.filter(x=>!x.skip) as ri}
       <div class="vertical-header role" style="grid-area: goodwillrefusal-{cssesc(ri.name)};">
         {#each [getString(ri.goodwillRefusel ?? '', lang), getString(ri.goodwillOutburst ? 'Goodwill Outburst' : '', lang), getString(ri.scriptSpecified?.some((x) => x.name == 'world') ? 'World Selection' : '', lang)].filter((x) => x?.length > 0) as tag, i}
           {#if i > 0} | {/if}
@@ -586,7 +601,7 @@
   {/each}
 </template>
 <template id="role">
-  {#each r as ri}
+  {#each r.filter(x=>!x.combined) as ri}
     <article class="role">
       <h1>
         {getString(ri.name, lang)}

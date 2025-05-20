@@ -27,14 +27,23 @@ const data =
 data.then(x => {
 
     const data = types.map(type => {
-        return [type, x.filter(([, t]) => t == type).map(([x]) => x).filter(x => {
+        return [type, x.filter(([, t]) => t == type).filter(([x, type]) => {
             try {
                 const parsed = JSON.parse(x);
-                return typeof parsed == 'object' && Array.isArray(parsed);
+                return (typeof parsed == 'object' && Array.isArray(parsed))
+                    || (typeof parsed == 'object' && !Array.isArray(parsed) && Object.keys(parsed).includes(type));
             } catch (error) {
                 console.error(error);
                 return false;
             }
+        }).map(([x, type]) => {
+            const parsed = JSON.parse(x);
+            if (typeof parsed == 'object' && Array.isArray(parsed)) {
+                return x;
+            } else {
+                return JSON.stringify(parsed[type], undefined, 2);
+            }
+
         })] as const;
     });
 
