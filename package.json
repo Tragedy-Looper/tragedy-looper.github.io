@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"generateSchema": "npx tsx scripts/generateTragedysSchema.ts",
-		"prepare": "npx tsx scripts/perBulid.ts",
+		"prepare": "npx tsx scripts/generateTragedysSchema.ts && npx tsx scripts/perBulid.ts",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
