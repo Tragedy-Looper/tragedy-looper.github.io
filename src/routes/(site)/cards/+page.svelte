@@ -17,11 +17,15 @@
       ...value,
       forbiddenLocation: 'forbiddenLocation' in value ? value.forbiddenLocation : [],
       name: getString(value.name),
-      gender: value.tags.includes('boy' as never)|| value.tags.includes('man' as never)
-        ? ('male' as const)
-        : value.tags.includes('girl' as never) || value.tags.includes('woman' as never)
-        ? ('female' as const)
-        : ('diverse' as const),
+      gender:
+        (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
+        (value.tags.includes('girl' as never) || value.tags.includes('woman' as never))
+          ? ('both' as const)
+          : value.tags.includes('boy' as never) || value.tags.includes('man' as never)
+          ? ('male' as const)
+          : value.tags.includes('girl' as never) || value.tags.includes('woman' as never)
+          ? ('female' as const)
+          : ('diverse' as const),
       tags: value.tags.map(getString),
       image: `${base}/cards/characters/${key.toLocaleLowerCase().replaceAll('?', '')}.png`,
       abilities: value.abilities.map((ability) => {
@@ -42,12 +46,7 @@
 
 <div>
   {#each cards as card}
-    <div
-      class="card"
-      class:male={card.gender == 'male'}
-      class:female={card.gender == 'female'}
-      class:diverse={card.gender == 'diverse'}
-    >
+    <div class="card {card.gender}">
       <img src={card.image} alt="character image" class="back image" />
 
       {#each locations as location}
@@ -222,6 +221,9 @@
     }
     &.diverse {
       background-image: url('/cards/general/back-diverse.png');
+    }
+    &.both {
+      background-image: url('/cards/general/back-both.png');
     }
     .image {
       object-fit: contain;
