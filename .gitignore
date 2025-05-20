@@ -14,3 +14,9 @@ vite.config.ts.timestamp-*
 ty/
 src/data.ts
 src/data-translations.ts
+data/tragedys.schema.json
+data/characters.schema.json
+data/incidents.schema.json
+data/plots.schema.json
+data/roles.schema.json
+data/scripts.schema.json
