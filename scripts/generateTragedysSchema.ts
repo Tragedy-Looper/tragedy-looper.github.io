@@ -19,6 +19,8 @@ const names = {
         const allPlots = new Set([...data.mainPlots, ...data.subPlots]);
         return [data.name, {
             plotNames: allPlots,
+            mainPlotNames: new Set(data.mainPlots),
+            subPlotNames: new Set(data.subPlots),
             incidentNames: new Set(data.incidents),
             roles: new Set<string>([...plotData.filter(p => allPlots.has(p.name)).flatMap(p => Object.keys(p.roles).map(r => r)),
             ...(data.aditionalRoles ?? []),
@@ -27,6 +29,8 @@ const names = {
         }] as const;
     })) as Record<string, {
         plotNames: Set<string>,
+        mainPlotNames: Set<string>,
+        subPlotNames: Set<string>,
         incidentNames: Set<string>,
         roles: Set<string>,
     }>,
@@ -34,9 +38,17 @@ const names = {
         return [data.name, data] as const;
     })) as Record<string, { name: string, scriptSpecified: { name: string, type: "number" | "plot" | "location" | "string" }[] }>,
 
+    PlotData: Object.fromEntries(collectDataFromJsonFiles('plots').map((data) => {
+        return [data.name, data] as const;
+    })) as Record<string, { name: string, roles: Record<string, number | [number, number]>, scriptSpecified: { name: string, type: "number" | "plot" | "location" | "string" }[] }>,
+
+    IncidentData: Object.fromEntries(collectDataFromJsonFiles('incidents').map((data) => {
+        return [data.name, data] as const;
+    })) as Record<string, { name: string, faked: boolean, }>,
+
     CharacterData: Object.fromEntries(collectDataFromJsonFiles('characters').map((data) => {
         return [data.name, data] as const;
-    })) as Record<string, { name: string, comesInLater: boolean, plotLessRole: boolean, scriptSpecified: { name: string, type: "number" | "plot" | "location" | "string" }[] }>,
+    })) as Record<string, { name: string, comesInLater: boolean, plotLessRole: boolean, startLocation: (typeof locations)[], scriptSpecified: { name: string, type: "number" | "plot" | "location" | "string" }[] }>,
     mobIncidentNames: new Set<string>(collectDataFromJsonFiles('incidents').filter(x => x.mob !== undefined).map(x => x.name)),
 } as const;
 
@@ -480,7 +492,7 @@ function generateCharactersSchema({ characterNames }: Names) {
 }
 
 // 5. Scripts Schema (Boilerplate, Details je nach Struktur)
-function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, RolaData, roleNames: allRoles, characterNames, namesPerTragedySet }: Names) {
+function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, RolaData, PlotData, IncidentData, roleNames: allRoles, characterNames, namesPerTragedySet }: Names) {
     return {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "title": "Script",
@@ -494,6 +506,13 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                     "oneOf": [
                         ...[...tragedySetNames].map((tragedySet) => {
                             const roleNamesInSet = namesPerTragedySet[tragedySet].roles;
+
+                            const incidentsWithoutFake = Array.from(namesPerTragedySet[tragedySet].incidentNames).filter((name) => !IncidentData[name].faked);
+                            const incidentsWithFake = Array.from(namesPerTragedySet[tragedySet].incidentNames).filter((name) => IncidentData[name].faked);
+
+                            const plotsWithScriptSpecified = new Set(Object.values(PlotData).filter(x => x.scriptSpecified?.length > 0).map(x => x.name));
+                            const plotsWithoutScriptSpecified = new Set(Object.values(PlotData).filter(x => (x.scriptSpecified?.length ?? 0) == 0).map(x => x.name));
+
 
                             return ({
                                 "type": "object",
@@ -522,8 +541,92 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                             }
                                         }
                                     },
-                                    "mainPlot": { "type": "array", "items": { "type": "string", "enum": Array.from(namesPerTragedySet[tragedySet].plotNames) } },
-                                    "subPlots": { "type": "array", "items": { "type": "string", "enum": Array.from(namesPerTragedySet[tragedySet].plotNames) } },
+
+                                    "mainPlot": {
+                                        "type": "array",
+                                        "items": {
+                                            "oneOf": [
+                                                {
+                                                    "type": "string",
+                                                    "enum": Array.from(namesPerTragedySet[tragedySet].mainPlotNames).filter((name) => !plotsWithScriptSpecified.has(name))
+                                                },
+
+                                                ...Array.from(namesPerTragedySet[tragedySet].mainPlotNames).filter(name => plotsWithScriptSpecified.has(name)).map((plotName) => {
+                                                    return {
+                                                        type: "array",
+                                                        items: [
+                                                            {
+                                                                "type": "string",
+                                                                "enum": [plotName]
+                                                            }, {
+                                                                type: "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    ...Object.fromEntries(PlotData[plotName].scriptSpecified?.map(x => {
+                                                                        return [x.name, x.type === "number"
+                                                                            ? { "type": "number" }
+                                                                            : x.type == 'location'
+                                                                                ? { "type": "string", "enum": locations }
+                                                                                : x.type == "plot"
+                                                                                    ? { "type": "string", "enum": Array.from(namesPerTragedySet[tragedySet].plotNames) }
+                                                                                    : { type: "string" }
+                                                                        ];
+                                                                    }) ?? [])
+                                                                }
+                                                            }
+                                                        ],
+                                                    }
+                                                }),
+
+
+
+                                            ]
+                                        }
+                                    },
+
+                                    "subPlots": {
+                                        "type": "array",
+                                        "items": {
+                                            "oneOf": [
+                                                {
+                                                    "type": "string",
+                                                    "enum": Array.from(namesPerTragedySet[tragedySet].subPlotNames).filter((name) => !plotsWithScriptSpecified.has(name))
+                                                },
+
+                                                ...Array.from(namesPerTragedySet[tragedySet].subPlotNames).filter(name => plotsWithScriptSpecified.has(name)).map((plotName) => {
+                                                    return {
+                                                        type: "array",
+                                                        items: [
+                                                            {
+                                                                "type": "string",
+                                                                "enum": [plotName]
+                                                            }, {
+                                                                type: "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    ...Object.fromEntries(PlotData[plotName].scriptSpecified?.map(x => {
+                                                                        return [x.name, x.type === "number"
+                                                                            ? { "type": "number" }
+                                                                            : x.type == 'location'
+                                                                                ? { "type": "string", "enum": locations }
+                                                                                : x.type == "plot"
+                                                                                    ? { "type": "string", "enum": Array.from(namesPerTragedySet[tragedySet].plotNames) }
+                                                                                    : { type: "string" }
+                                                                        ];
+                                                                    }) ?? [])
+                                                                }
+                                                            }
+                                                        ],
+                                                    }
+                                                }),
+
+
+
+                                            ]
+                                        }
+                                    },
+
+
 
                                     "incidents": {
                                         "type": "array", "items": {
@@ -536,12 +639,12 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                         "incident":
                                                         {
                                                             "type": "string",
-                                                            "enum": Array.from(namesPerTragedySet[tragedySet].incidentNames).filter((name) => !names.mobIncidentNames.has(name))
+                                                            "enum": incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name))
                                                         },
                                                         "culprit": { "type": "string", "enum": Array.from(characterNames) }
                                                     },
                                                     "required": ["incident", "culprit", 'day'],
-                                                }].filter(() => Array.from(namesPerTragedySet[tragedySet].incidentNames).filter((name) => !names.mobIncidentNames.has(name)).length > 0),
+                                                }].filter(() => incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name)).length > 0),
                                                 ...[{
                                                     "type": "object",
                                                     "additionalProperties": false,
@@ -550,12 +653,58 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                         "incident":
                                                         {
                                                             "type": "string",
-                                                            "enum": Array.from(namesPerTragedySet[tragedySet].incidentNames).filter((name) => names.mobIncidentNames.has(name))
+                                                            "enum": incidentsWithoutFake.filter((name) => names.mobIncidentNames.has(name))
                                                         },
                                                         "culprit": { "type": "string", "enum": locations }
                                                     },
                                                     "required": ["incident", "culprit", "day"],
-                                                }].filter(() => Array.from(namesPerTragedySet[tragedySet].incidentNames).filter((name) => names.mobIncidentNames.has(name)).length > 0)
+                                                }].filter(() => incidentsWithoutFake.filter((name) => names.mobIncidentNames.has(name)).length > 0),
+
+
+                                                ...[{
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "day": { "type": "number" },
+                                                        "incident":
+                                                        {
+                                                            type: "array",
+                                                            "items": [
+                                                                {
+                                                                    "type": "string",
+                                                                    "enum": incidentsWithFake.filter((name) => !names.mobIncidentNames.has(name))
+                                                                }, {
+                                                                    "type": "string",
+                                                                    "enum": incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name))
+                                                                }]
+                                                        },
+                                                        "culprit": { "type": "string", "enum": Array.from(characterNames) }
+                                                    },
+                                                    "required": ["incident", "culprit", 'day'],
+                                                }].filter(() => incidentsWithFake.filter((name) => !names.mobIncidentNames.has(name)).length > 0),
+                                                ...[{
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "day": { "type": "number" },
+                                                        "incident":
+                                                        {
+                                                            type: "array",
+                                                            "items": [
+                                                                {
+                                                                    "type": "string",
+                                                                    "enum": incidentsWithFake.filter((name) => !names.mobIncidentNames.has(name))
+                                                                }, {
+                                                                    "type": "string",
+                                                                    "enum": incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name))
+                                                                }]
+                                                        },
+                                                        "culprit": { "type": "string", "enum": locations }
+                                                    },
+                                                    "required": ["incident", "culprit", "day"],
+                                                }].filter(() => incidentsWithFake.filter((name) => names.mobIncidentNames.has(name)).length > 0)
+
+
                                             ]
                                         }
                                     },
@@ -567,6 +716,9 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
 
                                                 const rolesWithScriptSpecified = Object.values(RolaData).filter(x => x.scriptSpecified?.length > 0).map(x => x.name);
 
+                                                const characterAlwaysScpecyfiedExtra = (CharacterData[character].scriptSpecified?.length ?? 0) > 0 || CharacterData[character].startLocation.length > 1;
+
+
                                                 const roleNames = roleNamesInSet;
                                                 return [character, {
                                                     "oneOf": [
@@ -574,7 +726,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                             {
                                                                 "type": "string",
                                                                 "enum": Array.from(roleNames).filter(r => !rolesWithScriptSpecified.includes(r))
-                                                            }].filter(() => (CharacterData[character].scriptSpecified?.length ?? 0) == 0 && Array.from(roleNames).filter(r => !rolesWithScriptSpecified.includes(r)).length > 0),
+                                                            }].filter(() => (!characterAlwaysScpecyfiedExtra && Array.from(roleNames).filter(r => !rolesWithScriptSpecified.includes(r)).length > 0)),
                                                         ...[
                                                             {
                                                                 "type": "array",
@@ -588,6 +740,12 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
 
                                                                         "additionalProperties": false,
                                                                         "properties": {
+
+                                                                            ...Object.fromEntries([['Start Location', {
+                                                                                "type": "string",
+                                                                                "enum": CharacterData[character].startLocation
+                                                                            }]].filter(() => CharacterData[character].startLocation.length > 1)),
+
                                                                             ...Object.fromEntries(CharacterData[character].scriptSpecified?.map(x => {
                                                                                 return [x.name, x.type === "number"
                                                                                     ? { "type": "number" }
@@ -601,7 +759,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                         }
                                                                     }]
                                                             }
-                                                        ].filter(() => CharacterData[character].scriptSpecified?.length > 0 && Array.from(roleNames).filter(r => !rolesWithScriptSpecified.includes(r)).length > 0),
+                                                        ].filter(() => characterAlwaysScpecyfiedExtra && Array.from(roleNames).filter(r => !rolesWithScriptSpecified.includes(r)).length > 0),
 
                                                         ...rolesWithScriptSpecified
                                                             .filter((role) => RolaData[role].scriptSpecified?.length > 0)
@@ -653,6 +811,10 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
 
                                             })),
                                         }
+                                    },
+                                    "specialRules": {
+                                        "type": "array",
+                                        "items": 'string'
                                     },
                                     "specifics": { "type": "string" },
                                     "story": { "type": "string" },

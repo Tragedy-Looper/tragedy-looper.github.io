@@ -1,4 +1,6 @@
-[
+{
+  "$schema": "../scripts.schema.json",
+  "scripts": [
     {
       "title": "孤独ノ隠レンボ (Lonely Hide and Seek)",
       "creator": "siro_xx",
@@ -403,7 +405,9 @@
           "culprit": "Patient"
         }
       ],
-      "specialRules": ["Mastermind remove \"Forbid Goodwill\" from his hand. It cannot be used on any loop"],
+      "specialRules": [
+        "Mastermind remove \"Forbid Goodwill\" from his hand. It cannot be used on any loop"
+      ],
       "specifics": "",
       "story": "",
       "mastermindHints": ""
@@ -458,9 +462,12 @@
           "culprit": "Scientist"
         }
       ],
-      "specialRules": ["Mastermind remove \"Forbid Goodwill\" from his hand. It cannot be used on any loop"],
+      "specialRules": [
+        "Mastermind remove \"Forbid Goodwill\" from his hand. It cannot be used on any loop"
+      ],
       "specifics": "",
       "story": "",
       "mastermindHints": ""
     }
   ]
+}
