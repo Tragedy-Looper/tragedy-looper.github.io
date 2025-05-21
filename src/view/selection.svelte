@@ -1,5 +1,5 @@
 <script lang="ts">
-	const states = [' ', '？', '⭕', '❌'];
+	const states = [' ', '❓', '⭕', '❌'];
 	let currentState = 0;
 
 	function next() {

@@ -46,8 +46,10 @@
 
 <div>
   {#each cards as card}
-    <div class="card {card.gender}">
+    <div class="card">
+      
       <img src={card.image} alt="character image" class="back image" />
+      <img src="{base}/cards/general/{card.gender}.png" class="back"/>
 
       {#each locations as location}
         {#if card.startLocation.includes(location)}
@@ -59,12 +61,6 @@
         {:else if card.forbiddenLocation.includes(location)}
           <img
             src="{base}/cards/general/location-{location.toLocaleLowerCase()}-forbidden.png"
-            alt={getString(location)}
-            class="location back"
-          />
-        {:else if card.startLocation.length == 0}
-          <img
-            src="{base}/cards/general/location-{location.toLocaleLowerCase()}-start.png"
             alt={getString(location)}
             class="location back"
           />
@@ -213,18 +209,7 @@
     background-position: center;
     background-size: cover;
     background-clip: border-box;
-    &.male {
-      background-image: url('/cards/general/back-male.png');
-    }
-    &.female {
-      background-image: url('/cards/general/back-female.png');
-    }
-    &.diverse {
-      background-image: url('/cards/general/back-diverse.png');
-    }
-    &.both {
-      background-image: url('/cards/general/back-both.png');
-    }
+      background-image: url('/cards/general/background.png');
     .image {
       object-fit: contain;
       padding-top: 0.2cm;

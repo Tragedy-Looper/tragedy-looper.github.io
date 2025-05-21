@@ -20,3 +20,4 @@ data/incidents.schema.json
 data/plots.schema.json
 data/roles.schema.json
 data/scripts.schema.json
+src/data-ui-strings.ts

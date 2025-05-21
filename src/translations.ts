@@ -6,39 +6,10 @@ import { tragedySets } from './model/tragedySets';
 import { translations as data } from './data-translations';
 import { browser } from '$app/environment';
 import { getLocalisatio } from './storage';
+import { ui_strings } from './data-ui-strings';
 
 const toCheck = [characters, incidents, plots, roles, tragedySets,
-    ...[
-        'Tragedy Looper Deduction overview',
-        'If your are the Mastermind',
-        'choose a script (SPOILER!!)',
-        'Otherwise ask your Mastermind to choose a script and send you the link.',
-        'Feedback (in english) is appriciated on',
-        'or',
-        "Missing Translations",
-        "Key",
-        "paranoia",
-        "If translations exists, you find localized character cards by following this link.",
-        "Translation",
-        "Language",
-        "Only show Missing",
-        "Only at",
-
-        "For your Language there are missing translations, if you have time and fun you can help and add some localisations using the below. And post them on Github.",
-        "Translation Overview",
-
-        "Main Plot",
-        "Characters",
-        "Goodwill Refusel",
-        "Once per {type}",
-        "Immortal",
-        "After Death",
-        "Day {day}",
-        "Goodwill refusal",
-        "If you translated something, please open an issue on Github and post the exported text, or submit a pull request.",
-        "This should list all texts and keywords used, but not yet translated into your language. However, it's not applied everywhere yet. The Player Aid should be completely set, but others are missing.",
-        'After I include your text, everyone should be able to see the translations online  Currently, your translations are stored in your browser, so you can check if it works as intended. These are marked with «»',
-    ],
+    ...ui_strings,
 ];
 
 const missingInToCheck: Set<string> = new Set();
@@ -77,7 +48,7 @@ export function getString(key: string | undefined, lang: string | undefined, ...
         translated = translated.replaceAll(`{${e.name}}`, `${e.value}`);
     })
 
-    return translated.length>0 ? translated : key;
+    return translated.length > 0 ? translated : key;
 
 
 }

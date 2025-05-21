@@ -92,30 +92,6 @@ translationData.then((translations) => {
     }).reduce((p, c) => `${p}${p.length == 0 ? '' : ','}\n${c}`, "");
 
     return `export const translations = {\n${innerObject}\n}`
-
-
-
-    // const data = types.map(type => {
-    //     return [type, x.filter(([, t]) => t == type).map(([x]) => x).filter(x => {
-    //         try {
-    //             const parsed = JSON.parse(x);
-    //             return typeof parsed == 'object' && Array.isArray(parsed);
-    //         } catch (error) {
-    //             console.error(error);
-    //             return false;
-    //         }
-    //     })] as const;
-    // });
-
-    // return data.map(([type, arrays]) => {
-
-    //     return `export const ${type} = [\n${arrays.map(x => ` ...${x}`).reduce((p, c) => `${p}${p.length > 0 ? ',' : ''}\n${c}`, '')}\n] as const`;
-
-    // }).reduce((p, c) => `${p};\n${c}`, '')
-
-
-
-
 }
 ).then(x => {
 
@@ -126,3 +102,32 @@ translationData.then((translations) => {
 
 
 
+// get all ts files in the src folder recursively
+const typescriptFiles: string[] = [];
+const getAllFiles = (dirPath: string) => {
+    const files = fs.readdirSync(dirPath);
+    files.forEach((file) => {
+        const filePath = path.join(dirPath, file);
+        if (fs.statSync(filePath).isDirectory()) {
+            getAllFiles(filePath);
+        } else if (file.endsWith('.ts') || file.endsWith('.svelte')) {
+            typescriptFiles.push(filePath);
+        }
+    });
+};
+getAllFiles('./src');
+
+
+const translationStrings: string[] = [];
+typescriptFiles.forEach((file) => {
+    const fileContent = fs.readFileSync(file, 'utf-8');
+    // search for getString('TEXT') and getString('', lang) including other quotes
+    const regex = /getString\((\s|\n)*(['"])(.*?)\2/sg;
+    let match;
+    while ((match = regex.exec(fileContent)) !== null) {
+        const text = match[3];
+        translationStrings.push(`"${text}"`);
+    }
+});
+const translationObject = `export const ui_strings = [\n${translationStrings.reduce((p, c) => `${p}${p.length == 0 ? '' : ','}\n${c}`, "")}\n] as const;`;
+fs.writeFileSync('./src/data-ui-strings.ts', translationObject);
