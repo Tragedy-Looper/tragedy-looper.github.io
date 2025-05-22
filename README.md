@@ -51,7 +51,7 @@ If you add a new incident in an `inident.json` it will only be recognized in the
 
 ## What's Next?
 
-- [ ] Fix Character Metadata: start positions and Forbidden Locations are Wrong for almost everyone
+- [x] Fix Character Metadata: start positions and Forbidden Locations are Wrong for almost everyone
 - [x] Generated Character Cards: The
   [official Website](http://bakafire.main.jp/rooper/sr_dl_04_sozai.htm) has
   blank Cards and the Character images. With this we could generate images for

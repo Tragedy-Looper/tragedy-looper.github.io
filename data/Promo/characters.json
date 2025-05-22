@@ -81,7 +81,7 @@
         },
         {
             "name": "Sect Founder",
-            "paranoiaLimit": 1,
+            "paranoiaLimit": 3,
             "tags": [
                 "adult",
                 "woman"

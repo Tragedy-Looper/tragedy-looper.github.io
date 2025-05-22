@@ -112,6 +112,9 @@
             "startLocation": [
                 "Shrine"
             ],
+            "forbiddenLocation": [
+                "City"
+            ],
             "abilities": [
                 {
                     "type": "active",
@@ -137,6 +140,9 @@
             ],
             "startLocation": [
                 "Shrine"
+            ],
+            "forbiddenLocation": [
+                "Hospital"
             ],
             "abilities": [
                 {
@@ -215,13 +221,16 @@
         },
         {
             "name": "Office Worker",
-            "paranoiaLimit": 3,
+            "paranoiaLimit": 2,
             "tags": [
                 "man",
                 "adult"
             ],
             "startLocation": [
                 "City"
+            ],
+            "forbiddenLocation": [
+                "School"
             ],
             "abilities": [
                 {
@@ -333,7 +342,7 @@
                 "man"
             ],
             "startLocation": [
-                "City"
+                "Hospital"
             ],
             "abilities": [
                 {

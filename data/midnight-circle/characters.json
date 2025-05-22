@@ -9,7 +9,7 @@
                 "man"
             ],
             "startLocation": [
-                "City"
+                "Hospital"
             ],
             "abilities": [
                 {
@@ -57,6 +57,11 @@
             "startLocation": [
                 "City"
             ],
+            "forbiddenLocation": [
+                "Shrine",
+                "Hospital",
+                "School"
+            ],
             "abilities": [
                 {
                     "type": "passive",
@@ -82,7 +87,7 @@
                 "woman"
             ],
             "startLocation": [
-                "City"
+                "Shrine"
             ],
             "abilities": [
                 {
