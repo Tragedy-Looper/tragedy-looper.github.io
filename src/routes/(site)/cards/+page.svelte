@@ -12,44 +12,45 @@
 
   $: getString = (key: string) => getStringOriginal(key, lang);
 
-  $: cards = Object.entries(characters).map(([key, value]) => {
-    return {
-      ...value,
-      forbiddenLocation: 'forbiddenLocation' in value ? value.forbiddenLocation : [],
-      name: getString(value.name),
-      gender:
-        (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
-        (value.tags.includes('girl' as never) || value.tags.includes('woman' as never))
-          ? ('both' as const)
-          : value.tags.includes('boy' as never) || value.tags.includes('man' as never)
-          ? ('male' as const)
-          : value.tags.includes('girl' as never) || value.tags.includes('woman' as never)
-          ? ('female' as const)
-          : ('diverse' as const),
-      tags: value.tags.map(getString),
-      image: `${base}/cards/characters/${key.toLocaleLowerCase().replaceAll('?', '')}.png`,
-      abilities: value.abilities.map((ability) => {
-        return {
-          ...ability,
-          timesPerLoop: 'timesPerLoop' in ability ? ability.timesPerLoop : 0,
-          immuneToGoodwillRefusel:
-            'immuneToGoodwillRefusel' in ability ? ability.immuneToGoodwillRefusel : false,
-          restrictedToLocation:
-            'restrictedToLocation' in ability ? ability.restrictedToLocation : [],
+  $: cards = Object.entries(characters)
+    .toSorted(([a], [b]) => getString(a).localeCompare(getString(b)))
+    .map(([key, value]) => {
+      return {
+        ...value,
+        forbiddenLocation: 'forbiddenLocation' in value ? value.forbiddenLocation : [],
+        name: getString(value.name),
+        gender:
+          (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
+          (value.tags.includes('girl' as never) || value.tags.includes('woman' as never))
+            ? ('both' as const)
+            : value.tags.includes('boy' as never) || value.tags.includes('man' as never)
+            ? ('male' as const)
+            : value.tags.includes('girl' as never) || value.tags.includes('woman' as never)
+            ? ('female' as const)
+            : ('diverse' as const),
+        tags: value.tags.map(getString),
+        image: `${base}/cards/characters/${key.toLocaleLowerCase().replaceAll('?', '')}.png`,
+        abilities: value.abilities.map((ability) => {
+          return {
+            ...ability,
+            timesPerLoop: 'timesPerLoop' in ability ? ability.timesPerLoop : 0,
+            immuneToGoodwillRefusel:
+              'immuneToGoodwillRefusel' in ability ? ability.immuneToGoodwillRefusel : false,
+            restrictedToLocation:
+              'restrictedToLocation' in ability ? ability.restrictedToLocation : [],
 
-          description: getString(ability.description),
-        };
-      }),
-    };
-  });
+            description: getString(ability.description),
+          };
+        }),
+      };
+    });
 </script>
 
 <div>
   {#each cards as card}
     <div class="card">
-      
       <img src={card.image} alt="character image" class="back image" />
-      <img src="{base}/cards/general/{card.gender}.png" class="back"/>
+      <img src="{base}/cards/general/{card.gender}.png" class="back" />
 
       {#each locations as location}
         {#if card.startLocation.includes(location)}
@@ -209,7 +210,7 @@
     background-position: center;
     background-size: cover;
     background-clip: border-box;
-      background-image: url('/cards/general/background.png');
+    background-image: url('/cards/general/background.png');
     .image {
       object-fit: contain;
       padding-top: 0.2cm;
