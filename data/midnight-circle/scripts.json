@@ -349,12 +349,7 @@
                 "Pop Idol": "Person",
                 "Journalist": "Prophet",
                 "Doctor": "Cultist",
-                "Henchman": [
-                    "Person",
-                    {
-                        "Start Location": "City"
-                    }
-                ]
+                "Henchman": "Person"
             },
             "incidents": [
                 {
@@ -671,12 +666,7 @@
                 "Journalist": "Person",
                 "Doctor": "Person",
                 "Patient": "Person",
-                "Henchman": [
-                    "Conspiracy Theorist",
-                    {
-                        "Start Location": "School"
-                    }
-                ]
+                "Henchman": "Conspiracy Theorist"
             },
             "incidents": [
                 {

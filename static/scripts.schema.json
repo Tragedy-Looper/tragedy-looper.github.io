@@ -1255,39 +1255,19 @@
                   "Henchman": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Agent",
-                              "Brain",
-                              "Twilight",
-                              "Invader",
-                              "Quidnunc",
-                              "Agitator",
-                              "Neurosis",
-                              "Fanatic",
-                              "Enchanter",
-                              "Shadow",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School",
-                                  "Shrine",
-                                  "Hospital"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Agent",
+                          "Brain",
+                          "Twilight",
+                          "Invader",
+                          "Quidnunc",
+                          "Agitator",
+                          "Neurosis",
+                          "Fanatic",
+                          "Enchanter",
+                          "Shadow",
+                          "Person"
                         ]
                       },
                       {
@@ -2135,37 +2115,19 @@
                   "Servant": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Agent",
-                              "Brain",
-                              "Twilight",
-                              "Invader",
-                              "Quidnunc",
-                              "Agitator",
-                              "Neurosis",
-                              "Fanatic",
-                              "Enchanter",
-                              "Shadow",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Agent",
+                          "Brain",
+                          "Twilight",
+                          "Invader",
+                          "Quidnunc",
+                          "Agitator",
+                          "Neurosis",
+                          "Fanatic",
+                          "Enchanter",
+                          "Shadow",
+                          "Person"
                         ]
                       },
                       {
@@ -3779,46 +3741,26 @@
                   "Henchman": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Marionette",
-                              "Storyteller",
-                              "Obstinate|Key Person",
-                              "Key Person",
-                              "Lullaby",
-                              "Brain",
-                              "Shifter",
-                              "Fragment",
-                              "Obstinate",
-                              "Key Person|Brain",
-                              "Pied Piper|Gossip",
-                              "Gossip",
-                              "Person|Serial Killer",
-                              "Conspiracy Theorist|Serial Killer",
-                              "Alice",
-                              "Conspiracy Theorist",
-                              "Conspiracy Theorist|Obstinate",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School",
-                                  "Shrine",
-                                  "Hospital"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Marionette",
+                          "Storyteller",
+                          "Obstinate|Key Person",
+                          "Key Person",
+                          "Lullaby",
+                          "Brain",
+                          "Shifter",
+                          "Fragment",
+                          "Obstinate",
+                          "Key Person|Brain",
+                          "Pied Piper|Gossip",
+                          "Gossip",
+                          "Person|Serial Killer",
+                          "Conspiracy Theorist|Serial Killer",
+                          "Alice",
+                          "Conspiracy Theorist",
+                          "Conspiracy Theorist|Obstinate",
+                          "Person"
                         ]
                       },
                       {
@@ -4757,44 +4699,26 @@
                   "Servant": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Marionette",
-                              "Storyteller",
-                              "Obstinate|Key Person",
-                              "Key Person",
-                              "Lullaby",
-                              "Brain",
-                              "Shifter",
-                              "Fragment",
-                              "Obstinate",
-                              "Key Person|Brain",
-                              "Pied Piper|Gossip",
-                              "Gossip",
-                              "Person|Serial Killer",
-                              "Conspiracy Theorist|Serial Killer",
-                              "Alice",
-                              "Conspiracy Theorist",
-                              "Conspiracy Theorist|Obstinate",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Marionette",
+                          "Storyteller",
+                          "Obstinate|Key Person",
+                          "Key Person",
+                          "Lullaby",
+                          "Brain",
+                          "Shifter",
+                          "Fragment",
+                          "Obstinate",
+                          "Key Person|Brain",
+                          "Pied Piper|Gossip",
+                          "Gossip",
+                          "Person|Serial Killer",
+                          "Conspiracy Theorist|Serial Killer",
+                          "Alice",
+                          "Conspiracy Theorist",
+                          "Conspiracy Theorist|Obstinate",
+                          "Person"
                         ]
                       },
                       {
@@ -6266,37 +6190,17 @@
                   "Henchman": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Brain",
-                              "Key Person",
-                              "Cultist",
-                              "Conspiracy Theorist",
-                              "Serial Killer",
-                              "Curmudgeon",
-                              "Friend",
-                              "Killer",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School",
-                                  "Shrine",
-                                  "Hospital"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Brain",
+                          "Key Person",
+                          "Cultist",
+                          "Conspiracy Theorist",
+                          "Serial Killer",
+                          "Curmudgeon",
+                          "Friend",
+                          "Killer",
+                          "Person"
                         ]
                       },
                       {
@@ -7118,35 +7022,17 @@
                   "Servant": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Brain",
-                              "Key Person",
-                              "Cultist",
-                              "Conspiracy Theorist",
-                              "Serial Killer",
-                              "Curmudgeon",
-                              "Friend",
-                              "Killer",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Brain",
+                          "Key Person",
+                          "Cultist",
+                          "Conspiracy Theorist",
+                          "Serial Killer",
+                          "Curmudgeon",
+                          "Friend",
+                          "Killer",
+                          "Person"
                         ]
                       },
                       {
@@ -8667,41 +8553,21 @@
                   "Henchman": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Conspiracy Theorist",
-                              "Key Person",
-                              "Killer",
-                              "Brain",
-                              "Cultist",
-                              "Time Traveler",
-                              "Witch",
-                              "Friend",
-                              "Lover",
-                              "Loved One",
-                              "Serial Killer",
-                              "Factor",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School",
-                                  "Shrine",
-                                  "Hospital"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Conspiracy Theorist",
+                          "Key Person",
+                          "Killer",
+                          "Brain",
+                          "Cultist",
+                          "Time Traveler",
+                          "Witch",
+                          "Friend",
+                          "Lover",
+                          "Loved One",
+                          "Serial Killer",
+                          "Factor",
+                          "Person"
                         ]
                       },
                       {
@@ -9575,39 +9441,21 @@
                   "Servant": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Conspiracy Theorist",
-                              "Key Person",
-                              "Killer",
-                              "Brain",
-                              "Cultist",
-                              "Time Traveler",
-                              "Witch",
-                              "Friend",
-                              "Lover",
-                              "Loved One",
-                              "Serial Killer",
-                              "Factor",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Conspiracy Theorist",
+                          "Key Person",
+                          "Killer",
+                          "Brain",
+                          "Cultist",
+                          "Time Traveler",
+                          "Witch",
+                          "Friend",
+                          "Lover",
+                          "Loved One",
+                          "Serial Killer",
+                          "Factor",
+                          "Person"
                         ]
                       },
                       {
@@ -11187,42 +11035,22 @@
                   "Henchman": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Lover",
-                              "Loved One",
-                              "Key Person",
-                              "Vampire",
-                              "Werewolf",
-                              "Nightmare",
-                              "Ghost",
-                              "Show-Off",
-                              "Serial Killer",
-                              "Conspiracy Theorist",
-                              "Witch",
-                              "Coward",
-                              "Zombie",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School",
-                                  "Shrine",
-                                  "Hospital"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Lover",
+                          "Loved One",
+                          "Key Person",
+                          "Vampire",
+                          "Werewolf",
+                          "Nightmare",
+                          "Ghost",
+                          "Show-Off",
+                          "Serial Killer",
+                          "Conspiracy Theorist",
+                          "Witch",
+                          "Coward",
+                          "Zombie",
+                          "Person"
                         ]
                       },
                       {
@@ -12109,40 +11937,22 @@
                   "Servant": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Lover",
-                              "Loved One",
-                              "Key Person",
-                              "Vampire",
-                              "Werewolf",
-                              "Nightmare",
-                              "Ghost",
-                              "Show-Off",
-                              "Serial Killer",
-                              "Conspiracy Theorist",
-                              "Witch",
-                              "Coward",
-                              "Zombie",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Lover",
+                          "Loved One",
+                          "Key Person",
+                          "Vampire",
+                          "Werewolf",
+                          "Nightmare",
+                          "Ghost",
+                          "Show-Off",
+                          "Serial Killer",
+                          "Conspiracy Theorist",
+                          "Witch",
+                          "Coward",
+                          "Zombie",
+                          "Person"
                         ]
                       },
                       {
@@ -13730,42 +13540,22 @@
                   "Henchman": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Conspiracy Theorist",
-                              "Key Person",
-                              "Sacrifice",
-                              "Immortal",
-                              "Cultist",
-                              "Deep One",
-                              "Witch",
-                              "Wizard",
-                              "Serial Killer",
-                              "Witness",
-                              "Time Traveler",
-                              "Paranoiac",
-                              "Faceless",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School",
-                                  "Shrine",
-                                  "Hospital"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Conspiracy Theorist",
+                          "Key Person",
+                          "Sacrifice",
+                          "Immortal",
+                          "Cultist",
+                          "Deep One",
+                          "Witch",
+                          "Wizard",
+                          "Serial Killer",
+                          "Witness",
+                          "Time Traveler",
+                          "Paranoiac",
+                          "Faceless",
+                          "Person"
                         ]
                       },
                       {
@@ -14652,40 +14442,22 @@
                   "Servant": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Conspiracy Theorist",
-                              "Key Person",
-                              "Sacrifice",
-                              "Immortal",
-                              "Cultist",
-                              "Deep One",
-                              "Witch",
-                              "Wizard",
-                              "Serial Killer",
-                              "Witness",
-                              "Time Traveler",
-                              "Paranoiac",
-                              "Faceless",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Conspiracy Theorist",
+                          "Key Person",
+                          "Sacrifice",
+                          "Immortal",
+                          "Cultist",
+                          "Deep One",
+                          "Witch",
+                          "Wizard",
+                          "Serial Killer",
+                          "Witness",
+                          "Time Traveler",
+                          "Paranoiac",
+                          "Faceless",
+                          "Person"
                         ]
                       },
                       {
@@ -16223,41 +15995,21 @@
                   "Henchman": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Nightmare (Haunted Stage)",
-                              "Curse God",
-                              "Ghost (Haunted Stage)",
-                              "Spellcaster",
-                              "Human Doll",
-                              "Werewolf (Haunted Stage)",
-                              "Vampire (Haunted Stage)",
-                              "Monster",
-                              "Horror",
-                              "Poltergeist",
-                              "Overlord",
-                              "Zombie (Haunted Stage)",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School",
-                                  "Shrine",
-                                  "Hospital"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Nightmare (Haunted Stage)",
+                          "Curse God",
+                          "Ghost (Haunted Stage)",
+                          "Spellcaster",
+                          "Human Doll",
+                          "Werewolf (Haunted Stage)",
+                          "Vampire (Haunted Stage)",
+                          "Monster",
+                          "Horror",
+                          "Poltergeist",
+                          "Overlord",
+                          "Zombie (Haunted Stage)",
+                          "Person"
                         ]
                       },
                       {
@@ -17131,39 +16883,21 @@
                   "Servant": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Nightmare (Haunted Stage)",
-                              "Curse God",
-                              "Ghost (Haunted Stage)",
-                              "Spellcaster",
-                              "Human Doll",
-                              "Werewolf (Haunted Stage)",
-                              "Vampire (Haunted Stage)",
-                              "Monster",
-                              "Horror",
-                              "Poltergeist",
-                              "Overlord",
-                              "Zombie (Haunted Stage)",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Nightmare (Haunted Stage)",
+                          "Curse God",
+                          "Ghost (Haunted Stage)",
+                          "Spellcaster",
+                          "Human Doll",
+                          "Werewolf (Haunted Stage)",
+                          "Vampire (Haunted Stage)",
+                          "Monster",
+                          "Horror",
+                          "Poltergeist",
+                          "Overlord",
+                          "Zombie (Haunted Stage)",
+                          "Person"
                         ]
                       },
                       {
@@ -18715,42 +18449,22 @@
                   "Henchman": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Key Person",
-                              "Killer",
-                              "Brain",
-                              "Serial Killer",
-                              "Friend",
-                              "Poisoner",
-                              "Fool",
-                              "Conspiracy Theorist",
-                              "Therapist",
-                              "Paranoiac",
-                              "Obstinate",
-                              "Twin",
-                              "Private Investigator",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School",
-                                  "Shrine",
-                                  "Hospital"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Key Person",
+                          "Killer",
+                          "Brain",
+                          "Serial Killer",
+                          "Friend",
+                          "Poisoner",
+                          "Fool",
+                          "Conspiracy Theorist",
+                          "Therapist",
+                          "Paranoiac",
+                          "Obstinate",
+                          "Twin",
+                          "Private Investigator",
+                          "Person"
                         ]
                       },
                       {
@@ -19637,40 +19351,22 @@
                   "Servant": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Key Person",
-                              "Killer",
-                              "Brain",
-                              "Serial Killer",
-                              "Friend",
-                              "Poisoner",
-                              "Fool",
-                              "Conspiracy Theorist",
-                              "Therapist",
-                              "Paranoiac",
-                              "Obstinate",
-                              "Twin",
-                              "Private Investigator",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Key Person",
+                          "Killer",
+                          "Brain",
+                          "Serial Killer",
+                          "Friend",
+                          "Poisoner",
+                          "Fool",
+                          "Conspiracy Theorist",
+                          "Therapist",
+                          "Paranoiac",
+                          "Obstinate",
+                          "Twin",
+                          "Private Investigator",
+                          "Person"
                         ]
                       },
                       {
@@ -21304,42 +21000,22 @@
                   "Henchman": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Brain",
-                              "Cultist",
-                              "Key Person",
-                              "Conspiracy Theorist",
-                              "Ninja",
-                              "Friend",
-                              "Serial Killer",
-                              "Obstinate",
-                              "Magician",
-                              "Immortal",
-                              "Witch",
-                              "Factor",
-                              "Prophet",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School",
-                                  "Shrine",
-                                  "Hospital"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Brain",
+                          "Cultist",
+                          "Key Person",
+                          "Conspiracy Theorist",
+                          "Ninja",
+                          "Friend",
+                          "Serial Killer",
+                          "Obstinate",
+                          "Magician",
+                          "Immortal",
+                          "Witch",
+                          "Factor",
+                          "Prophet",
+                          "Person"
                         ]
                       },
                       {
@@ -22226,40 +21902,22 @@
                   "Servant": {
                     "oneOf": [
                       {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "enum": [
-                              "Brain",
-                              "Cultist",
-                              "Key Person",
-                              "Conspiracy Theorist",
-                              "Ninja",
-                              "Friend",
-                              "Serial Killer",
-                              "Obstinate",
-                              "Magician",
-                              "Immortal",
-                              "Witch",
-                              "Factor",
-                              "Prophet",
-                              "Person"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                              "Start Location": {
-                                "type": "string",
-                                "enum": [
-                                  "City",
-                                  "School"
-                                ]
-                              }
-                            }
-                          }
+                        "type": "string",
+                        "enum": [
+                          "Brain",
+                          "Cultist",
+                          "Key Person",
+                          "Conspiracy Theorist",
+                          "Ninja",
+                          "Friend",
+                          "Serial Killer",
+                          "Obstinate",
+                          "Magician",
+                          "Immortal",
+                          "Witch",
+                          "Factor",
+                          "Prophet",
+                          "Person"
                         ]
                       },
                       {

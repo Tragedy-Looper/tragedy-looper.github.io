@@ -32,11 +32,7 @@
         "Alien": "Person",
         "Pop Idol": "Person",
         "Journalist": "Quidnunc",
-        "Henchman": ["Twilight",
-          {
-            "Start Location": "City"
-          }
-        ]
+        "Henchman": "Twilight"
       },
       "incidents": [
         {

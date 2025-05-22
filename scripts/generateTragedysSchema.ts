@@ -722,7 +722,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
 
                                                 const rolesWithScriptSpecified = Object.values(RolaData).filter(x => x.scriptSpecified?.length > 0).map(x => x.name);
 
-                                                const characterAlwaysScpecyfiedExtra = (CharacterData[character].scriptSpecified?.length ?? 0) > 0 || CharacterData[character].startLocation.length > 1;
+                                                const characterAlwaysScpecyfiedExtra = (CharacterData[character].scriptSpecified?.length ?? 0) > 0;
 
 
                                                 const roleNames = roleNamesInSet;
@@ -747,10 +747,11 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                         "additionalProperties": false,
                                                                         "properties": {
 
-                                                                            ...Object.fromEntries([['Start Location', {
-                                                                                "type": "string",
-                                                                                "enum": CharacterData[character].startLocation
-                                                                            }] as const].filter(() => CharacterData[character].startLocation.length > 1)),
+                                                                            // This would add start location setting to the character if it has more then one to choose
+                                                                            // ...Object.fromEntries([['Start Location', {
+                                                                            //     "type": "string",
+                                                                            //     "enum": CharacterData[character].startLocation
+                                                                            // }] as const].filter(() => CharacterData[character].startLocation.length > 1)),
 
                                                                             ...Object.fromEntries(CharacterData[character].scriptSpecified?.map(x => {
                                                                                 return [x.name, x.type === "number"
