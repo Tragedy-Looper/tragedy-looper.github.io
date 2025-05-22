@@ -453,6 +453,7 @@ function generateCharactersSchema({ characterNames }: Names) {
                         },
                         "comesInLater": { "type": "boolean" },
                         "plotLessRole": { "type": "string", "enum": ['all', 'not in plots', 'plot duplicate'] },
+                        "nonSelectableCharacter": { "type": "boolean" },
                         ...scriptSpecified,
                         ...doseNotTriggerIncidentEffect,
                         "abilities": {

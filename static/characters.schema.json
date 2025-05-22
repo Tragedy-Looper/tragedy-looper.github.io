@@ -74,6 +74,9 @@
               "plot duplicate"
             ]
           },
+          "nonSelectableCharacter": {
+            "type": "boolean"
+          },
           "scriptSpecified": {
             "type": "array",
             "items": {

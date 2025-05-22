@@ -607,7 +607,10 @@ export class CustomScript {
             const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y].roles)));
             return used;
         });
-        this.roles = derived([this.selectedPlots], ([...selectiedPlots]) => generateRoleSelection(this, sumGroups(...selectiedPlots.flatMap(x => x.map(y => plots[y].roles))), keys(characters)));
+        this.roles = derived([this.selectedPlots], ([...selectiedPlots]) => generateRoleSelection(this, sumGroups(...selectiedPlots.flatMap(x => x.map(y => plots[y].roles))), keys(characters).filter(x => {
+            const char = characters[x];
+            return !('nonSelectableCharacter' in char && char.nonSelectableCharacter);
+        })));
 
 
         this.usedCharacters = storeStores(derived(storeStores(this.roles, x => x.selectors), r => r.flat().map(x => x.selectedCharacter)), x => x);
@@ -681,7 +684,7 @@ export class CustomScript {
                     } else if (isRoleName(value[0])) {
                         const name = value[0]
                         if (name in p) {
-                            p[name].push([key,value[1]]);
+                            p[name].push([key, value[1]]);
                         } else {
                             p[name] = [];
                             p[name].push([key, value[1]]);
