@@ -99,12 +99,12 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "Choose a character other than this one who is at their Paranoia Limit. Place a Goodwill counter on that character."
+                    "description": "Place a Goodwill on an other Character who is at their Paranoia Limit."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 4,
-                    "description": "Choose a character other than this one at this location who is at their Paranoia Limit. Reveal that character's Role.",
+                    "description": "Reveal the role of another character who is at their Paranoia Limit in this location.",
                     "timesPerLoop": 1
                 }
             ]
@@ -124,12 +124,12 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "During script creation, this character cannot be given a Role from the Plots. Instead of being a Person, he gains the Role of another character, ignoring Role limitations."
+                    "description": "Script Creation: This Character must copy the role of another Character in the script (max amount ignored)."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "Reveal the name of each character that shares this character's Role. This cannot be refused by Goodwill Refusal. This can only be used on Loop 2 onward."
+                    "description": "Loop 2 or later: Reveal the name of all characters with the same Role as Copycat. This cannot be refused by Goodwill Refusal."
                 }
             ]
         },
@@ -217,7 +217,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "During each Goodwill ability phase, the Leader may move 1 counter from this character to another character at this location. If this character has Goodwill Refusal, the Mastermind must also do this during the Mastermind's ability phase."
+                    "description": "Each turn, the Leader may move 1 counter on this character to another character at this location. If this character has Goodwill Refusal, the Mastermind must also do this during the Mastermind's ability step."
                 }
             ]
         }

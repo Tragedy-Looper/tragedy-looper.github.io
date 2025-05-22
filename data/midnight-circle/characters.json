@@ -65,7 +65,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "At script creation, this character cannot be a Person."
+                    "description": "This character cannot have the role Person."
                 },
                 {
                     "type": "passive",
@@ -75,7 +75,7 @@
                     "type": "active",
                     "goodwillRank": 3,
                     "timesPerLoop": 1,
-                    "description": "Resolve one of the incidents noted in the open information. The culprit is considered to be the A.I., but ahh the choices are not done by the Mastermind, but the Protagonist Leader. (This does not conut as triggering an Event.)"
+                    "description": "The Leader may resolve one incident in the Script, wit the A.I. as the culprit. (This is not considered triggering the event.)"
                 }
             ]
         },
