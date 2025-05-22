@@ -48,7 +48,7 @@
                 },
                 {
                     "name": "Extra Cads",
-                    "description": "During the \"removal and placement of counters\" stap during Loop start also remove all Extra cards. Then, place the cards according to plot rules (if applicable)."
+                    "description": "During the \"removal and placement of counters\" step during Loop start also remove all Extra cards. Then, place the cards according to plot rules (if applicable)."
                 }
             ]
         },
@@ -95,7 +95,7 @@
             "extraRules": [
                 {
                     "name": "Extra Cads",
-                    "description": "During the \"removal and placement of counters\" stap during Loop start also remove all Extra cards. Then, place the cards according to plot rules (if applicable)."
+                    "description": "During the \"removal and placement of counters\" step during Loop start also remove all Extra cards. Then, place the cards according to plot rules (if applicable)."
                 }
             ]
         }
