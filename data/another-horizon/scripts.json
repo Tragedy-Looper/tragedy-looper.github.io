@@ -32,7 +32,11 @@
         "Alien": "Person",
         "Pop Idol": "Person",
         "Journalist": "Quidnunc",
-        "Henchman": "Twilight"
+        "Henchman": ["Twilight",
+          {
+            "Start Location": "City"
+          }
+        ]
       },
       "incidents": [
         {
@@ -53,7 +57,7 @@
         {
           "day": 4,
           "incident": "Confession",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "Class Rep"
         },
         {
           "day": 5,
@@ -126,7 +130,7 @@
         {
           "day": 4,
           "incident": "Confession",
-          "culprit": "Alien"
+          "culprit": "Pop Idol"
         },
         {
           "day": 5,
@@ -185,7 +189,7 @@
         {
           "day": 1,
           "incident": "Small Force",
-          "culprit": "Alien"
+          "culprit": "Police Officer"
         },
         {
           "day": 2,
@@ -312,7 +316,7 @@
             "enters on loop": 3
           }
         ],
-        "Pop Idol": "Agitator",
+        "Pop Idol": "Fanatic",
         "Illusion": [
           "Animus",
           {

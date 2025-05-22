@@ -18,7 +18,7 @@ export type CharacterName = Character['name'];
 
 type CharacterscomesInLaterHelper<T> = T extends { 'comesInLater': true } ? T : never;
 export type CharacterscomesInLater = CharacterscomesInLaterHelper<Character>['name'];
-type CharactersPlotlessRole<T> = T extends { 'plotLessRole': true } ? T : never;
+type CharactersPlotlessRole<T> = T extends { 'plotLessRole': 'all' | 'not in plots' | 'plot duplicate' } ? T : never;
 export type CharacterPlotless = CharactersPlotlessRole<Character>['name'];
 
 
@@ -31,7 +31,7 @@ type CharacterIntern = {
     startLocation: readonly LocationName[];
     forbiddenLocation?: readonly LocationName[],
     comesInLater?: true,
-    plotLessRole?: true,
+    plotLessRole?: 'all' | 'not in plots' | 'plot duplicate',
 
 } & ScriptSpecified & DoseNotTriggerIncident;
 
@@ -60,8 +60,16 @@ export const characterscomesInLater = Object.values(characters).filter(x => (x a
 export function isCharacterLate(name: CharacterName): name is CharacterscomesInLater {
     return (characters[name] as { comesInLater?: true })?.comesInLater ?? false;
 }
-export function isCharacterPlotless(name: CharacterName): name is CharacterPlotless {
-    return (characters[name] as { plotLessRole?: true })?.plotLessRole ?? false;
+export function isCharacterPlotless<T>(name: T): name is T & { plotLessRole: 'all' | 'not in plots' | 'plot duplicate' };
+export function isCharacterPlotless(name: CharacterName): name is CharacterPlotless;
+export function isCharacterPlotless(name: unknown): name is CharacterPlotless {
+    if (typeof name === 'object' && name !== null) {
+        return 'plotLessRole' in name && ['all', 'not in plots', 'plot duplicate'].some(x => x == (name as { plotLessRole?: 'all' | 'not in plots' | 'plot duplicate' })?.plotLessRole);
+    } else if (typeof name === 'string') {
+        return ['all', 'not in plots', 'plot duplicate'].some(x => x == ((characters[name as CharacterName] as { plotLessRole?: 'all' | 'not in plots' | 'plot duplicate' })?.plotLessRole));
+    } else {
+        return false;
+    }
 }
 export function isCharacterName(name: string): name is CharacterName {
     return name in characters;

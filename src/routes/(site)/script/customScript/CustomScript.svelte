@@ -20,6 +20,7 @@
   import { base } from '$app/paths';
   import ExportView from '../../../../view/exportView.svelte';
     import { saveScript } from '../../../../storage';
+    import { derived } from 'svelte/store';
 
   const model = new CustomScript();
 
@@ -28,7 +29,7 @@
   const mainPlots = model.mainPlots;
   const subPlots = model.subPlots;
 
-  const rolesGroup = model.roles;
+  const rolesGroup = derived(model.roles, a=>a.toSorted((a,b)=> a.role.localeCompare(b.role)));
   const days = model.daysPerLoop;
 
   const title = model.title;

@@ -7,6 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 // 👇️ "/home/john/Desktop/javascript"
 const __dirname = path.dirname(__filename);
 const dataDir = path.join(__dirname, '../data');
+const staticDir = path.join(__dirname, '../static');
 
 const names = {
     plotNames: collectNamesFromJsonFiles('plots'),
@@ -408,9 +409,9 @@ function generateRolesSchema({ roleNames }: Names) {
                         "abilities": {
                             type: "array",
                             "items": Abilitie
-                        },
-                        "required": ["name"],
-                    }
+                        }
+                    },
+                    "required": ["name"],
                 }
             }
         }
@@ -447,7 +448,7 @@ function generateCharactersSchema({ characterNames }: Names) {
                             "items": { "type": "string", "enum": locations }
                         },
                         "comesInLater": { "type": "boolean" },
-                        "plotLessRole": { "type": "boolean" },
+                        "plotLessRole": { "type": "string", "enum": ['all', 'not in plots', 'plot duplicate'] },
                         ...scriptSpecified,
                         ...doseNotTriggerIncidentEffect,
                         "abilities": {
@@ -814,7 +815,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                     },
                                     "specialRules": {
                                         "type": "array",
-                                        "items": 'string'
+                                        "items": { "type": "string" }
                                     },
                                     "specifics": { "type": "string" },
                                     "story": { "type": "string" },
@@ -891,9 +892,12 @@ function generateTragedySetsSchema({ plotNames, incidentNames }: Names) {
 
 
 
-function WriteSchema(schema: any, type: string) {
-    const outPath = path.join(dataDir, `${type}.schema.json`);
-    fs.writeFileSync(outPath, JSON.stringify(schema, null, 2), 'utf-8');
-    console.log('Schema geschrieben nach', outPath);
+function WriteSchema(schema: unknown, type: string) {
+    const outPath = [dataDir, staticDir].map(dir => path.join(dir, `${type}.schema.json`));
+    outPath.forEach((outPath) => {
+        console.log('Schema geschrieben nach', outPath);
+        fs.writeFileSync(outPath, JSON.stringify(schema, null, 2), 'utf-8');
+    });
+
 }
 

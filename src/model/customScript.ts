@@ -330,7 +330,7 @@ export interface ICustomScriptRoleExclusiveSelectionGroup<TCharacters extends Ch
 }
 
 
-class CustomScriptRoleExclusiveSelectionGroup<TCharacters extends CharacterName> implements ICustomScriptRoleExclusiveSelectionGroup<TCharacters>{
+class CustomScriptRoleExclusiveSelectionGroup<TCharacters extends CharacterName> implements ICustomScriptRoleExclusiveSelectionGroup<TCharacters> {
 
     public readonly selectedNumber: Writable<number>;
     public readonly min: number;
@@ -413,7 +413,7 @@ class CustomScriptRoleExclusiveSelection<T extends CharacterName> implements Cus
 
             const newOptions = [
                 ...(isScriptSpecified(char) ? char.scriptSpecified.map((s) => new AdditionalOptions(script, s)) : []),
-                ...(isCharacterPlotless(p) ? [new AdditionalOptions(script, { name: 'Role', type: 'role' })] : []),
+                ...(isCharacterPlotless(char) ? [new AdditionalOptions(script, { name: 'Role', type: char.plotLessRole == 'all' ? 'role in tragedy set' : char.plotLessRole == 'not in plots' ? 'role not in plot' : 'role in plot' })] : []),
                 ...(isScriptSpecified(role) ? role.scriptSpecified.map((s) => new AdditionalOptions(script, s)) : []),
                 ...(hasCastOption(tg) ? tg.castOptions.map((s) => new AdditionalOptions(script, s)) : []),
             ];
@@ -558,6 +558,8 @@ export class CustomScript {
 
     public readonly roles: Readable<readonly ICustomScriptRoleExclusiveSelectionGroup<CharacterName>[]>
     public readonly unusedRoles: Readable<readonly RoleName[]>;
+    public readonly usedRoles: Readable<readonly RoleName[]>;
+    public readonly allRoles: Readable<readonly RoleName[]>;
 
     public readonly usedCharacters: Readable<readonly CharacterName[]>
     public readonly locations: readonly LocationName[]
@@ -593,11 +595,17 @@ export class CustomScript {
 
         this.selectedPlots = derived([selectodMainPlots, selectodSubplots], ([mainPlots, subPlots]) => [...mainPlots, ...subPlots]);
         this.unusedRoles = derived([this.tragedySet, this.selectedPlots], ([tg, ...selectedPlots]) => {
-
-
             const allRoles = getTragedySetRoles(tg);
             const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y].roles)));
             return allRoles.filter(x => !used.includes(x as any));
+        });
+        this.allRoles = derived([this.tragedySet, this.selectedPlots], ([tg, ...selectedPlots]) => {
+            const allRoles = getTragedySetRoles(tg);
+            return allRoles;
+        });
+        this.usedRoles = derived([this.tragedySet, this.selectedPlots], ([tg, ...selectedPlots]) => {
+            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y].roles)));
+            return used;
         });
         this.roles = derived([this.selectedPlots], ([...selectiedPlots]) => generateRoleSelection(this, sumGroups(...selectiedPlots.flatMap(x => x.map(y => plots[y].roles))), keys(characters)));
 
@@ -673,7 +681,7 @@ export class CustomScript {
                     } else if (isRoleName(value[0])) {
                         const name = value[0]
                         if (name in p) {
-                            p[name].push(key);
+                            p[name].push([key,value[1]]);
                         } else {
                             p[name] = [];
                             p[name].push([key, value[1]]);

@@ -111,6 +111,7 @@
         {
             "name": "Copycat",
             "paranoiaLimit": 2,
+            "plotLessRole": "plot duplicate",
             "tags": [
                 "student",
                 "boy"

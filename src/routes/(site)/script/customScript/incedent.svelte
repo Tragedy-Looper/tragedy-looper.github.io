@@ -1,17 +1,22 @@
 <script lang="ts">
+    import { derived } from 'svelte/store';
 	import type { CharacterName } from '../../../../model/characters';
 	import type { ICustomScriptIncidentSelection } from '../../../../model/customScript';
 	import Option from './option.svelte';
 
 	export let incident: ICustomScriptIncidentSelection<CharacterName>;
 
-	$: availableCharacters = incident.availableCharacters;
+	$: availableCharacters = derived(incident.availableCharacters, (a) => {
+		return a.toSorted((a, b) => {
+			return a.localeCompare(b);
+		});
+	});
 	$: availableDays = incident.availableDays;
 	$: options = incident.options;
 	$: selectedCharacter = incident.selectedCharacter;
 	$: selectedDay = incident.selectedDay;
 	$: selectedIncident = incident.selectedIncident;
-	$: allIncidents = incident.script.incidents;
+	$: allIncidents =derived( incident.script.incidents, a=> a.toSorted((a,b)=> a.localeCompare(b)));
 </script>
 
 <tr>

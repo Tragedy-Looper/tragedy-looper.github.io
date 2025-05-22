@@ -32,9 +32,9 @@ export type RoleInternal = {
 } & ScriptSpecified & DoseNotTriggerIncident;
 
 export type OncePer<Text extends string, Constraints extends object | void = void, T = object> = T &
-    {
-        [k in `timesPer${Capitalize<Text>}`]?: Constraints extends void ? number : number | readonly [number, RequireAtLeastOne<Constraints>]
-    };
+{
+    [k in `timesPer${Capitalize<Text>}`]?: Constraints extends void ? number : number | readonly [number, RequireAtLeastOne<Constraints>]
+};
 
 export type Abilitie<Constraints extends object | void = void> = OncePer<'Loop' | 'day', Constraints, {
     description: string,
@@ -57,7 +57,7 @@ export type Abilitie<Constraints extends object | void = void> = OncePer<'Loop' 
 
 export type Role = Roles[keyof Roles];
 export type Roles = typeof rolesInternal;
-export type RoleName = Role['name'];
+export type RoleName = Role['name'] | `${Role['name']}|${Role['name']}`;
 
 
 
@@ -65,7 +65,7 @@ export const rolesInternal = toRecord([
 
     ...data.roles,
 
-   
+
 
 ] as const satisfies readonly RoleInternal[], 'name');
 
@@ -73,7 +73,8 @@ export const roles = rolesInternal as Record<RoleName, RoleInternal & { name: Ro
 
 
 export function isRoleName(name: string): name is RoleName {
-    return name in rolesInternal;
+    const spited = name.split('|');
+    return spited.every(x => x in rolesInternal);
 }
 
 

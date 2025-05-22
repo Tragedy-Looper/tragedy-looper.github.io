@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { derived } from 'svelte/store';
   import { characters } from '../../../../model/characters';
   import type { AdditionalOptions } from '../../../../model/customScript';
 
@@ -10,8 +11,10 @@
   $: selectodPlots = option.script.selectedPlots;
   $: otherPlots = [...$tragedySet.mainPlots, ...$tragedySet.subPlots];
 
-  $: incidents = option.script.incidents;
-  $: unusedRoles = option.script.unusedRoles;
+  $: incidents = derived( option.script.incidents,a=> a.toSorted((a,b)=> a.localeCompare(b)));
+  $: unusedRoles = derived( option.script.unusedRoles,a=> a.toSorted((a,b)=> a.localeCompare(b)));
+  $: usedRoles = derived( option.script.usedRoles,a=> a.toSorted((a,b)=> a.localeCompare(b)));
+  $: allRoles = derived( option.script.allRoles,a=> a.toSorted((a,b)=> a.localeCompare(b)));
 
   $: usedCharacters = option.script.usedCharacters;
 
@@ -59,8 +62,16 @@
         {#each $incidents as p}
           <option value={p}>{p}</option>
         {/each}
-      {:else if option.option.type == 'role'}
+      {:else if option.option.type == 'role not in plot'}
         {#each $unusedRoles as p}
+          <option value={p}>{p}</option>
+        {/each}
+      {:else if option.option.type == 'role in plot'}
+        {#each $usedRoles as p}
+          <option value={p}>{p}</option>
+        {/each}
+      {:else if option.option.type == 'role in tragedy set'}
+        {#each $allRoles as p}
           <option value={p}>{p}</option>
         {/each}
       {:else if Array.isArray(option.option.type)}

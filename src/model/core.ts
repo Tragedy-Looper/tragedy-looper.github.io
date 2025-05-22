@@ -6,7 +6,7 @@ import type { PlotName, Plots } from "./plots";
 import type { RoleName, Roles } from "./roles";
 
 
-type SpecificationType = 'location' | 'incident' | 'role' | 'character' | 'plot' | 'number' | 'text' | readonly string[];
+type SpecificationType = 'location' | 'incident' | 'role in tragedy set' | 'role not in plot'| 'role in plot'  | 'character' | 'plot' | 'number' | 'text' | readonly string[];
 
 export type Option = {
     name: string;
