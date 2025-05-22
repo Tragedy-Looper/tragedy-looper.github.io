@@ -16,18 +16,18 @@
 </script>
 
 <main class="container">
-  <h1>{getString('Tragedy Looper Deduction overview')}</h1>
+  <h1>{getString('Tragedy Looper Deduction Sheet Overview')}</h1>
   <p>
-    {getString('If your are the Mastermind')} <a href="{base}/script">{getString('choose a script (SPOILER!!)')}</a>.
+    {getString('If you're the Mastermind,')} <a href="{base}/script">{getString('choose a script (SPOILER!!)')}</a>.
   </p>
-  <p>{getString('Otherwise ask your Mastermind to choose a script and send you the link.')}</p>
+  <p>{getString('Otherwise, ask your Mastermind to choose a script and send you the link.')}</p>
   
   <p>
-    <a href="{base}/cards">{getString('If translations exists, you find localized character cards by following this link.')}</a>
+    <a href="{base}/cards">{getString('If translations exist, you'll find localized character cards by following this link.')}</a>
   </p>
 
   <p>
-    {getString('Feedback (in english) is appriciated on')} <a
+    {getString('Feedback (in English) is appriciated on')} <a
       href="https://github.com/LokiMidgard/tragedy-looper-deduction-tool#readme">Github</a
     >
     {getString('or')}
