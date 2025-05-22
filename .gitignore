@@ -21,3 +21,9 @@ data/plots.schema.json
 data/roles.schema.json
 data/scripts.schema.json
 src/data-ui-strings.ts
+src/characters.g.ts
+src/incidents.g.ts
+src/plots.g.ts
+src/roles.g.ts
+src/scripts.g.ts
+src/tragedys.g.ts

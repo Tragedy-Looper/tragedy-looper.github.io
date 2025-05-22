@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
+import { compile, JSONSchema } from 'json-schema-to-typescript'
 
 const __filename = fileURLToPath(import.meta.url);
 
@@ -8,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const dataDir = path.join(__dirname, '../data');
 const staticDir = path.join(__dirname, '../static');
+const srcDir = path.join(__dirname, '../src');
 
 const names = {
     plotNames: collectNamesFromJsonFiles('plots'),
@@ -61,7 +63,7 @@ const tags = ['boy', 'girl', 'student', "man", "woman", "adult", 'construct', 'a
 
 
 
-const SpecificationType = ['location', 'incident', 'role', 'character', 'plot', 'number', 'text'];
+const SpecificationType = ['location', 'incident', 'role', 'character', 'plot', 'number', 'text'] as const;
 
 
 const AbilityTypeCreation = ['Script creation'] as const;
@@ -104,7 +106,7 @@ const scriptSpecified = {
 
 const doseNotTriggerIncidentEffect = {
     "doseNotTriggerIncidentEffect": { "type": "boolean" },
-};
+} as const;
 
 const Abilitie = {
     type: "object",
@@ -212,6 +214,8 @@ const Abilitie = {
 
 type Names = typeof names;
 
+
+
 // --- SCHEMA GENERATION ---
 WriteSchema(generatePlotsSchema(names), 'plots');
 WriteSchema(generateIncidentsSchema(names), 'incidents');
@@ -308,7 +312,7 @@ function generatePlotsSchema({ roleNames }: Names) {
                                                 ]
                                             }
                                         ]
-                                    }])),
+                                    }] as const)),
                             }
                         },
                         "rules": {
@@ -326,7 +330,7 @@ function generatePlotsSchema({ roleNames }: Names) {
                 }
             }
         }
-    };
+    } as const;
 }
 
 // 2. Incidents Schema
@@ -380,7 +384,7 @@ function generateIncidentsSchema({ incidentNames }: Names) {
                 }
             }
         },
-    }
+    } as const;
 }
 
 // 3. Roles Schema
@@ -415,7 +419,7 @@ function generateRolesSchema({ roleNames }: Names) {
                 }
             }
         }
-    };
+    } as const;
 }
 
 // 4. Characters Schema
@@ -489,7 +493,7 @@ function generateCharactersSchema({ characterNames }: Names) {
                 }
             }
         }
-    };
+    } as const;
 }
 
 // 5. Scripts Schema (Boilerplate, Details je nach Struktur)
@@ -571,12 +575,12 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                                 : x.type == "plot"
                                                                                     ? { "type": "string", "enum": Array.from(namesPerTragedySet[tragedySet].plotNames) }
                                                                                     : { type: "string" }
-                                                                        ];
+                                                                        ] as const;
                                                                     }) ?? [])
                                                                 }
                                                             }
                                                         ],
-                                                    }
+                                                    } as const
                                                 }),
 
 
@@ -613,12 +617,12 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                                 : x.type == "plot"
                                                                                     ? { "type": "string", "enum": Array.from(namesPerTragedySet[tragedySet].plotNames) }
                                                                                     : { type: "string" }
-                                                                        ];
+                                                                        ] as const;
                                                                     }) ?? [])
                                                                 }
                                                             }
                                                         ],
-                                                    }
+                                                    } as const
                                                 }),
 
 
@@ -645,7 +649,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                         "culprit": { "type": "string", "enum": Array.from(characterNames) }
                                                     },
                                                     "required": ["incident", "culprit", 'day'],
-                                                }].filter(() => incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name)).length > 0),
+                                                } as const].filter(() => incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name)).length > 0),
                                                 ...[{
                                                     "type": "object",
                                                     "additionalProperties": false,
@@ -659,7 +663,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                         "culprit": { "type": "string", "enum": locations }
                                                     },
                                                     "required": ["incident", "culprit", "day"],
-                                                }].filter(() => incidentsWithoutFake.filter((name) => names.mobIncidentNames.has(name)).length > 0),
+                                                } as const].filter(() => incidentsWithoutFake.filter((name) => names.mobIncidentNames.has(name)).length > 0),
 
 
                                                 ...[{
@@ -682,7 +686,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                         "culprit": { "type": "string", "enum": Array.from(characterNames) }
                                                     },
                                                     "required": ["incident", "culprit", 'day'],
-                                                }].filter(() => incidentsWithFake.filter((name) => !names.mobIncidentNames.has(name)).length > 0),
+                                                } as const].filter(() => incidentsWithFake.filter((name) => !names.mobIncidentNames.has(name)).length > 0),
                                                 ...[{
                                                     "type": "object",
                                                     "additionalProperties": false,
@@ -703,7 +707,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                         "culprit": { "type": "string", "enum": locations }
                                                     },
                                                     "required": ["incident", "culprit", "day"],
-                                                }].filter(() => incidentsWithFake.filter((name) => names.mobIncidentNames.has(name)).length > 0)
+                                                } as const].filter(() => incidentsWithFake.filter((name) => names.mobIncidentNames.has(name)).length > 0)
 
 
                                             ]
@@ -727,7 +731,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                             {
                                                                 "type": "string",
                                                                 "enum": Array.from(roleNames).filter(r => !rolesWithScriptSpecified.includes(r))
-                                                            }].filter(() => (!characterAlwaysScpecyfiedExtra && Array.from(roleNames).filter(r => !rolesWithScriptSpecified.includes(r)).length > 0)),
+                                                            } as const].filter(() => (!characterAlwaysScpecyfiedExtra && Array.from(roleNames).filter(r => !rolesWithScriptSpecified.includes(r)).length > 0)),
                                                         ...[
                                                             {
                                                                 "type": "array",
@@ -745,7 +749,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                             ...Object.fromEntries([['Start Location', {
                                                                                 "type": "string",
                                                                                 "enum": CharacterData[character].startLocation
-                                                                            }]].filter(() => CharacterData[character].startLocation.length > 1)),
+                                                                            }] as const].filter(() => CharacterData[character].startLocation.length > 1)),
 
                                                                             ...Object.fromEntries(CharacterData[character].scriptSpecified?.map(x => {
                                                                                 return [x.name, x.type === "number"
@@ -755,11 +759,11 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                                         : x.type == "plot"
                                                                                             ? { "type": "string", "enum": Array.from(namesPerTragedySet[tragedySet].plotNames) }
                                                                                             : { type: "string" }
-                                                                                ];
+                                                                                ] as const;
                                                                             }) ?? [])
                                                                         }
                                                                     }]
-                                                            }
+                                                            } as const
                                                         ].filter(() => characterAlwaysScpecyfiedExtra && Array.from(roleNames).filter(r => !rolesWithScriptSpecified.includes(r)).length > 0),
 
                                                         ...rolesWithScriptSpecified
@@ -784,7 +788,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                                             : x.type == "plot"
                                                                                                 ? { "type": "string", "enum": Array.from(namesPerTragedySet[tragedySet].plotNames) }
                                                                                                 : { type: "string" }
-                                                                                    ];
+                                                                                    ] as const;
                                                                                 }) ?? []),
                                                                                 ...Object.fromEntries(RolaData[role].scriptSpecified?.map(x => {
                                                                                     return [x.name, x.type === "number"
@@ -794,17 +798,17 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                                             : x.type == "plot"
                                                                                                 ? { "type": "string", "enum": Array.from(namesPerTragedySet[tragedySet].plotNames) }
                                                                                                 : { type: "string" }
-                                                                                    ];
+                                                                                    ] as const;
                                                                                 }) ?? [])
                                                                             }
-                                                                        }
+                                                                        } as const
                                                                     ]
-                                                                }
+                                                                } as const
                                                             })
 
 
                                                     ]
-                                                }];
+                                                }] as const;
 
 
 
@@ -820,17 +824,17 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                     "specifics": { "type": "string" },
                                     "story": { "type": "string" },
                                     "mastermindHints": { "type": "string" },
-                                    // ...weitere properties nach Bedarf...
+
                                 },
                                 "required": ["title", "mainPlot", "subPlots", "incidents", "cast"],
 
-                            })
+                            } as const)
                         })
                     ]
                 }
             }
         }
-    };
+    } as const;
 }
 
 function generateTragedySetsSchema({ plotNames, incidentNames }: Names) {
@@ -887,17 +891,26 @@ function generateTragedySetsSchema({ plotNames, incidentNames }: Names) {
                 }
             }
         }
-    };
+    } as const;
 }
 
+// helper function to make TYpe all arrays readonly recursively
+type ReadonlyArrayTransform<T> = T extends readonly (infer U)[]
+    ? readonly ReadonlyArrayTransform<U>[]
+    : T extends object ? {
+        readonly [K in keyof T]: ReadonlyArrayTransform<T[K]> }
+    : T;
 
-
-function WriteSchema(schema: unknown, type: string) {
+function WriteSchema(schema: ReadonlyArrayTransform<JSONSchema>, type: string) {
     const outPath = [dataDir, staticDir].map(dir => path.join(dir, `${type}.schema.json`));
     outPath.forEach((outPath) => {
         console.log('Schema geschrieben nach', outPath);
         fs.writeFileSync(outPath, JSON.stringify(schema, null, 2), 'utf-8');
     });
+    compile(schema as JSONSchema, type).then((result) => {
+        fs.writeFileSync(path.join(srcDir, `${type}.g.ts`), result, { encoding: 'utf-8' });
+    });
+
 
 }
 

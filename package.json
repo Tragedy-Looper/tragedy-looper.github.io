@@ -41,5 +41,8 @@
 		"svelteAllowShorthand": true,
 		"quoteProps": "consistent"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"json-schema-to-typescript": "^15.0.4"
+	}
 }
