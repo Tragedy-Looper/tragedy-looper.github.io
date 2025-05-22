@@ -27,3 +27,9 @@ src/plots.g.ts
 src/roles.g.ts
 src/scripts.g.ts
 src/tragedys.g.ts
+static/tragedys.schema.json
+static/characters.schema.json
+static/incidents.schema.json
+static/plots.schema.json
+static/roles.schema.json
+static/scripts.schema.json
