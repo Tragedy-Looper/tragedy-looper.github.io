@@ -122,11 +122,12 @@ const translationStrings: string[] = [];
 typescriptFiles.forEach((file) => {
     const fileContent = fs.readFileSync(file, 'utf-8');
     // search for getString('TEXT') and getString('', lang) including other quotes
-    const regex = /getString\((\s|\n)*(['"])(.*?)\2/sg;
+    const regex = /getString\((\s|\n)*(['"])(.*?[^\\])\2/sg;
     let match;
     while ((match = regex.exec(fileContent)) !== null) {
+        const quotes = match[2];
         const text = match[3];
-        translationStrings.push(`"${text}"`);
+        translationStrings.push(`${quotes}${text}${quotes}`);
     }
 });
 const translationObject = `export const ui_strings = [\n${translationStrings.reduce((p, c) => `${p}${p.length == 0 ? '' : ','}\n${c}`, "")}\n] as const;`;
