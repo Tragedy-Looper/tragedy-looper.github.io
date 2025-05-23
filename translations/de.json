@@ -2,7 +2,7 @@
   "-1 Intrigue on same location or Character in same location.": "-1 Intrige auf einen Character in dem selben Standort oder dem aktuellen Standort.",
   "-1 Intrigue on Shrine.": "-1 Intrige auf den Schrein.",
   "-1 Paranoia on character in same location.": "-1 Paranoia auf einen Character in dem selben Standort.",
-  "-1 Paranoia on panicked character in same location.": "-1 Paranoia auf einen Character in Panik in dem selben Standort.",
+  "-1 Paranoia on panicked character in same location. This ability cannot be refused by Goodwill Refusal.": "-1 Paranoia auf einen Character in Panik in dem selben Standort. Diese Fähigkeit kann nicht durch Gunstverweigerung verweigert werden.",
   "-1 Paranoia on student in same location.": "-1 Paranoia auf einen Schüler in dem selben Standort.",
   "\"Forbid Goodwill\" has the effect of \"Forbid Movement\"": "\"Gunst verbieten\" hat den effekt \"Bewegen verbieten\"",
   "(If the Extra Gauge is at zero, the Protagonists always lose)": "(Wenn die Zusatzleiste auf 0 ist, verlieren die Protagonisten immer)",

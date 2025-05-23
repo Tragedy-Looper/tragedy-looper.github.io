@@ -388,7 +388,7 @@
                     "type": "active",
                     "goodwillRank": 2,
                     "immuneToGoodwillRefusel": true,
-                    "description": "-1 Paranoia on panicked character in same location."
+                    "description": "-1 Paranoia on panicked character in same location. This ability cannot be refused by Goodwill Refusal."
                 }
             ]
         },
