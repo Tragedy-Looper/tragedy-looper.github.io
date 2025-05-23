@@ -14,15 +14,23 @@
 
   let cards_per_page = 8;
 
+  let page_width = 29.7;
+  let page_height = 21;
+  let page_margin = 0.5;
+
+  let selectedCards: string[] = [];
+
   $: getString = (key: string) => getStringOriginal(key, lang);
 
   $: cards = Object.entries(characters)
     .toSorted(([a], [b]) => getString(a).localeCompare(getString(b)))
     .map(([key, value]) => {
       return {
+        type: 'character' as const,
         ...value,
         forbiddenLocation: 'forbiddenLocation' in value ? value.forbiddenLocation : [],
         name: getString(value.name),
+        key: value.name,
         gender:
           (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
           (value.tags.includes('girl' as never) || value.tags.includes('woman' as never))
@@ -49,23 +57,95 @@
       };
     });
 
-  $: pages = cards.reduce((acc, card, index) => {
-    const pageIndex = Math.floor(index / cards_per_page);
-    if (!acc[pageIndex]) {
-      acc[pageIndex] = [];
-    }
-    acc[pageIndex].push(card);
-    return acc;
-  }, [] as (typeof cards)[]);
+  $: pages = cards
+    .filter((x) => selectedCards.includes(x.key))
+    .reduce((acc, card, index) => {
+      const pageIndex = Math.floor(index / cards_per_page);
+      if (!acc[pageIndex]) {
+        acc[pageIndex] = [];
+      }
+      acc[pageIndex].push(card);
+      return acc;
+    }, [] as (typeof cards)[]);
+
+  onMount(() => {
+    selectedCards = cards.map((x) => x.key);
+  });
 </script>
 
-<div class="container screen">
+<div class="settings container screen">
+  <article>
+    <h2>Print Settings</h2>
+    <div role="group">
+      <label>
+        Cards per page
+        <input type="number" bind:value={cards_per_page} min="1" max="20" />
+      </label>
+      <label>
+        Page width (cm)
+        <input type="number" bind:value={page_width} min="1" max="50" />
+      </label>
+      <label>
+        Page height (cm)
+        <input type="number" bind:value={page_height} min="1" max="50" />
+      </label>
+      <label>
+        Page margin (cm)
+        <input type="number" bind:value={page_margin} min="0" max="5" />
+      </label>
+    </div>
+
+    <div>
+      {#if selectedCards.length == 0}
+        <p>No Cards selected for print. Select cards to print</p>
+      {:else if selectedCards.length == cards.length}
+        <p>All cards selected</p>
+      {:else}
+        <p>{selectedCards.length} of {cards.length} cards selected</p>
+      {/if}
+    </div>
+
+    <div role="group">
+      <button
+        class:outline={selectedCards.length != 0}
+        on:click={() => (selectedCards = cards.map((x) => x.key))}>Select All</button
+      >
+      <button
+        class:outline={selectedCards.length != cards.length}
+        on:click={() => (selectedCards = [])}>Deselect All</button
+      >
+      <button
+        class="outline"
+        on:click={() =>
+          (selectedCards = cards.map((x) => x.key).filter((x) => !selectedCards.includes(x)))}
+        >Invert selection</button
+      >
+    </div>
+    <div>
+      <p>
+        Use the <strong>Print</strong> button of your browser (default shortcut <kbd>Ctrl</kbd>+<kbd>P</kbd> ) to print the cards.
+      </p>
+      <p>
+        Make sure to set the page size to A4 landscape and set the margins to 0.<br />
+        Or change the the card layout settings above.
+      </p>
+    </div>
+  </article>
+</div>
+
+<div class="cardholder screen">
   {#each cards as card}
-    <Card {card} />
+    <label class="card">
+      <input type="checkbox" bind:group={selectedCards} value={card.key} />
+      <Card {card} />
+    </label>
   {/each}
 </div>
 
-<div class="container print">
+<div
+  class="cardholder print"
+  style="--page-width:{page_width}cm;--page-height:{page_height}cm; --page-margin:{page_margin}cm;"
+>
   {#each pages as page}
     <div class="page">
       {#each page as card}
@@ -103,7 +183,7 @@
       display: none !important;
     }
   }
-  .container {
+  .cardholder {
     display: flex;
     gap: 0.5cm;
     flex-wrap: wrap;
@@ -114,7 +194,7 @@
   }
 
   @media print {
-    .container > div {
+    .cardholder > div {
       padding: 0.35cm 0.2cm;
       color: white;
       h2 {
@@ -122,16 +202,17 @@
       }
     }
 
-    .container {
+    .cardholder {
       gap: 0;
     }
   }
 
   .page {
-    --pager-margin: 0.05cm;
     // DIN A4 landscape
-    width: calc(29.7cm - var(--pager-margin) * 2 / 2);
-    height: calc(21cm - var(--pager-margin) * 2 / 2);
+    width: calc(29.7cm);
+    height: calc(21cm);
+
+    padding: var(--pager-margin);
 
     break-inside: avoid;
 
@@ -144,7 +225,6 @@
 
     margin: 0 auto;
     max-width: 100%;
-    padding: 0.5cm;
   }
 
   // @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
@@ -172,5 +252,16 @@
     color: white;
     text-align: center;
     padding-top: 5em;
+  }
+
+  label.card {
+    & > input {
+      display: none;
+    }
+    border-radius: 8px;
+    &:has(input:checked) {
+      box-shadow: 0 0 10px 5px var(--pico-primary);
+      background: linear-gradient(to right, #204850, #3b7a75, #204850);
+    }
   }
 </style>

@@ -9,6 +9,7 @@
   export let card:
     | {
         name: string;
+        type: 'character';
         startLocation: readonly (typeof locations)[number][];
         forbiddenLocation: readonly (typeof locations)[number][];
         gender: 'male' | 'female' | 'both' | 'diverse';
@@ -42,85 +43,84 @@
 </script>
 
 <div class="card">
-    {#if card }
-        
+  {#if card}
     <img src="{base}/cards/general/background.png" alt="Character" class="back" />
     <img src={card.image} alt="Character" class="back image" />
     <img src="{base}/cards/general/{card.gender}.png" alt="Cardbackground" class="back" />
-    
-  {#each locations as location}
-  {#if card.startLocation.includes(location)}
-  <img
-        src="{base}/cards/general/location-{location.toLocaleLowerCase()}-start.png"
-        alt={getString(location)}
-        class="location back"
-        />
-        {:else if card.forbiddenLocation.includes(location)}
+
+    {#each locations as location}
+      {#if card.startLocation.includes(location)}
         <img
-        src="{base}/cards/general/location-{location.toLocaleLowerCase()}-forbidden.png"
-        alt={getString(location)}
-        class="location back"
+          src="{base}/cards/general/location-{location.toLocaleLowerCase()}-start.png"
+          alt={getString(location)}
+          class="location back"
         />
-        {:else}
+      {:else if card.forbiddenLocation.includes(location)}
         <img
-        src="{base}/cards/general/location-{location.toLocaleLowerCase()}-blank.png"
-        alt={getString(location)}
-        class="location back"
+          src="{base}/cards/general/location-{location.toLocaleLowerCase()}-forbidden.png"
+          alt={getString(location)}
+          class="location back"
         />
-        {/if}
-        {/each}
+      {:else}
         <img
-        src="{base}/cards/general/paranoia-{card.paranoiaLimit}.png"
-        alt={getString('paranoia')}
-        class="paranoia back"
+          src="{base}/cards/general/location-{location.toLocaleLowerCase()}-blank.png"
+          alt={getString(location)}
+          class="location back"
         />
-        
-        <h2>{card.name}</h2>
-        
-        <ul class="abilities">
-            {#each card.abilities as ability}
-            <li class={ability.type}>
-                {#if ability.type == 'active'}
-                <ul class="perLoop">
-                    {#each Array.from({ length: ability.timesPerLoop }) as _, i}
-                    <li>
-                        <img src="{base}/cards/general/loop.png" alt="loop icon" />
-                    </li>
-            {/each}
-        </ul>
-        <ul class="goodwillRank">
-            {#each Array.from({ length: ability.goodwillRank }) as _, i}
-            <li>
-                <img src="{base}/cards/general/goodwill.png" alt="goodwill icon" />
-            </li>
-            {/each}
-        </ul>
-        {:else}{/if}
-        <p>
+      {/if}
+    {/each}
+    <img
+      src="{base}/cards/general/paranoia-{card.paranoiaLimit}.png"
+      alt={getString('paranoia')}
+      class="paranoia back"
+    />
+
+    <h2>{card.name}</h2>
+
+    <ul class="abilities">
+      {#each card.abilities as ability}
+        <li class={ability.type}>
+          {#if ability.type == 'active'}
+            <ul class="perLoop">
+              {#each Array.from({ length: ability.timesPerLoop }) as _, i}
+                <li>
+                  <img src="{base}/cards/general/loop.png" alt="loop icon" />
+                </li>
+              {/each}
+            </ul>
+            <ul class="goodwillRank">
+              {#each Array.from({ length: ability.goodwillRank }) as _, i}
+                <li>
+                  <img src="{base}/cards/general/goodwill.png" alt="goodwill icon" />
+                </li>
+              {/each}
+            </ul>
+          {:else}{/if}
+          <p>
             {#if ability.restrictedToLocation.length > 0}
-            <div>
+              <div>
                 {getString('Only at')}: {ability.restrictedToLocation.map(getString).join(', ')}
-            </div>
+              </div>
             {/if}
             {ability.description}
-        </p>
-    </li>
-    {/each}
-</ul>
-<ul class="tags">
-    {#each card.tags as tag}
-    <li>
-        <Iron />
-        <div>
-            {tag}
-        </div>
-        <Iron />
-      </li>
+          </p>
+        </li>
       {/each}
     </ul>
-    {:else}
+    <ul class="tags">
+      {#each card.tags as tag}
+        <li>
+          <Iron />
+          <div>
+            {tag}
+          </div>
+          <Iron />
+        </li>
+      {/each}
+    </ul>
+  {:else}
     <img src="{base}/cards/general/cardback.png" alt="Empty" class="back" />
-    {/if}
+  {/if}
 </div>
 
 <style lang="scss">
@@ -138,7 +138,7 @@
       break-inside: avoid;
       page-break-inside: avoid;
       border-color: black;
-    //   box-shadow: #000 0 0 0cm 0.3cm;
+      //   box-shadow: #000 0 0 0cm 0.3cm;
       // margin: 3.31cm;
     }
 
@@ -189,7 +189,7 @@
       margin: 0;
       bottom: 0.3cm;
       right: 0.25cm;
-      left: 0.6cm;
+      left: 1.1cm;
       color: white;
       & > li {
         margin-bottom: -0.4cm;
@@ -197,7 +197,7 @@
       & > li.active,
       & > li:last-child,
       & > li:has(+ .active) {
-        margin-bottom: -0.8cm;
+        margin-bottom: -0.6cm;
       }
       p {
         //metalic border
@@ -222,6 +222,7 @@
       display: flex;
       gap: 0cm;
       margin-bottom: -0.3cm;
+      margin-left: 0.55cm;
       li {
         list-style: none;
 
@@ -235,6 +236,7 @@
       float: right;
       display: flex;
       gap: 0cm;
+      margin-right: 0.2cm;
       margin-bottom: -0.2cm;
       li {
         list-style: none;
@@ -242,7 +244,7 @@
         margin-left: -0.45cm;
       }
       img {
-        width: 0.8cm;
+        width: 0.55cm;
       }
     }
     .tags {
@@ -293,5 +295,8 @@
   }
   li {
     list-style: none;
+  }
+  ul {
+    padding: 0;
   }
 </style>
