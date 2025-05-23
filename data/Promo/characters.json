@@ -148,12 +148,12 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "If the Rich Man's Daughter or Boss would move from this character's location, she moves with that character, ignoring her original movement if needed (if this could move her in multiple ways, the Leader decides which). If the Rich Man's Daughter or Boss is at her location and would die, she dies instead."
+                    "description": "The Servant serves the Rich Man's Daughter and the Boss. If one of them moves and she shares the location, the Leader moves her with one of them ignoring her own movement. If any onf them dies at her location, she dies instead."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 4,
-                    "description": "Choose any other character in play. For the remainder of the Loop, that character is also included in the above Passive ability.",
+                    "description": "Choose any other character. For the remainder of the Loop, she also serves that character.",
                     "timesPerLoop": 1
                 }
             ]
