@@ -18,6 +18,8 @@
   let page_height = 21;
   let page_margin = 0.5;
 
+  let printCardBacks = true;
+
   let selectedCards: string[] = [];
 
   $: getString = (key: string) => getStringOriginal(key, lang);
@@ -95,6 +97,11 @@
       </label>
     </div>
 
+    <label>
+      Print card backs
+      <input type="checkbox" bind:checked={printCardBacks} role="switch" />
+    </label>
+
     <div>
       {#if selectedCards.length == 0}
         <p>No Cards selected for print. Select cards to print</p>
@@ -123,10 +130,18 @@
     </div>
     <div>
       <p>
-        Use the <strong>Print</strong> button of your browser (default shortcut <kbd>Ctrl</kbd>+<kbd>P</kbd> ) to print the cards.
+        Use the <strong>Print</strong> button of your browser (default shortcut <kbd>Ctrl</kbd>+<kbd
+          >P</kbd
+        > ) to print the cards.
       </p>
       <p>
-        Make sure to set the page size to A4 landscape and set the margins to 0.<br />
+        {#if printCardBacks}
+          Make sure to set the page size to A4 landscape, set the margins to 0 and <b>enable</b> double
+          sided printing (short edge).
+        {:else}
+          Make sure to set the page size to A4 landscape, set the margins to 0 and <b>disable</b> double
+          sided printing.
+        {/if}<br />
         Or change the the card layout settings above.
       </p>
     </div>
@@ -154,13 +169,15 @@
         </div>
       {/each}
     </div>
-    <div class="page">
-      {#each page as card}
-        <div style="background-color: black;padding: 0.3cm;">
-          <Card card={undefined} />
-        </div>
-      {/each}
-    </div>
+    {#if printCardBacks}
+      <div class="page">
+        {#each page as card}
+          <div style="background-color: black;padding: 0.3cm;">
+            <Card card={undefined} />
+          </div>
+        {/each}
+      </div>
+    {/if}
   {/each}
 </div>
 
