@@ -71,7 +71,14 @@ export type RequireAtLeastOne<T, Keys extends keyof T = keyof T> =
     }[Keys]
 
 
-export function toRecord<ELEMENT extends readonly any[], Key extends keyof ELEMENT[number]>(entries: ELEMENT, key: Key): Intersection<SRecord<ELEMENT, Key>> {
+
+export function isArray(a: any): a is readonly any[] {
+    return Array.isArray(a);
+}
+
+export function toRecord<ELEMENT extends readonly any[], Key extends keyof ELEMENT[number]>(entries: ELEMENT, key: Key): {
+    [k in ELEMENT[number][Key]]: ELEMENT[number];
+} {
     return Object.fromEntries((entries.map(x => [x[key], x]))) as any;
 }
 

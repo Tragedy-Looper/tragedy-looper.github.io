@@ -7,6 +7,7 @@
     fromEntries,
     hasProp,
     includes,
+    isArray,
     keys,
     renderCharacterDeath,
     require,
@@ -16,6 +17,8 @@
   import { plots } from '../../../model/plots';
   import OncePer from './oncePer.svelte';
   import { incidents } from '../../../model/incidents';
+  import { getString } from '../+layout.svelte';
+  import { get } from 'svelte/store';
 
   export let selectedScript: Script;
 
@@ -92,11 +95,11 @@
     b: { type?: RenderCharacterDeath<AbilityType> }
   ) {
     const ordering = (t: RenderCharacterDeath<AbilityType> | undefined) => {
-      if (t == 'Delayed Loss condition: Character Death') return 5;
-      if (t == 'Mandatory Loss condition: Character Death') return 5;
+      if (t == 'Delayed Loss condition: Protagonists Death') return 5;
+      if (t == 'Mandatory Loss condition: Protagonists Death') return 5;
       if (t == 'Loss condition: Tragedy') return 4;
       if (t == 'Mandatory') return 3;
-      if (t == 'Optional Loss condition: Character Death') return 2;
+      if (t == 'Optional Loss condition: Protagonists Death') return 2;
       if (t == 'Optional') return 1;
       return Infinity;
     };
@@ -107,22 +110,22 @@
 
 <hgroup style="align-self: start; justify-self: start;">
   <h4>{selectedScript.creator}</h4>
-  <h1>{selectedScript.title}</h1>
+  <h1>{$getString(selectedScript.title)}</h1>
 
   <h2>
     {#if selectedScript.set}
-      ({selectedScript.set.number}) {selectedScript.set.name}
+      ({selectedScript.set.number}) {$getString(selectedScript.set.name)}
     {/if}
   </h2>
 </hgroup>
 <table>
   <thead>
     <tr>
-      <th>Type</th>
-      <th>Character</th>
-      <th>Prerequiste</th>
-      <th>Description</th>
-      <th>Role / Plot / Incident</th>
+      <th>{$getString('Type')}</th>
+      <th>{$getString('Character')}</th>
+      <th>{$getString('Prerequiste')}</th>
+      <th>{$getString('Description')}</th>
+      <th>{$getString('Role / Plot / Incident')}</th>
     </tr>
   </thead>
   <tbody>
@@ -130,18 +133,18 @@
         .filter((x) => includes(x['timing'], 'Always'))
         .sort(sortabilities).length > 0}
       <tr>
-        <td colspan="7">Always </td>
+        <td colspan="7">{$getString('Always')}</td>
       </tr>
       {#each showAll(scriptRoles).filter((x) => x.unkillable === true) as map}
         <tr>
-          <td> mandatory </td>
+          <td> {$getString('mandatory')} </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td />
-          <td> This Character can't die </td>
+          <td> {$getString("This Character can't die")} </td>
           <td>
-            {map.role ?? ''}
+            {$getString(map.role) ?? ''}
           </td>
         </tr>
       {/each}
@@ -150,101 +153,101 @@
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {map.type}
+            {$getString(map.type)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? 'Last Day' : ''}
-            {map.prerequisite ?? ''}
+            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
+            {$getString(map.prerequisite) ?? ''}
           </td>
           <td>
-            {map.description ?? ''}
+            {$getString(map.description) ?? ''}
             <OncePer ability={map} />
           </td>
           <td>
-            {map.role ?? ''}
-            {map.plot ?? ''}
+            {$getString(map.role) ?? ''}
+            {$getString(map.plot) ?? ''}
           </td>
         </tr>
       {/each}
     {/if}
     {#if showAll(abilities).filter((x) => includes(x['timing'], 'On character death')).length > 0}
       <tr>
-        <td colspan="7">On Character Death</td>
+        <td colspan="7">{$getString('On Character Death')}</td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'On character death'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {map.type}
+            {$getString(map.type)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? 'Last Day' : ''}
-            {map.prerequisite ?? ''}
+            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
+            {$getString(map.prerequisite) ?? ''}
           </td>
           <td>
-            {map.description ?? ''}
+            {$getString(map.description) ?? ''}
             <OncePer ability={map} />
           </td>
           <td>
-            {map.role ?? ''}
-            {map.plot ?? ''}
+            {$getString(map.role) ?? ''}
+            {$getString(map.plot) ?? ''}
           </td>
         </tr>
       {/each}
     {/if}
     {#if showAll(abilities).filter( (x) => includes(x['timing'], 'When this role is to be reveald') ).length > 0}
       <tr>
-        <td colspan="7">On Role reveal</td>
+        <td colspan="7">{$getString('On Role reveal')}</td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'When this role is to be reveald'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {map.type}
+            {$getString(map.type)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character)}
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? 'Last Day' : ''}
-            {map.prerequisite ?? ''}
+            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
+            {$getString(map.prerequisite)}
           </td>
           <td>
-            {map.description ?? ''}
+            {$getString(map.description) ?? ''}
             <OncePer ability={map} />
           </td>
           <td>
-            {map.role ?? ''}
-            {map.plot ?? ''}
+            {$getString(map.role) ?? ''}
+            {$getString(map.plot) ?? ''}
           </td>
         </tr>
       {/each}
     {/if}
     {#if showAll(abilities).filter( (x) => includes(x['timing'], 'Loop Start') ).length + showAll(usedCharacters).filter((x) => x['enters on loop'] !== undefined).length > 0}
       <tr>
-        <td colspan="7">Loop Start</td>
+        <td colspan="7">{$getString('Loop Start')}</td>
       </tr>
       {#each showAll(usedCharacters).filter((x) => x['enters on loop'] !== undefined) as map}
         <tr>
-          <td> mandatory </td>
+          <td> {$getString('mandatory')} </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            On Loop {map['enters on loop']}
+            {$getString('On Loop {day}', { day: map['enters on loop'] })}
           </td>
 
-          <td> Enters Play </td>
+          <td> {$getString('Enters Play')} </td>
           <td>
-            {map.role ?? ''}
+            {$getString(map.role) ?? ''}
           </td>
         </tr>
       {/each}
@@ -254,168 +257,166 @@
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {map.type}
+            {$getString(map.type)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? 'Last Day' : ''}
-            {map.prerequisite ?? ''}
+            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
+            {$getString(map.prerequisite) ?? ''}
           </td>
 
           <td>
-            {map.description ?? ''}
+            {$getString(map.description) ?? ''}
             <OncePer ability={map} />
           </td>
           <td>
-            {map.role ?? ''}
+            {$getString(map.role) ?? ''}
 
-            {map.plot ?? ''}
+            {$getString(map.plot) ?? ''}
           </td>
         </tr>
       {/each}
     {/if}
     {#if showAll(usedCharacters).filter((x) => x['enters on day'] !== undefined).length > 0}
       <tr>
-        <td colspan="7">Day Start</td>
+        <td colspan="7">{$getString('Day Start')}</td>
       </tr>
       {#each showAll(usedCharacters).filter((x) => x['enters on day'] !== undefined) as map}
         <tr>
-          <td> mandatory </td>
+          <td> {$getString('mandatory')} </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            On Day {map['enters on day']}
+            {$getString('On Day {day}', { day: map['enters on day'] })}
           </td>
 
-          <td> Enters Play </td>
+          <td> {$getString('Enters Play')} </td>
           <td>
-            {map.role ?? ''}
+            {$getString(map.role) ?? ''}
           </td>
         </tr>
       {/each}
     {/if}
     {#if showAll(abilities).filter( (x) => includes(x['timing'], 'Mastermind Action step') ).length > 0}
       <tr>
-        <td colspan="7">Placing Cards</td>
+        <td colspan="7">{$getString('Placing Cards')}</td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Mastermind Action step'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {map.type}
+            {$getString(map.type)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? 'Last Day' : ''}
-            {map.prerequisite ?? ''}
+            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
+            {$getString(map.prerequisite) ?? ''}
           </td>
 
           <td>
-            {map.description ?? ''}
+            {$getString(map.description) ?? ''}
             <OncePer ability={map} />
           </td>
           <td>
-            {map.role ?? ''}
+            {$getString(map.role) ?? ''}
 
-            {map.plot ?? ''}
+            {$getString(map.plot) ?? ''}
           </td>
         </tr>
       {/each}
     {/if}
     {#if showAll(abilities).filter((x) => includes(x['timing'], 'Card resolve')).length > 0}
       <tr>
-        <td colspan="7">Resolving Cards</td>
+        <td colspan="7">{$getString('Resolving Cards')}</td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Card resolve'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {map.type}
+            {$getString(map.type)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? 'Last Day' : ''}
-            {map.prerequisite ?? ''}
+            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
+            {$getString(map.prerequisite) ?? ''}
           </td>
 
           <td>
-            {map.description ?? ''}
+            {$getString(map.description) ?? ''}
             <OncePer ability={map} />
           </td>
           <td>
-            {map.role ?? ''}
-
-            {map.plot ?? ''}
+            {$getString(map.role) ?? ''}
+            {$getString(map.plot) ?? ''}
           </td>
         </tr>
       {/each}
     {/if}
     {#if showAll(abilities).filter((x) => includes(x['timing'], 'Mastermind Ability')).length > 0}
       <tr>
-        <td colspan="7">Abilities Mastermind</td>
+        <td colspan="7">{$getString('Abilities Mastermind')}</td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Mastermind Ability'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {map.type}
+            {$getString(map.type)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? 'Last Day' : ''}
-            {map.prerequisite ?? ''}
+            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
+            {$getString(map.prerequisite) ?? ''}
           </td>
 
           <td>
-            {map.description ?? ''}
+            {$getString(map.description) ?? ''}
             <OncePer ability={map} />
           </td>
           <td>
-            {map.role ?? ''}
-
-            {map.plot ?? ''}
+            {$getString(map.role) ?? ''}
+            {$getString(map.plot) ?? ''}
           </td>
         </tr>
       {/each}
     {/if}
     {#if scriptRoles.filter((x) => x['goodwillRefusel'] !== undefined).length + showAll(abilities).filter( (x) => includes(x['timing'], 'Goodwill ablility step') ).length > 0}
       <tr>
-        <td colspan="7">Abilities Protagonists</td>
+        <td colspan="7">{$getString('Abilities Protagonists')}</td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Goodwill ablility step'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {map.type}
+            {$getString(map.type)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? 'Last Day' : ''}
-            {map.prerequisite ?? ''}
+            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
+            {$getString(map.prerequisite) ?? ''}
           </td>
 
           <td>
-            {map.description ?? ''}
+            {$getString(map.description) ?? ''}
             <OncePer ability={map} />
           </td>
           <td>
-            {map.role ?? ''}
-            {map.plot ?? ''}
+            {$getString(map.role) ?? ''}
+            {$getString(map.plot) ?? ''}
           </td>
         </tr>
       {/each}
@@ -424,45 +425,45 @@
         .sort( (a, b) => sortabilities({ type: a.goodwillRefusel ?? 'Optional' }, { type: b.goodwillRefusel ?? 'Optional' }) ) as map}
         <tr>
           <td>
-            {map.goodwillRefusel}
+            {$getString(map.goodwillRefusel)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td />
-          <td> Refuse Goodwill Ability </td>
+          <td> {$getString('Refuse Goodwill Ability')} </td>
           <td>
-            {map.role ?? ''}
+            {$getString(map.role) ?? ''}
           </td>
         </tr>
       {/each}
     {/if}
     {#if showAll(abilities).filter( (x) => includes(x['timing'], 'Incident trigger') ).length + usedIncidents.length + showAll(abilities).filter( (x) => includes(x['timing'], 'Incident step') ).length > 0}
       <tr>
-        <td colspan="7">Incidents</td>
+        <td colspan="7">{$getString('Incidents')}</td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Incident trigger'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {map.type}
+            {$getString(map.type)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? 'Last Day' : ''}
-            {map.prerequisite ?? ''}
+            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
+            {$getString(map.prerequisite) ?? ''}
           </td>
 
           <td>
-            {map.description ?? ''}
+            {$getString(map.description) ?? ''}
             <OncePer ability={map} />
           </td>
           <td>
-            {map.role ?? ''}
-            {map.plot ?? ''}
+            {$getString(map.role) ?? ''}
+            {$getString(map.plot) ?? ''}
           </td>
         </tr>
       {/each}
@@ -471,24 +472,24 @@
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {map.type}
+            {$getString(map.type)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? 'Last Day' : ''}
-            {map.prerequisite ?? ''}
+            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
+            {$getString(map.prerequisite) ?? ''}
           </td>
 
           <td>
-            {map.description ?? ''}
+            {$getString(map.description) ?? ''}
             <OncePer ability={map} />
           </td>
           <td>
-            {map.role ?? ''}
+            {$getString(map.role) ?? ''}
 
-            {map.plot ?? ''}
+            {$getString(map.plot) ?? ''}
           </td>
         </tr>
       {/each}
@@ -498,36 +499,45 @@
         {#each i.effect as e}
           <tr>
             <td>
-              {e.type ?? ''}
+              {$getString(e.type) ?? ''}
             </td>
             <td>
               {#if char == undefined}
-                Mob:
+                {$getString('Mob')}:
               {/if}
-              {i.culprit ?? ''}
+              {$getString(i.culprit) ?? ''}
             </td>
             <td>
-              On day {i.day}
-              {#if limit ?? 0 > 0}limit {limit}{/if}
+              {$getString('On day {day}', { day: i.day })}
+              {#if limit ?? 0 > 0}{$getString('limit {limit}', { limit })}{/if}
               {#if e.prerequisite}
-                | {e.prerequisite}
+                | {$getString(e.prerequisite)}
               {/if}
             </td>
 
             <td>
               {#if require(char)?.doseNotTriggerIncidentEffect}
-                This has no effect but the incident is triggered.
+                {$getString('This has no effect but the incident is triggered.')}
               {:else if char?.name && roles[getRoleOfCast(selectedScript, char.name) ?? 'Person']?.doseNotTriggerIncidentEffect}
-                This has no effect but the incident is triggered.
+                {$getString('This has no effect but the incident is triggered.')}
               {:else}
-                {e.description ?? ''}
+                {$getString(e.description) ?? ''}
               {/if}
               <OncePer ability={e} />
               <!-- <OncePer ability={i} /> -->
             </td>
 
             <td>
-              {i.incident ?? ''}
+              {#if isArray(i.incident)}
+                {#each i.incident as incident, index}
+                  {#if index > 0}
+                    →
+                  {/if}
+                  {$getString(incident) ?? ''}
+                {/each}
+              {:else}
+                {$getString(i.incident) ?? ''}
+              {/if}
             </td>
           </tr>
         {/each}
@@ -535,61 +545,60 @@
     {/if}
     {#if showAll(abilities).filter((x) => includes(x['timing'], 'Day End')).length > 0}
       <tr>
-        <td colspan="7">Night: Day End</td>
+        <td colspan="7">{$getString('Night: Day End')}</td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Day End'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {map.type}
+            {$getString(map.type)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? 'Last Day' : ''}
-            {map.prerequisite ?? ''}
+            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
+            {$getString(map.prerequisite) ?? ''}
           </td>
 
           <td>
-            {map.description ?? ''}
+            {$getString(map.description) ?? ''}
             <OncePer ability={map} />
           </td>
           <td>
-            {map.role ?? ''}
-            {map.plot ?? ''}
+            {$getString(map.role) ?? ''}
+            {$getString(map.plot) ?? ''}
           </td>
         </tr>
       {/each}
     {/if}
     {#if showAll(abilities).filter((x) => includes(x['timing'], 'Loop End')).length > 0}
       <tr>
-        <td colspan="7">Night: Loop End</td>
+        <td colspan="7">{$getString('Night: Loop End')}</td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Loop End'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {map.type}
+            {$getString(map.type)}
           </td>
           <td>
-            {map.character ?? ''}
+            {$getString(map.character) ?? ''}
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? 'Last Day' : ''}
-            {map.prerequisite ?? ''}
+            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
+            {$getString(map.prerequisite) ?? ''}
           </td>
 
           <td>
-            {map.description ?? ''}
+            {$getString(map.description) ?? ''}
             <OncePer ability={map} />
           </td>
           <td>
-            {map.role ?? ''}
-
-            {map.plot ?? ''}
+            {$getString(map.role) ?? ''}
+            {$getString(map.plot) ?? ''}
           </td>
         </tr>
       {/each}
@@ -600,7 +609,7 @@
 <style lang="scss">
   td[colspan] {
     padding-top: calc(2 * var(--spacing));
-    border-color: var(--primary);
+    border-color: var(--pico-primary);
     --border-width: 3px;
   }
 </style>

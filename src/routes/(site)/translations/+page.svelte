@@ -4,7 +4,7 @@
     getAllKeys,
     getAllTranslationsForLanguage,
     getMissingForLanguage,
-    getString,
+    getStringForLanguage,
   } from '../../../translations';
   import { distinct } from '../../../misc';
   import { onMount } from 'svelte';
@@ -61,21 +61,21 @@
 <ExportView bind:exportJson />
 
 <main class="container">
-  <h1>{getString('Missing Translations', lang)} 🏗️</h1>
+  <h1>{getStringForLanguage('Missing Translations', lang)} 🏗️</h1>
   <p>
-    {getString(
+    {getStringForLanguage(
       "This should list all texts and keywords used, but not yet translated into your language. However, it's not applied everywhere yet. The Player Aid should be completely set, but others are missing.",
       lang
     )}
   </p>
   <p>
-    {getString(
+    {getStringForLanguage(
       'If you translated something, please open an issue on Github and post the exported text, or submit a pull request.',
       lang
     )}
   </p>
   <p>
-    {getString(
+    {getStringForLanguage(
       'After I include your text, everyone should be able to see the translations online  Currently, your translations are stored in your browser, so you can check if it works as intended. These are marked with «»',
       lang
     )}
@@ -85,7 +85,7 @@
   </p>
 
   <label>
-    {getString('Language', lang)}
+    {getStringForLanguage('Language', lang)}
     <input type="tel" bind:value={lang} />
   </label>
 
@@ -93,7 +93,7 @@
   <button on:click={() => exportAllData()}>Export All tags</button>
 
   <label>
-    {getString('Only show Missing', lang)}
+    {getStringForLanguage('Only show Missing', lang)}
     <input type="checkbox" role="switch" bind:checked={filterMissing} />
   </label>
 
@@ -106,10 +106,10 @@
       <thead>
         <tr>
           <th>
-            {getString('Key', lang)}
+            {getStringForLanguage('Key', lang)}
           </th>
           <th>
-            {getString('Translation', lang)}
+            {getStringForLanguage('Translation', lang)}
           </th>
         </tr>
       </thead>

@@ -11,7 +11,6 @@ declare interface ReadonlyArray<T> {
 	includes2(el: ArrayOfUnion<T>): Intersect<T, OfUnion<T>>;
 }
 
-
 declare type ArrayOfUnion<T> = T extends readonly T ? T : never;
 
 

@@ -1,16 +1,13 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
-  import { getString as getStringOriginal } from '../../../translations';
   import { onMount } from 'svelte';
   import { characters, locations } from '../../../model/characters';
   import Iron from './iron.svelte';
   import Card from './card.svelte';
+    import { getString } from '../+layout.svelte';
 
-  let lang: string;
-  onMount(() => {
-    lang = navigator.language?.split('-')[0];
-  });
+
 
   let cards_per_page = 8;
 
@@ -22,16 +19,15 @@
 
   let selectedCards: string[] = [];
 
-  $: getString = (key: string) => getStringOriginal(key, lang);
 
   $: cards = Object.entries(characters)
-    .toSorted(([a], [b]) => getString(a).localeCompare(getString(b)))
+    .toSorted(([a], [b]) => $getString(a).localeCompare($getString(b)))
     .map(([key, value]) => {
       return {
         type: 'character' as const,
         ...value,
         forbiddenLocation: 'forbiddenLocation' in value ? value.forbiddenLocation : [],
-        name: getString(value.name),
+        name: $getString(value.name),
         key: value.name,
         gender:
           (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
@@ -42,7 +38,7 @@
             : value.tags.includes('girl' as never) || value.tags.includes('woman' as never)
             ? ('female' as const)
             : ('diverse' as const),
-        tags: value.tags.map(getString).toSorted((a, b) => a.localeCompare(b)),
+        tags: value.tags.map($getString).toSorted((a, b) => a.localeCompare(b)),
         image: `${base}/cards/characters/${key.toLocaleLowerCase().replaceAll('?', '')}.png`,
         abilities: value.abilities.map((ability) => {
           return {
@@ -53,7 +49,7 @@
             restrictedToLocation:
               'restrictedToLocation' in ability ? ability.restrictedToLocation : [],
 
-            description: getString(ability.description),
+            description: $getString(ability.description),
           };
         }),
       };

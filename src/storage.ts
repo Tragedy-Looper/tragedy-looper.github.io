@@ -1,6 +1,6 @@
 import { browser } from "$app/environment";
 import { scripts, type Script, type ScriptName, isScript } from "./model/script";
-import { getString } from "./translations";
+import { getStringForLanguage } from "./translations";
 
 
 
@@ -23,7 +23,7 @@ export function setLocalisatio(lang: string, data: Record<string, string>) {
         throw new Error('We need to run in Browser');
     }
 
-    window.localStorage.setItem(`localisation:${lang}`, JSON.stringify(Object.fromEntries(Object.entries(data).filter(([key, value]) => getString(key, lang) !== value && (value?.length ?? 0 > 0)))));
+    window.localStorage.setItem(`localisation:${lang}`, JSON.stringify(Object.fromEntries(Object.entries(data).filter(([key, value]) => getStringForLanguage(key, lang) !== value && (value?.length ?? 0 > 0)))));
 
 }
 

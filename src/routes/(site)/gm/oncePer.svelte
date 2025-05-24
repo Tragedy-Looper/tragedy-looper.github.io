@@ -1,14 +1,9 @@
 <script lang="ts">
-  import { getString } from '../../../translations';
   import { onMount } from 'svelte';
+  import { getString } from '../+layout.svelte';
 
   type Obj = $$Generic<OncePer<Text, any>>;
   export let compact: boolean = false;
-
-  let lang: string;
-  onMount(() => {
-    lang = navigator.language?.split('-')[0];
-  });
 
   const texts = ['Day', 'Loop', 'Game'] as const;
   export let ability: Obj;
@@ -19,8 +14,8 @@
       ability[`timesPer${text}`] === undefined
         ? 0
         : typeof ability[`timesPer${text}`] == 'number'
-        ? ability[`timesPer${text}`]
-        : (ability[`timesPer${text}`][0] as number),
+          ? ability[`timesPer${text}`]
+          : (ability[`timesPer${text}`][0] as number),
     constraints:
       ability[`timesPer${text}`] === undefined
         ? []
@@ -36,19 +31,11 @@
       text = '∞';
     }
     if (days === 1) {
-      return getString('Once per {type}', lang, { name: 'type', value: text }).replaceAll(' ', ' ');
+      return $getString('Once per {type}', { type: text }).replaceAll(' ', ' ');
     } else if (days === 2) {
-      return getString('Twice per {type}', lang, { name: 'type', value: text }).replaceAll(
-        ' ',
-        ' '
-      );
+      return $getString('Twice per {type}', { type: text }).replaceAll(' ', ' ');
     } else if (days ?? 0 > 0) {
-      return getString(
-        '{days} per {type}',
-        lang,
-        { name: 'type', value: text },
-        { name: 'days', value: days }
-      ).replaceAll(' ', ' ');
+      return $getString('{days} per {type}', { type: text, days: days }).replaceAll(' ', ' ');
     }
     return undefined;
   }
@@ -59,7 +46,7 @@
   {#if str}
     <em class:normal={!compact} class:compact
       >{str}{#each constraints.filter(([key, value]) => value) as [key, value]}
-        {' '} | {getString(key, lang)}{#if value !== true}: {getString(value, lang)}{/if}
+        {' '} | {$getString(key)}{#if value !== true}: {$getString(value)}{/if}
       {/each}</em
     >
   {/if}
@@ -67,9 +54,9 @@
 
 <style>
   em.normal {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--pico-primary);
     border-radius: 1em;
-    color: var(--primary);
+    color: var(--pico-primary);
     padding: 0px 1em;
     margin: 0px 0.1em;
     white-space: nowrap;

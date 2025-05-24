@@ -50,7 +50,7 @@
     margin: 1rem;
     border-radius: 1rem;
     color: white;
-    background-color: var(--ins-color);
+    background-color: var(--pico-ins-color);
     bottom: 0px;
 
     max-width: 0rem;

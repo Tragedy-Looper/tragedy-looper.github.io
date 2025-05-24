@@ -7,8 +7,10 @@ import { translations as data } from './data-translations';
 import { browser } from '$app/environment';
 import { getLocalisatio } from './storage';
 import { ui_strings } from './data-ui-strings';
+import { writable } from 'svelte/store';
+import { scripts } from './data';
 
-const toCheck = [characters, incidents, plots, roles, tragedySets,
+const toCheck = [characters, incidents, plots, roles, tragedySets, scripts.flatMap(x => [x.cast, x.title, x.specifics, x.story, x.mastermindHints]),
     ...ui_strings,
 ];
 
@@ -16,19 +18,37 @@ const missingInToCheck: Set<string> = new Set();
 
 const translation: Record<string, Record<string, string>> = data;
 
+// mapp {TAG} to object with key tag and value unknown
+type ObjectFromTaged<T extends string | undefined> =
+    T extends undefined
+    ? {}
+    : T extends `${string}{${string}}${string}`
+    ? ObjectFromTagedGet<T>
+    : T extends `${string}{${string}}`
+    ? ObjectFromTagedGet<T>
+    : {};
+type ObjectFromTagedGet<T extends string> =
+    T extends `${string}{${infer Tag}}${infer Rest}`
+    ? { [K in Tag]: unknown } & ObjectFromTagedGet<Rest>
+    : T extends `${string}{${infer Tag}}`
+    ? { [K in Tag]: unknown }
+    : {};
+
+export type ObjectFromTagedArray<T extends string | undefined> = keyof ObjectFromTaged<T> extends never
+    ? []
+    : [ObjectFromTaged<T>];
 
 
-
-export function getString(key: string | undefined, lang: string | undefined, ...params: { name: string, value: unknown }[]) :string{
+export function getStringForLanguage<TKey extends string | undefined>(key: TKey, lang: string | undefined, ...params: ObjectFromTagedArray<TKey>): string {
     if (!key) {
         return "";
     }
 
-    if(key.includes('|')){
-        return key.split('|').map(k => getString(k, lang, ...params)).join('|');
+    if (key.includes('|')) {
+        return key.split('|').map(k => getStringForLanguage(k, lang)).join('|');
     }
 
-    key = key.trim()
+    const keyTrimed = key.trim()
     const toTest = getAllStrings(toCheck);
     if (!toTest.includes(key)) {
         missingInToCheck.add(key);
@@ -36,22 +56,27 @@ export function getString(key: string | undefined, lang: string | undefined, ...
     }
 
     if (!lang) {
-        return key;
+        let translated = keyTrimed;
+        Object.entries(params[0] ?? {}).forEach(([name, value]) => {
+            translated = translated.replaceAll(`{${name.toString()}}`, `${value}`);
+        })
+
+        return keyTrimed;
     }
-    let translated = translation[lang]?.[key] ?? key;
+    let translated = translation[lang]?.[keyTrimed] ?? keyTrimed;
 
     const localTranslation =
-        (browser && getLocalisatio(lang) && getLocalisatio(lang)[key]) ? getLocalisatio(lang)[key] : undefined;
+        (browser && getLocalisatio(lang) && getLocalisatio(lang)[keyTrimed]) ? getLocalisatio(lang)[keyTrimed] : undefined;
 
     if (localTranslation && localTranslation != translated)
         translated = '«' + localTranslation + '»';
 
 
-    params?.forEach(e => {
-        translated = translated.replaceAll(`{${e.name}}`, `${e.value}`);
+    Object.entries(params[0] ?? {}).forEach(([name, value]) => {
+        translated = translated.replaceAll(`{${name.toString()}}`, `${value}`);
     })
 
-    return translated.length > 0 ? translated : key;
+    return translated.length > 0 ? translated : keyTrimed;
 
 
 }
@@ -91,7 +116,7 @@ function getAllStrings(obj: unknown): string[] {
         if (Array.isArray(obj)) {
             return obj.flatMap(getAllStrings);
         } else {
-            return [...Object.values(obj).flatMap(getAllStrings),...Object.keys(obj).flatMap(getAllStrings) ];
+            return [...Object.values(obj).flatMap(getAllStrings), ...Object.keys(obj).flatMap(getAllStrings)];
         }
     }
     return [];

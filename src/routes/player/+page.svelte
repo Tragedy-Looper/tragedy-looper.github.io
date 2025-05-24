@@ -6,16 +6,16 @@
   import type { TragedySetName } from '../../model/tragedySets';
   import { parseSearchForPlayerAid } from '../../serilezer';
   import './page.css';
-  import { getString as getStringOriginal } from '../../translations';
+    import { getString, navigationLanguage } from '../(site)/+layout.svelte';
 
   let searchParams: URLSearchParams | undefined;
-  let lang: string;
-  $: getString = (key: string, ...args: any[]) => {
-    return getStringOriginal(key, lang, ...args);
-  };
+
 
   onMount(() => {
-    lang = navigator.language?.split('-')[0];
+
+    navigationLanguage.set(navigator.language?.split('-')[0] ?? 'en');
+
+
     searchParams = new URLSearchParams(document.location.search);
     const pushState = history.pushState;
     history.pushState = function (data: any, unused: string, url?: string | URL | null) {
@@ -58,13 +58,13 @@
     <ul>
       <li>
         <a href="?{reversedTablet?.toString()}" data-sveltekit-reload>
-          {#if tablet}{getString('Print View')}{:else}{getString('Tablet View')}{/if}</a
+          {#if tablet}{$getString('Print View')}{:else}{$getString('Tablet View')}{/if}</a
         >
       </li>
       {#if tablet}
         <li>
           <a href="?{reversedTouchTarget?.toString()}" data-sveltekit-reload>
-            {#if touchTarget}{getString('Compakt View')}{:else}{getString(
+            {#if touchTarget}{$getString('Compakt View')}{:else}{$getString(
                 'Touch optimized View'
               )}{/if}</a
           >
@@ -73,7 +73,6 @@
     </ul>
   </nav>
   <Table
-    {lang}
     {tragedySet}
     {cast}
     {incidents}
@@ -85,13 +84,13 @@
   <div
     style="display: grid; justify-items: center; align-items: center; grid-template-rows: auto 1fr; height: 100vh;"
   >
-    <h1>{getString('Tragedy Looper Deduction overview')}</h1>
+    <h1>{$getString('Tragedy Looper Deduction overview')}</h1>
 
     <p
       aria-busy="true"
       style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: xx-large;"
     >
-      {getString('Rendering')}
+      {$getString('Rendering')}
     </p>
   </div>
 {/if}
@@ -111,10 +110,10 @@
     padding: 1em;
     border-bottom-right-radius: var(--border-radius);
 
-    --primary: hsl(195, 85%, 41%);
-    --primary-hover: hsl(195, 90%, 32%);
-    --primary-focus: rgba(16, 149, 193, 0.125);
-    --primary-inverse: #fff;
+    --pico-primary: hsl(195, 85%, 41%);
+    --pico-primary-hover: hsl(195, 90%, 32%);
+    --pico-primary-focus: rgba(16, 149, 193, 0.125);
+    --pico-primary-inverse: #fff;
 
     --font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell',
       'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
@@ -155,9 +154,9 @@
           border: 1px solid red;
           padding: 0.4em;
 
-          --background-color: var(--primary);
-          --border-color: var(--primary);
-          --color: var(--primary-inverse);
+          --background-color: var(--pico-primary);
+          --border-color: var(--pico-primary);
+          --color: var(--pico-primary-inverse);
           --box-shadow: var(--button-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
           padding: var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);
           border: var(--border-width) solid var(--border-color);
@@ -175,14 +174,14 @@
             color var(--transition), box-shadow var(--transition);
 
           &:is([aria-current], :hover, :active, :focus) {
-            --background-color: var(--primary-hover);
-            --border-color: var(--primary-hover);
+            --background-color: var(--pico-primary-hover);
+            --border-color: var(--pico-primary-hover);
             --box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
-            --color: var(--primary-inverse);
+            --color: var(--pico-primary-inverse);
           }
           &:focus {
             --box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
-              0 0 0 var(--outline-width) var(--primary-focus);
+              0 0 0 var(--outline-width) var(--pico-primary-focus);
           }
         }
       }

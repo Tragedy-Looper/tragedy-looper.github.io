@@ -1,12 +1,11 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
-  import { getString as getStringOriginal } from '../../../translations';
-  import { onMount } from 'svelte';
   import { characters, locations } from '../../../model/characters';
   import Iron from './iron.svelte';
   import { spring } from 'svelte/motion';
   import { adjust, clamp, round } from '../../../misc';
+  import { getString } from '../+layout.svelte';
 
   import './holo.css';
 
@@ -40,12 +39,6 @@
         )[];
       }
     | undefined;
-
-  let lang: string;
-  onMount(() => {
-    lang = navigator.language?.split('-')[0];
-  });
-  $: getString = (key: string) => getStringOriginal(key, lang);
 
   const springInteractSettings = { stiffness: 0.066, damping: 0.25 };
   const springPopoverSettings = { stiffness: 0.033, damping: 0.45 };
@@ -190,19 +183,19 @@
             {:else if card.startLocation.includes(location)}
               <img
                 src="{base}/cards/general/location-{location.toLocaleLowerCase()}-start.png"
-                alt={getString(location)}
+                alt={$getString(location)}
                 class="location back"
               />
             {:else if card.forbiddenLocation.includes(location)}
               <img
                 src="{base}/cards/general/location-{location.toLocaleLowerCase()}-forbidden.png"
-                alt={getString(location)}
+                alt={$getString(location)}
                 class="location back"
               />
             {:else}
               <img
                 src="{base}/cards/general/location-{location.toLocaleLowerCase()}-blank.png"
-                alt={getString(location)}
+                alt={$getString(location)}
                 class="location back"
               />
             {/if}
@@ -210,7 +203,7 @@
           {#if card.paranoiaLimit !== undefined}
             <img
               src="{base}/cards/general/paranoia-{card.paranoiaLimit}.png"
-              alt={getString('paranoia')}
+              alt={$getString('paranoia')}
               class="paranoia back"
             />
           {/if}
@@ -239,8 +232,8 @@
                 <p>
                   {#if ability.restrictedToLocation.length > 0}
                     <div>
-                      {getString('Only at')}: {ability.restrictedToLocation
-                        .map(getString)
+                      {$getString('Only at')}: {ability.restrictedToLocation
+                        .map($getString)
                         .join(', ')}
                     </div>
                   {/if}
@@ -331,8 +324,15 @@
       text-orientation: sideways;
       transform: rotate(180deg);
       // dark outline with layers of box-shadow
-      text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 3px #000, 0 0 4px #000, 0 0 5px #000,
-        0 0 6px #000, 0 0 7px #000, 0 0 8px #000;
+      text-shadow:
+        0 0 1px #000,
+        0 0 2px #000,
+        0 0 3px #000,
+        0 0 4px #000,
+        0 0 5px #000,
+        0 0 6px #000,
+        0 0 7px #000,
+        0 0 8px #000;
     }
     .abilities {
       position: absolute;
@@ -364,8 +364,15 @@
         padding-bottom: calc(0.6cm * var(--scale));
         background: linear-gradient(to bottom, #0000005e 80%, #0000 100%);
         color: #fff;
-        text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 3px #000, 0 0 4px #000, 0 0 5px #000,
-          0 0 6px #000, 0 0 7px #000, 0 0 8px #000;
+        text-shadow:
+          0 0 1px #000,
+          0 0 2px #000,
+          0 0 3px #000,
+          0 0 4px #000,
+          0 0 5px #000,
+          0 0 6px #000,
+          0 0 7px #000,
+          0 0 8px #000;
         margin: 0;
         font-size: 8pt;
       }
@@ -442,7 +449,8 @@
           // font-family: 'UnifrakturCook', serif;
           font-size: calc(8pt * var(--scale));
           color: #ffe68c;
-          text-shadow: 0 0 calc(4px * var(--scale)) #fff9c4,
+          text-shadow:
+            0 0 calc(4px * var(--scale)) #fff9c4,
             calc(1px * var(--scale)) calc(1px * var(--scale)) calc(2px * var(--scale)) #000;
           background: linear-gradient(to right, #204850, #3b7a75, #204850);
           box-shadow: 0 0 calc(10px * var(--scale)) rgba(0, 0, 0, 0.7);

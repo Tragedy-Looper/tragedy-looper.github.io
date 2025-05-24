@@ -78,7 +78,7 @@
   <form>
     <textarea
       bind:value={importJson}
-      style="height: calc(100vh - 10rem); width: calc(100vw -  2 * var(--block-spacing-horizontal))"
+      style="height: calc(100vh - 10rem); width: calc(100vw -  2 * var(--pico-block-spacing-horizontal))"
     />
     <div class="grid">
       <button

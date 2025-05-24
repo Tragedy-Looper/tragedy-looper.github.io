@@ -6,6 +6,7 @@
 	import { base } from '$app/paths';
 	import '@picocss/pico/css/pico.css';
 	import GmHelper from './gmHelper.svelte';
+    import { getString } from '../+layout.svelte';
 
 	$: scripts = Object.values(scriptLookup);
 
@@ -42,7 +43,7 @@
 	}
 </script>
 
-<h1>Mastermind Aid</h1>
+<h1>{$getString('Mastermind Aid')}</h1>
 
 {#if selectedScript}
 	<GmHelper {selectedScript} />

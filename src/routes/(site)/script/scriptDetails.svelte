@@ -156,10 +156,10 @@
         Loops: {e.numberOfLoops} / difficulty:
         {#each Array.from({ length: e.difficulty }) as d}
           <div
-            style="width: 1em; height: 1em; background-color: var(--primary); display: inline-block; border-radius: 1em; border: 1px solid var(--secondary)"
+            style="width: 1em; height: 1em; background-color: var(--pico-primary); display: inline-block; border-radius: 1em; border: 1px solid var(--pico-secondary)"
           ></div>
         {/each}{#each Array.from({ length: 8 - e.difficulty }) as d}<div
-            style="width: 1em; height: 1em; background-color: transparent; border: 1px solid var(--secondary); display: inline-block; border-radius: 1em;"
+            style="width: 1em; height: 1em; background-color: transparent; border: 1px solid var(--pico-secondary); display: inline-block; border-radius: 1em;"
           ></div>{/each} ({e.difficulty})
       </div>
     {/each}
