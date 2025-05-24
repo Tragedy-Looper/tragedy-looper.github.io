@@ -1,0 +1,162 @@
+@media screen {
+    /* based on: https://poke-holo.simey.me/?ref=madewithsvelte.com */
+
+    .card__holder {
+        * {
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+
+        }
+
+        height: 8.8cm;
+        width: 6.3cm;
+        --red: #f80e35;
+        --yellow: #eedf10;
+        --green: #21e985;
+        --blue: #0dbde9;
+        --violet: #c929f1;
+
+        .card__shine,
+        .card__glare {
+            will-change: transform, opacity, background-image, background-size,
+                background-position, background-blend-mode, filter;
+        }
+
+
+        .card__glare {
+
+            /* make sure the glare doesn't clip */
+            transform: translateZ(1.41px);
+            overflow: hidden;
+
+            background-image: radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y),
+                    hsla(0, 0%, 100%, 0.8) 10%,
+                    hsla(0, 0%, 100%, 0.65) 20%,
+                    hsla(0, 0%, 0%, 0.5) 90%);
+
+            opacity: var(--card-opacity);
+            mix-blend-mode: overlay;
+
+        }
+
+
+
+
+
+        .card .card__shine:before {
+            content: "";
+            background-image: repeating-linear-gradient(90deg,
+                    var(--bar-bg) calc(var(--bars)*2),
+                    var(--bar-color) calc(var(--bars)*3),
+                    var(--bar-bg) calc(var(--bars)*3.5),
+                    var(--bar-color) calc(var(--bars)*4),
+                    var(--bar-bg) calc(var(--bars)*5),
+                    var(--bar-bg) calc(var(--bars)*14)),
+                repeating-linear-gradient(90deg,
+                    var(--bar-bg) calc(var(--bars)*2),
+                    var(--bar-color) calc(var(--bars)*3),
+                    var(--bar-bg) calc(var(--bars)*3.5),
+                    var(--bar-color) calc(var(--bars)*4),
+                    var(--bar-bg) calc(var(--bars)*5),
+                    var(--bar-bg) calc(var(--bars)*10));
+            background-position: calc((((50% - var(--background-x)) * 1.65) + 50%) + (var(--background-y) * 0.5)) var(--background-x),
+                calc((((50% - var(--background-x)) * -0.9) + 50%) - (var(--background-y) * 0.75)) var(--background-y);
+            background-size: 200% 200%,
+                200% 200%;
+            background-blend-mode: screen;
+            filter: brightness(1.15) contrast(1.1);
+            mix-blend-mode: hard-light;
+        }
+
+        .card__shine::before,
+        .card__shine::after {
+
+            transform: translateZ(1px);
+            grid-area: 1 / 1;
+            border-radius: var(--card-radius);
+        }
+
+        .card .card__shine:after {
+            content: "";
+            background-image: radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y),
+                    hsla(0, 0%, 90%, 0.8) 0%,
+                    hsla(0, 0%, 78%, 0.1) 25%,
+                    hsl(0, 0%, 0%) 90%);
+            background-position: center center;
+            background-size: cover;
+            mix-blend-mode: luminosity;
+            filter: brightness(0.6) contrast(4);
+        }
+
+        .card__shine::after {
+
+            transform: translateZ(1.2px);
+        }
+
+
+        .card__translater,
+        .card__rotator {
+            display: grid;
+            perspective: 600px;
+            will-change: transform, box-shadow;
+            transform-origin: center;
+            -webkit-transform-origin: center;
+            transform-style: preserve-3d;
+        }
+
+        .card__rotator :not(.transformable) {
+            /* forces every element to be drawn in correct order. Otherwise the holo will be showen over the characters*/
+            transform: translate3d(0, 0, 0);
+
+        }
+
+        .card__translater {
+            width: auto;
+            position: relative;
+            -webkit-transform: translate3d(var(--translate-x), var(--translate-y), 0.1px) scale(var(--card-scale));
+            transform: translate3d(var(--translate-x), var(--translate-y), 0.1px) scale(var(--card-scale));
+        }
+
+
+        .card__rotator {
+            -webkit-transform: rotateY(var(--rotate-x)) rotateX(var(--rotate-y));
+            transform: rotateY(var(--rotate-x)) rotateX(var(--rotate-y));
+
+            /* performance */
+            pointer-events: auto;
+            overflow: hidden;
+            isolation: isolate;
+        }
+    }
+
+
+
+
+    .card .card__shine {
+        display: grid;
+        transform: translateZ(1px);
+        opacity: var(--card-opacity);
+        overflow: hidden;
+        background: center center / cover transparent;
+        --scanlines-space: 1px;
+        --scanlines-light: #666;
+        --scanlines-dark: black;
+        --bars: 3%;
+        --bar-color: hsla(0, 0%, 70%, 1);
+        --bar-bg: hsla(0, 0%, 0%, 1);
+        background-image: repeating-linear-gradient(110deg,
+                var(--violet), var(--blue), var(--green), var(--yellow), var(--red),
+                var(--violet), var(--blue), var(--green), var(--yellow), var(--red),
+                var(--violet), var(--blue), var(--green), var(--yellow), var(--red)),
+            repeating-linear-gradient(90deg,
+                var(--scanlines-dark) calc(var(--scanlines-space) * 0), var(--scanlines-dark) calc(var(--scanlines-space) * 2),
+                var(--scanlines-light) calc(var(--scanlines-space) * 2), var(--scanlines-light) calc(var(--scanlines-space) * 4));
+        background-position: calc(((50% - var(--background-x)) * 2.6) + 50%) calc(((50% - var(--background-y)) * 3.5) + 50%),
+            center center;
+        background-size: 400% 400%,
+            cover;
+        background-blend-mode: overlay;
+        filter: brightness(1.1) contrast(1.1) saturate(1.2);
+        mix-blend-mode: color-dodge;
+    }
+}

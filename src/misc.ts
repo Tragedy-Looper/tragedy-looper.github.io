@@ -82,6 +82,18 @@ export function hasProp<T extends object>(
 }
 
 
+export function clamp(value: number, min = 0, max = 100) {
+    return Math.min(Math.max(value, min), max);
+};
+
+export function round(value: number, precision = 3) {
+    return parseFloat(value.toFixed(precision));
+}
+
+export function adjust(value: number, fromMin: number, fromMax: number, toMin: number, toMax: number) {
+    return round(toMin + (toMax - toMin) * (value - fromMin) / (fromMax - fromMin));
+};
+
 export function distinct<T>(t: readonly T[], keyFunction?: (a: T) => string) {
     if (keyFunction) {
         const result = [];
