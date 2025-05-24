@@ -45,7 +45,7 @@
         },
         {
             "name": "Storyteller",
-            "unkillable": true,
+            "tags": ["Immortal"],
             "abilities": [
                 {
                     "type": "Optional",
@@ -67,7 +67,7 @@
         },
         {
             "name": "Shifter",
-            "unkillable": true,
+            "tags": ["Immortal"],
             "abilities": [
                 {
                     "type": "Mandatory",

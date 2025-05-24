@@ -2,7 +2,7 @@ import * as data from "../data";
 import { toRecord, type RequireAtLeastOne } from "../misc";
 import type { ScriptSpecified } from "./core";
 import type { DoseNotTriggerIncident } from "./incidents";
-import type {Roles as RoleType } from '../roles.g'
+import type { Role, Roles as RoleType } from '../roles.g'
 
 export type AbilityType = AbilityTypeLose | AbilityTypeCreation | AbilityTypeDefault;
 export type AbilityTypeLose = typeof loseTypes[number];
@@ -25,13 +25,12 @@ export type timing = 'Always' | 'Day Start' | 'Day End' | 'Mastermind Ability' |
 // export type RoleInternal = {
 //     name: string,
 //     max?: number,
-//     unkillable?: true,
+//     Immortal?: true,
 //     afterDeath?: true,
 //     goodwillOutburst?: true,
 //     goodwillRefusel?: 'Optional' | 'Mandatory'|'Puppeted',
 //     abilities: readonly Abilitie<{ 'Over all Roles'?: true }>[]
 // } & ScriptSpecified & DoseNotTriggerIncident;
-export type RoleInternal = Exclude<RoleType['roles'],undefined>[number];
 
 
 
@@ -60,21 +59,19 @@ export type Abilitie<Constraints extends object | void = void> = OncePer<'Loop' 
     type: AbilityTypeCreation,
 }
 
-export type Role = Roles[keyof Roles];
-export type Roles = typeof rolesInternal;
-export type RoleName = Role['name'] | `${Role['name']}|${Role['name']}`;
 
 
 
 export const rolesInternal = toRecord([
-
     ...data.roles,
+], 'name');
+
+export type RoleName = keyof typeof rolesInternal | `${keyof typeof rolesInternal}|${keyof typeof rolesInternal}`;
 
 
 
-] , 'name');
 
-export const roles = rolesInternal as Record<RoleName, RoleInternal & { name: RoleName }>;
+export const roles = rolesInternal as Record<RoleName, Role & { name: RoleName }>;
 
 
 export function isRoleName(name: string): name is RoleName {

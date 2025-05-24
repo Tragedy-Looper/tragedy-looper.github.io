@@ -89,6 +89,9 @@ export function hasProp<T extends object>(
 }
 
 
+
+
+
 export function clamp(value: number, min = 0, max = 100) {
     return Math.min(Math.max(value, min), max);
 };
@@ -201,6 +204,11 @@ export function join(array: readonly string[], delimeter?: string, lastDelimeter
 
 
 
+export function toPascalCase(str: string): string {
+    return str
+        .replace(/(?:^\w|[A-Z]|\b\w)/g, (match) => match.toUpperCase())
+        .replace(/\s+/g, '');
+}
 
 
 

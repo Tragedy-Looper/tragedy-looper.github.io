@@ -3,7 +3,7 @@
     "roles": [
         {
             "name": "Sacrifice",
-            "unkillable": true,
+            "tags": ["Immortal"],
             "abilities": [
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -83,7 +83,7 @@
         {
             "name": "Faceless",
             "goodwillRefusel": "Optional",
-            "unkillable": true,
+            "tags": ["Immortal"],
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -106,7 +106,7 @@
         {
             "name": "Vampire",
             "goodwillRefusel": "Optional",
-            "unkillable": true,
+            "tags": ["Immortal"],
             "abilities": [
                 {
                     "type": "Optional",
@@ -148,7 +148,7 @@
         {
             "name": "Nightmare",
             "goodwillRefusel": "Optional",
-            "unkillable": true,
+            "tags": ["Immortal"],
             "abilities": [
                 {
                     "type": "Optional",
@@ -182,7 +182,7 @@
         },
         {
             "name": "Show-Off",
-            "unkillable": true,
+            "tags": ["Immortal"],
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -190,7 +190,7 @@
                         "Always"
                     ],
                     "prerequisite": "This charcter has more then 2 Paranoia",
-                    "description": "This Character loses the Unkillable aspect."
+                    "description": "This Character loses the Immortal aspect."
                 },
                 {
                     "type": "Mandatory",

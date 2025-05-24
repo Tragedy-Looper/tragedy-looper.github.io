@@ -1,0 +1,5029 @@
+{
+  "$schema": "../scripts.schema.json",
+  "scripts": [
+    {
+      "cast": {
+        "Girl Student": "Key Person",
+        "Henchman": "Cultist",
+        "Class Rep": "Conspiracy Theorist",
+        "Boy Student": "Person",
+        "Rich Man’s Daughter": "Curmudgeon",
+        "Patient": "Friend"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Suicide",
+          "culprit": "Patient"
+        },
+        {
+          "day": 2,
+          "incident": "Missing Person",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Girl Student"
+        }
+      ],
+      "title": "Tainted Candy",
+      "mainPlot": [
+        "A Place to Protect"
+      ],
+      "subPlots": [
+        "A Hideous Script"
+      ],
+      "story": "The Patient overdosed on illegal drugs and is becoming suicidal. Meanwhile, the Henchman is a dealer planning to spread the same drugs throughout the school. If the Class Rep visits the Patient in the Hospital, her reprimands spur him towards suicide. The Rich Man’s Daughter is a drug user who dislikes the Protagonists attempts to get in her business. On Day 3 the Girl Student has a bad trip and jumps off a tall building.",
+      "tragedySet": "First Steps",
+      "mastermindHints": "",
+      "specialRules": [
+        "Special Setup: The Henchman starts in the City."
+      ],
+      "specifics": "\n\ntest comment\n    Alan Tran",
+      "creator": "ProdigalPlaneswalker",
+      "daysPerLoop": 3,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        },
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 1
+      }
+    },
+    {
+      "cast": {
+        "Boy Student": "Cultist",
+        "Class Rep": "Brain",
+        "Rich Man’s Daughter": "Person",
+        "Illusion": "Prophet",
+        "Office Worker": "Magician",
+        "Pop Idol": "Person",
+        "Patient": "Immortal",
+        "Henchman": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Suicide",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 3,
+          "incident": "Uproar",
+          "culprit": "Patient"
+        },
+        {
+          "day": 4,
+          "incident": "Hospital Incident",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 5,
+          "incident": "Confession",
+          "culprit": "Henchman"
+        }
+      ],
+      "title": "Shell Game",
+      "mainPlot": [
+        "The Sealed Item"
+      ],
+      "subPlots": [
+        "Worshippers of the Apocalypse",
+        "Showtime of Death"
+      ],
+      "story": "",
+      "tragedySet": "Midnight Zone",
+      "mastermindHints": "Note: The Day 5 incident is actually a Fake Incident!\n\nEvery location cares about having Intrigue on it, and you have to play cards on locations to move the Illusion, who has a really important role. Use this information to leave the protagonists guessing about which location is important or what you actually want to do with the Illusion.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "Kill 2 characters (Uproar, Hospital Incident)\nKill the Protagonists (Hospital Incident)\n2 Intrigue on the Shrine (Sealed Item)\n2 Intrigue on the Henchman's starting location\n\n",
+      "creator": "Iammars",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 5
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 102
+      }
+    },
+    {
+      "cast": {
+        "Girl Student": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Class Rep": "Key Person",
+        "Alien": "Killer",
+        "Police Officer": "Person",
+        "Office Worker": "Person",
+        "Pop Idol": "Friend",
+        "Doctor": "Brain",
+        "Patient": "Friend",
+        "Henchman": "Conspiracy Theorist"
+      },
+      "incidents": [
+        {
+          "day": 4,
+          "incident": "Hospital Incident",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 5,
+          "incident": "Suicide",
+          "culprit": "Class Rep"
+        }
+      ],
+      "title": "Terror is Ripe",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "Paranoia Virus",
+        "Circle of Friends"
+      ],
+      "story": "The night is dark and full of terrors. It’s not safe to go alone anymore. Something has inspired a regime of terror, fear, death. The terror that is experienced by people now… it is something to behold. They are so afraid of dying that they will kill for it. It’s… hilarious.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "Go in full paranoia on as many characters as possible to cover until the Hospital Incident triggers. If it does, you win the loop no matter what. In the meantime, best get killing, right? The whole point of this script is to slaughter as many characters as possible and leave the Protagonists over the carnage with the loop lost. In the end, the Killer, Brain, and Friend (Pop Idol) are easy to hide, so just keep 1 or 2 of them secret and the Final Guess should be yours.",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "1) Kill the Key Person (Class Rep)\n            There's the Hospital Incident, the Killer, and the Suicide. Really, you choose on this one.\n2) Kill a Friend (Patient, Pop Idol)\n           Triggering the Hospital Incident will always kill the Patient, so that makes things much easier. Alternatively, turning the Persons into Serial Killers will make it easy too.\n3) Kill the Protagonists\n           Use either the Killers power to kill them, or blow up the Hospital. It's easy enough to trigger the Hospital Incident, so players may attempt to prevent the placing of Intrigue there, but the fact that the Brain starts there makes it a powerful tool the Protagonists will want to move immediately.\n\nThis was a good script. Difficulty 8/10 makes sense for 3 loops, but 4 is a bit easier. It's fairly balanced. We had the protagonists win on the final guess. \n    Emily Forster\n\nOne of the better ones on this site. 2 Thumbs up!!!\n    sevento",
+      "creator": "O'Malley",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 8,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 103
+      }
+    },
+    {
+      "cast": {
+        "Henchman": "Time Traveler",
+        "Pop Idol": "Cultist",
+        "Rich Man’s Daughter": "Factor",
+        "Nurse": "Conspiracy Theorist",
+        "Mystery Boy": "Killer",
+        "Informer": "Person",
+        "Office Worker": "Person",
+        "Girl Student": "Person",
+        "Alien": "Person",
+        "Godly Being": [
+          "Person",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "Shrine Maiden": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 3,
+          "incident": "Butterfly Effect",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 5,
+          "incident": "Increasing Unease",
+          "culprit": "Godly Being"
+        },
+        {
+          "day": 6,
+          "incident": "Foul Evil",
+          "culprit": "Alien"
+        }
+      ],
+      "title": "To End This World",
+      "mainPlot": [
+        "Change of Future"
+      ],
+      "subPlots": [
+        "Unknown Factor X",
+        "An Unsettling Rumor"
+      ],
+      "story": "He jumps back in time, far from the future. A pleasant and happy time, this person watched as it was ruined for him and him alone. Now, he seeks to undo it. Only one person can save this world now, and they aren't ready to take responsibility yet. They need assistance, they need support. Their destiny will be realized, one way or another.One knife, and he will rise. The future will become his, and it is ruined for the rest of humanity. All it takes is one.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "Too lazy right now. I'll edit later.",
+      "specialRules": [
+        "N/A"
+      ],
+      "specifics": "Too lazy right now. I'll edit later.\n\nThis script is extremely difficult for the protagonists and it's almost impossible. It's very difficult to stop the Butterfly Effect from occurring, though I believe it's possible to do so with perfect information. I won as the MM from Butterfly Effect all 4 loops. There's also no way for the protagonists to figure out who the Time Traveler is unless the MM messes up.\n    Emily Forster\n\nThank you for the comment – I will adjust. \n    O'Malley\n\nChanged the culprit for the Butterfly Effect from the RMD (who is also the Factor which allows her to place Paranoia on herself if the School has intrigue) to the Girl Student, making it much harder to trigger. In addition, swapped out the Police Officer for the Shrine Maiden so her revealing ability can help the Protagonists.\n\nStill should be difficult to discover the Henchman, but I hope it isn't AS hard. It should be easier to win in the loops but harder in the Final Guess.\n    O'Malley",
+      "creator": "O'Malley",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 8,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 104
+      }
+    },
+    {
+      "cast": {
+        "Journalist": "Ninja",
+        "Girl Student": "Friend",
+        "Shrine Maiden": "Obstinate",
+        "Patient": "Conspiracy Theorist",
+        "Boy Student": "Magician",
+        "Mystery Boy": "Key Person",
+        "Office Worker": "Person",
+        "Doctor": "Person",
+        "Alien": "Person",
+        "Henchman": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Patient"
+        },
+        {
+          "day": 3,
+          "incident": "Serial Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 4,
+          "incident": "Suicide",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 6,
+          "incident": "Serial Murder",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 7,
+          "incident": "Serial Murder",
+          "culprit": "Shrine Maiden"
+        }
+      ],
+      "title": "The Greatness Reborn",
+      "mainPlot": [
+        "Male Confrontation"
+      ],
+      "subPlots": [
+        "Love-Hate Spiral",
+        "Unanswered Heart"
+      ],
+      "story": "",
+      "tragedySet": "Midnight Zone",
+      "mastermindHints": "",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Ninja (Journalist) has 2 intrigue, Friend (Girl Student) dies, Killing Key Person (Mystery Boy), Hospital Incident\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 7,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 105
+      }
+    },
+    {
+      "cast": {
+        "Henchman": "Brain",
+        "Godly Being": [
+          "Paranoiac",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "A.I.": "Therapist",
+        "Police Officer": "Obstinate",
+        "Mystery Boy": "Friend",
+        "Class Rep": "Person",
+        "Nurse": "Person",
+        "Shrine Maiden": "Person",
+        "Patient": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Closed Circle",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 2,
+          "incident": "A Suspicious Letter",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 4,
+          "incident": "Closed Circle",
+          "culprit": "A.I."
+        },
+        {
+          "day": 5,
+          "incident": "Suicide",
+          "culprit": "Mystery Boy"
+        },
+        {
+          "day": 6,
+          "incident": "Serial Murder",
+          "culprit": "Godly Being"
+        },
+        {
+          "day": 7,
+          "incident": "Hospital Incident",
+          "culprit": "Class Rep"
+        }
+      ],
+      "title": "The Greatness Vroomed",
+      "mainPlot": [
+        "The Black School"
+      ],
+      "subPlots": [
+        "Isolated Institution Psycho",
+        "An Absolute Will"
+      ],
+      "story": "",
+      "tragedySet": "Mystery Circle",
+      "mastermindHints": "Be careful not to let the therapist be revealed too easily. Also, try to bluff a private investigator for the first incident and play forbid goodwill on the Mystery Boy and/or Godly Being in loops 2-4 to prevent that information from getting out.",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Black School: Intrigue on school is equal to or more than loop #-1, level 2 hospital incident, killing Friend (Mystery Boy)\n\nThis script has been played once with 4 loops, protagonists won on the final guess.\n    Justin Karp",
+      "creator": "Justin Karp",
+      "daysPerLoop": 7,
+      "difficultySets": [
+        {
+          "difficulty": 3,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 106
+      }
+    },
+    {
+      "cast": {
+        "Godly Being": [
+          "Time Traveler",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "Shrine Maiden": "Cultist",
+        "Boy Student": "Serial Killer",
+        "Police Officer": "Friend",
+        "Alien": "Person",
+        "Pop Idol": "Person",
+        "Office Worker": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Class Rep": "Person",
+        "Doctor": "Person",
+        "Patient": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Missing Person",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 3,
+          "incident": "Butterfly Effect",
+          "culprit": "Godly Being"
+        },
+        {
+          "day": 4,
+          "incident": "Increasing Unease",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 6,
+          "incident": "Foul Evil",
+          "culprit": "Police Officer"
+        }
+      ],
+      "title": "Lords of Space-Time",
+      "mainPlot": [
+        "Change of Future"
+      ],
+      "subPlots": [
+        "The Hidden Freak",
+        "Threads of Fate"
+      ],
+      "story": "A fun and very interesting coverup script. This always Misleads the Protagonists.\n\nLords of Space-Time.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "Always have 2 Intrigue on the Shrine. The Protagonists CAN'T win in the first two loops, as the Godly Being will never have 2 Goodwill. With this, and the fact that there is a Cultist, will lead them to believe the main plot is The Sealed Item. So long as they still think this, you've won. Once the Godly Being arrives, the game changes. While you still have to make sure the Shrine has 2 Intrigue, triggering the Butterfly Effect is now a priority. Try killing the Friend after they place Goodwill on the Godly Being to trigger the Butterfly Effect next loop. Winning is easy enough therefore. But beware - if they realize the Main Plot is Change of Future, the Final Guess will be VERY hard on you.",
+      "specialRules": [
+        "N/A"
+      ],
+      "specifics": "Time Traveler (Godly Being) has 2 or less Goodwill at the end of the loop.\nAt the end of the loop, if the Butterfly Effect has triggered this loop.\nAt the end of the loop, the Friend (Police Officer) was killed.\n\nForgot to put in Incidents - adding\n    O'Malley\n\nThe MM information here is in conflict with a couple of things. First of all, you say that the MM will win the first two loops because the Godly Being isn't there, but you have the Godly Being listed as \"Godly Being (2)\" indicating that the Godly Being comes in at the beginning of loop 2. Also, the rule for the Time Traveler is Optional: Day end last day, not Loss condition: Loop end, so when the Protagonists lose from this, they lose at day end, not loop end and they know that they lose from this and not anything else. So all of the hints about the intrigue on the Shrine don't really work. Finally, it's very hard to get the Butterfly Effect to occur the first time the Godly Being shows up because there are no MM abilities to help and the Protagonists just have to play one Paranoia -1 to block the Godly Being from getting to paranoia limit by day 3. \n    Emily Forster\n\nThis script is broken because the Godly Being is not allowed to use their ability when they are not in play.\n    Justin Karp",
+      "creator": "O'Malley + Koya",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 8,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 108
+      }
+    },
+    {
+      "cast": {
+        "Pop Idol": "Key Person",
+        "Class Rep": "Friend",
+        "Alien": "Friend",
+        "Informer": "Conspiracy Theorist",
+        "Godly Being": [
+          "Lover",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "Nurse": "Loved One",
+        "Mystery Boy": "Cultist",
+        "Journalist": "Person",
+        "Patient": "Person",
+        "Henchman": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Foul Evil",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 4,
+          "incident": "Butterfly Effect",
+          "culprit": "Journalist"
+        },
+        {
+          "day": 5,
+          "incident": "Diagonal Destruction",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 6,
+          "incident": "Faraway Murder",
+          "culprit": "Informer"
+        }
+      ],
+      "title": "The Death of Greatness",
+      "mainPlot": [
+        "Sign with me!"
+      ],
+      "subPlots": [
+        "Circle of Friends",
+        "A Love Affair"
+      ],
+      "story": "An exciting script with lots of twists and turns.",
+      "tragedySet": "Basic Tragedy (Diagonal Destruction)",
+      "mastermindHints": "Try your best.",
+      "specialRules": [
+        "New incident: Diagonal Destruction: If there is at least 2 intrigue on the culprit's location, everyone in the diagonally opposite location dies and protagonists lose."
+      ],
+      "specifics": "Diagonal Destruction: 2 intrigue on culprit's location, Friend dies (Alien or Class Rep), Key Person dies (Pop Idol), Key Person has 2 intrigue (Pop Idol), Loved One has 3 paranoia and 1 intrigue (Nurse)\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 109
+      }
+    },
+    {
+      "cast": {
+        "Mystery Boy": "Private Investigator",
+        "Scientist": "Fool",
+        "Boss": [
+          "Conspiracy Theorist",
+          {
+            "Turf": "School"
+          }
+        ],
+        "Henchman": "Paranoiac",
+        "Class Rep": "Twin",
+        "Doctor": "Friend",
+        "Police Officer": "Person",
+        "Forensic Specialist": "Person",
+        "Pop Idol": "Person",
+        "Girl Student": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Closed Circle",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 2,
+          "incident": "Serial Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 3,
+          "incident": "Hospital Incident",
+          "culprit": "Scientist"
+        },
+        {
+          "day": 4,
+          "incident": "Increasing Unease",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 5,
+          "incident": "Serial Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 6,
+          "incident": "The Silver Bullet",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 7,
+          "incident": "Serial Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 8,
+          "incident": "Suicide",
+          "culprit": "Doctor"
+        }
+      ],
+      "title": "Who Died? And Why?",
+      "mainPlot": [
+        "A Quilt of Incidents"
+      ],
+      "subPlots": [
+        "Tricky Twins",
+        "Dance of Fools"
+      ],
+      "story": "YOU CAN READ THIS TO YOUR PLAYERS:\n\"Hello. If you have came here, we told you about our note detailing the upcoming... events. you are most likely in the understanding that no matter how hard you try, this mystery is far too difficult for any of our experts to solve. We have no idea what's going on. We've entitled this case therefore by the most prominent question, \"Who died? And why?\" because we need your help to answer them. We'll need your assistance in uncovering what roles and culprits there are, and convicting whoever is behind this. Judging by the patterns of crime recently, some mastermind is behind all of this. This, if we can find out information, might be the time we catch him.  Good luck.\"\n-Signed, someone... somewhere",
+      "tragedySet": "Mystery Circle",
+      "mastermindHints": "If you are playing this scenario, you should have TONS of experience. Go with your gut and really follow the basic rules. Don't give the Protagonists information, always try to win with the same loss conditions, and recognize them yourself - I'm too lazy right now.",
+      "specialRules": [
+        "N/A"
+      ],
+      "specifics": "Said I was too lazy.\n\nThis script is impossible to win during the loops, but it's not a terrible script because the protagonists can win on the final guess. We played 4 loops and the protagonists won on the final guess. I actually thought this was a very enjoyable script to play for both sides. The PI/Twin combo was very exciting and a big surprise for the protagonists.\n    Justin Karp",
+      "creator": "O'Malley",
+      "daysPerLoop": 8,
+      "difficultySets": [
+        {
+          "difficulty": 11,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 110
+      }
+    },
+    {
+      "cast": {
+        "Rich Man’s Daughter": "Brain",
+        "Boss": [
+          "Conspiracy Theorist",
+          {
+            "Turf": "School"
+          }
+        ],
+        "Doctor": "Killer",
+        "Scientist": "Paranoiac",
+        "Godly Being": [
+          "Therapist",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "Police Officer": "Serial Killer",
+        "Mystery Boy": "Friend",
+        "Alien": "Person",
+        "Journalist": "Person",
+        "Boy Student": "Person",
+        "Pop Idol": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "The Silver Bullet",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 4,
+          "incident": "Increasing Unease",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 5,
+          "incident": "Faked Suicide",
+          "culprit": "Doctor"
+        },
+        {
+          "day": 6,
+          "incident": "Bestial Murder",
+          "culprit": "Scientist"
+        }
+      ],
+      "title": "Big Brother",
+      "mainPlot": [
+        "Tightrope Plan"
+      ],
+      "subPlots": [
+        "Isolated Institution Psycho",
+        "Smell of Gunpowder"
+      ],
+      "story": "",
+      "tragedySet": "Mystery Circle",
+      "mastermindHints": "Not sure yet",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Extra Gauge is 1 or lower at Loop End, 12 or more paranoia on remaining characters at Loop End, Friend dead at Loop End, Killer ability\n\n",
+      "creator": "Emily Forster",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 8,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 111
+      }
+    },
+    {
+      "cast": {
+        "Pop Idol": "Key Person",
+        "Godly Being": [
+          "Poisoner",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "Patient": "Obstinate",
+        "Alien": "Fool",
+        "Rich Man’s Daughter": "Paranoiac",
+        "Henchman": "Twin",
+        "Mystery Boy": "Killer",
+        "Doctor": "Person",
+        "Journalist": "Person",
+        "Informer": "Person",
+        "Boy Student": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "Serial Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Alien"
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Patient"
+        },
+        {
+          "day": 6,
+          "incident": "Serial Murder",
+          "culprit": "Henchman"
+        }
+      ],
+      "title": "The Revival of Greatness",
+      "mainPlot": [
+        "A Drop of Strychnine"
+      ],
+      "subPlots": [
+        "An Absolute Will",
+        "Tricky Twins"
+      ],
+      "story": "An exciting revival of the greatness.",
+      "tragedySet": "Mystery Circle",
+      "mastermindHints": "Force the increasing unease on day 1 by forbid goodwill on the boy student.",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Killing Key Person (Pop Idol), Level 2 Hospital Incident, Poisoner Ability (Godly Being)\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 7,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 112
+      }
+    },
+    {
+      "cast": {
+        "Doctor": "Show-Off",
+        "Patient": "Serial Killer",
+        "Alien": "Loved One",
+        "Shrine Maiden": "Person",
+        "Godly Being": [
+          "Ghost",
+          {
+            "enters on loop": 3
+          }
+        ],
+        "Pop Idol": "Person",
+        "Police Officer": "Witch",
+        "Journalist": "Person",
+        "Informer": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Henchman": "Conspiracy Theorist"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Sacrilegious Murder",
+          "culprit": "Journalist"
+        },
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 3,
+          "incident": "Dark Rumor",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 4,
+          "incident": "Awakened Curse",
+          "culprit": "Hospital"
+        },
+        {
+          "day": 5,
+          "incident": "Missing Person",
+          "culprit": "Alien"
+        },
+        {
+          "day": 6,
+          "incident": "Night of Madness",
+          "culprit": "School"
+        }
+      ],
+      "title": "Evil Primes",
+      "mainPlot": [
+        "The Cursed Land"
+      ],
+      "subPlots": [
+        "Those with Habits",
+        "Witch’s Curse"
+      ],
+      "story": "I tried writing a Prime Evil script. You can find the relevant info for Plots, Sub-Plots, Roles, and Incidents in the Cosmic Evil Player's Handbook on Board Game Geek's Cosmic Evil page as of my writing this script, and I haven't used any of the new characters so it should all be playable with the base game materials. Note the changes to the Police Officer and Informer's abilities as given in the Prime Evil Summary Sheet, which you can also find on Board Game Geek's Cosmic Evil page.",
+      "tragedySet": "Prime Evil",
+      "mastermindHints": "Pretend the Henchman is the curse-layer? Once the Godly Being comes down, start putting down two curses. Try to get as many curses up and running as possible to be able to kill protagonists. Use Increasing Unease for getting Paranoia on the Doctor, to get him murdered, or the Alien, to get the protagonists murdered. Try to have as many other potential death conditions as possible when you kill off the protagonists (Vampire, Werewolf, Nightmare, Night of Madness).",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "The Cursed Land rule for killing Protagonists; Loved One kills Protagonists\n\n",
+      "creator": "Augustin-Louis Cauchy",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 7,
+          "numberOfLoops": 3
+        },
+        {
+          "difficulty": 7,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 113
+      }
+    },
+    {
+      "cast": {
+        "Shrine Maiden": "Key Person",
+        "Alien": "Cultist",
+        "Girl Student": "Deep One",
+        "Class Rep": "Conspiracy Theorist",
+        "Informer": "Faceless",
+        "Office Worker": "Wizard",
+        "Journalist": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Boy Student": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 3,
+          "incident": "Evil Contamination",
+          "culprit": "Alien"
+        },
+        {
+          "day": 4,
+          "incident": "Insane Murder",
+          "culprit": "Informer"
+        },
+        {
+          "day": 5,
+          "incident": "Mass Suicide",
+          "culprit": "Girl Student"
+        }
+      ],
+      "title": "Eldritch Knowledge",
+      "mainPlot": [
+        "The Sacred Words of Dagon"
+      ],
+      "subPlots": [
+        "An Unsettling Rumor",
+        "The Faceless God"
+      ],
+      "story": "I tried writing a Cosmic Mythology script. You can find the relevant info for Plots, Sub-Plots, Roles, and Incidents in the Cosmic Evil Player's Handbook on Board Game Geek's Cosmic Evil page as of my writing this script, and I haven't used any of the new characters so it should all be playable with the base game materials. Note the changes to the Informer's ability as given in the Cosmic Mythology Summary Sheet, which you can also find on Board Game Geek's Cosmic Evil page.",
+      "tragedySet": "Cosmic Mythology",
+      "mastermindHints": "If/when the protagonists get to 3 on the Extra Gauge, try to kill of the Deep One to finish them off, or the Faceless/Deep One Goodwill Refusal? You can effectively decide whether or not Mass Suicide does anything by placing or not placing Intrigue on the Girl Student with the Girl Student on Day 5. Be careful of the Shrine Maiden's ability to remove Intrigue from the Shrine. Don't forget the Unsettling Rumor ability!",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "At least as much Intrigue on Shrine as the Extra Gauge shows (end of loop); Key Person dies (immediate); Wizard dies (end of loop); Protagonists die from Extra Gauge being at 4 (end of day); Loop loss from Extra Gauge Being at 4 (start of loop)\n\n",
+      "creator": "Augustin-Louis Cauchy",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 7,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 114
+      }
+    },
+    {
+      "cast": {
+        "Journalist": "Ninja",
+        "Rich Man’s Daughter": "Friend",
+        "Police Officer": "Obstinate",
+        "Illusion": "Factor",
+        "Forensic Specialist": "Person",
+        "Scientist": "Person",
+        "Shrine Maiden": "Person",
+        "Class Rep": "Person",
+        "Nurse": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 2,
+          "incident": "Missing Person",
+          "culprit": "Scientist"
+        },
+        {
+          "day": 3,
+          "incident": "Conspiracies",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 4,
+          "incident": "Serial Murder",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 5,
+          "incident": [
+            "Fake Incident",
+            "Uproar"
+          ],
+          "culprit": "Forensic Specialist"
+        }
+      ],
+      "title": "They're Out to Get You",
+      "mainPlot": [
+        "Male Confrontation"
+      ],
+      "subPlots": [
+        "Love-Hate Spiral",
+        "Unsafe Trigger"
+      ],
+      "story": "",
+      "tragedySet": "Midnight Zone",
+      "mastermindHints": "Mastermind secret rule: The intrigue from Increasing Unease cannot be placed on the Journalist.",
+      "specialRules": [
+        "The Mastermind has a secret rule that dictates part of his/her play."
+      ],
+      "specifics": "2 intrigue on Journalist at end of loop, kill Class Rep or Illusion while 2 intrigue on City via Ninja ability or Conspiracies, Fake Incident\n\n",
+      "creator": "Emily Forster",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 115
+      }
+    },
+    {
+      "cast": {
+        "Police Officer": "Serial Killer",
+        "Henchman": "Conspiracy Theorist",
+        "Class Rep": "Witch",
+        "Alien": "Witch",
+        "Shrine Maiden": "Friend",
+        "Patient": "Friend",
+        "Office Worker": "Obstinate",
+        "Informer": "Person",
+        "Journalist": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Missing Person",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 2,
+          "incident": "Faked Suicide",
+          "culprit": "Journalist"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Patient"
+        },
+        {
+          "day": 4,
+          "incident": [
+            "Fake Incident",
+            "Confession"
+          ],
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 5,
+          "incident": [
+            "Fake Incident",
+            "Breakthrough"
+          ],
+          "culprit": "Alien"
+        },
+        {
+          "day": 6,
+          "incident": "Diagonal Destruction 2",
+          "culprit": "Office Worker"
+        }
+      ],
+      "title": "The Greatest Greatness",
+      "mainPlot": [
+        "Fated Connections"
+      ],
+      "subPlots": [
+        "Witches Tea Time",
+        "Love-Hate Spiral"
+      ],
+      "story": "Idk",
+      "tragedySet": "Midnight Zone (Diagonal Destruction)",
+      "mastermindHints": "",
+      "specialRules": [
+        "New incident: Diagonal Destruction 2: Everyone in the diagonally opposite location of the culprit dies"
+      ],
+      "specifics": "Key person dies from Fated Connections, Friend dies (Alien or Patient), Fake Incident\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 8,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 116
+      }
+    },
+    {
+      "cast": {
+        "Henchman": "Conspiracy Theorist",
+        "Alien": "Fool",
+        "Class Rep": "Serial Killer",
+        "Shrine Maiden": "Paranoiac",
+        "Rich Man’s Daughter": "Therapist",
+        "Mystery Boy": "Poisoner",
+        "Journalist": "Person",
+        "Patient": "Person",
+        "Police Officer": "Person",
+        "Office Worker": "Person",
+        "Doctor": "Person",
+        "Informer": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Suicide",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "Suicide",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 3,
+          "incident": "Serial Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 4,
+          "incident": "A Suspicious Letter",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 5,
+          "incident": "Portent",
+          "culprit": "Alien"
+        },
+        {
+          "day": 6,
+          "incident": "The Silver Bullet",
+          "culprit": "Informer"
+        }
+      ],
+      "title": "Vroom Vroom Greatness",
+      "mainPlot": [
+        "A Quilt of Incidents"
+      ],
+      "subPlots": [
+        "Smell of Gunpowder",
+        "Isolated Institution Psycho"
+      ],
+      "story": "A chance for the greatness to vroom.",
+      "tragedySet": "Mystery Circle",
+      "mastermindHints": "Be careful what you do.",
+      "specialRules": [
+        "Protagonists know when the incidents are and who does them except for day 5 but not which incident occurs on each day. The incident list is in the culprit list for the mastermind."
+      ],
+      "specifics": "Smell of Gunpowder: 12 or more paranoia on the remaining characters, A Quilt of Incidents: Extra Gauge is on 3 or more, Poisoner (Mystery Boy)\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 7,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 117
+      }
+    },
+    {
+      "cast": {
+        "Girl Student": "Conspiracy Theorist",
+        "Rich Man’s Daughter": "Key Person",
+        "Alien": "Brain",
+        "Office Worker": "Magician",
+        "Shrine Maiden": "Magician",
+        "Pop Idol": "Immortal",
+        "Patient": "Person",
+        "Police Officer": "Person",
+        "Boy Student": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Serial Murder",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 2,
+          "incident": "Conspiracies",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 3,
+          "incident": "Confession",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 4,
+          "incident": "Serial Murder",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 5,
+          "incident": "Uproar",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 6,
+          "incident": "Suicide",
+          "culprit": "Patient"
+        }
+      ],
+      "title": "Night at the Vroomsbury",
+      "mainPlot": [
+        "Secret Record"
+      ],
+      "subPlots": [
+        "Showtime of Death",
+        "Unanswered Heart"
+      ],
+      "story": "",
+      "tragedySet": "Midnight Zone",
+      "mastermindHints": "",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "Secret Record Victory: Magician(s) or Brain is revealed (Office Worker, Shrine Maiden, Alien); Showtime of Death Victory: 6 or fewer characters left alive; Key Person dies (Rich Man’s Daughter)\n\n",
+      "creator": "Augustin-Louis Cauchy",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 6,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 118
+      }
+    },
+    {
+      "cast": {
+        "Alien": "Person",
+        "Boy Student": "Person",
+        "Forensic Specialist": "Person",
+        "Journalist": "Serial Killer",
+        "Mystery Boy": "Cultist",
+        "Nurse": "Friend",
+        "Patient": "Person",
+        "Police Officer": "Witch",
+        "Pop Idol": "Person",
+        "Rich Man’s Daughter": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Nurse"
+        },
+        {
+          "day": 3,
+          "incident": "Spreading",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 4,
+          "incident": "Faraway Murder",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 6,
+          "incident": "Hospital Incident",
+          "culprit": "Patient"
+        }
+      ],
+      "title": "The Medea Syndrome",
+      "mainPlot": [
+        "Giant Time Bomb"
+      ],
+      "subPlots": [
+        "The Hidden Freak",
+        "Threads of Fate"
+      ],
+      "story": "",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "This is a script geared toward Protagonists still a bit unused to Tragedy Looper. We have few roles, so we need to hide at least the Witch as long as we can, else it's gg. On the other hand, Protagonists will need to focus on Goodwill abilities, and the Police Officer may never reveal his mandatory refusal. For the first loop, try using the Cultist to kill the Nurse via Faraway Murder. Don't be afraid of over using his ability, he would have been discovered anyway pretty soon. \nThen, 2nd loop, Threads of Fate will make triggering Incidents considerably easier. Keep killing the Nurse if you can, or try a steady win via Hospital Incident. It's up to you. 3rd loop is a battle of wits. If you succeed, you may still lose at The Final Guess unless you managed to hide the Witch so be careful.\nThe Cultist is your best friend. Beware, the Protagonists will try to kill him with the Serial Killer. If you can, try to keep the Journalist's role concelead at least for the first loop; that will make your plays a lot easier. Use Spreading to choose a character you want Paranoia on next loop. Faraway Murder is your midgame major threat, and your best bet to kill the Nurse.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "1. At least 2 Intrigue on the City (main plot: Giant Time Bomb victory condition)\n2. Kill the Friend (Nurse, using Serial Killer's ability, Hospital Incident, Faraway Murder)\n3. Kill the Protagonists (using Hospital Incident)\n\n",
+      "creator": "Elmore Maji",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 126
+      }
+    },
+    {
+      "cast": {
+        "Girl Student": "Key Person",
+        "Boy Student": "Killer",
+        "Informer": "Brain",
+        "Class Rep": "Friend",
+        "Police Officer": "Friend",
+        "Pop Idol": "Conspiracy Theorist",
+        "Patient": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Godly Being": [
+          "Person",
+          {
+            "enters on loop": 3
+          }
+        ],
+        "Henchman": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Diagonal Destruction 3",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 2,
+          "incident": "Diagonal Destruction 3",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 3,
+          "incident": "Diagonal Destruction 3",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 4,
+          "incident": "Diagonal Destruction 3",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 5,
+          "incident": "Diagonal Destruction 3",
+          "culprit": "Godly Being"
+        },
+        {
+          "day": 6,
+          "incident": "Diagonal Destruction 3",
+          "culprit": "Patient"
+        }
+      ],
+      "title": "Diagonal Vroom",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "Threads of Fate",
+        "Circle of Friends"
+      ],
+      "story": "Idk",
+      "tragedySet": "Basic Tragedy (Diagonal Destruction)",
+      "mastermindHints": "?",
+      "specialRules": [
+        "Diagonal Destruction 3: everyone in the diagonally opposite location dies, the incident happens at paranoia limit -1, if 3 or more people die in a single incident, the protagonists are killed"
+      ],
+      "specifics": "Key Person (Boy Student) dies\nFriend (Class Rep or Police Officer) dies\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 129
+      }
+    },
+    {
+      "cast": {
+        "Informer": "Key Person",
+        "Police Officer": "Poisoner",
+        "Godly Being": [
+          "Fool",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "Henchman": "Twin",
+        "Rich Man’s Daughter": "Paranoiac",
+        "Boy Student": "Serial Killer",
+        "Girl Student": "Friend",
+        "Mystery Boy": "Private Investigator",
+        "Class Rep": "Person",
+        "Office Worker": "Person",
+        "Transfer Student": [
+          "Person",
+          {
+            "enters on day": 4
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Closed Circle",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "Serial Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 4,
+          "incident": "Serial Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 6,
+          "incident": "Serial Murder",
+          "culprit": "Godly Being"
+        }
+      ],
+      "title": "Zexal?",
+      "mainPlot": [
+        "A Drop of Strychnine"
+      ],
+      "subPlots": [
+        "Tricky Twins",
+        "The Hidden Freak"
+      ],
+      "story": "The Zexal has now taken over the world.",
+      "tragedySet": "Mystery Circle",
+      "mastermindHints": "None",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Killing Key Person: Informer\nKilling Friend: Girl Student\nLevel 2 Hospital Incident\nPoisoner Ability (Extra Gauge at 4)\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 134
+      }
+    },
+    {
+      "cast": {
+        "Soldier": "Sacrifice",
+        "A.I.": "Cultist",
+        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "Scientist": "Witness",
+        "Police Officer": "Deep One",
+        "Informer": "Paranoiac",
+        "Transfer Student": [
+          "Person",
+          {
+            "enters on day": 4
+          }
+        ],
+        "Pop Idol": "Person",
+        "Boy Student": "Person",
+        "Office Worker": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Insane Murder",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 3,
+          "incident": "Increasing Unease",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 4,
+          "incident": "Mass Suicide",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 5,
+          "incident": "Uproar",
+          "culprit": "Soldier"
+        },
+        {
+          "day": 6,
+          "incident": "Discovery",
+          "culprit": "Transfer Student"
+        }
+      ],
+      "title": "Metamorphosis",
+      "mainPlot": [
+        "The King in Yellow"
+      ],
+      "subPlots": [
+        "People Who Saw",
+        "Whispers from the Deep"
+      ],
+      "story": "",
+      "tragedySet": "Cosmic Mythology",
+      "mastermindHints": "Loop 1, try to kill the Informer from the Insane Murder. Keep trying to kill the informer in later loops, but you'll most likely win from increasing the extra gauge after loop 1. Try to bluff Choir to the Outside God at least in Loop 2.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "Key Person (and Paranoiac) ability. Sacrifice Ability. Increase the extra gauge by Witness, Deep One, or Discovery.\n\n",
+      "creator": "Emily Forster",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 135
+      }
+    },
+    {
+      "cast": {
+        "Pop Idol": "Key Person",
+        "Police Officer": "Brain",
+        "Informer": "Killer",
+        "Forensic Specialist": "Twin",
+        "Scientist": "Paranoiac",
+        "Alien": "Fool",
+        "Shrine Maiden": "Friend",
+        "Mystery Boy": "Obstinate",
+        "Rich Man’s Daughter": "Person",
+        "Patient": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Diagonal Destruction 3",
+          "culprit": "Mystery Boy"
+        },
+        {
+          "day": 2,
+          "incident": "Diagonal Destruction 3",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 3,
+          "incident": "Diagonal Destruction 3",
+          "culprit": "Forensic Specialist"
+        },
+        {
+          "day": 4,
+          "incident": "Diagonal Destruction 3",
+          "culprit": "Alien"
+        },
+        {
+          "day": 5,
+          "incident": "Diagonal Destruction 3",
+          "culprit": "Informer"
+        },
+        {
+          "day": 6,
+          "incident": "Diagonal Destruction 3",
+          "culprit": "Scientist"
+        }
+      ],
+      "title": "Mystery Vroom",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "Tricky Twins",
+        "Dance of Fools"
+      ],
+      "story": "?",
+      "tragedySet": "Mystery Circle (Diagonal Destruction)",
+      "mastermindHints": "?",
+      "specialRules": [
+        "Special Incident: Diagonal Destruction 3 (the culprit must kill up to 2 people in the diagonally opposite location)"
+      ],
+      "specifics": "Kill Key Person: Pop Idol\nKill Friend: Shrine Maiden\nKiller Ability (Informer)\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 141
+      }
+    },
+    {
+      "cast": {
+        "Journalist": "Key Person",
+        "Forensic Specialist": "Poisoner",
+        "Alien": "Fool",
+        "Class Rep": "Paranoiac",
+        "Office Worker": "Conspiracy Theorist",
+        "Patient": "Therapist",
+        "Doctor": "Serial Killer",
+        "Nurse": "Person",
+        "Henchman": "Person",
+        "Police Officer": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Suicide",
+          "culprit": "Forensic Specialist"
+        },
+        {
+          "day": 2,
+          "incident": "Closed Circle",
+          "culprit": "Alien"
+        },
+        {
+          "day": 3,
+          "incident": "Serial Murder",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 4,
+          "incident": "Suicide",
+          "culprit": "Patient"
+        },
+        {
+          "day": 5,
+          "incident": "Terrorism",
+          "culprit": "Nurse"
+        },
+        {
+          "day": 6,
+          "incident": "Hospital Incident",
+          "culprit": "Police Officer"
+        }
+      ],
+      "title": "New Vroom",
+      "mainPlot": [
+        "A Drop of Strychnine"
+      ],
+      "subPlots": [
+        "Isolated Institution Psycho",
+        "Smell of Gunpowder"
+      ],
+      "story": "A vroom",
+      "tragedySet": "Mystery Circle",
+      "mastermindHints": "?",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Killing Key Person: Forensic Specialist\nLevel 2 Terrorism\nLevel 2 Hospital Incident\n4 Extra Gauge Poisoner Ability\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 142
+      }
+    },
+    {
+      "cast": {
+        "Scientist": "Key Person",
+        "Journalist": "Sacrifice",
+        "A.I.": "Immortal",
+        "Transfer Student": [
+          "Serial Killer",
+          {
+            "enters on day": 3
+          }
+        ],
+        "Rich Man’s Daughter": "Time Traveler",
+        "Black Cat": "Deep One",
+        "Informer": "Paranoiac",
+        "Teacher": "Person",
+        "Shrine Maiden": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 3,
+          "incident": "Evil Contamination",
+          "culprit": "Scientist"
+        },
+        {
+          "day": 4,
+          "incident": "Fire of Demise",
+          "culprit": "Journalist"
+        },
+        {
+          "day": 5,
+          "incident": "Uproar",
+          "culprit": "Teacher"
+        }
+      ],
+      "title": "Cosmic Vroomology",
+      "mainPlot": [
+        "Choir to the Outside God"
+      ],
+      "subPlots": [
+        "The Profound Race",
+        "Whispers from the Deep"
+      ],
+      "story": "",
+      "tragedySet": "Cosmic Mythology",
+      "mastermindHints": "",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "Kill Key Person or Paranoiac with Serial Killer or Uproar. Fire of Demise. Sacrifice ability. Time Traveler ability. 5 characters with Intrigue at end of loop.\n\n",
+      "creator": "Emily Karp",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 143
+      }
+    },
+    {
+      "cast": {
+        "Doctor": "Time Traveler",
+        "Alien": "Serial Killer",
+        "Office Worker": "Loved One",
+        "Girl Student": "Lover",
+        "Rich Man’s Daughter": "Friend",
+        "Boss": [
+          "Cultist",
+          {
+            "Turf": "Hospital"
+          }
+        ],
+        "Police Officer": "Person",
+        "Patient": "Person",
+        "Mystery Boy": "Conspiracy Theorist"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Foul Evil",
+          "culprit": "Boss"
+        },
+        {
+          "day": 2,
+          "incident": "Suicide",
+          "culprit": "Alien"
+        },
+        {
+          "day": 3,
+          "incident": "Missing Person",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 4,
+          "incident": "Increasing Unease",
+          "culprit": "Doctor"
+        },
+        {
+          "day": 5,
+          "incident": "Spreading",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 6,
+          "incident": "Butterfly Effect",
+          "culprit": "Patient"
+        }
+      ],
+      "title": "Last Gift of the God of Freedom",
+      "mainPlot": [
+        "Change of Future"
+      ],
+      "subPlots": [
+        "A Love Affair",
+        "The Hidden Freak"
+      ],
+      "story": "He's locked up, and he's going to ruin everything. He has to be set free to avert the tragedy that's about to occur.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "Here are a few crazy things you can do to win:\n1. hide the serial killer loop 1 (and 2 if they let you) by moving her into the school and suiciding her using the conspiracy theorist (second loop you may need to move Mboy up instead). Then win via patient shenanigans, but use intrigue cards and missing person to bluff giant time bomb, sealed item, and/or sign with me\n2. use increasing unease to set off either the loved one, spreading, or butterfly effect, depending on what you need. spreading is good because you can remove goodwill from the time traveler (great). loved one is obviously insanely good. and butterfly effect sometimes needs that little extra push.\n3. try to kill the girl student (lover) before the RMD (friend). then you can autowin with the office worker's ability without showing the friend first. This doesn't apply if they already goodwilled OW of course.\n4. bluff that the informer, cop, and patient are all cultists. you can lock your protags out of this info until they start pressuring you actively by threatening to win. remember you can use spreading to help deny this info as well. they should be strapped for goodwill between all the crazy abilities that are on the loose (doc, alien, OW, mboy, these two). Anyways, this is your final guess mainstay.\n5. don't forget to move the doctor out of the hospital. if you aggressively move him orthogonally to the hospital it's absolutely impossible for them to get him back inside. ideally you do this day 1 of later loops, then they're forced to use his 3-cost ability to deal with butterfly effect. You should basically always do this for the first two loops.\n6. use doctor aggressively if you need to, to obfuscate the serial killer. if you can hide SK for 2 loops you're really set\n7. the office worker and alien's movement restrictions make him a lot harder to kill. it takes a pretty huge amount of card investment to actually use his ability, and you typically can't do so while keeping the contheorist hidden either.\n8. Missing person can allow you to add intrigue to locations (useful for bluffing), kill the RMD (another wincon), and prevent the protagonists from figuring out the time traveler with the serial killer.\n9. the most important thing you can do is hide the alien-SK from them for as long as possible.\n10. That said, if the SK dies and the mystery boy is already gone, you're in kind of an awkward position. So prioritize saving the mystery boy in later loops.",
+      "specialRules": [
+        "Know that there is no godly being in this script."
+      ],
+      "specifics": "Butterfly Effect. Doctor doesn't have enough goodwill (use spreading to help with this). Kill the friend. Loved one kills protagonists.\n\nThis script was inspired by the doctor's 3-cost goodwill ability. How could I make it crucial for the protagonists? This motivated doctor as time traveler and alien as serial killer, and patient doing butterfly effect. I then added the other stuff. It's a bit overkill honestly. Here are all the gimmicks in this script:\n\ngimmicks:\n1. the patient needs to leave the hospital in order to stop BFE\n2. spreading can ruin the doctor and motivate an alternate wincon\n3. the serial killer suicides early, making it difficult to pick out roles\n4. mboy is contheorist, leaking both subplots but making for a vicious contender\n5. office worker as loved one unfucks the role\n6. missing person works to cause or interrupt serial kills, and to facilitate bluffing loop 1\n\nThe one time I tested this, I was running the following changes: informer instead of boss, informer does hospital incident instead of foul evil. I'm thinking of switching the girl student and office worker too, but I'm not sure if that's too imbalanced.\n\nThe lesson of this script for me is that I may have tried to cram too many tricks and gimmicks in. Maybe it's better to write scripts with \"theses\" if that makes sense. Very tightly focused explorations of a concept. That's not what this is lol. Good luck.\n    Boy Student",
+      "creator": "Redless",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 5
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 157
+      }
+    },
+    {
+      "cast": {
+        "Patient": "Person",
+        "Doctor": "Curmudgeon",
+        "Office Worker": "Person",
+        "Class Rep": "Conspiracy Theorist",
+        "Mystery Boy": "Cultist",
+        "Girl Student": "Friend",
+        "Informer": "Person",
+        "Godly Being": [
+          "Brain",
+          {
+            "enters on loop": 3
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 2,
+          "incident": "Missing Person",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 4,
+          "incident": "Faraway Murder",
+          "culprit": "Patient"
+        }
+      ],
+      "title": "Love, or a Nightmare?",
+      "mainPlot": [
+        "Light of the Avenger"
+      ],
+      "subPlots": [
+        "A Hideous Script"
+      ],
+      "story": "Whispers of an ancient evil emanate from the Shrine, the stars are aligned, the fateful day approaches. Echoes of fear manifest in those vulnerable minds, manifesting in panic, while a vessel of the Dark Ones arrives in order to ensure their coming is set in stone. Meanwhile, a love triangle has developed in the school, centering around the mysterious new student. However, he is far from what he seems, and the battleground of love forming around him may brew desperate acts with fatal consequences. Can the Protagonists save the students from one another and protect the world from the darkness that claws at its seams?",
+      "tragedySet": "First Steps",
+      "mastermindHints": "Recommended for experienced Protagonists and Masterminds that are not yet ready for Basic Tragedy. This script heavily relies on the Mastermind's ability to cover-up and bluff, as there are only two ways for the Mastermind to win, and both can be blocked relatively easily by the Protagonists. You do have some tools at your disposal, however.\n-The Informer and Office Worker are good early game bait for the Protagonists to waste time on. Use them either as decoys or false leads as you play it out.\n-Be aggressive in using the abilities at your disposal in the beginning. Incidents are very important in this script, particularly on the first day. Use the combined abilities of your cards, the Conspiracy Theorist, and the Curmudgeon Doctor to stack up paranoia and keep the Protagonists guessing as to the culprits of the incidents.\n-Between placing 2 Intrigue on the School and placing 2 Intrigue on the Girl Student (Friend), the Cultist's presence will quickly become apparent, which you can use to your advantage when covering up the main plot. However, if the Protagonists discover that the Mystery Boy is the Cultist, it will destroy all cover-ups related to A Place to Protect. Be prepared for this.\n-Once the Godly Being arrives in Loop 3, how you want to use it will depend on how close the Protagonists are to figuring your Plots out. If they are near certain as to what they are, go loud with its Brain ability. You should be able to secure the win and prepare for the battle that is the last loop. Alternatively, if they are still unsure, use it only to secure the win, and preferably when there's room to deceive. Be aware that particularly experienced Protagonists may predict the arrival of the Godly Being if you focus on placing Intrigue on the Shrine.",
+      "specialRules": [
+        "N/A"
+      ],
+      "specifics": "(1) [Loop End]: The Girl Student (Friend) is dead. (Faraway Murder)\n(2) [Loop End]: 2 Intrigue on the Shrine. (Light of the Avenger)\n\n",
+      "creator": "CipherCybr",
+      "daysPerLoop": 4,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 159
+      }
+    },
+    {
+      "cast": {
+        "Patient": "Conspiracy Theorist",
+        "Nurse": "Key Person",
+        "Henchman": "Brain",
+        "Pop Idol": "Killer",
+        "Police Officer": "Person",
+        "Girl Student": "Friend",
+        "Shrine Maiden": "Person",
+        "Class Rep": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Spreading",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 3,
+          "incident": "Murder",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 4,
+          "incident": "Hospital Incident",
+          "culprit": "Patient"
+        }
+      ],
+      "title": "A Decadent Rebellion",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "A Hideous Script"
+      ],
+      "story": "Young love often signaled a turbulent time of passion and change. Unfortunately for this city, when the boy became a patient at a mental ward, it also signaled the birth of a terrifying plan to elope, and the only thing in the lovers' way? The very nurse that had admitted him. And with the charm and resources of a very successful Pop Idol enrolled in an all-girls school? \"Collateral damage\" is all but certain, should the dark pair successfully enact their plan. But they are not outside of the public eye. A humble man of nine-to-fives is aware of the danger they pose, and must keep his secret, lest the lovers force him to take it to the grave.",
+      "tragedySet": "First Steps",
+      "mastermindHints": "This is a very tricky First Steps script for Protagonist and Mastermind alike. You have a lot of tools to achieve your victory each loop, and there are several big threats that will draw the attention of the Protagonists very early on. However, your job is far from easy. While you are able to pull off some interesting plays off the special rule, including preventing movement and forcing the Protagonists into a catch-22, the School is a safe zone against some of your plays, especially if the Pop Idol ends up there. There are also 3 potentially useful Goodwill 2 abilities, and none of them have Goodwill Refusal, so expect these to be used to full effect, on top of the Friend (Office Worker) potentially being revealed before you can win using them. Finally, it is highly likely that the main plot will be discovered quickly, so you must take every opportunity to conceal the identities of your Key Person (Nurse) and Killer (Pop Idol) during every loop but the last. Your most common route to victory early on will involve the Hospital Incident, using the Conspiracy Theorist as the culprit and your cards, you can easily pull off 2 Paranoia on the Patient. Between killing the Friend via the Murder incident and a Intrigue turbo combo (Day 1: +2 Intrigue on Killer, then +1 Intrigue from Brain), you also have a couple of backup plans in case things go awry. If the Protagonists' strategy relies on a specific Goodwill ability (notably the Nurse or Class Rep), you can have the Henchman steal 2 Goodwill from that character using the Spreading incident, placing it on a useless Goodwill ability (as his incident has already triggered).",
+      "specialRules": [
+        "[Always]: Characters with <Boy> or <Man> cannot move into the School by any means."
+      ],
+      "specifics": "(1) The Nurse is dead (Key Person) [Killer's Ability, Murder Incident, Hospital Incident] ; (2) The Friend (Office Worker) is dead at the end of the loop [Murder Incident, Hospital Incident] ; (3) The Protagonists are killed [Killer's Ability, Hospital Incident].\n\n",
+      "creator": "CipherCybr",
+      "daysPerLoop": 4,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 161
+      }
+    },
+    {
+      "cast": {
+        "Shrine Maiden": "Friend",
+        "Boy Student": "Conspiracy Theorist",
+        "Girl Student": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Office Worker": "Cultist",
+        "Informer": "Key Person",
+        "Doctor": "Curmudgeon",
+        "Nurse": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Doctor"
+        },
+        {
+          "day": 3,
+          "incident": "Missing Person",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 4,
+          "incident": "Faraway Murder",
+          "culprit": "Office Worker"
+        }
+      ],
+      "title": "The World Evervolving",
+      "mainPlot": [
+        "A Place to Protect"
+      ],
+      "subPlots": [
+        "A Hideous Script"
+      ],
+      "story": "She was the key. At least, the humble maiden of the shrine was made the key to this Pandora's Box. From anywhere else, it looked like a regular place of worship. Step within the sacred grounds, however, and a world twisting and contorting would greet the eyes of the unwary. Having discovered this phenomenon, the Protagonists must work with and protect a woman interested in the shifting shrine, alongside the key, lest the rotations spread beyond the shrine.",
+      "tragedySet": "First Steps",
+      "mastermindHints": "//EFFECTS OF SPECIAL RULE// Day 1: Place 1 Paranoia on all characters in the Shrine. // Day 2: Replace all Paranoia on all characters in the Shrine with Goodwill, and place 1 Goodwill on each character that had Paranoia replaced. // Day 3: Replace all Goodwill on all characters in the Shrine with Intrigue, and place 1 Intrigue on each character that had Goodwill replaced. // Day 4: All characters with at least 2 Intrigue in the Shrine die. // MASTERMIND HINTS: First of all, kudos to those that get the reference. This script is as much chaos for the Mastermind as it is for the Protagonists. You should aim to get the Friend killed on Loop 1 and 2 (Special Rule and Faraway Murder), and try to save the Key Person's death and the A Place to Protect loss condition for the last two loops. Be very aware of how the board will change with the moving Shrine, and be especially careful of movement restrictions on certain characters. One way to quickly kill someone is to place +2 Intrigue on someone and then send them to the Shrine, but the Protagonists will not fall for this twice. It is possible for the Protagonists to exploit the Special Rule on Day 2 to gain more Goodwill on specific characters, so be prepared to counter this. With so much potential Paranoia on the board, it can be fairly easy to cover up the culprits of Incidents in the first couple of loops. On the final loop, aim to trigger Missing Person and move the Shrine Maiden to the School, and take advantage of the age old catch 22: +1 Intrigue on the School, or +2 somewhere worse. The key to victory here is to take advantage of how much you can bamboozle the Protagonists with an ever-shifting board and a terrifying amount of Paranoia and Intrigue generation.",
+      "specialRules": [
+        "[At Day End]: Move the Shrine anti-clockwise on the board and switch it with the Location in the slot it moves to (Example: Night 1 - Switch the Shrine and Hospital). Then, an effect (only known by Mastermind) is applied to all characters in that location."
+      ],
+      "specifics": "The Shrine Maiden (Friend) is dead: Special Rule, Faraway Murder // The Informer (Key Person) is dead: Special Rule, Faraway Murder // 2 Intrigue on the School (A Place to Protect).\n\n",
+      "creator": "CipherCybr",
+      "daysPerLoop": 4,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 162
+      }
+    },
+    {
+      "cast": {
+        "Girl Student": "Key Person",
+        "Shrine Maiden": "Killer",
+        "Rich Man’s Daughter": "Brain",
+        "Boy Student": "Conspiracy Theorist",
+        "Office Worker": "Serial Killer",
+        "Nurse": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 3,
+          "incident": "Murder",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 4,
+          "incident": "Suicide",
+          "culprit": "Girl Student"
+        }
+      ],
+      "title": "United We Fall",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "Shadow of the Ripper"
+      ],
+      "story": "Alternative first script.",
+      "tragedySet": "First Steps",
+      "mastermindHints": "",
+      "specialRules": [
+        "Final Guess is allowed"
+      ],
+      "specifics": "(a) Killing the Key Person (Killer / Serial Killer / Murder / Suicide)\n(b) 4 Intrigue in Killer\n\n",
+      "creator": "ChrisMaxheart",
+      "daysPerLoop": 4,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 2
+        },
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        },
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 163
+      }
+    },
+    {
+      "cast": {
+        "Doctor": "Person",
+        "Patient": "Conspiracy Theorist",
+        "Shrine Maiden": "Brain",
+        "Illusion": "Serial Killer",
+        "Office Worker": "Person",
+        "Mystery Boy": "Key Person",
+        "Class Rep": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Murder",
+          "culprit": "Patient"
+        },
+        {
+          "day": 3,
+          "incident": "Missing Person",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 4,
+          "incident": "Suicide",
+          "culprit": "Mystery Boy"
+        }
+      ],
+      "title": "Those from Beyond",
+      "mainPlot": [
+        "Light of the Avenger"
+      ],
+      "subPlots": [
+        "Shadow of the Ripper"
+      ],
+      "story": "From the dark they come, living shadows pressed into human form, their hunger for living souls insatiable. The brother, a former forerunner now living life peacefully as a human, and the sister, bloodthirsty and seeking vengeance for being blocked from our world by her sibling. With her summoning by an unwitting shrine maiden, tendrils flow outward from that holy place, touching many with a desire to release the essence of the living for her consumption and empowerment, in the only way they know how: death and desecration.",
+      "tragedySet": "First Steps",
+      "mastermindHints": "IMPORTANT: You need the expansion character Illusion to play this script. A tricky script with an overarching win condition, but with a few nasty surprises for the Protagonists to disrupt certain strategies. Your main focus will be intrigue on the Shrine: once that is achieved, damage control to prevent any more information falling into the hands of the Protagonists is key. It might be tempting to have the Mystery Boy (Key Person) killed by the Illusion (Serial Killer) for a quick loop end, however it will reveal the main plot and the role of a wildcard character, so it is best saved for the last loop. One potential early strategy is to move another character into the Shrine and then pump it with Intrigue via the Brain and your cards, to hide both the Brain and the Serial Killer while guaranteeing an early loop win. You should save Incidents for Loop 2, with Missing Person able to add 1 Intrigue to the Shrine, and both the Suicide and Murder able to kill the Key Person as a last resort. You should try to get the Doctor killed if you can, as his Goodwill ability will either force you to block it every turn, or render the Patient's Conspiracy Theorist ability useless.",
+      "specialRules": [
+        "N/A"
+      ],
+      "specifics": "(1): The Mystery Boy (Key Person) is dead. <Serial Killer> <Murder> (2) [Loop End]: 2 Intrigue on the Shrine. <Brain's Ability> <Intrigue+ cards> <Missing Person>\n\n",
+      "creator": "CipherCybr",
+      "daysPerLoop": 4,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 164
+      }
+    },
+    {
+      "cast": {
+        "Soldier": "Person",
+        "Black Cat": "Fool",
+        "Shrine Maiden": "Person",
+        "A.I.": "Poisoner",
+        "Boss": [
+          "Private Investigator",
+          {
+            "Turf": "School"
+          }
+        ],
+        "Journalist": "Key Person",
+        "Office Worker": "Person",
+        "Young Girl": "Serial Killer",
+        "Henchman": "Conspiracy Theorist",
+        "Transfer Student": [
+          "Friend",
+          {
+            "enters on day": 2
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Closed Circle",
+          "culprit": "Young Girl"
+        },
+        {
+          "day": 2,
+          "incident": "Closed Circle",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 3,
+          "incident": "Closed Circle",
+          "culprit": "Soldier"
+        },
+        {
+          "day": 4,
+          "incident": "Closed Circle",
+          "culprit": "A.I."
+        },
+        {
+          "day": 5,
+          "incident": "Closed Circle",
+          "culprit": "Black Cat"
+        }
+      ],
+      "title": "Break through the blockade？",
+      "mainPlot": [
+        "A Drop of Strychnine"
+      ],
+      "subPlots": [
+        "Smell of Gunpowder",
+        "I am a Master Detective"
+      ],
+      "story": "",
+      "tragedySet": "Mystery Circle",
+      "mastermindHints": "Always use the first day's events（Boss ability）and try to kill friend.\nSet【paranoia+1】to Boss and Young Girl,use CT‘s ability to Young Girl EVERY DAY,you will win（by 12 Paranoia）.\nHide KP until the end.Poisoner only kill Boss(undead) or AI itself\nSpecial rule is a trap for protagonists.\n*The protagonist's method of preventing victory*：Day 1 move Boss or 2 characters into school and move heachman out,D2-4 use 3【paranoia -1】,D4-5 use Young Girl's teleport ability and kill any one have paranoia.",
+      "specialRules": [
+        "Mastermind removes 【paranoia -1】 from hand",
+        "Henchman starts always in the School"
+      ],
+      "specifics": "1.Kill friend（SK and Poisoner EX2）\n2.12P on the remaining characters(Smell of gunpowder)\n3.Kill protagonists(Poisoner EX4)\n4.Kill KP（SK and Poisoner EX2）\n\n",
+      "creator": "xinshouzhier",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 4,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 165
+      }
+    },
+    {
+      "cast": {
+        "Shrine Maiden": "Vampire",
+        "Little Sister": "Conspiracy Theorist",
+        "Black Cat": "Serial Killer",
+        "Soldier": "Show-Off",
+        "Doctor": "Coward",
+        "A.I.": "Coward",
+        "Copycat": "Vampire",
+        "Class Rep": "Witch",
+        "Mystery Boy": "Nightmare",
+        "Godly Being": [
+          "Key Person",
+          {
+            "enters on loop": 65535
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Night of Madness",
+          "culprit": "School"
+        }
+      ],
+      "title": "Infinity loops",
+      "mainPlot": [
+        "The Noble Bloodline"
+      ],
+      "subPlots": [
+        "Panic and Obsession",
+        "People Who Don’t Listen"
+      ],
+      "story": "Whether you have played Prime Evil or not,you can play this script.\nThis is a puzzle game with very unique structure.",
+      "tragedySet": "Prime Evil",
+      "mastermindHints": "Shrine[Intrigue+1] City [Intrigue+2] Little Sister[Paranoia+1]",
+      "specialRules": [
+        "The play of the mastermind is determined by the script.\nAll characters are not person."
+      ],
+      "specifics": "The mastermind always wins.\nThe protagonist needs to deduce the identity of all the characters.\n\n",
+      "creator": "xinshouzhier",
+      "daysPerLoop": 1,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 65535
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 166
+      }
+    },
+    {
+      "cast": {
+        "Henchman": "Ninja",
+        "Illusion": "Prophet",
+        "Alien": "Person",
+        "Sacred Tree": "Magician",
+        "Rich Man’s Daughter": "Immortal",
+        "Copycat": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Suicide",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "Suicide",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Copycat"
+        }
+      ],
+      "title": "Deserted Street",
+      "mainPlot": [
+        "Male Confrontation"
+      ],
+      "subPlots": [
+        "Showtime of Death",
+        "Worshippers of the Apocalypse"
+      ],
+      "story": "This script is used for a 2-player game only. And discussion is prohibited during each loop.",
+      "tragedySet": "Midnight Zone",
+      "mastermindHints": "Mix the winning conditions with 2 Intrigue on the Shrine. Never let copycat suicide at 1 paranoia, using forbid paranoia and paranoia -1. Use movement to stop alien from killing RMD and Sacred Tree.",
+      "specialRules": [
+        "All cards in mastermind's hand have (1x∞)."
+      ],
+      "specifics": "The mastermind will always win. The only thing the mastermind can do is try to slow down the protagonists seeing all the truth. And the protagonist's playing skill is expressed by winning with the least loop number.\n\n",
+      "creator": "Lizabove",
+      "daysPerLoop": 3,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 666
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 167
+      }
+    },
+    {
+      "cast": {
+        "Patient": "Killer",
+        "Nurse": "Person",
+        "Doctor": "Friend",
+        "Godly Being": [
+          "Key Person",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "Shrine Maiden": "Person",
+        "Office Worker": "Friend",
+        "Pop Idol": "Brain",
+        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "Mystery Boy": "Factor"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Murder",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 3,
+          "incident": "Missing Person",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 4,
+          "incident": "Hospital Incident",
+          "culprit": "Patient"
+        },
+        {
+          "day": 5,
+          "incident": "Suicide",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 6,
+          "incident": "Suicide",
+          "culprit": "Godly Being"
+        }
+      ],
+      "title": "Madness over Madness",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "Circle of Friends",
+        "Threads of Fate"
+      ],
+      "story": "The protagonists are determined to stop the killer in the city, only to be met by more unknown deaths in every corners and alleys. Now all the odds are turned against them, while risking the lives of their friends.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "(a) Kill Friend using incidents\n(b) Kill Key Person using incidents \n(c) Kill Protagonist using Hospital Incident / Killer ability",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "\n\n",
+      "creator": "ChrisMaxheart",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        },
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 169
+      }
+    },
+    {
+      "cast": {
+        "Nurse": "Person",
+        "Patient": "Person",
+        "Alien": "Person",
+        "Shrine Maiden": "Loved One",
+        "Office Worker": "Person",
+        "Police Officer": "Lover",
+        "Rich Man’s Daughter": "Person",
+        "Boy Student": "Conspiracy Theorist",
+        "Class Rep": "Key Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 4,
+          "incident": "Faraway Murder",
+          "culprit": "Patient"
+        },
+        {
+          "day": 5,
+          "incident": "Butterfly Effect",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 6,
+          "incident": "Suicide",
+          "culprit": "Class Rep"
+        }
+      ],
+      "title": "Chain of Hatred",
+      "mainPlot": [
+        "Sign with me!"
+      ],
+      "subPlots": [
+        "A Love Affair",
+        "Paranoia Virus"
+      ],
+      "story": "A single incident caused a test tube break, infecting nearby bystanders, killing a special someone, causing the shrine maiden to run amok, and it becomes neverending chain of hatred.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "(a) 3 Paranoia and 1 Intrigue in Loved One\n(b) 2 Intrigue in Key Person\n(c) Key Person Suicide / Faraway Murder",
+      "specialRules": [
+        "N/A"
+      ],
+      "specifics": "\n\n",
+      "creator": "ChrisMaxheart",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        },
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 170
+      }
+    },
+    {
+      "cast": {
+        "Patient": "Person",
+        "Alien": "Time Traveler",
+        "Shrine Maiden": "Cultist",
+        "Black Cat": "Person",
+        "Office Worker": "Person",
+        "Police Officer": "Person",
+        "Journalist": "Person",
+        "Henchman": "Conspiracy Theorist",
+        "Young Girl": "Friend",
+        "Transfer Student": [
+          "Friend",
+          {
+            "enters on day": 2
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Faraway Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 4,
+          "incident": "Butterfly Effect",
+          "culprit": "Young Girl"
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Transfer Student"
+        }
+      ],
+      "title": "death before alive",
+      "mainPlot": [
+        "Change of Future"
+      ],
+      "subPlots": [
+        "Circle of Friends",
+        "An Unsettling Rumor"
+      ],
+      "story": "",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "The Transfer student had no enter day defined, so I set it randomly to two\n\nmake sure that incident \"Butterfly Effect\" happen and before end loop, there are 2 Intrigue on the Shrine.\nIf you can, keep Transfer Student alive all the loop.\nIf you can, do not let incident \"Hospital Incident\" really happen.\nUse incident \"Faraway Murder\" if they understand how to prevent incident \"Butterfly Effect\"",
+      "specialRules": [
+        "Mastermind removes \"Forbid Goodwill\" from his hand. It cannot be used in any loop"
+      ],
+      "specifics": "If you find the true way, you will actually win whatever mastermind do.\n\n",
+      "creator": "Aster Mentha",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 173
+      }
+    },
+    {
+      "cast": {
+        "Alien": "Person",
+        "Patient": "Person",
+        "Nurse": "Friend",
+        "Pop Idol": "Person",
+        "Journalist": "Conspiracy Theorist",
+        "Police Officer": "Cultist",
+        "Boy Student": "Brain",
+        "Girl Student": "Person",
+        "Class Rep": "Friend"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 4,
+          "incident": "Murder",
+          "culprit": "Patient"
+        },
+        {
+          "day": 5,
+          "incident": "Butterfly Effect",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 6,
+          "incident": "Faraway Murder",
+          "culprit": "Police Officer"
+        }
+      ],
+      "title": "Responsible Women",
+      "mainPlot": [
+        "The Sealed Item"
+      ],
+      "subPlots": [
+        "Circle of Friends",
+        "Paranoia Virus"
+      ],
+      "story": "A short, simple script with a satisfying mystery.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "Protagonists can figure out the Friends and Paranoia Virus more easily than the Brain, so you should aim to end the first two loops by the death of a Friend. On the third loop, you'll have to win via Intrigue on the Shrine. You can keep the Brain and Conspiracy Theorist hidden, but the protagonists will be able to suss it out by using Paranoia Virus to create Serial Killers, so you'll have to try to avoid using either of them, or at least keep them together.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "2 Intrigue on Shrine\nFriend dies (via Paranoia Virus, Murder, or Faraway Murder)\n\n",
+      "creator": "Kitsunin",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 174
+      }
+    },
+    {
+      "cast": {
+        "Young Girl": "Friend",
+        "Office Worker": "Cultist",
+        "Doctor": "Serial Killer",
+        "Shrine Maiden": "Brain",
+        "Godly Being": [
+          "Person",
+          {
+            "enters on loop": 3
+          }
+        ],
+        "Informer": "Person",
+        "Boy Student": "Conspiracy Theorist",
+        "Class Rep": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Butterfly Effect",
+          "culprit": "Young Girl"
+        },
+        {
+          "day": 2,
+          "incident": "Butterfly Effect",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 4,
+          "incident": "Foul Evil",
+          "culprit": "Godly Being"
+        }
+      ],
+      "title": "The Ubiquitous, Yet Unseen Treasure",
+      "mainPlot": [
+        "The Sealed Item"
+      ],
+      "subPlots": [
+        "Paranoia Virus",
+        "The Hidden Freak"
+      ],
+      "story": "A Reporter has just arrived in the City to try and uncover the truth locked away in the Shrine for centuries. As she makes her way to the Shrine, she meets up with the young Shrine Maiden who appears to know more than she lets on. However, as she starts trying to snoop around; she can't but help the feeling that she's being followed. Meanwhile in the School, a Young Girl has lost her plushie and two of her seniors have stayed till the break of dusk to try and help her. The Class Representative is however becoming uneasy, feeling a set of human eyes peer through the windows, every now and again; she starts becoming paranoid. Curses, curses and curses. The Shrine's curse! The girl cackles, an infatuated grin forms on her face as paranoia takes ahold of her body. Bloodshed was all she could see. Eyes peer from the horizon, the empty sky; a God looks down upon the Shrine and smiles, for the true source of power shall remain hidden. But to Its sudden dismay, it appears that everything has gotten reverted..",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "If you want to effectively win on this Script, on the first day; you'll need to focus on two things.\n\n1. Making certain that the Young Girl is dead.\n2. Making certain that you begin making Cover Stories for 'The Sealed Item' from Loop 1.\n\nIf you cannot do this, then you're forced to play Intrigue on the Shrine, making the Final Guess solvable near instantly. Try not to fall into a trap.\n\nIf the Protagonists ignore the Young Girl, then you have two choices: \n\nMove the Boy Student & Class Rep out, and move the Doctor to the School; revealing your Serial Killer.\nOR\nTrigger Butterfly Effect, and transform the Class Rep into a Serial Killer by pushing hard for Paranoia.\n\nIf the Young Girl is not ignored, you are effectively forced to play Forbid Goodwill on her lest you want an early game over.\n-\nFrom there on out, your goal is to make sure to kill the Friend every single loop, which will become detrimentally harder during Loop 2, onwards. However, you still have the cover up stories of 'Change of Future' and 'Giant Time Bomb' at this stage; so if you cannot kill the Young Girl, push for Intrigue by moving Cultist to the Shrine.\n\nYou should have won here, but now; the Protagonists should know that it cannot be Giant Time Bomb. \n\nNow, Protagonists will start focusing on trying to find the Time Traveler; so expect heavy goodwill pushes during Loop 3, also using the Serial Killer (If found). Thankfully, you have a new card to play with; The 'Godly Being' who triggers Foul Evil. \n\nA word of warning, if you do trigger this incident successfully, the Protagonists will almost certainly deduce that it's The Sealed Item, and by this point will have known for certainty that 'A Hidden Freak' is in play, and depending on skill and playstyles; Paranoia Virus too.\n\nThe 4th Loop is all about trying to win without revealing who the brain is. Manage that, and you should have won. If not, it'll be hard. But you are the only one who can do it. I believe in you. Do not let them crush our wonderfully-crafted timeline, kyihihihi~..",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "• At least 2 intrigue on the Shrine by Loop End.                                                                                                                                                                  \n• Friend (Young Girl) is dead by Loop End.\n\n",
+      "creator": "Chronicle [RealBernkastel]",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 176
+      }
+    },
+    {
+      "cast": {
+        "Office Worker": "Conspiracy Theorist",
+        "Boy Student": "Brain",
+        "Rich Man’s Daughter": "Killer",
+        "Teacher": "Friend",
+        "Nurse": "Friend",
+        "Police Officer": "Key Person",
+        "Patient": "Person",
+        "Class Rep": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Foul Evil",
+          "culprit": "Teacher"
+        },
+        {
+          "day": 2,
+          "incident": "Suicide",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 3,
+          "incident": "Murder",
+          "culprit": "Patient"
+        },
+        {
+          "day": 4,
+          "incident": "Faraway Murder",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 5,
+          "incident": "Murder",
+          "culprit": "Class Rep"
+        }
+      ],
+      "title": "The Outsider's Wish",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "Threads of Fate",
+        "Circle of Friends"
+      ],
+      "story": "A Police Officer and his co-worker arrive at the City after receiving a call from the School Teacher that there's been an incident which; while now, subsided, still requires looking into. The victim of the incident was brutally injured after falling from a flight of stairs; of which they claim was not accidental. While the Patient is now being looked after in the Hospital, the Police Officer's co-worker is not sure of this. A worrisome lad, he's always been. After all, they're just students; what's the worse that could brew? A Tragedy? Pfft~",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "This script is very flexible and can be played in a multitude of ways; all of which involve killing a SINGLE Friend and keeping the Key Person alive until necessary. Due to this, a general hint would be to try and hide the actual Serial Killer which might not be easy depending on the protagonists; and using the Class Rep as a decoy Serial Killer.\n\nOn Day 3, Triggering the Murder Incident is paramount if you were not able to kill the Teacher prior to this day.\n\nThe Faraway Murder can be used in a plethora of ways; and it is up to you to figure out the best way at that current situation.\n\nTry to avoid the Suicide Incident. You do NOT want to trigger it. Protagonists might be able to use this to their advantage.",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "• Key Person (Police Officer) dies. \n• At least ONE Friend (Nurse/Teacher) is dead by Loop End.\n\n",
+      "creator": "Chronicle [RealBernkastel]",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 177
+      }
+    },
+    {
+      "cast": {
+        "Pop Idol": "Key Person",
+        "Patient": "Lover",
+        "Class Rep": "Conspiracy Theorist",
+        "Shrine Maiden": "Person",
+        "Nurse": "Person",
+        "Girl Student": "Person",
+        "Rich Man’s Daughter": "Loved One",
+        "Office Worker": "Killer",
+        "Journalist": "Brain"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 4,
+          "incident": "Suicide",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Shrine Maiden"
+        }
+      ],
+      "title": "School Days",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "A Love Affair",
+        "Paranoia Virus"
+      ],
+      "story": "",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "It's untested",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "\n\n",
+      "creator": "Test",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 178
+      }
+    },
+    {
+      "cast": {
+        "Class Rep": "Person",
+        "Shrine Maiden": "Conspiracy Theorist",
+        "Rich Man’s Daughter": "Person",
+        "Doctor": "Person",
+        "Police Officer": "Cultist",
+        "Journalist": "Brain"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Suicide",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 4,
+          "incident": "Foul Evil",
+          "culprit": "Doctor"
+        },
+        {
+          "day": 5,
+          "incident": "Butterfly Effect",
+          "culprit": "Shrine Maiden"
+        }
+      ],
+      "title": "To Survive, We Must Fight!",
+      "mainPlot": [
+        "The Sealed Item"
+      ],
+      "subPlots": [
+        "Threads of Fate",
+        "Paranoia Virus"
+      ],
+      "story": "This is a fun script that can be won by the Protagonists if embrace Paranoia, exploiting Threads of Fate and Paranoia virus to turn characters with Person roles into Serial killers. If the Protagonists can successful kill the Mastermind’s Brain, Cultist and/or the culprit of Foul Evil, the Mastermind will not have enough resources to defeat the Protagonists via The Sealed Item.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "Loop 1: Don’t put out any paranoid in round 1. Move as many characters as you can into the Shrine and get two intrigue on the Shrine via the Cultist on the last day (try to never activate the Brain or Cultist unless the Conspiracy Theorist is present to throw off the Final Guess). During the first loop, Protagonists may be thinking that there is a Time Traveler in the game because of the Butterfly Effect incident (which is just a cover up, the Butterfly Effect is unlikely to do anything significant and there is not a Time Traveler) and they may be will be focused on putting at least two goodwill on every character to avoid losing from Time Traveler. Most likely the players will know the main plot is The Sealed Item after the first loop but if you can prevent them from getting two goodwill on every character then it at least leaves the Time Traveler possibility open as the cause of their loss.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "Having two intrigue on the Shrine at the end of the Loop is the only way for the Protagonists to lose. However the Mastermind has many ways of putting intrigue on the Shrine:\n\nOriginally uploaded by speter79 of boardgamegeek.com\n    Alan Tran\n\nStarting Scenario\nYour merry band of time travels fly through the crystalline-blue time streams. You see something disturbing in the strands of time. A Suicide… some Foul Evil brewing… and an innocuous action that causes Butterfly Effect all appear to lead up to a horrific tragedy. You detect the manipulation of the Mastermind at work and decide to investigate.\n    Alan Tran\n\nIf Loop One Fails: \nAll of a sudden you are thrown back into the time stream. You have failed but it happened so suddenly that you don’t know how it happened or what caused it. You hear the arrogant laughter of the Mastermind echoing through the time stream. You loop back to investigate.\n\n    Alan Tran\n\nIf Loop Two Fails: \nTentacle monster burse forth from the Shrine. They pour over the City, squeezing all the characters into jelly. The screams of the populace are forever etched into your psyche. The time stream becomes dark and think as the Mastermind attempts to lock in this reality. You manage to loop back for a final attempt at saving the City.\n    Alan Tran\n\nIf Loop Three Fails: \nA bright light, brighter than the sun, appears at the Shrine and Tentacle monster burse forth. To your horror, you see that there are people chanting around the Tentacle portal. Some there are people in this Tentacle Cult that are summoning the monsters. Due to the bright light you can’t make out the features of their faces but it must be characters that you have come into contact with in this Tentacle cult. A huge tentacle monster slithers toward you. The time stream becomes dark and think as the Mastermind attempts to lock in this reality. As the tentacle reaches for your leg you manage to loop back for a final attempt at saving the City.\n    Alan Tran\n\nIf the Protagonists Fail Loop Four: \nThe city is in ruins. Tentacle monsters everywhere! The mangled bodies of the populace cause your stomach to retch. The time stream is opaque and feels like a tub of molasses. You can’t escape this reality. Tentacle monsters are all around you, suckers extending for you face. Your only chance is to shatter the foundation of the time stream that the Mastermind has created. If you can perfectly deduce his plots, then you might be able to shatter this reality and get the threads of time flowing again. Make your final guess!\n    Alan Tran\n\nIf the Protagonists Prevent the Tragedy: \nThe evil cabal that sought to unleash an army of demonic tentacle monsters on the city has been stopped. The Mastermind used the Journalist as the Brain behind his evil scheme. The Police Officer harbored a dark hatred of the students at the school and joined the tentacle monster cabal as a Cultist to unleash horrors upon them. The shame of this dark desire put thoughts of Suicide into the Police Officer’s head. \n\nThe Doctor was an unwitting pawn of the cabal as they used him to spread Foul Evil through his legitimate medical practice by tainting his instruments of healing with demonic curses.\n\nThe three girls that foiled the plot, with inspiration from the Protagonists, were two students and the local Shrine Maiden. The Shrine Maiden led the group. She had a reputation for being a nutty Conspiracy Theorist before this incident. You wonder what led enabled this child to take down the tentacle cult. Was it the simple of a child that led to Butterfly Effect the Mastermind couldn’t predict or just her unbridled raw paranoia that ultimately took down the tentacle cult? It impossible to know for sure.\n\nAs your reenter the time stream you sense the presence of the Mastermind retreating upon your arrival. Gone is arrogance you have always sensed from the Mastermind entity. For an instant you detect the hint of a different emotion as he vanishes from you perceptions… fear.\n    Alan Tran\n\nIf the Leader Succeeds on the Final Guess: \nThe evil cabal that has succeeded in unleashing an army of demonic tentacle monsters on the city. However, you have unraveled the Mastermind’s plots. The Mastermind used the Journalist as the Brain behind his evil scheme. The Police Officer harbored a dark hatred of the students at the school and joined the tentacle monster cabal as a Cultist to unleash the horror upon them. The shame of this dark desire put thoughts of Suicide into the Police Officer’s head. \n\nThe Doctor was an unwitting pawn of the cabal as they used him to spread Foul Evil through his legitimate medical practice by tainting his instruments of healing with demonic curses.\n\nThe three girls that tried and failed to foil the plot were two students and the local Shrine Maiden. The Shrine Maiden led the group. She was viewed as bright Conspiracy Theorist before this incident, but her paranoia and the randomness of a Butterfly Effect ultimately were not enough to stop the tentacle cult. However, the where they failed, you have succeeded.\n\nWith a boom heard through the City, the static black threads of the Mastermind’s time stream break into chunks and are washed away. The horrible reality is annihilated and the healthy crystalline-blue time stream resumes flowing. You are free and back in the time stream. The Mastermind’s presence is nowhere to be seen. He has escaped. You wonder how many times you will be able to survive these close calls with death.\n    Alan Tran\n\nIf the Leader Fails on the Final Guess: \nThe Mastermind’s plots prove too difficult to untangle. The tentacle monsters envelope you. To your horror, you realize that they are not trying to squeeze you into jelly, only take you prisoner. You are taken to the school where to face the surviving members of the cult. The cult had many members from the City and was run by the Journalist (the Brain). The Police Officer harbored a dark hatred of the students at the school and joined the tentacle monster cabal as a Cultist to unleash horrors upon them. The shame of this dark desire put thoughts of Suicide into the Police Officer’s head. \n\nOver the days of torture you piece together that the Doctor was an unwitting pawn of the cabal as they used him to spread Foul Evil through his legitimate medical practice by tainting his instruments of healing with demonic curses.\n\nThe three girls that tried and failed to foil the plot were two students and the local Shrine Maiden. The Shield Maiden led the group. She was viewed as a bright Conspiracy Theorist before this incident, but her paranoia and the randomness of a Butterfly Effect ultimately were not enough to stop the tentacle cult. \n\nOne by one you see the innocent charters tortured and killed by tentacle monsters for the entertainment of the cabal. The time streams are so dark you can barely perceive their existence. Did they ever exist at all or have you always existed in this world of pain and tentacles. There is no escape. The only question left is whether your mind or body will be first to break beyond repair. You know now that will be up to the Mastermind. He will is makes your reality.\n    Alan Tran",
+      "creator": "speter79",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 6,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 2
+      }
+    },
+    {
+      "cast": {
+        "Boy Student": "Friend",
+        "Girl Student": "Friend",
+        "Rich Man’s Daughter": "Person",
+        "Shrine Maiden": "Person",
+        "Police Officer": "Person",
+        "Office Worker": "Person",
+        "Informer": "Witch",
+        "Doctor": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 4,
+          "incident": "Suicide",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 6,
+          "incident": "Suicide",
+          "culprit": "Girl Student"
+        }
+      ],
+      "title": "Kangerou Daze",
+      "mainPlot": [
+        "Giant Time Bomb"
+      ],
+      "subPlots": [
+        "Circle of Friends",
+        "Threads of Fate"
+      ],
+      "story": "Originally written by RooP, translated by Sairanac of boardgamegeek.com. \"Kagerou Daze\" is a script that uses the same motif, from the vocaloid series made by Jin (aka Shinzen no Teki-P). The protagonists will probably have a tough time figuring out the main plot while watching the boy and girl student trying to help each other out. \nWhile the main plot is invisible, it is clear that there are things that need to be prevented. Thus, the key to this script lies with the goodwill abilities.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "For loop 1, aim for the suicide of the boy student. Loop 2, use the unsettling rumor incident to trigger the suicide of the boy student. Loop 3, aim for the suicide of the girl student. For the first loop, try to add more paranoia to someone other that the girl student to bluff, to create a dilema for them to see who should be saved. However, the goal is still to aim for the suicide incident for the boy student.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "1. Giant Time Bomb triggers (2 intrigue in the city)\n\nOriginally written by RooP, translated by Sairanac of boardgamegeek.com. \n    Alan Tran\n\nI dont understand. The Unsettling Rumor CANT INCIDENTS! The Unsettling Rumor is SubPlot!\n    csibu\n\n\nI have set it to increase unease, since that provides enough paranoia to trigger the suicted.",
+      "creator": "RooP",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 4,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 3
+      }
+    },
+    {
+      "cast": {
+        "Girl Student": "Factor",
+        "Class Rep": "Conspiracy Theorist",
+        "Rich Man’s Daughter": "Person",
+        "Shrine Maiden": "Person",
+        "Doctor": "Person",
+        "Patient": "Time Traveler",
+        "Pop Idol": "Person",
+        "Informer": "Person",
+        "Office Worker": "Cultist"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 3,
+          "incident": "Foul Evil",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 4,
+          "incident": "Missing Person",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 5,
+          "incident": "Butterfly Effect",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 7,
+          "incident": "Hospital Incident",
+          "culprit": "Doctor"
+        }
+      ],
+      "title": "Twelve Monkeys",
+      "mainPlot": [
+        "Change of Future"
+      ],
+      "subPlots": [
+        "An Unsettling Rumor",
+        "Unknown Factor X"
+      ],
+      "story": "A time traveller has travelled back in time to avoid a disastrous pandemic which originated in the city. He is immediately believed crazy and hospitalized. Unknown to him, however, the real trigger of the pandemic was not the Hospital Incident, but the event on a previous day when the Pop Idol was infected, becoming patient zero and transmitting the disease in the following weeks during her world tour. At the same time, other people mill around inciting strange events and muddling the investigation on what really happened.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "This script should be very tricky for the Mastermind, as it relies completely on subterfuge. The key is to make the Protagonist waste cards on preventing the Hospital Incident, while in reality you don't want to trigger it at all (since it will reveal the Patient as the Time Traveller when he will not die). Spread Paranoia liberally in order to trigger Incidents and use every opportunity to lay down Intrigue and hit every loss condition possible at the end of the loop (basically try having 2 Intrigue on all locations and all girls). Thanks to the Informer, the subplots will be known at some time, so the idea is to keep the Main Plot hidden as much as possible. Also, the Office Worker having Mandatory Goodwill Refusal will whittle down the possible Plots, so try to keep them thinking that he could be the Factor instead.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "1. Trigger \"Butterfly Effect\" (Change of Future victory condition)\n\nI like the idea of misleading the protagonists! Cool script!\n    Massola",
+      "creator": "vetinari7878",
+      "daysPerLoop": 7,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 4
+      }
+    },
+    {
+      "cast": {
+        "Rich Man’s Daughter": "Augur",
+        "Crusader": "Person",
+        "Boy Student": "Lover",
+        "Shrine Maiden": "Person",
+        "Informer": "Lover",
+        "Journalist": "Potentate",
+        "Doctor": "Person",
+        "Patient": "Serial Killer",
+        "Nurse": "Lover"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Proselytizing",
+          "culprit": "Informer"
+        },
+        {
+          "day": 2,
+          "incident": "Ritual Sacrifice",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 4,
+          "incident": "Grave Robbing",
+          "culprit": "Nurse"
+        }
+      ],
+      "title": "Supernatural Tragedy Story Script 1",
+      "mainPlot": [
+        "Demonic Portal"
+      ],
+      "subPlots": [
+        "Fatal Attraction",
+        "Manifestation"
+      ],
+      "story": "This is an easy script that will help get players used to the Supernatural Tragedy ruleset.  This is the first script in a seven script story arc made for this ruleset.  I have only been able to do limited testing of this scenario and ruleset so any feedback is welcome! sean.petersen@gmail.com",
+      "tragedySet": "Supernatural",
+      "mastermindHints": "Script: Undying Love\nTry to throw them off in the first loop by putting two Intrigue on a character and making the players think that they lost to Metamorphosis when the actually lost to the Lovers.  If a Lover is killed, you can use the Potentate to move the Intrigue from the character to the Shine to save the win.  You should centralize characters to mask the identity of the Potentate.",
+      "specialRules": [
+        "A character may be a culprit for more than one incident."
+      ],
+      "specifics": "Put 2 Intrigue on the Shrine via the Potentate (Informer), Proselytizing and/or Grave Robbing\n\n",
+      "creator": "Sean Petersen",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 4,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 41
+      }
+    },
+    {
+      "cast": {
+        "Informer": "Person",
+        "Police Officer": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Doctor": "Supplicant",
+        "Shrine Maiden": "Mad Genius",
+        "Office Worker": "Contract Killer",
+        "Boy Student": "Key Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Abductions",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 3,
+          "incident": "Proselytizing",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 4,
+          "incident": "Public Meltdown",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 5,
+          "incident": "Suicide",
+          "culprit": "Doctor"
+        }
+      ],
+      "title": "Supernatural Ruleset Story Script 02",
+      "mainPlot": [
+        "Abomination"
+      ],
+      "subPlots": [
+        "Remote Bombing",
+        "Murder for Hire"
+      ],
+      "story": "This is the second script in a seven script story arc made for this ruleset. I have only been able to do limited testing of this scenario and ruleset so any feedback is welcome! sean.petersen@gmail.com",
+      "tragedySet": "Supernatural",
+      "mastermindHints": "Gather as many characters as you can into one location and kill someone with the Contract Killer (Office Worker) to give the Mad Genius Body Parts.  Having lots of characters present will protect the identity of the Mad Genius and the Contract Killer.",
+      "specialRules": [
+        "A character may be a culprit for more than one incident."
+      ],
+      "specifics": "Kill the Police Officer via Suicide and have the Mad Genius collect his Body Parts, triggering Abomination.\n\n",
+      "creator": "Sean Petersen",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 5,
+          "numberOfLoops": 5
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 42
+      }
+    },
+    {
+      "cast": {
+        "Shrine Maiden": "Key Person",
+        "Girl Student": "Serial Killer",
+        "Boy Student": "Person",
+        "Class Rep": "Person",
+        "Police Officer": "Conspiracy Theorist",
+        "Pop Idol": "Cultist",
+        "Informer": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Missing Person",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 3,
+          "incident": "Increasing Unease",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 4,
+          "incident": "Murder",
+          "culprit": "Informer"
+        }
+      ],
+      "title": "Schoolyard Bedlam",
+      "mainPlot": [
+        "A Place to Protect"
+      ],
+      "subPlots": [
+        "Shadow of the Ripper"
+      ],
+      "story": "An anonymous tip has summoned the Police to the school, where it seems nothing is amiss. Yet because of his intimidating and inexplicable presence investigating the school, tensions are rising and a full-on panic is in danger of breaking out. All this has been arranged by the pop idol and her associate, members of a cult that need only the Shrine Maiden to be eliminated before they can unleash their true supernatural horror. And while the anonymous tip was arranged on purpose, it wasn't entirely false: a vengeful girl has decided to take matters into her own hands and begin a killing spree. With so many forces lose in the school, it'll take a miracle for things not to fall apart completely...",
+      "tragedySet": "First Steps",
+      "mastermindHints": "The incidents are designed to give you plenty of options. If you plan to win via a Power Play strategy, you can move the Girl Student to the Shrine on day one and immediately kill the Shrine Maiden, revealing two roles but immediately ending the loop (this could be a good way to cover up the culprits of the later incidents). If you plan to coverup, you can use the Police Officer's presence to increase paranoia and you can prevent the players from using the Pop Idol's ability because she's the cultist. This should help ensure that the incidents happen the way you want them to: get intrigue on the School and win at the end of the loop. Once the School has two intrigue, don't let the Informant murder the Shrine Maiden if you can avoid it, unless you can get some intrigue on another location to obfuscate that victory condition (since if they see two intrigue on the school and none anywhere else, even if you win via murder they'll correctly assume you're on A Place To Protect)",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "Shrine Maiden killed (Girl Student serial killer, Informant day 4 incident)\n\n",
+      "creator": "Dav Flamerock",
+      "daysPerLoop": 4,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 43
+      }
+    },
+    {
+      "cast": {
+        "Rich Man’s Daughter": "Brain",
+        "Boy Student": "Person",
+        "Police Officer": "Person",
+        "Office Worker": "Conspiracy Theorist",
+        "Nurse": "Person",
+        "Shrine Maiden": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 2,
+          "incident": "Spreading",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 3,
+          "incident": "Hospital Incident",
+          "culprit": "Shrine Maiden"
+        }
+      ],
+      "title": "A Battle of Wits",
+      "mainPlot": [
+        "Light of the Avenger"
+      ],
+      "subPlots": [
+        "An Unsettling Rumor"
+      ],
+      "story": "This script is designed to introduce the protagonists to the \"Final Guess\" concept. It should be very difficult for them to simultaneously counter 2 Intrigue onto the Hospital and the School when you have access to the Brain and the Unsettling Rumor abilities (though be careful with revealing the Brain!), but they can use the \"Final Guess\" to win if they can identify who the Brain is.",
+      "tragedySet": "First Steps",
+      "mastermindHints": "This is a tricky one for the mastermind, because getting two Intrigue on the School or Hospital isn't enough. If the protagonists can guess the plot and subplot correctly, they'll know that the Brain is either the Rich Man’s Daughter or the Boy Student, and if they can guess correctly at the end they'll win. Therefore, this is a game of subterfuge. Use the Conspiracy Theorist aggressively to land paranoia on everybody (it doesn't matter much because every subplot has a Conspirator) so that the Incidents go off repeatedly.  Increasing Unease can set up the Hospital Incident while Spreading can prevent the Boy Student from removing paranoia from the Shrine Maiden. Keep the Daughter panicked as much as possible to conceal the culprits of the various incidents.",
+      "specialRules": [
+        "This scenario includes the \"Final Guess\" rule from the core game. If the protagonists don't successfully survive any of the three loops, they can guess the identity of all the roles to still win the game."
+      ],
+      "specifics": "2 Intrigue on the School (via the Rich Man’s Daughter ability, via Unsettling Rumor)\n\n",
+      "creator": "Dav Flamerock",
+      "daysPerLoop": 3,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 44
+      }
+    },
+    {
+      "cast": {
+        "Shrine Maiden": "Person",
+        "Nurse": "Friend",
+        "Rich Man’s Daughter": "Person",
+        "Patient": "Conspiracy Theorist",
+        "Alien": "Friend",
+        "Pop Idol": "Person",
+        "Informer": "Key Person",
+        "Godly Being": [
+          "Person",
+          {
+            "enters on loop": 3
+          }
+        ],
+        "Mystery Boy": "Person"
+      },
+      "incidents": [
+        {
+          "day": 11,
+          "incident": "Increasing Unease",
+          "culprit": "A.I."
+        },
+        {
+          "day": 12,
+          "incident": "Increasing Unease",
+          "culprit": "A.I."
+        },
+        {
+          "day": 13,
+          "incident": "Increasing Unease",
+          "culprit": "A.I."
+        },
+        {
+          "day": 14,
+          "incident": "Faraway Murder",
+          "culprit": "A.I."
+        },
+        {
+          "day": 21,
+          "incident": "Increasing Unease",
+          "culprit": "A.I."
+        },
+        {
+          "day": 22,
+          "incident": "Increasing Unease",
+          "culprit": "A.I."
+        },
+        {
+          "day": 23,
+          "incident": "Missing Person",
+          "culprit": "Patient"
+        },
+        {
+          "day": 24,
+          "incident": "Hospital Incident",
+          "culprit": "Patient"
+        },
+        {
+          "day": 25,
+          "incident": "Increasing Unease",
+          "culprit": "Patient"
+        },
+        {
+          "day": 26,
+          "incident": "Suicide",
+          "culprit": "Informer"
+        }
+      ],
+      "title": "Vetinari Gambit",
+      "mainPlot": [
+        "Sign with me!"
+      ],
+      "subPlots": [
+        "Circle of Friends",
+        "Paranoia Virus"
+      ],
+      "story": ": This is an unusual case. You’re not quite sure what happened. You think someone might have died, but you’re not quite sure how it went down.  Nerveless, you must be careful of who you trust, and tread carefully",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "Since there are only eight days for incidents, I cant set it up as I would like. So for the first loop, increase unease until day four where a far away murder will happen.  Follow the same set for loop two until day 3, where the hospital patient will go missing, and day four, where a hospital incident will happen. Day five will be more unease, and if it hasn't ended, day  six will have the key person commit suicide.",
+      "specialRules": [
+        "Alternating loops: the days in a loop  alternate between four and six days, with odd loop numbers having four days and even loop numbers on six. Incidents in odd loops are on days prefixed with 1. For even with 2. e.g. Day 24 is the fouth day in the even loops"
+      ],
+      "specifics": ". Kill the Key person (Serial Killer, Hospital incident, Option 3)\n\n",
+      "creator": "beatstopper",
+      "daysPerLoop": 4,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        },
+        {
+          "difficulty": 0,
+          "numberOfLoops": 5
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 46
+      }
+    },
+    {
+      "cast": {
+        "Pop Idol": "Witch",
+        "Patient": "Lover",
+        "Boy Student": "Loved One",
+        "Godly Being": [
+          "Friend",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "Shrine Maiden": "Serial Killer",
+        "Nurse": "Person",
+        "Journalist": "Person",
+        "Office Worker": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Class Rep": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Missing Person",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 4,
+          "incident": "Increasing Unease",
+          "culprit": "Journalist"
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 6,
+          "incident": "Suicide",
+          "culprit": "Patient"
+        }
+      ],
+      "title": "hal_7297108",
+      "mainPlot": [
+        "Giant Time Bomb"
+      ],
+      "subPlots": [
+        "A Love Affair",
+        "The Hidden Freak"
+      ],
+      "story": "We just played through a custom script this afternoon written by our regular mastermind Max (our first custom script ever!), and it worked really well. The protagonists were one completely new player, one player who had only played an intro scenario, and me who has played about 12 times.\n\nThe protagonists won but it was close up until the final day of the final loop, so it might be a good script for those who are looking to play with a mixed group of new players and players who have already played the early scripts from the game.\n\nWe can't think of a decent name for the script though  Does anyone have any good ideas?",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "The witch might get discovered quite early - the Pop Idol's goodwill ability is a tempting one, so her goodwill refusal will probably be outed in the first loop. Given this, Max (our mastermind) decided to try and win through intrigue on the City in day one, and spread about some intrigue and paranoia elsewhere so it wasn't too obvious.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "\n\noriginally by hal_7297108 of boardgamegeek.com\n    Alan Tran",
+      "creator": "hal_7297108's friend Max",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 5
+      }
+    },
+    {
+      "cast": {
+        "Doctor": "Key Person",
+        "Nurse": "Cultist",
+        "Patient": "Person",
+        "Shrine Maiden": "Serial Killer",
+        "Office Worker": "Person",
+        "Police Officer": "Conspiracy Theorist",
+        "Boy Student": "Friend",
+        "Class Rep": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Murder",
+          "culprit": "Patient"
+        },
+        {
+          "day": 3,
+          "incident": "Increasing Unease",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 4,
+          "incident": "Faraway Murder",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Nurse"
+        }
+      ],
+      "title": "The Red Fog",
+      "mainPlot": [
+        "A Place to Protect"
+      ],
+      "subPlots": [
+        "Shadow of the Ripper"
+      ],
+      "story": "For this script, if played right, gives a handicap for the protagonists as the mastermind will have more options to win. When to reveal a characters role is the key. This was created by my 11 year old nephew who has a knack for mystery plots. Please do enjoy.",
+      "tragedySet": "First Steps",
+      "mastermindHints": "Keep the Nurse's role hidden as long as it takes as she is a key component in this script. Keep in mind that the Serial Killer can be used both by you and the Protagonists' advantage.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "* 2 intrigue in School\n* Kill the Key Person\n* Kill Protagonists during Hospital Incident\n* Kill the Friend\n\n",
+      "creator": "ZenKristoffer",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 7,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 63
+      }
+    },
+    {
+      "cast": {
+        "Patient": "Key Person",
+        "Doctor": "Killer",
+        "Police Officer": "Person",
+        "Nurse": "Friend",
+        "Office Worker": "Conspiracy Theorist",
+        "Rich Man’s Daughter": "Brain"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Missing Person",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "Hospital Incident",
+          "culprit": "Doctor"
+        },
+        {
+          "day": 4,
+          "incident": "Murder",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 5,
+          "incident": "Suicide",
+          "culprit": "Patient"
+        }
+      ],
+      "title": "Goodbye, My Brother",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "A Hideous Script"
+      ],
+      "story": "A young lady is losing her inheritance to her sick brother. Using her connections, she plots to kill him and take the endowment herself.",
+      "tragedySet": "First Steps",
+      "mastermindHints": "A Power Plan plot that utilizes creative ways to achieve the goal. Once the players figure out the Key Person, take advantage of the Doctor's Killer ability to optionally refuse goodwill to prevent the Patient from leaving the Hospital. In the meantime, move in the Office Worker to increase the Patient's paranoia for the Day 5 Incident. Due to the variety of the methods the Mastermind has, four or five loops is recommended to allow players to see the importance of the characters' goodwill and the Paranoia -1 card.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "Patient dies by: Killer ability / Hospital Incident / Murder Incident / Suicide Incident\n\nDoctor :Killer, mastermind can be used goodwill refusal, key person how to run =)))) ....... ==> Patient : Friend, Nurse : Key Person\n    Tô Quốc Thái\n\nMastermind tip: use the brain ability as soon as the protagonists know that murder plan is the plot. This applies after day 2 when the Rich Man’s Daughter missing person's into the hospital.\n    Justin Karp",
+      "creator": "Res_kun",
+      "daysPerLoop": 4,
+      "difficultySets": [
+        {
+          "difficulty": 9,
+          "numberOfLoops": 4
+        },
+        {
+          "difficulty": 9,
+          "numberOfLoops": 5
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 65
+      }
+    },
+    {
+      "cast": {
+        "Police Officer": "Witch",
+        "Henchman": "Friend",
+        "Boss": [
+          "Key Person",
+          {
+            "Turf": "City"
+          }
+        ],
+        "Pop Idol": "Loved One",
+        "Mystery Boy": "Lover",
+        "Godly Being": [
+          "Brain",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "Alien": "Time Traveler"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Godly Being"
+        },
+        {
+          "day": 3,
+          "incident": "Faraway Murder",
+          "culprit": "Alien"
+        },
+        {
+          "day": 4,
+          "incident": "Butterfly Effect",
+          "culprit": "Alien"
+        }
+      ],
+      "title": "Untitled",
+      "mainPlot": [
+        "Giant Time Bomb"
+      ],
+      "subPlots": [
+        "Threads of Fate"
+      ],
+      "story": "",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "Butterfly Effect\n\n I have added a random Turf since it was not specified same for goodly being arrival",
+      "creator": "",
+      "daysPerLoop": 4,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 66
+      }
+    },
+    {
+      "cast": {
+        "Girl Student": "Key Person",
+        "Class Rep": "Key Person",
+        "Rich Man’s Daughter": "Key Person",
+        "Doctor": "Brain",
+        "Patient": "Killer",
+        "Informer": "Conspiracy Theorist",
+        "Police Officer": "Person",
+        "Office Worker": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Missing Person",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 3,
+          "incident": "Spreading",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 5,
+          "incident": "Faraway Murder",
+          "culprit": "Doctor"
+        },
+        {
+          "day": 6,
+          "incident": "Missing Person",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 7,
+          "incident": "Hospital Incident",
+          "culprit": "Patient"
+        }
+      ],
+      "title": "Save The Students (untested)",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "An Unsettling Rumor",
+        "Threads of Fate"
+      ],
+      "story": "Note: This script has not been tested yet and feedback would be greatly appreciated. Email me at yukutaaso@yahoo.com\n\nThe patient was an ex-student who was severely bullied by the 3 students who were members of a clique.\nWhen one of them pushed him down the stairs it broke some of his bones and he ended up in the hospital where his father works as a doctor.\nEnraged by the cruelty of the 3 students, the patient's heart grows cold and decides that they must pay for what they have done to him.\n(on day 7 is the Patient's last, desperate attempt to exact revenge. His heart has grown so cold he would kill himself if it meant the death on the students)\nThe doctor, being a loving father, and mending the wounds of his victimized son decides to help in this evil plan.\nThe informer is a member of the police investigating the bullying incident that ended up with a child in the hospital.\nCan the Tragedy Loopers save the lives of these students or will the Patient exact his revenge?",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "Try to get the students out of the school and into the hospital.\nTry to trick the protagonists to befriend the doctor, allowing the patient to be brought to the students.\nUse the Missing Person incidents to get the students into the hospital.\nTry to keep the brain's role hidden.",
+      "specialRules": [
+        "N/A"
+      ],
+      "specifics": "Death of a key person\nHospital Incident (Killing protagonists)\n4 Intrigue on Killer (Killing protagonists)\n\nHaving multiple Key Persons is really going to throw the protagonists for a loop, since it's not actually legal by the game mechanics. You could switch out the Unsettling Rumour plot for Circle of Friends, change 2 of the students to Friends, and keep the same theme without breaking the rules.\n    TeabagNation",
+      "creator": "Shadow_CPO",
+      "daysPerLoop": 7,
+      "difficultySets": [
+        {
+          "difficulty": 5,
+          "numberOfLoops": 3
+        },
+        {
+          "difficulty": 5,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 67
+      }
+    },
+    {
+      "cast": {
+        "Shrine Maiden": "Key Person",
+        "Class Rep": "Cultist",
+        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "Girl Student": "Serial Killer",
+        "Nurse": "Person",
+        "Informer": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 3,
+          "incident": "Missing Person",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 4,
+          "incident": "Murder",
+          "culprit": "Girl Student"
+        }
+      ],
+      "title": "Servants of Cthulhu",
+      "mainPlot": [
+        "A Place to Protect"
+      ],
+      "subPlots": [
+        "Shadow of the Ripper"
+      ],
+      "story": "The three female students are servants of Cthulhu. The Rich Man’s Daughter and Class Rep cast incantations that cause the Shrine Maiden to enter the school. There, the Girl Student may be incited to murder her as a sacrifice to fuel a ritual to summon The Great Old One into this world. If they perform the summoning without a sacrifice, they accidentally summon Azathoth instead.",
+      "tragedySet": "First Steps",
+      "mastermindHints": "Try to kill the Shrine Maiden (Key Person) using the Serial Killer or the Murder Incident on Day 4.\n\nUse the Increasing Unease to setup the Murder on Day 4.\n\nRemember that forbid movement & movement cards happen before other forbid & action cards.  Use this to setup the Cultist in the right location (school)",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "[Instant Loop Lost] - The Shrine Maiden (Key Person) is killed\n[Loop End] - 2 Intrigue on the School\n\n",
+      "creator": "ProdigalPlaneswalker",
+      "daysPerLoop": 4,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        },
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 68
+      }
+    },
+    {
+      "cast": {
+        "Boy Student": "Person",
+        "Girl Student": "Key Person",
+        "Rich Man’s Daughter": "Friend",
+        "Shrine Maiden": "Person",
+        "Police Officer": "Conspiracy Theorist",
+        "Office Worker": "Person",
+        "Informer": "Person",
+        "Doctor": "Person",
+        "Patient": "Friend"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Murder",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 4,
+          "incident": "Murder",
+          "culprit": "Doctor"
+        },
+        {
+          "day": 5,
+          "incident": "Suicide",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 8,
+          "incident": "Hospital Incident",
+          "culprit": "Rich Man’s Daughter"
+        }
+      ],
+      "title": "We have no choice but to die",
+      "mainPlot": [
+        "Sign with me!"
+      ],
+      "subPlots": [
+        "Circle of Friends",
+        "Paranoia Virus"
+      ],
+      "story": "Pushing the activation of the serial killers, paying attention to the incident on the last day, and making sure whether the protagonist have enough information for the final guess are factors that will decide the winner in this script. The mastermind can also force a win by placing the +2 intrigue on the hospital or the girl student, if paranoia isn't controlled by the boy/girl student and the doctor.\n\nDue to that, it should be a smooth sailing until the final guess.\n\nIf paranoia isn't countered, then the friendly Rich Man’s Daughter's \"we have no choice but to die\" system will activate, which ensures the hospital gets tiro-ed and the players meet their finale. However, if they try to get rid of her, then \"something is wrong with you when you throw your friend away\" system will activate, then it's back to \"no choice but to die\" \n\nThis just can't be right.\n\nWhile it can be easy for the protagonist to reach the answer if paranoia is controlled correctly, or using the shrine maiden's ability, deciding where to start with the data collection is where it becomes interesting.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "Template #1: +1 paranoia for boy student, +1 paranoia for Doctor, +1 intrigue for girl student. This is where you use the boy student to kill the key person. If you can kill the key person or the friend, prioritize the key person.",
+      "specialRules": [
+        "Table talk on. If you want to set it to off, then give two more loops to the protagonists."
+      ],
+      "specifics": "1. Killing the key person. (With serial killer, murder incident, suicide incident, Hospital incident)\n\n",
+      "creator": "Sairanac",
+      "daysPerLoop": 8,
+      "difficultySets": [
+        {
+          "difficulty": 8,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 7
+      }
+    },
+    {
+      "cast": {
+        "Boy Student": "Killer",
+        "Girl Student": "Key Person",
+        "Class Rep": "Friend",
+        "Rich Man’s Daughter": "Brain",
+        "Mystery Boy": "Serial Killer",
+        "Pop Idol": "Person",
+        "Shrine Maiden": "Conspiracy Theorist"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "Murder",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 4,
+          "incident": "Murder",
+          "culprit": "Shrine Maiden"
+        }
+      ],
+      "title": "Battle Royale - Tragedy Looper Edition",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "A Hideous Script"
+      ],
+      "story": "It's Battle Royale, but with Tragedy Looper characters and special rules! An example of making simple plots complex with the addition of extra rules. I recommend using this script with card covers/sheets that hide the back of cards due to the use of the four extra cards. Feel free to make any modifications and share your versions! If there are any questions, please comment.",
+      "tragedySet": "First Steps",
+      "mastermindHints": "A Power Plan plot. The first person to target is the Key Person. Increasing Unease will make it easier to take it down the first few loops. Once the Players begin to protect the Key Person, killing the Class Rep will be an option for victory for you as well. This script requires heavy preparation, but gives the Mastermind many tools to achieve his goal. Be wary of the Serial Killer, as it may work against you.",
+      "specialRules": [
+        "Any characters with THREE intrigue dies instantly (Bomb Collar explodes). Do not wait until the end of the day.\nAny location with THREE intrigue kills everyone in the location and those who enter it (Forbidden Zone).\nEach Player deck and Mastermind deck receives ONE extra card (comes with the game, Extra Card A, B, C, and D).\nExtra cards are infinite usage of MINUS or PLUS one intrigue for both players and mastermind. It is the person's choice, and may be played on either character or location.\nPlayers' Forbid Intrigue and Extra Card do not cancel each other and may be used together. However, the same cancel rule still applies when TWO Forbid Intrigue are on the board.\nForbid Intrigue may be used to cancel out a Mastermind's Extra Card.\nA Player's Extra Card may be used to cancel out a Mastermind's Extra Card."
+      ],
+      "specifics": "[Key Person Dies]: Killer ability / Serial Killer ability / Forbidden Zone / Bomb Collar / Murder Incidents\n[Friend Dies]: Killer ability / Serial Killer ability / Forbidden Zone / Bomb Collar / Murder Incidents\n\n",
+      "creator": "Res_kun",
+      "daysPerLoop": 4,
+      "difficultySets": [
+        {
+          "difficulty": 8,
+          "numberOfLoops": 5
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 70
+      }
+    },
+    {
+      "cast": {
+        "Shrine Maiden": "Key Person",
+        "Rich Man’s Daughter": "Killer",
+        "Doctor": "Brain",
+        "Patient": "Lover",
+        "Henchman": "Loved One",
+        "Police Officer": "Friend",
+        "Class Rep": "Friend",
+        "Office Worker": "Conspiracy Theorist",
+        "Pop Idol": "Person",
+        "Boy Student": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 3,
+          "incident": "Hospital Incident",
+          "culprit": "Doctor"
+        },
+        {
+          "day": 5,
+          "incident": "Butterfly Effect",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 6,
+          "incident": "Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 7,
+          "incident": "Murder",
+          "culprit": "Rich Man’s Daughter"
+        }
+      ],
+      "title": "Best in Class",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "A Love Affair",
+        "Circle of Friends"
+      ],
+      "story": "A deranged and amoral student blames a classmate for her isolation from her peers and her crush's rejection. Unfortunately for her unsuspecting target, her father is both wealthy enough to make her twisted wish into reality, and sufficiently devastated by his failure to save his wife that he wants nothing more than to make those around him suffer as well. A diligent cop and his loyal daughter are doing their best to protect their beloved hometown, but they have much to contend with. An orderly unjustly fired from the hospital resents his new office job and seeks answers, but his assertions that something is wrong at the hospital are only creating panic. A violent young Yakuza member'rs behaviour is only becoming more erratic and unpredictable due to his concern for his younger brother, hospitalized and helpless. Will the protagonists be able to guide this town to a peaceful future, or will two twisted generations commit a crime that will tear their community asunder? They will be putting themselves at great risk to find out...",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Kill the Key Person (using killer's ability, hospital incident, or murder incidents)\n\nKill a Friend (using hospital incident or murder incidents)\n\nKill the protagonists (using killer's ability, loved one's ability, or hospital incident)\n\nThis is my first attempt at creating a custom script. I have a group who will play test it this week or next. Any tips/critiques would be welcome - particularly, I'm concerned about balance. Reading through the creation guide, I know I picked several of the more difficult plots/subplots/culprits. My intention in creating this script was to make a fast-paced gameplay experience where there are several loss conditions the protagonists will need to account for, and lots of information to gradually be revealed throughout the loops. Let me know where I succeeded in this goal, and where I failed completely!\n    87",
+      "creator": "C.J. Morton",
+      "daysPerLoop": 7,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 72
+      }
+    },
+    {
+      "cast": {
+        "Patient": "Key Person",
+        "Boy Student": "Loved One",
+        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "Girl Student": "Lover",
+        "Informer": "Killer",
+        "Office Worker": "Brain",
+        "Pop Idol": "Person",
+        "Alien": "Person",
+        "Class Rep": "Friend",
+        "Godly Being": [
+          "Friend",
+          {
+            "enters on loop": 3
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Butterfly Effect",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 3,
+          "incident": "Increasing Unease",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 6,
+          "incident": "Suicide",
+          "culprit": "Godly Being"
+        },
+        {
+          "day": 7,
+          "incident": "Hospital Incident",
+          "culprit": "Rich Man’s Daughter"
+        }
+      ],
+      "title": "Silly Things?",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "Circle of Friends",
+        "A Love Affair"
+      ],
+      "story": "This is my first attempt at a script.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 7,
+      "difficultySets": [
+        {
+          "difficulty": 8,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 74
+      }
+    },
+    {
+      "cast": {
+        "Police Officer": "Brain",
+        "Pop Idol": "Killer",
+        "Patient": "Obstinate",
+        "Shrine Maiden": "Twin",
+        "Alien": "Person",
+        "Godly Being": [
+          "Person",
+          {
+            "enters on loop": 3
+          }
+        ],
+        "Journalist": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Henchman": "Paranoiac"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "Closed Circle",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 3,
+          "incident": "Bestial Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 4,
+          "incident": "Terrorism",
+          "culprit": "Alien"
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Patient"
+        }
+      ],
+      "title": "Vroom Vroom",
+      "mainPlot": [
+        "Tightrope Plan"
+      ],
+      "subPlots": [
+        "An Absolute Will",
+        "Tricky Twins"
+      ],
+      "story": "An exciting battle between the mastermind and the protagonists. Makes sense if you know me very well.",
+      "tragedySet": "Mystery Circle",
+      "mastermindHints": "Just win kids.",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Tightrope Plan: Extra Gauge 1 or fewer\nHospital Incident: 2 intrigue or more on hospital\nTerrorism: 2 intrigue or more on city\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 3,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 78
+      }
+    },
+    {
+      "cast": {
+        "Informer": "Person",
+        "Police Officer": "Person",
+        "Mystery Boy": "Lover",
+        "Patient": "Time Traveler",
+        "Doctor": "Serial Killer",
+        "Boy Student": "Friend",
+        "Girl Student": "Cultist",
+        "Shrine Maiden": "Conspiracy Theorist",
+        "Alien": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Patient"
+        }
+      ],
+      "title": "Confined",
+      "mainPlot": [
+        "Change of Future"
+      ],
+      "subPlots": [
+        "An Unsettling Rumor",
+        "The Hidden Freak"
+      ],
+      "story": "This is a fun script that uses misdirection to mislead the Protagonists about the main plot.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "Loop 1: The goal of this loop is to misdirect the characters into thinking the main plot is The Sealed Item. Move as many characters as you can into the Shrine and place two intrigue on the Shine using the Cultist to neutralize Forbid Intrigue if necessary. You can even put on an intrigue the Shrine using the Mastermind ability from An Unsettling Rumor to make it appear that there is a Brain in the Shrine, when in fact there is no Brain in the script. The Protagonists will lose due to lack of goodwill on the Time Traveler but they may think it is due to the intrigue on the Shrine and The Sealed Item. The danger for the Mastermind is having the Doctor revealed as the Serial Killer. Try to keep him around lots of people so he doesn’t kill anyone.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "•Two goodwill or fewer on the Patient (Time Traveler) at the end of the loop.\n\n",
+      "creator": "speter79",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 5,
+          "numberOfLoops": 5
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 8
+      }
+    },
+    {
+      "cast": {
+        "Class Rep": "Conspiracy Theorist",
+        "Rich Man’s Daughter": "Key Person",
+        "Doctor": "Brain",
+        "Henchman": "Magician",
+        "Shrine Maiden": "Immortal",
+        "Patient": "Friend",
+        "Police Officer": "Obstinate",
+        "Alien": "Person",
+        "Mystery Boy": "Factor"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Missing Person",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 5,
+          "incident": "Confession",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 6,
+          "incident": "Hospital Incident",
+          "culprit": "Police Officer"
+        }
+      ],
+      "title": "The Zone of Midnight",
+      "mainPlot": [
+        "Secret Record"
+      ],
+      "subPlots": [
+        "Showtime of Death",
+        "Love-Hate Spiral"
+      ],
+      "story": "An exciting dance under the moonlight.",
+      "tragedySet": "Midnight Zone",
+      "mastermindHints": "",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Killing Key Person: Rich Man’s Daughter\nHospital Incident: 2 intrigue on hospital\nShowtime of Death: 6 or fewer characters left\nFriend: Patient dies\nSecret Record: Brain, Factor, or Magician revealed\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 80
+      }
+    },
+    {
+      "cast": {
+        "Forensic Specialist": "Magician",
+        "Alien": "Immortal",
+        "Patient": "Prophet",
+        "Boy Student": "Person",
+        "Boss": [
+          "Conspiracy Theorist",
+          {
+            "Turf": "School"
+          }
+        ],
+        "Rich Man’s Daughter": "Friend",
+        "Office Worker": "Serial Killer",
+        "Mystery Boy": "Obstinate",
+        "Nurse": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Suicide",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 2,
+          "incident": "Suicide",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 4,
+          "incident": "Serial Murder",
+          "culprit": "Forensic Specialist"
+        },
+        {
+          "day": 6,
+          "incident": "Hospital Incident",
+          "culprit": "Mystery Boy"
+        }
+      ],
+      "title": "Leave us to Die",
+      "mainPlot": [
+        "Fated Connections"
+      ],
+      "subPlots": [
+        "Showtime of Death",
+        "Worshippers of the Apocalypse"
+      ],
+      "story": "untested",
+      "tragedySet": "Midnight Zone",
+      "mastermindHints": "",
+      "specialRules": [
+        "Mastermind removes Forbid Goodwill from hand"
+      ],
+      "specifics": "1) Have 6 or less characters alive\n2) Kill protagonists from the Hospital Incident\n3) Kill Key Persons created from Fated Connections\n\n",
+      "creator": "Seiji-kun",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 82
+      }
+    },
+    {
+      "cast": {
+        "Alien": "Key Person",
+        "Rich Man’s Daughter": "Cultist",
+        "Police Officer": "Ninja",
+        "Doctor": "Magician",
+        "Forensic Specialist": "Immortal",
+        "Patient": "Prophet",
+        "Mystery Boy": "Conspiracy Theorist",
+        "Office Worker": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Serial Murder",
+          "culprit": "Forensic Specialist"
+        },
+        {
+          "day": 3,
+          "incident": "Serial Murder",
+          "culprit": "Forensic Specialist"
+        },
+        {
+          "day": 4,
+          "incident": "Serial Murder",
+          "culprit": "Forensic Specialist"
+        },
+        {
+          "day": 5,
+          "incident": "Serial Murder",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 6,
+          "incident": "Suicide",
+          "culprit": "Alien"
+        }
+      ],
+      "title": "Hide and Seek",
+      "mainPlot": [
+        "The Devil’s Hand"
+      ],
+      "subPlots": [
+        "Showtime of Death",
+        "Worshippers of the Apocalypse"
+      ],
+      "story": "",
+      "tragedySet": "Midnight Zone",
+      "mastermindHints": "",
+      "specialRules": [
+        "mastermind removes forbid goodwill from hand"
+      ],
+      "specifics": "1) Have 6 or less characters alive\n2) Kill the Key Person (either from incidents, the Ninja's ability, or the Suicide on the last day)\n\n",
+      "creator": "Seiji-kun",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 83
+      }
+    },
+    {
+      "cast": {
+        "Doctor": "Person",
+        "Rich Man’s Daughter": "Friend",
+        "Alien": "Obstinate",
+        "Girl Student": "Person",
+        "Godly Being": [
+          "Serial Killer",
+          {
+            "enters on loop": 3
+          }
+        ],
+        "Forensic Specialist": "Serial Killer",
+        "Mystery Boy": "Ninja",
+        "Patient": "Prophet"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Conspiracies",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 3,
+          "incident": "Serial Murder",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 4,
+          "incident": "Uproar",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 5,
+          "incident": "Suicide",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 6,
+          "incident": [
+            "Fake Incident",
+            "Confession"
+          ],
+          "culprit": "Alien"
+        }
+      ],
+      "title": "Summoning the Old Ones",
+      "mainPlot": [
+        "Fated Connections"
+      ],
+      "subPlots": [
+        "Dice of the Gods",
+        "Worshippers of the Apocalypse"
+      ],
+      "story": "untested",
+      "tragedySet": "Midnight Zone",
+      "mastermindHints": "",
+      "specialRules": [
+        "Mastermind removes forbid goodwill from hand"
+      ],
+      "specifics": "1) Killing Key People created by Fated Connections/Dice of the Gods\n2) Killing the Friend\n\n",
+      "creator": "Seiji-kun",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 84
+      }
+    },
+    {
+      "cast": {
+        "Informer": "Key Person",
+        "Police Officer": "Poisoner",
+        "Patient": "Fool",
+        "Boy Student": "Friend",
+        "Rich Man’s Daughter": "Paranoiac",
+        "Girl Student": "Serial Killer",
+        "Alien": "Twin",
+        "Office Worker": "Person",
+        "Henchman": "Person",
+        "Journalist": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Portent",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 3,
+          "incident": "Serial Murder",
+          "culprit": "Alien"
+        },
+        {
+          "day": 5,
+          "incident": "Serial Murder",
+          "culprit": "Alien"
+        },
+        {
+          "day": 6,
+          "incident": "Suicide",
+          "culprit": "Patient"
+        }
+      ],
+      "title": "Let's Try Again",
+      "mainPlot": [
+        "A Drop of Strychnine"
+      ],
+      "subPlots": [
+        "Tricky Twins",
+        "The Hidden Freak"
+      ],
+      "story": "A new mystery circle script. I wanted to try to make one the protagonists could win this time.",
+      "tragedySet": "Mystery Circle",
+      "mastermindHints": "Not sure, do your best. Try to kill the informer as soon as possible.",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Killing Key Person: Informer\nKilling Friend: Boy Student\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 3,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 86
+      }
+    },
+    {
+      "cast": {
+        "Informer": "Conspiracy Theorist",
+        "Alien": "Serial Killer",
+        "Journalist": "Friend",
+        "Henchman": "Friend",
+        "A.I.": "Obstinate",
+        "Shrine Maiden": "Factor",
+        "Rich Man’s Daughter": "Person",
+        "Scientist": "Person",
+        "Class Rep": "Person",
+        "Patient": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Serial Murder",
+          "culprit": "A.I."
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 4,
+          "incident": "Serial Murder",
+          "culprit": "A.I."
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Journalist"
+        },
+        {
+          "day": 6,
+          "incident": "Serial Murder",
+          "culprit": "A.I."
+        }
+      ],
+      "title": "Vroom Vroom 2",
+      "mainPlot": [
+        "Fated Connections"
+      ],
+      "subPlots": [
+        "Love-Hate Spiral",
+        "Unsafe Trigger"
+      ],
+      "story": "",
+      "tragedySet": "Midnight Zone",
+      "mastermindHints": "",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Killing Key Person: Shrine Maiden becomes one or character with extra card\nKilling Friend: (Journalist/Patient)\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 3,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 87
+      }
+    },
+    {
+      "cast": {
+        "Alien": "Brain",
+        "Shrine Maiden": "Person",
+        "Henchman": "Loved One",
+        "Patient": "Lover",
+        "Mystery Boy": "Conspiracy Theorist",
+        "Office Worker": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Boy Student": "Person",
+        "Girl Student": "Person",
+        "Godly Being": [
+          "Cultist",
+          {
+            "enters on loop": 2
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Mystery Boy"
+        },
+        {
+          "day": 3,
+          "incident": "Hospital Incident",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 4,
+          "incident": "Murder",
+          "culprit": "Henchman"
+        },
+        {
+          "day": 5,
+          "incident": "Butterfly Effect",
+          "culprit": "Godly Being"
+        },
+        {
+          "day": 6,
+          "incident": "Foul Evil",
+          "culprit": "Boy Student"
+        }
+      ],
+      "title": "Vroom Vroom 3",
+      "mainPlot": [
+        "The Sealed Item"
+      ],
+      "subPlots": [
+        "Threads of Fate",
+        "A Love Affair"
+      ],
+      "story": "",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "Idk.",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "2 intrigue on Shrine, 3 paranoia and 1 intrigue on loved one\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 6,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 88
+      }
+    },
+    {
+      "cast": {
+        "Alien": "Brain",
+        "Doctor": "Killer",
+        "Pop Idol": "Key Person",
+        "Rich Man’s Daughter": "Factor",
+        "Office Worker": "Serial Killer",
+        "Patient": "Friend",
+        "Police Officer": "Person",
+        "Class Rep": "Person",
+        "Journalist": "Person",
+        "Girl Student": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Foul Evil",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 3,
+          "incident": "Spreading",
+          "culprit": "Office Worker"
+        },
+        {
+          "day": 4,
+          "incident": "Murder",
+          "culprit": "Patient"
+        },
+        {
+          "day": 6,
+          "incident": "Suicide",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 7,
+          "incident": "Hospital Incident",
+          "culprit": "Doctor"
+        }
+      ],
+      "title": "The Hunt is On",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "Unknown Factor X",
+        "The Hidden Freak"
+      ],
+      "story": "It begins now. Beware, ye foolhardy protagonists, for the masterminds plan is coming to a dangerous and deadly fruition.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "There are only 3 (or 4) Loops here. Each Loop, you want to try and make sure you do NOT reveal which rolls you have. Here is a way to end the Loop each time:\nFirst Loop: Trigger the Hospital Incident on 1 Intrigue to kill the Friend/Key Person/Factor who may be inside.\nSecond/Third Loop: Kill the Factor/Key Person OR kill the Protagonists by triggering the Hospital Incident on 2 or using the Killer on 4\n\nWith the Alien as the Brain, you can’t actually get them into the Hospital, meaning it is pretty easy to shut down. However, moving them around through the City and School to trigger Factor powers is nice, and you can try and bluff an Unsettling Rumor by placing some early intrigue on the Shrine/School/City. Getting Intrigue on any and all of these locations is key to mask the real goal.\n\nBasically: Hide the Serial Killer, Brain, and Friend, and confuse the Key Person/Factor. This shouldn’t be too hard.",
+      "specialRules": [
+        "None."
+      ],
+      "specifics": "Kill the Pop Idol (Key Person)\nKill the Rich Man’s Daughter (Factor) with 2 Intrigue on the City\nKill the Patient (Friend)\nKill the Protagonists with the Hospital Incident\nKill the Protagonists with the Killer\n\n",
+      "creator": "O'Malley",
+      "daysPerLoop": 7,
+      "difficultySets": [
+        {
+          "difficulty": 5,
+          "numberOfLoops": 3
+        },
+        {
+          "difficulty": 5,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 89
+      }
+    },
+    {
+      "cast": {
+        "Class Rep": "Person",
+        "Girl Student": "Conspiracy Theorist",
+        "Rich Man’s Daughter": "Brain",
+        "Shrine Maiden": "Person",
+        "Police Officer": "Curmudgeon",
+        "Office Worker": "Person",
+        "Informer": "Person",
+        "Doctor": "Curmudgeon",
+        "Patient": "Friend"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Missing Person",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 3,
+          "incident": "Spreading",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 4,
+          "incident": "Missing Person",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Doctor"
+        }
+      ],
+      "title": "Infiltration",
+      "mainPlot": [
+        "Light of the Avenger"
+      ],
+      "subPlots": [
+        "A Hideous Script"
+      ],
+      "story": "A script meant for beginners focusing on some of the less explained mechanics as teaching them.",
+      "tragedySet": "First Steps",
+      "mastermindHints": "This is a Coverup Script.\n\nFor your Main Plot, you want to bluff ‘A Place to Protect.’ Have one of your characters always refuse Goodwill (to act as the Cultist) and have the others always accept it. This will confuse your opponent. Hiding a Key Person is much harder, but possible. Outside of the Hospital Incident, there is no way to kill characters, so that might help.\n\nYou may want to let the characters trigger the Doctor’s Goodwill Ability and save the Patient in the first few loops. If he dies and the Protagonists make it to the end of Day 5, they will immediately realise that he is the Friend meaning it must be a Hideous Script.\n\nYou can bluff either of the other two subplots by just using the Conspiracy Theorist and making sure two characters are never in the same region alone together. If you are really desperate, using the Brain’s ability to simulate an Unsettling Rumor can help.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "2 Intrigue on the School at the end of the loop\nThe Patient (Friend) is dead at the end of the loop\nThe Protagonists are killed in the Hospital Incident\n\nThanks! I hadn't noticed that. I changed the culprit to the Police Officer, who is much harder to trigger. I also totally forgot about the fact that there isn't a Final Guess in First Steps, which is a major thing to consider.\n    O'Malley\n\nThe Mastermind can always win this script.\n    Emily Karp\n\nTo expand on Emily's comment:\n\nSince the Doctor is a Curmudgeon and the Girl Student is a Conspiracy Theorist, the Protagonists effectively have no Paranoia removal beyond their Paranoia -1's, which have a maximum play rate of 1/day. So, you can get the Girl Student to Paranoia Limit by Day 4 easily, and also have the Rich Man’s Daughter either trigger her incident on Day 2 or use her Mastermind ability to put Intrigue on the school: the protagonists can't both play a Paranoia -1 on her and move her out of the School on Day 1. So you can guarantee two Intrigue on the School.\n    Augustin-Louis Cauchy",
+      "creator": "O'Malley",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 2,
+          "numberOfLoops": 3
+        },
+        {
+          "difficulty": 2,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 90
+      }
+    },
+    {
+      "cast": {
+        "Nurse": "Person",
+        "Patient": "Person",
+        "Police Officer": "Person",
+        "Pop Idol": "Key Person",
+        "Informer": "Serial Killer",
+        "Class Rep": "Friend",
+        "Girl Student": "Conspiracy Theorist",
+        "Rich Man’s Daughter": "Person",
+        "Shrine Maiden": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Butterfly Effect",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 4,
+          "incident": "Faraway Murder",
+          "culprit": "Police Officer"
+        }
+      ],
+      "title": "Hidden Knife among the people",
+      "mainPlot": [
+        "Sign with me!"
+      ],
+      "subPlots": [
+        "The Hidden Freak",
+        "An Unsettling Rumor"
+      ],
+      "story": "",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "You may want to start off by moving the police officer so that the serial killer can kill of the key character right a way. You will want the rich mans daughter to cause the butterfly effect in order to get some intrigue counters on the key person. Use suicide to kill off the key character. You can use faraway murder to kill the friend or the key person",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "Place two intrigue counters on the key person using incidents or cards.\nKill Pop idol or class rep using faraway murder or serial killer.\nGet Pop idol to suicide.\n\nThis script is much harder than a 4/10. It is very difficult for the protagonists to win other than the final guess.\n    Emily Forster",
+      "creator": "Hero7898",
+      "daysPerLoop": 4,
+      "difficultySets": [
+        {
+          "difficulty": 3,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 92
+      }
+    },
+    {
+      "cast": {
+        "Patient": "Time Traveler",
+        "Doctor": "Cultist",
+        "Nurse": "Friend",
+        "Boy Student": "Friend",
+        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "Girl Student": "Person",
+        "Class Rep": "Person",
+        "Shrine Maiden": "Person",
+        "Pop Idol": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Murder",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 2,
+          "incident": "Murder",
+          "culprit": "Patient"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Nurse"
+        },
+        {
+          "day": 4,
+          "incident": "Suicide",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Girl Student"
+        }
+      ],
+      "title": "Return to Sanity",
+      "mainPlot": [
+        "Change of Future"
+      ],
+      "subPlots": [
+        "Circle of Friends",
+        "Threads of Fate"
+      ],
+      "story": "Story: Dr. Isha was a normal doctor by day, but by night he was something more sinister. As the leader of a nefarious cult, he had finally completed their evil rituals and trapped a young patient of his in an inescapable time loop. // \n\nJimmy Kanja had had a weak constitution since he was young and could rarely attend school. His only friends were Nurse Kangofu and his childhood bestie Danshi Gakusei. One day, after a routine check-up, he was told he wasn't allowed to leave. Strange men in robes performed a strange ritual on him and confined him to the hospital. A few days later, on the eve of his planned escape, he found his work undone, and the calendar reset. Four days later, it happened again. He was able to confirm: he was living the same four days, over and over again. // \n\nRepeating the same days, over and over again, confined to the same building, Jimmy's sanity slipped. Where once he saw friends, he later saw only enemies, until finally he couldn't even remember who they were. He would lash out if anyone showed him the slightest signs of kindness, often brutally. And the ritual's effects distorted causality, causing the surrounding town's inhabitants to have hideously altered memories of previous cycles. His friends were hit the hardest: their guilt over being unable to help Jimmy and their fear over his increasingly erratic behavior compounded from loop to loop, until they would try to kill themselves whenever Jimmy recognized them. Of course, this process was helped along by Dr. Isha's daughter, Ojou Isha. // \n\nThe protagonists manage to weaken the effects of the ritual and enter the time loop. However, to fully end it, they need Jimmy to willingly want it to end. That means they'll have to bring him back to sanity. But if he finds out his friends have killed themselves, or worse, that he's done the deed himself, he'll slip back farther than ever... // \n\nAlso, there's a murdering Shrine Maiden, and a Hospital Incidenting Girl Student. They don't really fit into the plot.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "The secret rule is that you must play Intrigue +1 or Intrigue +2 on the Hospitalk during your first day's plays.\n\nYour goal, obviously, is to set up the \"Friend revealed -> Goodwill placement -> 2 Paranoia\" loop on as many friends as possible, so as to make their suicides a running thing. Unless you get some unwitting help from the Protagonists, you probably won't be able to have the friends commit suicide on Loop 2; you can get around this with the Time Traveller loss condition, or by having the Shrine Maiden murder a friend (if she received Goodwill on an earlier loop). The Protagonists' goal is to either use the Nurse, Girl Student, and Pop Idol abilities to reduce the Friends below Paranoia limit, or to have the Shrine Maiden sniff out the Time Traveller. The Shrine Maiden can do this by checking the Patient with her 5 Goodwill ability (or all other candidates, by process of elimination); by having the Hospital Incident reveal the Timend Traveller; or possibly by having just the Shrine Maiden and Patient in the Hospital after Day 1, forcing the Shrine Maiden to attempt to murder the Immortal Patient; be on guard for all three. You can try feinting Sealed Item by occasionally trying to get Intrigue on the Shrine in the early parts of the game, so that if they uncover that the Doctor is a Cultist, they'll guess the wrong Plot; however, if you're forced to use the Time Traveller loss condition, they'll know right away which Plot they have. Otherwise, victory will mainly come from good play, by keeping the Shrine Maiden from finding out too much information and by keeping at least one friend dying every loop.",
+      "specialRules": [
+        "The mastermind has a secret rule that dictates part of their play"
+      ],
+      "specifics": "Friend dies (loop end);\nTime Traveller has insufficient Goodwill (day end, last day)\n\n",
+      "creator": "Augustin-Louis Cauchy",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 6,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 94
+      }
+    },
+    {
+      "cast": {
+        "Doctor": "Conspiracy Theorist",
+        "Patient": "Friend",
+        "Office Worker": "Person",
+        "Henchman": "Friend",
+        "Godly Being": [
+          "Person",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "Shrine Maiden": "Brain",
+        "Rich Man’s Daughter": "Key Person",
+        "Girl Student": "Killer",
+        "Mystery Boy": "Cultist"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Suicide",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 3,
+          "incident": "Increasing Unease",
+          "culprit": "Patient"
+        },
+        {
+          "day": 4,
+          "incident": "Hospital Incident",
+          "culprit": "Doctor"
+        },
+        {
+          "day": 5,
+          "incident": "Murder",
+          "culprit": "Girl Student"
+        }
+      ],
+      "title": "Who stole the cookie? Why so serious?",
+      "mainPlot": [
+        "Murder Plan"
+      ],
+      "subPlots": [
+        "Circle of Friends",
+        "Paranoia Virus"
+      ],
+      "story": "The last cookie in the cookie jar is gone, who might have it.",
+      "tragedySet": "Basic Tragedy",
+      "mastermindHints": "I have added a random loop entry for goodly beeing",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "Kill one of friends via serial killer virus\nHospital Incident to kill Patient \nGirl student murders Rich man daughter \nSuicide\n\nThis script is extremely difficult for the protagonists. They essentially cannot win. Even if the protagonists have perfect information, they cannot guarantee a win. \n    Emily Forster",
+      "creator": "Cookie Monster",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 4
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 95
+      }
+    },
+    {
+      "cast": {
+        "Rich Man’s Daughter": "Brain",
+        "Police Officer": "Fool",
+        "Class Rep": "Friend",
+        "Girl Student": "Conspiracy Theorist",
+        "Shrine Maiden": "Friend",
+        "Alien": "Private Investigator",
+        "Mystery Boy": "Obstinate",
+        "Patient": "Person",
+        "Henchman": "Person",
+        "Office Worker": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Terrorism",
+          "culprit": "Patient"
+        },
+        {
+          "day": 2,
+          "incident": "Terrorism",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 3,
+          "incident": "Faked Suicide",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 4,
+          "incident": "Suicide",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 5,
+          "incident": "Hospital Incident",
+          "culprit": "Mystery Boy"
+        }
+      ],
+      "title": "The Fall of the Vroom",
+      "mainPlot": [
+        "The Black School"
+      ],
+      "subPlots": [
+        "Dance of Fools",
+        "I am a Master Detective"
+      ],
+      "story": "",
+      "tragedySet": "Mystery Circle",
+      "mastermindHints": "",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Friend dies: Class Rep or Shrine Maiden\nIntrigue on School\nHospital Incident Level 2\nTerrorism Level 2\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 0,
+          "numberOfLoops": 5
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 96
+      }
+    },
+    {
+      "cast": {
+        "Boy Student": "Person",
+        "Girl Student": "Brain",
+        "Mystery Boy": "Serial Killer",
+        "Shrine Maiden": "Friend",
+        "Police Officer": "Person",
+        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "Office Worker": "Curmudgeon"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Increasing Unease",
+          "culprit": "Boy Student"
+        },
+        {
+          "day": 2,
+          "incident": "Missing Person",
+          "culprit": "Shrine Maiden"
+        },
+        {
+          "day": 3,
+          "incident": "Murder",
+          "culprit": "Mystery Boy"
+        },
+        {
+          "day": 4,
+          "incident": "Faraway Murder",
+          "culprit": "Girl Student"
+        }
+      ],
+      "title": "Hopeless",
+      "mainPlot": [
+        "Light of the Avenger"
+      ],
+      "subPlots": [
+        "A Hideous Script"
+      ],
+      "story": "School sucks. The girl student thought. Might as well go away with a bang. How should she do this? She plans and plans... And finally decided no one is going to survive in the school... But, the school is weirder than she first thought. Can she successfully destroy the school?",
+      "tragedySet": "First Steps",
+      "mastermindHints": "Mystery Boy is a double edge sword. One thing he can kill Shrine Maiden. Another thing is that Mystery Boy can murder the Brain, Girl Student.\nYou can hide the brain within the students. \nYou can also use Murder and Faraway Murder to kill the Shrine Maiden.\nYou only can win at the end of the loop, so be careful of those goodwill abilities that can reveal your plots.",
+      "specialRules": [
+        ""
+      ],
+      "specifics": "-Shrine Maiden is dead.\n-There is 2 Intrigue in the school. (Brain's starting location)\n\n",
+      "creator": "The Gem Pirate",
+      "daysPerLoop": 5,
+      "difficultySets": [
+        {
+          "difficulty": 2,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 97
+      }
+    },
+    {
+      "cast": {
+        "Doctor": "Key Person",
+        "Informer": "Brain",
+        "Pop Idol": "Conspiracy Theorist",
+        "Office Worker": "Magician",
+        "Rich Man’s Daughter": "Immortal",
+        "Shrine Maiden": "Prophet",
+        "Alien": "Person",
+        "Police Officer": "Person",
+        "Patient": "Person",
+        "Forensic Specialist": "Person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "Increasing Unease",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 3,
+          "incident": "Suicide",
+          "culprit": "Doctor"
+        },
+        {
+          "day": 4,
+          "incident": "Serial Murder",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 5,
+          "incident": "Uproar",
+          "culprit": "Forensic Specialist"
+        },
+        {
+          "day": 6,
+          "incident": "Hospital Incident",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 7,
+          "incident": "Confession",
+          "culprit": "Office Worker"
+        }
+      ],
+      "title": "Overvroomed?",
+      "mainPlot": [
+        "Secret Record"
+      ],
+      "subPlots": [
+        "Worshippers of the Apocalypse",
+        "Showtime of Death"
+      ],
+      "story": "",
+      "tragedySet": "Midnight Zone",
+      "mastermindHints": "",
+      "specialRules": [
+        "None"
+      ],
+      "specifics": "Kill Key Person: Doctor, 6 or fewer characters left alive, Brain/Magician revealed (Informer/Office Worker)\n\n",
+      "creator": "Justin Karp",
+      "daysPerLoop": 7,
+      "difficultySets": [
+        {
+          "difficulty": 3,
+          "numberOfLoops": 3
+        }
+      ],
+      "set": {
+        "name": "www.tragedylooperscripts.com",
+        "number": 98
+      }
+    }
+  ]
+}

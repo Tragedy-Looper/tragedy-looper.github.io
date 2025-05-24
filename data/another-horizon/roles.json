@@ -31,7 +31,7 @@
             "name": "Twilight",
             "goodwillRefusel": "Optional",
             "goodwillOutburst": true,
-            "unkillable": true,
+            "tags": ["Immortal"],
             "abilities": [
                 {
                     "type": "Mandatory",

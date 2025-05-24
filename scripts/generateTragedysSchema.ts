@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 import { compile, JSONSchema } from 'json-schema-to-typescript'
+import { toPascalCase } from './../src/misc';
 
 const __filename = fileURLToPath(import.meta.url);
 
@@ -12,6 +13,7 @@ const staticDir = path.join(__dirname, '../static');
 const srcDir = path.join(__dirname, '../src');
 
 const names = {
+    tags: collectNamesFromJsonFiles('tags'),
     plotNames: collectNamesFromJsonFiles('plots'),
     incidentNames: collectNamesFromJsonFiles('incidents'),
     roleNames: collectNamesFromJsonFiles('roles'),
@@ -73,7 +75,8 @@ const AbilityTypeLose = [
     'Mandatory Loss condition: Protagonists Death',
     'Optional Loss condition: Protagonists Death',
     'Delayed Loss condition: Protagonists Death',
-    'Loss condition: Tragedy'
+    'Loss condition: Tragedy',
+    'Optional Loss condition: Tragedy'
 ] as const;
 const AbilityType = [...AbilityTypeLose, ...AbilityTypeCreation, ...AbilityTypeDefault] as const;
 
@@ -217,6 +220,7 @@ type Names = typeof names;
 
 
 // --- SCHEMA GENERATION ---
+WriteSchema(generateTagssSchema(names), 'tags');
 WriteSchema(generatePlotsSchema(names), 'plots');
 WriteSchema(generateIncidentsSchema(names), 'incidents');
 WriteSchema(generateRolesSchema(names), 'roles');
@@ -279,6 +283,32 @@ function collectDataFromJsonFiles(type: string): any[] {
     });
 }
 
+function generateTagssSchema({ roleNames }: Names) {
+    return {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "title": "Tags",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "$schema": { "type": "string" },
+            "tags": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "name": { "type": "string" },
+                        "description": { "type": "string" },
+                        "showInGmScreen": { "type": "boolean" },
+                        "hideInPlayerScreen": { "type": "boolean" },
+                    },
+                    "required": ["name"],
+                }
+            }
+        }
+    } as const;
+}
+
 // --- SCHEMA GENERATION BOILERPLATE ---
 // 1. Plots Schema
 function generatePlotsSchema({ roleNames }: Names) {
@@ -325,7 +355,7 @@ function generatePlotsSchema({ roleNames }: Names) {
 
 
                     },
-                    "required": ["name"],
+                    "required": ["name", "roles", "rules"],
 
                 }
             }
@@ -388,7 +418,7 @@ function generateIncidentsSchema({ incidentNames }: Names) {
 }
 
 // 3. Roles Schema
-function generateRolesSchema({ roleNames }: Names) {
+function generateRolesSchema({ tags }: Names) {
     return {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "title": "Roles",
@@ -405,9 +435,11 @@ function generateRolesSchema({ roleNames }: Names) {
                         "name": { "type": "string" },
                         "goodwillRefusel": { "type": "string", "enum": ['Optional', 'Mandatory', 'Puppeted'] },
                         "goodwillOutburst": { "type": "boolean" },
-                        "unkillable": { "type": "boolean" },
+                        "tags": {
+                            "type": "array",
+                            "items": { "type": "string", "enum": [...tags] }
+                        },
                         "max": { "type": "number" },
-                        "afterDeath": { "type": "boolean" },
                         ...scriptSpecified,
                         ...doseNotTriggerIncidentEffect,
                         "abilities": {
@@ -501,7 +533,7 @@ function generateCharactersSchema({ characterNames }: Names) {
 function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, RolaData, PlotData, IncidentData, roleNames: allRoles, characterNames, namesPerTragedySet }: Names) {
     return {
         "$schema": "http://json-schema.org/draft-07/schema#",
-        "title": "Script",
+        "title": "Scripts",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -842,10 +874,11 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
 function generateTragedySetsSchema({ plotNames, incidentNames }: Names) {
     return {
         "$schema": "http://json-schema.org/draft-07/schema#",
-        "title": "Tragedy Set",
+        "title": "Tragedy Sets",
         "type": "object",
         "additionalProperties": false,
         "properties": {
+            "$schema": { "type": "string" },
             "tragedys": {
                 "type": "array",
                 "items": {
@@ -910,7 +943,13 @@ function WriteSchema(schema: ReadonlyArrayTransform<JSONSchema>, type: string) {
         fs.writeFileSync(outPath, JSON.stringify(schema, null, 2), 'utf-8');
     });
     compile(schema as JSONSchema, type).then((result) => {
-        fs.writeFileSync(path.join(srcDir, `${type}.g.ts`), result, { encoding: 'utf-8' });
+
+        const typeName = `${toPascalCase(type).replace(/s$/, '')}`;
+
+        fs.writeFileSync(path.join(srcDir, `${type}.g.ts`), `
+export type ${typeName} = Exclude<(${toPascalCase(type)})['${type}'], undefined>[number]; 
+
+${result}`, { encoding: 'utf-8' });
     });
 
 

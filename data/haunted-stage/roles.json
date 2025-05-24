@@ -16,7 +16,9 @@
         },
         {
             "name": "Curse God",
-            "afterDeath": true,
+            "tags": [
+                "after death"
+            ],
             "abilities": [
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -29,7 +31,9 @@
         },
         {
             "name": "Human Doll",
-            "afterDeath": true,
+            "tags": [
+                "after death"
+            ],
             "abilities": [
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -69,7 +73,9 @@
         },
         {
             "name": "Vampire (Haunted Stage)",
-            "afterDeath": true,
+            "tags": [
+                "after death"
+            ],
             "abilities": [
                 {
                     "type": "Optional",
@@ -89,13 +95,17 @@
         },
         {
             "name": "Ghost (Haunted Stage)",
-            "afterDeath": true,
+            "tags": [
+                "after death"
+            ],
             "max": 2,
             "abilities": []
         },
         {
             "name": "Monster",
-            "unkillable": true,
+            "tags": [
+                "Immortal"
+            ],
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -121,7 +131,9 @@
         },
         {
             "name": "Zombie (Haunted Stage)",
-            "afterDeath": true,
+            "tags": [
+                "after death"
+            ],
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -157,7 +169,9 @@
         {
             "name": "Horror",
             "max": 1,
-            "afterDeath": true,
+            "tags": [
+                "after death"
+            ],
             "abilities": [
                 {
                     "type": "Optional",
@@ -170,7 +184,9 @@
         },
         {
             "name": "Overlord",
-            "afterDeath": true,
+            "tags": [
+                "after death"
+            ],
             "abilities": [
                 {
                     "type": "Optional",

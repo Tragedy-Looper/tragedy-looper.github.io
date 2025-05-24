@@ -19,6 +19,7 @@
   import { incidents } from '../../../model/incidents';
   import { getString } from '../+layout.svelte';
   import { get } from 'svelte/store';
+  import type { Role } from '../../../roles.g';
 
   export let selectedScript: Script;
 
@@ -77,7 +78,7 @@
     })
     .map((x) => {
       const { name, ...rest } = x;
-      return { role: name, ...rest };
+      return { role: name, ...rest } as Role & { role: RoleName; character: CharacterName };
     });
   $: roleabilities = scriptRoles.flatMap((x) => x.abilities.map((a) => ({ ...a, ...x })));
 
@@ -98,6 +99,7 @@
       if (t == 'Delayed Loss condition: Protagonists Death') return 5;
       if (t == 'Mandatory Loss condition: Protagonists Death') return 5;
       if (t == 'Loss condition: Tragedy') return 4;
+      if (t == 'Optional Loss condition: Tragedy') return 4;
       if (t == 'Mandatory') return 3;
       if (t == 'Optional Loss condition: Protagonists Death') return 2;
       if (t == 'Optional') return 1;
@@ -129,13 +131,13 @@
     </tr>
   </thead>
   <tbody>
-    {#if showAll(scriptRoles).filter((x) => x.unkillable === true).length + showAll(abilities)
+    {#if scriptRoles.filter((x) => x.tags?.includes('Immortal')).length + showAll(abilities)
         .filter((x) => includes(x['timing'], 'Always'))
         .sort(sortabilities).length > 0}
       <tr>
         <td colspan="7">{$getString('Always')}</td>
       </tr>
-      {#each showAll(scriptRoles).filter((x) => x.unkillable === true) as map}
+      {#each scriptRoles.filter((x) => x.tags?.includes('Immortal')) as map}
         <tr>
           <td> {$getString('mandatory')} </td>
           <td>

@@ -1,0 +1,8 @@
+{
+    "$schema": "../tags.schema.json",
+    "tags": [
+        {
+            "name": "Supernatural"
+        }
+    ]
+}

@@ -2,7 +2,7 @@
     "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "name": "Mystery Circle",
+            "name": "Mystery Circle (Diagonal Destruction)",
             "mainPlots": [
                 "Murder Plan",
                 "Tightrope Plan",
@@ -30,7 +30,8 @@
                 "A Suspicious Letter",
                 "Faked Suicide",
                 "Closed Circle",
-                "The Silver Bullet"
+                "The Silver Bullet",
+                "Diagonal Destruction 3"
             ],
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 2,
@@ -46,7 +47,7 @@
             ]
         },
         {
-            "name": "Midnight Zone",
+            "name": "Midnight Zone (Diagonal Destruction)",
             "mainPlots": [
                 "The Sealed Item",
                 "Secret Record",
@@ -74,7 +75,8 @@
                 "Fake Incident",
                 "Breakthrough",
                 "Faked Suicide",
-                "Confession"
+                "Confession",
+                "Diagonal Destruction 2"
             ],
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 2,
@@ -83,6 +85,41 @@
                     "name": "Extra Cads",
                     "description": "During the \"removal and placement of counters\" step during Loop start also remove all Extra cards. Then, place the cards according to plot rules (if applicable)."
                 }
+            ]
+        },
+        {
+            "name": "Basic Tragedy (Diagonal Destruction)",
+            "mainPlots": [
+                "Murder Plan",
+                "The Sealed Item",
+                "Sign with me!",
+                "Change of Future",
+                "Giant Time Bomb"
+            ],
+            "subPlots": [
+                "Circle of Friends",
+                "A Love Affair",
+                "The Hidden Freak",
+                "An Unsettling Rumor",
+                "Paranoia Virus",
+                "Threads of Fate",
+                "Unknown Factor X"
+            ],
+            "numberOfMainPlots": 1,
+            "numberOfSubPlots": 2,
+            "extraRules": [],
+            "incidents": [
+                "Butterfly Effect",
+                "Faraway Murder",
+                "Foul Evil",
+                "Hospital Incident",
+                "Increasing Unease",
+                "Missing Person",
+                "Murder",
+                "Spreading",
+                "Suicide",
+                "Diagonal Destruction 3",
+                "Diagonal Destruction"
             ]
         }
     ]

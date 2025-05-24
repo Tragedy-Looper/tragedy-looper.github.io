@@ -9,12 +9,13 @@
   } from '../model/characters';
   import { incidents as incidentsLookup } from '../model/incidents';
   import { plots } from '../model/plots';
-  import { type RoleInternal, roles, type Abilitie, type RoleName } from '../model/roles';
+  import { roles, type Abilitie, type RoleName } from '../model/roles';
   import type { Script, ScriptIncident, ScriptIncidentPlayer } from '../model/script';
   import { tragedySets, type TragedySet, type TragedySetName } from '../model/tragedySets';
   import Selection from './selection.svelte';
   import Ability from './Ability.svelte';
   import { getString } from '../routes/(site)/+layout.svelte';
+  import type { Role } from '../roles.g';
 
   export let tragedySet: TragedySetName;
   export let cast: readonly CharacterName[];
@@ -231,10 +232,10 @@
     .sort((a, b) => a.name.localeCompare(b.name))
     .map(({ name, skip }) => {
       if (name.includes('|')) {
-        return { name: name, abilities: [], skip, combined: true } satisfies RoleInternal & {
+        return { name: name, abilities: [], skip, combined: true } satisfies Role & {
           skip: boolean;
           combined: boolean;
-        } as RoleInternal & {
+        } as Role & {
           skip: boolean;
           combined: boolean;
         };
@@ -508,9 +509,7 @@
       {$getString('Roles')}
     </div>
     {#each r.filter((x) => !x.skip) as ri}
-      {@const tags = [ri.unkillable ? 'Immortal' : '', ri.afterDeath ? 'After Death' : ''].filter(
-        (x) => x.length > 0
-      )}
+      {@const tags = (ri.tags ?? []).filter((x) => x.length > 0)}
       <div class="vertical-header role" style="grid-area: role-header-{cssesc(ri.name)};">
         {$getString(ri.name)}
         {#if tags.length > 0}
@@ -648,12 +647,11 @@
           ? `${$getString('Goodwill refusal')}: ${$getString(ri.goodwillRefusel)}`
           : ''}
       </h2>
-      {#if ri.unkillable}
-        <h2>{$getString('Immortal')}</h2>
-      {/if}
-      {#if ri.afterDeath}
-        <h2>{$getString('After Death')}</h2>
-      {/if}
+
+      {#each ri.tags ?? [] as tag}
+        <h2>{$getString(tag)}</h2>
+      {/each}
+
       {#each ri.abilities ?? [] as a}
         <Ability {a} compact />
       {/each}

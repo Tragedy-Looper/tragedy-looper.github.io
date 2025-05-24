@@ -72,7 +72,7 @@
         },
         {
             "name": "Time Traveler",
-            "unkillable": true,
+            "tags": ["Immortal"],
             "abilities": [
                 {
                     "type": "Mandatory",

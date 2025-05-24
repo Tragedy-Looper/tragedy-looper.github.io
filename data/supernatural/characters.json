@@ -1,0 +1,27 @@
+{
+    "$schema": "../characters.schema.json",
+    "characters": [
+        {
+            "name": "Crusader",
+            "tags": [
+                "man",
+                "adult"
+            ],
+            "paranoiaLimit": 4,
+            "startLocation": [
+                "Shrine"
+            ],
+            "abilities": [
+                {
+                    "type": "active",
+                    "goodwillRank": 3,
+                    "description": "Kill any character in the same location. If that character is not supernatural, the Protagonists lose."
+                },
+                {
+                    "type": "passive",
+                    "description": "If this character gains supernatural his Goodwill abilities are automatically refused."
+                }
+            ]
+        }
+    ]
+}
