@@ -1,30 +1,32 @@
 <script lang="ts">
-	import type { CharacterName } from '../../../../model/characters';
-	import type { ICustomScriptIncidentSelectionGroup } from '../../../../model/customScript';
-	import Incedent from './incedent.svelte';
+  import type { CharacterName } from '../../../../model/characters';
+  import type { ICustomScriptIncidentSelectionGroup } from '../../../../model/customScript';
+  import Incedent from './incedent.svelte';
 
-	export let incedentGroup: ICustomScriptIncidentSelectionGroup<CharacterName>;
+  export let incedentGroup: ICustomScriptIncidentSelectionGroup<CharacterName>;
 
-	$: numberOfIncidetns = incedentGroup.selectedNumber;
-	$: incidents = incedentGroup.selectors;
-	$: maxIncidents = incedentGroup.script.daysPerLoop;
+  $: numberOfIncidetns = incedentGroup.selectedNumber;
+  $: incidents = incedentGroup.selectors;
+  $: maxIncidents = incedentGroup.script.daysPerLoop;
 </script>
 
 <label>
-	Number of Incidents
-	<input type="number" bind:value={$numberOfIncidetns} max={$maxIncidents} />
+  Number of Incidents
+  <input type="number" bind:value={$numberOfIncidetns} max={$maxIncidents} />
 </label>
 
 <table>
-	<thead>
-		<th>Day</th>
-		<th>Incident</th>
-		<th>Culprit</th>
-		<th>Options</th>
-	</thead>
-	<tbody>
-		{#each $incidents as incident}
-			<Incedent {incident} />
-		{/each}
-	</tbody>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Incident</th>
+      <th>Culprit</th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    {#each $incidents as incident}
+      <Incedent {incident} />
+    {/each}
+  </tbody>
 </table>

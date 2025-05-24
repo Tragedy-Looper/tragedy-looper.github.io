@@ -83,6 +83,7 @@
       Array.from(tragedyRulesTemplate.content.children)
         .concat(Array.from(incidentTemplate.content.children))
         .concat(Array.from(roleTemplate.content.children))
+        .filter((x) => x.tagName != 'DIV') 
         .map((x) => x.cloneNode(true) as HTMLDivElement)
         .forEach((incident) => {
           let currentContainer: HTMLElement | undefined = undefined;
@@ -138,6 +139,7 @@
         const randomElement = Array.from(tragedyRulesTemplate.content.children)
           .concat(Array.from(incidentTemplate.content.children))
           .concat(Array.from(roleTemplate.content.children))
+          .filter((x) => x.tagName != 'DIV') 
           .map((x) => x.cloneNode(true) as HTMLDivElement)[0];
 
         container.appendChild(randomElement);
@@ -166,6 +168,7 @@
       Array.from(tragedyRulesTemplate.content.children)
         .concat(Array.from(incidentTemplate.content.children))
         .concat(Array.from(roleTemplate.content.children))
+        .filter((x) => x.tagName != 'DIV') 
         .map((x) => x.cloneNode(true) as HTMLDivElement)
         .forEach((incident) => {
           for (const [container, i] of containers.map((x, i) => [x, i] as const)) {
@@ -543,7 +546,8 @@
     {#each chars as ci}
       <div class="character" style="grid-area: char-header-{cssesc(ci.name)}; ">
         {getString(ci.name)}
-        {#if isCharacterLate(ci.name)} <i>(?)</i>{/if}
+        {#if isCharacterLate(ci.name)}
+          <i>(?)</i>{/if}
       </div>
 
       {#each r.filter((x) => !x.skip) as ri}
@@ -566,7 +570,9 @@
     {#each r.filter((x) => !x.skip) as ri}
       <div class="vertical-header role" style="grid-area: goodwillrefusal-{cssesc(ri.name)};">
         {#each [getString(ri.goodwillRefusel ?? ''), ri.goodwillOutburst ? getString('Goodwill Outburst') : '', ri.scriptSpecified?.some((x) => x.name == 'world') ? getString('World Selection') : ''].filter((x) => x?.length > 0) as tag, i}
-          {#if i > 0} | {/if}
+          {#if i > 0}
+            |
+          {/if}
           {tag}
         {/each}
       </div>
@@ -602,6 +608,10 @@
   <div class="page overflow" />
 </template>
 <template id="incidences">
+  <div>
+    <!-- Workaround: template will not work with #each element as first element… (Don't know why) -->
+  </div>
+
   {#each ince as i}
     <article class="incident">
       <h1>
@@ -626,6 +636,10 @@
   {/each}
 </template>
 <template id="role">
+  <div>
+    <!-- Workaround: template will not work with #each element as first element… (Don't know why) -->
+  </div>
+
   {#each r.filter((x) => !x.combined) as ri}
     <article class="role">
       <h1>
@@ -649,6 +663,10 @@
   {/each}
 </template>
 <template id="tragedyRules">
+  <div>
+    <!-- Workaround: template will not work with #each element as first element… (Don't know why) -->
+  </div>
+
   {#if (specialRules?.filter((x) => x.length > 0).length ?? 0) > 0}
     <article class="tragedyRules">
       <h1>{getString('Special Rule')}</h1>

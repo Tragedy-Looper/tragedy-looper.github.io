@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
   import {
     getAllKeys,
@@ -45,7 +44,13 @@
     console.log('exportng');
     const localisation = getLocalisatio(lang);
     exportAllJson = JSON.stringify(
-      Object.fromEntries(allKeys.map((key) => [key, table[key]?.trim() ?? ''] as const).sort(([keya,a],[keyB,b])=>(a.length>0)==(b.length>0)? keya.localeCompare(keyB):b.length-a.length)),
+      Object.fromEntries(
+        allKeys
+          .map((key) => [key, table[key]?.trim() ?? ''] as const)
+          .sort(([keya, a], [keyB, b]) =>
+            a.length > 0 == b.length > 0 ? keya.localeCompare(keyB) : b.length - a.length
+          )
+      ),
       undefined,
       2
     );
@@ -99,12 +104,14 @@
         <col style="width: 70%;" />
       </colgroup>
       <thead>
-        <th>
-          {getString('Key', lang)}
-        </th>
-        <th>
-          {getString('Translation', lang)}
-        </th>
+        <tr>
+          <th>
+            {getString('Key', lang)}
+          </th>
+          <th>
+            {getString('Translation', lang)}
+          </th>
+        </tr>
       </thead>
       <tbody>
         {#each distinct(filterMissing ? missingTranslation : allKeys).sort() as e}

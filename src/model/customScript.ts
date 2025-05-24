@@ -2,7 +2,6 @@ import { writable, type Readable, type Writable, derived, type Unsubscriber, typ
 import { tragedySets, type TragedySetName, type TragedySet, getTragedySetRoles, hasCastOption } from "./tragedySets";
 import { keys, require } from "../misc";
 import { plots, type PlotName } from "./plots";
-import { init, noop } from "svelte/internal";
 import { roles, type RoleName, isRoleName } from "./roles";
 import { characters, isCharacterPlotless, type CharacterName, locations, type LocationName, isCharacterName } from "./characters";
 import { isScriptSpecified, type Option } from "./core";
@@ -10,7 +9,7 @@ import { incidents, type IncidentName, isFakeIncident, isMobIncident, isRepeated
 import type { Script } from "./script";
 
 
-
+const noop = () => { };
 
 
 function generateIncidents<TCharacters extends CharacterName>(script: CustomScript, maxDays: Readable<number>, availableIncidents: Readable<readonly IncidentName[]>, availableCharacters: Readable<readonly TCharacters[]>): ICustomScriptIncidentSelectionGroup<TCharacters> {

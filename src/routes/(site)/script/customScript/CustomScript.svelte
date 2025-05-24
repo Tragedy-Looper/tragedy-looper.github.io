@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { bind, object_without_properties, onMount } from 'svelte/internal';
   import { fromEntries, keys } from '../../../../misc';
   import { plots, type Plot, type PlotName } from '../../../../model/plots';
   import type { RoleName } from '../../../../model/roles';
@@ -21,6 +20,7 @@
   import ExportView from '../../../../view/exportView.svelte';
     import { saveScript } from '../../../../storage';
     import { derived } from 'svelte/store';
+    import { onMount } from 'svelte';
 
   const model = new CustomScript();
 

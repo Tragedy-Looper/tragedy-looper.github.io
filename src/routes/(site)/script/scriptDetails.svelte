@@ -19,8 +19,8 @@
   $: allAdditionamCharacters = alwaysTransmitCharacters.every((x) => x == true)
     ? true
     : alwaysTransmitCharacters.every((x) => x == false)
-    ? false
-    : undefined;
+      ? false
+      : undefined;
 
   function swtchAllCharacters() {
     const target = allAdditionamCharacters !== true;
@@ -58,7 +58,7 @@
       url: shareLink,
     };
     try {
-      const shareFunction = navigator.canShare ?? ((data:any)=>false);
+      const shareFunction = navigator.canShare ?? ((data: any) => false);
       const isSharable = shareFunction(shareData);
       if (isSharable) {
         try {
@@ -97,9 +97,7 @@
     >
       <a
         aria-disabled={script == undefined}
-        href={`${base}/script/customScript/?script=${encodeURIComponent(
-          JSON.stringify(script)
-        )}`}
+        href={`${base}/script/customScript/?script=${encodeURIComponent(JSON.stringify(script))}`}
         class="outline"
         style="grid-row: 1; grid-column: 2; margin-bottom: var(--spacing);"
         role="button">Edit</a
@@ -111,11 +109,9 @@
         class="outline"
         on:click={() =>
           share(
-            `${base}/script/?script=${encodeURIComponent(
-              JSON.stringify(script)
-            )}`,
+            `${base}/script/?script=${encodeURIComponent(JSON.stringify(script))}`,
             script.title,
-            "A Tragedy Looper Script"
+            'A Tragedy Looper Script'
           )}
         style="grid-row: 1; grid-column: 1;"
         >Share Script
@@ -125,19 +121,13 @@
         aria-disabled={script == undefined}
         class="outline"
         on:click={() =>
-          share(
-            `${base}/player/?${parameter}`,
-            "Player Aid",
-            "A Tragedy Looper Player Aid"
-          )}
+          share(`${base}/player/?${parameter}`, 'Player Aid', 'A Tragedy Looper Player Aid')}
         style=" grid-row: 2; grid-column: 1 / span 2"
         >Share Player Aid
       </button>
       <a
         aria-disabled={script == undefined}
-        href={`${base}/gm/?script=${encodeURIComponent(
-          JSON.stringify(script)
-        )}`}
+        href={`${base}/gm/?script=${encodeURIComponent(JSON.stringify(script))}`}
         class="outline"
         target="_blank"
         style="grid-row: 3; grid-column: 1 / span 2"
@@ -164,26 +154,26 @@
     {#each script.difficultySets as e}
       <div style="align-self: end; justify-self: start;">
         Loops: {e.numberOfLoops} / difficulty:
-        {#each Array.from({ length: e.difficulty }) as d}<div
+        {#each Array.from({ length: e.difficulty }) as d}
+          <div
             style="width: 1em; height: 1em; background-color: var(--primary); display: inline-block; border-radius: 1em; border: 1px solid var(--secondary)"
-          />{/each}{#each Array.from({ length: 8 - e.difficulty }) as d}<div
+          ></div>
+        {/each}{#each Array.from({ length: 8 - e.difficulty }) as d}<div
             style="width: 1em; height: 1em; background-color: transparent; border: 1px solid var(--secondary); display: inline-block; border-radius: 1em;"
-          />{/each} ({e.difficulty})
+          ></div>{/each} ({e.difficulty})
       </div>
     {/each}
   </header>
   <div>
     <strong>{script.tragedySet}</strong>
   </div>
-  <div
-    style="display: grid; justify-content: start; align-content:  baseline; gap: 0.3em;"
-  >
+  <div style="display: grid; justify-content: start; align-content:  baseline; gap: 0.3em;">
     <strong style="grid-column: 1; grid-row: 1;">Main Plot:</strong>
     <span style="grid-column: 2; grid-row: 1;">{script.mainPlot}</span>
     <strong style="grid-column: 1; grid-row: 2;">Sub Plot :</strong>
     {#each script.subPlots as s, i}
       <span style="grid-column: 2; grid-row: {i + 2};">
-        {#if typeof s == "string"}
+        {#if typeof s == 'string'}
           {s}
         {:else}
           {s[0]}
@@ -201,8 +191,10 @@
   <div>
     <table>
       <thead>
-        <th>Cast</th>
-        <th>Role</th>
+        <tr>
+          <th>Cast</th>
+          <th>Role</th>
+        </tr>
       </thead>
       <tbody>
         {#each Object.entries(script.cast) as [cast, role]}
@@ -230,9 +222,11 @@
   <div>
     <table>
       <thead>
-        <th>Day</th>
-        <th>Incident</th>
-        <th>Culprit</th>
+        <tr>
+          <th>Day</th>
+          <th>Incident</th>
+          <th>Culprit</th>
+        </tr>
       </thead>
       <tbody>
         {#each script.incidents as { day, incident, culprit }}
@@ -293,11 +287,7 @@
         {#each characterscomesInLater as a, i}
           <li>
             <lable>
-              <input
-                type="checkbox"
-                role="switch"
-                bind:checked={alwaysTransmitCharacters[i]}
-              />
+              <input type="checkbox" role="switch" bind:checked={alwaysTransmitCharacters[i]} />
               {a}
             </lable>
           </li>

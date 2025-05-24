@@ -19,11 +19,14 @@ const translation: Record<string, Record<string, string>> = data;
 
 
 
-export function getString(key: string | undefined, lang: string | undefined, ...params: { name: string, value: unknown }[]) {
+export function getString(key: string | undefined, lang: string | undefined, ...params: { name: string, value: unknown }[]) :string{
     if (!key) {
         return "";
     }
 
+    if(key.includes('|')){
+        return key.split('|').map(k => getString(k, lang, ...params)).join('|');
+    }
 
     key = key.trim()
     const toTest = getAllStrings(toCheck);
@@ -83,12 +86,12 @@ export function getAllKeys(): string[] {
 }
 function getAllStrings(obj: unknown): string[] {
     if (typeof obj === 'string') {
-        return [obj.trim()];
+        return obj.split('|').map(s => s.trim()).filter(s => s.length > 0);
     } else if (typeof obj === 'object' && obj !== null) {
         if (Array.isArray(obj)) {
             return obj.flatMap(getAllStrings);
         } else {
-            return Object.values(obj).flatMap(getAllStrings);
+            return [...Object.values(obj).flatMap(getAllStrings),...Object.keys(obj).flatMap(getAllStrings) ];
         }
     }
     return [];

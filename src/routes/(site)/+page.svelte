@@ -78,23 +78,11 @@
         )}</a
       >
     </p>
-     <div class="cards">
-    <Card
-      scale={0.3}
-      animated
-      card={undefined}
-    />
-    <Card
-      scale={0.3}
-      animated
-      card={undefined}
-    />
-    <Card
-      scale={0.3}
-      animated
-      card={undefined}
-    />
-  </div>
+    <div class="cards">
+      <Card scale={0.3} animated card={undefined} />
+      <Card scale={0.3} animated card={undefined} />
+      <Card scale={0.3} animated card={undefined} />
+    </div>
   </article>
   <article>
     <p>
@@ -150,16 +138,16 @@
     align-content: center;
     transform-style: preserve-3d;
     perspective: 1000px;
-    & > * {
+    & > :global(*) {
       transform: translateY(-13px) rotateY(-5deg);
     }
-    & > :first-child {
+    & > :global(:first-child) {
       transform: translateZ(-20px) translateX(20px) rotateY(-5deg) rotateZ(-15deg);
     }
-    & > :last-child {
+    & > :global(:last-child) {
       transform: translateZ(20px) translateX(-20px) rotateY(-5deg) rotateZ(15deg);
     }
-    & > :only-child {
+    & > :global(:only-child) {
       transform: rotateY(0deg) rotateZ(0deg);
     }
   }

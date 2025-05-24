@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { element, xlink_attr } from 'svelte/internal';
   import { getRoleOfCast, type Script } from '../../../model/script';
   import '@picocss/pico/css/pico.css';
   import { roles, type RoleName, type AbilityType } from '../../../model/roles';
@@ -118,11 +117,13 @@
 </hgroup>
 <table>
   <thead>
-    <th>Type</th>
-    <th>Character</th>
-    <th>Prerequiste</th>
-    <th>Description</th>
-    <th>Role / Plot / Incident</th>
+    <tr>
+      <th>Type</th>
+      <th>Character</th>
+      <th>Prerequiste</th>
+      <th>Description</th>
+      <th>Role / Plot / Incident</th>
+    </tr>
   </thead>
   <tbody>
     {#if showAll(scriptRoles).filter((x) => x.unkillable === true).length + showAll(abilities)
