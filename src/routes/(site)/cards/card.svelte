@@ -153,7 +153,7 @@
     --card-scale: ${$springScale};
     --translate-x: ${$springTranslate.x}px;
     --translate-y: ${$springTranslate.y}px;
-    --scale:{scale};
+    --scale:${scale};
 	`
     : '';
 </script>
