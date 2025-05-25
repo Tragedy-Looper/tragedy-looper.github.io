@@ -84,6 +84,9 @@ export function getStringForLanguage<TKey extends string | undefined>(key: TKey,
 
 }
 
+export function getDeployedLanguage(): string[] {
+    return ['en', ...Object.keys(translation).filter(x => x != 'en')];
+}
 export function getAllTranslationsForLanguage(lang: string) {
     const currentTranslation = { ...translation[lang], ...((browser && getLocalisatio(lang)) ? getLocalisatio(lang) : undefined) };
 

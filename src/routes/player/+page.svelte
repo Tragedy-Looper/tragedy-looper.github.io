@@ -6,15 +6,13 @@
   import type { TragedySetName } from '../../model/tragedySets';
   import { parseSearchForPlayerAid } from '../../serilezer';
   import './page.css';
-    import { getString, navigationLanguage } from '../(site)/+layout.svelte';
+  import { getString, languageOverride, navigationLanguage } from '../(site)/+layout.svelte';
+    import { getDeployedLanguage } from '../../translations';
 
   let searchParams: URLSearchParams | undefined;
 
-
   onMount(() => {
-
     navigationLanguage.set(navigator.language?.split('-')[0] ?? 'en');
-
 
     searchParams = new URLSearchParams(document.location.search);
     const pushState = history.pushState;
@@ -70,6 +68,18 @@
           >
         </li>
       {/if}
+      <li>
+        <input
+          list="languageOptions"
+          bind:value={$languageOverride}
+          placeholder="Language Override"
+        />
+        <datalist id="languageOptions">
+          {#each getDeployedLanguage() as lang}
+            <option value={lang}>{lang}</option>
+          {/each}
+        </datalist>
+      </li>
     </ul>
   </nav>
   <Table
@@ -115,9 +125,9 @@
     --pico-primary-focus: rgba(16, 149, 193, 0.125);
     --pico-primary-inverse: #fff;
 
-    --font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell',
-      'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji';
+    --font-family:
+      system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Noto Sans',
+      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --line-height: 1.5;
     --font-weight: 400;
     --font-size: 16px;
@@ -170,8 +180,11 @@
           line-height: var(--line-height);
           text-align: center;
           cursor: pointer;
-          transition: background-color var(--transition), border-color var(--transition),
-            color var(--transition), box-shadow var(--transition);
+          transition:
+            background-color var(--transition),
+            border-color var(--transition),
+            color var(--transition),
+            box-shadow var(--transition);
 
           &:is([aria-current], :hover, :active, :focus) {
             --background-color: var(--pico-primary-hover);
@@ -180,7 +193,8 @@
             --color: var(--pico-primary-inverse);
           }
           &:focus {
-            --box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
+            --box-shadow:
+              var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
               0 0 0 var(--outline-width) var(--pico-primary-focus);
           }
         }

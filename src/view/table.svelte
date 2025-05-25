@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onDestroy, onMount } from 'svelte';
   import { cssesc, distinct, hasProp, join, keys, require, showAll } from '../misc';
   import {
     type CharacterName,
@@ -14,9 +14,10 @@
   import { tragedySets, type TragedySet, type TragedySetName } from '../model/tragedySets';
   import Selection from './selection.svelte';
   import Ability from './Ability.svelte';
-  import { getString } from '../routes/(site)/+layout.svelte';
+  import { getString, languageOverride } from '../routes/(site)/+layout.svelte';
   import type { Role } from '../roles.g';
   import * as data from '../data';
+  import { browser } from '$app/environment';
 
   export let tragedySet: TragedySetName;
   export let cast: readonly CharacterName[];
@@ -27,6 +28,21 @@
   export let touchTarget = false;
 
   onMount(() => {
+    layout();
+  });
+
+  const subsrib = languageOverride.subscribe(() => {
+    layout();
+  });
+
+  onDestroy(() => {
+    subsrib();
+  });
+
+  function layout() {
+    if (!browser) {
+      return;
+    }
     const incidentTemplate = document.getElementById('incidences') as HTMLTemplateElement;
     const roleTemplate = document.getElementById('role') as HTMLTemplateElement;
     const tragedyRulesTemplate = document.getElementById('tragedyRules') as HTMLTemplateElement;
@@ -37,6 +53,11 @@
       const containers: HTMLElement[] = [3, 2, 1]
         .map((x) => `rest-${x}`)
         .map((id) => document.getElementById(id) as HTMLDivElement);
+
+      if (containers.some((x) => x == null)) {
+        console.error('Not all containers found', containers);
+        return;
+      }
 
       containers.forEach((c) => c.replaceChildren());
 
@@ -127,6 +148,10 @@
       const containers: HTMLElement[] = [1, 2, 3]
         .map((x) => `rest-${x}`)
         .map((id) => document.getElementById(id) as HTMLDivElement);
+      if (containers.some((x) => x == null)) {
+        console.error('Not all containers found', containers);
+        return;
+      }
 
       containers.forEach((c) => c.replaceChildren());
 
@@ -199,7 +224,7 @@
           newPage.appendChild(incident);
         });
     }
-  });
+  }
 
   function isInsilde(element: DOMRect, container: DOMRect): boolean {
     return (
