@@ -439,7 +439,9 @@ class CustomScriptRoleExclusiveSelection<T extends CharacterName> implements Cus
             const result = this.allCharacters.filter(x => otherSelections.length == 0 || !otherSelections.includes(x));
             return result;
         });
-        const current = get(dervid);
+        const current = get(dervid).toSorted((a, b) => {
+            return a.localeCompare(b);
+        });
         this._availableCharacters.set(dervid);
         const currentSelection = get(this.selectedCharacter);
         if (currentSelection == undefined) {
@@ -598,11 +600,11 @@ export class CustomScript {
             const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y].roles)));
             return allRoles.filter(x => !used.includes(x as any));
         });
-        this.allRoles = derived([this.tragedySet, this.selectedPlots], ([tg, ...selectedPlots]) => {
+        this.allRoles = derived([this.tragedySet], ([tg]) => {
             const allRoles = getTragedySetRoles(tg);
             return allRoles;
         });
-        this.usedRoles = derived([this.tragedySet, this.selectedPlots], ([tg, ...selectedPlots]) => {
+        this.usedRoles = derived([this.selectedPlots], ([...selectedPlots]) => {
             const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y].roles)));
             return used;
         });

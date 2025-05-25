@@ -1,22 +1,26 @@
 <script lang="ts">
-    import { derived } from 'svelte/store';
+  import { derived } from 'svelte/store';
   import { characters } from '../../../../model/characters';
   import type { AdditionalOptions } from '../../../../model/customScript';
 
-  export let option: AdditionalOptions;
+  // export let option: AdditionalOptions;
 
-  $: selection = option.value;
+  let { option }: { option: AdditionalOptions } = $props();
 
-  $: tragedySet = option.script.tragedySet;
-  $: selectodPlots = option.script.selectedPlots;
-  $: otherPlots = [...$tragedySet.mainPlots, ...$tragedySet.subPlots];
+  let selection = option.value;
 
-  $: incidents = derived( option.script.incidents,a=> a.toSorted((a,b)=> a.localeCompare(b)));
-  $: unusedRoles = derived( option.script.unusedRoles,a=> a.toSorted((a,b)=> a.localeCompare(b)));
-  $: usedRoles = derived( option.script.usedRoles,a=> a.toSorted((a,b)=> a.localeCompare(b)));
-  $: allRoles = derived( option.script.allRoles,a=> a.toSorted((a,b)=> a.localeCompare(b)));
+  let tragedySet = option.script.tragedySet;
+  let selectodPlots = option.script.selectedPlots;
+  let otherPlots = [...$tragedySet.mainPlots, ...$tragedySet.subPlots];
 
-  $: usedCharacters = option.script.usedCharacters;
+  let incidents = derived(option.script.incidents, (a) => a.toSorted((a, b) => a.localeCompare(b)));
+  let unusedRoles = derived(option.script.unusedRoles, (a) =>
+    a.toSorted((a, b) => a.localeCompare(b))
+  );
+  let usedRoles = derived(option.script.usedRoles, (a) => a.toSorted((a, b) => a.localeCompare(b)));
+  let allRoles = derived(option.script.allRoles, (a) => a.toSorted((a, b) => a.localeCompare(b)));
+
+  let usedCharacters = option.script.usedCharacters;
 
   let viewOptional = false;
 </script>
@@ -27,7 +31,7 @@
       <input
         type="checkbox"
         role="switch"
-        on:change={(e) => ($selection = undefined)}
+        onchange={(e) => ($selection = undefined)}
         bind:checked={viewOptional}
       />
     {/if}
