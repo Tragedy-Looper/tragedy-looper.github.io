@@ -254,16 +254,14 @@
     }
   }
 
-  details{
+  details {
     summary {
       cursor: pointer;
       font-weight: bold;
       color: var(--pico-primary);
-      &:hover{
+      &:hover {
         color: var(--pico-primary-hover);
       }
-    }
-    summary::marker {
     }
   }
 
