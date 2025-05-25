@@ -526,10 +526,10 @@
         {$getString(ri.name)}
         {#if tags.length > 0}
           <small>
-            (
-            {tags.map((x) => $getString(x)).join(', ')}
-
-            )
+            {#each tags as tag, i}
+              <br />
+              {$getString(tag)}
+            {/each}
           </small>
         {/if}
       </div>
