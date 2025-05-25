@@ -245,7 +245,7 @@ function findAllJsonFiles(dir: string, ...filename: string[]): string[] {
     return results;
 }
 
-function removeCommentsFromJson(text: string): string {
+export function removeCommentsFromJson(text: string): string {
 
     // run over the text for the first occurence of a //, but skip any that are inside a string
     let inString = false;
@@ -294,7 +294,7 @@ function collectNamesFromJsonFiles(type: string): Set<string> {
     const names = new Set<string>();
     for (const file of files) {
         const text = fs.readFileSync(file, 'utf-8');
-        
+
         // Remove comments if it's a JSONC file that is not in a string
         const jsonText = removeCommentsFromJson(text);
         const data = JSON.parse(jsonText);
@@ -578,7 +578,7 @@ function generateCharactersSchema({ characterNames }: Names) {
 }
 
 // 5. Scripts Schema (Boilerplate, Details je nach Struktur)
-function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, RolaData, PlotData, IncidentData, roleNames: allRoles, characterNames, namesPerTragedySet }: Names) {
+function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, RolaData, PlotData, incidentNames, IncidentData, roleNames: allRoles, characterNames, namesPerTragedySet }: Names) {
     return {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "title": "Scripts",
@@ -593,8 +593,15 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                         ...[...tragedySetNames].map((tragedySet) => {
                             const roleNamesInSet = namesPerTragedySet[tragedySet].roles;
 
-                            const incidentsWithoutFake = Array.from(namesPerTragedySet[tragedySet].incidentNames).filter((name) => !IncidentData[name].faked);
-                            const incidentsWithFake = Array.from(namesPerTragedySet[tragedySet].incidentNames).filter((name) => IncidentData[name].faked);
+                            const incidentsInTragedy = {
+                                incidentsWithoutFake: Array.from(namesPerTragedySet[tragedySet].incidentNames).filter((name) => !IncidentData[name].faked),
+                                incidentsWithFake: Array.from(namesPerTragedySet[tragedySet].incidentNames).filter((name) => IncidentData[name].faked)
+                            };
+
+                            const incidentsNotInTragedySet = {
+                                incidentsWithFake: Array.from(incidentNames).filter((name) => !namesPerTragedySet[tragedySet].incidentNames.has(name) && IncidentData[name].faked),
+                                incidentsWithoutFake: Array.from(incidentNames).filter((name) => !namesPerTragedySet[tragedySet].incidentNames.has(name) && !IncidentData[name].faked),
+                            }
 
                             const plotsWithScriptSpecified = new Set(Object.values(PlotData).filter(x => x.scriptSpecified?.length > 0).map(x => x.name));
                             const plotsWithoutScriptSpecified = new Set(Object.values(PlotData).filter(x => (x.scriptSpecified?.length ?? 0) == 0).map(x => x.name));
@@ -717,78 +724,99 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                     "incidents": {
                                         "type": "array", "items": {
                                             "oneOf": [
-                                                ...[{
-                                                    "type": "object",
-                                                    "additionalProperties": false,
-                                                    "properties": {
-                                                        "day": { "type": "number" },
-                                                        "incident":
-                                                        {
-                                                            "type": "string",
-                                                            "enum": incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name))
+                                                ...[incidentsInTragedy, incidentsNotInTragedySet].flatMap(({ incidentsWithoutFake, incidentsWithFake }, index) => ([
+                                                    ...[{
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "day": { "type": "number" },
+                                                            ...Object.fromEntries([["notTragedySpecified", {
+                                                                "type": "boolean",
+                                                                "enum": [true]
+                                                            }]].filter(() => index === 1)),
+                                                            "incident":
+                                                            {
+                                                                "type": "string",
+                                                                "enum": incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name))
+                                                            },
+                                                            "culprit": { "type": "string", "enum": Array.from(characterNames) }
                                                         },
-                                                        "culprit": { "type": "string", "enum": Array.from(characterNames) }
-                                                    },
-                                                    "required": ["incident", "culprit", 'day'],
-                                                } as const].filter(() => incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name)).length > 0),
-                                                ...[{
-                                                    "type": "object",
-                                                    "additionalProperties": false,
-                                                    "properties": {
-                                                        "day": { "type": "number" },
-                                                        "incident":
-                                                        {
-                                                            "type": "string",
-                                                            "enum": incidentsWithoutFake.filter((name) => names.mobIncidentNames.has(name))
+                                                        "required": index === 0 ? ["incident", "culprit", 'day'] : ["incident", "culprit", 'day', 'notTragedySpecified'],
+                                                    } as const].filter(() => incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name)).length > 0),
+                                                    ...[{
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "day": { "type": "number" },
+                                                            ...Object.fromEntries([["notTragedySpecified", {
+
+                                                                "type": "boolean",
+                                                                "enum": [true]
+
+                                                            }]].filter(() => index === 1)),
+                                                            "incident":
+                                                            {
+                                                                "type": "string",
+                                                                "enum": incidentsWithoutFake.filter((name) => names.mobIncidentNames.has(name))
+                                                            },
+                                                            "culprit": { "type": "string", "enum": locations }
                                                         },
-                                                        "culprit": { "type": "string", "enum": locations }
-                                                    },
-                                                    "required": ["incident", "culprit", "day"],
-                                                } as const].filter(() => incidentsWithoutFake.filter((name) => names.mobIncidentNames.has(name)).length > 0),
+                                                        "required": index === 0 ? ["incident", "culprit", 'day'] : ["incident", "culprit", 'day', 'notTragedySpecified'],
+                                                    } as const].filter(() => incidentsWithoutFake.filter((name) => names.mobIncidentNames.has(name)).length > 0),
 
 
-                                                ...[{
-                                                    "type": "object",
-                                                    "additionalProperties": false,
-                                                    "properties": {
-                                                        "day": { "type": "number" },
-                                                        "incident":
-                                                        {
-                                                            type: "array",
-                                                            "items": [
-                                                                {
-                                                                    "type": "string",
-                                                                    "enum": incidentsWithFake.filter((name) => !names.mobIncidentNames.has(name))
-                                                                }, {
-                                                                    "type": "string",
-                                                                    "enum": incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name))
-                                                                }]
+                                                    ...[{
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "day": { "type": "number" },
+                                                            ...Object.fromEntries([["notTragedySpecified", {
+                                                                "type": "boolean",
+                                                                "enum": [true]
+                                                            }]].filter(() => index === 1)),
+                                                            "incident":
+                                                            {
+                                                                type: "array",
+                                                                "items": [
+                                                                    {
+                                                                        "type": "string",
+                                                                        "enum": incidentsWithFake.filter((name) => !names.mobIncidentNames.has(name))
+                                                                    }, {
+                                                                        "type": "string",
+                                                                        "enum": incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name))
+                                                                    }]
+                                                            },
+                                                            "culprit": { "type": "string", "enum": Array.from(characterNames) }
                                                         },
-                                                        "culprit": { "type": "string", "enum": Array.from(characterNames) }
-                                                    },
-                                                    "required": ["incident", "culprit", 'day'],
-                                                } as const].filter(() => incidentsWithFake.filter((name) => !names.mobIncidentNames.has(name)).length > 0),
-                                                ...[{
-                                                    "type": "object",
-                                                    "additionalProperties": false,
-                                                    "properties": {
-                                                        "day": { "type": "number" },
-                                                        "incident":
-                                                        {
-                                                            type: "array",
-                                                            "items": [
-                                                                {
-                                                                    "type": "string",
-                                                                    "enum": incidentsWithFake.filter((name) => !names.mobIncidentNames.has(name))
-                                                                }, {
-                                                                    "type": "string",
-                                                                    "enum": incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name))
-                                                                }]
+                                                        "required": index === 0 ? ["incident", "culprit", 'day'] : ["incident", "culprit", 'day', 'notTragedySpecified'],
+                                                    } as const].filter(() => incidentsWithFake.filter((name) => !names.mobIncidentNames.has(name)).length > 0),
+                                                    ...[{
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "day": { "type": "number" },
+                                                            ...Object.fromEntries([["notTragedySpecified", {
+                                                                "type": "boolean",
+                                                                "enum": [true]
+                                                            }]].filter(() => index === 1)),
+                                                            "incident":
+                                                            {
+                                                                type: "array",
+                                                                "items": [
+                                                                    {
+                                                                        "type": "string",
+                                                                        "enum": incidentsWithFake.filter((name) => !names.mobIncidentNames.has(name))
+                                                                    }, {
+                                                                        "type": "string",
+                                                                        "enum": incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name))
+                                                                    }]
+                                                            },
+                                                            "culprit": { "type": "string", "enum": locations }
                                                         },
-                                                        "culprit": { "type": "string", "enum": locations }
-                                                    },
-                                                    "required": ["incident", "culprit", "day"],
-                                                } as const].filter(() => incidentsWithFake.filter((name) => names.mobIncidentNames.has(name)).length > 0)
+                                                        "required": index === 0 ? ["incident", "culprit", 'day'] : ["incident", "culprit", 'day', 'notTragedySpecified'],
+                                                    } as const].filter(() => incidentsWithFake.filter((name) => names.mobIncidentNames.has(name)).length > 0)
+
+                                                ] as const))
 
 
                                             ]

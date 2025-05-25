@@ -1,6 +1,7 @@
 import 'path';
 import fs from 'fs';
 import path from 'path';
+import { removeCommentsFromJson } from './generateTragedysSchema';
 
 
 const types = ['characters', 'scripts', 'plots', 'roles', 'tragedys', 'incidents'] as const;
@@ -10,9 +11,11 @@ const data =
     Promise.all(
         dirs.flatMap(folder => types.map(t => [folder, t] as const))
             .map(([folder, type]) => [`./data/${folder}/${type}.json`, type] as const)
+            .flatMap(([scriptLocation, type]) => [[scriptLocation, type] as const, [`${scriptLocation}c`, type] as const])
             .filter(([x]) => fs.existsSync(x))
             .map(([scriptLocation, type]) => new Promise<readonly [string, typeof types[number]]>((resolve, reject) => {
                 fs.readFile(scriptLocation, 'utf-8', (err, data) => {
+                    data = removeCommentsFromJson(data);
                     if (err !== null) {
                         reject(err);
                     } else {
