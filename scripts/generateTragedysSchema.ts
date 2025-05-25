@@ -229,27 +229,75 @@ WriteSchema(generateScriptsSchema(names), 'scripts');
 WriteSchema(generateTragedySetsSchema(names), 'tragedys');
 
 // Hilfsfunktion: Alle Dateien mit bestimmtem Namen rekursiv in einem Verzeichnis finden
-function findAllJsonFiles(dir: string, filename: string): string[] {
+function findAllJsonFiles(dir: string, ...filename: string[]): string[] {
+
     let results: string[] = [];
     const list = fs.readdirSync(dir);
     for (const file of list) {
         const filePath = path.join(dir, file);
         const stat = fs.statSync(filePath);
         if (stat && stat.isDirectory()) {
-            results = results.concat(findAllJsonFiles(filePath, filename));
-        } else if (file === filename) {
+            results = results.concat(findAllJsonFiles(filePath, ...filename));
+        } else if (filename.includes(file)) {
             results.push(filePath);
         }
     }
     return results;
 }
 
+function removeCommentsFromJson(text: string): string {
+
+    // run over the text for the first occurence of a //, but skip any that are inside a string
+    let inString = false;
+    let inComment = false;
+    let result = '';
+    for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        const nextChar = text[i + 1];
+
+        // Handle string start/end (ignore escaped quotes)
+        if (!inComment && char === '"' && (i === 0 || text[i - 1] !== '\\')) {
+            inString = !inString;
+            result += char;
+        }
+        // Handle single-line comment //
+        else if (!inString && char === '/' && nextChar === '/') {
+            inComment = true;
+            i++; // skip next character
+        }
+        // Handle multi-line comment /*
+        else if (!inString && char === '/' && nextChar === '*') {
+            inComment = true;
+            let endIdx = text.indexOf('*/', i + 2);
+            if (endIdx === -1) {
+                // Unterminated comment, skip rest
+                break;
+            }
+            i = endIdx + 1; // skip to end of comment
+        }
+        // End single-line comment at newline
+        else if (inComment && char === '\n') {
+            inComment = false;
+            result += char;
+        }
+        // Not in comment, add char
+        else if (!inComment) {
+            result += char;
+        }
+        // If in comment, skip char (except for newline above)
+    }
+    return result;
+}
 
 function collectNamesFromJsonFiles(type: string): Set<string> {
-    const files = findAllJsonFiles(dataDir, `${type}.json`);
+    const files = findAllJsonFiles(dataDir, `${type}.json`, `${type}.jsonc`);
     const names = new Set<string>();
     for (const file of files) {
-        const data = JSON.parse(fs.readFileSync(file, 'utf-8'));
+        const text = fs.readFileSync(file, 'utf-8');
+        
+        // Remove comments if it's a JSONC file that is not in a string
+        const jsonText = removeCommentsFromJson(text);
+        const data = JSON.parse(jsonText);
         if (Array.isArray(data)) {
             for (const entry of data) {
                 if (typeof entry.name === 'string') {
@@ -270,9 +318,9 @@ function collectNamesFromJsonFiles(type: string): Set<string> {
 }
 
 function collectDataFromJsonFiles(type: string): any[] {
-    const files = findAllJsonFiles(dataDir, `${type}.json`);
+    const files = findAllJsonFiles(dataDir, `${type}.json`, `${type}.jsonc`);
     return files.flatMap((file) => {
-        const data = JSON.parse(fs.readFileSync(file, 'utf-8'));
+        const data = JSON.parse(removeCommentsFromJson(fs.readFileSync(file, 'utf-8')));
         if (Array.isArray(data)) {
             return data;
         } else if (typeof data == 'object' && type in data && Array.isArray(data[type])) {
