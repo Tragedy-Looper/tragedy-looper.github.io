@@ -5,66 +5,78 @@
   import { characters, locations } from '../../../model/characters';
   import Iron from './iron.svelte';
   import Card from './card.svelte';
-    import { getString } from '../+layout.svelte';
+  import { getString } from '../+layout.svelte';
+  import { type PageProps } from './$types';
 
+  let { data }: PageProps = $props();
 
+  let cards_per_page = $state(8);
 
-  let cards_per_page = 8;
+  let page_width = $state(29.7);
+  let page_height = $state(21);
+  let page_margin = $state(0.5);
 
-  let page_width = 29.7;
-  let page_height = 21;
-  let page_margin = 0.5;
+  let printCardBacks = $state(true);
 
-  let printCardBacks = true;
+  let selectedCards: string[] = $state([]);
+  let selectedImage: Record<string, string> = $state(
+    Object.fromEntries(
+      Object.entries(data.characterImages).map(([key, images]) => [key, images[0]])
+    )
+  );
 
-  let selectedCards: string[] = [];
+  let cards = $derived(
+    Object.entries(characters)
+      .toSorted(([a], [b]) => $getString(a).localeCompare($getString(b)))
+      .map(([key, value]) => {
+        return {
+          type: 'character' as const,
+          ...value,
+          forbiddenLocation: 'forbiddenLocation' in value ? value.forbiddenLocation : [],
+          name: $getString(value.name),
+          key: value.name,
+          gender:
+            (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
+            (value.tags.includes('girl' as never) || value.tags.includes('woman' as never))
+              ? ('both' as const)
+              : value.tags.includes('boy' as never) || value.tags.includes('man' as never)
+                ? ('male' as const)
+                : value.tags.includes('girl' as never) || value.tags.includes('woman' as never)
+                  ? ('female' as const)
+                  : ('diverse' as const),
+          tags: value.tags.map($getString).toSorted((a, b) => a.localeCompare(b)),
+          image: selectedImage[key],
+          abilities: value.abilities.map((ability) => {
+            return {
+              ...ability,
+              timesPerLoop: 'timesPerLoop' in ability ? ability.timesPerLoop : 0,
+              immuneToGoodwillRefusel:
+                'immuneToGoodwillRefusel' in ability ? ability.immuneToGoodwillRefusel : false,
+              restrictedToLocation:
+                'restrictedToLocation' in ability ? ability.restrictedToLocation : [],
 
+              description: $getString(ability.description),
+            };
+          }),
+        };
+      })
+  );
 
-  $: cards = Object.entries(characters)
-    .toSorted(([a], [b]) => $getString(a).localeCompare($getString(b)))
-    .map(([key, value]) => {
-      return {
-        type: 'character' as const,
-        ...value,
-        forbiddenLocation: 'forbiddenLocation' in value ? value.forbiddenLocation : [],
-        name: $getString(value.name),
-        key: value.name,
-        gender:
-          (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
-          (value.tags.includes('girl' as never) || value.tags.includes('woman' as never))
-            ? ('both' as const)
-            : value.tags.includes('boy' as never) || value.tags.includes('man' as never)
-            ? ('male' as const)
-            : value.tags.includes('girl' as never) || value.tags.includes('woman' as never)
-            ? ('female' as const)
-            : ('diverse' as const),
-        tags: value.tags.map($getString).toSorted((a, b) => a.localeCompare(b)),
-        image: `${base}/cards/characters/${key.toLocaleLowerCase().replaceAll('?', '')}.png`,
-        abilities: value.abilities.map((ability) => {
-          return {
-            ...ability,
-            timesPerLoop: 'timesPerLoop' in ability ? ability.timesPerLoop : 0,
-            immuneToGoodwillRefusel:
-              'immuneToGoodwillRefusel' in ability ? ability.immuneToGoodwillRefusel : false,
-            restrictedToLocation:
-              'restrictedToLocation' in ability ? ability.restrictedToLocation : [],
-
-            description: $getString(ability.description),
-          };
-        }),
-      };
-    });
-
-  $: pages = cards
-    .filter((x) => selectedCards.includes(x.key))
-    .reduce((acc, card, index) => {
-      const pageIndex = Math.floor(index / cards_per_page);
-      if (!acc[pageIndex]) {
-        acc[pageIndex] = [];
-      }
-      acc[pageIndex].push(card);
-      return acc;
-    }, [] as (typeof cards)[]);
+  let pages = $derived(
+    cards
+      .filter((x) => selectedCards.includes(x.key))
+      .reduce(
+        (acc, card, index) => {
+          const pageIndex = Math.floor(index / cards_per_page);
+          if (!acc[pageIndex]) {
+            acc[pageIndex] = [];
+          }
+          acc[pageIndex].push(card);
+          return acc;
+        },
+        [] as (typeof cards)[]
+      )
+  );
 
   onMount(() => {
     selectedCards = cards.map((x) => x.key);
@@ -73,57 +85,82 @@
 
 <div class="settings container screen">
   <article>
-    <h2>Print Settings</h2>
-    <div role="group">
-      <label>
-        Cards per page
-        <input type="number" bind:value={cards_per_page} min="1" max="20" />
-      </label>
-      <label>
-        Page width (cm)
-        <input type="number" bind:value={page_width} min="1" max="50" />
-      </label>
-      <label>
-        Page height (cm)
-        <input type="number" bind:value={page_height} min="1" max="50" />
-      </label>
-      <label>
-        Page margin (cm)
-        <input type="number" bind:value={page_margin} min="0" max="5" />
-      </label>
-    </div>
+    <details>
+      <summary>Print Settings</summary>
+      <div role="group">
+        <label>
+          Cards per page
+          <input type="number" bind:value={cards_per_page} min="1" max="20" />
+        </label>
+        <label>
+          Page width (cm)
+          <input type="number" bind:value={page_width} min="1" max="50" />
+        </label>
+        <label>
+          Page height (cm)
+          <input type="number" bind:value={page_height} min="1" max="50" />
+        </label>
+        <label>
+          Page margin (cm)
+          <input type="number" bind:value={page_margin} min="0" max="5" />
+        </label>
+      </div>
 
-    <label>
-      Print card backs
-      <input type="checkbox" bind:checked={printCardBacks} role="switch" />
-    </label>
+      <label>
+        Print card backs
+        <input type="checkbox" bind:checked={printCardBacks} role="switch" />
+      </label>
+    </details>
 
-    <div>
-      {#if selectedCards.length == 0}
-        <p>No Cards selected for print. Select cards to print</p>
-      {:else if selectedCards.length == cards.length}
-        <p>All cards selected</p>
-      {:else}
-        <p>{selectedCards.length} of {cards.length} cards selected</p>
-      {/if}
-    </div>
+    <details>
+      <summary>Card selection</summary>
+      <div>
+        {#if selectedCards.length == 0}
+          <p>No Cards selected for print. Select cards to print</p>
+        {:else if selectedCards.length == cards.length}
+          <p>All cards selected</p>
+        {:else}
+          <p>{selectedCards.length} of {cards.length} cards selected</p>
+        {/if}
+      </div>
 
-    <div role="group">
-      <button
-        class:outline={selectedCards.length != 0}
-        on:click={() => (selectedCards = cards.map((x) => x.key))}>Select All</button
-      >
-      <button
-        class:outline={selectedCards.length != cards.length}
-        on:click={() => (selectedCards = [])}>Deselect All</button
-      >
-      <button
-        class="outline"
-        on:click={() =>
-          (selectedCards = cards.map((x) => x.key).filter((x) => !selectedCards.includes(x)))}
-        >Invert selection</button
-      >
-    </div>
+      <div role="group">
+        <button
+          class:outline={selectedCards.length != 0}
+          onclick={() => (selectedCards = cards.map((x) => x.key))}>Select All</button
+        >
+        <button
+          class:outline={selectedCards.length != cards.length}
+          onclick={() => (selectedCards = [])}>Deselect All</button
+        >
+        <button
+          class="outline"
+          onclick={() =>
+            (selectedCards = cards.map((x) => x.key).filter((x) => !selectedCards.includes(x)))}
+          >Invert selection</button
+        >
+      </div>
+    </details>
+
+    <details>
+      <summary>{$getString('Alternate character images')}</summary>
+
+      {#each Object.entries(data.characterImages).filter(([, x]) => x.length > 1) as [key, images]}
+        <div>
+          <strong>{$getString(key)}</strong>
+          {selectedImage[key]}
+          <div class="image-selection">
+            {#each images as image}
+              <label>
+                <input type="radio" name="phase" bind:group={selectedImage[key]} value={image} />
+                <img src={`${base}${image}`} alt={$getString(key)} />
+              </label>
+            {/each}
+          </div>
+        </div>
+      {/each}
+    </details>
+
     <div>
       <p>
         Use the <strong>Print</strong> button of your browser (default shortcut <kbd>Ctrl</kbd>+<kbd
@@ -210,11 +247,23 @@
     .cardholder > div {
       padding: 0.35cm 0.2cm;
       color: white;
-     
     }
 
     .cardholder {
       gap: 0;
+    }
+  }
+
+  details{
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: var(--pico-primary);
+      &:hover{
+        color: var(--pico-primary-hover);
+      }
+    }
+    summary::marker {
     }
   }
 
@@ -238,6 +287,41 @@
     max-width: 100%;
   }
 
+  .image-selection {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    label {
+      input {
+        display: none;
+      }
+      &:has(input:checked) {
+        img {
+          filter: drop-shadow(0 0 5px var(--pico-primary));
+        }
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+
+      align-self: end;
+
+      img {
+        border-radius: 4px;
+        filter: drop-shadow(0 0 5px var(--pico-secondary));
+
+        max-height: 200px;
+        max-width: 200px;
+        object-fit: contain;
+        object-position: bottom center;
+      }
+    }
+  }
 
   label.card {
     & > input {
