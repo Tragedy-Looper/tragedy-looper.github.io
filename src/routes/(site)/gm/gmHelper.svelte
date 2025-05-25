@@ -143,7 +143,7 @@
           <td>
             {$getString(map.character) ?? ''}
           </td>
-          <td />
+          <td></td>
           <td> {$getString("This Character can't die")} </td>
           <td>
             {$getString(map.role) ?? ''}
@@ -432,7 +432,7 @@
           <td>
             {$getString(map.character) ?? ''}
           </td>
-          <td />
+          <td></td>
           <td> {$getString('Refuse Goodwill Ability')} </td>
           <td>
             {$getString(map.role) ?? ''}

@@ -153,6 +153,7 @@
 
 <div class:card__holder={animated} style={dynamicStyles} class="top">
   <div class="card__translater">
+    <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div
       class="card__rotator"
       on:pointermove={interact}
@@ -171,8 +172,8 @@
       >
         {#if card}
           <img src="{base}/cards/general/background.png" alt="Character" class="back" />
-          <div class="card__shine back transformable" />
-          <div class="card__glare back transformable" />
+          <div class="card__shine back transformable"></div>
+          <div class="card__glare back transformable"></div>
 
           <img src={card.image} alt="Character" class="back image" />
           <img src="{base}/cards/general/{card.gender}.png" alt="Cardbackground" class="back" />
@@ -255,8 +256,8 @@
           </ul>
         {:else}
           <img src="{base}/cards/general/cardback.png" alt="Empty" class="back" />
-          <div class="card__shine back transformable" />
-          <div class="card__glare back transformable" />
+          <div class="card__shine back transformable"></div>
+          <div class="card__glare back transformable"></div>
         {/if}
       </div>
     </div>
@@ -433,13 +434,7 @@
             calc(1px * var(--scale)) calc(1px * var(--scale)) calc(2px * var(--scale)) #000
           );
         }
-        .diamond {
-          height: calc(1cm * var(--scale));
-          fill: #ddd;
-          filter: drop-shadow(
-            calc(1px * var(--scale)) calc(1px * var(--scale)) calc(2px * var(--scale)) #000
-          );
-        }
+
         div {
           display: inline-block;
           padding: calc(0.01cm * var(--scale)) calc(0.2cm * var(--scale));

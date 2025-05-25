@@ -579,13 +579,13 @@
       class="overflow"
       id="rest-1"
       style="grid-area: rest-1; margin-top: 1px; margin-left: 1px;"
-    />
-    <div class="overflow" id="rest-2" style="grid-area: rest-2; margin-top:1px; margin-left:1px;" />
+    ></div>
+    <div class="overflow" id="rest-2" style="grid-area: rest-2; margin-top:1px; margin-left:1px;" ></div>
     <div
       class="overflow"
       id="rest-3"
       style="grid-area: rest-3; margin-left: 1px; margin-top: 1px;"
-    />
+    ></div>
 
     <!-- <div
 			style="background-color: green; grid-row-start: role-char-{cssesc(r[0].name)}-{cssesc(
@@ -602,7 +602,7 @@
 </div>
 
 <template id="newPage">
-  <div class="page overflow" />
+  <div class="page overflow" ></div>
 </template>
 <template id="incidences">
   <div>
@@ -791,10 +791,7 @@
   .rules {
     max-width: var(--rule-width);
   }
-  .vertical-header.rules {
-    max-width: unset;
-    max-height: var(--rule-width);
-  }
+
 
   .role-char {
     background-color: var(--character-background-color-light);

@@ -210,9 +210,7 @@
     .cardholder > div {
       padding: 0.35cm 0.2cm;
       color: white;
-      h2 {
-        color: #e1e6eb;
-      }
+     
     }
 
     .cardholder {
@@ -240,32 +238,6 @@
     max-width: 100%;
   }
 
-  // @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
-  li {
-    list-style: none;
-  }
-  .fancy-text {
-    display: inline-block;
-    padding: 0.5em 1em;
-    font-family: 'UnifrakturCook', serif;
-    font-size: 2rem;
-    color: #ffe68c;
-    text-shadow: 0 0 4px #fff9c4, 1px 1px 2px #000;
-
-    background: linear-gradient(to right, #204850, #3b7a75, #204850);
-    border-left: 5px solid #aaa;
-    border-right: 5px solid #aaa;
-    border-image: linear-gradient(to bottom, #ccc, #444) 1;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  }
-
-  body {
-    background: #0c0c1c;
-    color: white;
-    text-align: center;
-    padding-top: 5em;
-  }
 
   label.card {
     & > input {

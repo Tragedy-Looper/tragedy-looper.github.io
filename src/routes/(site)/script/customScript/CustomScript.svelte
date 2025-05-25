@@ -18,9 +18,9 @@
   import { goto } from '$app/navigation';
   import { base } from '$app/paths';
   import ExportView from '../../../../view/exportView.svelte';
-    import { saveScript } from '../../../../storage';
-    import { derived } from 'svelte/store';
-    import { onMount } from 'svelte';
+  import { saveScript } from '../../../../storage';
+  import { derived } from 'svelte/store';
+  import { onMount } from 'svelte';
 
   const model = new CustomScript();
 
@@ -29,7 +29,9 @@
   const mainPlots = model.mainPlots;
   const subPlots = model.subPlots;
 
-  const rolesGroup = derived(model.roles, a=>a.toSorted((a,b)=> a.role.localeCompare(b.role)));
+  const rolesGroup = derived(model.roles, (a) =>
+    a.toSorted((a, b) => a.role.localeCompare(b.role))
+  );
   const days = model.daysPerLoop;
 
   const title = model.title;
@@ -65,7 +67,7 @@
 
   function save() {
     const data = model.export();
-	saveScript(data);
+    saveScript(data);
     const json = JSON.stringify(data);
     // window.localStorage.setItem(data.title, json);
     goto(`${base}/script/?script=${encodeURIComponent(json)}`);
@@ -79,7 +81,7 @@
     <textarea
       bind:value={importJson}
       style="height: calc(100vh - 10rem); width: calc(100vw -  2 * var(--pico-block-spacing-horizontal))"
-    />
+    ></textarea>
     <div class="grid">
       <button
         disabled={!importJson}
@@ -152,16 +154,16 @@
 <Incedent incedentGroup={model.incidentGroup} />
 
 <h5>Special Rules</h5>
-<textarea bind:value={$specialRules} />
+<textarea bind:value={$specialRules}></textarea>
 
 <h5>Specifics</h5>
 
-<textarea bind:value={$specifics} />
+<textarea bind:value={$specifics}></textarea>
 
 <h5>Story</h5>
-<textarea bind:value={$story} />
+<textarea bind:value={$story}></textarea>
 <h5>Hints for the Mastermind</h5>
-<textarea bind:value={$mastermindHints} />
+<textarea bind:value={$mastermindHints}></textarea>
 
 <div class="grid">
   <button

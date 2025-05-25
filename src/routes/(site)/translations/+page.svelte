@@ -118,7 +118,7 @@
           <tr>
             <td>{e}</td>
             <td>
-              <textarea bind:value={table[e]} />
+              <textarea bind:value={table[e]} ></textarea>
             </td>
           </tr>
         {/each}
