@@ -46,8 +46,10 @@ You can also write the script as text in JSON format (see below).
 Every data is stored a JSON files, and can be extended by just adding more files or extend the existing. Every Type of data resides in its own file. (`characters.json`, `incidents.json`, `plots.json`, `roles.json`, `scripts.json`, `tragedys.json`) And for every type there exists a JSON schema to validate it and enable auto completion.  The JSON schema files will be created when `npm i` is called or `npm run generate-schema`.
 
 When creating new tragedy sets or scripts, you should be aware that those depend on the others.
-If you add a new incident in an `inident.json` it will only be recognized in the tragedy set after regenerationg the schemas agin (with the above commands).
+If you add a new incident in an `inident.json` it will only be recognized in the tragedy set after regenerationg the schemas agin (with the above commands) and change to the dev schema at the top of the file.
 
+You can also use the github editor (hitting <kbd>.</kbd>) to have the expirience of autocomplete and validation. However in that case,
+you can't use new roles or incidents, since the schemas will not be updated.
 
 ## What's Next?
 
