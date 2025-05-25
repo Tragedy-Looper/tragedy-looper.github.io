@@ -14,6 +14,8 @@ const toCheck = [characters, incidents, plots, roles, tragedySets, scripts.flatM
     ...ui_strings,
 ];
 
+const allStrings = getAllStrings(toCheck);
+
 const missingInToCheck: Set<string> = new Set();
 
 const translation: Record<string, Record<string, string>> = data;
@@ -86,7 +88,7 @@ export function getAllTranslationsForLanguage(lang: string) {
 
 
     if (lang == 'en') {
-        getAllStrings(toCheck).filter(x => x.length > 0).forEach(key => {
+        allStrings.filter(x => x.length > 0).forEach(key => {
             if (currentTranslation[key] == undefined || currentTranslation[key].length == 0) {
                 currentTranslation[key] = key;
             }
@@ -101,13 +103,13 @@ export function getMissingForLanguage(lang: string) {
     const currentTranslation = translation[lang] ?? {};
 
     const alreadyTranslated = Object.keys(currentTranslation ?? {}).filter(key => currentTranslation[key]?.length ?? 0 > 0);
-    const neededKeys = getAllStrings(toCheck).filter(x => x.length > 0);
+    const neededKeys = allStrings.filter(x => x.length > 0);
 
     return neededKeys.filter(x => !alreadyTranslated.includes(x));
 }
 
 export function getAllKeys(): string[] {
-    return getAllStrings(toCheck).filter(x => x.length > 0);
+    return allStrings.filter(x => x.length > 0);
 }
 function getAllStrings(obj: unknown): string[] {
     if (typeof obj === 'string') {
