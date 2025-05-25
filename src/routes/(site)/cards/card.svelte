@@ -230,7 +230,7 @@
                     {/each}
                   </ul>
                 {/if}
-                <div>
+                <div class="ability">
                   {#if ability.restrictedToLocation.length > 0}
                     <div>
                       {$getString('Only at')}: {ability.restrictedToLocation
@@ -352,7 +352,7 @@
       & > li:has(+ .active) {
         margin-bottom: calc(-0.6cm * var(--scale));
       }
-      div {
+      div.ability {
         //metalic border
         // border: 1px solid #ccc;
         border-image: linear-gradient(to bottom, #ccc 60%, #0000 100%) 1;
