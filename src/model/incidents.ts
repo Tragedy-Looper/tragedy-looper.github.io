@@ -1,4 +1,5 @@
 import * as data from "../data";
+import type { Incident } from "../incidents.g";
 import { toRecord, type Union } from "../misc";
 import type { ScriptSpecified } from "./core";
 import type { AbilityTypeLose, OncePer } from "./roles";
@@ -8,7 +9,6 @@ import type { AbilityTypeLose, OncePer } from "./roles";
 //     name: IncidentName,
 // }
 
-export type Incident = Union<IncidentsHelper['incidents']>;
 export type Incidents = IncidentsHelper['incidents'];
 
 export type DoseNotTriggerIncident = { doseNotTriggerIncidentEffect?: true }
@@ -63,24 +63,6 @@ export function isIncident(obj: unknown): obj is Incident {
 }
 
 
-type IncidentInternal = OncePer<'game', void, {
-    name: string,
-
-    effect: readonly (
-        {
-            description: string,
-            prerequisite?: string,
-        } |
-        {
-            type: AbilityTypeLose,
-            description?: string,
-            prerequisite?: string,
-        }
-    )[],
-    faked?: true,
-    repeatedCulprit?: true,
-    mob?: number,
-} & ScriptSpecified>;
 
 export type IncidentName = keyof IncidentsHelper['incidents'];
 
@@ -93,9 +75,9 @@ export type FakedIncident = FakedIncidentHelper<Incident>['name'];
 
 class IncidentsHelper {
     public readonly incidents = toRecord([
-        ...data.incidents,
-     
-    ] as const satisfies readonly IncidentInternal[], 'name');
+        ...data.incidents as unknown as readonly Incident[],
+
+    ], 'name');
 }
 
 const i = new IncidentsHelper();

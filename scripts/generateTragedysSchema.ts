@@ -1018,7 +1018,8 @@ function WriteSchema(schema: ReadonlyArrayTransform<JSONSchema>, type: string) {
         console.log('Schema geschrieben nach', outPath);
         fs.writeFileSync(outPath, JSON.stringify(schema, null, 2), 'utf-8');
     });
-    compile(schema as JSONSchema, type).then((result) => {
+    // hack, we only use anyOf in one place and that prevents the schema from being transformed to typescript type
+    compile(flterObject(schema, (key, value) => key !== 'anyOf') as JSONSchema, type).then((result) => {
 
         const typeName = `${toPascalCase(type).replace(/s$/, '')}`;
 
@@ -1031,3 +1032,19 @@ ${result}`, { encoding: 'utf-8' });
 
 }
 
+
+
+function flterObject<T>(obj: T, f: (key: unknown, value: unknown) => boolean): T {
+    if (typeof obj !== 'object' || obj === null) {
+        return obj;
+    } else if (Array.isArray(obj)) {
+        return obj.map(x => flterObject(x, f)) as T;
+    }
+    const keys = Object.keys(obj) as (keyof T)[];
+    const filteredKeys = keys.filter(key => f(key, obj[key]));
+    const filteredObj = {} as T;
+    filteredKeys.forEach(key => {
+        filteredObj[key] = flterObject(obj[key], f);
+    });
+    return filteredObj;
+}

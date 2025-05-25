@@ -25,8 +25,6 @@ export const load: PageServerLoad = ({ params }) => {
         .filter(file => file.endsWith('.png'))
         .map(file => file.replace('.png', '')); // remove .png extension
 
-    console.log(`Found character images: ${images.join(', ')}`);
-
     const characterMapImages = characterNames.reduce((acc, name) => {
         // /^${name}(\d+)?$/i
         const regex = new RegExp(`^${escapeRegExp(normalizeCharacterName(name))}(\\d+)?$`, 'i'); // regex to match name with optional numbers at the end

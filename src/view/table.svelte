@@ -10,12 +10,13 @@
   import { incidents as incidentsLookup } from '../model/incidents';
   import { plots } from '../model/plots';
   import { roles, type Abilitie, type RoleName } from '../model/roles';
-  import type { Script, ScriptIncident, ScriptIncidentPlayer } from '../model/script';
+  import type { ScriptIncidentPlayer } from '../model/script';
   import { tragedySets, type TragedySet, type TragedySetName } from '../model/tragedySets';
   import Selection from './selection.svelte';
   import Ability from './Ability.svelte';
   import { getString } from '../routes/(site)/+layout.svelte';
   import type { Role } from '../roles.g';
+  import * as data from '../data';
 
   export let tragedySet: TragedySetName;
   export let cast: readonly CharacterName[];
@@ -246,6 +247,17 @@
   $: mainPlots = tragedySets[tragedySet].mainPlots.map((x) => plots[x]);
   $: subPlots = tragedySets[tragedySet].subPlots.map((x) => plots[x]);
   $: ince = incidents.map((x) => ({ ...incidentsLookup[x.incident], day: x.day }));
+  $: inceForRules = [
+    ...ince,
+    ...tragedySets[tragedySet].incidents
+      .filter((x) => incidentsLookup[x].faked)
+      .map((i) => {
+        return {
+          ...incidentsLookup[i],
+          day: undefined,
+        };
+      }),
+  ];
 
   function WriteLiens(cellCollback: (() => string[])[]) {
     let current = '';
@@ -580,7 +592,11 @@
       id="rest-1"
       style="grid-area: rest-1; margin-top: 1px; margin-left: 1px;"
     ></div>
-    <div class="overflow" id="rest-2" style="grid-area: rest-2; margin-top:1px; margin-left:1px;" ></div>
+    <div
+      class="overflow"
+      id="rest-2"
+      style="grid-area: rest-2; margin-top:1px; margin-left:1px;"
+    ></div>
     <div
       class="overflow"
       id="rest-3"
@@ -602,19 +618,23 @@
 </div>
 
 <template id="newPage">
-  <div class="page overflow" ></div>
+  <div class="page overflow"></div>
 </template>
 <template id="incidences">
   <div>
     <!-- Workaround: template will not work with #each element as first element… (Don't know why) -->
   </div>
 
-  {#each ince as i}
+  {#each inceForRules as i}
     <article class="incident">
       <h1>
         {$getString(i.name)}
       </h1>
-      <h2>{$getString('Day {day}', { day: i.day })}</h2>
+      {#if i.faked}
+        <h2>{$getString('Faked')}</h2>
+      {:else}
+        <h2>{$getString('Day {day}', { day: i.day })}</h2>
+      {/if}
 
       {#each i.effect as e}
         <p>
@@ -791,7 +811,6 @@
   .rules {
     max-width: var(--rule-width);
   }
-
 
   .role-char {
     background-color: var(--character-background-color-light);
