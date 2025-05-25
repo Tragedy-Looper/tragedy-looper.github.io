@@ -9,6 +9,7 @@ import { isRoleName, type RoleName } from "./roles";
 import { isTragedySetName, type CastOptions, type TragedySets } from "./tragedySets";
 
 import * as data from "../data";
+import type { Script } from "../scripts.g";
 
 
 
@@ -129,7 +130,6 @@ export function getRoleOfCast(scrtipt: Script, char: CharacterName): RoleName | 
     }
 }
 
-export type Script = Scripts[keyof Scripts];
 export type Scripts = typeof scripts;
 
 

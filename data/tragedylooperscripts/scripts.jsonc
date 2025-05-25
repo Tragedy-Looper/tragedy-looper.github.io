@@ -1,7 +1,7 @@
 {
-    "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/scripts.schema.json",
-    // For dev purposes
-    // "$schema": "../scripts.schema.json",
+  "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/scripts.schema.json",
+  // For dev purposes
+  // "$schema": "../scripts.schema.json",
   "scripts": [
     {
       "cast": {
@@ -503,6 +503,7 @@
           "culprit": "Journalist"
         },
         {
+          "notTragedySpecified": true,
           "day": 5,
           "incident": "Diagonal Destruction",
           "culprit": "Henchman"
@@ -522,7 +523,7 @@
         "A Love Affair"
       ],
       "story": "An exciting script with lots of twists and turns.",
-      "tragedySet": "Basic Tragedy (Diagonal Destruction)",
+      "tragedySet": "Basic Tragedy",
       "mastermindHints": "Try your best.",
       "specialRules": [
         "New incident: Diagonal Destruction: If there is at least 2 intrigue on the culprit's location, everyone in the diagonally opposite location dies and protagonists lose."
@@ -1042,6 +1043,7 @@
           "culprit": "Alien"
         },
         {
+          "notTragedySpecified": true,
           "day": 6,
           "incident": "Diagonal Destruction 2",
           "culprit": "Office Worker"
@@ -1056,7 +1058,7 @@
         "Love-Hate Spiral"
       ],
       "story": "Idk",
-      "tragedySet": "Midnight Zone (Diagonal Destruction)",
+      "tragedySet": "Midnight Zone",
       "mastermindHints": "",
       "specialRules": [
         "New incident: Diagonal Destruction 2: Everyone in the diagonally opposite location of the culprit dies"
@@ -1305,31 +1307,37 @@
       },
       "incidents": [
         {
+          "notTragedySpecified": true,
           "day": 1,
           "incident": "Diagonal Destruction 3",
           "culprit": "Henchman"
         },
         {
+          "notTragedySpecified": true,
           "day": 2,
           "incident": "Diagonal Destruction 3",
           "culprit": "Boy Student"
         },
         {
+          "notTragedySpecified": true,
           "day": 3,
           "incident": "Diagonal Destruction 3",
           "culprit": "Girl Student"
         },
         {
+          "notTragedySpecified": true,
           "day": 4,
           "incident": "Diagonal Destruction 3",
           "culprit": "Police Officer"
         },
         {
+          "notTragedySpecified": true,
           "day": 5,
           "incident": "Diagonal Destruction 3",
           "culprit": "Godly Being"
         },
         {
+          "notTragedySpecified": true,
           "day": 6,
           "incident": "Diagonal Destruction 3",
           "culprit": "Patient"
@@ -1344,7 +1352,7 @@
         "Circle of Friends"
       ],
       "story": "Idk",
-      "tragedySet": "Basic Tragedy (Diagonal Destruction)",
+      "tragedySet": "Basic Tragedy",
       "mastermindHints": "?",
       "specialRules": [
         "Diagonal Destruction 3: everyone in the diagonally opposite location dies, the incident happens at paranoia limit -1, if 3 or more people die in a single incident, the protagonists are killed"
@@ -1535,31 +1543,37 @@
       },
       "incidents": [
         {
+          "notTragedySpecified": true,
           "day": 1,
           "incident": "Diagonal Destruction 3",
           "culprit": "Mystery Boy"
         },
         {
+          "notTragedySpecified": true,
           "day": 2,
           "incident": "Diagonal Destruction 3",
           "culprit": "Rich Man’s Daughter"
         },
         {
+          "notTragedySpecified": true,
           "day": 3,
           "incident": "Diagonal Destruction 3",
           "culprit": "Forensic Specialist"
         },
         {
+          "notTragedySpecified": true,
           "day": 4,
           "incident": "Diagonal Destruction 3",
           "culprit": "Alien"
         },
         {
+          "notTragedySpecified": true,
           "day": 5,
           "incident": "Diagonal Destruction 3",
           "culprit": "Informer"
         },
         {
+          "notTragedySpecified": true,
           "day": 6,
           "incident": "Diagonal Destruction 3",
           "culprit": "Scientist"
@@ -1574,7 +1588,7 @@
         "Dance of Fools"
       ],
       "story": "?",
-      "tragedySet": "Mystery Circle (Diagonal Destruction)",
+      "tragedySet": "Mystery Circle",
       "mastermindHints": "?",
       "specialRules": [
         "Special Incident: Diagonal Destruction 3 (the culprit must kill up to 2 people in the diagonally opposite location)"

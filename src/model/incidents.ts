@@ -21,7 +21,7 @@ export function isMobIncident(name: string): name is MobIncident {
     return 'mob' in incident && typeof incident.mob === 'number';
 }
 
-export function isFakeIncident(name: string): name is MobIncident {
+export function isFakeIncident(name: string): name is FakedIncident {
     if (!isIncidentName(name)) {
         return false;
     }
@@ -105,3 +105,5 @@ export function isIncidentName(name: string): name is IncidentName {
 }
 
 export const incidents = i.incidents;
+
+export const incidentNames = Object.keys(incidents) as IncidentName[];

@@ -6,7 +6,7 @@ import { roles, type RoleName, isRoleName } from "./roles";
 import { characters, isCharacterPlotless, type CharacterName, locations, type LocationName, isCharacterName } from "./characters";
 import { isScriptSpecified, type Option } from "./core";
 import { incidents, type IncidentName, isFakeIncident, isMobIncident, isRepeatedCulpritIncident } from "./incidents";
-import type { Script } from "./script";
+import type { Script } from "../scripts.g";
 
 
 const noop = () => { };
@@ -64,6 +64,7 @@ export interface ICustomScriptIncidentSelection<TCharacters extends CharacterNam
     readonly script: CustomScript;
     readonly selectedCharacter: Writable<TCharacters>;
     readonly selectedDay: Writable<number>;
+    readonly notInTragedy: Writable<boolean>;
     readonly selectedIncident: Writable<IncidentName>;
     readonly availableCharacters: Readable<readonly TCharacters[]>;
     readonly availableDays: Readable<readonly number[]>;
@@ -74,6 +75,7 @@ class CustomScriptIncidentSelection<TCharacters extends CharacterName> implement
     public readonly script: CustomScript;
     public readonly selectedCharacter: Writable<TCharacters>;
     public readonly selectedDay: Writable<number>;
+    public readonly notInTragedy: Writable<boolean>;
     public readonly selectedIncident: Writable<IncidentName>;
     public readonly availableCharacters: Readable<readonly TCharacters[]>;
     public readonly availableDays: Readable<readonly number[]>;
@@ -95,6 +97,7 @@ class CustomScriptIncidentSelection<TCharacters extends CharacterName> implement
         // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         this.selectedCharacter = writable(undefined!);
         this.selectedIncident = writable(get(availableIncidents)[0]);
+        this.notInTragedy = writable(false);
         this.selectedDay = writable(0);
         this._availableCharacters = writable(writable([]));
         this._availableDays = writable(writable([]));
@@ -817,6 +820,8 @@ export class CustomScript {
 
                 return {
                     day: get(x.selectedDay),
+                    notTragedySpecified: get(x.notInTragedy) ? true : undefined,
+
                     incident: isFakeIncident(incidentName) ? [incidentName, get(get(x.options).filter(x => x.option.name == 'Faked as')[0].value)] as const : incidentName,
                     culprit: get(x.selectedCharacter)
                 };
