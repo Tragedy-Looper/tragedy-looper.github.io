@@ -10,6 +10,14 @@
 
   let { data }: PageProps = $props();
 
+
+  let characterImages = Object.fromEntries(Object.entries(data.characterImages).map(([key, images]) => {
+    return [
+      key,
+      images.map((image) => `${base}${image}`)
+    ]as const;
+  }));
+
   let cards_per_page = $state(8);
 
   let page_width = $state(29.7);
@@ -21,7 +29,7 @@
   let selectedCards: string[] = $state([]);
   let selectedImage: Record<string, string> = $state(
     Object.fromEntries(
-      Object.entries(data.characterImages).map(([key, images]) => [key, images[0]])
+      Object.entries(characterImages).map(([key, images]) => [key, images[0]])
     )
   );
 
@@ -153,7 +161,7 @@
             {#each images as image}
               <label>
                 <input type="radio" name="phase" bind:group={selectedImage[key]} value={image} />
-                <img src={`${base}${image}`} alt={$getString(key)} />
+                <img src={image} alt={$getString(key)} />
               </label>
             {/each}
           </div>
