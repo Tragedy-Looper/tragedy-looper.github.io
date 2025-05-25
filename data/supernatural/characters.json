@@ -13,13 +13,13 @@
             ],
             "abilities": [
                 {
+                    "type": "passive",
+                    "description": "If this character gains supernatural his Goodwill abilities are automatically refused."
+                },
+                {
                     "type": "active",
                     "goodwillRank": 3,
                     "description": "Kill any character in the same location. If that character is not supernatural, the Protagonists lose."
-                },
-                {
-                    "type": "passive",
-                    "description": "If this character gains supernatural his Goodwill abilities are automatically refused."
                 }
             ]
         }

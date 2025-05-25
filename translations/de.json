@@ -735,5 +735,8 @@
   "Tablet View": "Tablet-Ansicht",
   "Touch optimized View": "Touch-Optimiert",
   "World Selection": "Welt",
-  "Compakt View": "Kompaktansicht"
+  "Compakt View": "Kompaktansicht",
+  "Kill any character in the same location. If that character is not supernatural, the Protagonists lose.": "Töte einen Charakter am selben Ort. Wenn dieser Charakter nicht übernatürlich ist, verlieren die Protagonisten.",
+  "If this character gains supernatural his Goodwill abilities are automatically refused.": "Wenn dieser Charakter übernatürlich wird, werden seine Gunst-Fähigkeiten automatisch verweigert.",
+  "supernatural": "übernatürlich"
 }
