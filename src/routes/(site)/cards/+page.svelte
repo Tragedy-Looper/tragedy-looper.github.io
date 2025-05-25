@@ -16,7 +16,7 @@
       key,
       images.map((image) => `${base}${image}`)
     ]as const;
-  }));
+  })) as typeof data.characterImages;
 
   let cards_per_page = $state(8);
 
@@ -153,7 +153,7 @@
     <details>
       <summary>{$getString('Alternate character images')}</summary>
 
-      {#each Object.entries(data.characterImages).filter(([, x]) => x.length > 1) as [key, images]}
+      {#each Object.entries(characterImages).filter(([, x]) => x.length > 1) as [key, images]}
         <div>
           <strong>{$getString(key)}</strong>
           {selectedImage[key]}
