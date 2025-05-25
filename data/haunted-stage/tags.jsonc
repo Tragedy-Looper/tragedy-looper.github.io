@@ -1,0 +1,11 @@
+{
+      "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/tags.schema.json",
+    // For dev purposes
+    // "$schema": "../tags.schema.json",
+    "tags": [
+        {
+            "name": "after death",
+            "showInGmScreen": true
+        }
+    ]
+}

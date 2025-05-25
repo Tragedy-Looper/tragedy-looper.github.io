@@ -1,0 +1,173 @@
+{
+      "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/plots.schema.json",
+    // For dev purposes
+    // "$schema": "../plots.schema.json",
+    "plots": [
+        {
+            "name": "Abomination",
+            "roles": {
+                "Mad Genius": 1,
+                "Supplicant": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "Mad Genius has Body Parts and is alive"
+                }
+            ]
+        },
+        {
+            "name": "Metamorphosis",
+            "roles": {
+                "Potentate": 1,
+                "Supplicant": 1,
+                "Lover": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "Supplicant is alive and has the supernatural tag"
+                }
+            ]
+        },
+        {
+            "name": "Spore Pod",
+            "roles": {
+                "Facsimile": 1,
+                "Augur": 1
+            },
+            "rules": [
+                {
+                    "type": "Optional Loss condition: Tragedy",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "Every location contains a Facsimile."
+                }
+            ]
+        },
+        {
+            "name": "Demonic Portal",
+            "roles": {
+                "Potentate": 1,
+                "Augur": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Last Day",
+                        "Day End"
+                    ],
+                    "prerequisite": "At least two intrigue on the shrine."
+                }
+            ]
+        },
+        {
+            "name": "The Seed",
+            "roles": {
+                "Seeder": 1,
+                "Serial Killer": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "Infestation",
+            "roles": {
+                "Facsimile": 2,
+                "Key Person": 1
+            },
+            "rules": [
+                {
+                    "type": "Mandatory",
+                    "prerequisite": "No Facsimile are alive.",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "description": "The Key Persons role changes to Person."
+                }
+            ]
+        },
+        {
+            "name": "Fatal Attraction",
+            "roles": {
+                "Lover": 3,
+                "Serial Killer": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "Manifestation",
+            "roles": {},
+            "rules": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "timesPerLoop": 1,
+                    "description": "Add 1 Paranoia to any character."
+                }
+            ]
+        },
+        {
+            "name": "Murder for Hire",
+            "roles": {
+                "Contract Killer": 1,
+                "Key Person": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "Remote Bombing",
+            "roles": {
+                "Mad Genius": 1
+            },
+            "rules": [
+                {
+                    "type": "Optional Loss condition: Tragedy",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "If there is two Intrigue on the Mad Genius's starting location and the Mad Genius is alive and not at that location."
+                }
+            ]
+        },
+        {
+            "name": "Suicide Cult",
+            "roles": {
+                "Cult Member": 3
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Day End",
+                        "Last Day"
+                    ],
+                    "prerequisite": "If any of the Cult Members have no Goddwill"
+                }
+            ]
+        },
+        {
+            "name": "Twisted Threads of Time",
+            "roles": {},
+            "rules": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "description": "Transfere 1 Intrigue from a Character to that Character's location or another Character in the same location.",
+                    "timesPerLoop": 1
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/incidents.schema.json",
+    // For dev purposes
+    // "$schema": "../incidents.schema.json",
+    "incidents": [
+        {
+            "name": "Abductions",
+            "effect": [
+                {
+                    "description": "Move a Character from his/her location to another location. Move a second Character from his/her location to another location."
+                }
+            ]
+        },
+        {
+            "name": "Crime of Passion",
+            "effect": [
+                {
+                    "description": "Kill another Character in the Culprit's location."
+                }
+            ]
+        },
+        {
+            "name": "Grave Robbing",
+            "effect": [
+                {
+                    "description": "Place two Intrigue on the Shrine. Move a Character from the Shrine to the School, if possible."
+                }
+            ]
+        },
+        {
+            "name": "Indoctrination",
+            "effect": [
+                {
+                    "description": "Remove all Goodwill from a Character and replace with a mix of Paranoia or Intrigue that equals the removed Goodwill."
+                }
+            ]
+        },
+        {
+            "name": "Proselytizing",
+            "effect": [
+                {
+                    "description": "Add one Intrigue to a Character and one Intrigue to that Character's location."
+                }
+            ]
+        },
+        {
+            "name": "Ritual Sacrifice",
+            "effect": [
+                {
+                    "description": "The Character with the highest Goodwill is killed. If no Character has the highest, this Incident doesn't trigger."
+                }
+            ]
+        },
+        {
+            "name": "Mass Hysteria",
+            "effect": [
+                {
+                    "description": "Add 1 Paranoia to every character."
+                }
+            ]
+        },
+        {
+            "name": "School Shooting",
+            "effect": [
+                {
+                    "prerequisite": "If at least 1 Intrigue on the Culprit",
+                    "description": "All Characters in School are killed."
+                }
+            ]
+        },
+        {
+            "name": "Dark Lesson",
+            "effect": [
+                {
+                    "description": "Add an Intrigue to all Characters at the Culprit's location."
+                }
+            ]
+        },
+        {
+            "name": "Public Meltdown",
+            "effect": [
+                {
+                    "description": "Reveal the role of the Culprit."
+                }
+            ]
+        },
+        {
+            "name": "Fire and Brimstone",
+            "effect": [
+                {
+                    "description": "Kill all Characters in all Locations except the Shrine."
+                }
+            ]
+        },
+        {
+            "name": "Bomb Threat",
+            "effect": [
+                {
+                    "description": "The Leader chooses a location. All Characters from that Location Move to the Location clockwise from their current Location."
+                }
+            ]
+        }
+    ]
+}

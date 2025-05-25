@@ -1,0 +1,46 @@
+{
+      "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/tragedys.schema.json",
+    // For dev purposes
+    // "$schema": "../tragedys.schema.json",
+    "tragedys": [
+        {
+            "name": "Another Horizon",
+            "mainPlots": ["Lost Heart", "Shadow Demon King", "The Devil’s Will", "Parallel World War", "Alien Erosion"],
+            "subPlots": ["The World of Dollhouse", "Ego Wave", "The Closed Door", "Threads of Fate", "Moonside City", "Fanatic Fox", "Somthing to invite"],
+            "incidents": [
+                "Insane Murder",
+                "Increasing Unease",
+                "Missing Person",
+                "Hospital Incident",
+                "Drifting to Another World",
+                "Assassination",
+                "World End",
+                "World Convergence",
+                "Small Force",
+                "Breakthrough",
+                "Confession"
+            ],
+            "aditionalRoles": ["Shadow"],
+            "numberOfMainPlots": 1,
+            "numberOfSubPlots": 2,
+            "extraRules": [
+                {
+                    "name": "World Switch",
+                    "description": "Protagonist Leader may request to switch the world during the Day Start"
+                },
+                {
+                    "name": "Extra Gauge",
+                    "description": "Indicate World, 1: Normal and intial World, 2: Abnormal World."
+                },
+                {
+                    "name": "Abnormal World",
+                    "description": "The numbers of Goodwill counter need to reach Paranoia Limit to trigger the incident. Also sufficient numbers of Paranoia needed to activate the character’s Goodwill ability."
+                },
+                {
+                    "name": "Goodwill Outburst",
+                    "description": "Mastermind able to use the character’s Goodwill abilities whose role has Goodwill Outburst."
+                }
+            ]
+        }
+    ]
+}

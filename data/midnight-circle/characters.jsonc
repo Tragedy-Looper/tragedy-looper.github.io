@@ -1,0 +1,114 @@
+{
+      "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/characters.schema.json",
+    // For dev purposes
+    // "$schema": "../characters.schema.json",
+    "characters": [
+        {
+            "name": "Scientist",
+            "paranoiaLimit": 2,
+            "tags": [
+                "adult",
+                "man"
+            ],
+            "startLocation": [
+                "Hospital"
+            ],
+            "abilities": [
+                {
+                    "type": "passive",
+                    "description": "At the start of a loop, place either a Paranoia counter, a Goodwill counter or an Intrigue counter on this character."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 3,
+                    "description": "Remove all counters from this character. Then, if you use the Extra gauge, increase or decrease this gauge."
+                }
+            ]
+        },
+        {
+            "name": "Forensic Specialist",
+            "paranoiaLimit": 3,
+            "tags": [
+                "adult",
+                "man"
+            ],
+            "startLocation": [
+                "City"
+            ],
+            "abilities": [
+                {
+                    "type": "active",
+                    "goodwillRank": 2,
+                    "timesPerLoop": 1,
+                    "description": "Move any one counter between any two other characters in this location."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 5,
+                    "timesPerLoop": 1,
+                    "description": "Reveal the role of any one corpse."
+                }
+            ]
+        },
+        {
+            "name": "A.I.",
+            "paranoiaLimit": 4,
+            "tags": [
+                "construct"
+            ],
+            "startLocation": [
+                "City"
+            ],
+            "forbiddenLocation": [
+                "Shrine",
+                "Hospital",
+                "School"
+            ],
+            "abilities": [
+                {
+                    "type": "passive",
+                    "description": "This character cannot have the role Person."
+                },
+                {
+                    "type": "passive",
+                    "description": "When determining wether an Incident triggers, to which this character is the culprit, all conters on this character conut as Paranoia conuters."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 3,
+                    "timesPerLoop": 1,
+                    "description": "The Leader may resolve one incident in the Script, wit the A.I. as the culprit. (This is not considered triggering the event.)"
+                }
+            ]
+        },
+        {
+            "name": "Illusion",
+            "paranoiaLimit": 3,
+            "tags": [
+                "construct",
+                "woman"
+            ],
+            "startLocation": [
+                "Shrine"
+            ],
+            "abilities": [
+                {
+                    "type": "passive",
+                    "description": "No action cards can be placed on this characte. All cards palced on this location are also applied to this character."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 3,
+                    "timesPerLoop": 1,
+                    "description": "Move any character from this location to any other location."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 4,
+                    "timesPerLoop": 1,
+                    "description": "Remove thsi character from the board for the rest of the loop."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,226 @@
+{
+      "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/plots.schema.json",
+    // For dev purposes
+    // "$schema": "../plots.schema.json",
+    "plots": [
+        {
+            "name": "Light of the Avenger",
+            "roles": {
+                "Brain": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "2 Intrigue on the Brain’s starting location"
+                }
+            ]
+        },
+        {
+            "name": "A Place to Protect",
+            "roles": {
+                "Key Person": 1,
+                "Cultist": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "2 Intrigue on the School."
+                }
+            ]
+        },
+        {
+            "name": "Shadow of the Ripper",
+            "roles": {
+                "Conspiracy Theorist": 1,
+                "Serial Killer": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "An Unsettling Rumor",
+            "roles": {
+                "Conspiracy Theorist": 1
+            },
+            "rules": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "timesPerLoop": 1,
+                    "description": "You may place 1 Intrigue on any location."
+                }
+            ]
+        },
+        {
+            "name": "A Hideous Script",
+            "roles": {
+                "Conspiracy Theorist": 1,
+                "Curmudgeon": [
+                    0,
+                    2
+                ],
+                "Friend": 1
+            },
+            "rules": [
+                {
+                    "type": "Script creation",
+                    "description": "Script writer may choose 0 or 1 or 2 Curmudgeons."
+                }
+            ]
+        },
+        {
+            "name": "Murder Plan",
+            "roles": {
+                "Key Person": 1,
+                "Killer": 1,
+                "Brain": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "The Sealed Item",
+            "roles": {
+                "Brain": 1,
+                "Cultist": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "2 Intrigue on the Shrine."
+                }
+            ]
+        },
+        {
+            "name": "Sign with me!",
+            "roles": {
+                "Key Person": 1
+            },
+            "rules": [
+                {
+                    "type": "Script creation",
+                    "description": "Key Person must be a girl."
+                },
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "2 Intrigue on the Key Person."
+                }
+            ]
+        },
+        {
+            "name": "Change of Future",
+            "roles": {
+                "Cultist": 1,
+                "Time Traveler": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "˝Butterfly Effect˝ has occured this loop."
+                }
+            ]
+        },
+        {
+            "name": "Giant Time Bomb",
+            "roles": {
+                "Witch": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "2 Intrigue on the Witch’s starting location."
+                }
+            ]
+        },
+        {
+            "name": "Circle of Friends",
+            "roles": {
+                "Friend": 2,
+                "Conspiracy Theorist": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "A Love Affair",
+            "roles": {
+                "Lover": 1,
+                "Loved One": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "The Hidden Freak",
+            "roles": {
+                "Serial Killer": 1,
+                "Friend": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "Paranoia Virus",
+            "roles": {
+                "Conspiracy Theorist": 1
+            },
+            "rules": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Always"
+                    ],
+                    "description": "All Persons with at least 3 Paranoia turn into Serial Killers."
+                }
+            ]
+        },
+        {
+            "name": "Threads of Fate",
+            "roles": {},
+            "rules": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Loop Start"
+                    ],
+                    "description": "Place 2 Paranoia on all characters who had Goodwill last loop."
+                }
+            ]
+        },
+        {
+            "name": "Unknown Factor X",
+            "roles": {
+                "Factor": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "The Noble Bloodline",
+            "roles": {
+                "Key Person": 1,
+                "Vampire": 1
+            },
+            "rules": [
+                {
+                    "type": "Script creation",
+                    "description": "Key Person and Vampire must be of oposing sex."
+                }
+            ]
+        }
+    ]
+}

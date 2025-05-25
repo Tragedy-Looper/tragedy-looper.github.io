@@ -1,0 +1,29 @@
+{
+      "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/characters.schema.json",
+    // For dev purposes
+    // "$schema": "../characters.schema.json",
+    "characters": [
+        {
+            "name": "Crusader",
+            "tags": [
+                "man",
+                "adult"
+            ],
+            "paranoiaLimit": 4,
+            "startLocation": [
+                "Shrine"
+            ],
+            "abilities": [
+                {
+                    "type": "passive",
+                    "description": "If this character gains supernatural his Goodwill abilities are automatically refused."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 3,
+                    "description": "Kill any character in the same location. If that character is not supernatural, the Protagonists lose."
+                }
+            ]
+        }
+    ]
+}

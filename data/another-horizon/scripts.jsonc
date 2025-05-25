@@ -1,0 +1,482 @@
+{
+    "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/scripts.schema.json",
+    // For dev purposes
+    // "$schema": "../scripts.schema.json",
+  "scripts": [
+    {
+      "title": "Actually, I Am...",
+      "creator": "translated by megakun",
+      "set": {
+        "name": "Another Horizon",
+        "number": 1
+      },
+      "tragedySet": "Another Horizon",
+      "mainPlot": [
+        "Shadow Demon King"
+      ],
+      "subPlots": [
+        "The World of Dollhouse",
+        "Threads of Fate"
+      ],
+      "difficultySets": [
+        {
+          "difficulty": 1,
+          "numberOfLoops": 3
+        }
+      ],
+      "daysPerLoop": 5,
+      "cast": {
+        "Boy Student": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Shrine Maiden": "Person",
+        "Doctor": "Person",
+        "Class Rep": "Person",
+        "Alien": "Person",
+        "Pop Idol": "Person",
+        "Journalist": "Quidnunc",
+        "Henchman": "Twilight"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Confession",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "Confession",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 3,
+          "incident": "Confession",
+          "culprit": "Alien"
+        },
+        {
+          "day": 4,
+          "incident": "Confession",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 5,
+          "incident": "Confession",
+          "culprit": "Shrine Maiden"
+        }
+      ],
+      "specifics": "",
+      "mastermindHints": "",
+      "story": ""
+    },
+    {
+      "title": "I‘m A Normal Human",
+      "creator": "translated by megakun",
+      "set": {
+        "name": "Another Horizon",
+        "number": 2
+      },
+      "tragedySet": "Another Horizon",
+      "mainPlot": [
+        "Parallel World War"
+      ],
+      "subPlots": [
+        "Threads of Fate",
+        "The World of Dollhouse"
+      ],
+      "difficultySets": [
+        {
+          "difficulty": 1,
+          "numberOfLoops": 3
+        }
+      ],
+      "daysPerLoop": 6,
+      "cast": {
+        "Girl Student": "Person",
+        "Shrine Maiden": "Person",
+        "Informer": "Person",
+        "Doctor": "Person",
+        "Alien": "Person",
+        "Godly Being": [
+          "Agent",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "Pop Idol": "Person",
+        "Boss": [
+          "Quidnunc",
+          {
+            "Turf": "Hospital"
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Confession",
+          "culprit": "Alien"
+        },
+        {
+          "day": 2,
+          "incident": "World Convergence",
+          "culprit": "Godly Being"
+        },
+        {
+          "day": 3,
+          "incident": "Confession",
+          "culprit": "Girl Student"
+        },
+        {
+          "day": 4,
+          "incident": "Confession",
+          "culprit": "Pop Idol"
+        },
+        {
+          "day": 5,
+          "incident": "Confession",
+          "culprit": "Informer"
+        },
+        {
+          "day": 6,
+          "incident": "Confession",
+          "culprit": "Doctor"
+        }
+      ],
+      "specifics": "",
+      "mastermindHints": "",
+      "story": ""
+    },
+    {
+      "title": "Packed Tragedy",
+      "creator": "translated by megakun",
+      "set": {
+        "name": "Another Horizon",
+        "number": 3
+      },
+      "tragedySet": "Another Horizon",
+      "mainPlot": [
+        "Lost Heart"
+      ],
+      "subPlots": [
+        "Ego Wave",
+        "Moonside City"
+      ],
+      "difficultySets": [
+        {
+          "difficulty": 1,
+          "numberOfLoops": 7
+        }
+      ],
+      "daysPerLoop": 2,
+      "cast": {
+        "Boy Student": "Quidnunc",
+        "Girl Student": "Agitator",
+        "Rich Man’s Daughter": "Neurosis",
+        "Police Officer": "Agent",
+        "Doctor": "Person",
+        "Patient": "Brain",
+        "Journalist": "Person",
+        "Henchman": [
+          "Animus",
+          {
+            "world": "abnormal"
+          }
+        ],
+        "Illusion": "Person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "Small Force",
+          "culprit": "Police Officer"
+        },
+        {
+          "day": 2,
+          "incident": "Hospital Incident",
+          "culprit": "Rich Man’s Daughter"
+        }
+      ],
+      "specifics": "",
+      "mastermindHints": "",
+      "story": ""
+    },
+    {
+      "title": "The Only One in the World",
+      "creator": "translated by megakun",
+      "set": {
+        "name": "Another Horizon",
+        "number": 4
+      },
+      "tragedySet": "Another Horizon",
+      "mainPlot": [
+        "Shadow Demon King"
+      ],
+      "subPlots": [
+        "Ego Wave",
+        "Moonside City"
+      ],
+      "difficultySets": [
+        {
+          "difficulty": 1,
+          "numberOfLoops": 5
+        }
+      ],
+      "daysPerLoop": 6,
+      "cast": {
+        "Boy Student": "Person",
+        "Rich Man’s Daughter": "Quidnunc",
+        "Office Worker": "Person",
+        "Patient": "Neurosis",
+        "Mystery Boy": "Agent",
+        "Pop Idol": "Twilight",
+        "Journalist": "Person",
+        "Scientist": "Agitator",
+        "Illusion": [
+          "Animus",
+          {
+            "world": "normal"
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "World End",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 2,
+          "incident": "World Convergence",
+          "culprit": "Mystery Boy"
+        },
+        {
+          "day": 3,
+          "incident": "Increasing Unease",
+          "culprit": "Patient"
+        },
+        {
+          "day": 4,
+          "incident": "Assassination",
+          "culprit": "Journalist"
+        },
+        {
+          "day": 5,
+          "incident": "Drifting to Another World",
+          "culprit": "Illusion"
+        },
+        {
+          "day": 6,
+          "incident": "Missing Person",
+          "culprit": "Office Worker"
+        }
+      ],
+      "specifics": "",
+      "mastermindHints": "",
+      "story": ""
+    },
+    {
+      "title": "Fictional Collapse",
+      "creator": "translated by megakun",
+      "set": {
+        "name": "Another Horizon",
+        "number": 5
+      },
+      "tragedySet": "Another Horizon",
+      "mainPlot": [
+        "Parallel World War"
+      ],
+      "subPlots": [
+        "Fanatic Fox",
+        "Ego Wave"
+      ],
+      "difficultySets": [
+        {
+          "difficulty": 1,
+          "numberOfLoops": 5
+        }
+      ],
+      "daysPerLoop": 6,
+      "cast": {
+        "Boy Student": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Shrine Maiden": "Person",
+        "Office Worker": "Person",
+        "Informer": "Agitator",
+        "Doctor": [
+          "Animus",
+          {
+            "world": "abnormal"
+          }
+        ],
+        "Class Rep": "Person",
+        "Godly Being": [
+          "Agent",
+          {
+            "enters on loop": 3
+          }
+        ],
+        "Pop Idol": "Fanatic",
+        "Illusion": [
+          "Animus",
+          {
+            "world": "normal"
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 3,
+          "incident": "World Convergence",
+          "culprit": "Doctor"
+        },
+        {
+          "day": 4,
+          "incident": "World Convergence",
+          "culprit": "Godly Being"
+        },
+        {
+          "day": 6,
+          "incident": "World End",
+          "culprit": "Illusion"
+        }
+      ],
+      "specifics": "",
+      "mastermindHints": "",
+      "story": ""
+    },
+    {
+      "title": "Beyond Praying Stage",
+      "creator": "translated by andrewshen123",
+      "set": {
+        "name": "Another Horizon",
+        "number": 5
+      },
+      "tragedySet": "Another Horizon",
+      "mainPlot": [
+        "Parallel World War"
+      ],
+      "subPlots": [
+        "Fanatic Fox",
+        "Ego Wave"
+      ],
+      "difficultySets": [
+        {
+          "difficulty": 1,
+          "numberOfLoops": 5
+        }
+      ],
+      "daysPerLoop": 6,
+      "cast": {
+        "Boy Student": "Person",
+        "Rich Man’s Daughter": "Person",
+        "Shrine Maiden": "Person",
+        "Office Worker": "Person",
+        "Informer": "Agitator",
+        "Doctor": [
+          "Animus",
+          {
+            "world": "abnormal"
+          }
+        ],
+        "Class Rep": "Person",
+        "Godly Being": [
+          "Agent",
+          {
+            "enters on loop": 3
+          }
+        ],
+        "Pop Idol": "Agitator",
+        "Illusion": [
+          "Animus",
+          {
+            "world": "normal"
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 3,
+          "incident": "World Convergence",
+          "culprit": "Doctor"
+        },
+        {
+          "day": 4,
+          "incident": "World Convergence",
+          "culprit": "Godly Being"
+        },
+        {
+          "day": 6,
+          "incident": "World End",
+          "culprit": "Illusion"
+        }
+      ],
+      "specifics": "",
+      "mastermindHints": "",
+      "story": ""
+    },
+    {
+      "title": "Unknown",
+      "creator": "Hallycon translated by megakun",
+      "tragedySet": "Another Horizon",
+      "mainPlot": [
+        "Shadow Demon King"
+      ],
+      "subPlots": [
+        "Fanatic Fox",
+        "Ego Wave"
+      ],
+      "difficultySets": [
+        {
+          "difficulty": 1,
+          "numberOfLoops": 4
+        }
+      ],
+      "daysPerLoop": 6,
+      "cast": {
+        "Doctor": "Person",
+        "Patient": "Person",
+        "Police Officer": "Person",
+        "Office Worker": "Fanatic",
+        "Informer": [
+          "Animus",
+          {
+            "world": "normal"
+          }
+        ],
+        "Girl Student": "Person",
+        "Rich Man’s Daughter": "Agitator",
+        "Shrine Maiden": "Twilight",
+        "Class Rep": [
+          "Animus",
+          {
+            "world": "abnormal"
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 3,
+          "incident": "Assassination",
+          "culprit": "Class Rep"
+        },
+        {
+          "day": 4,
+          "incident": "World End",
+          "culprit": "Patient"
+        },
+        {
+          "day": 5,
+          "incident": "Small Force",
+          "culprit": "Rich Man’s Daughter"
+        },
+        {
+          "day": 6,
+          "incident": "Insane Murder",
+          "culprit": "Police Officer"
+        }
+      ],
+      "specifics": "",
+      "mastermindHints": "",
+      "story": ""
+    }
+  ]
+}

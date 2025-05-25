@@ -1,0 +1,8 @@
+{
+      "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/characters.schema.json",
+    // For dev purposes
+    // "$schema": "../characters.schema.json",
+    "characters": [
+       
+    ]
+}

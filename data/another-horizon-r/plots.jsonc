@@ -1,0 +1,185 @@
+{
+      "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/plots.schema.json",
+    // For dev purposes
+    // "$schema": "../plots.schema.json",
+    "plots": [
+        {
+            "name": "The Forbidden Future",
+            "roles": {
+                "Marionette": 1,
+                "Storyteller": 1,
+                "Obstinate|Key Person": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "Players are in the Light world"
+                }
+            ]
+        },
+        {
+            "name": "Fairy-Tale Murderer",
+            "roles": {
+                "Key Person": 1,
+                "Lullaby": 1,
+                "Brain": 1
+            }
+        },
+        {
+            "name": "Mother Goose Mystery",
+            "roles": {
+                "Marionette": 1,
+                "Storyteller": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "There are X or more corpses at the end of the loop, X is the current loop number, to a maximum of 3."
+                }
+            ]
+        },
+        {
+            "name": "Dimensional Merger",
+            "roles": {
+                "Storyteller": 1,
+                "Shifter": 1,
+                "Fragment": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "Last Will or Left Behind has triggered this loop."
+                }
+            ]
+        },
+        {
+            "name": "Into Nothingness",
+            "roles": {
+                "Obstinate": 1,
+                "Marionette": 1,
+                "Brain": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "(Sum of the Extra Gauge and the number of Intrigue counters on the Obstinate added by this Plot) is 3 or more."
+                }
+            ]
+        },
+        {
+            "name": "Jekyll and Hyde",
+            "roles": {
+                "Key Person|Brain": 1,
+                "Marionette": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "The Plaguebringer",
+            "roles": {
+                "Pied Piper|Gossip": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "Puppeteer’s Strings",
+            "roles": {
+                "Fragment": 1,
+                "Gossip": 1,
+                "Person|Serial Killer": 1
+            },
+            "rules": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Always"
+                    ],
+                    "description": "All types of Goodwill Refusal become Puppeted Goodwill Refusal (including Mandatory Goodwill Refusal and that granted by Despair counters)."
+                }
+            ]
+        },
+        {
+            "name": "Through the Looking-Glass",
+            "roles": {
+                "Conspiracy Theorist|Serial Killer": 1,
+                "Alice": 1
+            },
+            "rules": [
+                {
+                    "type": "Script creation",
+                    "description": "Alice must be a girl."
+                }
+            ]
+        },
+        {
+            "name": "Crossing World Lines",
+            "roles": {
+                "Conspiracy Theorist": 1
+            },
+            "rules": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Loop Start"
+                    ],
+                    "prerequisite": "The loop is even numbered.",
+                    "description": "The Mastermind adds \"Despair +1\" to hand."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Loop Start"
+                    ],
+                    "prerequisite": "The loop is the final loop.",
+                    "description": "The Protagonists add \"Hope +1\" to hand."
+                }
+            ]
+        },
+        {
+            "name": "Unspeakable Horrors",
+            "roles": {
+                "Conspiracy Theorist|Obstinate": 1,
+                "Gossip": 1
+            },
+            "rules": [
+                {
+                    "type": "Optional Loss condition: Protagonists Death",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "If the Extra Gauge is 3 or higher"
+                }
+            ]
+        },
+        {
+            "name": "Hysteria Virus",
+            "roles": {
+                "Fragment": 1,
+                "Conspiracy Theorist": 1,
+                "Gossip": 1
+            },
+            "rules": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Always"
+                    ],
+                    "prerequisite": "While in the Dark World and characters whose original Roles were either Person or Fragment and have 2 or more kinds of counters on them",
+                    "description": "Change role to Serial Killers."
+                }
+            ]
+        }
+    ]
+}

@@ -1,9 +1,0 @@
-{
-    "$schema": "../tags.schema.json",
-    "tags": [
-        {
-            "name": "after death",
-            "showInGmScreen": true
-        }
-    ]
-}

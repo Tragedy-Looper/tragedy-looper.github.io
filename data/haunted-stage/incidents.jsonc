@@ -1,0 +1,67 @@
+{
+    "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/incidents.schema.json",
+    // For dev purposes
+    // "$schema": "../incidents.schema.json",
+    "incidents": [
+        {
+            "name": "Sacrifice",
+            "effect": [
+                {
+                    "description": "[When determining whether this Incident triggers or not, treat the culprit’s Paranoia limit as 2 less than its printed limit.] Increase Extra Gauge by 1, then the Protagonist Leader chooses one character. That character is killed."
+                }
+            ]
+        },
+        {
+            "name": "Blasphemy",
+            "effect": [
+                {
+                    "description": "Blasphemy\tPlace 1 Paranoia and 1 Intrigue on any corpse."
+                }
+            ]
+        },
+        {
+            "name": "Monster Liberation",
+            "effect": [
+                {
+                    "description": "Put an Extra card on the culprit’s location. Thereafter, the card is treated as a character whose title is Demon Beast and gains Nightmare’s role."
+                }
+            ]
+        },
+        {
+            "name": "Hundred Demons Night",
+            "effect": [
+                {
+                    "prerequisite": "Culprit is dead",
+                    "description": "At least 1 Intrigue on the shrine: Increase Extra Gauge by 4."
+                }
+            ]
+        },
+        {
+            "name": "Curse",
+            "effect": [
+                {
+                    "prerequisite": "Culprit is dead",
+                    "description": "Move any card on the culprit’s location to any other location."
+                }
+            ]
+        },
+        {
+            "name": "Infestation",
+            "effect": [
+                {
+                    "prerequisite": "Culprit is dead",
+                    "description": "Place 2 Intrigue on the culprit’s location."
+                }
+            ]
+        },
+        {
+            "name": "Repeating Nightmare",
+            "effect": [
+                {
+                    "prerequisite": "Culprit is dead",
+                    "description": "Increase the Extra Gauge by 1 and revive the culprit."
+                }
+            ]
+        }
+    ]
+}
