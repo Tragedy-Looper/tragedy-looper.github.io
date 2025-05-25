@@ -2624,7 +2624,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "• At least 2 intrigue on the Shrine by Loop End.                                                                                                                                                                  \n• Friend (Young Girl) is dead by Loop End.\n\n",
+      "specifics": "At least 2 intrigue on the Shrine by Loop End.                                                                                                                                                                  \n• Friend (Young Girl) is dead by Loop End.\n\n",
       "creator": "Chronicle [RealBernkastel]",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -2690,7 +2690,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "• Key Person (Police Officer) dies. \n• At least ONE Friend (Nurse/Teacher) is dead by Loop End.\n\n",
+      "specifics": "Key Person (Police Officer) dies. \n• At least ONE Friend (Nurse/Teacher) is dead by Loop End.\n\n",
       "creator": "Chronicle [RealBernkastel]",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -3244,13 +3244,13 @@
         "Circle of Friends",
         "Paranoia Virus"
       ],
-      "story": ": This is an unusual case. You’re not quite sure what happened. You think someone might have died, but you’re not quite sure how it went down.  Nerveless, you must be careful of who you trust, and tread carefully",
+      "story": "This is an unusual case. You’re not quite sure what happened. You think someone might have died, but you’re not quite sure how it went down.  Nerveless, you must be careful of who you trust, and tread carefully",
       "tragedySet": "Basic Tragedy",
       "mastermindHints": "Since there are only eight days for incidents, I cant set it up as I would like. So for the first loop, increase unease until day four where a far away murder will happen.  Follow the same set for loop two until day 3, where the hospital patient will go missing, and day four, where a hospital incident will happen. Day five will be more unease, and if it hasn't ended, day  six will have the key person commit suicide.",
       "specialRules": [
         "Alternating loops: the days in a loop  alternate between four and six days, with odd loop numbers having four days and even loop numbers on six. Incidents in odd loops are on days prefixed with 1. For even with 2. e.g. Day 24 is the fouth day in the even loops"
       ],
-      "specifics": ". Kill the Key person (Serial Killer, Hospital incident, Option 3)\n\n",
+      "specifics": "Kill the Key person (Serial Killer, Hospital incident, Option 3)\n\n",
       "creator": "beatstopper",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -4016,7 +4016,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "•Two goodwill or fewer on the Patient (Time Traveler) at the end of the loop.\n\n",
+      "specifics": "Two goodwill or fewer on the Patient (Time Traveler) at the end of the loop.\n\n",
       "creator": "speter79",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -4954,7 +4954,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "-Shrine Maiden is dead.\n-There is 2 Intrigue in the school. (Brain's starting location)\n\n",
+      "specifics": "Shrine Maiden is dead.\n-There is 2 Intrigue in the school. (Brain's starting location)\n\n",
       "creator": "The Gem Pirate",
       "daysPerLoop": 5,
       "difficultySets": [
