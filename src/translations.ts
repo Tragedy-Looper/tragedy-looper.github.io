@@ -1,16 +1,17 @@
-import { characters } from './model/characters';
-import { incidents } from './model/incidents';
-import { plots } from './model/plots';
-import { roles } from './model/roles';
-import { tragedySets } from './model/tragedySets';
+// import { characters } from './model/characters';
+// import { incidents } from './model/incidents';
+// import { plots } from './model/plots';
+// import { roles } from './model/roles';
+// import { tragedySets } from './model/tragedySets';
 import { translations as data } from './data-translations';
 import { browser } from '$app/environment';
 import { getLocalisatio } from './storage';
 import { ui_strings } from './data-ui-strings';
 import { writable } from 'svelte/store';
-import { scripts } from './data';
+import { characters, incidents, plots, roles, scripts, tragedys } from './data';
 
-const toCheck = [characters, incidents, plots, roles, tragedySets, scripts.flatMap(x => [x.cast, x.title, x.specifics, x.story, x.mastermindHints]),
+
+const toCheck = [characters, incidents, plots, roles, tragedys, scripts.flatMap(x => [x.cast, x.title, x.specifics, x.story, x.mastermindHints]),
     ...ui_strings,
 ];
 
@@ -51,7 +52,7 @@ export function getStringForLanguage<TKey extends string | undefined>(key: TKey,
     }
 
     const keyTrimed = key.trim()
-    const toTest = getAllStrings(toCheck);
+    const toTest = allStrings;
     if (!toTest.includes(key)) {
         missingInToCheck.add(key);
         console.info('Missing Translations', [...missingInToCheck]);
