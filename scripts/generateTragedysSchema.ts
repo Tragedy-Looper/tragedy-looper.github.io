@@ -393,6 +393,7 @@ function generatePlotsSchema({ roleNames }: Names) {
                                     }] as const)),
                             }
                         },
+                        ...scriptSpecified,
                         "rules": {
                             "type": "array",
                             "items": {
