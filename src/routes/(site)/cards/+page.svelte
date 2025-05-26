@@ -10,13 +10,11 @@
 
   let { data }: PageProps = $props();
 
-
-  let characterImages = Object.fromEntries(Object.entries(data.characterImages).map(([key, images]) => {
-    return [
-      key,
-      images.map((image) => `${base}${image}`)
-    ]as const;
-  })) as typeof data.characterImages;
+  let characterImages = Object.fromEntries(
+    Object.entries(data.characterImages).map(([key, images]) => {
+      return [key, images.map((image) => `${base}${image}`)] as const;
+    })
+  ) as typeof data.characterImages;
 
   let cards_per_page = $state(8);
 
@@ -28,9 +26,7 @@
 
   let selectedCards: string[] = $state([]);
   let selectedImage: Record<string, string> = $state(
-    Object.fromEntries(
-      Object.entries(characterImages).map(([key, images]) => [key, images[0]])
-    )
+    Object.fromEntries(Object.entries(characterImages).map(([key, images]) => [key, images[0]]))
   );
 
   let cards = $derived(
@@ -214,7 +210,7 @@
       <div class="page">
         {#each page as card}
           <div style="background-color: black;padding: 0.3cm;">
-            <Card card={undefined} />
+            <Card {card} face="back" />
           </div>
         {/each}
       </div>

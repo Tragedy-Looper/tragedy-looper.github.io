@@ -1,10 +1,11 @@
 {
-      "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/characters.schema.json",
+    "$schema": "https://lokimidgard.github.io/tragedy-looper-deduction-tool/characters.schema.json",
     // For dev purposes
     // "$schema": "../characters.schema.json",
     "characters": [
         {
             "name": "Young Girl",
+            "edition": "Promo",
             "paranoiaLimit": 1,
             "tags": [
                 "student",
@@ -33,86 +34,8 @@
             ]
         },
         {
-            "name": "Part-Timer",
-            "paranoiaLimit": 1,
-            "tags": [
-                "adult",
-                "man"
-            ],
-            "startLocation": [
-                "City"
-            ],
-            "forbiddenLocation": [],
-            "abilities": [
-                {
-                    "type": "passive",
-                    "description": "This character ignores its Role and is a Person instead."
-                },
-                {
-                    "type": "passive",
-                    "description": "At the end of the day, if there are 3 or more total counters on this character, he dies."
-                },
-                {
-                    "type": "passive",
-                    "description": "At the start of the day, if this character is dead, place 'Part-Timer(?)' in the City."
-                }
-            ]
-        },
-        {
-            "name": "Part-Timer(?)",
-            "paranoiaLimit": 3,
-            "tags": [
-                "girl"
-            ],
-            "startLocation": [
-                "City"
-            ],
-            "forbiddenLocation": [],
-            "nonSelectableCharacter": true,
-            "abilities": [
-                {
-                    "type": "passive",
-                    "description": "This character has the same Role, and is the Culprit of the same Incident(s), as Part-Timer."
-                },
-                {
-                    "type": "active",
-                    "goodwillRank": 3,
-                    "description": "Reveal this character's Role. Place 2 Goodwill counters on any character at this location.",
-                    "timesPerLoop": 1
-                }
-            ]
-        },
-        {
-            "name": "Sect Founder",
-            "paranoiaLimit": 3,
-            "tags": [
-                "adult",
-                "woman"
-            ],
-            "startLocation": [
-                "Shrine"
-            ],
-            "forbiddenLocation": [],
-            "abilities": [
-                {
-                    "type": "passive",
-                    "description": "If this character is the culprit of an Incident that resolves, its effects resolve twice."
-                },
-                {
-                    "type": "active",
-                    "goodwillRank": 3,
-                    "description": "Place a Goodwill on an other Character who is at their Paranoia Limit."
-                },
-                {
-                    "type": "active",
-                    "goodwillRank": 4,
-                    "description": "Reveal the role of another character who is at their Paranoia Limit in this location.",
-                    "timesPerLoop": 1
-                }
-            ]
-        },
-        {
             "name": "Copycat",
+            "edition": "Promo",
             "paranoiaLimit": 2,
             "plotLessRole": "plot duplicate",
             "tags": [
@@ -137,6 +60,7 @@
         },
         {
             "name": "Servant",
+            "edition": "Promo",
             "paranoiaLimit": 3,
             "tags": [
                 "adult",
@@ -157,69 +81,6 @@
                     "goodwillRank": 4,
                     "description": "Choose any other character. For the remainder of the Loop, she also serves that character.",
                     "timesPerLoop": 1
-                }
-            ]
-        },
-        {
-            "name": "Metaworld Denizen",
-            "paranoiaLimit": 2,
-            "tags": [
-                "girl"
-            ],
-            "startLocation": [
-                "Shrine"
-            ],
-            "forbiddenLocation": [],
-            "abilities": [
-                {
-                    "type": "active",
-                    "goodwillRank": 3,
-                    "description": "Place 1 Hope or Despair counter on any character at this location. If this character has Goodwill Refusal and at least 1 Goodwill counter, the Mastermind may use this ability as their own",
-                    "timesPerLoop": 1
-                }
-            ]
-        },
-        {
-            "name": "Little Sister",
-            "paranoiaLimit": 3,
-            "tags": [
-                "little sister",
-                "girl"
-            ],
-            "startLocation": [
-                "Shrine"
-            ],
-            "forbiddenLocation": [],
-            "abilities": [
-                {
-                    "type": "passive",
-                    "description": "During script creation, this character cannot be given a Role with Goodwill Refusal."
-                },
-                {
-                    "type": "active",
-                    "goodwillRank": 5,
-                    "description": "Use a Goodwill ability from an Adult at this location, ignoring Goodwill counters. It cannot be refused by Goodwill Refusal, but counts towards that ability's 'Once per Loop' limit."
-                }
-            ]
-        },
-        {
-            "name": "Sacred Tree",
-            "paranoiaLimit": 4,
-            "tags": [
-                "tree"
-            ],
-            "startLocation": [
-                "Shrine"
-            ],
-            "forbiddenLocation": [
-                "City",
-                "Hospital",
-                "School"
-            ],
-            "abilities": [
-                {
-                    "type": "passive",
-                    "description": "Each turn, the Leader may move 1 counter on this character to another character at this location. If this character has Goodwill Refusal, the Mastermind must also do this during the Mastermind's ability step."
                 }
             ]
         }

@@ -9,36 +9,38 @@
 
   import './holo.css';
 
-  export let animated = false;
-  export let scale = 1;
+  type Card = {
+    name: string;
+    type: 'character';
+    startLocation: readonly (typeof locations)[number][] | undefined;
+    forbiddenLocation: readonly (typeof locations)[number][];
+    gender: 'male' | 'female' | 'both' | 'diverse';
+    paranoiaLimit: number | undefined;
+    image: string;
+    tags: readonly string[];
+    abilities: (
+      | {
+          type: 'passive';
+          description: string;
+          restrictedToLocation: readonly string[];
+        }
+      | {
+          type: 'active';
+          description: string;
+          goodwillRank: number;
+          timesPerLoop: number;
+          immuneToGoodwillRefusel: boolean;
+          restrictedToLocation: readonly string[];
+        }
+    )[];
+  };
 
-  export let card:
-    | {
-        name: string;
-        type: 'character';
-        startLocation: readonly (typeof locations)[number][] | undefined;
-        forbiddenLocation: readonly (typeof locations)[number][];
-        gender: 'male' | 'female' | 'both' | 'diverse';
-        paranoiaLimit: number | undefined;
-        image: string;
-        tags: readonly string[];
-        abilities: (
-          | {
-              type: 'passive';
-              description: string;
-              restrictedToLocation: readonly string[];
-            }
-          | {
-              type: 'active';
-              description: string;
-              goodwillRank: number;
-              timesPerLoop: number;
-              immuneToGoodwillRefusel: boolean;
-              restrictedToLocation: readonly string[];
-            }
-        )[];
-      }
-    | undefined;
+  let {
+    scale = 1,
+    animated = false,
+    card,
+    face = 'front',
+  }: { scale?: number; animated?: boolean; card: Card; face?: 'front' | 'back' } = $props();
 
   const springInteractSettings = { stiffness: 0.066, damping: 0.25 };
   const springPopoverSettings = { stiffness: 0.033, damping: 0.45 };
@@ -124,7 +126,7 @@
     }, delay);
   };
 
-  $: dynamicStyles = animated
+  let dynamicStyles = animated
     ? `
     --pointer-x: ${$springGlare.x}%;
     --pointer-y: ${$springGlare.y}%;
@@ -156,9 +158,9 @@
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div
       class="card__rotator"
-      on:pointermove={interact}
-      on:mouseout={interactEnd}
-      on:blur={interactEnd}
+      onpointermove={interact}
+      onmouseout={interactEnd}
+      onblur={interactEnd}
     >
       <div
         class="card"
@@ -170,7 +172,7 @@
         data-trainer-gallery="false"
         style="--scale:{scale};"
       >
-        {#if card}
+        {#if face == 'front'}
           <img src="{base}/cards/general/background.png" alt="Character" class="back" />
           <div class="card__shine back transformable"></div>
           <div class="card__glare back transformable"></div>

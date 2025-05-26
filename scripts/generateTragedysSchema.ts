@@ -518,6 +518,7 @@ function generateCharactersSchema({ characterNames }: Names) {
                     "additionalProperties": false,
                     "properties": {
                         "name": { "type": "string" },
+                        "edition": { "type": "string" },
                         "paranoiaLimit": { "type": "number", "minimum": 0, "maximum": 4 },
                         "tags": {
                             "type": "array",

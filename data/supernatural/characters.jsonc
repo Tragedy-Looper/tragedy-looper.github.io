@@ -9,7 +9,8 @@
                 "man",
                 "adult"
             ],
-            "paranoiaLimit": 4,
+            "edition": "Supenatural",
+"paranoiaLimit": 4,
             "startLocation": [
                 "Shrine"
             ],

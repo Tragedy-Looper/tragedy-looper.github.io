@@ -5,7 +5,8 @@
     "characters": [
         {
             "name": "Scientist",
-            "paranoiaLimit": 2,
+            "edition": "Midnight Circle",
+"paranoiaLimit": 2,
             "tags": [
                 "adult",
                 "man"
@@ -27,7 +28,8 @@
         },
         {
             "name": "Forensic Specialist",
-            "paranoiaLimit": 3,
+            "edition": "Midnight Circle",
+"paranoiaLimit": 3,
             "tags": [
                 "adult",
                 "man"
@@ -52,7 +54,8 @@
         },
         {
             "name": "A.I.",
-            "paranoiaLimit": 4,
+            "edition": "Midnight Circle",
+"paranoiaLimit": 4,
             "tags": [
                 "construct"
             ],
@@ -83,7 +86,8 @@
         },
         {
             "name": "Illusion",
-            "paranoiaLimit": 3,
+            "edition": "Midnight Circle",
+"paranoiaLimit": 3,
             "tags": [
                 "construct",
                 "woman"

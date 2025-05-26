@@ -5,7 +5,8 @@
     "characters": [
         {
             "name": "Teacher",
-            "paranoiaLimit": 2,
+            "edition": "Cosmic Evil",
+"paranoiaLimit": 2,
             "tags": [
                 "adult",
                 "woman"
@@ -29,7 +30,8 @@
         },
         {
             "name": "Transfer Student",
-            "paranoiaLimit": 2,
+            "edition": "Cosmic Evil",
+"paranoiaLimit": 2,
             "tags": [
                 "student",
                 "girl"
@@ -58,7 +60,8 @@
         },
         {
             "name": "Soldier",
-            "paranoiaLimit": 3,
+            "edition": "Cosmic Evil",
+"paranoiaLimit": 3,
             "tags": [
                 "adult",
                 "man"
@@ -83,7 +86,8 @@
         },
         {
             "name": "Black Cat",
-            "paranoiaLimit": 0,
+            "edition": "Cosmic Evil",
+"paranoiaLimit": 0,
             "tags": [
                 "animal"
             ],

@@ -5,7 +5,8 @@
     "characters": [
         {
             "name": "Boy Student",
-            "paranoiaLimit": 2,
+            "edition": "Base",
+"paranoiaLimit": 2,
             "tags": [
                 "student",
                 "boy"
@@ -23,7 +24,8 @@
         },
         {
             "name": "Girl Student",
-            "paranoiaLimit": 3,
+            "edition": "Base",
+"paranoiaLimit": 3,
             "tags": [
                 "student",
                 "girl"
@@ -41,7 +43,8 @@
         },
         {
             "name": "Rich Man’s Daughter",
-            "paranoiaLimit": 1,
+            "edition": "Base",
+"paranoiaLimit": 1,
             "tags": [
                 "student",
                 "girl"
@@ -63,7 +66,8 @@
         },
         {
             "name": "Class Rep",
-            "paranoiaLimit": 2,
+            "edition": "Base",
+"paranoiaLimit": 2,
             "tags": [
                 "student",
                 "girl"
@@ -82,7 +86,8 @@
         },
         {
             "name": "Mystery Boy",
-            "paranoiaLimit": 3,
+            "edition": "Base",
+"paranoiaLimit": 3,
             "tags": [
                 "student",
                 "boy"
@@ -106,7 +111,8 @@
         },
         {
             "name": "Shrine Maiden",
-            "paranoiaLimit": 2,
+            "edition": "Base",
+"paranoiaLimit": 2,
             "tags": [
                 "student",
                 "girl"
@@ -136,7 +142,8 @@
         },
         {
             "name": "Alien",
-            "paranoiaLimit": 2,
+            "edition": "Base",
+"paranoiaLimit": 2,
             "tags": [
                 "girl"
             ],
@@ -163,7 +170,8 @@
         },
         {
             "name": "Godly Being",
-            "paranoiaLimit": 3,
+            "edition": "Base",
+"paranoiaLimit": 3,
             "tags": [
                 "man",
                 "woman"
@@ -198,7 +206,8 @@
         },
         {
             "name": "Police Officer",
-            "paranoiaLimit": 3,
+            "edition": "Base",
+"paranoiaLimit": 3,
             "tags": [
                 "man",
                 "adult"
@@ -223,7 +232,8 @@
         },
         {
             "name": "Office Worker",
-            "paranoiaLimit": 2,
+            "edition": "Base",
+"paranoiaLimit": 2,
             "tags": [
                 "man",
                 "adult"
@@ -244,7 +254,8 @@
         },
         {
             "name": "Informer",
-            "paranoiaLimit": 3,
+            "edition": "Base",
+"paranoiaLimit": 3,
             "tags": [
                 "woman",
                 "adult"
@@ -263,7 +274,8 @@
         },
         {
             "name": "Pop Idol",
-            "paranoiaLimit": 2,
+            "edition": "Base",
+"paranoiaLimit": 2,
             "tags": [
                 "girl",
                 "student"
@@ -286,7 +298,8 @@
         },
         {
             "name": "Journalist",
-            "paranoiaLimit": 2,
+            "edition": "Base",
+"paranoiaLimit": 2,
             "tags": [
                 "adult",
                 "man"
@@ -309,7 +322,8 @@
         },
         {
             "name": "Boss",
-            "paranoiaLimit": 4,
+            "edition": "Base",
+"paranoiaLimit": 4,
             "tags": [
                 "adult",
                 "man"
@@ -338,7 +352,8 @@
         },
         {
             "name": "Doctor",
-            "paranoiaLimit": 2,
+            "edition": "Base",
+"paranoiaLimit": 2,
             "tags": [
                 "adult",
                 "man"
@@ -361,7 +376,8 @@
         },
         {
             "name": "Patient",
-            "paranoiaLimit": 2,
+            "edition": "Base",
+"paranoiaLimit": 2,
             "tags": [
                 "boy"
             ],
@@ -377,7 +393,8 @@
         },
         {
             "name": "Nurse",
-            "paranoiaLimit": 3,
+            "edition": "Base",
+"paranoiaLimit": 3,
             "tags": [
                 "adult",
                 "woman"
@@ -396,7 +413,8 @@
         },
         {
             "name": "Henchman",
-            "paranoiaLimit": 1,
+            "edition": "Base",
+"paranoiaLimit": 1,
             "tags": [
                 "adult",
                 "man"
