@@ -78,9 +78,9 @@
       >
     </p>
     <div class="cards">
-      <Card scale={0.3} animated card={undefined} />
-      <Card scale={0.3} animated card={undefined} />
-      <Card scale={0.3} animated card={undefined} />
+      <Card scale={0.3} animated face='back' card={'Boy Student'} />
+      <Card scale={0.3} animated face='back' card={'Girl Student'} />
+      <Card scale={0.3} animated face='back' card={'Black Cat'} />
     </div>
   </article>
   <article>

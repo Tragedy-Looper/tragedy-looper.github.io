@@ -2,19 +2,13 @@
   import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
   import { onMount } from 'svelte';
-  import { characters, locations } from '../../../model/characters';
+  import { characters, type CharacterName } from '../../../model/characters';
   import Iron from './iron.svelte';
   import Card from './card.svelte';
   import { getString } from '../+layout.svelte';
-  import { type PageProps } from './$types';
+  import { getAvialableCharacterImages } from '../../+layout.svelte';
 
-  let { data }: PageProps = $props();
-
-  let characterImages = Object.fromEntries(
-    Object.entries(data.characterImages).map(([key, images]) => {
-      return [key, images.map((image) => `${base}${image}`)] as const;
-    })
-  ) as typeof data.characterImages;
+  const characterImages = getAvialableCharacterImages();
 
   let cards_per_page = $state(8);
 
@@ -30,38 +24,13 @@
   );
 
   let cards = $derived(
-    Object.entries(characters)
-      .toSorted(([a], [b]) => $getString(a).localeCompare($getString(b)))
-      .map(([key, value]) => {
+    Object.keys(characters)
+      .toSorted((a, b) => $getString(a).localeCompare($getString(b)))
+      .map((key) => {
         return {
           type: 'character' as const,
-          ...value,
-          forbiddenLocation: 'forbiddenLocation' in value ? value.forbiddenLocation : [],
-          name: $getString(value.name),
-          key: value.name,
-          gender:
-            (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
-            (value.tags.includes('girl' as never) || value.tags.includes('woman' as never))
-              ? ('both' as const)
-              : value.tags.includes('boy' as never) || value.tags.includes('man' as never)
-                ? ('male' as const)
-                : value.tags.includes('girl' as never) || value.tags.includes('woman' as never)
-                  ? ('female' as const)
-                  : ('diverse' as const),
-          tags: value.tags.map($getString).toSorted((a, b) => a.localeCompare(b)),
           image: selectedImage[key],
-          abilities: value.abilities.map((ability) => {
-            return {
-              ...ability,
-              timesPerLoop: 'timesPerLoop' in ability ? ability.timesPerLoop : 0,
-              immuneToGoodwillRefusel:
-                'immuneToGoodwillRefusel' in ability ? ability.immuneToGoodwillRefusel : false,
-              restrictedToLocation:
-                'restrictedToLocation' in ability ? ability.restrictedToLocation : [],
-
-              description: $getString(ability.description),
-            };
-          }),
+          key: key as CharacterName,
         };
       })
   );

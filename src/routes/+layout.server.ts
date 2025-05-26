@@ -1,5 +1,5 @@
-import { characters } from '../../../data';
-import type { PageServerLoad } from './$types';
+import { characters } from '../data';
+import type { LayoutServerLoad } from './$types';
 import * as fs from 'fs';
 
 function escapeRegExp(string: string): string {
@@ -10,7 +10,7 @@ function normalizeCharacterName(name: string): string {
     return name.replace(/[^a-zA-Z0-9\(\)]/g, '').toLowerCase(); // remove non-alphanumeric characters and convert to lowercase
 }
 
-export const load: PageServerLoad = ({ params }) => {
+export const load: LayoutServerLoad = ({ params }) => {
     const characterNames = characters.map(x => x.name);
     // find images for characters in static/cards/characters
 

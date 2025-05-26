@@ -1,13 +1,16 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
-  import { characters, locations } from '../../../model/characters';
+  import { characters, locations, type CharacterName } from '../../../model/characters';
   import Iron from './iron.svelte';
-  import { spring } from 'svelte/motion';
+  import { Spring, spring } from 'svelte/motion';
   import { adjust, clamp, round } from '../../../misc';
   import { getString } from '../+layout.svelte';
-
+  import type { PageServerData } from './$types';
   import './holo.css';
+  import { getAvialableCharacterImages } from '../../+layout.svelte';
+
+  const characterImages = getAvialableCharacterImages();
 
   type Card = {
     name: string;
@@ -40,17 +43,73 @@
     animated = false,
     card,
     face = 'front',
-  }: { scale?: number; animated?: boolean; card: Card; face?: 'front' | 'back' } = $props();
+  }: {
+    scale?: number;
+    animated?: boolean;
+    card:
+      | Card
+      | CharacterName
+      | ({
+          type: 'character';
+          key: CharacterName;
+        } & Partial<Card>);
+    face?: 'front' | 'back';
+  } = $props();
+
+  let actualCard = $derived(getCarddataFromName(card));
+
+  function getCarddataFromName(c: typeof card): Card {
+    const key = typeof c === 'string' ? c : 'key' in c ? c.key : (c.name as CharacterName);
+    const value = typeof c === 'string' ? characters[c] : 'key' in c ? characters[c.key] : c;
+    const dataFromCharacterName = {
+      type: 'character' as const,
+      ...value,
+      forbiddenLocation: 'forbiddenLocation' in value ? value.forbiddenLocation : [],
+      name: $getString(value.name),
+      gender:
+        (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
+        (value.tags.includes('girl' as never) || value.tags.includes('woman' as never))
+          ? ('both' as const)
+          : value.tags.includes('boy' as never) || value.tags.includes('man' as never)
+            ? ('male' as const)
+            : value.tags.includes('girl' as never) || value.tags.includes('woman' as never)
+              ? ('female' as const)
+              : ('diverse' as const),
+      tags: value.tags.map($getString).toSorted((a, b) => a.localeCompare(b)),
+      image: characterImages[key as keyof typeof characterImages],
+      abilities: value.abilities.map((ability) => {
+        return {
+          ...ability,
+          timesPerLoop: 'timesPerLoop' in ability ? ability.timesPerLoop : 0,
+          immuneToGoodwillRefusel:
+            'immuneToGoodwillRefusel' in ability ? ability.immuneToGoodwillRefusel : false,
+          restrictedToLocation:
+            'restrictedToLocation' in ability ? ability.restrictedToLocation : [],
+
+          description: $getString(ability.description),
+        };
+      }),
+    };
+
+    if (typeof c === 'string') {
+      return dataFromCharacterName;
+    } else {
+      return {
+        ...dataFromCharacterName,
+        ...c,
+      };
+    }
+  }
 
   const springInteractSettings = { stiffness: 0.066, damping: 0.25 };
   const springPopoverSettings = { stiffness: 0.033, damping: 0.45 };
 
-  let springRotate = spring({ x: 0, y: 0 }, springInteractSettings);
-  let springGlare = spring({ x: 50, y: 50, o: 0 }, springInteractSettings);
-  let springBackground = spring({ x: 50, y: 50 }, springInteractSettings);
-  let springRotateDelta = spring({ x: 0, y: 0 }, springPopoverSettings);
-  let springTranslate = spring({ x: 0, y: 0 }, springPopoverSettings);
-  let springScale = spring(1, springPopoverSettings);
+  let springRotate = new Spring({ x: 0, y: 0 }, springInteractSettings);
+  let springGlare = new Spring({ x: 50, y: 50, o: 0 }, springInteractSettings);
+  let springBackground = new Spring({ x: 50, y: 50 }, springInteractSettings);
+  let springRotateDelta = new Spring({ x: 0, y: 0 }, springPopoverSettings);
+  let springTranslate = new Spring({ x: 0, y: 0 }, springPopoverSettings);
+  let springScale = new Spring(1, springPopoverSettings);
 
   const updateSprings = (
     background: { x: number; y: number },
@@ -126,145 +185,153 @@
     }, delay);
   };
 
-  let dynamicStyles = animated
-    ? `
-    --pointer-x: ${$springGlare.x}%;
-    --pointer-y: ${$springGlare.y}%;
+  let dynamicStyles = $derived(
+    animated
+      ? `
+    --pointer-x: ${springGlare.current.x}%;
+    --pointer-y: ${springGlare.current.y}%;
     --pointer-from-center: ${clamp(
       Math.sqrt(
-        ($springGlare.y - 50) * ($springGlare.y - 50) +
-          ($springGlare.x - 50) * ($springGlare.x - 50)
+        (springGlare.current.y - 50) * (springGlare.current.y - 50) +
+          (springGlare.current.x - 50) * (springGlare.current.x - 50)
       ) / 50,
       0,
       1
     )};
-    --pointer-from-top: ${$springGlare.y / 100};
-    --pointer-from-left: ${$springGlare.x / 100};
-    --card-opacity: ${$springGlare.o};
-    --rotate-x: ${$springRotate.x + $springRotateDelta.x}deg;
-    --rotate-y: ${$springRotate.y + $springRotateDelta.y}deg;
-    --background-x: ${$springBackground.x}%;
-    --background-y: ${$springBackground.y}%;
-    --card-scale: ${$springScale};
-    --translate-x: ${$springTranslate.x}px;
-    --translate-y: ${$springTranslate.y}px;
+    --pointer-from-top: ${springGlare.current.y / 100};
+    --pointer-from-left: ${springGlare.current.x / 100};
+    --card-opacity: ${springGlare.current.o};
+    --rotate-x: ${springRotate.current.x + springRotateDelta.current.x}deg;
+    --rotate-y: ${springRotate.current.y + springRotateDelta.current.y}deg;
+    --background-x: ${springBackground.current.x}%;
+    --background-y: ${springBackground.current.y}%;
+    --card-scale: ${springScale};
+    --translate-x: ${springTranslate.current.x}px;
+    --translate-y: ${springTranslate.current.y}px;
     --scale:${scale};
 	`
-    : '';
+      : ''
+  );
 </script>
 
-<div class:card__holder={animated} style={dynamicStyles} class="top">
-  <div class="card__translater">
-    <!-- svelte-ignore a11y_no_static_element_interactions -->
-    <div
-      class="card__rotator"
-      onpointermove={interact}
-      onmouseout={interactEnd}
-      onblur={interactEnd}
-    >
+{#if card}
+  <div class:card__holder={animated} style={dynamicStyles} class="top">
+    <div class="card__translater">
+      <!-- svelte-ignore a11y_no_static_element_interactions -->
       <div
-        class="card"
-        data-number="132"
-        data-set="swsh9"
-        data-subtypes="supporter"
-        data-supertype="trainer"
-        data-rarity="rare holo"
-        data-trainer-gallery="false"
-        style="--scale:{scale};"
+        class="card__rotator"
+        onpointermove={interact}
+        onmouseout={interactEnd}
+        onblur={interactEnd}
       >
-        {#if face == 'front'}
-          <img src="{base}/cards/general/background.png" alt="Character" class="back" />
-          <div class="card__shine back transformable"></div>
-          <div class="card__glare back transformable"></div>
+        <div
+          class="card"
+          data-number="132"
+          data-set="swsh9"
+          data-subtypes="supporter"
+          data-supertype="trainer"
+          data-rarity="rare holo"
+          data-trainer-gallery="false"
+          style="--scale:{scale};"
+        >
+          {#if face == 'front'}
+            <img src="{base}/cards/general/background.png" alt="Character" class="back" />
+            <div class="card__shine back transformable"></div>
+            <div class="card__glare back transformable"></div>
 
-          <img src={card.image} alt="Character" class="back image" />
-          <img src="{base}/cards/general/{card.gender}.png" alt="Cardbackground" class="back" />
+            <img src={actualCard.image} alt="Character" class="back image" />
+            <img
+              src="{base}/cards/general/{actualCard.gender}.png"
+              alt="Cardbackground"
+              class="back"
+            />
 
-          {#each locations as location}
-            {#if card.startLocation == undefined}
-              <!-- If no start location is defined, show all no icons -->
-            {:else if card.startLocation.includes(location)}
+            {#each locations as location}
+              {#if actualCard.startLocation == undefined}
+                <!-- If no start location is defined, show all no icons -->
+              {:else if actualCard.startLocation.includes(location)}
+                <img
+                  src="{base}/cards/general/location-{location.toLocaleLowerCase()}-start.png"
+                  alt={$getString(location)}
+                  class="location back"
+                />
+              {:else if actualCard.forbiddenLocation.includes(location)}
+                <img
+                  src="{base}/cards/general/location-{location.toLocaleLowerCase()}-forbidden.png"
+                  alt={$getString(location)}
+                  class="location back"
+                />
+              {:else}
+                <img
+                  src="{base}/cards/general/location-{location.toLocaleLowerCase()}-blank.png"
+                  alt={$getString(location)}
+                  class="location back"
+                />
+              {/if}
+            {/each}
+            {#if actualCard.paranoiaLimit !== undefined}
               <img
-                src="{base}/cards/general/location-{location.toLocaleLowerCase()}-start.png"
-                alt={$getString(location)}
-                class="location back"
-              />
-            {:else if card.forbiddenLocation.includes(location)}
-              <img
-                src="{base}/cards/general/location-{location.toLocaleLowerCase()}-forbidden.png"
-                alt={$getString(location)}
-                class="location back"
-              />
-            {:else}
-              <img
-                src="{base}/cards/general/location-{location.toLocaleLowerCase()}-blank.png"
-                alt={$getString(location)}
-                class="location back"
+                src="{base}/cards/general/paranoia-{actualCard.paranoiaLimit}.png"
+                alt={$getString('paranoia')}
+                class="paranoia back"
               />
             {/if}
-          {/each}
-          {#if card.paranoiaLimit !== undefined}
-            <img
-              src="{base}/cards/general/paranoia-{card.paranoiaLimit}.png"
-              alt={$getString('paranoia')}
-              class="paranoia back"
-            />
-          {/if}
 
-          <h2>{card.name}</h2>
+            <h2>{actualCard.name}</h2>
 
-          <ul class="abilities">
-            {#each card.abilities as ability}
-              <li class={ability.type}>
-                {#if ability.type == 'active'}
-                  <ul class="perLoop">
-                    {#each Array.from({ length: ability.timesPerLoop }) as _, i}
-                      <li>
-                        <img src="{base}/cards/general/loop.png" alt="loop icon" />
-                      </li>
-                    {/each}
-                  </ul>
-                  <ul class="goodwillRank">
-                    {#each Array.from({ length: ability.goodwillRank }) as _, i}
-                      <li>
-                        <img src="{base}/cards/general/goodwill.png" alt="goodwill icon" />
-                      </li>
-                    {/each}
-                  </ul>
-                {/if}
-                <div class="ability">
-                  {#if ability.restrictedToLocation.length > 0}
-                    <div>
-                      {$getString('Only at')}: {ability.restrictedToLocation
-                        .map($getString)
-                        .join(', ')}
-                    </div>
+            <ul class="abilities">
+              {#each actualCard.abilities as ability}
+                <li class={ability.type}>
+                  {#if ability.type == 'active'}
+                    <ul class="perLoop">
+                      {#each Array.from({ length: ability.timesPerLoop }) as _, i}
+                        <li>
+                          <img src="{base}/cards/general/loop.png" alt="loop icon" />
+                        </li>
+                      {/each}
+                    </ul>
+                    <ul class="goodwillRank">
+                      {#each Array.from({ length: ability.goodwillRank }) as _, i}
+                        <li>
+                          <img src="{base}/cards/general/goodwill.png" alt="goodwill icon" />
+                        </li>
+                      {/each}
+                    </ul>
                   {/if}
-                  {ability.description}
-                </div>
-              </li>
-            {/each}
-          </ul>
-          <ul class="tags">
-            {#each card.tags as tag}
-              <li>
-                <Iron />
-                <div>
-                  {tag}
-                </div>
-                <Iron />
-              </li>
-            {/each}
-          </ul>
-        {:else}
-          <img src="{base}/cards/general/cardback.png" alt="Empty" class="back" />
-          <div class="card__shine back transformable"></div>
-          <div class="card__glare back transformable"></div>
-        {/if}
+                  <div class="ability">
+                    {#if ability.restrictedToLocation.length > 0}
+                      <div>
+                        {$getString('Only at')}: {ability.restrictedToLocation
+                          .map($getString)
+                          .join(', ')}
+                      </div>
+                    {/if}
+                    {ability.description}
+                  </div>
+                </li>
+              {/each}
+            </ul>
+            <ul class="tags">
+              {#each actualCard.tags as tag}
+                <li>
+                  <Iron />
+                  <div>
+                    {tag}
+                  </div>
+                  <Iron />
+                </li>
+              {/each}
+            </ul>
+          {:else}
+            <img src="{base}/cards/general/cardback.png" alt="Empty" class="back" />
+            <div class="card__shine back transformable"></div>
+            <div class="card__glare back transformable"></div>
+          {/if}
+        </div>
       </div>
     </div>
   </div>
-</div>
+{/if}
 
 <style lang="scss">
   .top {
@@ -377,7 +444,7 @@
           0 0 7px #000,
           0 0 8px #000;
         margin: 0;
-        font-size: 8pt;
+        font-size: calc(8pt * var(--scale));
       }
     }
     .goodwillRank {
