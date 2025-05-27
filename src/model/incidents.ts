@@ -13,24 +13,24 @@ export type Incidents = IncidentsHelper['incidents'];
 
 export type DoseNotTriggerIncident = { doseNotTriggerIncidentEffect?: true }
 
-export function isMobIncident(name: string): name is MobIncident {
-    if (!isIncidentName(name)) {
+export function isMobIncident(name: unknown): name is MobIncident {
+    if (typeof name !== 'string' || !isIncidentName(name)) {
         return false;
     }
     const incident = incidents[name];
     return 'mob' in incident && typeof incident.mob === 'number';
 }
 
-export function isFakeIncident(name: string): name is FakedIncident {
-    if (!isIncidentName(name)) {
+export function isFakeIncident(name: unknown): name is FakedIncident {
+    if (typeof name != 'string' || !isIncidentName(name)) {
         return false;
     }
     const incident = incidents[name];
     return 'faked' in incident && incident.faked === true;
 }
 
-export function isRepeatedCulpritIncident(name: string): name is MobIncident {
-    if (!isIncidentName(name)) {
+export function isRepeatedCulpritIncident(name: unknown): name is MobIncident {
+    if (typeof name !== 'string' || !isIncidentName(name)) {
         return false;
     }
     const incident = incidents[name];

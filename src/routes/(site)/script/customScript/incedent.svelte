@@ -54,6 +54,7 @@
         />
       </label>
       <select bind:value={$selectedIncident}>
+        <option value="" disabled selected>{$getString('Select an incident')}</option>
         {#each $allIncidents as day}
           <option>{day}</option>
         {/each}
@@ -62,6 +63,7 @@
   </td>
   <td>
     <select bind:value={$selectedCharacter}>
+      <option value="" disabled selected>{$getString('Select a character')}</option>
       {#each $availableCharacters as day}
         <option>{day}</option>
       {/each}

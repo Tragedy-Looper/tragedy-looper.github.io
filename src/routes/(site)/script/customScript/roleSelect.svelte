@@ -3,6 +3,7 @@
   import type { CharacterName } from '../../../../model/characters';
   import type { ICustomScriptRoleExclusiveSelection } from '../../../../model/customScript';
   import Option from './option.svelte';
+  import { getString } from '../../+layout.svelte';
 
   export let role: ICustomScriptRoleExclusiveSelection<CharacterName>;
   $: selectedCharacter = role.selectedCharacter;
@@ -16,6 +17,7 @@
 </script>
 
 <select bind:value={$selectedCharacter}>
+  <option value="" disabled selected>{$getString('Select a character')}</option>
   {#each $availableCharacters as c}
     <option value={c}>{c}</option>
   {/each}

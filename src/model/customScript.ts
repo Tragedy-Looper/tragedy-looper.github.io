@@ -65,7 +65,7 @@ export interface ICustomScriptIncidentSelection<TCharacters extends CharacterNam
     readonly selectedCharacter: Writable<TCharacters>;
     readonly selectedDay: Writable<number>;
     readonly notInTragedy: Writable<boolean>;
-    readonly selectedIncident: Writable<IncidentName>;
+    readonly selectedIncident: Writable<IncidentName | undefined>;
     readonly availableCharacters: Readable<readonly TCharacters[]>;
     readonly availableDays: Readable<readonly number[]>;
     readonly options: Readable<readonly AdditionalOptions[]>;
@@ -76,7 +76,7 @@ class CustomScriptIncidentSelection<TCharacters extends CharacterName> implement
     public readonly selectedCharacter: Writable<TCharacters>;
     public readonly selectedDay: Writable<number>;
     public readonly notInTragedy: Writable<boolean>;
-    public readonly selectedIncident: Writable<IncidentName>;
+    public readonly selectedIncident: Writable<IncidentName | undefined>;
     public readonly availableCharacters: Readable<readonly TCharacters[]>;
     public readonly availableDays: Readable<readonly number[]>;
     public readonly options: Readable<readonly AdditionalOptions[]>;
@@ -96,7 +96,7 @@ class CustomScriptIncidentSelection<TCharacters extends CharacterName> implement
         // will be set by init
         // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         this.selectedCharacter = writable(undefined!);
-        this.selectedIncident = writable(get(availableIncidents)[0]);
+        this.selectedIncident = writable(undefined);
         this.notInTragedy = writable(false);
         this.selectedDay = writable(0);
         this._availableCharacters = writable(writable([]));
@@ -106,7 +106,7 @@ class CustomScriptIncidentSelection<TCharacters extends CharacterName> implement
 
         let lastOptions: AdditionalOptions[] = [];
         this.options = derived(this.selectedIncident, p => {
-            const incident = incidents[p];
+            const incident =p? incidents[p]: undefined;
 
             const newOptions = [
                 ...(isScriptSpecified(incident) ? incident.scriptSpecified.map((s) => new AdditionalOptions(script, s)) : []),
@@ -421,10 +421,10 @@ class CustomScriptRoleExclusiveSelection<T extends CharacterName> implements Cus
             ];
 
             lastOptions.forEach(e => {
-                const target = newOptions.filter(x => x.option.name == e.option.name && x.option.type == e.option.type)[0];
-                if (target) {
-                    target.value.set(get(e.value));
-                }
+                // const target = newOptions.filter(x => x.option.name == e.option.name && x.option.type == e.option.type)[0];
+                // if (target) {
+                //     target.value.set(get(e.value));
+                // }
             });
 
             lastOptions = newOptions;
@@ -448,7 +448,7 @@ class CustomScriptRoleExclusiveSelection<T extends CharacterName> implements Cus
         this._availableCharacters.set(dervid);
         const currentSelection = get(this.selectedCharacter);
         if (currentSelection == undefined) {
-            this.selectedCharacter.set(current[0]);
+            // this.selectedCharacter.set(current[0]);
         }
     }
 }
@@ -496,7 +496,7 @@ class CustomScriptPlotMutalExclusiveSelection<T extends PlotName> implements ICu
     constructor(script: CustomScript, allPlotNames: readonly T[]) {
         this.script = script
         this.allPlotNames = allPlotNames;
-        this.selectedPlot = writable(allPlotNames[0]);
+        this.selectedPlot = writable(undefined!);
         this._availablePlots = writable(writable([]));
         this.availablePlots = storeStore(this._availablePlots);
 
@@ -532,8 +532,8 @@ class CustomScriptPlotMutalExclusiveSelection<T extends PlotName> implements ICu
         });
         this._availablePlots.set(dervid);
 
-        if (get(this.selectedPlot) == undefined)
-            this.selectedPlot.set(get(dervid)[0])
+        // if (get(this.selectedPlot) == undefined)
+        // this.selectedPlot.set(get(dervid)[0])
 
 
     }
@@ -600,7 +600,7 @@ export class CustomScript {
         this.selectedPlots = derived([selectodMainPlots, selectodSubplots], ([mainPlots, subPlots]) => [...mainPlots, ...subPlots]);
         this.unusedRoles = derived([this.tragedySet, this.selectedPlots], ([tg, ...selectedPlots]) => {
             const allRoles = getTragedySetRoles(tg);
-            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y].roles)));
+            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y]?.roles ?? [])));
             return allRoles.filter(x => !used.includes(x as any));
         });
         this.allRoles = derived([this.tragedySet], ([tg]) => {
@@ -608,10 +608,10 @@ export class CustomScript {
             return allRoles;
         });
         this.usedRoles = derived([this.selectedPlots], ([...selectedPlots]) => {
-            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y].roles)));
+            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y]?.roles ?? [])));
             return used;
         });
-        this.roles = derived([this.selectedPlots], ([...selectiedPlots]) => generateRoleSelection(this, sumGroups(...selectiedPlots.flatMap(x => x.map(y => plots[y].roles))), keys(characters).filter(x => {
+        this.roles = derived([this.selectedPlots], ([...selectiedPlots]) => generateRoleSelection(this, sumGroups(...selectiedPlots.flatMap(x => x.map(y => plots[y]?.roles ?? []))), keys(characters).filter(x => {
             const char = characters[x];
             return !('nonSelectableCharacter' in char && char.nonSelectableCharacter);
         })));
