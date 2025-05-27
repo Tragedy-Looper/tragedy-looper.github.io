@@ -1,3 +1,55 @@
+@font-face {
+    font-family: 'Alumni Sans Pinstripe';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Italic.ttf) ;
+}
+
+@font-face {
+    font-family: 'Alumni Sans Pinstripe';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf) ;
+}
+
+@font-face {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 300 900;
+    font-display: swap;
+    src: url('/fonts/Darker_Grotesque/DarkerGrotesque-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Poiret_One/PoiretOne-Regular.ttf') ;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/fonts/Noto_Sans/static/NotoSans-Regular.ttf') ;
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Twemoji';
+    src: url('/fonts/Twemoji/Twemoji.Mozilla.ttf') ;
+}
+
+
 * {
     box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
 }
