@@ -18,6 +18,7 @@
   import type { Role } from '../roles.g';
   import * as data from '../data';
   import { browser } from '$app/environment';
+  import Translation from './translation.svelte';
 
   export let tragedySet: TragedySetName;
   export let cast: readonly CharacterName[];
@@ -476,11 +477,11 @@
       ''};"
   >
     <div class="header vertical-header plot-main" style="grid-area: main-plot-header;">
-      {$getString('Main Plot')}
+      <Translation translationKey={'Main Plot'} />
     </div>
     {#each mainPlots as p}
       <div class="plot-main" style="grid-area: main-plot-header-{cssesc(p.name)};">
-        {$getString(p.name)}
+        <Translation translationKey={p.name} />
       </div>
       <div class="plot-main rules" style="grid-area: main-role-plot-rule-{cssesc(p.name)};">
         {#each p.rules ?? [] as a}
@@ -508,11 +509,11 @@
     {/each}
 
     <div class="header vertical-header plot-sub" style="grid-area: sub-plot-header;">
-      {$getString('Sub Plot')}
+      <Translation translationKey={'Sub Plot'} />
     </div>
     {#each subPlots as p}
       <div class="plot-sub" style="grid-area: sub-plot-header-{cssesc(p.name)};">
-        {$getString(p.name)}
+        <Translation translationKey={p.name} />
       </div>
       <div class="plot-sub rules" style="grid-area: sub-role-plot-rule-{cssesc(p.name)};">
         {#each p.rules as a}
@@ -543,31 +544,31 @@
 
     <!-- <div class="header vertical-header role" style="grid-area: role-ability-header;">Abbiliy</div> -->
     <div class="header vertical-header role" style="grid-area: role-header;">
-      {$getString('Roles')}
+      <Translation translationKey={'Roles'} />
     </div>
     {#each r.filter((x) => !x.skip) as ri}
       {@const tags = (ri.tags ?? []).filter((x) => x.length > 0)}
       <div class="vertical-header role" style="grid-area: role-header-{cssesc(ri.name)};">
-        {$getString(ri.name)}
+        <Translation translationKey={ri.name} />
         {#if tags.length > 0}
           <small>
             {#each tags as tag, i}
               <br />
-              {$getString(tag)}
+              <Translation translationKey={tag} />
             {/each}
           </small>
         {/if}
       </div>
     {/each}
     <div class="header vertical-header incident" style="grid-area: incident-header-day;">
-      {$getString('Day')}
+      <Translation translationKey={'Day'} />
     </div>
     <div class="header vertical-header incident" style="grid-area: incident-header;">
-      {$getString('Incidents')}
+      <Translation translationKey={'Incidents'} />
     </div>
     {#each ince as i}
       <div class="vertical-header incident" style="grid-area: incident-header-{i.day};">
-        {$getString(i.name)}<br />
+        <Translation translationKey={i.name} /><br />
       </div>
       <div class="vertical-header incident" style="grid-area: incident-day-{i.day};">
         {i.day}
@@ -575,11 +576,11 @@
     {/each}
 
     <div class="header vertical-header character" style="grid-area: character-header;">
-      {$getString('Characters')}
+      <Translation translationKey={'Characters'} />
     </div>
     {#each chars as ci}
       <div class="character" style="grid-area: char-header-{cssesc(ci.name)}; ">
-        {$getString(ci.name)}
+        <Translation translationKey={ci.name} />
         {#if isCharacterLate(ci.name)}
           <i>(?)</i>{/if}
       </div>
@@ -598,7 +599,7 @@
 
     <div class="header vertical-header role" style="grid-area: goodwillrefusal-header;">
       <div style="height: min-content; min-height: 100%;">
-        {$getString('Goodwill Refusel')}
+        <Translation translationKey={'Goodwill Refusel'} />
       </div>
     </div>
     {#each r.filter((x) => !x.skip) as ri}
@@ -653,10 +654,10 @@
   {#each inceForRules as i}
     <article class="incident">
       <h1>
-        {$getString(i.name)}
+        <Translation translationKey={i.name} />
       </h1>
       {#if i.faked}
-        <h2>{$getString('Faked')}</h2>
+        <h2><Translation translationKey={'Faked'} /></h2>
       {:else}
         <h2>{$getString('Day {day}', { day: i.day })}</h2>
       {/if}
@@ -685,16 +686,18 @@
   {#each r.filter((x) => !x.combined) as ri}
     <article class="role">
       <h1>
-        {$getString(ri.name)}
+        <Translation translationKey={ri.name} />
       </h1>
-      <h2>
-        {ri.goodwillRefusel
-          ? `${$getString('Goodwill refusal')}: ${$getString(ri.goodwillRefusel)}`
-          : ''}
-      </h2>
+      {#if ri.goodwillRefusel}
+        <h2>
+          <Translation translationKey={'Goodwill Refusel'} /> : <Translation
+            translationKey={ri.goodwillRefusel}
+          />
+        </h2>
+      {/if}
 
       {#each ri.tags ?? [] as tag}
-        <h2>{$getString(tag)}</h2>
+        <h2><Translation translationKey={tag} /></h2>
       {/each}
 
       {#each ri.abilities ?? [] as a}
@@ -710,10 +713,10 @@
 
   {#if (specialRules?.filter((x) => x.length > 0).length ?? 0) > 0}
     <article class="tragedyRules">
-      <h1>{$getString('Special Rule')}</h1>
+      <h1><Translation translationKey={'Special Rule'} /></h1>
       {#each specialRules.filter((x) => x.length > 0) as sp}
         <p>
-          {$getString(sp)}
+          <Translation translationKey={sp} />
         </p>
       {/each}
     </article>
@@ -722,10 +725,10 @@
   {#each tg.extraRules as ri}
     <article class="tragedyRules">
       <h1>
-        {$getString(ri.name)}
+        <Translation translationKey={ri.name} />
       </h1>
       <p>
-        {$getString(ri.description)}
+        <Translation translationKey={ri.description} />
       </p>
     </article>
   {/each}

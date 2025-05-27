@@ -9,6 +9,7 @@
   import type { PageServerData } from './$types';
   import './holo.css';
   import { getAvialableCharacterImages } from '../../+layout.svelte';
+    import Translation from '../../../view/translation.svelte';
 
   const characterImages = getAvialableCharacterImages();
 

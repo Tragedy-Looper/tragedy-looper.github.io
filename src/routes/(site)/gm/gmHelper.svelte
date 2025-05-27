@@ -20,6 +20,7 @@
   import { getString } from '../+layout.svelte';
   import { get } from 'svelte/store';
   import type { Role } from '../../../roles.g';
+    import Translation from '../../../view/translation.svelte';
 
   export let selectedScript: Script;
 
@@ -112,22 +113,22 @@
 
 <hgroup style="align-self: start; justify-self: start;">
   <h4>{selectedScript.creator}</h4>
-  <h1>{$getString(selectedScript.title)}</h1>
+  <h1><Translation translationKey={selectedScript.title} /></h1>
 
   <h2>
     {#if selectedScript.set}
-      ({selectedScript.set.number}) {$getString(selectedScript.set.name)}
+      ({selectedScript.set.number}) <Translation translationKey={selectedScript.set.name} />
     {/if}
   </h2>
 </hgroup>
 <table>
   <thead>
     <tr>
-      <th>{$getString('Type')}</th>
-      <th>{$getString('Character')}</th>
-      <th>{$getString('Prerequiste')}</th>
-      <th>{$getString('Description')}</th>
-      <th>{$getString('Role / Plot / Incident')}</th>
+      <th><Translation translationKey={'Type'} /></th>
+      <th><Translation translationKey={'Character'} /></th>
+      <th><Translation translationKey={'Prerequiste'} /></th>
+      <th><Translation translationKey={'Description'} /></th>
+      <th><Translation translationKey={'Role / Plot / Incident'} /></th>
     </tr>
   </thead>
   <tbody>
@@ -135,16 +136,16 @@
         .filter((x) => includes(x['timing'], 'Always'))
         .sort(sortabilities).length > 0}
       <tr>
-        <td colspan="7">{$getString('Always')}</td>
+        <td colspan="7"><Translation translationKey={'Always'} /></td>
       </tr>
       {#each scriptRoles.filter((x) => x.tags?.includes('Immortal')) as map}
         <tr>
-          <td> {$getString('mandatory')} </td>
+          <td> <Translation translationKey={'mandatory'} /> </td>
           <td>
             {$getString(map.character) ?? ''}
           </td>
           <td></td>
-          <td> {$getString("This Character can't die")} </td>
+          <td> <Translation translationKey={"This Character can't die"} /> </td>
           <td>
             {$getString(map.role) ?? ''}
           </td>
@@ -155,7 +156,7 @@
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {$getString(map.type)}
+            <Translation translationKey={map.type} />
           </td>
           <td>
             {$getString(map.character) ?? ''}
@@ -177,14 +178,14 @@
     {/if}
     {#if showAll(abilities).filter((x) => includes(x['timing'], 'On character death')).length > 0}
       <tr>
-        <td colspan="7">{$getString('On Character Death')}</td>
+        <td colspan="7"><Translation translationKey={'On Character Death'} /></td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'On character death'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {$getString(map.type)}
+            <Translation translationKey={map.type} />
           </td>
           <td>
             {$getString(map.character) ?? ''}
@@ -206,21 +207,21 @@
     {/if}
     {#if showAll(abilities).filter( (x) => includes(x['timing'], 'When this role is to be reveald') ).length > 0}
       <tr>
-        <td colspan="7">{$getString('On Role reveal')}</td>
+        <td colspan="7"><Translation translationKey={'On Role reveal'} /></td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'When this role is to be reveald'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {$getString(map.type)}
+            <Translation translationKey={map.type} />
           </td>
           <td>
-            {$getString(map.character)}
+            <Translation translationKey={map.character} />
           </td>
           <td>
             {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
-            {$getString(map.prerequisite)}
+            <Translation translationKey={map.prerequisite} />
           </td>
           <td>
             {$getString(map.description) ?? ''}
@@ -235,19 +236,19 @@
     {/if}
     {#if showAll(abilities).filter( (x) => includes(x['timing'], 'Loop Start') ).length + showAll(usedCharacters).filter((x) => x['enters on loop'] !== undefined).length > 0}
       <tr>
-        <td colspan="7">{$getString('Loop Start')}</td>
+        <td colspan="7"><Translation translationKey={'Loop Start'} /></td>
       </tr>
       {#each showAll(usedCharacters).filter((x) => x['enters on loop'] !== undefined) as map}
         <tr>
-          <td> {$getString('mandatory')} </td>
+          <td> <Translation translationKey={'mandatory'} /> </td>
           <td>
             {$getString(map.character) ?? ''}
           </td>
           <td>
-            {$getString('On Loop {day}', { day: map['enters on loop'] })}
+            <Translation translationKey={'On Loop {day}', { day: map['enters on loop'] }} />
           </td>
 
-          <td> {$getString('Enters Play')} </td>
+          <td> <Translation translationKey={'Enters Play'} /> </td>
           <td>
             {$getString(map.role) ?? ''}
           </td>
@@ -259,7 +260,7 @@
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {$getString(map.type)}
+            <Translation translationKey={map.type} />
           </td>
           <td>
             {$getString(map.character) ?? ''}
@@ -283,19 +284,19 @@
     {/if}
     {#if showAll(usedCharacters).filter((x) => x['enters on day'] !== undefined).length > 0}
       <tr>
-        <td colspan="7">{$getString('Day Start')}</td>
+        <td colspan="7"><Translation translationKey={'Day Start'} /></td>
       </tr>
       {#each showAll(usedCharacters).filter((x) => x['enters on day'] !== undefined) as map}
         <tr>
-          <td> {$getString('mandatory')} </td>
+          <td> <Translation translationKey={'mandatory'} /> </td>
           <td>
             {$getString(map.character) ?? ''}
           </td>
           <td>
-            {$getString('On Day {day}', { day: map['enters on day'] })}
+            <Translation translationKey={'On Day {day}', { day: map['enters on day'] }} />
           </td>
 
-          <td> {$getString('Enters Play')} </td>
+          <td> <Translation translationKey={'Enters Play'} /> </td>
           <td>
             {$getString(map.role) ?? ''}
           </td>
@@ -304,14 +305,14 @@
     {/if}
     {#if showAll(abilities).filter( (x) => includes(x['timing'], 'Mastermind Action step') ).length > 0}
       <tr>
-        <td colspan="7">{$getString('Placing Cards')}</td>
+        <td colspan="7"><Translation translationKey={'Placing Cards'} /></td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Mastermind Action step'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {$getString(map.type)}
+            <Translation translationKey={map.type} />
           </td>
           <td>
             {$getString(map.character) ?? ''}
@@ -335,14 +336,14 @@
     {/if}
     {#if showAll(abilities).filter((x) => includes(x['timing'], 'Card resolve')).length > 0}
       <tr>
-        <td colspan="7">{$getString('Resolving Cards')}</td>
+        <td colspan="7"><Translation translationKey={'Resolving Cards'} /></td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Card resolve'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {$getString(map.type)}
+            <Translation translationKey={map.type} />
           </td>
           <td>
             {$getString(map.character) ?? ''}
@@ -365,14 +366,14 @@
     {/if}
     {#if showAll(abilities).filter((x) => includes(x['timing'], 'Mastermind Ability')).length > 0}
       <tr>
-        <td colspan="7">{$getString('Abilities Mastermind')}</td>
+        <td colspan="7"><Translation translationKey={'Abilities Mastermind'} /></td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Mastermind Ability'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {$getString(map.type)}
+            <Translation translationKey={map.type} />
           </td>
           <td>
             {$getString(map.character) ?? ''}
@@ -395,14 +396,14 @@
     {/if}
     {#if scriptRoles.filter((x) => x['goodwillRefusel'] !== undefined).length + showAll(abilities).filter( (x) => includes(x['timing'], 'Goodwill ablility step') ).length > 0}
       <tr>
-        <td colspan="7">{$getString('Abilities Protagonists')}</td>
+        <td colspan="7"><Translation translationKey={'Abilities Protagonists'} /></td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Goodwill ablility step'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {$getString(map.type)}
+            <Translation translationKey={map.type} />
           </td>
           <td>
             {$getString(map.character) ?? ''}
@@ -427,13 +428,13 @@
         .sort( (a, b) => sortabilities({ type: a.goodwillRefusel ?? 'Optional' }, { type: b.goodwillRefusel ?? 'Optional' }) ) as map}
         <tr>
           <td>
-            {$getString(map.goodwillRefusel)}
+            <Translation translationKey={map.goodwillRefusel} />
           </td>
           <td>
             {$getString(map.character) ?? ''}
           </td>
           <td></td>
-          <td> {$getString('Refuse Goodwill Ability')} </td>
+          <td> <Translation translationKey={'Refuse Goodwill Ability'} /> </td>
           <td>
             {$getString(map.role) ?? ''}
           </td>
@@ -442,14 +443,14 @@
     {/if}
     {#if showAll(abilities).filter( (x) => includes(x['timing'], 'Incident trigger') ).length + usedIncidents.length + showAll(abilities).filter( (x) => includes(x['timing'], 'Incident step') ).length > 0}
       <tr>
-        <td colspan="7">{$getString('Incidents')}</td>
+        <td colspan="7"><Translation translationKey={'Incidents'} /></td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Incident trigger'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {$getString(map.type)}
+            <Translation translationKey={map.type} />
           </td>
           <td>
             {$getString(map.character) ?? ''}
@@ -474,7 +475,7 @@
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {$getString(map.type)}
+            <Translation translationKey={map.type} />
           </td>
           <td>
             {$getString(map.character) ?? ''}
@@ -505,23 +506,23 @@
             </td>
             <td>
               {#if char == undefined}
-                {$getString('Mob')}:
+                <Translation translationKey={'Mob'} />:
               {/if}
               {$getString(i.culprit) ?? ''}
             </td>
             <td>
-              {$getString('On day {day}', { day: i.day })}
-              {#if limit ?? 0 > 0}{$getString('limit {limit}', { limit })}{/if}
+              <Translation translationKey={'On day {day}', { day: i.day }} />
+              {#if limit ?? 0 > 0}<Translation translationKey={'limit {limit}', { limit }} />{/if}
               {#if e.prerequisite}
-                | {$getString(e.prerequisite)}
+                | <Translation translationKey={e.prerequisite} />
               {/if}
             </td>
 
             <td>
               {#if require(char)?.doseNotTriggerIncidentEffect}
-                {$getString('This has no effect but the incident is triggered.')}
+                <Translation translationKey={'This has no effect but the incident is triggered.'} />
               {:else if char?.name && roles[getRoleOfCast(selectedScript, char.name) ?? 'Person']?.doseNotTriggerIncidentEffect}
-                {$getString('This has no effect but the incident is triggered.')}
+                <Translation translationKey={'This has no effect but the incident is triggered.'} />
               {:else}
                 {$getString(e.description) ?? ''}
               {/if}
@@ -547,14 +548,14 @@
     {/if}
     {#if showAll(abilities).filter((x) => includes(x['timing'], 'Day End')).length > 0}
       <tr>
-        <td colspan="7">{$getString('Night: Day End')}</td>
+        <td colspan="7"><Translation translationKey={'Night: Day End'} /></td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Day End'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {$getString(map.type)}
+            <Translation translationKey={map.type} />
           </td>
           <td>
             {$getString(map.character) ?? ''}
@@ -577,14 +578,14 @@
     {/if}
     {#if showAll(abilities).filter((x) => includes(x['timing'], 'Loop End')).length > 0}
       <tr>
-        <td colspan="7">{$getString('Night: Loop End')}</td>
+        <td colspan="7"><Translation translationKey={'Night: Loop End'} /></td>
       </tr>
       {#each showAll(abilities)
         .filter((x) => includes(x['timing'], 'Loop End'))
         .sort(sortabilities) as map}
         <tr>
           <td>
-            {$getString(map.type)}
+            <Translation translationKey={map.type} />
           </td>
           <td>
             {$getString(map.character) ?? ''}

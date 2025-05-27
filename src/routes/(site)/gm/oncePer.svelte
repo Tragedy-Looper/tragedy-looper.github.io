@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { getString } from '../+layout.svelte';
+    import Translation from '../../../view/translation.svelte';
 
   type Obj = $$Generic<OncePer<Text, any>>;
   export let compact: boolean = false;
@@ -46,7 +47,7 @@
   {#if str}
     <em class:normal={!compact} class:compact
       >{str}{#each constraints.filter(([key, value]) => value) as [key, value]}
-        {' '} | {$getString(key)}{#if value !== true}: {$getString(value)}{/if}
+        {' '} | <Translation translationKey={key} />{#if value !== true}: <Translation translationKey={value} />{/if}
       {/each}</em
     >
   {/if}

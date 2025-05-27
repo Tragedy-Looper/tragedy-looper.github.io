@@ -9,10 +9,53 @@ import { getLocalisatio } from './storage';
 import { ui_strings } from './data-ui-strings';
 import { writable } from 'svelte/store';
 import { characters, incidents, plots, roles, scripts, tragedys } from './data';
+import MarkdownIt, { type Options } from 'markdown-it';
+import type { Renderer, Token } from 'markdown-it/index.js';
+
+
+
+function getLinksFromMarkdown(markdown: string): Set<string> {
+    const links = new Set<string>();
+
+    const md = MarkdownIt({
+        html: false,
+        linkify: false,
+        typographer: true,
+    });
+
+    // add base to links
+    const originalValidateLink = md.validateLink;
+    md.validateLink = (link: string) => {
+        // Allow all links, even if they are not valid URLs
+        console.log('Validating link:', link);
+        if (link) {
+            links.add(link);
+        }
+
+        return originalValidateLink.call(md, link);
+    }
+    md.parseInline(markdown, {});
+    return links;
+}
+
+
 
 
 const toCheck = [characters, incidents, plots, roles, tragedys, scripts.flatMap(x => [x.cast, x.title, x.specifics, x.story, x.mastermindHints]),
     ...ui_strings,
+    'Location Icons',
+    'Intrigue Places',
+    'kind off',
+    'Location background',
+    'could be better',
+    'Dispair place',
+    'Day stages',
+    'They are already prety clean, but images and not text.',
+    'Day track',
+    'Incident track',
+    'Loop track',
+    'Extra gauge',
+    'Additional decorations',
 ];
 
 const allStrings = getAllStrings(toCheck);
@@ -42,6 +85,29 @@ export type ObjectFromTagedArray<T extends string | undefined> = keyof ObjectFro
     : [ObjectFromTaged<T>];
 
 
+export function translationExists(lang: string, key: string): boolean {
+    if (!lang || !key) {
+        return false;
+    }
+    if (lang == 'en') {
+        return true; // English is always available
+    }
+    const keyTrimed = key.trim();
+    if (keyTrimed.includes('|')) {
+        return keyTrimed.split('|').every(k => translationExists(lang, k));
+    }
+    if (translation[lang] && translation[lang][keyTrimed] && translation[lang][keyTrimed].length > 0) {
+        return true;
+    }
+
+    const localTranslation =
+        (browser && getLocalisatio(lang) && getLocalisatio(lang)[keyTrimed]) ? getLocalisatio(lang)[keyTrimed] : undefined;
+    if (localTranslation && localTranslation.length > 0) {
+        return true;
+    }
+
+    return false
+}
 export function getStringForLanguage<TKey extends string | undefined>(key: TKey, lang: string | undefined, ...params: ObjectFromTagedArray<TKey>): string {
     if (!key) {
         return "";
@@ -79,9 +145,18 @@ export function getStringForLanguage<TKey extends string | undefined>(key: TKey,
         translated = translated.replaceAll(`{${name.toString()}}`, `${value}`);
     })
 
-    return translated.length > 0 ? translated : keyTrimed;
+    const result = translated.length > 0 ? translated : keyTrimed;
 
-
+    // Check that every link in the result was also in the key
+    const linksInResult = getLinksFromMarkdown(result);
+    const linksInKey = getLinksFromMarkdown(keyTrimed);
+    console.log(`Checking links for "${keyTrimed}" ${[...linksInResult].join(', ')} in language "${lang}"`);
+    const linksNotInKey = [...linksInResult].filter(link => !linksInKey.has(link));
+    if (linksNotInKey.length > 0) {
+        console.error(`Links in translation for "${keyTrimed}" in language "${lang}" not found in key:`, linksNotInKey);
+        return `${keyTrimed} (**ERROR**: unknown links: ${linksNotInKey.join(', ')} falling back to key)`;
+    }
+    return result;
 }
 
 export function getDeployedLanguage(): string[] {

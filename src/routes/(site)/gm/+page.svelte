@@ -1,12 +1,14 @@
 <script lang="ts">
 	import { distinct, join, keys } from '../../../misc';
-	import { scripts as scriptLookup, type Script, isScriptName } from '../../../model/script';
+	import { scripts as scriptLookup, isScriptName } from '../../../model/script';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
 	import '@picocss/pico/css/pico.css';
 	import GmHelper from './gmHelper.svelte';
     import { getString } from '../+layout.svelte';
+    import Translation from '../../../view/translation.svelte';
+    import type { Script } from '../../../scripts.g';
 
 	$: scripts = Object.values(scriptLookup);
 
@@ -43,7 +45,7 @@
 	}
 </script>
 
-<h1>{$getString('Mastermind Aid')}</h1>
+<h1><Translation translationKey={'Mastermind Aid'} /></h1>
 
 {#if selectedScript}
 	<GmHelper {selectedScript} />

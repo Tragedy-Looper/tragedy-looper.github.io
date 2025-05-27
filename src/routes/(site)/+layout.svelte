@@ -49,6 +49,7 @@
   } from '../../translations';
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
+    import Translation from '../../view/translation.svelte';
 
   onMount(() => {
     console.log('Mounting layout');
@@ -56,8 +57,8 @@
   });
 </script>
 
-<article role="group">
-  <a href={`${base}/`}>{$getString('Home')}</a>
+<article class="noPrint" role="group">
+  <a href={`${base}/`}><Translation translationKey={'Home'} /></a>
   <input list="languageOptions" bind:value={$languageOverride} placeholder="Language Override" />
   <datalist id="languageOptions">
     {#each getDeployedLanguage() as lang}
@@ -69,11 +70,6 @@
 <slot />
 
 <style>
-  @media print {
-    a {
-      display: none;
-    }
-  }
   article {
     display: flex;
     width: fit-content;
@@ -88,6 +84,11 @@
     }
     input {
       width: 30rempx;
+    }
+  }
+  @media print {
+    article {
+      display: none;
     }
   }
 </style>

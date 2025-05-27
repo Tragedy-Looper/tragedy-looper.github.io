@@ -18,6 +18,17 @@ export function getLocalisatio(lang: string) {
     }
     return undefined;
 }
+
+export function addTranslation(key: string, translation: string, lang: string): void {
+    if (!key || !translation || !lang) {
+        return;
+    }
+    const localisation = getLocalisatio(lang) ?? {};
+    localisation[key] = translation;
+    console.log(`Adding translation for ${key} in ${lang}: ${translation}`);
+    setLocalisatio(lang, localisation);
+}
+
 export function setLocalisatio(lang: string, data: Record<string, string>) {
     if (!browser) {
         throw new Error('We need to run in Browser');

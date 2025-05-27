@@ -81,7 +81,11 @@
     )}
   </p>
   <p>
-    <a href="https://lokimidgard.github.io/tragedy-looper-deduction-">Github Reposetory</a>
+    <a
+      href="https://github.com/LokiMidgard/tragedy-looper-deduction-tool/issues"
+      target="_blank"
+      rel="noopener noreferrer">Github Reposetory</a
+    >
   </p>
 
   <label>
@@ -118,7 +122,7 @@
           <tr>
             <td>{e}</td>
             <td>
-              <textarea bind:value={table[e]} ></textarea>
+              <textarea bind:value={table[e]}></textarea>
             </td>
           </tr>
         {/each}

@@ -7,6 +7,7 @@
   import Card from './card.svelte';
   import { getString } from '../+layout.svelte';
   import { getAvialableCharacterImages } from '../../+layout.svelte';
+  import Translation from '../../../view/translation.svelte';
 
   const characterImages = getAvialableCharacterImages();
 
@@ -116,11 +117,11 @@
     </details>
 
     <details>
-      <summary>{$getString('Alternate character images')}</summary>
+      <summary><Translation translationKey={'Alternate character images'} /></summary>
 
       {#each Object.entries(characterImages).filter(([, x]) => x.length > 1) as [key, images]}
         <div>
-          <strong>{$getString(key)}</strong>
+          <strong><Translation translationKey={key} /></strong>
           {selectedImage[key]}
           <div class="image-selection">
             {#each images as image}
@@ -136,19 +137,19 @@
 
     <div>
       <p>
-        Use the <strong>Print</strong> button of your browser (default shortcut <kbd>Ctrl</kbd>+<kbd
-          >P</kbd
-        > ) to print the cards.
+        <Translation translationKey={'Use the **Print** button of your browser (default shortcut[[Ctrl]]+[[P]]) to print the cards.'} />
       </p>
       <p>
         {#if printCardBacks}
-          Make sure to set the page size to A4 landscape, set the margins to 0 and <b>enable</b> double
-          sided printing (short edge).
+          <Translation
+            translationKey={'Make sure to set the page size to A4 landscape, set the margins to 0 and **enable** double sided printing (short edge).'}
+          />
         {:else}
-          Make sure to set the page size to A4 landscape, set the margins to 0 and <b>disable</b> double
-          sided printing.
+          <Translation
+            translationKey={'Make sure to set the page size to A4 landscape, set the margins to 0 and **disable** double sided printing.'}
+          />
         {/if}<br />
-        Or change the the card layout settings above.
+        <Translation translationKey={'Or change the the card layout settings above.'} />
       </p>
     </div>
   </article>
