@@ -13,6 +13,7 @@
   import { distinct, keys, require } from '../../../misc';
   import { base } from '$app/paths';
   import Option from './customScript/option.svelte';
+  import Translation from '../../../view/translation.svelte';
   export let script: Script;
 
   let alwaysTransmitCharacters: boolean[] = characterscomesInLater.map(() => true);
@@ -167,6 +168,10 @@
   <div>
     <strong>{script.tragedySet}</strong>
   </div>
+  <div>
+    <strong><Translation translationKey={'Days per Loop'} /></strong>{script.daysPerLoop}
+  </div>
+
   <div style="display: grid; justify-content: start; align-content:  baseline; gap: 0.3em;">
     <strong style="grid-column: 1; grid-row: 1;">Main Plot:</strong>
     <span style="grid-column: 2; grid-row: 1;">{script.mainPlot}</span>
