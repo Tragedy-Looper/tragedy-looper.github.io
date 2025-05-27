@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from '$app/paths';
   import { getString } from '../../+layout.svelte';
   import Translation from '../../../../view/translation.svelte';
   import Borders from './Borders.svelte';
@@ -42,33 +43,33 @@
     {@render entry('Additional decorations', false)}
   </ul>
   <div class="board">
-    <img src="/board/rei/location-background2.png" alt="Board" />
+    <img src="{base}/board/rei/location-background2.png" alt="Board" />
     <Borders></Borders>
     <img
-      src="/board/rei/intrigue.png"
+      src="{base}/board/rei/intrigue.png"
       alt="Intrigue Place top left"
       class="intrigue"
       style="--top: 4.3cm; --left:6.3cm;"
     />
     <img
-      src="/board/rei/intrigue.png"
+      src="{base}/board/rei/intrigue.png"
       alt="Intrigue Place bottom left"
       class="intrigue"
       style="--top: 21.8cm; --left:6.3cm;"
     />
     <img
-      src="/board/rei/intrigue.png"
+      src="{base}/board/rei/intrigue.png"
       alt="Intrigue Place top right"
       class="intrigue"
       style="--top: 4.3cm; --left:50.4cm;"
     />
     <img
-      src="/board/rei/intrigue.png"
+      src="{base}/board/rei/intrigue.png"
       alt="Intrigue Place bottom right"
       class="intrigue"
       style="--top: 21.8cm; --left:50.4cm;"
     />
-    <img src="/board/rei/border.png" alt="Rei" />
+    <img src="{base}/board/rei/border.png" alt="Rei" />
   </div>
   <p style="text-align: center;">
     <Translation
