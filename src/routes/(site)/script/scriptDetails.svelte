@@ -14,6 +14,7 @@
   import { base } from '$app/paths';
   import Option from './customScript/option.svelte';
   import Translation from '../../../view/translation.svelte';
+  import { getString } from '../+layout.svelte';
   export let script: Script;
 
   let alwaysTransmitCharacters: boolean[] = characterscomesInLater.map(() => true);
@@ -92,9 +93,11 @@
 </dialog>
 
 {#if script}
-  <header style="display: grid;  justify-content: space-between;">
+  <header
+    style="display: grid;  justify-content: space-between; grid-template-columns: 1fr auto; grid-template-rows: auto auto auto auto;"
+  >
     <div
-      style=" width: fit-content; display: grid; gap:0.5em; grid-row: 1 / span 2 ; grid-column: 2; justify-self: end  ;"
+      style=" width: fit-content; display: grid; gap:0.5em; grid-row: 1 / span 5; align-self: start ; grid-column: 2; justify-self: end  ;"
     >
       <a
         aria-disabled={script == undefined}
@@ -151,6 +154,18 @@
         {/if}
       </h2>
     </hgroup>
+    <div>
+      {#if script.description}
+        <div class="description">
+          {script.description}
+        </div>
+        <label
+          style="--show-more: '{$getString('Show more')}'; --show-less: '{$getString('Show less')}'"
+        >
+          <input type="checkbox" />
+        </label>
+      {/if}
+    </div>
 
     {#each script.difficultySets as e}
       <div style="align-self: end; justify-self: start;">
@@ -303,4 +318,44 @@
 {/if}
 
 <style>
+  header {
+    gap: 0.5em;
+    :has(.description) {
+      .description {
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5em 0;
+        font-size: 0.9em;
+        margin-bottom: 0em;
+      }
+      &:has(input:checked) {
+        .description {
+          display: block;
+        }
+        label::before {
+          content: var(--show-less);
+        }
+      }
+
+      label::before {
+        content: var(--show-more);
+        color: var(--pico-secondary);
+        font-size: 0.8em;
+        transition: color 0.2s ease-in-out;
+      }
+      label:hover {
+        &::before {
+          color: var(--pico-primary);
+        }
+      }
+
+      input {
+        display: none;
+      }
+    }
+  }
 </style>
