@@ -1,5 +1,6 @@
 <script lang="ts">
   import { ratingMap } from '../../../model/script';
+  import Translation from '../../../view/translation.svelte';
 
   let { rating }: { rating: undefined | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 } = $props();
 
@@ -21,5 +22,5 @@
       🌑
     {/if}
   {/each}
-  <small>({ratingMap[rating]})</small>
+  <small>(<Translation translationKey={ratingMap[rating]} />)</small>
 {/if}
