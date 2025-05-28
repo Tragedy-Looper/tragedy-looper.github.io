@@ -615,6 +615,11 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                 "properties": {
                                     "title": { "type": "string" },
                                     "creator": { "type": "string" },
+                                    "rating": {
+                                        "type": "number",
+                                        "minimum": 1,
+                                        "maximum": 10
+                                    },
                                     "set": {
                                         "type": "object",
                                         "additionalProperties": false,
@@ -633,7 +638,11 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                             "properties": {
                                                 "numberOfLoops": { "type": "number" },
                                                 "difficulty": { "type": "number" },
-                                            }
+                                            },
+                                            "required": [
+                                                "numberOfLoops",
+                                                "difficulty",
+                                            ]
                                         }
                                     },
 

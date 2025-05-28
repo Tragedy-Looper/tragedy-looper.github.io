@@ -11,6 +11,19 @@ import { isTragedySetName, type CastOptions, type TragedySets } from "./tragedyS
 import * as data from "../data";
 import type { Script } from "../scripts.g";
 
+export const ratingMap = [
+    'No rating',
+    'Appalling',
+    'Horrible',
+    'Very Bad',
+    'Bad',
+    'Average',
+    'Fine',
+    'Good',
+    'Very Good',
+    'Great',
+    'Masterpiece'
+] as const;
 
 
 export type ScriptIncident<T extends keyof TragedySets = keyof TragedySets> = {

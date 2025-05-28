@@ -1,13 +1,15 @@
 <script lang="ts">
   import { distinct, join } from '../../../misc';
-  import { scripts as scriptLookup, type Script } from '../../../model/script';
+  import { scripts as scriptLookup } from '../../../model/script';
   import ScriptDetails from './scriptDetails.svelte';
   import { onMount } from 'svelte';
   import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
   import ExportView from '../../../view/exportView.svelte';
   import { loadAllLocalScripts, loadScript } from '../../../storage';
-  
+  import type { Script } from '../../../scripts.g';
+  import Rating from './rating.svelte';
+
   $: scripts = Object.values(scriptLookup);
 
   let selectedScript:
@@ -145,11 +147,15 @@
           <div>
             <a href={`${base}/script/?title=${encodeURIComponent(s.title)}`}
               >{s.set?.number ?? ''}
-              {s.title} by {s.creator} [{s.tragedySet}] difficulty {join(
-                s.difficultySets.map((x) => x.difficulty.toString()),
-                ' / '
-              )}</a
-            >
+              {s.title} by {s.creator}</a
+            ><br />
+            [{s.tragedySet}] difficulty {join(
+              s.difficultySets.map((x) => x.difficulty.toString()),
+              ' / '
+            )}
+            {#if s.rating}
+              <br /><Rating rating={s.rating} />
+            {/if}
           </div>
         {/if}
       {/each}
