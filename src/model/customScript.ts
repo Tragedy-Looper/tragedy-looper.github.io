@@ -106,7 +106,7 @@ class CustomScriptIncidentSelection<TCharacters extends CharacterName> implement
 
         let lastOptions: AdditionalOptions[] = [];
         this.options = derived(this.selectedIncident, p => {
-            const incident =p? incidents[p]: undefined;
+            const incident = p ? incidents[p] : undefined;
 
             const newOptions = [
                 ...(isScriptSpecified(incident) ? incident.scriptSpecified.map((s) => new AdditionalOptions(script, s)) : []),
@@ -675,11 +675,17 @@ export class CustomScript {
 
                 if (require(characters[key]).plotLessRole) {
                     const name = 'Person'; // Plotless characters are sorted under Persons and there role is in options
-                    p[name].push([key, { 'Role': value }]);
+
+                    if (name in p && Array.isArray(p[name])) {
+                        p[name].push([key, { 'Role': value }]);
+                    } else {
+                        p[name] = [];
+                        p[name].push([key, { 'Role': value }]);
+                    }
                 } else {
                     if (typeof value == 'string' && isRoleName(value)) {
                         const name = value;
-                        if (name in p) {
+                        if (name in p && Array.isArray(p[name])) {
                             p[name].push(key);
                         } else {
                             p[name] = [];
@@ -687,7 +693,7 @@ export class CustomScript {
                         }
                     } else if (isRoleName(value[0])) {
                         const name = value[0]
-                        if (name in p) {
+                        if (name in p && Array.isArray(p[name])) {
                             p[name].push([key, value[1]]);
                         } else {
                             p[name] = [];
@@ -697,7 +703,7 @@ export class CustomScript {
                 }
 
             return p;
-        }, {} as Record<RoleName, (CharacterName | readonly [CharacterName, Record<string, any>])[]>)).map(([key, value]) => {
+        }, {} as Partial<Record<RoleName, (CharacterName | readonly [CharacterName, Record<string, any>])[]>>)).map(([key, value]) => {
             const roleWraper = get(this.roles).filter(x => x.role == key)[0];
             if (roleWraper === undefined) {
                 return;
