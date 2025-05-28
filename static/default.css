@@ -3,7 +3,7 @@
     font-style: italic;
     font-weight: 400;
     font-display: swap;
-    src: url(/fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Italic.ttf) ;
+    src: url(/fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Italic.ttf);
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf) ;
+    src: url(/fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf);
 }
 
 @font-face {
@@ -27,12 +27,12 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/fonts/Poiret_One/PoiretOne-Regular.ttf') ;
+    src: url('/fonts/Poiret_One/PoiretOne-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Noto Sans';
-    src: url('/fonts/Noto_Sans/static/NotoSans-Regular.ttf') ;
+    src: url('/fonts/Noto_Sans/static/NotoSans-Regular.ttf');
     font-display: swap;
     font-weight: 400;
     font-style: normal;
@@ -40,12 +40,20 @@
 
 @font-face {
     font-family: 'Twemoji';
-    src: url('/fonts/Twemoji/Twemoji.Mozilla.ttf') ;
+    src: url('/fonts/Twemoji/Twemoji.Mozilla.ttf');
 }
 
 
 * {
     box-sizing: border-box;
+}
+
+label>small {
+    display: block;
+    width: 100%;
+    margin-top: calc(var(--pico-spacing) * -0.75);
+    margin-bottom: var(--pico-spacing);
+    color: var(--pico-muted-color);
 }
 
 body,
