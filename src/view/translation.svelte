@@ -7,6 +7,7 @@
   import markdomnItKdb from 'markdown-it-kbd';
   import type { Renderer, Token } from 'markdown-it/index.js';
   import { base } from '$app/paths';
+  import { showTranslationMissingDialog } from '../routes/+layout.svelte';
 
   let { translationKey }: { translationKey: string } = $props();
 
@@ -33,81 +34,20 @@
 
   let text = $derived(md.renderInline($getString(translationKey)));
   let doesTranslationExists = $derived(translationExists($language, translationKey));
-  let showMissingDialog = $state(false);
-  let userTranslation = $state('');
-
-  let template: HTMLTemplateElement | undefined = $state(undefined);
-
-  function submitTranslation() {
-    addTranslation(translationKey, userTranslation, $language);
-    showMissingDialog = false;
-    const tmp = translationKey;
-    translationKey = '';
-    tick().then(() => {
-      translationKey = tmp; // reset to trigger reactivity
-    });
-  }
-
-  let htmlDialog: HTMLDialogElement | undefined;
-
-  onMount(() => {
-    if (
-      translationKey &&
-      translationKey.length > 0 &&
-      !doesTranslationExists &&
-      !htmlDialog &&
-      template
-    ) {
-      console.log('Creating dialog for missing translation');
-      const dialog = template.content.querySelector('dialog') as HTMLDialogElement;
-      htmlDialog = dialog;
-      document.body.appendChild(dialog);
-    }
-  });
-  onDestroy(() => {
-    if (htmlDialog) {
-      htmlDialog.remove();
-      htmlDialog = undefined;
-    }
-  });
 </script>
 
 {#if doesTranslationExists}{@html text}{:else}
-  <span onclick={() => (showMissingDialog = true)} class="missingTranslation">{@html text}</span>
-  <template bind:this={template}>
-    <dialog open={showMissingDialog}>
-      <article>
-        <header>
-          <button aria-label="Close" rel="prev" onclick={() => (showMissingDialog = false)}
-          ></button>
-          <p>
-            <strong>{$getString('Missing Translation')}</strong>
-          </p>
-        </header>
-        <p>{$getString('The translation for this text is missing.')}</p>
-        <p>{$getString('The missing translation:')}</p>
-        <p class="quote">{translationKey}</p>
-        <textarea bind:value={userTranslation}></textarea>
-        <p>
-          {$getString('If you translate the text it will be used in this Browser.')}
-        </p>
-        <p>
-          {$getString('Please consider contributing to the translations and submit it to')}
-
-          <a href="https://github.com/LokiMidgard/tragedy-looper-deduction-tool/issues">GitHub</a>.
-          {$getString('That way everyone can benefit from your translation.')}
-        </p>
-        <footer>
-          <button class="outline" style="float: left;" onclick={() => (showMissingDialog = false)}
-            >{$getString('Close')}</button
-          >
-          <button disabled={!userTranslation} onclick={() => submitTranslation()}
-            >{$getString('Submit')}</button
-          >
-        </footer>
-      </article>
-    </dialog>
-  </template>
+  <span
+    onclick={() =>
+      showTranslationMissingDialog(translationKey, async () => {
+        const tmp = translationKey;
+        await tick();
+        translationKey = '';
+        await tick();
+        translationKey = tmp;
+      })}
+    class="missingTranslation">{@html text}</span
+  >
 {/if}
 
 <style>
