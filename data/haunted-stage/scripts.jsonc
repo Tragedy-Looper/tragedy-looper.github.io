@@ -53,7 +53,7 @@
           "culprit": "Shrine Maiden"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "story": "",
       "mastermindHints": ""
     },
@@ -107,7 +107,7 @@
           "culprit": "Office Worker"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "story": "",
       "mastermindHints": ""
     },
@@ -161,7 +161,7 @@
           "culprit": "Boy Student"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "story": "",
       "mastermindHints": ""
     },
@@ -215,7 +215,7 @@
           "culprit": "Girl Student"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "story": "",
       "mastermindHints": ""
     },
@@ -279,7 +279,7 @@
           "culprit": "Boy Student"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "story": "",
       "mastermindHints": ""
     },
@@ -343,7 +343,7 @@
           "culprit": "Henchman"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "story": "",
       "mastermindHints": ""
     },
@@ -410,7 +410,7 @@
       "specialRules": [
         "Mastermind remove \"Forbid Goodwill\" from his hand. It cannot be used on any loop"
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "story": "",
       "mastermindHints": ""
     },
@@ -467,7 +467,7 @@
       "specialRules": [
         "Mastermind remove \"Forbid Goodwill\" from his hand. It cannot be used on any loop"
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "story": "",
       "mastermindHints": ""
     }

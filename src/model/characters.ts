@@ -2,6 +2,7 @@ import { toRecord } from "../misc";
 import type { ScriptSpecified } from "./core";
 import type { DoseNotTriggerIncident } from "./incidents";
 import * as data from "../data";
+import type { Character } from "../characters.g";
 
 
 
@@ -10,9 +11,8 @@ export type LocationName = typeof locations[number];
 export type Tag = 'boy' | 'girl' | 'student' | "man" | "woman" | "adult" | 'construct' | 'animal' | 'tree' | 'little sister';
 
 
-export type Character = Characters[keyof Characters];
 export type Characters = (typeof characters);
-export type CharacterName = Character['name'];
+export type CharacterName = typeof data.characters[number]['name'];
 
 
 
@@ -51,7 +51,7 @@ export type Ability = {
 
 
 
-export const characters = toRecord([...data.characters] as const satisfies readonly CharacterIntern[], 'name');
+export const characters = toRecord([...data.characters] as const satisfies readonly CharacterIntern[], 'name') as Record<CharacterName, Character>;
 
 export const characterscomesInLater = Object.values(characters).filter(x => (x as { comesInLater?: true })['comesInLater']).map(x => x.name) as readonly CharacterscomesInLater[];
 

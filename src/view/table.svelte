@@ -248,7 +248,7 @@
   $: r = distinct(
     [...tg.mainPlots, ...tg.subPlots].flatMap((x) => keys(plots[x].roles) as RoleName[])
   )
-    .concat(require(tg).aditionalRoles ?? [])
+    .concat((tg).aditionalRoles ?? [])
     .flatMap((x) => {
       if (x.includes('|')) {
         return [{ name: x, skip: false }, ...x.split('|').map((x) => ({ name: x, skip: true }))];
@@ -664,14 +664,14 @@
 
       {#each i.effect as e}
         <p>
-          {#if require(e).type}
-            <b>[{$getString(require(e).type)}]</b>
+          {#if (e).type}
+            <b>[{$getString((e).type)}]</b>
           {/if}
-          {#if require(e).prerequisite}
-            [<i>{$getString(require(e).prerequisite)}</i>]{#if require(e).description}⇒{/if}
+          {#if (e).prerequisite}
+            [<i>{$getString((e).prerequisite)}</i>]{#if (e).description}⇒{/if}
           {/if}
-          {#if require(e).description}
-            {$getString(require(e).description)}
+          {#if (e).description}
+            {$getString((e).description)}
           {/if}
         </p>
       {/each}

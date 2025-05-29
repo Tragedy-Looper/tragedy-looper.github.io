@@ -1,10 +1,5 @@
 <script lang="ts">
-  import {
-    type scripts,
-    type Script,
-    type isScriptName,
-    toPlayerIncident,
-  } from '../../../model/script';
+  import { type scripts, type isScriptName, toPlayerIncident } from '../../../model/script';
 
   import { onMount } from 'svelte';
 
@@ -15,7 +10,8 @@
   import Option from './customScript/option.svelte';
   import Translation from '../../../view/translation.svelte';
   import { getString } from '../+layout.svelte';
-  export let script: Script;
+  import type { Script } from '../../../scripts.g';
+  export let script: Script | undefined;
 
   let alwaysTransmitCharacters: boolean[] = characterscomesInLater.map(() => true);
   $: allAdditionamCharacters = alwaysTransmitCharacters.every((x) => x == true)
@@ -37,11 +33,14 @@
     .map(([, x]) => x);
 
   function getParams(script: Script, additionalCharacters: CharacterName[]) {
+    if (!script || !script.tragedySet) {
+      return '';
+    }
     return stringifySearchForPlayerAid(
       script.tragedySet,
       distinct(keys<Partial<Record<CharacterName, any>>>(script.cast).concat(additionalCharacters)),
       script.incidents.map(toPlayerIncident),
-      require(script).specialRules ?? []
+      script.specialRules ?? []
     ).toString();
   }
 
@@ -167,7 +166,7 @@
       {/if}
     </div>
 
-    {#each script.difficultySets as e}
+    {#each script.difficultySets ?? [] as e}
       <div style="align-self: end; justify-self: start;">
         Loops: {e.numberOfLoops} / difficulty:
         {#each Array.from({ length: e.difficulty }) as d}
@@ -272,10 +271,10 @@
       </tbody>
     </table>
   </div>
-  {#if require(script).specialRules && require(script).specialRules?.filter((x) => x.length > 0).length > 0}
+  {#if script.specialRules && script.specialRules?.filter((x) => x.length > 0).length > 0}
     <h5>Special Rules</h5>
     <div>
-      {#each require(script).specialRules?.filter((x) => x.length > 0) as s}
+      {#each script.specialRules?.filter((x) => x.length > 0) as s}
         <p>
           {s}
         </p>
@@ -283,12 +282,18 @@
     </div>
   {/if}
   <div>
-    <h5>Specifics</h5>
-    {script.specifics}
-    <h5>Story</h5>
-    {script.story}
-    <h5>Hints for the Mastermind</h5>
-    {script.mastermindHints}
+    {#if script.story}
+      <h5><Translation translationKey={'Story'} /></h5>
+      <Translation translationKey={script.story} block />
+    {/if}
+    {#if script.mastermindHints}
+      <h5><Translation translationKey={'Hints for the Mastermind'} /></h5>
+      <Translation translationKey={script.mastermindHints} block />
+    {/if}
+    {#if script['victory-conditions']}
+      <h5><Translation translationKey={'Victory Conditions'} /></h5>
+      <Translation translationKey={script['victory-conditions']} block />
+    {/if}
   </div>
   <hr />
   <div>

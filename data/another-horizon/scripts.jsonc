@@ -63,7 +63,7 @@
           "culprit": "Shrine Maiden"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "mastermindHints": "",
       "story": ""
     },
@@ -141,7 +141,7 @@
           "culprit": "Doctor"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "mastermindHints": "",
       "story": ""
     },
@@ -195,7 +195,7 @@
           "culprit": "Rich Man’s Daughter"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "mastermindHints": "",
       "story": ""
     },
@@ -269,7 +269,7 @@
           "culprit": "Office Worker"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "mastermindHints": "",
       "story": ""
     },
@@ -339,7 +339,7 @@
           "culprit": "Illusion"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "mastermindHints": "",
       "story": ""
     },
@@ -409,7 +409,7 @@
           "culprit": "Illusion"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "mastermindHints": "",
       "story": ""
     },
@@ -474,7 +474,7 @@
           "culprit": "Police Officer"
         }
       ],
-      "specifics": "",
+      "victory-conditions": "",
       "mastermindHints": "",
       "story": ""
     }

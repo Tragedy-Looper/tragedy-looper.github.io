@@ -9,7 +9,7 @@
   import { base } from '$app/paths';
   import { showTranslationMissingDialog } from '../routes/+layout.svelte';
 
-  let { translationKey }: { translationKey: string } = $props();
+  let { translationKey, block = false }: { translationKey: string; block?: boolean } = $props();
 
   const md = markdownit({
     html: false,
@@ -32,7 +32,9 @@
     return defaultBulletListOpenRenderer(tokens, idx, options, env, self);
   };
 
-  let text = $derived(md.renderInline($getString(translationKey)));
+  let text = $derived(
+    block ? md.render($getString(translationKey)) : md.renderInline($getString(translationKey))
+  );
   let doesTranslationExists = $derived(translationExists($language, translationKey));
 </script>
 

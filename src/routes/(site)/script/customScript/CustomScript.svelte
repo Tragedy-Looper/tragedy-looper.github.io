@@ -39,7 +39,7 @@
   const difSet = model.difficultySets;
 
   const story = model.story;
-  const specifics = model.specifics;
+  const victoryConditions = model.victoryConditions;
   const mastermindHints = model.mastermindHints;
   const specialRules = model.specialRules;
 
@@ -156,9 +156,9 @@
 <h5>Special Rules</h5>
 <textarea bind:value={$specialRules}></textarea>
 
-<h5>Specifics</h5>
+<h5>Victory Conditions</h5>
 
-<textarea bind:value={$specifics}></textarea>
+<textarea bind:value={$victoryConditions}></textarea>
 
 <h5>Story</h5>
 <textarea bind:value={$story}></textarea>

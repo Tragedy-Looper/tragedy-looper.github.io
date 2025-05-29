@@ -44,7 +44,7 @@
           "culprit": "Girl Student"
         }
       ],
-      "specifics": "See Tragedy Looper Mastermind Handbook",
+      "victory-conditions": "See Tragedy Looper Mastermind Handbook",
       "story": "See Tragedy Looper Mastermind Handbook",
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
@@ -88,7 +88,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "In the Godless Temple is an advanced training script, to be played after the First Script. This is a perfect script to learn how to use Intrigue counters. After The First Script and this, you’ll get the hang of most victory tactics for the Mastermind.",
+      "victory-conditions": "In the Godless Temple is an advanced training script, to be played after the First Script. This is a perfect script to learn how to use Intrigue counters. After The First Script and this, you’ll get the hang of most victory tactics for the Mastermind.",
       "story": "A decrepit shrine at the outskirts of town. Whatever is hallowed there, it’s not a god. And it wants revenge. Revenge on the shrine maiden that summoned it and consequently all humans. \n\nThis being confuses people and pushes the ill will of the broken shrine maiden and less-than-good-tempered people onto the Protagonists. Will the heroes be able to stop this incarnation of darkness and evil from getting its revenge?",
       "mastermindHints": "The basic way to win is to have 2 Intrigue on the Shrine at the end of the loop. It’s good to also have 2 Intrigue on the City, so that you can hide who the Brain is. When you use the Brain’s ability, see to it that the Office Worker and the Alien are in the same area.\n\nAnother way to win is the Hospital Horror, while having 1 or more Intrigue on the Hospital, killing the Patient who is the Friend, triggering a win condition for you.\n\nIn either case, you should get the Office Worker to trigger Missing Person to help place Intrigue. Use the Conspiracy Theorist ability from Day 1. But if you think you can win with 2 Intrigue on the Shrine, don’t aim for the Hospital Horror. It’s best to hide who the culprit is there, and to place a lot of Unease on them once you need to.\n\nVictory conditions:\n1. At loop end, have 2 Intrigue on the Shrine, triggering the loss condition of Fire of the Avenger.\n\n2. At end of day 3, have at least 1 Intrigue on the Hospital and at least 2 Unease on the Shrine Maiden, triggering the Hospital Horror, killing the Patient, and triggering the Friend’s loss condition at loop end.\n\n3. At end of day 3, have at least 2 Intrigue on the Hospital and at least 2 Unease on the Shrine Maiden, triggering the Hospital Horror, killing the Protagonists.\n\nA PLAY GUIDE FOR “IN THE GODLESS TEMPLE”\nWe present a briefer play-through guide for this script.\n\nDay 1: Card playing phase\nOn loop 1, play these cards:\n• City: Intrigue +2\n• Shrine: Intrigue +1\n• Hospital: Any card (mainly to bluff)\n\nOn loop 2, play any of the below:\n• City or Shrine: Intrigue +1, Intrigue +2, or any other card\n• Hospital: Intrigue +1 or any other card\n• Office Worker: Unease +1\n• Shrine Maiden: Vertical Movement\n\nDay 1-4: Mastermind ability step\n• If it’s day 1 or 2, and the Office Worker and Police Officer are in the same area, place an Unease token on the Office Worker.\n• If it’s day 1, 2 or 3, and the Shrine Maiden and Police Officer are in the same area, and you have 1 or more Intrigue on the Hospital, put an Unease on the Shrine Maiden.\n• If the Alien and Police Officer are together at the City or Shrine, and you have 1 or less Intrigue on that location, place one Intrigue there.\n• If the Alien is in the Shrine, and you really need to, place 1 Intrigue there.\n\nDay 2-4: Card playing phase\nPlay cards or move, as needed:\n• City or Shrine: Intrigue +1, Intrigue +2 or any other card.\n• Hospital: Intrigue +1 or any other card.\n• Shrine Maiden: Unease +1, Forbid Goodwill, or move her away from the Shrine.\n• Alien: Move it to Shrine or City.\n• Police Officer: Move to same location as Shrine Maiden or Office Worker.\n• Office Worker: Unease +1 or move to same location as Alien.\n• Pop Idol: Forbid Goodwill or move her so she can’t use her Goodwill ability.\n• Patient: Don’t place anything on him."
     },
@@ -142,7 +142,7 @@
           "culprit": "Patient"
         }
       ],
-      "specifics": "See Tragedy Looper Mastermind Handbook",
+      "victory-conditions": "See Tragedy Looper Mastermind Handbook",
       "story": "See Tragedy Looper Mastermind Handbook",
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
@@ -200,7 +200,7 @@
           "culprit": "Girl Student"
         }
       ],
-      "specifics": "See Tragedy Looper Mastermind Handbook",
+      "victory-conditions": "See Tragedy Looper Mastermind Handbook",
       "story": "See Tragedy Looper Mastermind Handbook",
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
@@ -255,7 +255,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "This is a script recommended for those who are playing Basic Tragedy for the first time. This is where it begins for real. Now you have 2 Subplots and seven people in the cast. Also, there are 5 days each loop!\n\nThat said, the difficulty is still set to very low. Protagonists who come from First Steps won’t feel super confused and will be able to enjoy the extra additions well enough. It’s not difficult to play as Mastermind either. But beware of the Final Guess. If all roles are clear, then you will lose, and that is more stressful than it may seem.",
+      "victory-conditions": "This is a script recommended for those who are playing Basic Tragedy for the first time. This is where it begins for real. Now you have 2 Subplots and seven people in the cast. Also, there are 5 days each loop!\n\nThat said, the difficulty is still set to very low. Protagonists who come from First Steps won’t feel super confused and will be able to enjoy the extra additions well enough. It’s not difficult to play as Mastermind either. But beware of the Final Guess. If all roles are clear, then you will lose, and that is more stressful than it may seem.",
       "story": "For boys and girls, the world is a constant battlefield. Each tiny little disturbance will shake their inexperienced souls. Especially in this town, where seductors lure with the promise of magic powers – without explaining the consequences!\n\nThe school was bubbling with talk. “Spells” and “magic”, and everyone knows that you CAN become a magical girl, if you just sign the contract. Eventually, the pop idol will sign, and she will die. Can the Protagonists stop this tragedy from happening?",
       "mastermindHints": "The best way to win is through the Hospital Horror and to place Intrigue on the Idol. This reveals the least information.\n\nStart day 1 and 2 with Unease +1 on the Patient, and a bluff and Intrigue +1 on the Shrine and Hospital respectively.\n\nAlso from day 1, use the Conspiracy Theorist and trigger Spreading Unease. If you get some Intrigue on the Hospital, put 2 Unease on the Shrine Maiden, and trigger the Hospital Horror.\n\nOn day 3, you can use the Unsettling Rumor effect to put the second Intrigue on the Hospital and kill the Protagonists.\n\nIf you can’t seem to get any Intrigue on the Hospital, put instead 2 Intrigue on the Idol and if possible, also on the Shrine, Rich Student, and Shrine Maiden. For this, Spreading Unease and An Unsettling Rumor will help you.\n\nHide the Serial Killer as long as you can and use him to kill the Key Person as your last resort. Killing the Friend will make the Final Guess easy for the Protagonists, so avoid that as much as possible.\n\nThe Final Guess can easily become your downfall. Either you hide the Conspiracy Theorist or the Friend. Try to make it look like a Murderer or a Brain instead.\n\nVictory conditions\n1. At any day end, have the Pop Idol and the Boy Student alone in a location, triggering the Serial Killer effect and thus the Key Person’s loss condition immediately.\n\n2. At end of day 3, have at least 1 Intrigue on the Hospital, at least 2 Unease on the Shrine Maiden, and the Pop Idol in the Hospital, triggering Hospital Horror, killing the Pop Idol and triggering the Key Person’s loss condition immediately.\n\n3. At loop end, have 2 Intrigue on the Pop Idol, triggering the loss condition for “Sign with Me!”.\n\n4. At any day end, have the Shrine Maiden and the Boy Student alone in a location, triggering the Serial Killer effect and thus the Friend’s loss condition at loop end.\n\n5. At end of day 3, have at least 1 Intrigue on the Hospital, at least 2 Unease on the Shrine Maiden who should be in the Hospital, triggering the Hospital Horror, killing the Shrine Maiden, and triggering the Friend’s loss condition at loop end.\n\n6. At the end of day 3, have at least 2 Intrigue on the Hospital, at least 2 Unease on the Shrine Maiden, triggering the Hospital Horror killing the Protagonists."
     },
@@ -318,7 +318,7 @@
           "culprit": "Journalist"
         }
       ],
-      "specifics": "See Tragedy Looper Mastermind Handbook",
+      "victory-conditions": "See Tragedy Looper Mastermind Handbook",
       "story": "See Tragedy Looper Mastermind Handbook",
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
@@ -386,7 +386,7 @@
           "culprit": "Pop Idol"
         }
       ],
-      "specifics": "See Tragedy Looper Mastermind Handbook",
+      "victory-conditions": "See Tragedy Looper Mastermind Handbook",
       "story": "See Tragedy Looper Mastermind Handbook",
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
@@ -450,7 +450,7 @@
           "culprit": "Patient"
         }
       ],
-      "specifics": "See Tragedy Looper Mastermind Handbook",
+      "victory-conditions": "See Tragedy Looper Mastermind Handbook",
       "story": "See Tragedy Looper Mastermind Handbook",
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
@@ -513,7 +513,7 @@
           "culprit": "Boy Student"
         }
       ],
-      "specifics": "See Tragedy Looper Mastermind Handbook",
+      "victory-conditions": "See Tragedy Looper Mastermind Handbook",
       "story": "See Tragedy Looper Mastermind Handbook",
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
@@ -577,7 +577,7 @@
           "culprit": "Police Officer"
         }
       ],
-      "specifics": "See Tragedy Looper Mastermind Handbook",
+      "victory-conditions": "See Tragedy Looper Mastermind Handbook",
       "story": "See Tragedy Looper Mastermind Handbook",
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
@@ -640,7 +640,7 @@
           "culprit": "Police Officer"
         }
       ],
-      "specifics": "See Tragedy Looper Mastermind Handbook",
+      "victory-conditions": "See Tragedy Looper Mastermind Handbook",
       "story": "See Tragedy Looper Mastermind Handbook",
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
@@ -719,7 +719,7 @@
       "specialRules": [
         "Mastermind removes \"Forbid Goodwill\" from his hand. It cannot be used in any loop"
       ],
-      "specifics": "See Tragedy Looper Mastermind Handbook",
+      "victory-conditions": "See Tragedy Looper Mastermind Handbook",
       "story": "See Tragedy Looper Mastermind Handbook",
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     }

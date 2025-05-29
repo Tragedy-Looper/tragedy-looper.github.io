@@ -102,7 +102,7 @@ export function isScriptIncident(obj: unknown, omitCulprit?: true): obj is Scrip
         }
         if (typeof obj.culprit === 'string') {
 
-            if (require(currentIncident).mob !== undefined) {
+            if ((currentIncident).mob !== undefined) {
                 if (!isLocationName(obj.culprit)) {
                     console.error('Not a Locaion name', obj.culprit)
                     return false;
@@ -235,8 +235,9 @@ export function isScript(obj: unknown): obj is Script {
 
         return false;
     }
-    if (!('specifics' in obj)) { console.error("faild test 'specifics' in obj"); return false; }
-    if (!(typeof obj.specifics == 'string')) { console.error("faild test typeof obj.specifics == 'string'"); return false; }
+    if (('victory-condition' in obj)) {
+        if (!(typeof obj["victory-condition"] == 'string')) { console.error("faild test typeof obj.victory-condition == 'string'"); return false; }
+    }
     if (!('story' in obj)) { console.error("faild test 'story' in obj"); return false; }
     if (!(typeof obj.story == 'string')) { console.error("faild test typeof obj.story == 'string'"); return false; }
     if (!('mastermindHints' in obj)) { console.error("faild test 'mastermindHints' in obj"); return false; }
@@ -282,7 +283,7 @@ type ScriptInternal = Union<{
 
         incidents: readonly ScriptIncident<k>[],
         specialRules?: readonly string[],
-        specifics: string,
+        'victory-condition': string,
         story: string,
         mastermindHints: string,
     }

@@ -547,7 +547,7 @@ export class CustomScript {
     public readonly set: Writable<{ name: string, number: number } | undefined>
     public readonly difficultySets: Writable<readonly { numberOfLoops: number, difficulty: number, }[]>
     public readonly specialRules: Writable<string>
-    public readonly specifics: Writable<string>
+    public readonly victoryConditions: Writable<string>
     public readonly story: Writable<string>
     public readonly mastermindHints: Writable<string>
 
@@ -579,7 +579,7 @@ export class CustomScript {
         this.set = writable(undefined);
         this.difficultySets = writable([]);
         this.specialRules = writable('');
-        this.specifics = writable('');
+        this.victoryConditions = writable('');
         this.story = writable('');
         this.mastermindHints = writable('');
 
@@ -628,11 +628,11 @@ export class CustomScript {
      */
     public import(script: Script) {
         this.title.set(script.title);
-        this.creator.set(script.creator);
+        this.creator.set(script.creator ?? '');
         this.difficultySets.subscribe(x =>
             console.log('d', x));
-        this.difficultySets.set(script.difficultySets);
-        this.tragedySetName.set(script.tragedySet);
+        this.difficultySets.set(script.difficultySets ?? []);
+        this.tragedySetName.set(script.tragedySet!);//TODO: check if it is a known tragedySet is set
 
         get(this.mainPlots).forEach((p, i) => {
             const sp = script.mainPlot[i];
@@ -656,6 +656,12 @@ export class CustomScript {
             if (Array.isArray(sp)) {
                 const name = sp[0];
                 const opt = sp[1];
+                if (typeof name !== 'string') {
+                    throw new Error(`Plot name is not a string: ${name}`);
+                }
+                if (typeof opt !== 'object' || Array.isArray(opt)) {
+                    throw new Error(`Plot options is not an object: ${opt}`);
+                }
                 p.selectedPlot.set(name);
                 const optionsToSet = get(p.options);
                 optionsToSet.forEach(os => {
@@ -673,7 +679,7 @@ export class CustomScript {
         Object.entries(Object.entries<CharacterName, RoleName | readonly [RoleName, Record<string, any>]>(script.cast as any).reduce((p, [key, value]) => {
             if (isCharacterName(key))
 
-                if (require(characters[key]).plotLessRole) {
+                if ((characters[key]).plotLessRole) {
                     const name = 'Person'; // Plotless characters are sorted under Persons and there role is in options
 
                     if (name in p && Array.isArray(p[name])) {
@@ -757,10 +763,10 @@ export class CustomScript {
         });
 
 
-        this.specialRules.set(require(script).specialRules?.join('\n\n') ?? '');
-        this.specifics.set(script.specifics);
-        this.story.set(script.story);
-        this.mastermindHints.set(script.mastermindHints);
+        this.specialRules.set((script).specialRules?.join('\n\n') ?? '');
+        this.victoryConditions.set(script["victory-conditions"] ?? '');
+        this.story.set(script.story ?? '');
+        this.mastermindHints.set(script.mastermindHints ?? '');
 
 
     }
@@ -833,7 +839,7 @@ export class CustomScript {
                 };
             }),
             specialRules: [get(this.specialRules)],
-            specifics: get(this.specifics),
+            'victory-condition': get(this.victoryConditions),
             story: get(this.story),
             mastermindHints: get(this.mastermindHints),
 

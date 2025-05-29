@@ -9,7 +9,7 @@
   export let a: Abilitie<Record<string, any>>;
   export let compact: boolean = false;
 
-  $: ability = require(a);
+  $: ability = (a);
 </script>
 
 <p>

@@ -41,7 +41,7 @@ function getLinksFromMarkdown(markdown: string): Set<string> {
 
 
 
-const toCheck = [characters, incidents, plots, roles, tragedys, scripts.flatMap(x => [x.cast, x.title, x.specifics, x.story, x.mastermindHints]),
+const toCheck = [characters, incidents, plots, roles, tragedys, scripts.flatMap(x => [x.cast, x.title, x['victory-conditions'], x.story, x.mastermindHints]),
     ...ui_strings,
     'Location Icons',
     'Intrigue Places',

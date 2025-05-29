@@ -57,7 +57,7 @@
                     "culprit": "Black Cat"
                 }
             ],
-            "specifics": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
+            "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "story": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "mastermindHints": "See Tragedy Looper: Cosmic Evil Mastermind Handbook"
         },
@@ -112,7 +112,7 @@
                     "culprit": "School"
                 }
             ],
-            "specifics": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
+            "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "story": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "mastermindHints": "See Tragedy Looper: Cosmic Evil Mastermind Handbook"
         },
@@ -170,7 +170,7 @@
                     "culprit": "Boy Student"
                 }
             ],
-            "specifics": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
+            "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "story": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "mastermindHints": "See Tragedy Looper: Cosmic Evil Mastermind Handbook"
         },
@@ -239,7 +239,7 @@
                     "culprit": "Patient"
                 }
             ],
-            "specifics": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
+            "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "story": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "mastermindHints": "See Tragedy Looper: Cosmic Evil Mastermind Handbook"
         },
@@ -326,7 +326,7 @@
             "specialRules": [
                 "Mastermind removes \"Forbid Goodwill\" from his hand. It cannot be used in any loop."
             ],
-            "specifics": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
+            "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "story": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "mastermindHints": "See Tragedy Looper: Cosmic Evil Mastermind Handbook"
         },
@@ -382,7 +382,7 @@
                     "culprit": "Boy Student"
                 }
             ],
-            "specifics": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
+            "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "story": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "mastermindHints": "See Tragedy Looper: Cosmic Evil Mastermind Handbook"
         },
@@ -441,7 +441,7 @@
                     "culprit": "Office Worker"
                 }
             ],
-            "specifics": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
+            "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "story": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "mastermindHints": "See Tragedy Looper: Cosmic Evil Mastermind Handbook"
         },
@@ -514,7 +514,7 @@
                     "culprit": "Godly Being"
                 }
             ],
-            "specifics": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
+            "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "story": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "mastermindHints": "See Tragedy Looper: Cosmic Evil Mastermind Handbook"
         },
@@ -577,7 +577,7 @@
                     "culprit": "Informer"
                 }
             ],
-            "specifics": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
+            "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "story": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "mastermindHints": "See Tragedy Looper: Cosmic Evil Mastermind Handbook"
         },
@@ -652,7 +652,7 @@
                     "culprit": "Godly Being"
                 }
             ],
-            "specifics": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
+            "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "story": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "mastermindHints": "See Tragedy Looper: Cosmic Evil Mastermind Handbook"
         }

@@ -33,7 +33,7 @@
       ...scriptIncident,
       ...incidendtMeta,
       effect: incidendtMeta.effect
-        .map((x) => require(x))
+        .map((x) => (x))
         .map((x) => ({ ...x, type: x.type?.replaceAll('Character Death', 'Character Death') })),
     };
   });
@@ -54,7 +54,7 @@
       return { plot: x[0], ...x[1] };
     })
     .flatMap((x) => {
-      const plot = require(plots[x.plot]);
+      const plot = (plots[x.plot]);
       return plot.rules.map((y) => ({ ...x, ...plot, ...y }));
     })
     .map((x) => {
@@ -498,7 +498,7 @@
       {/each}
       {#each usedIncidents as i}
         {@const char = isCharacterName(i.culprit) ? characters[i.culprit] : undefined}
-        {@const limit = char ? char.paranoiaLimit : require(i).mob}
+        {@const limit = char ? char.paranoiaLimit : (i).mob}
         {#each i.effect as e}
           <tr>
             <td>
@@ -519,7 +519,7 @@
             </td>
 
             <td>
-              {#if require(char)?.doseNotTriggerIncidentEffect}
+              {#if (char)?.doseNotTriggerIncidentEffect}
                 <Translation translationKey={'This has no effect but the incident is triggered.'} />
               {:else if char?.name && roles[getRoleOfCast(selectedScript, char.name) ?? 'Person']?.doseNotTriggerIncidentEffect}
                 <Translation translationKey={'This has no effect but the incident is triggered.'} />

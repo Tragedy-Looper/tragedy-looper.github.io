@@ -943,7 +943,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                         "type": "array",
                                         "items": { "type": "string" }
                                     },
-                                    "specifics": { "type": "string" },
+                                    "victory-conditions": { "type": "string" },
                                     "story": { "type": "string" },
                                     "mastermindHints": { "type": "string" },
 

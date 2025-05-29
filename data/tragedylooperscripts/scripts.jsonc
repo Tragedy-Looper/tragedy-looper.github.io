@@ -42,7 +42,7 @@
       "specialRules": [
         "Special Setup: The Henchman starts in the City."
       ],
-      "specifics": "\n\ntest comment\n    Alan Tran",
+      "victory-conditions": "\n\ntest comment\n    Alan Tran",
       "creator": "ProdigalPlaneswalker",
       "daysPerLoop": 3,
       "difficultySets": [
@@ -56,7 +56,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 1
       }
     },
@@ -112,7 +112,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "Kill 2 characters (Uproar, Hospital Incident)\nKill the Protagonists (Hospital Incident)\n2 Intrigue on the Shrine (Sealed Item)\n2 Intrigue on the Henchman's starting location\n\n",
+      "victory-conditions": "Kill 2 characters (Uproar, Hospital Incident)\nKill the Protagonists (Hospital Incident)\n2 Intrigue on the Shrine (Sealed Item)\n2 Intrigue on the Henchman's starting location\n\n",
       "creator": "Iammars",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -122,7 +122,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 102
       }
     },
@@ -165,7 +165,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "1) Kill the Key Person (Class Rep)\n            There's the Hospital Incident, the Killer, and the Suicide. Really, you choose on this one.\n2) Kill a Friend (Patient, Pop Idol)\n           Triggering the Hospital Incident will always kill the Patient, so that makes things much easier. Alternatively, turning the Persons into Serial Killers will make it easy too.\n3) Kill the Protagonists\n           Use either the Killers power to kill them, or blow up the Hospital. It's easy enough to trigger the Hospital Incident, so players may attempt to prevent the placing of Intrigue there, but the fact that the Brain starts there makes it a powerful tool the Protagonists will want to move immediately.\n\nThis was a good script. Difficulty 8/10 makes sense for 3 loops, but 4 is a bit easier. It's fairly balanced. We had the protagonists win on the final guess. \n    Emily Forster\n\nOne of the better ones on this site. 2 Thumbs up!!!\n    sevento",
+      "victory-conditions": "1) Kill the Key Person (Class Rep)\n            There's the Hospital Incident, the Killer, and the Suicide. Really, you choose on this one.\n2) Kill a Friend (Patient, Pop Idol)\n           Triggering the Hospital Incident will always kill the Patient, so that makes things much easier. Alternatively, turning the Persons into Serial Killers will make it easy too.\n3) Kill the Protagonists\n           Use either the Killers power to kill them, or blow up the Hospital. It's easy enough to trigger the Hospital Incident, so players may attempt to prevent the placing of Intrigue there, but the fact that the Brain starts there makes it a powerful tool the Protagonists will want to move immediately.\n\nThis was a good script. Difficulty 8/10 makes sense for 3 loops, but 4 is a bit easier. It's fairly balanced. We had the protagonists win on the final guess. \n    Emily Forster\n\nOne of the better ones on this site. 2 Thumbs up!!!\n    sevento",
       "creator": "O'Malley",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -175,7 +175,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 103
       }
     },
@@ -234,7 +234,7 @@
       "specialRules": [
         "N/A"
       ],
-      "specifics": "Too lazy right now. I'll edit later.\n\nThis script is extremely difficult for the protagonists and it's almost impossible. It's very difficult to stop the Butterfly Effect from occurring, though I believe it's possible to do so with perfect information. I won as the MM from Butterfly Effect all 4 loops. There's also no way for the protagonists to figure out who the Time Traveler is unless the MM messes up.\n    Emily Forster\n\nThank you for the comment – I will adjust. \n    O'Malley\n\nChanged the culprit for the Butterfly Effect from the RMD (who is also the Factor which allows her to place Paranoia on herself if the School has intrigue) to the Girl Student, making it much harder to trigger. In addition, swapped out the Police Officer for the Shrine Maiden so her revealing ability can help the Protagonists.\n\nStill should be difficult to discover the Henchman, but I hope it isn't AS hard. It should be easier to win in the loops but harder in the Final Guess.\n    O'Malley",
+      "victory-conditions": "Too lazy right now. I'll edit later.\n\nThis script is extremely difficult for the protagonists and it's almost impossible. It's very difficult to stop the Butterfly Effect from occurring, though I believe it's possible to do so with perfect information. I won as the MM from Butterfly Effect all 4 loops. There's also no way for the protagonists to figure out who the Time Traveler is unless the MM messes up.\n    Emily Forster\n\nThank you for the comment – I will adjust. \n    O'Malley\n\nChanged the culprit for the Butterfly Effect from the RMD (who is also the Factor which allows her to place Paranoia on herself if the School has intrigue) to the Girl Student, making it much harder to trigger. In addition, swapped out the Police Officer for the Shrine Maiden so her revealing ability can help the Protagonists.\n\nStill should be difficult to discover the Henchman, but I hope it isn't AS hard. It should be easier to win in the loops but harder in the Final Guess.\n    O'Malley",
       "creator": "O'Malley",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -244,7 +244,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 104
       }
     },
@@ -307,7 +307,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Ninja (Journalist) has 2 intrigue, Friend (Girl Student) dies, Killing Key Person (Mystery Boy), Hospital Incident\n\n",
+      "victory-conditions": "Ninja (Journalist) has 2 intrigue, Friend (Girl Student) dies, Killing Key Person (Mystery Boy), Hospital Incident\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -317,7 +317,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 105
       }
     },
@@ -385,7 +385,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Black School: Intrigue on school is equal to or more than loop #-1, level 2 hospital incident, killing Friend (Mystery Boy)\n\nThis script has been played once with 4 loops, protagonists won on the final guess.\n    Justin Karp",
+      "victory-conditions": "Black School: Intrigue on school is equal to or more than loop #-1, level 2 hospital incident, killing Friend (Mystery Boy)\n\nThis script has been played once with 4 loops, protagonists won on the final guess.\n    Justin Karp",
       "creator": "Justin Karp",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -395,7 +395,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 106
       }
     },
@@ -454,7 +454,7 @@
       "specialRules": [
         "N/A"
       ],
-      "specifics": "Time Traveler (Godly Being) has 2 or less Goodwill at the end of the loop.\nAt the end of the loop, if the Butterfly Effect has triggered this loop.\nAt the end of the loop, the Friend (Police Officer) was killed.\n\nForgot to put in Incidents - adding\n    O'Malley\n\nThe MM information here is in conflict with a couple of things. First of all, you say that the MM will win the first two loops because the Godly Being isn't there, but you have the Godly Being listed as \"Godly Being (2)\" indicating that the Godly Being comes in at the beginning of loop 2. Also, the rule for the Time Traveler is Optional: Day end last day, not Loss condition: Loop end, so when the Protagonists lose from this, they lose at day end, not loop end and they know that they lose from this and not anything else. So all of the hints about the intrigue on the Shrine don't really work. Finally, it's very hard to get the Butterfly Effect to occur the first time the Godly Being shows up because there are no MM abilities to help and the Protagonists just have to play one Paranoia -1 to block the Godly Being from getting to paranoia limit by day 3. \n    Emily Forster\n\nThis script is broken because the Godly Being is not allowed to use their ability when they are not in play.\n    Justin Karp",
+      "victory-conditions": "Time Traveler (Godly Being) has 2 or less Goodwill at the end of the loop.\nAt the end of the loop, if the Butterfly Effect has triggered this loop.\nAt the end of the loop, the Friend (Police Officer) was killed.\n\nForgot to put in Incidents - adding\n    O'Malley\n\nThe MM information here is in conflict with a couple of things. First of all, you say that the MM will win the first two loops because the Godly Being isn't there, but you have the Godly Being listed as \"Godly Being (2)\" indicating that the Godly Being comes in at the beginning of loop 2. Also, the rule for the Time Traveler is Optional: Day end last day, not Loss condition: Loop end, so when the Protagonists lose from this, they lose at day end, not loop end and they know that they lose from this and not anything else. So all of the hints about the intrigue on the Shrine don't really work. Finally, it's very hard to get the Butterfly Effect to occur the first time the Godly Being shows up because there are no MM abilities to help and the Protagonists just have to play one Paranoia -1 to block the Godly Being from getting to paranoia limit by day 3. \n    Emily Forster\n\nThis script is broken because the Godly Being is not allowed to use their ability when they are not in play.\n    Justin Karp",
       "creator": "O'Malley + Koya",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -464,7 +464,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 108
       }
     },
@@ -528,7 +528,7 @@
       "specialRules": [
         "New incident: Diagonal Destruction: If there is at least 2 intrigue on the culprit's location, everyone in the diagonally opposite location dies and protagonists lose."
       ],
-      "specifics": "Diagonal Destruction: 2 intrigue on culprit's location, Friend dies (Alien or Class Rep), Key Person dies (Pop Idol), Key Person has 2 intrigue (Pop Idol), Loved One has 3 paranoia and 1 intrigue (Nurse)\n\n",
+      "victory-conditions": "Diagonal Destruction: 2 intrigue on culprit's location, Friend dies (Alien or Class Rep), Key Person dies (Pop Idol), Key Person has 2 intrigue (Pop Idol), Loved One has 3 paranoia and 1 intrigue (Nurse)\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -538,7 +538,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 109
       }
     },
@@ -616,7 +616,7 @@
       "specialRules": [
         "N/A"
       ],
-      "specifics": "Said I was too lazy.\n\nThis script is impossible to win during the loops, but it's not a terrible script because the protagonists can win on the final guess. We played 4 loops and the protagonists won on the final guess. I actually thought this was a very enjoyable script to play for both sides. The PI/Twin combo was very exciting and a big surprise for the protagonists.\n    Justin Karp",
+      "victory-conditions": "Said I was too lazy.\n\nThis script is impossible to win during the loops, but it's not a terrible script because the protagonists can win on the final guess. We played 4 loops and the protagonists won on the final guess. I actually thought this was a very enjoyable script to play for both sides. The PI/Twin combo was very exciting and a big surprise for the protagonists.\n    Justin Karp",
       "creator": "O'Malley",
       "daysPerLoop": 8,
       "difficultySets": [
@@ -626,7 +626,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 110
       }
     },
@@ -695,7 +695,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Extra Gauge is 1 or lower at Loop End, 12 or more paranoia on remaining characters at Loop End, Friend dead at Loop End, Killer ability\n\n",
+      "victory-conditions": "Extra Gauge is 1 or lower at Loop End, 12 or more paranoia on remaining characters at Loop End, Friend dead at Loop End, Killer ability\n\n",
       "creator": "Emily Forster",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -705,7 +705,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 111
       }
     },
@@ -769,7 +769,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Killing Key Person (Pop Idol), Level 2 Hospital Incident, Poisoner Ability (Godly Being)\n\n",
+      "victory-conditions": "Killing Key Person (Pop Idol), Level 2 Hospital Incident, Poisoner Ability (Godly Being)\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -779,7 +779,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 112
       }
     },
@@ -848,7 +848,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "The Cursed Land rule for killing Protagonists; Loved One kills Protagonists\n\n",
+      "victory-conditions": "The Cursed Land rule for killing Protagonists; Loved One kills Protagonists\n\n",
       "creator": "Augustin-Louis Cauchy",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -862,7 +862,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 113
       }
     },
@@ -914,7 +914,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "At least as much Intrigue on Shrine as the Extra Gauge shows (end of loop); Key Person dies (immediate); Wizard dies (end of loop); Protagonists die from Extra Gauge being at 4 (end of day); Loop loss from Extra Gauge Being at 4 (start of loop)\n\n",
+      "victory-conditions": "At least as much Intrigue on Shrine as the Extra Gauge shows (end of loop); Key Person dies (immediate); Wizard dies (end of loop); Protagonists die from Extra Gauge being at 4 (end of day); Loop loss from Extra Gauge Being at 4 (start of loop)\n\n",
       "creator": "Augustin-Louis Cauchy",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -924,7 +924,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 114
       }
     },
@@ -984,7 +984,7 @@
       "specialRules": [
         "The Mastermind has a secret rule that dictates part of his/her play."
       ],
-      "specifics": "2 intrigue on Journalist at end of loop, kill Class Rep or Illusion while 2 intrigue on City via Ninja ability or Conspiracies, Fake Incident\n\n",
+      "victory-conditions": "2 intrigue on Journalist at end of loop, kill Class Rep or Illusion while 2 intrigue on City via Ninja ability or Conspiracies, Fake Incident\n\n",
       "creator": "Emily Forster",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -994,7 +994,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 115
       }
     },
@@ -1063,7 +1063,7 @@
       "specialRules": [
         "New incident: Diagonal Destruction 2: Everyone in the diagonally opposite location of the culprit dies"
       ],
-      "specifics": "Key person dies from Fated Connections, Friend dies (Alien or Patient), Fake Incident\n\n",
+      "victory-conditions": "Key person dies from Fated Connections, Friend dies (Alien or Patient), Fake Incident\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -1073,7 +1073,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 116
       }
     },
@@ -1138,7 +1138,7 @@
       "specialRules": [
         "Protagonists know when the incidents are and who does them except for day 5 but not which incident occurs on each day. The incident list is in the culprit list for the mastermind."
       ],
-      "specifics": "Smell of Gunpowder: 12 or more paranoia on the remaining characters, A Quilt of Incidents: Extra Gauge is on 3 or more, Poisoner (Mystery Boy)\n\n",
+      "victory-conditions": "Smell of Gunpowder: 12 or more paranoia on the remaining characters, A Quilt of Incidents: Extra Gauge is on 3 or more, Poisoner (Mystery Boy)\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -1148,7 +1148,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 117
       }
     },
@@ -1210,7 +1210,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "Secret Record Victory: Magician(s) or Brain is revealed (Office Worker, Shrine Maiden, Alien); Showtime of Death Victory: 6 or fewer characters left alive; Key Person dies (Rich Man’s Daughter)\n\n",
+      "victory-conditions": "Secret Record Victory: Magician(s) or Brain is revealed (Office Worker, Shrine Maiden, Alien); Showtime of Death Victory: 6 or fewer characters left alive; Key Person dies (Rich Man’s Daughter)\n\n",
       "creator": "Augustin-Louis Cauchy",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -1220,7 +1220,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 118
       }
     },
@@ -1273,7 +1273,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "1. At least 2 Intrigue on the City (main plot: Giant Time Bomb victory condition)\n2. Kill the Friend (Nurse, using Serial Killer's ability, Hospital Incident, Faraway Murder)\n3. Kill the Protagonists (using Hospital Incident)\n\n",
+      "victory-conditions": "1. At least 2 Intrigue on the City (main plot: Giant Time Bomb victory condition)\n2. Kill the Friend (Nurse, using Serial Killer's ability, Hospital Incident, Faraway Murder)\n3. Kill the Protagonists (using Hospital Incident)\n\n",
       "creator": "Elmore Maji",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -1283,7 +1283,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 126
       }
     },
@@ -1357,7 +1357,7 @@
       "specialRules": [
         "Diagonal Destruction 3: everyone in the diagonally opposite location dies, the incident happens at paranoia limit -1, if 3 or more people die in a single incident, the protagonists are killed"
       ],
-      "specifics": "Key Person (Boy Student) dies\nFriend (Class Rep or Police Officer) dies\n\n",
+      "victory-conditions": "Key Person (Boy Student) dies\nFriend (Class Rep or Police Officer) dies\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -1367,7 +1367,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 129
       }
     },
@@ -1441,7 +1441,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Killing Key Person: Informer\nKilling Friend: Girl Student\nLevel 2 Hospital Incident\nPoisoner Ability (Extra Gauge at 4)\n\n",
+      "victory-conditions": "Killing Key Person: Informer\nKilling Friend: Girl Student\nLevel 2 Hospital Incident\nPoisoner Ability (Extra Gauge at 4)\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -1451,7 +1451,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 134
       }
     },
@@ -1514,7 +1514,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "Key Person (and Paranoiac) ability. Sacrifice Ability. Increase the extra gauge by Witness, Deep One, or Discovery.\n\n",
+      "victory-conditions": "Key Person (and Paranoiac) ability. Sacrifice Ability. Increase the extra gauge by Witness, Deep One, or Discovery.\n\n",
       "creator": "Emily Forster",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -1524,7 +1524,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 135
       }
     },
@@ -1593,7 +1593,7 @@
       "specialRules": [
         "Special Incident: Diagonal Destruction 3 (the culprit must kill up to 2 people in the diagonally opposite location)"
       ],
-      "specifics": "Kill Key Person: Pop Idol\nKill Friend: Shrine Maiden\nKiller Ability (Informer)\n\n",
+      "victory-conditions": "Kill Key Person: Pop Idol\nKill Friend: Shrine Maiden\nKiller Ability (Informer)\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -1603,7 +1603,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 141
       }
     },
@@ -1666,7 +1666,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Killing Key Person: Forensic Specialist\nLevel 2 Terrorism\nLevel 2 Hospital Incident\n4 Extra Gauge Poisoner Ability\n\n",
+      "victory-conditions": "Killing Key Person: Forensic Specialist\nLevel 2 Terrorism\nLevel 2 Hospital Incident\n4 Extra Gauge Poisoner Ability\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -1676,7 +1676,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 142
       }
     },
@@ -1733,7 +1733,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "Kill Key Person or Paranoiac with Serial Killer or Uproar. Fire of Demise. Sacrifice ability. Time Traveler ability. 5 characters with Intrigue at end of loop.\n\n",
+      "victory-conditions": "Kill Key Person or Paranoiac with Serial Killer or Uproar. Fire of Demise. Sacrifice ability. Time Traveler ability. 5 characters with Intrigue at end of loop.\n\n",
       "creator": "Emily Karp",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -1743,7 +1743,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 143
       }
     },
@@ -1810,7 +1810,7 @@
       "specialRules": [
         "Know that there is no godly being in this script."
       ],
-      "specifics": "Butterfly Effect. Doctor doesn't have enough goodwill (use spreading to help with this). Kill the friend. Loved one kills protagonists.\n\nThis script was inspired by the doctor's 3-cost goodwill ability. How could I make it crucial for the protagonists? This motivated doctor as time traveler and alien as serial killer, and patient doing butterfly effect. I then added the other stuff. It's a bit overkill honestly. Here are all the gimmicks in this script:\n\ngimmicks:\n1. the patient needs to leave the hospital in order to stop BFE\n2. spreading can ruin the doctor and motivate an alternate wincon\n3. the serial killer suicides early, making it difficult to pick out roles\n4. mboy is contheorist, leaking both subplots but making for a vicious contender\n5. office worker as loved one unfucks the role\n6. missing person works to cause or interrupt serial kills, and to facilitate bluffing loop 1\n\nThe one time I tested this, I was running the following changes: informer instead of boss, informer does hospital incident instead of foul evil. I'm thinking of switching the girl student and office worker too, but I'm not sure if that's too imbalanced.\n\nThe lesson of this script for me is that I may have tried to cram too many tricks and gimmicks in. Maybe it's better to write scripts with \"theses\" if that makes sense. Very tightly focused explorations of a concept. That's not what this is lol. Good luck.\n    Boy Student",
+      "victory-conditions": "Butterfly Effect. Doctor doesn't have enough goodwill (use spreading to help with this). Kill the friend. Loved one kills protagonists.\n\nThis script was inspired by the doctor's 3-cost goodwill ability. How could I make it crucial for the protagonists? This motivated doctor as time traveler and alien as serial killer, and patient doing butterfly effect. I then added the other stuff. It's a bit overkill honestly. Here are all the gimmicks in this script:\n\ngimmicks:\n1. the patient needs to leave the hospital in order to stop BFE\n2. spreading can ruin the doctor and motivate an alternate wincon\n3. the serial killer suicides early, making it difficult to pick out roles\n4. mboy is contheorist, leaking both subplots but making for a vicious contender\n5. office worker as loved one unfucks the role\n6. missing person works to cause or interrupt serial kills, and to facilitate bluffing loop 1\n\nThe one time I tested this, I was running the following changes: informer instead of boss, informer does hospital incident instead of foul evil. I'm thinking of switching the girl student and office worker too, but I'm not sure if that's too imbalanced.\n\nThe lesson of this script for me is that I may have tried to cram too many tricks and gimmicks in. Maybe it's better to write scripts with \"theses\" if that makes sense. Very tightly focused explorations of a concept. That's not what this is lol. Good luck.\n    Boy Student",
       "creator": "Redless",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -1820,7 +1820,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 157
       }
     },
@@ -1870,7 +1870,7 @@
       "specialRules": [
         "N/A"
       ],
-      "specifics": "(1) [Loop End]: The Girl Student (Friend) is dead. (Faraway Murder)\n(2) [Loop End]: 2 Intrigue on the Shrine. (Light of the Avenger)\n\n",
+      "victory-conditions": "(1) [Loop End]: The Girl Student (Friend) is dead. (Faraway Murder)\n(2) [Loop End]: 2 Intrigue on the Shrine. (Light of the Avenger)\n\n",
       "creator": "CipherCybr",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -1880,7 +1880,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 159
       }
     },
@@ -1925,7 +1925,7 @@
       "specialRules": [
         "[Always]: Characters with <Boy> or <Man> cannot move into the School by any means."
       ],
-      "specifics": "(1) The Nurse is dead (Key Person) [Killer's Ability, Murder Incident, Hospital Incident] ; (2) The Friend (Office Worker) is dead at the end of the loop [Murder Incident, Hospital Incident] ; (3) The Protagonists are killed [Killer's Ability, Hospital Incident].\n\n",
+      "victory-conditions": "(1) The Nurse is dead (Key Person) [Killer's Ability, Murder Incident, Hospital Incident] ; (2) The Friend (Office Worker) is dead at the end of the loop [Murder Incident, Hospital Incident] ; (3) The Protagonists are killed [Killer's Ability, Hospital Incident].\n\n",
       "creator": "CipherCybr",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -1935,7 +1935,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 161
       }
     },
@@ -1980,7 +1980,7 @@
       "specialRules": [
         "[At Day End]: Move the Shrine anti-clockwise on the board and switch it with the Location in the slot it moves to (Example: Night 1 - Switch the Shrine and Hospital). Then, an effect (only known by Mastermind) is applied to all characters in that location."
       ],
-      "specifics": "The Shrine Maiden (Friend) is dead: Special Rule, Faraway Murder // The Informer (Key Person) is dead: Special Rule, Faraway Murder // 2 Intrigue on the School (A Place to Protect).\n\n",
+      "victory-conditions": "The Shrine Maiden (Friend) is dead: Special Rule, Faraway Murder // The Informer (Key Person) is dead: Special Rule, Faraway Murder // 2 Intrigue on the School (A Place to Protect).\n\n",
       "creator": "CipherCybr",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -1990,7 +1990,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 162
       }
     },
@@ -2033,7 +2033,7 @@
       "specialRules": [
         "Final Guess is allowed"
       ],
-      "specifics": "(a) Killing the Key Person (Killer / Serial Killer / Murder / Suicide)\n(b) 4 Intrigue in Killer\n\n",
+      "victory-conditions": "(a) Killing the Key Person (Killer / Serial Killer / Murder / Suicide)\n(b) 4 Intrigue in Killer\n\n",
       "creator": "ChrisMaxheart",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -2051,7 +2051,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 163
       }
     },
@@ -2095,7 +2095,7 @@
       "specialRules": [
         "N/A"
       ],
-      "specifics": "(1): The Mystery Boy (Key Person) is dead. <Serial Killer> <Murder> (2) [Loop End]: 2 Intrigue on the Shrine. <Brain's Ability> <Intrigue+ cards> <Missing Person>\n\n",
+      "victory-conditions": "(1): The Mystery Boy (Key Person) is dead. <Serial Killer> <Murder> (2) [Loop End]: 2 Intrigue on the Shrine. <Brain's Ability> <Intrigue+ cards> <Missing Person>\n\n",
       "creator": "CipherCybr",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -2105,7 +2105,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 164
       }
     },
@@ -2174,7 +2174,7 @@
         "Mastermind removes 【paranoia -1】 from hand",
         "Henchman starts always in the School"
       ],
-      "specifics": "1.Kill friend（SK and Poisoner EX2）\n2.12P on the remaining characters(Smell of gunpowder)\n3.Kill protagonists(Poisoner EX4)\n4.Kill KP（SK and Poisoner EX2）\n\n",
+      "victory-conditions": "1.Kill friend（SK and Poisoner EX2）\n2.12P on the remaining characters(Smell of gunpowder)\n3.Kill protagonists(Poisoner EX4)\n4.Kill KP（SK and Poisoner EX2）\n\n",
       "creator": "xinshouzhier",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -2184,7 +2184,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 165
       }
     },
@@ -2227,7 +2227,7 @@
       "specialRules": [
         "The play of the mastermind is determined by the script.\nAll characters are not person."
       ],
-      "specifics": "The mastermind always wins.\nThe protagonist needs to deduce the identity of all the characters.\n\n",
+      "victory-conditions": "The mastermind always wins.\nThe protagonist needs to deduce the identity of all the characters.\n\n",
       "creator": "xinshouzhier",
       "daysPerLoop": 1,
       "difficultySets": [
@@ -2237,7 +2237,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 166
       }
     },
@@ -2281,7 +2281,7 @@
       "specialRules": [
         "All cards in mastermind's hand have (1x∞)."
       ],
-      "specifics": "The mastermind will always win. The only thing the mastermind can do is try to slow down the protagonists seeing all the truth. And the protagonist's playing skill is expressed by winning with the least loop number.\n\n",
+      "victory-conditions": "The mastermind will always win. The only thing the mastermind can do is try to slow down the protagonists seeing all the truth. And the protagonist's playing skill is expressed by winning with the least loop number.\n\n",
       "creator": "Lizabove",
       "daysPerLoop": 3,
       "difficultySets": [
@@ -2291,7 +2291,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 167
       }
     },
@@ -2358,7 +2358,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "\n\n",
+      "victory-conditions": "\n\n",
       "creator": "ChrisMaxheart",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -2372,7 +2372,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 169
       }
     },
@@ -2434,7 +2434,7 @@
       "specialRules": [
         "N/A"
       ],
-      "specifics": "\n\n",
+      "victory-conditions": "\n\n",
       "creator": "ChrisMaxheart",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -2448,7 +2448,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 170
       }
     },
@@ -2501,7 +2501,7 @@
       "specialRules": [
         "Mastermind removes \"Forbid Goodwill\" from his hand. It cannot be used in any loop"
       ],
-      "specifics": "If you find the true way, you will actually win whatever mastermind do.\n\n",
+      "victory-conditions": "If you find the true way, you will actually win whatever mastermind do.\n\n",
       "creator": "Aster Mentha",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -2511,7 +2511,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 173
       }
     },
@@ -2563,7 +2563,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "2 Intrigue on Shrine\nFriend dies (via Paranoia Virus, Murder, or Faraway Murder)\n\n",
+      "victory-conditions": "2 Intrigue on Shrine\nFriend dies (via Paranoia Virus, Murder, or Faraway Murder)\n\n",
       "creator": "Kitsunin",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -2573,7 +2573,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 174
       }
     },
@@ -2624,7 +2624,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "At least 2 intrigue on the Shrine by Loop End.\n• Friend (Young Girl) is dead by Loop End.\n\n",
+      "victory-conditions": "At least 2 intrigue on the Shrine by Loop End.\n• Friend (Young Girl) is dead by Loop End.\n\n",
       "creator": "Chronicle [RealBernkastel]",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -2634,7 +2634,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 176
       }
     },
@@ -2690,7 +2690,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Key Person (Police Officer) dies. \n• At least ONE Friend (Nurse/Teacher) is dead by Loop End.\n\n",
+      "victory-conditions": "Key Person (Police Officer) dies. \n• At least ONE Friend (Nurse/Teacher) is dead by Loop End.\n\n",
       "creator": "Chronicle [RealBernkastel]",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -2700,7 +2700,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 177
       }
     },
@@ -2747,7 +2747,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "\n\n",
+      "victory-conditions": "\n\n",
       "creator": "Test",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -2757,7 +2757,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 178
       }
     },
@@ -2801,7 +2801,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "Having two intrigue on the Shrine at the end of the Loop is the only way for the Protagonists to lose. However the Mastermind has many ways of putting intrigue on the Shrine:\n\nOriginally uploaded by speter79 of boardgamegeek.com\n    Alan Tran\n\nStarting Scenario\nYour merry band of time travels fly through the crystalline-blue time streams. You see something disturbing in the strands of time. A Suicide… some Foul Evil brewing… and an innocuous action that causes Butterfly Effect all appear to lead up to a horrific tragedy. You detect the manipulation of the Mastermind at work and decide to investigate.\n    Alan Tran\n\nIf Loop One Fails: \nAll of a sudden you are thrown back into the time stream. You have failed but it happened so suddenly that you don’t know how it happened or what caused it. You hear the arrogant laughter of the Mastermind echoing through the time stream. You loop back to investigate.\n\n    Alan Tran\n\nIf Loop Two Fails: \nTentacle monster burse forth from the Shrine. They pour over the City, squeezing all the characters into jelly. The screams of the populace are forever etched into your psyche. The time stream becomes dark and think as the Mastermind attempts to lock in this reality. You manage to loop back for a final attempt at saving the City.\n    Alan Tran\n\nIf Loop Three Fails: \nA bright light, brighter than the sun, appears at the Shrine and Tentacle monster burse forth. To your horror, you see that there are people chanting around the Tentacle portal. Some there are people in this Tentacle Cult that are summoning the monsters. Due to the bright light you can’t make out the features of their faces but it must be characters that you have come into contact with in this Tentacle cult. A huge tentacle monster slithers toward you. The time stream becomes dark and think as the Mastermind attempts to lock in this reality. As the tentacle reaches for your leg you manage to loop back for a final attempt at saving the City.\n    Alan Tran\n\nIf the Protagonists Fail Loop Four: \nThe city is in ruins. Tentacle monsters everywhere! The mangled bodies of the populace cause your stomach to retch. The time stream is opaque and feels like a tub of molasses. You can’t escape this reality. Tentacle monsters are all around you, suckers extending for you face. Your only chance is to shatter the foundation of the time stream that the Mastermind has created. If you can perfectly deduce his plots, then you might be able to shatter this reality and get the threads of time flowing again. Make your final guess!\n    Alan Tran\n\nIf the Protagonists Prevent the Tragedy: \nThe evil cabal that sought to unleash an army of demonic tentacle monsters on the city has been stopped. The Mastermind used the Journalist as the Brain behind his evil scheme. The Police Officer harbored a dark hatred of the students at the school and joined the tentacle monster cabal as a Cultist to unleash horrors upon them. The shame of this dark desire put thoughts of Suicide into the Police Officer’s head. \n\nThe Doctor was an unwitting pawn of the cabal as they used him to spread Foul Evil through his legitimate medical practice by tainting his instruments of healing with demonic curses.\n\nThe three girls that foiled the plot, with inspiration from the Protagonists, were two students and the local Shrine Maiden. The Shrine Maiden led the group. She had a reputation for being a nutty Conspiracy Theorist before this incident. You wonder what led enabled this child to take down the tentacle cult. Was it the simple of a child that led to Butterfly Effect the Mastermind couldn’t predict or just her unbridled raw paranoia that ultimately took down the tentacle cult? It impossible to know for sure.\n\nAs your reenter the time stream you sense the presence of the Mastermind retreating upon your arrival. Gone is arrogance you have always sensed from the Mastermind entity. For an instant you detect the hint of a different emotion as he vanishes from you perceptions… fear.\n    Alan Tran\n\nIf the Leader Succeeds on the Final Guess: \nThe evil cabal that has succeeded in unleashing an army of demonic tentacle monsters on the city. However, you have unraveled the Mastermind’s plots. The Mastermind used the Journalist as the Brain behind his evil scheme. The Police Officer harbored a dark hatred of the students at the school and joined the tentacle monster cabal as a Cultist to unleash the horror upon them. The shame of this dark desire put thoughts of Suicide into the Police Officer’s head. \n\nThe Doctor was an unwitting pawn of the cabal as they used him to spread Foul Evil through his legitimate medical practice by tainting his instruments of healing with demonic curses.\n\nThe three girls that tried and failed to foil the plot were two students and the local Shrine Maiden. The Shrine Maiden led the group. She was viewed as bright Conspiracy Theorist before this incident, but her paranoia and the randomness of a Butterfly Effect ultimately were not enough to stop the tentacle cult. However, the where they failed, you have succeeded.\n\nWith a boom heard through the City, the static black threads of the Mastermind’s time stream break into chunks and are washed away. The horrible reality is annihilated and the healthy crystalline-blue time stream resumes flowing. You are free and back in the time stream. The Mastermind’s presence is nowhere to be seen. He has escaped. You wonder how many times you will be able to survive these close calls with death.\n    Alan Tran\n\nIf the Leader Fails on the Final Guess: \nThe Mastermind’s plots prove too difficult to untangle. The tentacle monsters envelope you. To your horror, you realize that they are not trying to squeeze you into jelly, only take you prisoner. You are taken to the school where to face the surviving members of the cult. The cult had many members from the City and was run by the Journalist (the Brain). The Police Officer harbored a dark hatred of the students at the school and joined the tentacle monster cabal as a Cultist to unleash horrors upon them. The shame of this dark desire put thoughts of Suicide into the Police Officer’s head. \n\nOver the days of torture you piece together that the Doctor was an unwitting pawn of the cabal as they used him to spread Foul Evil through his legitimate medical practice by tainting his instruments of healing with demonic curses.\n\nThe three girls that tried and failed to foil the plot were two students and the local Shrine Maiden. The Shield Maiden led the group. She was viewed as a bright Conspiracy Theorist before this incident, but her paranoia and the randomness of a Butterfly Effect ultimately were not enough to stop the tentacle cult. \n\nOne by one you see the innocent charters tortured and killed by tentacle monsters for the entertainment of the cabal. The time streams are so dark you can barely perceive their existence. Did they ever exist at all or have you always existed in this world of pain and tentacles. There is no escape. The only question left is whether your mind or body will be first to break beyond repair. You know now that will be up to the Mastermind. He will is makes your reality.\n    Alan Tran",
+      "victory-conditions": "Having two intrigue on the Shrine at the end of the Loop is the only way for the Protagonists to lose. However the Mastermind has many ways of putting intrigue on the Shrine:\n\nOriginally uploaded by speter79 of boardgamegeek.com\n    Alan Tran\n\nStarting Scenario\nYour merry band of time travels fly through the crystalline-blue time streams. You see something disturbing in the strands of time. A Suicide… some Foul Evil brewing… and an innocuous action that causes Butterfly Effect all appear to lead up to a horrific tragedy. You detect the manipulation of the Mastermind at work and decide to investigate.\n    Alan Tran\n\nIf Loop One Fails: \nAll of a sudden you are thrown back into the time stream. You have failed but it happened so suddenly that you don’t know how it happened or what caused it. You hear the arrogant laughter of the Mastermind echoing through the time stream. You loop back to investigate.\n\n    Alan Tran\n\nIf Loop Two Fails: \nTentacle monster burse forth from the Shrine. They pour over the City, squeezing all the characters into jelly. The screams of the populace are forever etched into your psyche. The time stream becomes dark and think as the Mastermind attempts to lock in this reality. You manage to loop back for a final attempt at saving the City.\n    Alan Tran\n\nIf Loop Three Fails: \nA bright light, brighter than the sun, appears at the Shrine and Tentacle monster burse forth. To your horror, you see that there are people chanting around the Tentacle portal. Some there are people in this Tentacle Cult that are summoning the monsters. Due to the bright light you can’t make out the features of their faces but it must be characters that you have come into contact with in this Tentacle cult. A huge tentacle monster slithers toward you. The time stream becomes dark and think as the Mastermind attempts to lock in this reality. As the tentacle reaches for your leg you manage to loop back for a final attempt at saving the City.\n    Alan Tran\n\nIf the Protagonists Fail Loop Four: \nThe city is in ruins. Tentacle monsters everywhere! The mangled bodies of the populace cause your stomach to retch. The time stream is opaque and feels like a tub of molasses. You can’t escape this reality. Tentacle monsters are all around you, suckers extending for you face. Your only chance is to shatter the foundation of the time stream that the Mastermind has created. If you can perfectly deduce his plots, then you might be able to shatter this reality and get the threads of time flowing again. Make your final guess!\n    Alan Tran\n\nIf the Protagonists Prevent the Tragedy: \nThe evil cabal that sought to unleash an army of demonic tentacle monsters on the city has been stopped. The Mastermind used the Journalist as the Brain behind his evil scheme. The Police Officer harbored a dark hatred of the students at the school and joined the tentacle monster cabal as a Cultist to unleash horrors upon them. The shame of this dark desire put thoughts of Suicide into the Police Officer’s head. \n\nThe Doctor was an unwitting pawn of the cabal as they used him to spread Foul Evil through his legitimate medical practice by tainting his instruments of healing with demonic curses.\n\nThe three girls that foiled the plot, with inspiration from the Protagonists, were two students and the local Shrine Maiden. The Shrine Maiden led the group. She had a reputation for being a nutty Conspiracy Theorist before this incident. You wonder what led enabled this child to take down the tentacle cult. Was it the simple of a child that led to Butterfly Effect the Mastermind couldn’t predict or just her unbridled raw paranoia that ultimately took down the tentacle cult? It impossible to know for sure.\n\nAs your reenter the time stream you sense the presence of the Mastermind retreating upon your arrival. Gone is arrogance you have always sensed from the Mastermind entity. For an instant you detect the hint of a different emotion as he vanishes from you perceptions… fear.\n    Alan Tran\n\nIf the Leader Succeeds on the Final Guess: \nThe evil cabal that has succeeded in unleashing an army of demonic tentacle monsters on the city. However, you have unraveled the Mastermind’s plots. The Mastermind used the Journalist as the Brain behind his evil scheme. The Police Officer harbored a dark hatred of the students at the school and joined the tentacle monster cabal as a Cultist to unleash the horror upon them. The shame of this dark desire put thoughts of Suicide into the Police Officer’s head. \n\nThe Doctor was an unwitting pawn of the cabal as they used him to spread Foul Evil through his legitimate medical practice by tainting his instruments of healing with demonic curses.\n\nThe three girls that tried and failed to foil the plot were two students and the local Shrine Maiden. The Shrine Maiden led the group. She was viewed as bright Conspiracy Theorist before this incident, but her paranoia and the randomness of a Butterfly Effect ultimately were not enough to stop the tentacle cult. However, the where they failed, you have succeeded.\n\nWith a boom heard through the City, the static black threads of the Mastermind’s time stream break into chunks and are washed away. The horrible reality is annihilated and the healthy crystalline-blue time stream resumes flowing. You are free and back in the time stream. The Mastermind’s presence is nowhere to be seen. He has escaped. You wonder how many times you will be able to survive these close calls with death.\n    Alan Tran\n\nIf the Leader Fails on the Final Guess: \nThe Mastermind’s plots prove too difficult to untangle. The tentacle monsters envelope you. To your horror, you realize that they are not trying to squeeze you into jelly, only take you prisoner. You are taken to the school where to face the surviving members of the cult. The cult had many members from the City and was run by the Journalist (the Brain). The Police Officer harbored a dark hatred of the students at the school and joined the tentacle monster cabal as a Cultist to unleash horrors upon them. The shame of this dark desire put thoughts of Suicide into the Police Officer’s head. \n\nOver the days of torture you piece together that the Doctor was an unwitting pawn of the cabal as they used him to spread Foul Evil through his legitimate medical practice by tainting his instruments of healing with demonic curses.\n\nThe three girls that tried and failed to foil the plot were two students and the local Shrine Maiden. The Shield Maiden led the group. She was viewed as a bright Conspiracy Theorist before this incident, but her paranoia and the randomness of a Butterfly Effect ultimately were not enough to stop the tentacle cult. \n\nOne by one you see the innocent charters tortured and killed by tentacle monsters for the entertainment of the cabal. The time streams are so dark you can barely perceive their existence. Did they ever exist at all or have you always existed in this world of pain and tentacles. There is no escape. The only question left is whether your mind or body will be first to break beyond repair. You know now that will be up to the Mastermind. He will is makes your reality.\n    Alan Tran",
       "creator": "speter79",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -2811,7 +2811,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 2
       }
     },
@@ -2857,7 +2857,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "1. Giant Time Bomb triggers (2 intrigue in the city)\n\nOriginally written by RooP, translated by Sairanac of boardgamegeek.com. \n    Alan Tran\n\nI dont understand. The Unsettling Rumor CANT INCIDENTS! The Unsettling Rumor is SubPlot!\n    csibu\n\n\nI have set it to increase unease, since that provides enough paranoia to trigger the suicted.",
+      "victory-conditions": "1. Giant Time Bomb triggers (2 intrigue in the city)\n\nOriginally written by RooP, translated by Sairanac of boardgamegeek.com. \n    Alan Tran\n\nI dont understand. The Unsettling Rumor CANT INCIDENTS! The Unsettling Rumor is SubPlot!\n    csibu\n\n\nI have set it to increase unease, since that provides enough paranoia to trigger the suicted.",
       "creator": "RooP",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -2867,7 +2867,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 3
       }
     },
@@ -2924,7 +2924,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "1. Trigger \"Butterfly Effect\" (Change of Future victory condition)\n\nI like the idea of misleading the protagonists! Cool script!\n    Massola",
+      "victory-conditions": "1. Trigger \"Butterfly Effect\" (Change of Future victory condition)\n\nI like the idea of misleading the protagonists! Cool script!\n    Massola",
       "creator": "vetinari7878",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -2934,7 +2934,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 4
       }
     },
@@ -2986,7 +2986,7 @@
       "specialRules": [
         "A character may be a culprit for more than one incident."
       ],
-      "specifics": "Put 2 Intrigue on the Shrine via the Potentate (Informer), Proselytizing and/or Grave Robbing\n\n",
+      "victory-conditions": "Put 2 Intrigue on the Shrine via the Potentate (Informer), Proselytizing and/or Grave Robbing\n\n",
       "creator": "Sean Petersen",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -2996,7 +2996,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 41
       }
     },
@@ -3046,7 +3046,7 @@
       "specialRules": [
         "A character may be a culprit for more than one incident."
       ],
-      "specifics": "Kill the Police Officer via Suicide and have the Mad Genius collect his Body Parts, triggering Abomination.\n\n",
+      "victory-conditions": "Kill the Police Officer via Suicide and have the Mad Genius collect his Body Parts, triggering Abomination.\n\n",
       "creator": "Sean Petersen",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -3056,7 +3056,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 42
       }
     },
@@ -3100,7 +3100,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "Shrine Maiden killed (Girl Student serial killer, Informant day 4 incident)\n\n",
+      "victory-conditions": "Shrine Maiden killed (Girl Student serial killer, Informant day 4 incident)\n\n",
       "creator": "Dav Flamerock",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -3110,7 +3110,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 43
       }
     },
@@ -3153,7 +3153,7 @@
       "specialRules": [
         "This scenario includes the \"Final Guess\" rule from the core game. If the protagonists don't successfully survive any of the three loops, they can guess the identity of all the roles to still win the game."
       ],
-      "specifics": "2 Intrigue on the School (via the Rich Man’s Daughter ability, via Unsettling Rumor)\n\n",
+      "victory-conditions": "2 Intrigue on the School (via the Rich Man’s Daughter ability, via Unsettling Rumor)\n\n",
       "creator": "Dav Flamerock",
       "daysPerLoop": 3,
       "difficultySets": [
@@ -3163,7 +3163,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 44
       }
     },
@@ -3250,7 +3250,7 @@
       "specialRules": [
         "Alternating loops: the days in a loop  alternate between four and six days, with odd loop numbers having four days and even loop numbers on six. Incidents in odd loops are on days prefixed with 1. For even with 2. e.g. Day 24 is the fouth day in the even loops"
       ],
-      "specifics": "Kill the Key person (Serial Killer, Hospital incident, Option 3)\n\n",
+      "victory-conditions": "Kill the Key person (Serial Killer, Hospital incident, Option 3)\n\n",
       "creator": "beatstopper",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -3264,7 +3264,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 46
       }
     },
@@ -3322,7 +3322,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "\n\noriginally by hal_7297108 of boardgamegeek.com\n    Alan Tran",
+      "victory-conditions": "\n\noriginally by hal_7297108 of boardgamegeek.com\n    Alan Tran",
       "creator": "hal_7297108's friend Max",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -3332,7 +3332,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 5
       }
     },
@@ -3382,7 +3382,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "* 2 intrigue in School\n* Kill the Key Person\n* Kill Protagonists during Hospital Incident\n* Kill the Friend\n\n",
+      "victory-conditions": "* 2 intrigue in School\n* Kill the Key Person\n* Kill Protagonists during Hospital Incident\n* Kill the Friend\n\n",
       "creator": "ZenKristoffer",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -3392,7 +3392,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 63
       }
     },
@@ -3440,7 +3440,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "Patient dies by: Killer ability / Hospital Incident / Murder Incident / Suicide Incident\n\nDoctor :Killer, mastermind can be used goodwill refusal, key person how to run =)))) ....... ==> Patient : Friend, Nurse : Key Person\n    Tô Quốc Thái\n\nMastermind tip: use the brain ability as soon as the protagonists know that murder plan is the plot. This applies after day 2 when the Rich Man’s Daughter missing person's into the hospital.\n    Justin Karp",
+      "victory-conditions": "Patient dies by: Killer ability / Hospital Incident / Murder Incident / Suicide Incident\n\nDoctor :Killer, mastermind can be used goodwill refusal, key person how to run =)))) ....... ==> Patient : Friend, Nurse : Key Person\n    Tô Quốc Thái\n\nMastermind tip: use the brain ability as soon as the protagonists know that murder plan is the plot. This applies after day 2 when the Rich Man’s Daughter missing person's into the hospital.\n    Justin Karp",
       "creator": "Res_kun",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -3454,7 +3454,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 65
       }
     },
@@ -3508,7 +3508,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "Butterfly Effect\n\n I have added a random Turf since it was not specified same for goodly being arrival",
+      "victory-conditions": "Butterfly Effect\n\n I have added a random Turf since it was not specified same for goodly being arrival",
       "creator": "",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -3518,7 +3518,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 66
       }
     },
@@ -3574,7 +3574,7 @@
       "specialRules": [
         "N/A"
       ],
-      "specifics": "Death of a key person\nHospital Incident (Killing protagonists)\n4 Intrigue on Killer (Killing protagonists)\n\nHaving multiple Key Persons is really going to throw the protagonists for a loop, since it's not actually legal by the game mechanics. You could switch out the Unsettling Rumour plot for Circle of Friends, change 2 of the students to Friends, and keep the same theme without breaking the rules.\n    TeabagNation",
+      "victory-conditions": "Death of a key person\nHospital Incident (Killing protagonists)\n4 Intrigue on Killer (Killing protagonists)\n\nHaving multiple Key Persons is really going to throw the protagonists for a loop, since it's not actually legal by the game mechanics. You could switch out the Unsettling Rumour plot for Circle of Friends, change 2 of the students to Friends, and keep the same theme without breaking the rules.\n    TeabagNation",
       "creator": "Shadow_CPO",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -3588,7 +3588,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 67
       }
     },
@@ -3631,7 +3631,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "[Instant Loop Lost] - The Shrine Maiden (Key Person) is killed\n[Loop End] - 2 Intrigue on the School\n\n",
+      "victory-conditions": "[Instant Loop Lost] - The Shrine Maiden (Key Person) is killed\n[Loop End] - 2 Intrigue on the School\n\n",
       "creator": "ProdigalPlaneswalker",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -3645,7 +3645,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 68
       }
     },
@@ -3697,7 +3697,7 @@
       "specialRules": [
         "Table talk on. If you want to set it to off, then give two more loops to the protagonists."
       ],
-      "specifics": "1. Killing the key person. (With serial killer, murder incident, suicide incident, Hospital incident)\n\n",
+      "victory-conditions": "1. Killing the key person. (With serial killer, murder incident, suicide incident, Hospital incident)\n\n",
       "creator": "Sairanac",
       "daysPerLoop": 8,
       "difficultySets": [
@@ -3707,7 +3707,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 7
       }
     },
@@ -3751,7 +3751,7 @@
       "specialRules": [
         "Any characters with THREE intrigue dies instantly (Bomb Collar explodes). Do not wait until the end of the day.\nAny location with THREE intrigue kills everyone in the location and those who enter it (Forbidden Zone).\nEach Player deck and Mastermind deck receives ONE extra card (comes with the game, Extra Card A, B, C, and D).\nExtra cards are infinite usage of MINUS or PLUS one intrigue for both players and mastermind. It is the person's choice, and may be played on either character or location.\nPlayers' Forbid Intrigue and Extra Card do not cancel each other and may be used together. However, the same cancel rule still applies when TWO Forbid Intrigue are on the board.\nForbid Intrigue may be used to cancel out a Mastermind's Extra Card.\nA Player's Extra Card may be used to cancel out a Mastermind's Extra Card."
       ],
-      "specifics": "[Key Person Dies]: Killer ability / Serial Killer ability / Forbidden Zone / Bomb Collar / Murder Incidents\n[Friend Dies]: Killer ability / Serial Killer ability / Forbidden Zone / Bomb Collar / Murder Incidents\n\n",
+      "victory-conditions": "[Key Person Dies]: Killer ability / Serial Killer ability / Forbidden Zone / Bomb Collar / Murder Incidents\n[Friend Dies]: Killer ability / Serial Killer ability / Forbidden Zone / Bomb Collar / Murder Incidents\n\n",
       "creator": "Res_kun",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -3761,7 +3761,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 70
       }
     },
@@ -3819,7 +3819,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Kill the Key Person (using killer's ability, hospital incident, or murder incidents)\n\nKill a Friend (using hospital incident or murder incidents)\n\nKill the protagonists (using killer's ability, loved one's ability, or hospital incident)\n\nThis is my first attempt at creating a custom script. I have a group who will play test it this week or next. Any tips/critiques would be welcome - particularly, I'm concerned about balance. Reading through the creation guide, I know I picked several of the more difficult plots/subplots/culprits. My intention in creating this script was to make a fast-paced gameplay experience where there are several loss conditions the protagonists will need to account for, and lots of information to gradually be revealed throughout the loops. Let me know where I succeeded in this goal, and where I failed completely!\n    87",
+      "victory-conditions": "Kill the Key Person (using killer's ability, hospital incident, or murder incidents)\n\nKill a Friend (using hospital incident or murder incidents)\n\nKill the protagonists (using killer's ability, loved one's ability, or hospital incident)\n\nThis is my first attempt at creating a custom script. I have a group who will play test it this week or next. Any tips/critiques would be welcome - particularly, I'm concerned about balance. Reading through the creation guide, I know I picked several of the more difficult plots/subplots/culprits. My intention in creating this script was to make a fast-paced gameplay experience where there are several loss conditions the protagonists will need to account for, and lots of information to gradually be revealed throughout the loops. Let me know where I succeeded in this goal, and where I failed completely!\n    87",
       "creator": "C.J. Morton",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -3829,7 +3829,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 72
       }
     },
@@ -3887,7 +3887,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "\n\n",
+      "victory-conditions": "\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -3897,7 +3897,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 74
       }
     },
@@ -3959,7 +3959,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Tightrope Plan: Extra Gauge 1 or fewer\nHospital Incident: 2 intrigue or more on hospital\nTerrorism: 2 intrigue or more on city\n\n",
+      "victory-conditions": "Tightrope Plan: Extra Gauge 1 or fewer\nHospital Incident: 2 intrigue or more on hospital\nTerrorism: 2 intrigue or more on city\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -3969,7 +3969,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 78
       }
     },
@@ -4016,7 +4016,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "Two goodwill or fewer on the Patient (Time Traveler) at the end of the loop.\n\n",
+      "victory-conditions": "Two goodwill or fewer on the Patient (Time Traveler) at the end of the loop.\n\n",
       "creator": "speter79",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -4026,7 +4026,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 8
       }
     },
@@ -4078,7 +4078,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Killing Key Person: Rich Man’s Daughter\nHospital Incident: 2 intrigue on hospital\nShowtime of Death: 6 or fewer characters left\nFriend: Patient dies\nSecret Record: Brain, Factor, or Magician revealed\n\n",
+      "victory-conditions": "Killing Key Person: Rich Man’s Daughter\nHospital Incident: 2 intrigue on hospital\nShowtime of Death: 6 or fewer characters left\nFriend: Patient dies\nSecret Record: Brain, Factor, or Magician revealed\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -4088,7 +4088,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 80
       }
     },
@@ -4145,7 +4145,7 @@
       "specialRules": [
         "Mastermind removes Forbid Goodwill from hand"
       ],
-      "specifics": "1) Have 6 or less characters alive\n2) Kill protagonists from the Hospital Incident\n3) Kill Key Persons created from Fated Connections\n\n",
+      "victory-conditions": "1) Have 6 or less characters alive\n2) Kill protagonists from the Hospital Incident\n3) Kill Key Persons created from Fated Connections\n\n",
       "creator": "Seiji-kun",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -4155,7 +4155,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 82
       }
     },
@@ -4211,7 +4211,7 @@
       "specialRules": [
         "mastermind removes forbid goodwill from hand"
       ],
-      "specifics": "1) Have 6 or less characters alive\n2) Kill the Key Person (either from incidents, the Ninja's ability, or the Suicide on the last day)\n\n",
+      "victory-conditions": "1) Have 6 or less characters alive\n2) Kill the Key Person (either from incidents, the Ninja's ability, or the Suicide on the last day)\n\n",
       "creator": "Seiji-kun",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -4221,7 +4221,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 83
       }
     },
@@ -4285,7 +4285,7 @@
       "specialRules": [
         "Mastermind removes forbid goodwill from hand"
       ],
-      "specifics": "1) Killing Key People created by Fated Connections/Dice of the Gods\n2) Killing the Friend\n\n",
+      "victory-conditions": "1) Killing Key People created by Fated Connections/Dice of the Gods\n2) Killing the Friend\n\n",
       "creator": "Seiji-kun",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -4295,7 +4295,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 84
       }
     },
@@ -4353,7 +4353,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Killing Key Person: Informer\nKilling Friend: Boy Student\n\n",
+      "victory-conditions": "Killing Key Person: Informer\nKilling Friend: Boy Student\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -4363,7 +4363,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 86
       }
     },
@@ -4421,7 +4421,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Killing Key Person: Shrine Maiden becomes one or character with extra card\nKilling Friend: (Journalist/Patient)\n\n",
+      "victory-conditions": "Killing Key Person: Shrine Maiden becomes one or character with extra card\nKilling Friend: (Journalist/Patient)\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -4431,7 +4431,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 87
       }
     },
@@ -4494,7 +4494,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "2 intrigue on Shrine, 3 paranoia and 1 intrigue on loved one\n\n",
+      "victory-conditions": "2 intrigue on Shrine, 3 paranoia and 1 intrigue on loved one\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -4504,7 +4504,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 88
       }
     },
@@ -4562,7 +4562,7 @@
       "specialRules": [
         "None."
       ],
-      "specifics": "Kill the Pop Idol (Key Person)\nKill the Rich Man’s Daughter (Factor) with 2 Intrigue on the City\nKill the Patient (Friend)\nKill the Protagonists with the Hospital Incident\nKill the Protagonists with the Killer\n\n",
+      "victory-conditions": "Kill the Pop Idol (Key Person)\nKill the Rich Man’s Daughter (Factor) with 2 Intrigue on the City\nKill the Patient (Friend)\nKill the Protagonists with the Hospital Incident\nKill the Protagonists with the Killer\n\n",
       "creator": "O'Malley",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -4576,7 +4576,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 89
       }
     },
@@ -4627,7 +4627,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "2 Intrigue on the School at the end of the loop\nThe Patient (Friend) is dead at the end of the loop\nThe Protagonists are killed in the Hospital Incident\n\nThanks! I hadn't noticed that. I changed the culprit to the Police Officer, who is much harder to trigger. I also totally forgot about the fact that there isn't a Final Guess in First Steps, which is a major thing to consider.\n    O'Malley\n\nThe Mastermind can always win this script.\n    Emily Karp\n\nTo expand on Emily's comment:\n\nSince the Doctor is a Curmudgeon and the Girl Student is a Conspiracy Theorist, the Protagonists effectively have no Paranoia removal beyond their Paranoia -1's, which have a maximum play rate of 1/day. So, you can get the Girl Student to Paranoia Limit by Day 4 easily, and also have the Rich Man’s Daughter either trigger her incident on Day 2 or use her Mastermind ability to put Intrigue on the school: the protagonists can't both play a Paranoia -1 on her and move her out of the School on Day 1. So you can guarantee two Intrigue on the School.\n    Augustin-Louis Cauchy",
+      "victory-conditions": "2 Intrigue on the School at the end of the loop\nThe Patient (Friend) is dead at the end of the loop\nThe Protagonists are killed in the Hospital Incident\n\nThanks! I hadn't noticed that. I changed the culprit to the Police Officer, who is much harder to trigger. I also totally forgot about the fact that there isn't a Final Guess in First Steps, which is a major thing to consider.\n    O'Malley\n\nThe Mastermind can always win this script.\n    Emily Karp\n\nTo expand on Emily's comment:\n\nSince the Doctor is a Curmudgeon and the Girl Student is a Conspiracy Theorist, the Protagonists effectively have no Paranoia removal beyond their Paranoia -1's, which have a maximum play rate of 1/day. So, you can get the Girl Student to Paranoia Limit by Day 4 easily, and also have the Rich Man’s Daughter either trigger her incident on Day 2 or use her Mastermind ability to put Intrigue on the school: the protagonists can't both play a Paranoia -1 on her and move her out of the School on Day 1. So you can guarantee two Intrigue on the School.\n    Augustin-Louis Cauchy",
       "creator": "O'Malley",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -4641,7 +4641,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 90
       }
     },
@@ -4693,7 +4693,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "Place two intrigue counters on the key person using incidents or cards.\nKill Pop idol or class rep using faraway murder or serial killer.\nGet Pop idol to suicide.\n\nThis script is much harder than a 4/10. It is very difficult for the protagonists to win other than the final guess.\n    Emily Forster",
+      "victory-conditions": "Place two intrigue counters on the key person using incidents or cards.\nKill Pop idol or class rep using faraway murder or serial killer.\nGet Pop idol to suicide.\n\nThis script is much harder than a 4/10. It is very difficult for the protagonists to win other than the final guess.\n    Emily Forster",
       "creator": "Hero7898",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -4703,7 +4703,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 92
       }
     },
@@ -4760,7 +4760,7 @@
       "specialRules": [
         "The mastermind has a secret rule that dictates part of their play"
       ],
-      "specifics": "Friend dies (loop end);\nTime Traveller has insufficient Goodwill (day end, last day)\n\n",
+      "victory-conditions": "Friend dies (loop end);\nTime Traveller has insufficient Goodwill (day end, last day)\n\n",
       "creator": "Augustin-Louis Cauchy",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -4770,7 +4770,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 94
       }
     },
@@ -4827,7 +4827,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "Kill one of friends via serial killer virus\nHospital Incident to kill Patient \nGirl student murders Rich man daughter \nSuicide\n\nThis script is extremely difficult for the protagonists. They essentially cannot win. Even if the protagonists have perfect information, they cannot guarantee a win. \n    Emily Forster",
+      "victory-conditions": "Kill one of friends via serial killer virus\nHospital Incident to kill Patient \nGirl student murders Rich man daughter \nSuicide\n\nThis script is extremely difficult for the protagonists. They essentially cannot win. Even if the protagonists have perfect information, they cannot guarantee a win. \n    Emily Forster",
       "creator": "Cookie Monster",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -4837,7 +4837,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 95
       }
     },
@@ -4895,7 +4895,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Friend dies: Class Rep or Shrine Maiden\nIntrigue on School\nHospital Incident Level 2\nTerrorism Level 2\n\n",
+      "victory-conditions": "Friend dies: Class Rep or Shrine Maiden\nIntrigue on School\nHospital Incident Level 2\nTerrorism Level 2\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -4905,7 +4905,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 96
       }
     },
@@ -4954,7 +4954,7 @@
       "specialRules": [
         ""
       ],
-      "specifics": "Shrine Maiden is dead.\n-There is 2 Intrigue in the school. (Brain's starting location)\n\n",
+      "victory-conditions": "Shrine Maiden is dead.\n-There is 2 Intrigue in the school. (Brain's starting location)\n\n",
       "creator": "The Gem Pirate",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -4964,7 +4964,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 97
       }
     },
@@ -5027,7 +5027,7 @@
       "specialRules": [
         "None"
       ],
-      "specifics": "Kill Key Person: Doctor, 6 or fewer characters left alive, Brain/Magician revealed (Informer/Office Worker)\n\n",
+      "victory-conditions": "Kill Key Person: Doctor, 6 or fewer characters left alive, Brain/Magician revealed (Informer/Office Worker)\n\n",
       "creator": "Justin Karp",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -5037,7 +5037,7 @@
         }
       ],
       "set": {
-        "name": "www.tragedylooperscripts.com",
+        "name": "www.tragedylooperscripts.com (not reviewed)",
         "number": 98
       }
     }
