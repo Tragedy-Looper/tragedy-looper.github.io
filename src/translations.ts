@@ -65,7 +65,15 @@ const missingInToCheck: Set<string> = new Set();
 const translation: Record<string, Record<string, string>> = data;
 
 // mapp {TAG} to object with key tag and value unknown
-type ObjectFromTaged<T extends string | undefined> =
+export type ObjectFromTagedVoid<T extends string | undefined> =
+    T extends undefined
+    ? void
+    : T extends `${string}{${string}}${string}`
+    ? ObjectFromTagedGet<T>
+    : T extends `${string}{${string}}`
+    ? ObjectFromTagedGet<T>
+    : void;
+export type ObjectFromTaged<T extends string | undefined> =
     T extends undefined
     ? {}
     : T extends `${string}{${string}}${string}`
@@ -113,6 +121,8 @@ export function getStringForLanguage<TKey extends string | undefined>(key: TKey,
         return "";
     }
 
+    // return JSON.stringify(params);
+
     if (key.includes('|')) {
         return key.split('|').map(k => getStringForLanguage(k, lang)).join('|');
     }
@@ -133,6 +143,9 @@ export function getStringForLanguage<TKey extends string | undefined>(key: TKey,
         return keyTrimed;
     }
     let translated = translation[lang]?.[keyTrimed] ?? keyTrimed;
+    if(translated==undefined || translated.length == 0) {
+        translated = keyTrimed; // Fallback to key if no translation is found
+    }
 
     const localTranslation =
         (browser && getLocalisatio(lang) && getLocalisatio(lang)[keyTrimed]) ? getLocalisatio(lang)[keyTrimed] : undefined;
@@ -142,6 +155,7 @@ export function getStringForLanguage<TKey extends string | undefined>(key: TKey,
 
 
     Object.entries(params[0] ?? {}).forEach(([name, value]) => {
+        console.log(`Replacing {${name.toString()}} with ${value} in "${translated}" (${key}) for language "${lang}"`);
         translated = translated.replaceAll(`{${name.toString()}}`, `${value}`);
     })
 
@@ -150,7 +164,6 @@ export function getStringForLanguage<TKey extends string | undefined>(key: TKey,
     // Check that every link in the result was also in the key
     const linksInResult = getLinksFromMarkdown(result);
     const linksInKey = getLinksFromMarkdown(keyTrimed);
-    console.log(`Checking links for "${keyTrimed}" ${[...linksInResult].join(', ')} in language "${lang}"`);
     const linksNotInKey = [...linksInResult].filter(link => !linksInKey.has(link));
     if (linksNotInKey.length > 0) {
         console.error(`Links in translation for "${keyTrimed}" in language "${lang}" not found in key:`, linksNotInKey);

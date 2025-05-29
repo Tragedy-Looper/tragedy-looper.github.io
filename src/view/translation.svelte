@@ -1,15 +1,44 @@
-<script lang="ts">
+<script lang="ts" generics="TKey extends string | undefined">
   import { onDestroy, onMount, tick } from 'svelte';
   import { getString, language } from '../routes/(site)/+layout.svelte';
   import { addTranslation } from '../storage';
-  import { translationExists } from '../translations';
+  import {
+    translationExists,
+    type ObjectFromTaged,
+    type ObjectFromTagedArray,
+    type ObjectFromTagedVoid,
+  } from '../translations';
   import markdownit, { type Options } from 'markdown-it';
   import markdomnItKdb from 'markdown-it-kbd';
   import type { Renderer, Token } from 'markdown-it/index.js';
   import { base } from '$app/paths';
   import { showTranslationMissingDialog } from '../routes/+layout.svelte';
 
-  let { translationKey, block = false }: { translationKey: string; block?: boolean } = $props();
+  type Parameters = {
+    translationKey:
+      | (TKey & ObjectFromTaged<TKey>)
+      | [TKey, ...ObjectFromTagedArray<TKey>]
+      | undefined;
+    block?: boolean;
+  };
+
+  let { translationKey, block = false }: Parameters = $props();
+
+  let key = $derived(
+    Array.isArray(translationKey)
+      ? (translationKey as [TKey, ...ObjectFromTagedArray<TKey>])[0]
+      : typeof translationKey === 'string'
+        ? translationKey
+        : null
+  );
+
+  let parametrs = $derived(
+    Array.isArray(translationKey)
+      ? ((
+          translationKey as [TKey, ...ObjectFromTagedArray<TKey>]
+        )[1] as unknown as ObjectFromTagedVoid<TKey>)
+      : undefined
+  );
 
   const md = markdownit({
     html: false,
@@ -33,9 +62,9 @@
   };
 
   let text = $derived(
-    block ? md.render($getString(translationKey)) : md.renderInline($getString(translationKey))
+    block ? md.render($getString(key, parametrs)) : md.renderInline($getString(key, parametrs))
   );
-  let doesTranslationExists = $derived(translationExists($language, translationKey));
+  let doesTranslationExists = $derived(translationExists($language, key));
 </script>
 
 {#if doesTranslationExists}{@html text}{:else}
@@ -44,13 +73,12 @@
       showTranslationMissingDialog(translationKey, async () => {
         const tmp = translationKey;
         await tick();
-        translationKey = '';
+        translationKey = undefined;
         await tick();
         translationKey = tmp;
       })}
     class="missingTranslation">{@html text}</span
-  >
-{/if}
+  >{/if}
 
 <style>
   .missingTranslation {
