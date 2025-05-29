@@ -140,7 +140,7 @@ class CustomScriptIncidentSelection<TCharacters extends CharacterName> implement
                 return result;
             } else {
 
-                const result = allCharacters.filter(x => otherSelections.length == 0 || !otherSelections.filter(([, inc]) => !repeat || inc != selectedIncident).map(([char]) => char).includes(x));
+                const result = allCharacters.filter(x => x && x.length > 0 && (otherSelections.length == 0 || !otherSelections.filter(([, inc]) => !repeat || inc != selectedIncident).map(([char]) => char).includes(x)));
                 return result;
             }
         });
@@ -626,6 +626,7 @@ export class CustomScript {
 
         this.usedCharacters = storeStores(derived(storeStores(this.roles, x => x.selectors), r => r.flat().map(x => x.selectedCharacter)), x => x);
 
+        
         this.incidentGroup = generateIncidents(this, this.daysPerLoop, this.incidents, this.usedCharacters);
 
     }
