@@ -88,21 +88,43 @@ const scriptSpecified = {
     "scriptSpecified": {
         "type": "array",
         "items": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "name": {
-                    "type": "string",
+            oneOf: [{
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "name": {
+                        "type": "string",
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": SpecificationType.filter(x => x != 'plot')
+                    },
+                    "optional": {
+                        "type": "boolean"
+                    },
                 },
-                "type": {
-                    "type": "string",
-                    "enum": SpecificationType
+                "required": ["name", "type"],
+            }, {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "name": {
+                        "type": "string",
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": SpecificationType.filter(x => x == 'plot')
+                    },
+                    "addRolesForPlot": {
+                        "type": "boolean"
+                    },
+                    "optional": {
+                        "type": "boolean"
+                    },
                 },
-                "optional": {
-                    "type": "boolean"
-                },
+                "required": ["name", "type", "addRolesForPlot"],
             },
-            "required": ["name", "type"],
+            ]
         }
     },
 } as const;
