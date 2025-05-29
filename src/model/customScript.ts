@@ -419,10 +419,7 @@ class CustomScriptRoleExclusiveSelection<T extends CharacterName> implements Cus
 
 
             const newOptions = [
-                ...(isScriptSpecified(char) ? char.scriptSpecified.map((s) => {
-                    console.log('scriptSpecified', s);
-                    return new AdditionalOptions(script, s)
-                }) : []),
+                ...(isScriptSpecified(char) ? char.scriptSpecified.map((s) => new AdditionalOptions(script, s)) : []),
                 ...(isCharacterPlotless(char) ? [new AdditionalOptions(script, { name: 'Role', type: char.plotLessRole == 'all' ? 'role in tragedy set' : char.plotLessRole == 'not in plots' ? 'role not in plot' : 'role in plot' })] : []),
                 ...(isScriptSpecified(role) ? role.scriptSpecified.map((s) => new AdditionalOptions(script, s)) : []),
                 ...(hasCastOption(tg) ? tg.castOptions.map((s) => new AdditionalOptions(script, s)) : []),
