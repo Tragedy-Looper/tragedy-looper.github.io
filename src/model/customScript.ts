@@ -555,6 +555,7 @@ export class CustomScript {
     public readonly victoryConditions: Writable<string>
     public readonly story: Writable<string>
     public readonly mastermindHints: Writable<string>
+    public readonly description: Writable<string>
 
 
     public readonly daysPerLoop: Writable<number>
@@ -587,6 +588,7 @@ export class CustomScript {
         this.victoryConditions = writable('');
         this.story = writable('');
         this.mastermindHints = writable('');
+        this.description = writable('');
 
 
         this.locations = locations;

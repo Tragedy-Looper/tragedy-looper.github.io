@@ -42,6 +42,7 @@
   const victoryConditions = model.victoryConditions;
   const mastermindHints = model.mastermindHints;
   const specialRules = model.specialRules;
+  const description = model.description;
 
   let exportJson: string | undefined;
   let importJson: string | undefined;
@@ -153,17 +154,20 @@
 <h2>Incidents</h2>
 <Incedent incedentGroup={model.incidentGroup} />
 
-<h5>Special Rules</h5>
-<textarea bind:value={$specialRules}></textarea>
-
-<h5>Victory Conditions</h5>
-
-<textarea bind:value={$victoryConditions}></textarea>
+<h5>Description</h5>
+<textarea bind:value={$description}></textarea>
 
 <h5>Story</h5>
 <textarea bind:value={$story}></textarea>
+
+<h5>Special Rules</h5>
+<textarea bind:value={$specialRules}></textarea>
+
 <h5>Hints for the Mastermind</h5>
 <textarea bind:value={$mastermindHints}></textarea>
+
+<h5>Victory Conditions</h5>
+<textarea bind:value={$victoryConditions}></textarea>
 
 <div class="grid">
   <button
