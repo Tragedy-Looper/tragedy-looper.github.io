@@ -301,9 +301,14 @@ function generateRoleSelection<TCharacters extends CharacterName>(script: Custom
     const additionalPersons = characters.length - (Object.values(allRols).map(x => x[0])).reduce((p, c) => p + c, 0);
     allRols.Person = [0, additionalPersons];
 
-    const groups = keys(allRols).map(key => [key, allRols[key] ?? [0, 0]] as const).map(([key, [min, max]]) => {
-        return new CustomScriptRoleExclusiveSelectionGroup(script, key, min, max, characters)
-    });
+    const groups = keys(allRols).map(key => [key, allRols[key] ?? [0, 0]] as const)
+        .map(([key, [min, max]]) => {
+            const roleMaximum = roles[key].max ?? Number.MAX_SAFE_INTEGER;
+            return [key, [Math.min(Math.max(0, roleMaximum), roleMaximum), Math.min(max, roleMaximum)]] as const;
+        })
+        .map(([key, [min, max]]) => {
+            return new CustomScriptRoleExclusiveSelectionGroup(script, key, min, max, characters)
+        });
 
     const reInit = () => {
 
