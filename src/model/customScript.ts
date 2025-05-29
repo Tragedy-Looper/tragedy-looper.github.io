@@ -304,7 +304,7 @@ function generateRoleSelection<TCharacters extends CharacterName>(script: Custom
     const groups = keys(allRols).map(key => [key, allRols[key] ?? [0, 0]] as const)
         .map(([key, [min, max]]) => {
             const roleMaximum = roles[key].max ?? Number.MAX_SAFE_INTEGER;
-            return [key, [Math.min(Math.max(0, roleMaximum), roleMaximum), Math.min(max, roleMaximum)]] as const;
+            return [key, [Math.min(Math.max(0, min), roleMaximum), Math.min(max, roleMaximum)]] as const;
         })
         .map(([key, [min, max]]) => {
             return new CustomScriptRoleExclusiveSelectionGroup(script, key, min, max, characters)
