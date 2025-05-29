@@ -419,17 +419,20 @@ class CustomScriptRoleExclusiveSelection<T extends CharacterName> implements Cus
 
 
             const newOptions = [
-                ...(isScriptSpecified(char) ? char.scriptSpecified.map((s) => new AdditionalOptions(script, s)) : []),
+                ...(isScriptSpecified(char) ? char.scriptSpecified.map((s) => {
+                    console.log('scriptSpecified', s);
+                    return new AdditionalOptions(script, s)
+                }) : []),
                 ...(isCharacterPlotless(char) ? [new AdditionalOptions(script, { name: 'Role', type: char.plotLessRole == 'all' ? 'role in tragedy set' : char.plotLessRole == 'not in plots' ? 'role not in plot' : 'role in plot' })] : []),
                 ...(isScriptSpecified(role) ? role.scriptSpecified.map((s) => new AdditionalOptions(script, s)) : []),
                 ...(hasCastOption(tg) ? tg.castOptions.map((s) => new AdditionalOptions(script, s)) : []),
             ];
 
             lastOptions.forEach(e => {
-                // const target = newOptions.filter(x => x.option.name == e.option.name && x.option.type == e.option.type)[0];
-                // if (target) {
-                //     target.value.set(get(e.value));
-                // }
+                const target = newOptions.filter(x => x.option.name == e.option.name && x.option.type == e.option.type)[0];
+                if (target) {
+                    target.value.set(get(e.value));
+                }
             });
 
             lastOptions = newOptions;
@@ -626,7 +629,7 @@ export class CustomScript {
 
         this.usedCharacters = storeStores(derived(storeStores(this.roles, x => x.selectors), r => r.flat().map(x => x.selectedCharacter)), x => x);
 
-        
+
         this.incidentGroup = generateIncidents(this, this.daysPerLoop, this.incidents, this.usedCharacters);
 
     }
