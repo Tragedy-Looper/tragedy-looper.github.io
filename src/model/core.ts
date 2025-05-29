@@ -4,15 +4,12 @@ import type { CharacterName, Characters, LocationName } from "./characters";
 import type { IncidentName, Incidents } from "./incidents";
 import type { PlotName, Plots } from "./plots";
 import type { RoleName, Roles } from "./roles";
+import type { Plot } from "../plots.g";
 
 
-type SpecificationType = 'location' | 'incident' | 'role in tragedy set' | 'role not in plot'| 'role in plot'  | 'character' | 'plot' | 'number' | 'text' | readonly string[];
+type SpecificationType = 'location' | 'incident' | 'role in tragedy set' | 'role not in plot' | 'role in plot' | 'character' | 'plot' | 'number' | 'text' | readonly string[];
 
-export type Option = {
-    name: string;
-    type: SpecificationType;
-    optional?: true;
-};
+export type Option = Exclude<Plot['scriptSpecified'], undefined>[number];;
 
 export type Options = readonly Option[];
 
