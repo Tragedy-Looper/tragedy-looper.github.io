@@ -20,7 +20,7 @@
   import { getString } from '../+layout.svelte';
   import { get } from 'svelte/store';
   import type { Role } from '../../../roles.g';
-    import Translation from '../../../view/translation.svelte';
+  import Translation from '../../../view/translation.svelte';
 
   export let selectedScript: Script;
 
@@ -33,7 +33,7 @@
       ...scriptIncident,
       ...incidendtMeta,
       effect: incidendtMeta.effect
-        .map((x) => (x))
+        .map((x) => x)
         .map((x) => ({ ...x, type: x.type?.replaceAll('Character Death', 'Character Death') })),
     };
   });
@@ -54,7 +54,7 @@
       return { plot: x[0], ...x[1] };
     })
     .flatMap((x) => {
-      const plot = (plots[x.plot]);
+      const plot = plots[x.plot];
       return plot.rules.map((y) => ({ ...x, ...plot, ...y }));
     })
     .map((x) => {
@@ -245,7 +245,7 @@
             {$getString(map.character) ?? ''}
           </td>
           <td>
-            <Translation translationKey={'On Loop {day}', { day: map['enters on loop'] }} />
+            {$getString('On Loop {day}', { day: map['enters on loop'] })}
           </td>
 
           <td> <Translation translationKey={'Enters Play'} /> </td>
@@ -293,7 +293,7 @@
             {$getString(map.character) ?? ''}
           </td>
           <td>
-            <Translation translationKey={'On Day {day}', { day: map['enters on day'] }} />
+            {$getString('On Day {day}', { day: map['enters on day'] })}
           </td>
 
           <td> <Translation translationKey={'Enters Play'} /> </td>
@@ -498,7 +498,7 @@
       {/each}
       {#each usedIncidents as i}
         {@const char = isCharacterName(i.culprit) ? characters[i.culprit] : undefined}
-        {@const limit = char ? char.paranoiaLimit : (i).mob}
+        {@const limit = char ? char.paranoiaLimit : i.mob}
         {#each i.effect as e}
           <tr>
             <td>
@@ -511,15 +511,16 @@
               {$getString(i.culprit) ?? ''}
             </td>
             <td>
-              <Translation translationKey={'On day {day}', { day: i.day }} />
-              {#if limit ?? 0 > 0}<Translation translationKey={'limit {limit}', { limit }} />{/if}
+              {$getString('On Loop {day}', { day: i.day })}
+              {#if limit ?? 0 > 0}{$getString('limit {limit}', { limit })}{/if}
+
               {#if e.prerequisite}
                 | <Translation translationKey={e.prerequisite} />
               {/if}
             </td>
 
             <td>
-              {#if (char)?.doseNotTriggerIncidentEffect}
+              {#if char?.doseNotTriggerIncidentEffect}
                 <Translation translationKey={'This has no effect but the incident is triggered.'} />
               {:else if char?.name && roles[getRoleOfCast(selectedScript, char.name) ?? 'Person']?.doseNotTriggerIncidentEffect}
                 <Translation translationKey={'This has no effect but the incident is triggered.'} />
