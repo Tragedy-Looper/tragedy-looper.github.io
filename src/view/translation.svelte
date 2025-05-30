@@ -12,7 +12,7 @@
   import markdomnItKdb from 'markdown-it-kbd';
   import type { Renderer, Token } from 'markdown-it/index.js';
   import { base } from '$app/paths';
-  import { showTranslationMissingDialog } from '../routes/+layout.svelte';
+  import { enableTranslationUi, showTranslationMissingDialog } from '../routes/+layout.svelte';
 
   type Parameters = {
     translationKey:
@@ -67,7 +67,7 @@
   let doesTranslationExists = $derived(translationExists($language, key));
 </script>
 
-{#if doesTranslationExists}{@html text}{:else}
+{#if doesTranslationExists|| !enableTranslationUi.enabled}{@html text}{:else}
   <span
     onclick={() =>
       showTranslationMissingDialog(translationKey, async () => {

@@ -1,4 +1,7 @@
-import { characters } from '../data';
+import { base } from '$app/paths';
+import path from 'path';
+import { characters, scripts, tragedys } from '../data';
+import type { Script } from '../scripts.g';
 import type { LayoutServerLoad } from './$types';
 import * as fs from 'fs';
 
@@ -8,6 +11,10 @@ function escapeRegExp(string: string): string {
 
 function normalizeCharacterName(name: string): string {
     return name.replace(/[^a-zA-Z0-9\(\)]/g, '').toLowerCase(); // remove non-alphanumeric characters and convert to lowercase
+}
+
+function normalizeTragedyName(name: string): string {
+    return name.replace(/[^a-zA-Z0-9\(\) _\-]/g, '').replace(' ', '_').toLowerCase(); // remove non-alphanumeric characters and convert to lowercase
 }
 
 export const load: LayoutServerLoad = ({ params }) => {
@@ -34,12 +41,29 @@ export const load: LayoutServerLoad = ({ params }) => {
             console.warn(`No images found for character: ${name}`);
             return acc; // no image found for this character
         }
-        acc[name] = imagesForThisCharacters.map(imageName => `/cards/characters/${imageName}.png`);
+        acc[name] = imagesForThisCharacters.map(imageName => `${base}/cards/characters/${imageName}.png`);
         return acc;
     }, {} as Record<typeof characterNames[number], string[]>);
 
-    return {
-        characterImages: characterMapImages
+    const packageImagePath = 'static/packages';
+    const packageImages = Object.fromEntries(fs.readdirSync(packageImagePath)
+        .filter(file => file.endsWith('.png') || file.endsWith('.jpg') || file.endsWith('.jpeg')) // filter for image files
+        .map(file => [path.basename(file, path.extname(file)), path.extname(file)] as const) // get basename and extension
+    );
 
+    const tragedySets = [...new Set((scripts as unknown as Script[]).map(x => x.set?.name ?? '').filter(x => x.length > 0))];
+    const tragedySetImages = Object.fromEntries(tragedySets.map(ts => [ts, normalizeTragedyName(ts)] as const).filter(([, fileName]) => {
+        // console.log(`image ${path} is included ${packageImages.includes(path)} in ${JSON.stringify(packageImages)}`)
+        console.log(`checking for tragedy set image: ${fileName} (${normalizeTragedyName(fileName)})`, packageImages);
+        return  fileName in packageImages;
+    }).map(([keys, path]) => [keys, `${base}/packages/${path}${packageImages[path]}`])) as Partial<Record<string, string>>;
+
+
+    console.log(`available paces images`, tragedySetImages)
+
+
+    return {
+        characterImages: characterMapImages,
+        tragedySetImages
     };
 };

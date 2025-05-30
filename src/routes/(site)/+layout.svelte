@@ -49,7 +49,8 @@
   } from '../../translations';
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
-    import Translation from '../../view/translation.svelte';
+  import Translation from '../../view/translation.svelte';
+  import { enableTranslationUi } from '../+layout.svelte';
 
   onMount(() => {
     console.log('Mounting layout');
@@ -65,6 +66,10 @@
       <option value={lang}>{lang}</option>
     {/each}
   </datalist>
+  <label>
+    <input type="checkbox" role="switch" bind:checked={enableTranslationUi.enabled} />
+    <Translation translationKey={'Enable Transation edit'} />
+  </label>
 </article>
 
 <slot />

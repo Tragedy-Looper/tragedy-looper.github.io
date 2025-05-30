@@ -1,6 +1,9 @@
 <script lang="ts" module>
   export function getAvialableCharacterImages() {
-    return getContext<LayoutProps['data']['characterImages']>('characterImages');
+    return getContext<LayoutProps['data']>('characterImages').characterImages;
+  }
+  export function getAvialablePackageImages() {
+    return getContext<LayoutProps['data']>('characterImages').tragedySetImages;
   }
 
   export function showTranslationMissingDialog(
@@ -11,6 +14,8 @@
     translationCallback = newTextCallback;
     userTranslation = ''; //TODO: use existing translation if available
   }
+
+  export let enableTranslationUi = $state({ enabled: false });
 
   let translationCallback = $state(undefined as undefined | ((newText: string) => void));
   let translationKey = $state(undefined as string | undefined);
@@ -23,6 +28,7 @@
   import { setContext, getContext } from 'svelte';
   import { getString, language } from './(site)/+layout.svelte';
   import { addTranslation } from '../storage';
+  import { keys } from '../misc';
 
   const contextKey = 'characterImages';
 
@@ -42,12 +48,7 @@
 
   let { data, children }: LayoutProps = $props();
 
-  let characterImages = Object.fromEntries(
-    Object.entries(data.characterImages).map(([key, images]) => {
-      return [key, images.map((image) => `${base}${image}`)] as const;
-    })
-  ) as typeof data.characterImages;
-  setContext(contextKey, characterImages);
+  setContext(contextKey, data);
 
   function closeDialog() {
     translationKey = undefined;
