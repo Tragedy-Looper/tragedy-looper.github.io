@@ -415,7 +415,8 @@ type ScriptInternal = Union<{
 export type ScriptName = keyof Scripts;
 
 export const scripts = toRecord([
-    ...data.scripts.filter(x => isScript(x)),
+    ...data.scripts as unknown as readonly Script[],
+    // .filter(x => isScript(x)), // we filter at bild time in the prepare script
 ] as const satisfies readonly Script[], 'title');
 
 

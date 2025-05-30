@@ -2,6 +2,7 @@ import 'path';
 import fs from 'fs';
 import path from 'path';
 import { removeCommentsFromJson } from './generateTragedysSchema';
+import { validateScript } from './../src/model/script'
 
 
 const types = ['characters', 'scripts', 'plots', 'roles', 'tragedys', 'incidents'] as const;
@@ -33,19 +34,30 @@ data.then(x => {
         return [type, x.filter(([, t]) => t == type).filter(([x, type]) => {
             try {
                 const parsed = JSON.parse(x);
-                return (typeof parsed == 'object' && Array.isArray(parsed))
-                    || (typeof parsed == 'object' && !Array.isArray(parsed) && Object.keys(parsed).includes(type));
+                return (typeof parsed == 'object' && !Array.isArray(parsed) && Object.keys(parsed).includes(type) && Array.isArray(parsed[type]));
             } catch (error) {
                 console.error(error);
                 return false;
             }
         }).map(([x, type]) => {
             const parsed = JSON.parse(x);
-            if (typeof parsed == 'object' && Array.isArray(parsed)) {
-                return x;
-            } else {
-                return JSON.stringify(parsed[type], undefined, 2);
+
+            if (type == 'scripts') {
+                const scripts = parsed[type] as unknown[];
+                const validScripts = scripts
+                    .map((script) => {
+                        const validatedScript = validateScript(script);
+                        if (!validatedScript.valid) {
+                            console.error(`Invalid script found in ${x}:\n`, validatedScript.errors);
+                        }
+                        return validatedScript;
+                    })
+                    .filter(x => x.valid)
+                    .map(x => x.script);
+                return JSON.stringify(validScripts, undefined, 2);
             }
+
+            return JSON.stringify(parsed[type], undefined, 2);
 
         })] as const;
     });
