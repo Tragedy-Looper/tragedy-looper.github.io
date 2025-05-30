@@ -60,13 +60,7 @@
 
   let exportJson: string | undefined;
 
-  function exportSet(setName: string) {
-    exportJson = JSON.stringify(
-      scripts.filter((x) => x.set?.name == setName),
-      undefined,
-      2
-    );
-  }
+ 
 </script>
 
 <ExportView bind:exportJson />

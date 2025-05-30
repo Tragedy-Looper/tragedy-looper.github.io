@@ -6,10 +6,10 @@
     {
       "title": "The First Script",
       "creator": "BakaFire",
-      "set": {
+      "set": [{
         "name": "Tragedy Looper",
         "number": 1
-      },
+      }],
       "tragedySet": "First Steps",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -95,10 +95,10 @@
     {
       "title": "Prevailing Secrecy",
       "creator": "BakaFire",
-      "set": {
+      "set": [{
         "name": "Tragedy Looper",
         "number": 2
-      },
+      }],
       "tragedySet": "First Steps",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -149,10 +149,10 @@
     {
       "title": "Young Women’s Battlefield",
       "creator": "Gayusu",
-      "set": {
+      "set": [{
         "name": "Tragedy Looper",
         "number": 3
-      },
+      }],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -262,10 +262,10 @@
     {
       "title": "Lesser of Two Evils",
       "creator": "GEnd",
-      "set": {
+      "set": [{
         "name": "Tragedy Looper",
         "number": 4
-      },
+      }],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -325,10 +325,10 @@
     {
       "title": "The Secret That Was Kept",
       "creator": "BakaFire",
-      "set": {
+      "set": [{
         "name": "Tragedy Looper",
         "number": 5
-      },
+      }],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -393,10 +393,10 @@
     {
       "title": "The Future of the Gods",
       "creator": "Nightly Moonfire group",
-      "set": {
+      "set": [{
         "name": "Tragedy Looper",
         "number": 6
-      },
+      }],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -457,10 +457,10 @@
     {
       "title": "Mirror Passcode",
       "creator": "M. Hydromel",
-      "set": {
+      "set": [{
         "name": "Tragedy Looper",
         "number": 7
-      },
+      }],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -520,10 +520,10 @@
     {
       "title": "Those with Antibodies",
       "creator": "Satoshi Sawamura",
-      "set": {
+      "set": [{
         "name": "Tragedy Looper",
         "number": 8
-      },
+      }],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -584,10 +584,10 @@
     {
       "title": "Prologue",
       "creator": "BakaFire",
-      "set": {
+      "set": [{
         "name": "Tragedy Looper",
         "number": 9
-      },
+      }],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -647,10 +647,10 @@
     {
       "title": "Neverending Happy & Sad Story",
       "creator": "BF + 3G",
-      "set": {
+      "set": [{
         "name": "Tragedy Looper",
         "number": 10
-      },
+      }],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 6,
       "difficultySets": [

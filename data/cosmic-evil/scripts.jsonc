@@ -6,10 +6,10 @@
         {
             "title": "Secret Cat Walk",
             "creator": "GEnd",
-            "set": {
+            "set": [{
                 "name": "Cosmic Evil",
                 "number": 1
-            },
+            }],
             "tragedySet": "Basic Tragedy",
             "mainPlot": [
                 "The Sealed Item"
@@ -64,10 +64,10 @@
         {
             "title": "Master Thief Seven Tails",
             "creator": "BakaFire",
-            "set": {
+            "set": [{
                 "name": "Cosmic Evil",
                 "number": 2
-            },
+            }],
             "tragedySet": "Prime Evil",
             "mainPlot": [
                 "The Cursed Land"
@@ -119,10 +119,10 @@
         {
             "title": "Vamp",
             "creator": "ENTEI",
-            "set": {
+            "set": [{
                 "name": "Cosmic Evil",
                 "number": 3
-            },
+            }],
             "tragedySet": "Prime Evil",
             "mainPlot": [
                 "The Noble Bloodline"
@@ -177,10 +177,10 @@
         {
             "title": "Zombi Hero",
             "creator": "GEnd",
-            "set": {
+            "set": [{
                 "name": "Cosmic Evil",
                 "number": 4
-            },
+            }],
             "tragedySet": "Prime Evil",
             "mainPlot": [
                 "The Ones from the Grave"
@@ -246,10 +246,10 @@
         {
             "title": "Ultimate Halloween",
             "creator": "BakaFire",
-            "set": {
+            "set": [{
                 "name": "Cosmic Evil",
                 "number": 5
-            },
+            }],
             "tragedySet": "Prime Evil",
             "mainPlot": [
                 "Moonlight Beast"
@@ -333,10 +333,10 @@
         {
             "title": "Banquet School Life",
             "creator": "BakaFire",
-            "set": {
+            "set": [{
                 "name": "Cosmic Evil",
                 "number": 6
-            },
+            }],
             "tragedySet": "Cosmic Mythology",
             "mainPlot": [
                 "Giant Time Bomb Again"
@@ -389,10 +389,10 @@
         {
             "title": "Eyes Without Vision",
             "creator": "Nightly Moonfire Group",
-            "set": {
+            "set": [{
                 "name": "Cosmic Evil",
                 "number": 7
-            },
+            }],
             "tragedySet": "Cosmic Mythology",
             "mainPlot": [
                 "Bloody Rites"
@@ -448,10 +448,10 @@
         {
             "title": "Bella Stellarum",
             "creator": "Gaijin",
-            "set": {
+            "set": [{
                 "name": "Cosmic Evil",
                 "number": 8
-            },
+            }],
             "tragedySet": "Cosmic Mythology",
             "mainPlot": [
                 "The King in Yellow"
@@ -521,10 +521,10 @@
         {
             "title": "An Ordinary Day In Misuka City",
             "creator": "Rokirusu",
-            "set": {
+            "set": [{
                 "name": "Cosmic Evil",
                 "number": 9
-            },
+            }],
             "tragedySet": "Cosmic Mythology",
             "mainPlot": [
                 "The Sacred Words of Dagon"
@@ -584,10 +584,10 @@
         {
             "title": "Cosmic Insignificance",
             "creator": "M. Hydromel and her automatons",
-            "set": {
+            "set": [{
                 "name": "Cosmic Evil",
                 "number": 10
-            },
+            }],
             "tragedySet": "Cosmic Mythology",
             "mainPlot": [
                 "The King in Yellow"

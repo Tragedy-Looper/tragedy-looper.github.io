@@ -650,11 +650,14 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                         "maximum": 10
                                     },
                                     "set": {
-                                        "type": "object",
-                                        "additionalProperties": false,
-                                        "properties": {
-                                            "name": { "type": "string" },
-                                            "number": { "type": "number" },
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "name": { "type": "string" },
+                                                "number": { "type": "number" },
+                                            }
                                         }
                                     },
                                     "tragedySet": { "type": "string", "enum": [tragedySet] },

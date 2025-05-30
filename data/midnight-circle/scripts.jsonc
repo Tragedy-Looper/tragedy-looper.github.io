@@ -6,10 +6,10 @@
         {
             "title": "Machina Solar Cogwheel",
             "creator": "M.Hydromel",
-            "set": {
+            "set": [{
                 "name": "Midnight Circle",
                 "number": 1
-            },
+            }],
             "tragedySet": "Basic Tragedy",
             "mainPlot": [
                 "Change of Future"
@@ -68,10 +68,10 @@
         {
             "title": "Traditional Ensemble Murder",
             "creator": "BakaFire",
-            "set": {
+            "set": [{
                 "name": "Midnight Circle",
                 "number": 2
-            },
+            }],
             "tragedySet": "Basic Tragedy",
             "mainPlot": [
                 "Change of Future"
@@ -135,10 +135,10 @@
         {
             "title": "The Future Assassin",
             "creator": "unun",
-            "set": {
+            "set": [{
                 "name": "Midnight Circle",
                 "number": 3
-            },
+            }],
             "tragedySet": "Basic Tragedy",
             "mainPlot": [
                 "Change of Future"
@@ -193,10 +193,10 @@
         {
             "title": "Romance Antithesis",
             "creator": "BakaFire",
-            "set": {
+            "set": [{
                 "name": "Midnight Circle",
                 "number": 4
-            },
+            }],
             "tragedySet": "Midnight Zone",
             "mainPlot": [
                 "Male Confrontation"
@@ -249,10 +249,10 @@
         {
             "title": "In the Hands of Evil Fate",
             "creator": "Bodogetta",
-            "set": {
+            "set": [{
                 "name": "Midnight Circle",
                 "number": 5
-            },
+            }],
             "tragedySet": "Midnight Zone",
             "mainPlot": [
                 "Secret Record"
@@ -315,10 +315,10 @@
         {
             "title": "Singer of the Heretic Idol",
             "creator": "Satoshi Sawamura",
-            "set": {
+            "set": [{
                 "name": "Midnight Circle",
                 "number": 6
-            },
+            }],
             "tragedySet": "Midnight Zone",
             "mainPlot": [
                 "The Sealed Item"
@@ -391,10 +391,10 @@
         {
             "title": "Spinning Duplicate Spiral",
             "creator": "Gaijin",
-            "set": {
+            "set": [{
                 "name": "Midnight Circle",
                 "number": 7
-            },
+            }],
             "tragedySet": "Midnight Zone",
             "mainPlot": [
                 "Fated Connections"
@@ -450,10 +450,10 @@
         {
             "title": "Obsession Detection",
             "creator": "BakaFire",
-            "set": {
+            "set": [{
                 "name": "Midnight Circle",
                 "number": 8
-            },
+            }],
             "tragedySet": "Mystery Circle",
             "mainPlot": [
                 "The Black School"
@@ -508,10 +508,10 @@
         {
             "title": "The Temple of Poisoned Loneliness",
             "creator": "GEnd",
-            "set": {
+            "set": [{
                 "name": "Midnight Circle",
                 "number": 9
-            },
+            }],
             "tragedySet": "Mystery Circle",
             "mainPlot": [
                 "A Quilt of Incidents"
@@ -576,10 +576,10 @@
         {
             "title": "The Unknowns of the Tragedies in the Academic City",
             "creator": "Izayoi",
-            "set": {
+            "set": [{
                 "name": "Midnight Circle",
                 "number": 10
-            },
+            }],
             "tragedySet": "Mystery Circle",
             "mainPlot": [
                 "A Drop of Strychnine"
@@ -640,10 +640,10 @@
         {
             "title": "The Festival of Fools",
             "creator": "Satoshi Sawamura",
-            "set": {
+            "set": [{
                 "name": "Midnight Circle",
                 "number": 11
-            },
+            }],
             "tragedySet": "Mystery Circle",
             "mainPlot": [
                 "A Quilt of Incidents"
@@ -699,10 +699,10 @@
         {
             "title": "Milestone",
             "creator": "AKITAGAWA Detective Bureau",
-            "set": {
+            "set": [{
                 "name": "Midnight Circle",
                 "number": 12
-            },
+            }],
             "tragedySet": "Mystery Circle",
             "mainPlot": [
                 "Tightrope Plan"

@@ -416,10 +416,7 @@ export type ScriptName = keyof Scripts;
 
 export const scripts = toRecord([
     ...data.scripts.filter(x => isScript(x)),
-
-
-
-] as const satisfies readonly ScriptInternal[], 'title');
+] as const satisfies readonly Script[], 'title');
 
 
 export function isScriptName(name: string | undefined | null): name is ScriptName {

@@ -677,8 +677,7 @@ export class CustomScript {
     public import(script: Script) {
         this.title.set(script.title);
         this.creator.set(script.creator ?? '');
-        this.difficultySets.subscribe(x =>
-            console.log('d', x));
+   
         this.difficultySets.set(script.difficultySets ?? []);
         this.tragedySetName.set(script.tragedySet!);//TODO: check if it is a known tragedySet is set
 

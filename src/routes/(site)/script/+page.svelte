@@ -43,11 +43,11 @@
 
   const packageImages = getAvialablePackageImages() ?? {};
 
-  let exportJson: string | undefined;
+  let exportJson: string | undefined = $state(undefined);
 
   function exportSet(setName: string) {
     exportJson = JSON.stringify(
-      scripts.filter((x) => x.set?.name == setName),
+      scripts.filter((x) => x.set?.some((x) => x?.name == setName)),
       undefined,
       2
     );
@@ -127,7 +127,7 @@
           <a
             style="flex-grow: 2;"
             href={`${base}/script/overview/?script=${encodeURIComponent(JSON.stringify(s))}`}
-            >{s.set?.number ?? ''}
+          >
             {s.title} by {s.creator} [{s.tragedySet}] difficulty {join(
               s.difficultySets?.map((x) => x.difficulty.toString()) ?? [],
               ' / '
@@ -166,11 +166,6 @@
         .sort( (a, b) => (a == undefined ? (b == undefined ? 0 : -1) : b == undefined ? 1 : a.localeCompare(b)) )) as set}
       <article>
         <header>
-          <button
-            onclick={() => exportSet(set)}
-            class="outline"
-            style="float: right; width: fit-content;">Export</button
-          >
           <h2>{set ?? 'Independent'}</h2>
         </header>
         {#each scripts
@@ -184,7 +179,8 @@
     {/each}
   {:else}
     {#each distinct(scripts
-        .map((key) => key.set?.name)
+        .flatMap((x) => x.set ?? [])
+        .map((key) => key.name)
         .sort( (a, b) => (a == undefined ? (b == undefined ? 0 : -1) : b == undefined ? 1 : a.localeCompare(b)) )) as set}
       <input type="radio" id="select_{set}" bind:group={selectedSet} value={set} />
       <article class="hideBoxArt">
@@ -199,8 +195,8 @@
           <h2>{set ?? 'Independent'}</h2>
         </header>
         {#each scripts
-          .filter((x) => x.set?.name == set)
-          .sort((a, b) => (a.set?.number ?? 0) - (b.set?.number ?? 0)) as s}
+          .filter((x) => x.set?.some((x) => x?.name == set))
+          .sort((a, b) => (a.set?.filter((x) => x.name == set)[0]?.number ?? 0) - (b.set?.filter((x) => x.name == set)[0]?.number ?? 0)) as s}
           {#if s}
             {@render scriptEntry(s)}
           {/if}
@@ -209,7 +205,9 @@
     {/each}
     <div class="boxHolder">
       {#each distinct(scripts
-          .map((key) => key.set?.name)
+          .flatMap((x) => x.set ?? [])
+          .filter((x) => x?.name != undefined && x?.name.length > 0)
+          .map((key) => key.name)
           .filter((x) => (x?.length ?? 0) > 0)
           .sort( (a, b) => (a == undefined ? (b == undefined ? 0 : -1) : b == undefined ? 1 : a.localeCompare(b)) )) as set}
         <label class="cover" for="select_{set}" class:checked={set == selectedSet}>
@@ -233,8 +231,12 @@
     ><br />
 
     <em style="display: block;">
-      <Translation translationKey={s.set?.name ?? 'Independent'} />
-      {s.set?.number ? `${s.set.number} ` : ''}
+      {#each s.set ?? [] as set}
+        <Translation translationKey={set.name} />
+        {set.number ? `${set.number} ` : ''}
+      {:else}
+        <Translation translationKey={'Independent'} />
+      {/each}
     </em>
 
     <Translation translationKey={'Tragedy'} />

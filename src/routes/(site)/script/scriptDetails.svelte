@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { type scripts, type isScriptName, toPlayerIncident } from '../../../model/script';
+  import {  type isScriptName, toPlayerIncident } from '../../../model/script';
 
   import { onMount } from 'svelte';
 
@@ -148,7 +148,10 @@
 
       <h2>
         {#if script.set}
-          ({script.set.number}) {script.set.name}
+          ({#each script.set as set, i}{#if i > 0},
+            {/if}{set.name}
+            {set.number}
+          {/each})
         {/if}
       </h2>
     </hgroup>

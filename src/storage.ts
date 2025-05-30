@@ -1,5 +1,6 @@
 import { browser } from "$app/environment";
-import { scripts, type Script, type ScriptName, isScript } from "./model/script";
+import { type ScriptName, isScript, scripts } from "./model/script";
+import type { Script } from "./scripts.g";
 import { getStringForLanguage } from "./translations";
 
 
@@ -56,9 +57,7 @@ function openScriptDB() {
             if (!store.indexNames.contains("title")) {
                 store.createIndex("title", "title", { unique: false });
             }
-            if (!store.indexNames.contains("set")) {
-                store.createIndex("set", ["set.name", "set.number"], { unique: false });
-            }
+
         };
         request.onsuccess = () => resolve(request.result);
         request.onerror = () => reject(request.error);
@@ -120,7 +119,7 @@ export async function loadAllLocalScripts() {
     });
 }
 
-// Neue gezielte Query-Funktion
+// set ist ein einzelnes Objekt, aber das Script kann ein Array von Sets haben
 async function queryScripts({ title, author, set }: { title?: string | null; author?: string | null; set?: { name: string; number: number; } | null; }) {
     const db = await openScriptDB();
     return new Promise<Script[]>((resolve, reject) => {
@@ -142,23 +141,14 @@ async function queryScripts({ title, author, set }: { title?: string | null; aut
         } else if (title) {
             const index = store.index("title");
             req = index.getAll(title);
-        } else if (set && set.name && typeof set.number === 'number') {
-            const index = store.index("set");
-            req = index.getAll([set.name, set.number]);
         } else {
             req = store.getAll();
         }
         req.onsuccess = () => {
             let result = req.result || [];
-            // Nachfilterung falls mehrere Parameter
-            if (author && !title) {
-                if (set) result = result.filter((x: any) => x.set?.name === set.name && x.set?.number === set.number);
-                if (title) result = result.filter((x: any) => x.title === title);
-            } else if (title && !author) {
-                if (set) result = result.filter((x: any) => x.set?.name === set.name && x.set?.number === set.number);
-                if (author) result = result.filter((x: any) => x.creator === author);
-            } else if (set && !title && !author) {
-                // already filtered
+            // Nachfilterung falls set angegeben ist
+            if (set) {
+                result = result.filter((x: any) => Array.isArray(x.set) && x.set.some((s: any) => set && s.name === set.name && s.number === set.number));
             }
             resolve(result);
         };
@@ -166,6 +156,7 @@ async function queryScripts({ title, author, set }: { title?: string | null; aut
     });
 }
 
+// set ist ein einzelnes Objekt, aber das Script kann ein Array von Sets haben
 export async function loadScript(params: { title?: string | null; author?: string | null; set?: { name: string; number: number; } | null; } = {}) {
     if (!browser) {
         throw new Error('We need to run in Browser');
@@ -179,9 +170,11 @@ export async function loadScript(params: { title?: string | null; author?: strin
     const filter: ((x: Script | null) => x is Script) = (x: any): x is Script => x !== null
         && (!title || x.title == title)
         && (!author || x.creator == author)
-        && (!set || (set.name == x?.set?.name && set.number == x?.set?.number));
-    const globalResults = Object.values(scripts).filter(filter).map(x => ({ ...x, local: undefined }));
-    return [...localResults.map(x => ({ ...x, local: true })), ...globalResults];
+        && (!set || (Array.isArray(x.set)
+            ? x.set.some((s: any) => set && s.name === set.name && s.number === set.number)
+            : false));
+    const globalResults = Object.values(scripts).filter(filter).map((x: any) => ({ ...x, local: undefined }));
+    return [...localResults.map((x: any) => ({ ...x, local: true })), ...globalResults];
 }
 
 export async function deleteLocalScript(script: Script) {

@@ -6,10 +6,10 @@
     {
       "title": "Beyond Praying Stage",
       "creator": "NAOKI",
-      "set": {
+      "set": [{
         "name": "Rei",
         "number": 1
-      },
+      }],
       "tragedySet": "Another Horizon R",
       "mainPlot": [
         "Into Nothingness"

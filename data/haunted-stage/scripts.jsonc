@@ -6,10 +6,10 @@
     {
       "title": "孤独ノ隠レンボ (Lonely Hide and Seek)",
       "creator": "siro_xx",
-      "set": {
+      "set": [{
         "name": "Haunted Stage",
         "number": 1
-      },
+      }],
       "tragedySet": "Haunted Stage",
       "mainPlot": [
         "The Cursed Doll"
@@ -60,10 +60,10 @@
     {
       "title": "ジブン観察日記 (Self-Observation Diary)",
       "creator": "siro_xx",
-      "set": {
+      "set": [{
         "name": "Haunted Stage",
         "number": 2
-      },
+      }],
       "tragedySet": "Haunted Stage",
       "mainPlot": [
         "Prim Evil"
@@ -114,10 +114,10 @@
     {
       "title": "ニセモノ注意報 (Perfect Crime Love Letter)",
       "creator": "siro_xx",
-      "set": {
+      "set": [{
         "name": "Haunted Stage",
         "number": 3
-      },
+      }],
       "tragedySet": "Haunted Stage",
       "mainPlot": [
         "Full Moon Night"
@@ -168,10 +168,10 @@
     {
       "title": "完全犯罪ラブレター (Perfect Crime Love Letter)",
       "creator": "siro_xx",
-      "set": {
+      "set": [{
         "name": "Haunted Stage",
         "number": 4
-      },
+      }],
       "tragedySet": "Haunted Stage",
       "mainPlot": [
         "Full Moon Night"
@@ -222,10 +222,10 @@
     {
       "title": "猿マネ椅子盗りゲーム (Aimless Imitation Musical Chairs)",
       "creator": "siro_xx",
-      "set": {
+      "set": [{
         "name": "Haunted Stage",
         "number": 5
-      },
+      }],
       "tragedySet": "Haunted Stage",
       "mainPlot": [
         "Prim Evil"
@@ -286,10 +286,10 @@
     {
       "title": "代行天使 (Proxy Angel)",
       "creator": "Translated by megakun",
-      "set": {
+      "set": [{
         "name": "Haunted Stage",
         "number": 6
-      },
+      }],
       "tragedySet": "Haunted Stage",
       "mainPlot": [
         "Ancient Shrine"
@@ -350,10 +350,10 @@
     {
       "title": "蘇る幻影（マボロシ） (Reviving Illusion)",
       "creator": "Translated by megakun",
-      "set": {
+      "set": [{
         "name": "Haunted Stage",
         "number": 7
-      },
+      }],
       "tragedySet": "Haunted Stage",
       "mainPlot": [
         "Prim Evil"
@@ -417,10 +417,10 @@
     {
       "title": "幻想は都市で死ぬ (Illusions Die in the City)",
       "creator": "Translated by megakun",
-      "set": {
+      "set": [{
         "name": "Haunted Stage",
         "number": 8
-      },
+      }],
       "tragedySet": "Haunted Stage",
       "mainPlot": [
         "Full Moon Night"
