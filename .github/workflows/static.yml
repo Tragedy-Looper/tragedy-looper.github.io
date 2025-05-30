@@ -42,7 +42,7 @@ jobs:
         run: |
           REPO_NAME="${GITHUB_REPOSITORY#*/}"
           if [[ "$REPO_NAME" == *.github.io ]]; then
-            echo "BASE_PATH=/" >> $GITHUB_ENV
+            echo "BASE_PATH=" >> $GITHUB_ENV
           else
             echo "BASE_PATH=/$REPO_NAME" >> $GITHUB_ENV
           fi
