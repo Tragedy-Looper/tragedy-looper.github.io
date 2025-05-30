@@ -2,10 +2,10 @@ import 'path';
 import fs from 'fs';
 import path from 'path';
 import { removeCommentsFromJson } from './generateTragedysSchema';
-import { validateScript } from './../src/model/script'
+import { validateScript } from './../src/model/validation'
 
 
-const types = ['characters', 'scripts', 'plots', 'roles', 'tragedys', 'incidents'] as const;
+const types = ['characters', 'plots', 'roles', 'tragedys', 'incidents', 'scripts'] as const;
 
 const dirs = fs.readdirSync('./data');
 const data =
