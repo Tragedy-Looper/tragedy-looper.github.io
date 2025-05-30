@@ -3,6 +3,7 @@
   import { getString, language } from '../routes/(site)/+layout.svelte';
   import { addTranslation } from '../storage';
   import {
+    hasLocalTranslation,
     translationExists,
     type ObjectFromTaged,
     type ObjectFromTagedArray,
@@ -65,18 +66,30 @@
     block ? md.render($getString(key, parametrs)) : md.renderInline($getString(key, parametrs))
   );
   let doesTranslationExists = $derived(translationExists($language, key));
+
+  let isLocal = $derived(hasLocalTranslation($language, key));
+
+  let highiligt = $derived(
+    enableTranslationUi.highilghtMissing &&
+      (!doesTranslationExists || (enableTranslationUi.editLocals && isLocal))
+  );
 </script>
 
-{#if doesTranslationExists|| !enableTranslationUi.enabled}{@html text}{:else}
+{#if !highiligt}{@html text}{:else}
   <span
-    onclick={() =>
+    class:interactive={enableTranslationUi.inlineEdit}
+    onclick={() => {
+      if (!enableTranslationUi.inlineEdit) {
+        return;
+      }
       showTranslationMissingDialog(translationKey, async () => {
         const tmp = translationKey;
         await tick();
         translationKey = undefined;
         await tick();
         translationKey = tmp;
-      })}
+      });
+    }}
     class="missingTranslation">{@html text}</span
   >{/if}
 
@@ -84,11 +97,9 @@
   .missingTranslation {
     /* Style for missing translations with squiggly red underline */
     text-decoration: underline wavy var(--pico-mark-background-color);
-    cursor: pointer;
-  }
-  .quote {
-    font-style: italic;
-    color: var(--pico-secondary);
-    margin: 0.5rem 0;
+
+    &.interactive {
+      cursor: pointer;
+    }
   }
 </style>

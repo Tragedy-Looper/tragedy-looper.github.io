@@ -12,10 +12,21 @@
   ) {
     translationKey = key;
     translationCallback = newTextCallback;
-    userTranslation = ''; //TODO: use existing translation if available
+    userTranslation = get(getString)(key);
+    if (userTranslation.startsWith('«') && userTranslation.endsWith('»')) {
+      userTranslation = userTranslation.slice(1, -1).trim();
+    } else {
+      userTranslation = '';
+    }
   }
 
-  export let enableTranslationUi = $state({ enabled: false });
+  const defaultSettings = {
+    highilghtMissing: true,
+    inlineEdit: false,
+    editLocals: false,
+  };
+
+  export let enableTranslationUi = $state(defaultSettings);
 
   let translationCallback = $state(undefined as undefined | ((newText: string) => void));
   let translationKey = $state(undefined as string | undefined);
@@ -23,12 +34,12 @@
 </script>
 
 <script lang="ts">
-  import { base } from '$app/paths';
   import { type LayoutProps } from './$types';
-  import { setContext, getContext } from 'svelte';
+  import { setContext, getContext, onMount } from 'svelte';
   import { getString, language } from './(site)/+layout.svelte';
   import { addTranslation } from '../storage';
-  import { keys } from '../misc';
+  import { get } from 'svelte/store';
+  import { browser } from '$app/environment';
 
   const contextKey = 'characterImages';
 
@@ -49,6 +60,21 @@
   let { data, children }: LayoutProps = $props();
 
   setContext(contextKey, data);
+
+  onMount(() => {
+    if (browser) {
+      const settings = JSON.parse(window.localStorage.getItem('tragedy_looper_settings') ?? '{}');
+      if (settings) {
+        for (const key in settings) {
+          enableTranslationUi[key as keyof typeof enableTranslationUi] = settings[key];
+        }
+      }
+    }
+  });
+
+  $effect(() => {
+    window.localStorage.setItem('tragedy_looper_settings', JSON.stringify(enableTranslationUi));
+  });
 
   function closeDialog() {
     translationKey = undefined;
@@ -90,3 +116,11 @@
     </footer>
   </article>
 </dialog>
+
+<style>
+  .quote {
+    font-style: italic;
+    color: var(--pico-secondary);
+    margin: 0.5rem 0;
+  }
+</style>

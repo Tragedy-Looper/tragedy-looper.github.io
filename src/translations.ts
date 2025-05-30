@@ -113,9 +113,22 @@ export function translationExists(lang: string, key: string): boolean {
     if (localTranslation && localTranslation.length > 0) {
         return true;
     }
-
     return false
 }
+
+export function hasLocalTranslation(lang: string, key: string): boolean {
+    if (!lang) {
+        return false;
+    }
+    if (browser) {
+        const localTranslation = getLocalisatio(lang);
+        if (localTranslation && localTranslation[key]) {
+            return localTranslation[key].length > 0;
+        }
+    }
+    return false;
+}
+
 export function getStringForLanguage<TKey extends string | undefined>(key: TKey, lang: string | undefined, ...params: ObjectFromTagedArray<TKey>): string {
     if (!key) {
         return "";
@@ -143,7 +156,7 @@ export function getStringForLanguage<TKey extends string | undefined>(key: TKey,
         return keyTrimed;
     }
     let translated = translation[lang]?.[keyTrimed] ?? keyTrimed;
-    if(translated==undefined || translated.length == 0) {
+    if (translated == undefined || translated.length == 0) {
         translated = keyTrimed; // Fallback to key if no translation is found
     }
 
