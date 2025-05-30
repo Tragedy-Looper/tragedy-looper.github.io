@@ -38,9 +38,15 @@ jobs:
           cache: 'npm'
       - name: download depednecys ci
         run: npm ci
+      - name: Set BASE_PATH based on repository name
+        run: |
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          if [[ "$REPO_NAME" == *.github.io ]]; then
+            echo "BASE_PATH=/" >> $GITHUB_ENV
+          else
+            echo "BASE_PATH=/$REPO_NAME" >> $GITHUB_ENV
+          fi
       - name: bulid
-        env:
-          BASE_PATH: /tragedy-looper-deduction-tool
         run: npm run build --if-present
       - name: Setup Pages
         uses: actions/configure-pages@v5
