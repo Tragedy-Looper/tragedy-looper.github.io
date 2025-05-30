@@ -33,7 +33,9 @@
   const subPlots = model.subPlots;
 
   const rolesGroup = derived(model.roles, (a) =>
-    a.toSorted((a, b) => a.role.localeCompare(b.role))
+    a.toSorted((a, b) =>
+      a.role == 'Person' ? +1 : b.role == 'Person' ? -1 : a.role.localeCompare(b.role)
+    )
   );
   const days = model.daysPerLoop;
 
