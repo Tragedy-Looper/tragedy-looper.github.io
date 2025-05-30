@@ -2,7 +2,7 @@ import 'path';
 import fs from 'fs';
 import path from 'path';
 import { removeCommentsFromJson } from './generateTragedysSchema';
-import { validateScript } from './../src/model/validation'
+import { validateScript } from './validation'
 
 
 const types = ['characters', 'plots', 'roles', 'tragedys', 'incidents', 'scripts'] as const;
