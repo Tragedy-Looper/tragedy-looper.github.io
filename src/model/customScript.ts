@@ -887,7 +887,7 @@ export class CustomScript {
                 };
             }),
             specialRules: [get(this.specialRules)],
-            'victory-condition': get(this.victoryConditions),
+            'victory-conditions': get(this.victoryConditions),
             story: get(this.story),
             mastermindHints: get(this.mastermindHints),
 

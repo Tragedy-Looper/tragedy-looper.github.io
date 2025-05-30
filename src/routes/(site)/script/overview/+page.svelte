@@ -20,7 +20,7 @@
   let searchParams: URLSearchParams | undefined;
 
   let ownScripts: Script[] = [];
-  onMount(() => {
+  onMount(async () => {
     searchParams = new URLSearchParams(document.location.search);
     const pushState = history.pushState;
     history.pushState = function (data: any, unused: string, url?: string | URL | null) {
@@ -28,7 +28,7 @@
       searchParams = new URLSearchParams(document.location.search);
     };
 
-    ownScripts = loadAllLocalScripts();
+    ownScripts = await loadAllLocalScripts();
   });
 
   $: setNumber = parseInt(searchParams?.get('setNumber') ?? '-1');
@@ -48,12 +48,13 @@
         set: setName && setNumber > -1 ? { name: setName, number: setNumber } : undefined,
       };
 
-      const loading = loadScript(search);
-      if (loading?.length === 1) {
-        selectedScript = loading[0];
-      } else {
-        selectedScript = loading;
-      }
+      loadScript(search).then((loading) => {
+        if (loading?.length === 1) {
+          selectedScript = loading[0];
+        } else {
+          selectedScript = loading;
+        }
+      });
     }
   }
 

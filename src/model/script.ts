@@ -227,13 +227,23 @@ export function validateScript(obj: unknown): { valid: true, script: Script } | 
         };
     }
 
+    // store possible additonal propertsys that are not in the schema, but may be in the object
+    // wich is ok
+    const additionalProps = ['id', 'local'];
+    const data = Object.entries(obj).filter(([key]) => additionalProps.includes(key));
+    // remove the additional properties from the object
+    for (const [key] of data) {
+        delete (obj as Record<string, unknown>)[key];
+    }
+
+
     const ajv = new Ajv({ allErrors: true, strict: true });
     const validate = ajv.compile(schema);
     const valid = validate(obj);
     if (valid) {
         return {
             valid: true,
-            script: obj as Script,
+            script: { ...Object.fromEntries(data), ...obj } as Script,
         } as const;
     } else {
         const errors = betterAjvErrors({ schema: schema as unknown as any, data, errors: validate.errors });
@@ -395,7 +405,7 @@ type ScriptInternal = Union<{
 
         incidents: readonly ScriptIncident<k>[],
         specialRules?: readonly string[],
-        'victory-condition': string,
+        'victory-conditions': string,
         story: string,
         mastermindHints: string,
     }

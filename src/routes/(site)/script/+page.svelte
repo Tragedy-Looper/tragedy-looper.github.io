@@ -16,7 +16,7 @@
   let searchParams = $state(undefined as URLSearchParams | undefined);
 
   let ownScripts: Script[] = $state([]);
-  onMount(() => {
+  onMount(async () => {
     searchParams = new URLSearchParams(document.location.search);
     const pushState = history.pushState;
     history.pushState = function (data: any, unused: string, url?: string | URL | null) {
@@ -24,7 +24,7 @@
       searchParams = new URLSearchParams(document.location.search);
     };
 
-    ownScripts = loadAllLocalScripts();
+    ownScripts = await loadAllLocalScripts();
   });
 
   const tabs = ['own', 'set', 'tragedy'] as const;
