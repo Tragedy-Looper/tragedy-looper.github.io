@@ -1,0 +1,148 @@
+{
+    "$schema": "https://tragedy-looper.github.io/roles.schema.json",
+    // For dev purposes
+    //"$schema": "../roles.schema.json",
+    "roles": [
+        {
+            "name": "Sub Heroine",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Card resolve"
+                    ],
+                    "description": "Ignore Goodwill +1 and Goodwill +2 Actions set on this character."
+                }
+            ]
+        },
+        {
+            "name": "Creature",
+            "goodwillRefusel": "Optional",
+            "abilities": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "description": "You may kill one Character in the same location who has 1+ Intrigue Counter(s) on them, unless a Slayer is in the same Location."
+                },
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "The Creature has at least 5 Intrigue",
+                    "description": "Kill the Protagonist."
+                }
+            ]
+        },
+        {
+            "name": "Possessed",
+            "goodwillRefusel": "Optional",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Card resolve"
+                    ],
+                    "description": "Ignore all Intrigue Counters placed on the Location where this Character is, as well as on any other Characters in the same Location."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Card resolve"
+                    ],
+                    "description": "Ignore \"Forbid Movement\" Actions on this Character."
+                }
+            ]
+        },
+        {
+            "name": "Slayer",
+            "max": 1,
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "description": "If the Slayer is alone with the Creature, the Creature dies."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Mastermind Action step"
+                    ],
+                    "description": "Remove one Intrigue Counter from a Character in the same Location."
+                }
+            ]
+        },
+        {
+            "name": "Heavy Lovers",
+            "abilities": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "3+ Paranoia, or 1+ Intrigue",
+                    "description": "Kill the Protagonist."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "There is a Character of the same sex with 3+ Goodwill in the same area.",
+                    "description": "Kill that Character. You may also place up to 1 Intrigue and 1 Paranoia counter each on yourself."
+                }
+            ]
+        },
+        {
+            "name": "Mood Maker",
+            "max": 1,
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "description": "Place 1 Goodwill counter on one other character in the same Location."
+                }
+            ]
+        },
+        {
+            "name": "Troublemaker",
+            "max": 1,
+            "abilities": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "description": "Remove 1 Goodwill counter on one other character in the same Location."
+                }
+            ]
+        },
+        {
+            "name": "Lunatic",
+            "goodwillRefusel": "Optional",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "description": "Place 1 Intrigue or 1 Paranoia on this Character."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "This role has been revealed",
+                    "description": "Kill one Character in the same Location (Once per Loop)."
+                }
+            ]
+        }
+    ]
+}
