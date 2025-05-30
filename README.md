@@ -8,7 +8,7 @@ Its Fun :)
 
 ## So What's this?
 
-This is the code for the website <https://lokimidgard.github.io/tragedy-looper-deduction-tool/>.
+This is the code for the website <https://tragedy-looper.github.io/>.
 
 It is a tool that generates script specific deduction matrix for the specific
 characters and a checklist for the Mastermind.
