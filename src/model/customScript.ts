@@ -564,7 +564,12 @@ export class CustomScript {
 
     public readonly mainPlots: Readable<readonly ICustomScriptPlotMutalExclusiveSelection<PlotName>[]>
     public readonly subPlots: Readable<readonly ICustomScriptPlotMutalExclusiveSelection<PlotName>[]>
-    public readonly selectedPlots: Readable<readonly PlotName[]>;
+    public readonly selectedPlots: Readable<readonly {
+        name: PlotName, options: {
+            settings: Option,
+            value: any
+        }[]
+    }[]>;
 
     public readonly roles: Readable<readonly ICustomScriptRoleExclusiveSelectionGroup<CharacterName>[]>
     public readonly unusedRoles: Readable<readonly RoleName[]>;
@@ -601,27 +606,62 @@ export class CustomScript {
         this.subPlots = derived(this.tragedySet, tg => generatePlotSelection(this, tg.subPlots, tg.numberOfSubPlots));
         this.incidents = derived(this.tragedySet, tg => tg.incidents);
 
-        const selectodMainPlots = storeStores(this.mainPlots, x => x.selectedPlot)
-        const selectodSubplots = storeStores(this.subPlots, x => x.selectedPlot)
+        const mapPlotStores = (plots: typeof this.mainPlots | typeof this.subPlots) =>
+            storeStores(storeStores(plots, x => derived([x.selectedPlot, x.options], ([selectedPlot, options]) => {
+                return {
+                    name: selectedPlot,
+                    options: options.map(x => derived(x.value, value => {
+                        return {
+                            settings: x.option,
+                            value: value
+                        }
+                    }))
+                }
+            })), x => derived([...x.options], ([...options]) => {
+                return {
+                    name: x.name,
+                    options: options.map(o => ({
+                        settings: o.settings,
+                        value: o.value
+                    }))
+                }
+            }));
+
+        const selectodMainPlots = mapPlotStores(this.mainPlots)
+        const selectodSubplots = mapPlotStores(this.subPlots);
 
         this.selectedPlots = derived([selectodMainPlots, selectodSubplots], ([mainPlots, subPlots]) => [...mainPlots, ...subPlots]);
-        this.unusedRoles = derived([this.tragedySet, this.selectedPlots], ([tg, ...selectedPlots]) => {
-            const allRoles = getTragedySetRoles(tg);
-            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y]?.roles ?? [])));
-            return allRoles.filter(x => !used.includes(x as any));
-        });
         this.allRoles = derived([this.tragedySet], ([tg]) => {
             const allRoles = getTragedySetRoles(tg);
             return allRoles;
         });
         this.usedRoles = derived([this.selectedPlots], ([...selectedPlots]) => {
-            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y]?.roles ?? [])));
-            return used;
+            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y.name]?.roles ?? [])));
+            const plotlist = selectedPlots.flatMap(x => x.flatMap(y => y));
+            selectedPlots.flatMap(x => x).map(x => {
+                const plot = plots[x.name];
+                plot.scriptSpecified?.map(x => x.type)
+            })
+
+            const additionalPlots = plotlist.flatMap(x => plots[x.name].scriptSpecified?.filter(x => x.type == 'plot' && x.addRolesForPlot).flatMap(additionalPlot => keys(plots[additionalPlot.name as keyof typeof plots]?.roles ?? {}) ?? []) ?? [])
+            return [...new Set([...used, ...additionalPlots])];
         });
-        this.roles = derived([this.selectedPlots], ([...selectiedPlots]) => generateRoleSelection(this, sumGroups(...selectiedPlots.flatMap(x => x.map(y => plots[y]?.roles ?? []))), keys(characters).filter(x => {
-            const char = characters[x];
-            return !('nonSelectableCharacter' in char && char.nonSelectableCharacter);
-        })));
+
+        this.unusedRoles = derived([this.allRoles, this.usedRoles], ([allRoles, usedRoles]) => {
+            return allRoles.filter(x => !usedRoles.includes(x as any));
+        });
+
+
+        this.roles = derived([this.selectedPlots], ([...selectiedPlots]) => {
+            const roleData = [...selectiedPlots.flatMap(x => x.map(y => plots[y.name]?.roles ?? {})),
+
+            ...selectiedPlots.flatMap(x => x.flatMap(y => y.options).filter(x => x.settings.type == 'plot' && x.settings.addRolesForPlot).map(x => plots[x.value as keyof typeof plots]?.roles ?? {}))
+            ];
+            return generateRoleSelection(this, sumGroups(...roleData), keys(characters).filter(x => {
+                const char = characters[x];
+                return !('nonSelectableCharacter' in char && char.nonSelectableCharacter);
+            }))
+        });
 
 
         this.usedCharacters = storeStores(derived(storeStores(this.roles, x => x.selectors), r => r.flat().map(x => x.selectedCharacter)), x => x);

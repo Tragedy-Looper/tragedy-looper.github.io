@@ -409,7 +409,9 @@ function generatePlotsSchema({ roleNames }: Names) {
                                                 "items": [
                                                     { type: 'number' },
                                                     { type: 'number' },
-                                                ]
+                                                ],
+                                                "minItems": 2,
+                                                "maxItems": 2,
                                             }
                                         ]
                                     }] as const)),
