@@ -160,7 +160,9 @@ const Abilitie = {
                                         "Over all Roles": { "type": "boolean" }
                                     },
                                 }
-                            ]
+                            ],
+                            "minItems": 2,
+                            "maxItems": 2,
 
                         }
                     ]
@@ -179,7 +181,9 @@ const Abilitie = {
                                         "Over all Roles": { "type": "boolean" }
                                     },
                                 }
-                            ]
+                            ],
+                            "minItems": 2,
+                            "maxItems": 2,
 
                         }
                     ]
@@ -704,6 +708,8 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                 }
                                                             }
                                                         ],
+                                                        "minItems": 2,
+                                                        "maxItems": 2,
                                                     } as const
                                                 }),
 
@@ -746,6 +752,8 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                 }
                                                             }
                                                         ],
+                                                        "minItems": 2,
+                                                        "maxItems": 2,
                                                     } as const
                                                 }),
 
@@ -820,7 +828,9 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                     }, {
                                                                         "type": "string",
                                                                         "enum": incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name))
-                                                                    }]
+                                                                    }],
+                                                                "minItems": 2,
+                                                                "maxItems": 2,
                                                             },
                                                             "culprit": { "type": "string", "enum": Array.from(characterNames) }
                                                         },
@@ -845,7 +855,9 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                     }, {
                                                                         "type": "string",
                                                                         "enum": incidentsWithoutFake.filter((name) => !names.mobIncidentNames.has(name))
-                                                                    }]
+                                                                    }],
+                                                                "minItems": 2,
+                                                                "maxItems": 2,
                                                             },
                                                             "culprit": { "type": "string", "enum": locations }
                                                         },
@@ -908,7 +920,9 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                                 ] as const;
                                                                             }) ?? [])
                                                                         }
-                                                                    }]
+                                                                    }],
+                                                                "minItems": 2,
+                                                                "maxItems": 2,
                                                             } as const
                                                         ].filter(() => characterAlwaysScpecyfiedExtra && Array.from(roleNames).filter(r => !rolesWithScriptSpecified.includes(r)).length > 0),
 
@@ -948,7 +962,9 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                                 }) ?? [])
                                                                             }
                                                                         } as const
-                                                                    ]
+                                                                    ],
+                                                                    "minItems": 2,
+                                                                    "maxItems": 2,
                                                                 } as const
                                                             })
 
@@ -1049,7 +1065,7 @@ type ReadonlyArrayTransform<T> = T extends readonly (infer U)[]
     : T;
 
 function WriteSchema(schema: ReadonlyArrayTransform<JSONSchema>, type: string) {
-    const outPath = [dataDir, staticDir].map(dir => path.join(dir, `${type}.schema.json`));
+    const outPath = [dataDir, staticDir, srcDir].map(dir => path.join(dir, `${type}.schema.json`));
     outPath.forEach((outPath) => {
         console.log('Schema geschrieben nach', outPath);
         fs.writeFileSync(outPath, JSON.stringify(schema, null, 2), 'utf-8');

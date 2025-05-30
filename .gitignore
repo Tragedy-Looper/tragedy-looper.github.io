@@ -15,6 +15,7 @@ ty/
 src/data.ts
 src/data-translations.ts
 data/*.schema.json
+src/*.schema.json
 src/data-ui-strings.ts
 src/*.g.ts
 static/*.schema.json

@@ -1,0 +1,526 @@
+{
+    "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
+    // For dev purposes
+    // "$schema": "../scripts.schema.json",
+    "scripts": [
+        {
+            "title": "邪悪なる汚染領域 (Evil Contaminated Realm)",
+            "creator": "ペンスキー",
+            "difficultySets": [
+                {
+                    "numberOfLoops": 4,
+                    "difficulty": 4
+                }
+            ],
+            "tragedySet": "Basic Tragedy",
+            "mainPlot": [
+                "The Sealed Item"
+            ],
+            "subPlots": [
+                "Circle of Friends",
+                "Paranoia Virus"
+            ],
+            "daysPerLoop": 6,
+            "cast": {
+                "Boy Student": "Brain",
+                "Nurse": "Cultist",
+                "Alien": "Friend",
+                "Rich Man’s Daughter": "Friend",
+                "Forensic Specialist": "Conspiracy Theorist",
+                "": "Conspiracy Theorist",
+                "Soldier": "Person",
+                "Police Officer": "Person",
+                "Office Worker": "Person",
+                "Teacher": "Person"
+            },
+            "incidents": [
+                {
+                    "day": 2,
+                    "incident": "Suicide",
+                    "culprit": "Teacher"
+                },
+                {
+                    "day": 5,
+                    "incident": "Foul Evil",
+                    "culprit": "Boy Student"
+                },
+                {
+                    "day": 6,
+                    "incident": "Increasing Unease",
+                    "culprit": "Office Worker"
+                }
+            ],
+            "specialRules": [
+                ""
+            ],
+            "victory-conditions": "This script can be developed in two ways: CS-based and PP-based. It is up to the scriptwriter to decide which one to use, so please choose according to your preference.\n\nIn either case, it is important to identify the culprit of the incident. The Police Officer will be very useful.",
+            "story": "",
+            "mastermindHints": "The scriptwriter's means of victory are killing The Sealed Item and Friend. However, since the use of Paranoia Virus is essential to killing Friend, we will first aim to win with The Sealed Item.\n\nIn the case of CS axis, CS of the main plot is very important.\n\nPut Intrigue on boards other than City and Alien to expand the possibilities of the main plot. For that, incidents are a strong support. Since you want to cause all incidents while concealing the culprit, scatter Paranoia with all your might. You can also use Conspiracy Theorist from the beginning. Be careful of the movement of the Police Officer so that you do not narrow down the culprit of Foul Evil.\n\nIn the case of PP axis, use Cultist to win the first loop. If you pass Intrigue to Shrine, it is better not to cause Foul Evil. The first loop is very stable, but since you want to hide the Cultist until the final battle, you need to move in such a way that the Alien's Goodwill ability is never used. Use Forbid Goodwill at full power, but be careful of Rich Man's Daughter and Forensic Specialist's Goodwill abilities.\n\nAs the game progresses, it becomes more difficult to win with The Sealed Item. Then it's time to use Paranoia Virus.\n\nOn the final day, leave the person and friend alone and aim for a surprise attack by turning them into a Serial Killer with Increasing Unease. If the person has one Paranoia counter on them, they can be a candidate, so it is important to spread Paranoia.\n\nIn the final battle, hide the Cultist. It is a role that is difficult to find, but it may be revealed by Nurse's trait, Paranoia Virus, Forensic Specialist, etc."
+        },
+        {
+            "title": "Thunder in the City",
+            "creator": "Redless",
+            "difficultySets": [
+                {
+                    "numberOfLoops": 5,
+                    "difficulty": 0
+                }
+            ],
+            "tragedySet": "First Steps",
+            "mainPlot": [
+                "Light of the Avenger"
+            ],
+            "subPlots": [
+                "An Unsettling Rumor"
+            ],
+            "daysPerLoop": 5,
+            "cast": {
+                "Pop Idol": "Brain",
+                "Girl Student": "Conspiracy Theorist",
+                "Journalist": "Person",
+                "Patient": "Person",
+                "Shrine Maiden": "Person",
+                "Boy Student": "Person",
+                "Rich Man’s Daughter": "Person"
+            },
+            "incidents": [
+                {
+                    "day": 3,
+                    "incident": "Hospital Incident",
+                    "culprit": "Boy Student"
+                },
+                {
+                    "day": 4,
+                    "incident": "Murder",
+                    "culprit": "Rich Man’s Daughter"
+                },
+                {
+                    "day": 5,
+                    "incident": "Missing Person",
+                    "culprit": "Shrine Maiden"
+                }
+            ],
+            "specialRules": [
+                ""
+            ],
+            "victory-conditions": "",
+            "story": "",
+            "mastermindHints": "This script is in an awkward spot, since it requires a fair bit of skill to solve and because it's very long, yet it's a first steps script. the kind of people who would like this script would definitely be good at this game, and if that's the case, why play a first steps script with them? maybe if some people haven't played it before and some have? anyways, this script is meant to introduce the players to deep bluffing and trickery, 'coverups' in other words. to do that, we have the brain and increasing unease subplot to obfuscate who the brain is. loop 1, you should try to place an intrigue on the city, school, and hospital. I'd put the 2 on the city since it's most important and they're less likely to block it, and one on the hospital to make it easier to set the incident off (if you definitely don't want the incident, you can also do school). then, you want to set off the hospital incident by placing a paranoia AND using the contheorist's ability on the boy student on day 3, to surprise the protagonists, while placing paranoia on other people to bluff the culprits. alternately, if they blocked on hospital or something, try to get them to block there again for the free school intrigue, move the journalist or pop idol over (journalist probably better) and/or trigger missing person so that you can go for the place to protect bluff. in future loops, try to confuse the protagonists about who and where the brain is, and who does the hospital incident. the presence of the murder incident makes it harder to bluff that RMD does the hospital incident, but makes it easier to bluff place to protect and ultimately a hideous script. slowly, more and more things will be revealed over the course of five loops. it's subtle, it's a marathon, and it requires GOOD play from the protagonists to have any chance at all, but I hope and think it does a suitable job introducing the more trickery focused side of looper."
+        },
+        {
+            "title": "A Cruel Shrine Maiden's Thesis",
+            "creator": "Redless",
+            "difficultySets": [
+                {
+                    "numberOfLoops": 3,
+                    "difficulty": 0
+                },
+                {
+                    "numberOfLoops": 4,
+                    "difficulty": 0
+                }
+            ],
+            "tragedySet": "First Steps",
+            "mainPlot": [
+                "A Place to Protect"
+            ],
+            "subPlots": [
+                "Shadow of the Ripper"
+            ],
+            "daysPerLoop": 4,
+            "cast": {
+                "Nurse": "Key Person",
+                "Pop Idol": "Cultist",
+                "Girl Student": "Conspiracy Theorist",
+                "Shrine Maiden": "Serial Killer",
+                "Class Rep": "Person",
+                "Patient": "Person",
+                "Office Worker": "Person"
+            },
+            "incidents": [
+                {
+                    "day": 1,
+                    "incident": "Increasing Unease",
+                    "culprit": "Office Worker"
+                },
+                {
+                    "day": 4,
+                    "incident": "Missing Person",
+                    "culprit": "Nurse"
+                }
+            ],
+            "specialRules": [
+                ""
+            ],
+            "victory-conditions": "",
+            "story": "",
+            "mastermindHints": "This whole script revolves around missing person. It will let you drag the nurse into the maiden's path, and also let you stack some more intrigue on the school. It's your \"easy out\", everything else in the script lives in service of it. The first day you should aim to serial kill the nurse. LOL! Gotem. Another loop, drop paranoia on the OW, and move the girl student left. By doing this, you will be in a good spot to MP. If people don't die, stack the school and set to work adding intrigue. If people do die, try to position the shrine maiden alone so that you can MP the nurse over. Another loop, try and stack people in the school and obfuscate who exactly the cultist is. Finally, try and win the final loop via missing person shenanigans, which is surprisingly hard to do. You might consider playing this instead of the first script, or in place of the second script if your players don't mind you crushing their spirits by doing the same BS strat that characterizes the first script, a second time in a row. I believe this is very balanced. But of course you have to contend with the repetition of serial killer if you're playing this after the first script. "
+        },
+        {
+            "title": "悪辣なる報道 (Scathing Report)",
+            "creator": "ペンスキー",
+            "difficultySets": [
+                {
+                    "numberOfLoops": 6,
+                    "difficulty": 8
+                }
+            ],
+            "tragedySet": "Basic Tragedy",
+            "mainPlot": [
+                "Murder Plan"
+            ],
+            "subPlots": [
+                "The Hidden Freak",
+                "Threads of Fate"
+            ],
+            "daysPerLoop": 5,
+            "cast": {
+                "Office Worker": "Key Person",
+                "Boss": [
+                    "Killer",
+                    {
+                        "Turf": "Hospital"
+                    }
+                ],
+                "Transfer Student": [
+                    "Brain",
+                    {}
+                ],
+                "A.I.": "Serial Killer",
+                "Journalist": "Friend",
+                "Godly Being": [
+                    "Person",
+                    {}
+                ],
+                "Patient": "Person",
+                "Soldier": "Person",
+                "Class Rep": "Person",
+                "Rich Man’s Daughter": "Person"
+            },
+            "incidents": [
+                {
+                    "day": 1,
+                    "incident": "Suicide",
+                    "culprit": "Office Worker"
+                },
+                {
+                    "day": 2,
+                    "incident": "Butterfly Effect",
+                    "culprit": "Godly Being"
+                },
+                {
+                    "day": 3,
+                    "incident": "Increasing Unease",
+                    "culprit": "Journalist"
+                },
+                {
+                    "day": 4,
+                    "incident": "Faraway Murder",
+                    "culprit": "Transfer Student"
+                },
+                {
+                    "day": 5,
+                    "incident": "Spreading",
+                    "culprit": "Rich Man’s Daughter"
+                }
+            ],
+            "specialRules": [
+                ""
+            ],
+            "victory-conditions": "This is a very unreasonable script. Although six loops seems long at first glance, the time given to the protagonist is shorter than expected.\nThe final battle is a game of luck, so it is recommended to escape the loop, but you will be required to understand the entire script and place your cards perfectly. ",
+            "story": "",
+            "mastermindHints": "Up until the third loop, the scriptwriter's means of victory are strictly defined. By following this, you can make the protagonist feel despair with each loop.\n\n-1st loop: Murder of Friend by Serial Killer\n\n-2nd loop: Suicide of Key Person\n\n-3rd loop onwards: PP1 with Faraway MurderThe 2nd loop is preparation time. By following the template, you can set up a vicious PP from the 3rd loop onwards. However, if you do not place a Goodwill counter on the Office Worker in the 1st loop, the script will fall apart. Keep placing Forbid Goodwill on the Boss and encourage the Office Worker to use his ability. The 3rd loop is where the real action begins. From this point onwards, keep placing Forbid Goodwill on the A.I. and Paranoia+1 on the Journalist every day to cause Increasing Unease. Put that Paranoia on Transfer Student and Intrigue on the Office Worker. By following the template the next day, you can be sure to win with Faraway Murder. Note that you don't have to place Intrigue on the Journalist and Office Worker on the 4th day. If the Journalist doesn't have Paranoia-1, prepare Intrigue the next day. By doing so, you can place Forbid Goodwill on the A.I. on the 4th day as well. Aim for Spreading to occur on the 4th loop. If Spreading occurs after the 4th loop, you can prevent the Office Worker from padding their Goodwill and losing the chance to escape the loop. Hide the Killer in the final battle. Do not refuse the boss's Goodwill ability.\n\nThe way for the protagonist to win is to cause Spreading with the A.I. and remove the Goodwill counter from the Journalist. The steps to do this are as follows.\n\nFirst, place Paranoia-1 on the Journalist until the 2nd day, and place 3 Goodwill on Rich Man's Daughter.\n\nThen, on the third day, make sure Rich Man's Daughter is not in the Shrine, and if there is a card on Transfer Student, put Paranoia-1 on it. During this time, the Office Worker must not have Intrigue, so keep Forbid Intrigue on it until the third day. However, if the Office Worker is free, try Goodwill+1 on the A.I.\n\nThen the writer must follow the template for the fourth day, and the A.I. and Rich Man's Daughter will be free, so the A.I.'s Goodwill ability can be used all at once.\n\nNote that you can take care of Spreading by putting Forbid Intrigue on the Journalist here. Thus, by removing the Goodwill counter from the Journalist here, you can almost certainly seal Increasing Unease in the next loop.\n\nIf you get this far, the protagonist's victory is almost certain."
+        },
+        {
+            "title": "Escort Mission",
+            "creator": "davidchaeB",
+            "difficultySets": [
+                {
+                    "numberOfLoops": 4,
+                    "difficulty": 0
+                }
+            ],
+            "tragedySet": "Basic Tragedy",
+            "mainPlot": [
+                "Murder Plan"
+            ],
+            "subPlots": [
+                "Paranoia Virus",
+                "Threads of Fate"
+            ],
+            "daysPerLoop": 6,
+            "cast": {
+                "Rich Man’s Daughter": "Key Person",
+                "Pop Idol": "Killer",
+                "Boss": [
+                    "Brain",
+                    {
+                        "Turf": "School"
+                    }
+                ],
+                "Class Rep": "Conspiracy Theorist",
+                "Henchman": "Person",
+                "Nurse": "Person",
+                "Informer": "Person",
+                "Mystery Boy": "Factor"
+            },
+            "incidents": [
+                {
+                    "day": 2,
+                    "incident": "Murder",
+                    "culprit": "Class Rep"
+                },
+                {
+                    "day": 4,
+                    "incident": "Butterfly Effect",
+                    "culprit": "Mystery Boy"
+                },
+                {
+                    "day": 5,
+                    "incident": "Faraway Murder",
+                    "culprit": "Nurse"
+                },
+                {
+                    "day": 6,
+                    "incident": "Missing Person",
+                    "culprit": "Rich Man’s Daughter"
+                }
+            ],
+            "specialRules": [
+                ""
+            ],
+            "victory-conditions": "",
+            "story": "",
+            "mastermindHints": "You have very strong power play. They can ruin it with Threads into Virus."
+        },
+        {
+            "title": "Fall-Sakura Gathering",
+            "creator": "Kyokei",
+            "difficultySets": [
+                {
+                    "numberOfLoops": 4,
+                    "difficulty": 3
+                },
+                {
+                    "numberOfLoops": 5,
+                    "difficulty": 6
+                }
+            ],
+            "tragedySet": "Basic Tragedy",
+            "mainPlot": [
+                "Murder Plan"
+            ],
+            "subPlots": [
+                "A Love Affair",
+                "The Hidden Freak"
+            ],
+            "daysPerLoop": 5,
+            "cast": {
+                "Sacred Tree": "Key Person",
+                "Soldier": "Killer",
+                "Police Officer": "Brain",
+                "Doctor": "Lover",
+                "Class Rep": "Loved One",
+                "Shrine Maiden": "Serial Killer",
+                "Sect Founder": "Friend",
+                "Copycat": "Brain",
+                "Mystery Boy": "Conspiracy Theorist"
+            },
+            "incidents": [
+                {
+                    "day": 2,
+                    "incident": "Suicide",
+                    "culprit": "Class Rep"
+                },
+                {
+                    "day": 4,
+                    "incident": "Butterfly Effect",
+                    "culprit": "Doctor"
+                },
+                {
+                    "day": 5,
+                    "incident": "Increasing Unease",
+                    "culprit": "Sect Founder"
+                }
+            ],
+            "specialRules": [
+                ""
+            ],
+            "victory-conditions": "",
+            "story": " A giant cherry tree in the middle of the shrine. It has been used to keep evil powers away for centuries and is said to bloom in full even in fall. Hence, the worshipping of this tree has a long history in this little town, and for generations, this local religion has been passed down since the founder. But that's far from the truth. Long ago, a warlord hid a large sum of money under the tree and died, and this religious lie has been kept alive to protect the treasure. And some individuals, who have found out this truth, are coming to town. They have fooled the shrine maiden and made her insane. They lured a young boy into town and pushed him down the path of evil. Their goal is to cut down the cherry tree and take the treasure for themselves. The Protagonists must find out their scheme and protect the secret. ",
+            "mastermindHints": " In loop 1, put a Vertical Movement on the Prophet and end everything straight away. The remaining two actions can be Forbid Goodwill and Horizontal Movement on the Copycat. If you by some reason should fail to end it there, put some Unease on the Prophet with the Conspiracy Theorist’s ability. From loop 2 and on, start aiming for a Loved One victory. However, for that, the Suicide on day 2 is a crutch. The best is if Class Rep has exactly 1 Unease on day 2. The Spreading Unease of the Prophet has extreme explosive power. If the Class Rep lives, put 1 Intrigue and 1 Unease on her, and you’ve basically won. Or you could put 2 Intrigue on the Holy Tree and kill it with the Murderer. It should be easy if you use the Conspiracy Theorist’s ability. It looks as if it’s easy to win, but the roles are as easily revealed too, so take great care. If you put cards on the two Murderers, and total 4 Intrigue on them, you can win on pure luck, but you’ll end up revealing both Murderers. If you put Intrigue on the Holy Tree outside of Spreading Unease, you won’t have time for much more, and it’s hard to win by just that. It’s next to hopeless to hide much for the Final Guess. You need to stop the deaths of the Friend, Loved One, and Lover, and try to desperately cloud who are the Murderers and Brain."
+        },
+        {
+            "title": "Crushed by the Hospital Building in Doronoki",
+            "creator": "ロキルス",
+            "difficultySets": [
+                {
+                    "numberOfLoops": 5,
+                    "difficulty": 4
+                },
+                {
+                    "numberOfLoops": 4,
+                    "difficulty": 5
+                }
+            ],
+            "tragedySet": "Basic Tragedy",
+            "mainPlot": [
+                "Murder Plan"
+            ],
+            "subPlots": [
+                "Paranoia Virus",
+                "Unknown Factor X"
+            ],
+            "daysPerLoop": 6,
+            "cast": {
+                "Informer": "Key Person",
+                "Class Rep": "Killer",
+                "Boss": [
+                    "Brain",
+                    {
+                        "Turf": "Hospital"
+                    }
+                ],
+                "Transfer Student": [
+                    "Conspiracy Theorist",
+                    {}
+                ],
+                "Boy Student": "Factor",
+                "Shrine Maiden": "Person",
+                "Alien": "Person",
+                "Office Worker": "Person",
+                "Henchman": "Person"
+            },
+            "incidents": [
+                {
+                    "day": 2,
+                    "incident": "Suicide",
+                    "culprit": "Boy Student"
+                },
+                {
+                    "day": 4,
+                    "incident": "Hospital Incident",
+                    "culprit": "Henchman"
+                },
+                {
+                    "day": 5,
+                    "incident": "Faraway Murder",
+                    "culprit": "Transfer Student"
+                }
+            ],
+            "specialRules": [
+                ""
+            ],
+            "victory-conditions": "",
+            "story": "The hospital was empty, a ruin. Shut down by a combination of unfortunate events and political decisions. Forgotten, and abandoned. \n\nBut it harbored a secret. Here, in this very building, they had researched a new type of virus. One woman who worked as an informant had gotten ahold of this information, and the former CEO of the hospital, the boss, decided to silence her once and for all. Dedicated to his task, the boss plans to send his henchman to eliminate the evidence by destroying the building entirely, together with the boy who had contracted the virus. \n\nBut, one day a girl shows up, transferred back to the school in town. A girl with ties to the hospital and a burning hatred, accelerating the looming tragedy. \n\nCan the players outmaneuver the henchman and the vengeful girl?",
+            "mastermindHints": "The Henchman should start in the Hospital in every loop. \n\nThe first thing to aim for is a Factor kill. First loop, Intrigue +2 Intrigue on the School, Intrigue +1 on the City and a bluff on the Hospital. If the Boss is in the City, use him to place the second Intrigue on the City there, and Suicide the Factor. Use the same cards in Loop 2 but interchange them. \n\nIf that gets stopped, then you should aim for a Hospital Horror. The Boss can spread Intrigue here and there. The Goodwill effects of the Henchman and Alien will get in your way. Spread out Unease everywhere to make it hard to pinpoint the culprit. \n\nIf that also gets stopped, then it’s the Transfer Student. With the Conspiracy Theorist’s ability, you will for sure be able to activate Faraway Murder, so have 2 Intrigue on the Informant (and Boy Student). \n\nWith the Paranoia Virus, you might activate a lot of Serial Killers, but beware so you don’t get trapped in that. You can use that to get a win if you need. \n\nFor the Final Guess, you need to hide the Murderer. Don’t use the Murderer’s ability unless you can safely do so. "
+        },
+        {
+            "title": "The Illusion Under the Cherry Tree",
+            "creator": "BakaFire",
+            "difficultySets": [
+                {
+                    "numberOfLoops": 4,
+                    "difficulty": 6
+                }
+            ],
+            "tragedySet": "Basic Tragedy",
+            "mainPlot": [
+                "The Sealed Item"
+            ],
+            "subPlots": [
+                "An Unsettling Rumor",
+                "The Hidden Freak"
+            ],
+            "daysPerLoop": 7,
+            "cast": {
+                "Doctor": "Brain",
+                "Boy Student": "Cultist",
+                "Godly Being": [
+                    "Conspiracy Theorist",
+                    {
+                        "enters on loop": 3
+                    }
+                ],
+                "Rich Man’s Daughter": "Serial Killer",
+                "Illusion": "Friend",
+                "Shrine Maiden": "Person",
+                "Office Worker": "Person",
+                "Informer": "Person",
+                "Scientist": "Person"
+            },
+            "incidents": [
+                {
+                    "day": 2,
+                    "incident": "Increasing Unease",
+                    "culprit": "Shrine Maiden"
+                },
+                {
+                    "day": 4,
+                    "incident": "Butterfly Effect",
+                    "culprit": "Scientist"
+                },
+                {
+                    "day": 5,
+                    "incident": "Missing Person",
+                    "culprit": "Illusion"
+                },
+                {
+                    "day": 7,
+                    "incident": "Faraway Murder",
+                    "culprit": "Rich Man’s Daughter"
+                }
+            ],
+            "specialRules": [
+                ""
+            ],
+            "victory-conditions": "",
+            "story": "She has materialized in this world to protect the Seal at the Shrine. And by chance, she becomes friends to the Protagonists. The enemies are many: A fanatic who has lost his mind, am artistic killer, and an amnesiac god. The Protagonists must fight with her to protect the Seal, helped by her strange abilities. But the Illusion will fade in the end. It will fade. Hopefully, it will not do so in vain. And beautifully, under the Cherry Tree.",
+            "mastermindHints": "You’ll aim for Intrigue at the Shrine by using several methods, such as An Unsettling Rumor, Missing Person, and Action cards, as well as a killing of the Illusion by the Serial Killer or Faraway Murder. It’s easiest if you don’t put all your eggs in one basket though. \n\nAs the Illusion is there, the setting of Action cards on the board is much more powerful. For example, assume that you’ve set Intrigue +1 on the Shrine and Unease +1 on the School. If the Illusion is in the School, you’ll get 1 Unease on her, which looks good, as well as an unsettling Intrigue on the Shrine. Try to use this as a way of confusing the Protagonists as much as you can. Bluntly put, you can put an Action card on the board where the Illusion is, every single day. \n\nWinning by Faraway Murder is a safe bet. The Protagonists will probably pump Goodwill on the Illusion to remove her from the board. You can’t completely stop that with Forbid Goodwill but try to mess with that as much as you can. \n\nFor the Final Guess, hide the Conspiracy Theorist or the Brain. Once the Godly Being enters in loop 3, it’s easy to hide either of them. "
+        },
+        {
+            "title": "In the Godless Temple",
+            "creator": "Kaijin",
+            "difficultySets": [
+                {
+                    "numberOfLoops": 3,
+                    "difficulty": 1
+                }
+            ],
+            "tragedySet": "First Steps",
+            "mainPlot": [
+                "Light of the Avenger"
+            ],
+            "subPlots": [
+                "A Hideous Script"
+            ],
+            "daysPerLoop": 4,
+            "cast": {
+                "Alien": "Brain",
+                "Police Officer": "Conspiracy Theorist",
+                "Office Worker": "Curmudgeon",
+                "Patient": "Friend",
+                "Shrine Maiden": "Person",
+                "Pop Idol": "Person"
+            },
+            "incidents": [
+                {
+                    "day": 2,
+                    "incident": "Missing Person",
+                    "culprit": "Office Worker"
+                },
+                {
+                    "day": 3,
+                    "incident": "Hospital Incident",
+                    "culprit": "Shrine Maiden"
+                }
+            ],
+            "specialRules": [
+                ""
+            ],
+            "victory-conditions": "In the Godless Temple is an advanced training script, to be played after the First Script. This is a perfect script to learn how to use Intrigue counters. After The First Script and this, you’ll get the hang of most victory tactics for the Mastermind.",
+            "story": "A decrepit shrine at the outskirts of town. Whatever is hallowed there, it’s not a god. And it wants revenge. Revenge on the shrine maiden that summoned it and consequently all humans. \n\nThis being confuses people and pushes the ill will of the broken shrine maiden and less-than-good-tempered people onto the Protagonists. Will the heroes be able to stop this incarnation of darkness and evil from getting its revenge?",
+            "mastermindHints": "The basic way to win is to have 2 Intrigue on the Shrine at the end of the loop. It’s good to also have 2 Intrigue on the City, so that you can hide who the Brain is. When you use the Brain’s ability, see to it that the Office Worker and the Alien are in the same area.\n\nAnother way to win is the Hospital Horror, while having 1 or more Intrigue on the Hospital, killing the Patient who is the Friend, triggering a win condition for you.\n\nIn either case, you should get the Office Worker to trigger Missing Person to help place Intrigue. Use the Conspiracy Theorist ability from Day 1. But if you think you can win with 2 Intrigue on the Shrine, don’t aim for the Hospital Horror. It’s best to hide who the culprit is there, and to place a lot of Unease on them once you need to.\n\nVictory conditions:\n1. At loop end, have 2 Intrigue on the Shrine, triggering the loss condition of Fire of the Avenger.\n\n2. At end of day 3, have at least 1 Intrigue on the Hospital and at least 2 Unease on the Shrine Maiden, triggering the Hospital Horror, killing the Patient, and triggering the Friend’s loss condition at loop end.\n\n3. At end of day 3, have at least 2 Intrigue on the Hospital and at least 2 Unease on the Shrine Maiden, triggering the Hospital Horror, killing the Protagonists.\n\nA PLAY GUIDE FOR “IN THE GODLESS TEMPLE”\nWe present a briefer play-through guide for this script.\n\nDay 1: Card playing phase\nOn loop 1, play these cards:\n• City: Intrigue +2\n• Shrine: Intrigue +1\n• Hospital: Any card (mainly to bluff)\n\nOn loop 2, play any of the below:\n• City or Shrine: Intrigue +1, Intrigue +2, or any other card\n• Hospital: Intrigue +1 or any other card\n• Office Worker: Unease +1\n• Shrine Maiden: Vertical Movement\n\nDay 1-4: Mastermind ability step\n• If it’s day 1 or 2, and the Office Worker and Police Officer are in the same area, place an Unease token on the Office Worker.\n• If it’s day 1, 2 or 3, and the Shrine Maiden and Police Officer are in the same area, and you have 1 or more Intrigue on the Hospital, put an Unease on the Shrine Maiden.\n• If the Alien and Police Officer are together at the City or Shrine, and you have 1 or less Intrigue on that location, place one Intrigue there.\n• If the Alien is in the Shrine, and you really need to, place 1 Intrigue there.\n\nDay 2-4: Card playing phase\nPlay cards or move, as needed:\n• City or Shrine: Intrigue +1, Intrigue +2 or any other card.\n• Hospital: Intrigue +1 or any other card.\n• Shrine Maiden: Unease +1, Forbid Goodwill, or move her away from the Shrine.\n• Alien: Move it to Shrine or City.\n• Police Officer: Move to same location as Shrine Maiden or Office Worker.\n• Office Worker: Unease +1 or move to same location as Alien.\n• Pop Idol: Forbid Goodwill or move her so she can’t use her Goodwill ability.\n• Patient: Don’t place anything on him."
+        }
+    ]
+}

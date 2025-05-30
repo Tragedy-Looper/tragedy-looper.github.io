@@ -53,13 +53,10 @@ export const load: LayoutServerLoad = ({ params }) => {
 
     const tragedySets = [...new Set((scripts as unknown as Script[]).map(x => x.set?.name ?? '').filter(x => x.length > 0))];
     const tragedySetImages = Object.fromEntries(tragedySets.map(ts => [ts, normalizeTragedyName(ts)] as const).filter(([, fileName]) => {
-        // console.log(`image ${path} is included ${packageImages.includes(path)} in ${JSON.stringify(packageImages)}`)
-        console.log(`checking for tragedy set image: ${fileName} (${normalizeTragedyName(fileName)})`, packageImages);
-        return  fileName in packageImages;
+        return fileName in packageImages;
     }).map(([keys, path]) => [keys, `${base}/packages/${path}${packageImages[path]}`])) as Partial<Record<string, string>>;
 
 
-    console.log(`available paces images`, tragedySetImages)
 
 
     return {

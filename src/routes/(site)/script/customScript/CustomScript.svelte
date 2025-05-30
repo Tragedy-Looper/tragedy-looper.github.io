@@ -21,6 +21,9 @@
   import { saveScript } from '../../../../storage';
   import { derived } from 'svelte/store';
   import { onMount } from 'svelte';
+  import { validateScript } from '../../../../model/script';
+  import type { ValidationError } from '@apideck/better-ajv-errors';
+  import Translation from '../../../../view/translation.svelte';
 
   const model = new CustomScript();
 
@@ -48,6 +51,7 @@
   let importJson: string | undefined;
 
   let showImport = false;
+  let error = [] as ValidationError[];
 
   // let searchParams: URLSearchParams | undefined;
 
@@ -60,7 +64,13 @@
     // };
     const serilizedScript = searchParams?.get('script');
     if (serilizedScript) {
-      model.import(JSON.parse(serilizedScript));
+      const validation = validateScript(serilizedScript);
+      if (!validation.valid) {
+        error = validation.errors;
+        console.error('Validation errors:', error);
+        return;
+      }
+      model.import(validation.script);
     } else {
       model.difficultySets.set([{ numberOfLoops: 4, difficulty: 3 }]);
     }
@@ -87,13 +97,56 @@
       <button
         disabled={!importJson}
         on:click={() => {
-          model.import(JSON.parse(importJson ?? ''));
-          showImport = false;
+          const result = validateScript(JSON.parse(importJson ?? '{}'));
+
+          if (result.valid) {
+            model.import(result.script);
+            showImport = false;
+          } else {
+            error = result.errors;
+            console.error('Validation errors:', error);
+          }
+
+          return;
         }}>Import</button
       >
       <button on:click={() => (showImport = false)}>Cancel</button>
     </div>
   </form>
+</dialog>
+
+<dialog open={error.length > 0}>
+  <article>
+    <header>
+      <button aria-label="Close" rel="prev" on:click={() => (error = [])}></button>
+      <p>
+        <strong>Error</strong>
+      </p>
+    </header>
+    <p>There where errors while validating your script.</p>
+    <p>Here is a list of the errors:</p>
+    <ul>
+      {#each error as e}
+        {@const context = e.context}
+        <li>
+          <strong>{e.path}</strong>: <Translation translationKey={e.message} /><br />
+          {#if e.suggestion}
+            <small>
+              <Translation translationKey={e.suggestion} />
+            </small>
+          {/if}
+          {#if 'allowedValues' in context && typeof context.allowedValues === 'object' && Array.isArray(context.allowedValues)}
+            <Translation translationKey={'Allowed Values'} />
+            <ul>
+              {#each context.allowedValues as av}
+                <li>{av}</li>
+              {/each}
+            </ul>
+          {/if}
+        </li>
+      {/each}
+    </ul>
+  </article>
 </dialog>
 
 <button

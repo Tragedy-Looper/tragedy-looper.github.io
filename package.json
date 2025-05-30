@@ -13,6 +13,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"devDependencies": {
+		"@apideck/better-ajv-errors": "^0.3.6",
 		"@picocss/pico": "^2.1.1",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.16.0",
@@ -20,6 +21,7 @@
 		"@types/jsdom": "^21.1.7",
 		"@types/markdown-it": "^14.1.2",
 		"@types/node": "^22.15.21",
+		"ajv": "^8.17.1",
 		"jsdom": "^26.1.0",
 		"json-schema-to-typescript": "^15.0.4",
 		"markdown-it": "^14.1.0",
