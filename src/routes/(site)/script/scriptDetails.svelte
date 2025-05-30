@@ -5,9 +5,8 @@
 
   import { characterscomesInLater, type CharacterName } from '../../../model/characters';
   import { stringifySearchForPlayerAid } from '../../../serilezer';
-  import { distinct, keys, require } from '../../../misc';
+  import { distinct, keys } from '../../../misc';
   import { base } from '$app/paths';
-  import Option from './customScript/option.svelte';
   import Translation from '../../../view/translation.svelte';
   import { getString } from '../+layout.svelte';
   import type { Script } from '../../../scripts.g';

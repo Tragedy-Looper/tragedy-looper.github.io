@@ -5,7 +5,7 @@
   import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
   import ExportView from '../../../view/exportView.svelte';
-  import { loadAllLocalScripts, loadScript } from '../../../storage';
+  import { deleteLocalScript, loadAllLocalScripts, loadScript } from '../../../storage';
   import type { Script } from '../../../scripts.g';
   import Rating from './rating.svelte';
   import Translation from '../../../view/translation.svelte';
@@ -14,6 +14,8 @@
   const scripts = Object.values(scriptLookup);
 
   let searchParams = $state(undefined as URLSearchParams | undefined);
+
+  let shouldDeleteScript = $state(undefined as Script | undefined);
 
   let ownScripts: Script[] = $state([]);
   onMount(async () => {
@@ -37,13 +39,7 @@
     ) as (typeof tabs)[number];
   });
 
-  let setName = $derived(searchParams?.get('setName'));
-  let title = $derived(searchParams?.get('title'));
-  let author = $derived(searchParams?.get('author'));
-
   let selectedSet = $state('');
-
-  let serilizedScript = $derived(searchParams?.get('script'));
 
   const packageImages = getAvialablePackageImages() ?? {};
 
@@ -59,6 +55,35 @@
 </script>
 
 <ExportView bind:exportJson />
+
+<dialog open={shouldDeleteScript !== undefined}>
+  <article>
+    <header>
+      <h2>Delete Script</h2>
+    </header>
+    <p>
+      Are you sure you want to delete the script
+      <strong>{shouldDeleteScript?.title}</strong>?
+    </p>
+    <footer>
+      <button
+        class="outline"
+        onclick={() => {
+          shouldDeleteScript = undefined;
+        }}>Cancel</button
+      >
+      <button
+        class="outline"
+        onclick={() => {
+          deleteLocalScript(shouldDeleteScript!).then(() => {
+            ownScripts = ownScripts.filter((x) => x !== shouldDeleteScript);
+            shouldDeleteScript = undefined;
+          });
+        }}>Delete</button
+      >
+    </footer>
+  </article>
+</dialog>
 
 <main class="container">
   <!-- <main class="container"> -->
@@ -98,13 +123,39 @@
         <h2>Your Creations</h2>
       </header>
       {#each ownScripts as s}
-        <div>
-          <a href={`${base}/script/overview/?script=${encodeURIComponent(JSON.stringify(s))}`}
+        <div style="display: flex; align-items: center;  gap: 0.5rem;">
+          <a
+            style="flex-grow: 2;"
+            href={`${base}/script/overview/?script=${encodeURIComponent(JSON.stringify(s))}`}
             >{s.set?.number ?? ''}
             {s.title} by {s.creator} [{s.tragedySet}] difficulty {join(
               s.difficultySets?.map((x) => x.difficulty.toString()) ?? [],
               ' / '
             )}</a
+          >
+          <button
+            aria-label="Delete Script"
+            class="outline"
+            style="align-self: flex-end;"
+            onclick={() => {
+              shouldDeleteScript = s;
+            }}
+            ><svg
+              width="1.5rem"
+              height="1.5rem"
+              viewBox="0 0 1024 1024"
+              style="fill: var(--pico-color);"
+              class="icon"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path
+                d="M32 241.6c-11.2 0-20-8.8-20-20s8.8-20 20-20l940 1.6c11.2 0 20 8.8 20 20s-8.8 20-20 20L32 241.6zM186.4 282.4c0-11.2 8.8-20 20-20s20 8.8 20 20v688.8l585.6-6.4V289.6c0-11.2 8.8-20 20-20s20 8.8 20 20v716.8l-666.4 7.2V282.4z"
+                fill=""
+              /><path
+                d="M682.4 867.2c-11.2 0-20-8.8-20-20V372c0-11.2 8.8-20 20-20s20 8.8 20 20v475.2c0.8 11.2-8.8 20-20 20zM367.2 867.2c-11.2 0-20-8.8-20-20V372c0-11.2 8.8-20 20-20s20 8.8 20 20v475.2c0.8 11.2-8.8 20-20 20zM524.8 867.2c-11.2 0-20-8.8-20-20V372c0-11.2 8.8-20 20-20s20 8.8 20 20v475.2c0.8 11.2-8.8 20-20 20zM655.2 213.6v-48.8c0-17.6-14.4-32-32-32H418.4c-18.4 0-32 14.4-32 32.8V208h-40v-42.4c0-40 32.8-72.8 72.8-72.8H624c40 0 72.8 32.8 72.8 72.8v48.8h-41.6z"
+                fill=""
+              /></svg
+            ></button
           >
         </div>
       {/each}
@@ -267,6 +318,19 @@
       align-items: center;
       justify-content: center;
     }
+  }
+
+  button:has(svg) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 
   input:has(+ .hideBoxArt) {

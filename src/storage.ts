@@ -183,3 +183,17 @@ export async function loadScript(params: { title?: string | null; author?: strin
     const globalResults = Object.values(scripts).filter(filter).map(x => ({ ...x, local: undefined }));
     return [...localResults.map(x => ({ ...x, local: true })), ...globalResults];
 }
+
+export async function deleteLocalScript(script: Script) {
+    if (!browser) {
+        throw new Error('We need to run in Browser');
+    }
+    const db = await openScriptDB();
+    return new Promise<void>((resolve, reject) => {
+        const tx = db.transaction("scripts", "readwrite");
+        const store = tx.objectStore("scripts");
+        store.delete(scriptKey(script));
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => reject(tx.error);
+    });
+}

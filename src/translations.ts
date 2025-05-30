@@ -168,7 +168,6 @@ export function getStringForLanguage<TKey extends string | undefined>(key: TKey,
 
 
     Object.entries(params[0] ?? {}).forEach(([name, value]) => {
-        console.log(`Replacing {${name.toString()}} with ${value} in "${translated}" (${key}) for language "${lang}"`);
         translated = translated.replaceAll(`{${name.toString()}}`, `${value}`);
     })
 
