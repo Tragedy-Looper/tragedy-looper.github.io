@@ -21,7 +21,7 @@
   import { saveScript } from '../../../../storage';
   import { derived } from 'svelte/store';
   import { onMount } from 'svelte';
-  import { validateScript } from '../../../../model/script';
+  import { validateScript } from '../../../../model/validation';
   import type { ValidationError } from '@apideck/better-ajv-errors';
   import Translation from '../../../../view/translation.svelte';
 
