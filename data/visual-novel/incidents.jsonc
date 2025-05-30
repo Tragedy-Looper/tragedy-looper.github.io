@@ -1,0 +1,58 @@
+{
+    "$schema": "https://tragedy-looper.github.io/incidents.schema.json",
+    // For dev purposes
+    //"$schema": "../incidents.schema.json",
+    "incidents": [
+        {
+            "name": "Parting",
+            "effect": [
+                {
+                    "description": "Move the Culprit to any Location."
+                }
+            ]
+        },
+        {
+            "name": "Exposure",
+            "effect": [
+                {
+                    "description": "Choose one: 1. Remove up to 2 (cumulative total) Goodwill counters from characters in the same Location as the Culprit. 2. Place up to 2 (cumulative total) Goodwill counters on characters in the same Location as the Culprit."
+                }
+            ]
+        },
+        {
+            "name": "Friction",
+            "effect": [
+                {
+                    "prerequisite": "Culprit must have at least 1+ Goodwill.",
+                    "description": "Remove all Goodwill counters from one Character in the same Location as the Culprit."
+                }
+            ]
+        },
+        {
+            "name": "Route Branching",
+            "effect": [
+                {
+                    "prerequisite": "The Culprit must have enough Goodwill to use a Goodwill Ability.",
+                    "description": "The Culprit's role changes to Key Person for the rest of that Loop."
+                }
+            ]
+        },
+        {
+            "name": "Relocation",
+            "effect": [
+                {
+                    "description": "The Culprit is treated as if they are not in any Location, and cannot have Action cards placed on them."
+                }
+            ]
+        },
+        {
+            "name": "Heart-Pounding Time Bomb",
+            "effect": [
+                {
+                    "prerequisite": "The Culprit must not have any Goodwill on them when this Incident occurs.",
+                    "description": "Prepare the EX Gauge, starting at 0. From that Day onward, the EX Gauge increases by 1 at each Day End phase. When it reaches 3, the Goodwill counters on all Characters decreases by 2. When a Goodwill counter is placed on the Culprit, the EX Counter resets to 0."
+                }
+            ]
+        }
+    ]
+}

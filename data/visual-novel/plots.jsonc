@@ -1,0 +1,192 @@
+{
+    "$schema": "https://tragedy-looper.github.io/plots.schema.json",
+    // For dev purposes
+    //"$schema": "../plots.schema.json",
+    "plots": [
+        {
+            "name": "The Last Miracle",
+            "roles": {
+                "Key Person": 1,
+                "Sub Heroine": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "When the Loop ends—if the Key Person is not in the initial starting location of the Sub Heroine, the Key Person dies."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Mastermind Action step"
+                    ],
+                    "description": "The Mastermind cannot place any Movement Actions on the Key Person."
+                }
+            ]
+        },
+        {
+            "name": "Seal of the Evil Spirit",
+            "roles": {
+                "Brain": 1,
+                "Possessed": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "2+ Intrigue on the Shrine."
+                }
+            ]
+        },
+        {
+            "name": "Promise of a Smile",
+            "roles": {
+                "Key Person": 1,
+                "Mood Maker": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "The Key Person does not have more than \"X\" Goodwill. \"X\" is half the number of Days in one Loop, rounded down."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Loop Start"
+                    ],
+                    "prerequisite": "\"Promise of a Smile\" Loss condition was met in the previous Loop.",
+                    "description": "Key Person gets +1 Goodwill."
+                }
+            ]
+        },
+        {
+            "name": "Album of Memories",
+            "roles": {
+                "Mood Maker": 1,
+                "Friend": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "All roles have not been revealed."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "description": "The roles of Characters with \"X\" or more Goodwill are revealed. \"X\" is half the number of Days in one Loop, rounded down."
+                }
+            ]
+        },
+        {
+            "name": "The Monster Inside Me",
+            "roles": {
+                "Key Person": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "If the Key Person kills someone, the Protagonists lose."
+                },
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "3+ Paranoia.",
+                    "description": "Character gains an additional role of \"Serial Killer.\""
+                }
+            ]
+        },
+        {
+            "name": "Noisy Classmates",
+            "roles": {
+                "Friend": 1,
+                "Mood Maker": 1,
+                "Troublemaker": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "The Missing Highlight",
+            "roles": {
+                "Heavy Lovers": 1,
+                "Mood Maker": 1,
+                "Conspiracy Theorist": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "The Seven School Mysteries",
+            "roles": {
+                "Friend": 1,
+                "Troublemaker": 1,
+                "Conspiracy Theorist": 1
+            },
+            "rules": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "prerequisite": "2+ Intrigue on School.",
+                    "description": "Place +1 Paranoia on a Character in School."
+                }
+            ]
+        },
+        {
+            "name": "Behind the Scenes",
+            "roles": {
+                "Slayer": 1,
+                "Creature": 1,
+                "Conspiracy Theorist": 1
+            },
+            "rules": []
+        },
+        {
+            "name": "Howling in the Moonlit Night",
+            "roles": {
+                "Lunatic": 1
+            },
+            "rules": [
+                {
+                    "type": "Optional",
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
+                    "description": "Place +1 Intrigue counter on any Location or Character (Once per Loop)."
+                }
+            ]
+        },
+        {
+            "name": "The Spreading Infection",
+            "roles": {
+                "Slayer": 1
+            },
+            "rules": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Always"
+                    ],
+                    "prerequisite": "3+ Intrigue on a Person.",
+                    "description": "Character becomes the role \"Creature.\""
+                }
+            ]
+        }
+    ]
+}

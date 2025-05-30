@@ -1,0 +1,42 @@
+{
+    "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
+    // For dev purposes
+    // "$schema": "../tragedys.schema.json",
+    "tragedys": [
+        {
+            "name": "Visual Novel",
+            "mainPlots": [
+                "The Last Miracle",
+                "Seal of the Evil Spirit",
+                "Promise of a Smile",
+                "Album of Memories",
+                "The Monster Inside Me"
+            ],
+            "subPlots": [
+                "Noisy Classmates",
+                "The Missing Highlight",
+                "The Seven School Mysteries",
+                "Behind the Scenes",
+                "Howling in the Moonlit Night",
+                "The Hidden Freak",
+                "The Spreading Infection"
+            ],
+            "numberOfMainPlots": 1,
+            "numberOfSubPlots": 2,
+            "extraRules": [],
+            "incidents": [
+                "Murder",
+                "Increasing Unease",
+                "Parting",
+                "Foul Evil",
+                "Exposure",
+                "Terrorism",
+                "Friction",
+                "Closed Circle",
+                "Route Branching",
+                "Relocation",
+                "Heart-Pounding Time Bomb"
+            ]
+        }
+    ]
+}
