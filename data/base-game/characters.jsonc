@@ -37,7 +37,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "-1:paranoia: on student in same location."
+                    "description": "-1 :paranoia: on student in same location."
                 }
             ]
         },
@@ -287,7 +287,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "-1:paranoia: on character in same location."
+                    "description": "-1 :paranoia: on character in same location."
                 },
                 {
                     "type": "active",
@@ -311,7 +311,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "+1:paranoia: on character in same location."
+                    "description": "+1 :paranoia: on character in same location."
                 },
                 {
                     "type": "active",
@@ -365,7 +365,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "+/-1:paranoia: on character in same location."
+                    "description": "+/-1 :paranoia: on character in same location."
                 },
                 {
                     "type": "active",
@@ -407,7 +407,7 @@
                     "type": "active",
                     "goodwillRank": 2,
                     "immuneToGoodwillRefusel": true,
-                    "description": "-1:paranoia: on panicked character in same location. This ability cannot be refused by :goodwill: Refusal."
+                    "description": "-1 :paranoia: on panicked character in same location. This ability cannot be refused by :goodwill: Refusal."
                 }
             ]
         },

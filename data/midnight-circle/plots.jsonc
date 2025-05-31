@@ -32,7 +32,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "description": "When determining whether \"Serial Murde,\" or \"Suicide\" triggers, count :intrigue: counters also as:paranoia: counters."
+                    "description": "When determining whether \"Serial Murde,\" or \"Suicide\" triggers, count :intrigue: counters also as :paranoia: counters."
                 }
             ]
         },
@@ -119,7 +119,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "There are a total of 12 or more:paranoia: counters on the remaining charactrs."
+                    "prerequisite": "There are a total of 12 or more :paranoia: counters on the remaining charactrs."
                 }
             ]
         },
@@ -294,7 +294,7 @@
                         "Incident step"
                     ],
                     "prerequisite": "The Culprit is a Person and the Prophet is alive.",
-                    "description": "When determning whether an Incident triggers, the culprit is regarded as having 1 less than its printed:paranoia: limit."
+                    "description": "When determning whether an Incident triggers, the culprit is regarded as having 1 less than its printed :paranoia: limit."
                 }
             ]
         }

@@ -107,7 +107,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "3+:paranoia:.",
+                    "prerequisite": "3+ :paranoia:.",
                     "description": "Character gains an additional role of \"Serial Killer.\""
                 }
             ]
@@ -144,7 +144,7 @@
                         "Mastermind Ability"
                     ],
                     "prerequisite": "2+ :intrigue: on School.",
-                    "description": "Place +1:paranoia: on a Character in School."
+                    "description": "Place +1 :paranoia: on a Character in School."
                 }
             ]
         },

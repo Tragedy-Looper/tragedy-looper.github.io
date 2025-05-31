@@ -15,7 +15,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "At least 1 :intrigue:, 1 :goodwill:, and 1:paranoia: are placed on the character whose original role is a Person",
+                    "prerequisite": "At least 1 :intrigue:, 1 :goodwill:, and 1 :paranoia: are placed on the character whose original role is a Person",
                     "description": "The character gains :goodwill: Outburst and Marionette’s ability."
                 }
             ]

@@ -42,7 +42,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "prerequisite": "If there are at least 2 :intrigue: in this location, and at least 1:paranoia: on this card"
+                    "prerequisite": "If there are at least 2 :intrigue: in this location, and at least 1 :paranoia: on this card"
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -84,7 +84,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "description": "Kill one character of the opposite sex in this location who has at least 1:paranoia: and 1 :intrigue:."
+                    "description": "Kill one character of the opposite sex in this location who has at least 1 :paranoia: and 1 :intrigue:."
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -127,7 +127,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "Place 1 :intrigue: or:paranoia: on one corpse in this location."
+                    "description": "Place 1 :intrigue: or :paranoia: on one corpse in this location."
                 }
             ]
         },
@@ -180,7 +180,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "You may place 1:paranoia: on any character in this location."
+                    "description": "You may place 1 :paranoia: on any character in this location."
                 }
             ]
         },

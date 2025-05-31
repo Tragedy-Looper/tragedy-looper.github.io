@@ -34,10 +34,10 @@
                 },
                 {
                     "name": "Abnormal World",
-                    "description": "The numbers of :goodwill: counter need to reach:paranoia: Limit to trigger the incident. Also sufficient numbers of:paranoia: needed to activate the character’s :goodwill: ability."
+                    "description": "The numbers of :goodwill: counter need to reach :paranoia: Limit to trigger the incident. Also sufficient numbers of :paranoia: needed to activate the character’s :goodwill: ability."
                 },
                 {
-                    "name": ":goodwill: Outburst",
+                    "name": " :goodwill: Outburst",
                     "description": "Mastermind able to use the character’s :goodwill: abilities whose role has :goodwill: Outburst."
                 }
             ]

@@ -16,7 +16,7 @@
             "name": "Portent",
             "effect": [
                 {
-                    "description": "[When determning wether this Incident triggers or not, treat the culprit’s:paranoia: limit ats 1 less then its printed limit] Put 1:paranoia: counter on any character in the culprit’s location."
+                    "description": "[When determning wether this Incident triggers or not, treat the culprit’s :paranoia: limit ats 1 less then its printed limit] Put 1 :paranoia: counter on any character in the culprit’s location."
                 }
             ]
         },
@@ -37,7 +37,7 @@
             "name": "Bestial Murder",
             "effect": [
                 {
-                    "description": "[When determinig wether this Incident triggers or not, treat the culprit’s:paranoia: limit as 1 more than its printed limit.] Resolve \"Serial Murder\" and \"Increasing Unease\" in that order. Then increase the Extra Gauge by 1 more step."
+                    "description": "[When determinig wether this Incident triggers or not, treat the culprit’s :paranoia: limit as 1 more than its printed limit.] Resolve \"Serial Murder\" and \"Increasing Unease\" in that order. Then increase the Extra Gauge by 1 more step."
                 }
             ]
         },
@@ -77,7 +77,7 @@
             "name": "Conspiracies",
             "effect": [
                 {
-                    "description": "Resolve either a Serial Murder or a Missing Person Incident. Check :intrigue: instead of:paranoia: conters to trigger the Incident."
+                    "description": "Resolve either a Serial Murder or a Missing Person Incident. Check :intrigue: instead of :paranoia: conters to trigger the Incident."
                 }
             ]
         },

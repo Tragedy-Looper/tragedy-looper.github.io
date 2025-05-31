@@ -20,7 +20,7 @@
                     "description": "everyone in the diagonally opposite location dies"
                 },
                 {
-                    "description": "The incident happens at:paranoia: limit -1"
+                    "description": "The incident happens at :paranoia: limit -1"
                 },
                 {
                     "type": "Mandatory Loss condition: Protagonists Death",

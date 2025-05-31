@@ -12,7 +12,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "This character has at least 2 :intrigue: and at least 2:paranoia:",
+                    "prerequisite": "This character has at least 2 :intrigue: and at least 2 :paranoia:",
                     "description": "You may kill all characters and the Protagonists."
                 },
                 {
@@ -20,7 +20,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "description": "When determining whether an Incident, for which this character is the culprit, will occour or not, also treat :intrigue: as:paranoia:."
+                    "description": "When determining whether an Incident, for which this character is the culprit, will occour or not, also treat :intrigue: as :paranoia:."
                 },
                 {
                     "type": "Script creation",
@@ -77,7 +77,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "This character has 4 or more:paranoia:",
+                    "prerequisite": "This character has 4 or more :paranoia:",
                     "description": "This charcter dies, and the Extra Gauge increases with 1 step."
                 }
             ]
@@ -178,7 +178,7 @@
                         "Mastermind Ability"
                     ],
                     "prerequisite": "This card is a corpse",
-                    "description": "Palce 1:paranoia: on any character in this location, or any character in the Ghost’s starting location."
+                    "description": "Palce 1 :paranoia: on any character in this location, or any character in the Ghost’s starting location."
                 }
             ]
         },
@@ -191,7 +191,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "This charcter has more then 2:paranoia:",
+                    "prerequisite": "This charcter has more then 2 :paranoia:",
                     "description": "This Character loses the Immortal aspect."
                 },
                 {
@@ -199,7 +199,7 @@
                     "timing": [
                         "Goodwill ablility step"
                     ],
-                    "prerequisite": "This charcter has more then 2:paranoia:",
+                    "prerequisite": "This charcter has more then 2 :paranoia:",
                     "description": "This Character gains Mandatory :goodwill: Refusal."
                 }
             ]
@@ -212,7 +212,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "prerequisite": "this charcter has 2 or more:paranoia:",
+                    "prerequisite": "this charcter has 2 or more :paranoia:",
                     "description": "Pick a neigboring location, and move the charcter there."
                 }
             ]

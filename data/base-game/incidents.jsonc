@@ -15,7 +15,7 @@
             "name": "Increasing Unease",
             "effect": [
                 {
-                    "description": "Place 2:paranoia: on any character, then 1 :intrigue: on any other character."
+                    "description": "Place 2 :paranoia: on any character, then 1 :intrigue: on any other character."
                 }
             ]
         },

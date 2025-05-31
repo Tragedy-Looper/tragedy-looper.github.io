@@ -185,7 +185,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "All Persons with at least 3:paranoia: turn into Serial Killers."
+                    "description": "All Persons with at least 3 :paranoia: turn into Serial Killers."
                 }
             ]
         },
@@ -198,7 +198,7 @@
                     "timing": [
                         "Loop Start"
                     ],
-                    "description": "Place 2:paranoia: on all characters who had :goodwill: last loop."
+                    "description": "Place 2 :paranoia: on all characters who had :goodwill: last loop."
                 }
             ]
         },

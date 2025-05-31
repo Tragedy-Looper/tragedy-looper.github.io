@@ -75,12 +75,12 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "Place a :goodwill: on an other Character who is at their:paranoia: Limit."
+                    "description": "Place a :goodwill: on an other Character who is at their :paranoia: Limit."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 4,
-                    "description": "Reveal the role of another character who is at their:paranoia: Limit in this location.",
+                    "description": "Reveal the role of another character who is at their :paranoia: Limit in this location.",
                     "timesPerLoop": 1
                 }
             ]

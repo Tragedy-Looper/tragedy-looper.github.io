@@ -18,7 +18,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "Pick a Student in this location, and add or remove a:paranoia: from that student."
+                    "description": "Pick a Student in this location, and add or remove a :paranoia: from that student."
                 },
                 {
                     "type": "active",
@@ -74,7 +74,7 @@
                     "type": "active",
                     "goodwillRank": 2,
                     "timesPerLoop": 1,
-                    "description": "Place 2:paranoia: on another character in this location."
+                    "description": "Place 2 :paranoia: on another character in this location."
                 },
                 {
                     "type": "active",

@@ -17,7 +17,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "At the start of a loop, place either a:paranoia: counter, a :goodwill: counter or an :intrigue: counter on this character."
+                    "description": "At the start of a loop, place either a :paranoia: counter, a :goodwill: counter or an :intrigue: counter on this character."
                 },
                 {
                     "type": "active",
@@ -74,7 +74,7 @@
                 },
                 {
                     "type": "passive",
-                    "description": "When determining wether an Incident triggers, to which this character is the culprit, all conters on this character conut as:paranoia: conuters."
+                    "description": "When determining wether an Incident triggers, to which this character is the culprit, all conters on this character conut as :paranoia: conuters."
                 },
                 {
                     "type": "active",

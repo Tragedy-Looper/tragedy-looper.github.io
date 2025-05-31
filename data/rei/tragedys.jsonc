@@ -46,12 +46,12 @@
                     "description": "At the start of each loop, set the Extra Gauge to 0. Indicate World, even: Light World, odd: Dark World."
                 },
                 {
-                    "name": ":goodwill: & Wrarp",
+                    "name": " :goodwill: & Wrarp",
                     "description": "In addition to effects that trigger a Warp, a Warp is automatically triggered after each time any player, Protagonist or Mastermind, uses a 1x∞ :goodwill: ability. (Thematically these abilities have a powerful effect on the world, causing instability in the timeline.)"
                 },
                 {
                     "name": "Change of Heart",
-                    "description": "When determining if an Incident triggers, :goodwill: is counted instead of:paranoia:. When determining if a :goodwill: ability can be used,:paranoia: is counted instead of :goodwill:."
+                    "description": "When determining if an Incident triggers, :goodwill: is counted instead of :paranoia:. When determining if a :goodwill: ability can be used, :paranoia: is counted instead of :goodwill:."
                 },
                 {
                     "name": "Puppeted :goodwill: Refusal",
@@ -63,7 +63,7 @@
                 },
                 {
                     "name": "Changes to Starting Action Cards",
-                    "description": "The Protagonists additionally each have a:paranoia: +2 (1x∞) card, and the Mastermind additionally has a :goodwill: +1 card. Furthermore, the Mastermind also adds a Despair +1 (1x∞) card to their hand for the first loop only. (On later loops, they only gain it if an effect allows them to do so.)"
+                    "description": "The Protagonists additionally each have a :paranoia: +2 (1x∞) card, and the Mastermind additionally has a :goodwill: +1 card. Furthermore, the Mastermind also adds a Despair +1 (1x∞) card to their hand for the first loop only. (On later loops, they only gain it if an effect allows them to do so.)"
                 }
             ]
         }

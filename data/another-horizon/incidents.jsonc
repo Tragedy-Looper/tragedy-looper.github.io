@@ -20,7 +20,7 @@
             "name": "Assassination",
             "effect": [
                 {
-                    "description": "Kill any other character in this location or on the diagonally opposite location. When determining whether this incident occurs or not, count :intrigue: instead of:paranoia:."
+                    "description": "Kill any other character in this location or on the diagonally opposite location. When determining whether this incident occurs or not, count :intrigue: instead of :paranoia:."
                 }
             ]
         },
@@ -46,7 +46,7 @@
             "name": "Small Force",
             "effect": [
                 {
-                    "description": "The Protagonist Leader chooses any character and 1 :goodwill:, or 1:paranoia:, or 1 :intrigue:. Put one chosen counter on that character. When determining whether this incident occurs or not, the culprit is regarded as having:paranoia: Limit -1."
+                    "description": "The Protagonist Leader chooses any character and 1 :goodwill:, or 1 :paranoia:, or 1 :intrigue:. Put one chosen counter on that character. When determining whether this incident occurs or not, the culprit is regarded as having :paranoia: Limit -1."
                 }
             ]
         }

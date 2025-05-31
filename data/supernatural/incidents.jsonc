@@ -31,7 +31,7 @@
             "name": "Indoctrination",
             "effect": [
                 {
-                    "description": "Remove all :goodwill: from a Character and replace with a mix of:paranoia: or :intrigue: that equals the removed :goodwill:."
+                    "description": "Remove all :goodwill: from a Character and replace with a mix of :paranoia: or :intrigue: that equals the removed :goodwill:."
                 }
             ]
         },
@@ -55,7 +55,7 @@
             "name": "Mass Hysteria",
             "effect": [
                 {
-                    "description": "Add 1:paranoia: to every character."
+                    "description": "Add 1 :paranoia: to every character."
                 }
             ]
         },

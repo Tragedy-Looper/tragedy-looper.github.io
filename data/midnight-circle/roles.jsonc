@@ -38,7 +38,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "description": "After this character has triggered an Incident, remove all:paranoia: counters from this card."
+                    "description": "After this character has triggered an Incident, remove all :paranoia: counters from this card."
                 }
             ]
         },
@@ -59,7 +59,7 @@
                         "Incident step"
                     ],
                     "prerequisite": "the Extra Gauge is 0, and the culprit is in this location",
-                    "description": "The Incident triggers regardless of the number of:paranoia: counters on the culprit."
+                    "description": "The Incident triggers regardless of the number of :paranoia: counters on the culprit."
                 }
             ]
         },
@@ -105,7 +105,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "description": "This character always triggers its Incidents (if alive), regardless of the amount of:paranoia: counters on it."
+                    "description": "This character always triggers its Incidents (if alive), regardless of the amount of :paranoia: counters on it."
                 }
             ]
         },
@@ -118,7 +118,7 @@
                         "Mastermind Ability"
                     ],
                     "prerequisite": "The Extra Gauge is 1 or above",
-                    "description": "Remove 1:paranoia: counter from any other character in this location."
+                    "description": "Remove 1 :paranoia: counter from any other character in this location."
                 }
             ]
         },
@@ -136,14 +136,14 @@
                             "Over all Roles": true
                         }
                     ],
-                    "description": "You may move one character with at least one:paranoia: counter from this location to an adjacent location (not diagonal)."
+                    "description": "You may move one character with at least one :paranoia: counter from this location to an adjacent location (not diagonal)."
                 },
                 {
                     "type": "Mandatory",
                     "timing": [
                         "On character death"
                     ],
-                    "description": "Remove all:paranoia: counters from its corpse."
+                    "description": "Remove all :paranoia: counters from its corpse."
                 }
             ]
         },
@@ -183,7 +183,7 @@
                         "Incident step"
                     ],
                     "prerequisite": "The culprit of an incident that would trigger is in another location",
-                    "description": "That incident does not trigger, regardless of the number of:paranoia: conters on the culprit."
+                    "description": "That incident does not trigger, regardless of the number of :paranoia: conters on the culprit."
                 }
             ]
         },
