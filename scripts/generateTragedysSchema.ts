@@ -14,6 +14,7 @@ const srcDir = path.join(__dirname, '../src');
 
 const names = {
     tags: collectNamesFromJsonFiles('tags'),
+    keywords: collectNamesFromJsonFiles('keywords'),
     plotNames: collectNamesFromJsonFiles('plots'),
     incidentNames: collectNamesFromJsonFiles('incidents'),
     roleNames: collectNamesFromJsonFiles('roles'),
@@ -59,7 +60,6 @@ const names = {
 
 
 const locations = ['Hospital', 'Shrine', 'City', 'School'] as const;
-const tags = ['boy', 'girl', 'student', "man", "woman", "adult", 'construct', 'animal', 'tree', 'little sister'];
 
 
 
@@ -246,6 +246,7 @@ type Names = typeof names;
 
 
 // --- SCHEMA GENERATION ---
+WriteSchema(generateKeywordsSchema(names), 'keywords');
 WriteSchema(generateTagssSchema(names), 'tags');
 WriteSchema(generatePlotsSchema(names), 'plots');
 WriteSchema(generateIncidentsSchema(names), 'incidents');
@@ -377,6 +378,30 @@ function generateTagssSchema({ roleNames }: Names) {
                         "hideInPlayerScreen": { "type": "boolean" },
                     },
                     "required": ["name"],
+                }
+            }
+        }
+    } as const;
+}
+
+function generateKeywordsSchema({ roleNames }: Names) {
+    return {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "title": "keywords",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "$schema": { "type": "string" },
+            "keywords": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "key": { "type": "string" },
+                        "name": { "type": "string" },
+                    },
+                    "required": ["name", "key"],
                 }
             }
         }
@@ -532,7 +557,7 @@ function generateRolesSchema({ tags }: Names) {
 }
 
 // 4. Characters Schema
-function generateCharactersSchema({ characterNames }: Names) {
+function generateCharactersSchema({ keywords }: Names) {
     return {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "title": "Characters",
@@ -551,7 +576,7 @@ function generateCharactersSchema({ characterNames }: Names) {
                         "paranoiaLimit": { "type": "number", "minimum": 0, "maximum": 4 },
                         "tags": {
                             "type": "array",
-                            "items": { "type": "string", "enum": tags }
+                            "items": { "type": "string", "enum": [...keywords] }
                         },
                         "startLocation": {
                             "type": "array",

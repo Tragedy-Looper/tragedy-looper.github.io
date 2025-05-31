@@ -1,0 +1,47 @@
+{
+    //"$schema": "https://tragedy-looper.github.io/keywords.schema.json",
+    // For dev purposes
+    "$schema": "../keywords.schema.json",
+    "keywords": [
+        {
+            "key": "boy",
+            "name": "Boy"
+        },
+        {
+            "key": "girl",
+            "name": "Girl"
+        },
+        {
+            "key": "student",
+            "name": "Student"
+        },
+        {
+            "key": "man",
+            "name": "Man"
+        },
+        {
+            "key": "woman",
+            "name": "Woman"
+        },
+        {
+            "key": "adult",
+            "name": "Adult"
+        },
+        {
+            "key": "construct",
+            "name": "Construct"
+        },
+        {
+            "key": "animal",
+            "name": "Animal"
+        },
+        {
+            "key": "tree",
+            "name": "Tree"
+        },
+        {
+            "key": "little sister",
+            "name": "Little Sister"
+        }
+    ]
+}
