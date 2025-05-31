@@ -573,6 +573,7 @@ function generateCharactersSchema({ characterNames }: Names) {
                                 "oneOf": [
                                     {
                                         type: "object",
+                                        "additionalProperties": false,
                                         properties: {
                                             "type": { "type": "string", enum: ["passive"] },
                                             "description": { "type": "string" },
@@ -581,6 +582,7 @@ function generateCharactersSchema({ characterNames }: Names) {
                                     },
                                     {
                                         type: "object",
+                                        "additionalProperties": false,
                                         properties: {
                                             "type": { "type": "string", enum: ["active"] },
                                             "goodwillRank": { "type": "number" },
