@@ -587,6 +587,7 @@ function generateCharactersSchema({ characterNames }: Names) {
                                             "type": { "type": "string", enum: ["active"] },
                                             "goodwillRank": { "type": "number" },
                                             "immuneToGoodwillRefusel": { "type": "boolean" },
+                                            "timesPerLoop": { "type": "number" },
                                             "restrictedToLocation": {
                                                 type: "array",
                                                 items: { type: "string", enum: locations }
