@@ -324,7 +324,7 @@
                 }
             ],
             "specialRules": [
-                "Mastermind removes \"Forbid Goodwill\" from his hand. It cannot be used in any loop."
+                "Mastermind removes \"Forbid :goodwill:\" from his hand. It cannot be used in any loop."
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
             "story": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",

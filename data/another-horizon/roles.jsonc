@@ -68,7 +68,7 @@
                     "type": "Optional",
                     "timing": ["Mastermind Ability"],
                     
-                    "description": "You may place 1 Goodwill on any character in this location."
+                    "description": "You may place 1 :goodwill: on any character in this location."
                 }
             ]
         },
@@ -104,7 +104,7 @@
                     "type": "Mandatory",
                     "timing": ["Incident step"],
                     
-                    "description": "This character always triggers its incidents (if alive), regardless the amount of Paranoia on it. After resolving the Incident, the Mastermind declared that “Animus abilities were used.”."
+                    "description": "This character always triggers its incidents (if alive), regardless the amount of:paranoia: on it. After resolving the Incident, the Mastermind declared that “Animus abilities were used.”."
                 }
             ]
         },
@@ -115,7 +115,7 @@
                 {
                     "type": "Mandatory",
                     "timing": ["Incident step"],                    
-                    "description": "When determining whether an Incident, for which this character is the culprit, will occur or not, this character is regarded as having Paranoia Limit -1."
+                    "description": "When determining whether an Incident, for which this character is the culprit, will occur or not, this character is regarded as having:paranoia: Limit -1."
                 }
             ]
         },
@@ -126,7 +126,7 @@
                     "type": "Optional",
                     "timing": ["Incident trigger"],
                     "prerequisite": "This Character resolved an incident",
-                    "description": "Put 1 Goodwill, or 1 Paranoia, or 1 :intrigue: on any character in this location."
+                    "description": "Put 1 :goodwill:, or 1:paranoia:, or 1 :intrigue: on any character in this location."
                 }
             ]
         },
@@ -148,7 +148,7 @@
                 {
                     "type": "Delayed Loss condition: Protagonists Death",
                     "timing": ["Day End"],                   
-                    "prerequisite": "After resolving this character's goodwill ability", 
+                    "prerequisite": "After resolving this character's :goodwill: ability", 
                     "description": "(optional) The protagonists die during the Day end."
                 }
             ]

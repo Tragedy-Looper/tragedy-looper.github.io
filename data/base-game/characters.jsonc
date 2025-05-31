@@ -6,7 +6,7 @@
         {
             "name": "Boy Student",
             "edition": "Base",
-"paranoiaLimit": 2,
+            "paranoiaLimit": 2,
             "tags": [
                 "student",
                 "boy"
@@ -25,7 +25,7 @@
         {
             "name": "Girl Student",
             "edition": "Base",
-"paranoiaLimit": 3,
+            "paranoiaLimit": 3,
             "tags": [
                 "student",
                 "girl"
@@ -44,7 +44,7 @@
         {
             "name": "Rich Man’s Daughter",
             "edition": "Base",
-"paranoiaLimit": 1,
+            "paranoiaLimit": 1,
             "tags": [
                 "student",
                 "girl"
@@ -67,7 +67,7 @@
         {
             "name": "Class Rep",
             "edition": "Base",
-"paranoiaLimit": 2,
+            "paranoiaLimit": 2,
             "tags": [
                 "student",
                 "girl"
@@ -87,7 +87,7 @@
         {
             "name": "Mystery Boy",
             "edition": "Base",
-"paranoiaLimit": 3,
+            "paranoiaLimit": 3,
             "tags": [
                 "student",
                 "boy"
@@ -104,7 +104,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "immuneTo:goodwill:Refusel": true,
+                    "immuneToGoodwillRefusel": true,
                     "description": "Reveal own role."
                 }
             ]
@@ -112,7 +112,7 @@
         {
             "name": "Shrine Maiden",
             "edition": "Base",
-"paranoiaLimit": 2,
+            "paranoiaLimit": 2,
             "tags": [
                 "student",
                 "girl"
@@ -130,7 +130,7 @@
                     "restrictedToLocation": [
                         "Shrine"
                     ],
-                    "description": "-1 ::intrigue:: on Shrine."
+                    "description": "-1 :intrigue: on Shrine."
                 },
                 {
                     "type": "active",
@@ -143,7 +143,7 @@
         {
             "name": "Alien",
             "edition": "Base",
-"paranoiaLimit": 2,
+            "paranoiaLimit": 2,
             "tags": [
                 "girl"
             ],
@@ -171,7 +171,7 @@
         {
             "name": "Godly Being",
             "edition": "Base",
-"paranoiaLimit": 3,
+            "paranoiaLimit": 3,
             "tags": [
                 "man",
                 "woman"
@@ -200,14 +200,14 @@
                 {
                     "type": "active",
                     "goodwillRank": 5,
-                    "description": "-1 ::intrigue:: on same location or Character in same location."
+                    "description": "-1 :intrigue: on same location or Character in same location."
                 }
             ]
         },
         {
             "name": "Police Officer",
             "edition": "Base",
-"paranoiaLimit": 3,
+            "paranoiaLimit": 3,
             "tags": [
                 "man",
                 "adult"
@@ -233,7 +233,7 @@
         {
             "name": "Office Worker",
             "edition": "Base",
-"paranoiaLimit": 2,
+            "paranoiaLimit": 2,
             "tags": [
                 "man",
                 "adult"
@@ -255,7 +255,7 @@
         {
             "name": "Informer",
             "edition": "Base",
-"paranoiaLimit": 3,
+            "paranoiaLimit": 3,
             "tags": [
                 "woman",
                 "adult"
@@ -275,7 +275,7 @@
         {
             "name": "Pop Idol",
             "edition": "Base",
-"paranoiaLimit": 2,
+            "paranoiaLimit": 2,
             "tags": [
                 "girl",
                 "student"
@@ -299,7 +299,7 @@
         {
             "name": "Journalist",
             "edition": "Base",
-"paranoiaLimit": 2,
+            "paranoiaLimit": 2,
             "tags": [
                 "adult",
                 "man"
@@ -323,7 +323,7 @@
         {
             "name": "Boss",
             "edition": "Base",
-"paranoiaLimit": 4,
+            "paranoiaLimit": 4,
             "tags": [
                 "adult",
                 "man"
@@ -353,7 +353,7 @@
         {
             "name": "Doctor",
             "edition": "Base",
-"paranoiaLimit": 2,
+            "paranoiaLimit": 2,
             "tags": [
                 "adult",
                 "man"
@@ -377,7 +377,7 @@
         {
             "name": "Patient",
             "edition": "Base",
-"paranoiaLimit": 2,
+            "paranoiaLimit": 2,
             "tags": [
                 "boy"
             ],
@@ -394,7 +394,7 @@
         {
             "name": "Nurse",
             "edition": "Base",
-"paranoiaLimit": 3,
+            "paranoiaLimit": 3,
             "tags": [
                 "adult",
                 "woman"
@@ -406,7 +406,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "immuneTo:goodwill:Refusel": true,
+                    "immuneToGoodwillRefusel": true,
                     "description": "-1:paranoia: on panicked character in same location. This ability cannot be refused by :goodwill: Refusal."
                 }
             ]
@@ -414,7 +414,7 @@
         {
             "name": "Henchman",
             "edition": "Base",
-"paranoiaLimit": 1,
+            "paranoiaLimit": 1,
             "tags": [
                 "adult",
                 "man"

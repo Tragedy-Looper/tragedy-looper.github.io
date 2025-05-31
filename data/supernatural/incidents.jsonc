@@ -31,7 +31,7 @@
             "name": "Indoctrination",
             "effect": [
                 {
-                    "description": "Remove all Goodwill from a Character and replace with a mix of Paranoia or :intrigue: that equals the removed Goodwill."
+                    "description": "Remove all :goodwill: from a Character and replace with a mix of:paranoia: or :intrigue: that equals the removed :goodwill:."
                 }
             ]
         },
@@ -47,7 +47,7 @@
             "name": "Ritual Sacrifice",
             "effect": [
                 {
-                    "description": "The Character with the highest Goodwill is killed. If no Character has the highest, this Incident doesn't trigger."
+                    "description": "The Character with the highest :goodwill: is killed. If no Character has the highest, this Incident doesn't trigger."
                 }
             ]
         },
@@ -55,7 +55,7 @@
             "name": "Mass Hysteria",
             "effect": [
                 {
-                    "description": "Add 1 Paranoia to every character."
+                    "description": "Add 1:paranoia: to every character."
                 }
             ]
         },

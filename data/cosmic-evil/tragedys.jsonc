@@ -90,11 +90,11 @@
             "extraRules": [
                 {
                     "name": "Extra Gauge: Mythos knowlege",
-                    "description": "1. The Extra gauge starts on zero and dose not reset between loops. 2. Every time Goodwill ability is refused, immediately increase the Extra Gauge. 3. The Extra Gauge unlooks spells for the characters (Level in parenthises behind the spell name)."
+                    "description": "1. The Extra gauge starts on zero and dose not reset between loops. 2. Every time :goodwill: ability is refused, immediately increase the Extra Gauge. 3. The Extra Gauge unlooks spells for the characters (Level in parenthises behind the spell name)."
                 },
                 {
                     "name": "Spell of Sympathy (1)",
-                    "description": "At the start of the first day, the Leader may place 2 Goodwill on any one character of his choice."
+                    "description": "At the start of the first day, the Leader may place 2 :goodwill: on any one character of his choice."
                 },
                 {
                     "name": "Reminiscence of the Forefathers (2)",

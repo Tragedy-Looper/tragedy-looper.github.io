@@ -34,7 +34,7 @@
                         "Mastermind Ability"
                     ],
                     "timesPerLoop": 1,
-                    "description": "Place 1 Paranoia or Goodwill counter on a character at this character’s location."
+                    "description": "Place 1:paranoia: or :goodwill: counter on a character at this character’s location."
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -76,7 +76,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "Ignore Forbid Goodwill cards played on this character."
+                    "description": "Ignore Forbid :goodwill: cards played on this character."
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -124,7 +124,7 @@
                     "timing": [
                         "Loop Start"
                     ],
-                    "prerequisite": "If this character was alive and had 2 or more Goodwill at the end of the previous loop",
+                    "prerequisite": "If this character was alive and had 2 or more :goodwill: at the end of the previous loop",
                     "description": "The Protagonists add \"Hope +1\" to hand."
                 }
             ]
@@ -167,7 +167,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "You may place 1 Goodwill counter on a character at this character’s location."
+                    "description": "You may place 1 :goodwill: counter on a character at this character’s location."
                 },
                 {
                     "type": "Mandatory",

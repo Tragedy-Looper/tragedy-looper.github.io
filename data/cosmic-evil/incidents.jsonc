@@ -68,7 +68,7 @@
             "mob": 2,
             "effect": [
                 {
-                    "description": "Place 2 Paranoia on any one character, and an :intrigue: on any location."
+                    "description": "Place 2:paranoia: on any one character, and an :intrigue: on any location."
                 }
             ]
         },
@@ -117,7 +117,7 @@
             "effect": [
                 {
                     "type": "Delayed Loss condition: Protagonists Death",
-                    "description": "When determinig whether this incident occours or not, count :intrigue: instead of Paranoia. For the rest of the loop, if another Incident occours, the Protagonists are killed after the Incident step."
+                    "description": "When determinig whether this incident occours or not, count :intrigue: instead of:paranoia:. For the rest of the loop, if another Incident occours, the Protagonists are killed after the Incident step."
                 }
             ]
         },

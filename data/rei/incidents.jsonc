@@ -7,7 +7,7 @@
             "name": "Crime of Passion",
             "effect": [
                 {
-                    "description": "One other character at the culprit’s location dies, if possible. When determining if this Incident triggers, treat the culprit’s Paranoia Limit as 1 lower."
+                    "description": "One other character at the culprit’s location dies, if possible. When determining if this Incident triggers, treat the culprit’s:paranoia: Limit as 1 lower."
                 }
             ]
         },
@@ -23,7 +23,7 @@
             "name": "Dimensional Perversion",
             "effect": [
                 {
-                    "description": "You may trigger a Warp. Place 2 Paranoia counters on any character, and 2 Goodwill counters on any other character."
+                    "description": "You may trigger a Warp. Place 2:paranoia: counters on any character, and 2 :goodwill: counters on any other character."
                 }
             ]
         },

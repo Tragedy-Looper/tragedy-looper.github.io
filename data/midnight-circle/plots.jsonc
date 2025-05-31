@@ -32,7 +32,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "description": "When determining whether \"Serial Murde,\" or \"Suicide\" triggers, count :intrigue: counters also as Paranoia counters."
+                    "description": "When determining whether \"Serial Murde,\" or \"Suicide\" triggers, count :intrigue: counters also as:paranoia: counters."
                 }
             ]
         },
@@ -119,7 +119,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "There are a total of 12 or more Paranoia counters on the remaining charactrs."
+                    "prerequisite": "There are a total of 12 or more:paranoia: counters on the remaining charactrs."
                 }
             ]
         },
@@ -257,7 +257,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "\"Forbid Goodwill\" has the effect of \"Forbid Movement\""
+                    "description": "\"Forbid :goodwill:\" has the effect of \"Forbid Movement\""
                 }
             ]
         },
@@ -294,7 +294,7 @@
                         "Incident step"
                     ],
                     "prerequisite": "The Culprit is a Person and the Prophet is alive.",
-                    "description": "When determning whether an Incident triggers, the culprit is regarded as having 1 less than its printed Paranoia limit."
+                    "description": "When determning whether an Incident triggers, the culprit is regarded as having 1 less than its printed:paranoia: limit."
                 }
             ]
         }

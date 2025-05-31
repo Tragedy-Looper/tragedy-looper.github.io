@@ -15,7 +15,7 @@
             "name": "Increasing Unease",
             "effect": [
                 {
-                    "description": "Place 2 Paranoia on any character, then 1 :intrigue: on any other character."
+                    "description": "Place 2:paranoia: on any character, then 1 :intrigue: on any other character."
                 }
             ]
         },
@@ -68,7 +68,7 @@
             "name": "Spreading",
             "effect": [
                 {
-                    "description": "Move 2 Goodwill from any character to any other character."
+                    "description": "Move 2 :goodwill: from any character to any other character."
                 }
             ]
         },

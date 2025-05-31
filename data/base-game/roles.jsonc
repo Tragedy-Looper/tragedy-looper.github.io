@@ -81,7 +81,7 @@
                     "timing": [
                         "Card resolve"
                     ],
-                    "description": "Ignore Forbid Goodwill on this character."
+                    "description": "Ignore Forbid :goodwill: on this character."
                 },
                 {
                     "type": "Loss condition: Tragedy",
@@ -89,7 +89,7 @@
                         "Day End",
                         "Last Day"
                     ],
-                    "prerequisite": "There is 2 or less Goodwill on this character.",
+                    "prerequisite": "There is 2 or less :goodwill: on this character.",
                     "description": "Loop ends"
                 }
             ]
@@ -117,7 +117,7 @@
                         "Loop Start"
                     ],
                     "prerequisite": "This role has been revealed",
-                    "description": "This character gets 1 Goodwill."
+                    "description": "This character gets 1 :goodwill:."
                 }
             ]
         },
@@ -130,7 +130,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "You may place 1 Paranoia on any character in this location."
+                    "description": "You may place 1:paranoia: on any character in this location."
                 }
             ]
         },
@@ -143,7 +143,7 @@
                         "Always"
                     ],
                     "prerequisite": "The Loved One dies",
-                    "description": "This character gets 6 Paranoia."
+                    "description": "This character gets 6:paranoia:."
                 }
             ]
         },
@@ -156,14 +156,14 @@
                         "Always"
                     ],
                     "prerequisite": "The Lover dies",
-                    "description": "This character gets 6 Paranoia."
+                    "description": "This character gets 6:paranoia:."
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "This character has at least 3 Paranoia and at least 1 :intrigue:."
+                    "prerequisite": "This character has at least 3:paranoia: and at least 1 :intrigue:."
                 }
             ]
         },

@@ -116,7 +116,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "prerequisite": "A Location where a character with Goodwill Refusal is.",
+                    "prerequisite": "A Location where a character with :goodwill: Refusal is.",
                     "description": "Place an :intrigue: on one location."
                 }
             ]
@@ -260,7 +260,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "The Paranoiac gains all the abilities of the Key Person"
+                    "description": "The:paranoia:c gains all the abilities of the Key Person"
                 }
             ]
         },

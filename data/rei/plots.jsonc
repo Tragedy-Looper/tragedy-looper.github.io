@@ -106,7 +106,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "All types of Goodwill Refusal become Puppeted Goodwill Refusal (including Mandatory Goodwill Refusal and that granted by Despair counters)."
+                    "description": "All types of :goodwill: Refusal become Puppeted :goodwill: Refusal (including Mandatory :goodwill: Refusal and that granted by Despair counters)."
                 }
             ]
         },

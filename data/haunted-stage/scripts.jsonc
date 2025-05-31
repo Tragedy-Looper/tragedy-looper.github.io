@@ -408,7 +408,7 @@
         }
       ],
       "specialRules": [
-        "Mastermind remove \"Forbid Goodwill\" from his hand. It cannot be used on any loop"
+        "Mastermind remove \"Forbid :goodwill:\" from his hand. It cannot be used on any loop"
       ],
       "victory-conditions": "",
       "story": "",
@@ -465,7 +465,7 @@
         }
       ],
       "specialRules": [
-        "Mastermind remove \"Forbid Goodwill\" from his hand. It cannot be used on any loop"
+        "Mastermind remove \"Forbid :goodwill:\" from his hand. It cannot be used on any loop"
       ],
       "victory-conditions": "",
       "story": "",

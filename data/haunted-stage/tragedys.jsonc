@@ -42,7 +42,7 @@
             "extraRules": [
                 {
                     "name": "After Death",
-                    "description": "Protagonist can place cards on the corpse, and use its Goodwill abilities. However, there is a penalty for corpses that do not have After Death activity. Set Extra Gauge at 0 at the start of the game. Extra Gauge doesn’t reset after loop end."
+                    "description": "Protagonist can place cards on the corpse, and use its :goodwill: abilities. However, there is a penalty for corpses that do not have After Death activity. Set Extra Gauge at 0 at the start of the game. Extra Gauge doesn’t reset after loop end."
                 },
                 {
                     "name": "Extra Gauge Effect",
@@ -50,7 +50,7 @@
                 },
                 {
                     "name": "Extra Gauge Increase factors",
-                    "description": "Action card set on a corpse that has no After Death activity (+1) Declaration of using Goodwill abilities of corpse that has no After Death activity (+1) Using Goodwill ability to corpse that has no After Death activity (+1) Subplot The Deep Hole at the end of the loop (+ 0-3) Role Ability of Monster (+2) Role Ability of Zombie (+1) Incident Effect (Sacrifice, Repeating Nightmare) (+1)."
+                    "description": "Action card set on a corpse that has no After Death activity (+1) Declaration of using :goodwill: abilities of corpse that has no After Death activity (+1) Using :goodwill: ability to corpse that has no After Death activity (+1) Subplot The Deep Hole at the end of the loop (+ 0-3) Role Ability of Monster (+2) Role Ability of Zombie (+1) Incident Effect (Sacrifice, Repeating Nightmare) (+1)."
                 }
             ]
         }

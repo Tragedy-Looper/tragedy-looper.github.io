@@ -115,7 +115,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "There are at least 3 Paranoia on the Ghost’s corpse."
+                    "prerequisite": "There are at least 3:paranoia: on the Ghost’s corpse."
                 }
             ]
         },

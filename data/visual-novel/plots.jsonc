@@ -54,7 +54,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "The Key Person does not have more than \"X\" Goodwill. \"X\" is half the number of Days in one Loop, rounded down."
+                    "prerequisite": "The Key Person does not have more than \"X\" :goodwill:. \"X\" is half the number of Days in one Loop, rounded down."
                 },
                 {
                     "type": "Mandatory",
@@ -62,7 +62,7 @@
                         "Loop Start"
                     ],
                     "prerequisite": "\"Promise of a Smile\" Loss condition was met in the previous Loop.",
-                    "description": "Key Person gets +1 Goodwill."
+                    "description": "Key Person gets +1 :goodwill:."
                 }
             ]
         },
@@ -85,7 +85,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "description": "The roles of Characters with \"X\" or more Goodwill are revealed. \"X\" is half the number of Days in one Loop, rounded down."
+                    "description": "The roles of Characters with \"X\" or more :goodwill: are revealed. \"X\" is half the number of Days in one Loop, rounded down."
                 }
             ]
         },
@@ -107,7 +107,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "3+ Paranoia.",
+                    "prerequisite": "3+:paranoia:.",
                     "description": "Character gains an additional role of \"Serial Killer.\""
                 }
             ]
@@ -144,7 +144,7 @@
                         "Mastermind Ability"
                     ],
                     "prerequisite": "2+ :intrigue: on School.",
-                    "description": "Place +1 Paranoia on a Character in School."
+                    "description": "Place +1:paranoia: on a Character in School."
                 }
             ]
         },

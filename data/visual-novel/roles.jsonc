@@ -11,7 +11,7 @@
                     "timing": [
                         "Card resolve"
                     ],
-                    "description": "Ignore Goodwill +1 and Goodwill +2 Actions set on this character."
+                    "description": "Ignore :goodwill: +1 and :goodwill: +2 Actions set on this character."
                 }
             ]
         },
@@ -84,7 +84,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "3+ Paranoia, or 1+ :intrigue:",
+                    "prerequisite": "3+:paranoia:, or 1+ :intrigue:",
                     "description": "Kill the Protagonist."
                 },
                 {
@@ -92,8 +92,8 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "There is a Character of the same sex with 3+ Goodwill in the same area.",
-                    "description": "Kill that Character. You may also place up to 1 :intrigue: and 1 Paranoia counter each on yourself."
+                    "prerequisite": "There is a Character of the same sex with 3+ :goodwill: in the same area.",
+                    "description": "Kill that Character. You may also place up to 1 :intrigue: and 1:paranoia: counter each on yourself."
                 }
             ]
         },
@@ -106,7 +106,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "Place 1 Goodwill counter on one other character in the same Location."
+                    "description": "Place 1 :goodwill: counter on one other character in the same Location."
                 }
             ]
         },
@@ -119,7 +119,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "Remove 1 Goodwill counter on one other character in the same Location."
+                    "description": "Remove 1 :goodwill: counter on one other character in the same Location."
                 }
             ]
         },
@@ -132,7 +132,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "Place 1 :intrigue: or 1 Paranoia on this Character."
+                    "description": "Place 1 :intrigue: or 1:paranoia: on this Character."
                 },
                 {
                     "type": "Mandatory",

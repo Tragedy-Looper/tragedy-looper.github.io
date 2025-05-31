@@ -8,7 +8,7 @@
             "abilities": [
                 {
                     "type": "Optional",
-                    "description": "Add one Paranoia to a character in this location.",
+                    "description": "Add one:paranoia: to a character in this location.",
                     "timing": [
                         "Mastermind Ability"
                     ]
@@ -38,7 +38,7 @@
                         "Always"
                     ],
                     "type": "Mandatory",
-                    "description": "Ignore Forbid Goodwill for this character."
+                    "description": "Ignore Forbid :goodwill: for this character."
                 }
             ]
         },
@@ -95,7 +95,7 @@
                         "Mastermind Ability"
                     ],
                     "timesPerLoop": 1,
-                    "description": "Add one Paranoia to another non-Supernatural chracter in the same Location and change the Characters role to Key Person. Teh Seeder looses all abilities and Effects after using this ability."
+                    "description": "Add one:paranoia: to another non-Supernatural chracter in the same Location and change the Characters role to Key Person. Teh Seeder looses all abilities and Effects after using this ability."
                 }
             ]
         },
