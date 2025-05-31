@@ -9,7 +9,7 @@
   import type { PageServerData } from './$types';
   import './holo.css';
   import { getAvialableCharacterImages } from '../../+layout.svelte';
-    import Translation from '../../../view/translation.svelte';
+  import Translation from '../../../view/translation.svelte';
 
   const characterImages = getAvialableCharacterImages();
 
@@ -278,7 +278,7 @@
               />
             {/if}
 
-            <h2>{actualCard.name}</h2>
+            <h2><Translation translationKey={actualCard.name} /></h2>
 
             <ul class="abilities">
               {#each actualCard.abilities as ability}
@@ -302,12 +302,14 @@
                   <div class="ability">
                     {#if ability.restrictedToLocation.length > 0}
                       <div>
-                        {$getString('Only at')}: {ability.restrictedToLocation
-                          .map($getString)
-                          .join(', ')}
+                        <Translation translationKey="Only at" />: {#each ability.restrictedToLocation as res, i}
+                          <Translation translationKey={res} />
+                          {#if i < ability.restrictedToLocation.length - 1},
+                          {/if}
+                        {/each}
                       </div>
                     {/if}
-                    {ability.description}
+                    <Translation translationKey={ability.description} />
                   </div>
                 </li>
               {/each}
@@ -317,7 +319,7 @@
                 <li>
                   <Iron />
                   <div>
-                    {tag}
+                    <Translation translationKey={tag} />
                   </div>
                   <Iron />
                 </li>
