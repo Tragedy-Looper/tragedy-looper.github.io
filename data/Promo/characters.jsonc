@@ -54,7 +54,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "Loop 2 or later: Reveal the name of all characters with the same Role as Copycat. This cannot be refused by Goodwill Refusal."
+                    "description": "Loop 2 or later: Reveal the name of all characters with the same Role as Copycat. This cannot be refused by :goodwill: Refusal."
                 }
             ]
         },

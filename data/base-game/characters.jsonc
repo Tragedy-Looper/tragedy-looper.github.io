@@ -18,7 +18,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "-1 Paranoia on student in same location."
+                    "description": "-1 :paranoia: on student in same location."
                 }
             ]
         },
@@ -37,7 +37,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "-1 Paranoia on student in same location."
+                    "description": "-1:paranoia: on student in same location."
                 }
             ]
         },
@@ -60,7 +60,7 @@
                         "School",
                         "City"
                     ],
-                    "description": "+1 Goodwill on character in same location."
+                    "description": "+1 :goodwill: on character in same location."
                 }
             ]
         },
@@ -104,7 +104,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "immuneToGoodwillRefusel": true,
+                    "immuneTo:goodwill:Refusel": true,
                     "description": "Reveal own role."
                 }
             ]
@@ -130,7 +130,7 @@
                     "restrictedToLocation": [
                         "Shrine"
                     ],
-                    "description": "-1 Intrigue on Shrine."
+                    "description": "-1 :intrigue: on Shrine."
                 },
                 {
                     "type": "active",
@@ -200,7 +200,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 5,
-                    "description": "-1 Intrigue on same location or Character in same location."
+                    "description": "-1 :intrigue: on same location or Character in same location."
                 }
             ]
         },
@@ -287,12 +287,12 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "-1 Paranoia on character in same location."
+                    "description": "-1:paranoia: on character in same location."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 4,
-                    "description": "+1 Goodwill on character in same location."
+                    "description": "+1 :goodwill: on character in same location."
                 }
             ]
         },
@@ -311,12 +311,12 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "+1 Paranoia on character in same location."
+                    "description": "+1:paranoia: on character in same location."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "+1 Goodwill on character in same location."
+                    "description": "+1 :goodwill: on character in same location."
                 }
             ]
         },
@@ -365,7 +365,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "+/-1 Paranoia on character in same location."
+                    "description": "+/-1:paranoia: on character in same location."
                 },
                 {
                     "type": "active",
@@ -406,8 +406,8 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "immuneToGoodwillRefusel": true,
-                    "description": "-1 Paranoia on panicked character in same location. This ability cannot be refused by Goodwill Refusal."
+                    "immuneTo:goodwill:Refusel": true,
+                    "description": "-1:paranoia: on panicked character in same location. This ability cannot be refused by :goodwill: Refusal."
                 }
             ]
         },

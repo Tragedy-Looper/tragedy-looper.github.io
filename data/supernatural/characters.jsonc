@@ -17,7 +17,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "If this character gains supernatural his Goodwill abilities are automatically refused."
+                    "description": "If this character gains supernatural his :goodwill: abilities are automatically refused."
                 },
                 {
                     "type": "active",

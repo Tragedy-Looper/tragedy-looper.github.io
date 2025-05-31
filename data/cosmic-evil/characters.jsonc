@@ -18,7 +18,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "Pick a Student in this location, and add or remove a Paranoia from that student."
+                    "description": "Pick a Student in this location, and add or remove a:paranoia: from that student."
                 },
                 {
                     "type": "active",
@@ -54,7 +54,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "Change an Intrigue conuter on any other character in this location to a Goodwill counter."
+                    "description": "Change an :intrigue: conuter on any other character in this location to a :goodwill: counter."
                 }
             ]
         },
@@ -74,7 +74,7 @@
                     "type": "active",
                     "goodwillRank": 2,
                     "timesPerLoop": 1,
-                    "description": "Place 2 Paranoia on another character in this location."
+                    "description": "Place 2:paranoia: on another character in this location."
                 },
                 {
                     "type": "active",
@@ -98,7 +98,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "At the start of each loop, place an Intrigue on the Shrine."
+                    "description": "At the start of each loop, place an :intrigue: on the Shrine."
                 },
                 {
                     "type": "passive",
