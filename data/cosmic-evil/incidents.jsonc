@@ -7,7 +7,7 @@
             "name": "Sacrilegious Murder",
             "effect": [
                 {
-                    "description": "Either kill another charcter in the same location as the culprit, or place an Intrigue on the culprit’s location."
+                    "description": "Either kill another charcter in the same location as the culprit, or place an :intrigue: on the culprit’s location."
                 }
             ]
         },
@@ -15,7 +15,7 @@
             "name": "Evil Contamination",
             "effect": [
                 {
-                    "description": "Place 2 Intrigue on the Shrine."
+                    "description": "Place 2 :intrigue: on the Shrine."
                 }
             ]
         },
@@ -68,7 +68,7 @@
             "mob": 2,
             "effect": [
                 {
-                    "description": "Place 2 Paranoia on any one character, and an Intrigue on any location."
+                    "description": "Place 2 Paranoia on any one character, and an :intrigue: on any location."
                 }
             ]
         },
@@ -97,7 +97,7 @@
             "name": "Mass Suicide",
             "effect": [
                 {
-                    "prerequisite": "1 Intrigue on the culprit",
+                    "prerequisite": "1 :intrigue: on the culprit",
                     "description": "All characters in the culprit’s location are killed."
                 }
             ]
@@ -117,7 +117,7 @@
             "effect": [
                 {
                     "type": "Delayed Loss condition: Protagonists Death",
-                    "description": "When determinig whether this incident occours or not, count Intrigue instead of Paranoia. For the rest of the loop, if another Incident occours, the Protagonists are killed after the Incident step."
+                    "description": "When determinig whether this incident occours or not, count :intrigue: instead of Paranoia. For the rest of the loop, if another Incident occours, the Protagonists are killed after the Incident step."
                 }
             ]
         },

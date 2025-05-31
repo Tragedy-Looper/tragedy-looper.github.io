@@ -27,7 +27,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "Character is dead & At least 2 Intrigue on this corpse"
+                    "prerequisite": "Character is dead & At least 2 :intrigue: on this corpse"
                 }
             ]
         },
@@ -42,14 +42,14 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "prerequisite": "If there are at least 2 Intrigue in this location, and at least 1 Paranoia on this card"
+                    "prerequisite": "If there are at least 2 :intrigue: in this location, and at least 1 Paranoia on this card"
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
                     "timing": [
                         "On character death"
                     ],
-                    "prerequisite": "When this character dies: Put 1 Intrigue in this location."
+                    "prerequisite": "When this character dies: Put 1 :intrigue: in this location."
                 }
             ]
         },
@@ -84,7 +84,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "description": "Kill one character of the opposite sex in this location who has at least 1 Paranoia and 1 Intrigue."
+                    "description": "Kill one character of the opposite sex in this location who has at least 1 Paranoia and 1 :intrigue:."
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -127,7 +127,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "Place 1 Intrigue or Paranoia on one corpse in this location."
+                    "description": "Place 1 :intrigue: or Paranoia on one corpse in this location."
                 }
             ]
         },

@@ -72,7 +72,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "You may place 1 Intrigue counter on this location or an any character in this location."
+                    "description": "You may place 1 :intrigue: counter on this location or an any character in this location."
                 }
             ]
         },
@@ -163,7 +163,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "There is any charcter with at least 2 Intrigue Counters in this location"
+                    "prerequisite": "There is any charcter with at least 2 :intrigue: Counters in this location"
                 }
             ]
         },

@@ -74,7 +74,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "(Sum of the Extra Gauge and the number of Intrigue counters on the Obstinate added by this Plot) is 3 or more."
+                    "prerequisite": "(Sum of the Extra Gauge and the number of :intrigue: counters on the Obstinate added by this Plot) is 3 or more."
                 }
             ]
         },

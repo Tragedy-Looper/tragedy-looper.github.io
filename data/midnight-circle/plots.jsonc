@@ -32,7 +32,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "description": "When determining whether \"Serial Murde,\" or \"Suicide\" triggers, count Intrigue counters also as Paranoia counters."
+                    "description": "When determining whether \"Serial Murde,\" or \"Suicide\" triggers, count :intrigue: counters also as Paranoia counters."
                 }
             ]
         },
@@ -63,7 +63,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "There are more than X Intrigue counters on the School, X is 1 less than the current loop number."
+                    "prerequisite": "There are more than X :intrigue: counters on the School, X is 1 less than the current loop number."
                 }
             ]
         },
@@ -145,7 +145,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "There are at least 2 Intrigue counters on the Shrine."
+                    "prerequisite": "There are at least 2 :intrigue: counters on the Shrine."
                 }
             ]
         },
@@ -169,7 +169,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "The Ninja (or its corpse) has at least 2 Intrigue counters."
+                    "prerequisite": "The Ninja (or its corpse) has at least 2 :intrigue: counters."
                 },
                 {
                     "type": "Script creation",

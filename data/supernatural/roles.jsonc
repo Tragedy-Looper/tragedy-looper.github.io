@@ -21,7 +21,7 @@
             "abilities": [
                 {
                     "type": "Optional",
-                    "description": "Kill another Character in this location that has 2 or more Intrigue.",
+                    "description": "Kill another Character in this location that has 2 or more :intrigue:.",
                     "timing": [
                         "Mastermind Ability"
                     ]
@@ -67,7 +67,7 @@
             "abilities": [
                 {
                     "type": "Optional",
-                    "description": "Transfer 1 Intrigue from a character to the characers location or another character in the same location.",
+                    "description": "Transfer 1 :intrigue: from a character to the characers location or another character in the same location.",
                     "timing": [
                         "Mastermind Ability"
                     ]
@@ -104,7 +104,7 @@
             "abilities": [
                 {
                     "type": "Mandatory",
-                    "prerequisite": "The Supplicant has 1 intrigue and is in the same location as the Lover",
+                    "prerequisite": "The Supplicant has 1 :intrigue: and is in the same location as the Lover",
                     "description": "The Supplicant gainst Supernatural tag.",
                     "timing": [
                         "Day End"

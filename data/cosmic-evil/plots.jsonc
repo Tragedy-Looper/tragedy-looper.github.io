@@ -104,7 +104,7 @@
             ]
         },
         {
-            "name": "Monster Intrigue",
+            "name": "Monster :intrigue:",
             "roles": {
                 "Conspiracy Theorist": 1
             },
@@ -117,7 +117,7 @@
                         "Mastermind Ability"
                     ],
                     "prerequisite": "A Location where a character with Goodwill Refusal is.",
-                    "description": "Place an Intrigue on one location."
+                    "description": "Place an :intrigue: on one location."
                 }
             ]
         },
@@ -152,7 +152,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "At least 5 characters with Intrigue on them."
+                    "prerequisite": "At least 5 characters with :intrigue: on them."
                 }
             ]
         },
@@ -169,7 +169,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "As manay or more Intrigue on the Shrine then the Extra Gauge shows.",
+                    "prerequisite": "As manay or more :intrigue: on the Shrine then the Extra Gauge shows.",
                     "description": " (If the Extra Gauge is at zero, the Protagonists always lose)"
                 }
             ]
@@ -202,7 +202,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 Intrigue on the Witch’s starting location."
+                    "prerequisite": "2 :intrigue: on the Witch’s starting location."
                 }
             ]
         },

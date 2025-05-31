@@ -65,7 +65,7 @@
                         "Last Day",
                         "Day End"
                     ],
-                    "prerequisite": "At least two intrigue on the shrine."
+                    "prerequisite": "At least two :intrigue: on the shrine."
                 }
             ]
         },
@@ -135,7 +135,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "If there is two Intrigue on the Mad Genius's starting location and the Mad Genius is alive and not at that location."
+                    "prerequisite": "If there is two :intrigue: on the Mad Genius's starting location and the Mad Genius is alive and not at that location."
                 }
             ]
         },
@@ -164,7 +164,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "Transfere 1 Intrigue from a Character to that Character's location or another Character in the same location.",
+                    "description": "Transfere 1 :intrigue: from a Character to that Character's location or another Character in the same location.",
                     "timesPerLoop": 1
                 }
             ]

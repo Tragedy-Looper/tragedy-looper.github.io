@@ -34,7 +34,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "The Key Person has at least 2 Intrigue and is in this char acter‘s location",
+                    "prerequisite": "The Key Person has at least 2 :intrigue: and is in this char acter‘s location",
                     "description": "Kill the Key Person"
                 },
                 {
@@ -42,7 +42,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "This character has at least 4 Intrigue"
+                    "prerequisite": "This character has at least 4 :intrigue:"
                 }
             ]
         },
@@ -55,7 +55,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "You may place 1 Intrigue on this location or on any character in this location."
+                    "description": "You may place 1 :intrigue: on this location or on any character in this location."
                 }
             ]
         },
@@ -68,7 +68,7 @@
                     "timing": [
                         "Card resolve"
                     ],
-                    "description": "You may ignore all Forbid Intrigue effects on this location and on all characters in this location."
+                    "description": "You may ignore all Forbid :intrigue: effects on this location and on all characters in this location."
                 }
             ]
         },
@@ -163,7 +163,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "This character has at least 3 Paranoia and at least 1 Intrigue."
+                    "prerequisite": "This character has at least 3 Paranoia and at least 1 :intrigue:."
                 }
             ]
         },
@@ -189,7 +189,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "There is at least 2 Intrigue on the School",
+                    "prerequisite": "There is at least 2 :intrigue: on the School",
                     "description": "This character gains the Conspiracy Theorist‘s ability, but not its role."
                 },
                 {
@@ -197,7 +197,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "There is at least 2 Intrigue on the City",
+                    "prerequisite": "There is at least 2 :intrigue: on the City",
                     "description": "This character gains the Key Person’s ability, but not its role."
                 }
             ]

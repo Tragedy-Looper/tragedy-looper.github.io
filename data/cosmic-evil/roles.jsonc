@@ -12,7 +12,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "This character has at least 2 Intrigue and at least 2 Paranoia",
+                    "prerequisite": "This character has at least 2 :intrigue: and at least 2 Paranoia",
                     "description": "You may kill all characters and the Protagonists."
                 },
                 {
@@ -20,7 +20,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "description": "When determining whether an Incident, for which this character is the culprit, will occour or not, also treat Intrigue as Paranoia."
+                    "description": "When determining whether an Incident, for which this character is the culprit, will occour or not, also treat :intrigue: as Paranoia."
                 },
                 {
                     "type": "Script creation",
@@ -115,7 +115,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "The Key Person has at least 2 Intrigue and is in this character’s location",
+                    "prerequisite": "The Key Person has at least 2 :intrigue: and is in this character’s location",
                     "description": "You may kill the Key Person."
                 },
                 {
@@ -164,7 +164,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "There are 3 ore more Intrigue on all corpses in total"
+                    "prerequisite": "There are 3 ore more :intrigue: on all corpses in total"
                 }
             ]
         },

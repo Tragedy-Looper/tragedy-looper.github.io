@@ -38,7 +38,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2+ Intrigue on the Shrine."
+                    "prerequisite": "2+ :intrigue: on the Shrine."
                 }
             ]
         },
@@ -143,7 +143,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "prerequisite": "2+ Intrigue on School.",
+                    "prerequisite": "2+ :intrigue: on School.",
                     "description": "Place +1 Paranoia on a Character in School."
                 }
             ]
@@ -168,7 +168,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "Place +1 Intrigue counter on any Location or Character (Once per Loop)."
+                    "description": "Place +1 :intrigue: counter on any Location or Character (Once per Loop)."
                 }
             ]
         },
@@ -183,7 +183,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "3+ Intrigue on a Person.",
+                    "prerequisite": "3+ :intrigue: on a Person.",
                     "description": "Character becomes the role \"Creature.\""
                 }
             ]

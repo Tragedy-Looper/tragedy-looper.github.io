@@ -147,14 +147,14 @@
                     "timing": [
                         "Day End"
                     ],
-                    "description": "You may place 1 Intrigue counter on a corpse at this character’s location."
+                    "description": "You may place 1 :intrigue: counter on a corpse at this character’s location."
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "If there are 3 or more Intrigue counters on all corpses combined after using this roles other ability."
+                    "prerequisite": "If there are 3 or more :intrigue: counters on all corpses combined after using this roles other ability."
                 }
             ]
         },

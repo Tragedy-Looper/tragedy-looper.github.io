@@ -15,7 +15,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "At least 1 Intrigue, 1 Goodwill, and 1 Paranoia are placed on the character whose original role is a Person",
+                    "prerequisite": "At least 1 :intrigue:, 1 Goodwill, and 1 Paranoia are placed on the character whose original role is a Person",
                     "description": "The character gains Goodwill Outburst and Marionette’s ability."
                 }
             ]
@@ -67,14 +67,14 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "The current world is Normal world and there are at least 2 Intrigue on the Brain‘s starting Location"
+                    "prerequisite": "The current world is Normal world and there are at least 2 :intrigue: on the Brain‘s starting Location"
                 },
                 {
                     "type": "Loss condition: Tragedy",
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "The current world is Abnormal world and there are at least 2 Intrigue on the Invader‘s starting Location"
+                    "prerequisite": "The current world is Abnormal world and there are at least 2 :intrigue: on the Invader‘s starting Location"
                 }
             ]
         },
@@ -129,7 +129,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "At least 2 Intrigue on the City",
+                    "prerequisite": "At least 2 :intrigue: on the City",
                     "description": "Switching the world is prohibited except for this plot rule ability."
                 },
                 {
@@ -137,7 +137,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "At least 2 Intrigue on the City",
+                    "prerequisite": "At least 2 :intrigue: on the City",
                     "description": "Switch the world to Abnormal World."
                 }
             ]

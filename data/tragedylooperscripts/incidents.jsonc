@@ -8,7 +8,7 @@
             "effect": [
                 {
                     "type": "Loss condition: Tragedy",
-                    "prerequisite": "If there is at least 2 intrigue on the culprit's location.",
+                    "prerequisite": "If there is at least 2 :intrigue: on the culprit's location.",
                     "description": "Everyone in the diagonally opposite location dies and protagonists lose"
                 }
             ]

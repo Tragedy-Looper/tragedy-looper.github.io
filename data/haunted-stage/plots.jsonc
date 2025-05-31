@@ -75,7 +75,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "description": "Increase Extra Gauge by X. X is equal to the number of Intrigue on the City. (Max 3)."
+                    "description": "Increase Extra Gauge by X. X is equal to the number of :intrigue: on the City. (Max 3)."
                 }
             ]
         },
@@ -91,7 +91,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "A corpse whose original role does not have After Death activity will be changed to a Zombie as long as it has at least 1 Intrigue."
+                    "description": "A corpse whose original role does not have After Death activity will be changed to a Zombie as long as it has at least 1 :intrigue:."
                 }
             ]
         },
@@ -131,7 +131,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "There are at least 3 corpses on the location where 1 or more Intrigue are placed."
+                    "prerequisite": "There are at least 3 corpses on the location where 1 or more :intrigue: are placed."
                 }
             ]
         },

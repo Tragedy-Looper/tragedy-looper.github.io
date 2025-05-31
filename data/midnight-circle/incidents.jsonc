@@ -24,12 +24,12 @@
             "name": "Terrorism",
             "effect": [
                 {
-                    "prerequisite": "1 Intrigue on the City",
+                    "prerequisite": "1 :intrigue: on the City",
                     "description": "Everyone in the City dies."
                 },
                 {
                     "type": "Mandatory Loss condition: Protagonists Death",
-                    "prerequisite": "2 Intrigue on the City"
+                    "prerequisite": "2 :intrigue: on the City"
                 }
             ]
         },
@@ -77,7 +77,7 @@
             "name": "Conspiracies",
             "effect": [
                 {
-                    "description": "Resolve either a Serial Murder or a Missing Person Incident. Check Intrigue instead of Paranoia conters to trigger the Incident."
+                    "description": "Resolve either a Serial Murder or a Missing Person Incident. Check :intrigue: instead of Paranoia conters to trigger the Incident."
                 }
             ]
         },
@@ -85,11 +85,11 @@
             "name": "Uproar",
             "effect": [
                 {
-                    "prerequisite": "1 Intrigue on the School",
+                    "prerequisite": "1 :intrigue: on the School",
                     "description": "Everyone in the School dies."
                 },
                 {
-                    "prerequisite": "1 Intrigue on the City",
+                    "prerequisite": "1 :intrigue: on the City",
                     "description": "Everyone in the City dies."
                 }
             ]
@@ -99,7 +99,7 @@
             "effect": [
                 {
                     "type": "Mandatory Loss condition: Protagonists Death",
-                    "prerequisite": "2 Intrigue on the culprit’s starting location"
+                    "prerequisite": "2 :intrigue: on the culprit’s starting location"
                 }
             ],
             "faked": true
@@ -108,7 +108,7 @@
             "name": "Breakthrough",
             "effect": [
                 {
-                    "description": "The Protagonist Leader chooses one location or character, and removes 2 Intrigue counters from there."
+                    "description": "The Protagonist Leader chooses one location or character, and removes 2 :intrigue: counters from there."
                 }
             ]
         },

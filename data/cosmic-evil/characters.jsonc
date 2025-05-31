@@ -54,7 +54,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "Change an :intrigue: conuter on any other character in this location to a :goodwill: counter."
+                    "description": "Change an ::intrigue:: conuter on any other character in this location to a :goodwill: counter."
                 }
             ]
         },
@@ -98,7 +98,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "At the start of each loop, place an :intrigue: on the Shrine."
+                    "description": "At the start of each loop, place an ::intrigue:: on the Shrine."
                 },
                 {
                     "type": "passive",

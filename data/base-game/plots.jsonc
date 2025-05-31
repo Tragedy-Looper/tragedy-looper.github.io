@@ -14,7 +14,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 Intrigue on the Brain’s starting location"
+                    "prerequisite": "2 :intrigue: on the Brain’s starting location"
                 }
             ]
         },
@@ -30,7 +30,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 Intrigue on the School."
+                    "prerequisite": "2 :intrigue: on the School."
                 }
             ]
         },
@@ -54,7 +54,7 @@
                         "Mastermind Ability"
                     ],
                     "timesPerLoop": 1,
-                    "description": "You may place 1 Intrigue on any location."
+                    "description": "You may place 1 :intrigue: on any location."
                 }
             ]
         },
@@ -96,7 +96,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 Intrigue on the Shrine."
+                    "prerequisite": "2 :intrigue: on the Shrine."
                 }
             ]
         },
@@ -115,7 +115,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 Intrigue on the Key Person."
+                    "prerequisite": "2 :intrigue: on the Key Person."
                 }
             ]
         },
@@ -146,7 +146,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 Intrigue on the Witch’s starting location."
+                    "prerequisite": "2 :intrigue: on the Witch’s starting location."
                 }
             ]
         },

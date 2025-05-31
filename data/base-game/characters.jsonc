@@ -130,7 +130,7 @@
                     "restrictedToLocation": [
                         "Shrine"
                     ],
-                    "description": "-1 :intrigue: on Shrine."
+                    "description": "-1 ::intrigue:: on Shrine."
                 },
                 {
                     "type": "active",
@@ -200,7 +200,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 5,
-                    "description": "-1 :intrigue: on same location or Character in same location."
+                    "description": "-1 ::intrigue:: on same location or Character in same location."
                 }
             ]
         },

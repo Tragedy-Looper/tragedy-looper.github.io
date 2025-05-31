@@ -15,7 +15,7 @@
             "name": "Blasphemy",
             "effect": [
                 {
-                    "description": "Blasphemy\tPlace 1 Paranoia and 1 Intrigue on any corpse."
+                    "description": "Blasphemy\tPlace 1 Paranoia and 1 :intrigue: on any corpse."
                 }
             ]
         },
@@ -32,7 +32,7 @@
             "effect": [
                 {
                     "prerequisite": "Culprit is dead",
-                    "description": "At least 1 Intrigue on the shrine: Increase Extra Gauge by 4."
+                    "description": "At least 1 :intrigue: on the shrine: Increase Extra Gauge by 4."
                 }
             ]
         },
@@ -50,7 +50,7 @@
             "effect": [
                 {
                     "prerequisite": "Culprit is dead",
-                    "description": "Place 2 Intrigue on the culprit’s location."
+                    "description": "Place 2 :intrigue: on the culprit’s location."
                 }
             ]
         },

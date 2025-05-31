@@ -23,7 +23,7 @@
             "name": "Grave Robbing",
             "effect": [
                 {
-                    "description": "Place two Intrigue on the Shrine. Move a Character from the Shrine to the School, if possible."
+                    "description": "Place two :intrigue: on the Shrine. Move a Character from the Shrine to the School, if possible."
                 }
             ]
         },
@@ -31,7 +31,7 @@
             "name": "Indoctrination",
             "effect": [
                 {
-                    "description": "Remove all Goodwill from a Character and replace with a mix of Paranoia or Intrigue that equals the removed Goodwill."
+                    "description": "Remove all Goodwill from a Character and replace with a mix of Paranoia or :intrigue: that equals the removed Goodwill."
                 }
             ]
         },
@@ -39,7 +39,7 @@
             "name": "Proselytizing",
             "effect": [
                 {
-                    "description": "Add one Intrigue to a Character and one Intrigue to that Character's location."
+                    "description": "Add one :intrigue: to a Character and one :intrigue: to that Character's location."
                 }
             ]
         },
@@ -63,7 +63,7 @@
             "name": "School Shooting",
             "effect": [
                 {
-                    "prerequisite": "If at least 1 Intrigue on the Culprit",
+                    "prerequisite": "If at least 1 :intrigue: on the Culprit",
                     "description": "All Characters in School are killed."
                 }
             ]
@@ -72,7 +72,7 @@
             "name": "Dark Lesson",
             "effect": [
                 {
-                    "description": "Add an Intrigue to all Characters at the Culprit's location."
+                    "description": "Add an :intrigue: to all Characters at the Culprit's location."
                 }
             ]
         },

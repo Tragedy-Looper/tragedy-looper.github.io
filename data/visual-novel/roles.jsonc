@@ -24,14 +24,14 @@
                     "timing": [
                         "Day End"
                     ],
-                    "description": "You may kill one Character in the same location who has 1+ Intrigue Counter(s) on them, unless a Slayer is in the same Location."
+                    "description": "You may kill one Character in the same location who has 1+ :intrigue: Counter(s) on them, unless a Slayer is in the same Location."
                 },
                 {
                     "type": "Optional",
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "The Creature has at least 5 Intrigue",
+                    "prerequisite": "The Creature has at least 5 :intrigue:",
                     "description": "Kill the Protagonist."
                 }
             ]
@@ -45,7 +45,7 @@
                     "timing": [
                         "Card resolve"
                     ],
-                    "description": "Ignore all Intrigue Counters placed on the Location where this Character is, as well as on any other Characters in the same Location."
+                    "description": "Ignore all :intrigue: Counters placed on the Location where this Character is, as well as on any other Characters in the same Location."
                 },
                 {
                     "type": "Mandatory",
@@ -72,7 +72,7 @@
                     "timing": [
                         "Mastermind Action step"
                     ],
-                    "description": "Remove one Intrigue Counter from a Character in the same Location."
+                    "description": "Remove one :intrigue: Counter from a Character in the same Location."
                 }
             ]
         },
@@ -84,7 +84,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "3+ Paranoia, or 1+ Intrigue",
+                    "prerequisite": "3+ Paranoia, or 1+ :intrigue:",
                     "description": "Kill the Protagonist."
                 },
                 {
@@ -93,7 +93,7 @@
                         "Day End"
                     ],
                     "prerequisite": "There is a Character of the same sex with 3+ Goodwill in the same area.",
-                    "description": "Kill that Character. You may also place up to 1 Intrigue and 1 Paranoia counter each on yourself."
+                    "description": "Kill that Character. You may also place up to 1 :intrigue: and 1 Paranoia counter each on yourself."
                 }
             ]
         },
@@ -132,7 +132,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "Place 1 Intrigue or 1 Paranoia on this Character."
+                    "description": "Place 1 :intrigue: or 1 Paranoia on this Character."
                 },
                 {
                     "type": "Mandatory",

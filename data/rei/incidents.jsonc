@@ -40,7 +40,7 @@
             "name": "Left Behind",
             "effect": [
                 {
-                    "description": "Place 1 Intrigue counter on a character at the culprit’s location, then move the culprit to any location."
+                    "description": "Place 1 :intrigue: counter on a character at the culprit’s location, then move the culprit to any location."
                 }
             ]
         },
@@ -48,7 +48,7 @@
             "name": "Phantasmal Incident",
             "effect": [
                 {
-                    "description": "Resolve the effect of Crime of Passion, Dimensional Perversion, or Left Behind. When determining if this Incident triggers, refer to the number of Intrigue counters on the culprit instead of the original type of counter."
+                    "description": "Resolve the effect of Crime of Passion, Dimensional Perversion, or Left Behind. When determining if this Incident triggers, refer to the number of :intrigue: counters on the culprit instead of the original type of counter."
                 }
             ]
         },
@@ -73,7 +73,7 @@
                 },
                 {
                     "type": "Mandatory Loss condition: Protagonists Death",
-                    "prerequisite": "If the players are in the Dark World and there is 1 or more Intrigue counter on the culprit’s starting location"
+                    "prerequisite": "If the players are in the Dark World and there is 1 or more :intrigue: counter on the culprit’s starting location"
                 }
             ]
         },

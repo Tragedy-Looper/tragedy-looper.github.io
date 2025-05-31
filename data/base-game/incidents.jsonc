@@ -15,7 +15,7 @@
             "name": "Increasing Unease",
             "effect": [
                 {
-                    "description": "Place 2 Paranoia on any character, then 1 Intrigue on any other character."
+                    "description": "Place 2 Paranoia on any character, then 1 :intrigue: on any other character."
                 }
             ]
         },
@@ -23,7 +23,7 @@
             "name": "Foul Evil",
             "effect": [
                 {
-                    "description": "Place 2 Intrigue on the Shrine."
+                    "description": "Place 2 :intrigue: on the Shrine."
                 }
             ]
         },
@@ -39,12 +39,12 @@
             "name": "Hospital Incident",
             "effect": [
                 {
-                    "prerequisite": "1 Intrigue on the Hospital",
+                    "prerequisite": "1 :intrigue: on the Hospital",
                     "description": "Everyone in the Hospital dies."
                 },
                 {
                     "type": "Mandatory Loss condition: Protagonists Death",
-                    "prerequisite": "2 Intrigue on the Hospital"
+                    "prerequisite": "2 :intrigue: on the Hospital"
                 }
             ]
         },
@@ -52,7 +52,7 @@
             "name": "Faraway Murder",
             "effect": [
                 {
-                    "description": "One character with at least 2 Intrigue dies."
+                    "description": "One character with at least 2 :intrigue: dies."
                 }
             ]
         },
@@ -60,7 +60,7 @@
             "name": "Missing Person",
             "effect": [
                 {
-                    "description": "Move culprit to any Location. Put 1 Intrigue on that Location."
+                    "description": "Move culprit to any Location. Put 1 :intrigue: on that Location."
                 }
             ]
         },

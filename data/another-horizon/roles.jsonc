@@ -14,7 +14,7 @@
                 {
                     "type": "Mandatory",
                     "timing": ["After Goodwill Ability used"],
-                    "description": "Remove 1 Intrigue in this Location or on any character in this Location"
+                    "description": "Remove 1 :intrigue: in this Location or on any character in this Location"
                 }
             ]
         },
@@ -25,7 +25,7 @@
                 {
                     "type": "Optional",
                     "timing": ["Mastermind Ability"],                    
-                    "description": "If there are at least 2 Intrigue in this location: Switch the world."
+                    "description": "If there are at least 2 :intrigue: in this location: Switch the world."
                 }
             ]
         },
@@ -38,7 +38,7 @@
                 {
                     "type": "Mandatory",
                     "timing": ["Always"],                    
-                    "description": "If there are at least 2 Intrigue in this location: Switch the world."
+                    "description": "If there are at least 2 :intrigue: in this location: Switch the world."
                 }
             ]
         },
@@ -56,8 +56,8 @@
                 {
                     "type": "Loss condition: Tragedy",
                     "timing": ["Loop End"],
-                    "prerequisite": "This character has at least 1 Intrigue",
-                    "description": "If this character has at least 1 Intrigue at Loop End, the tragedy side wins."
+                    "prerequisite": "This character has at least 1 :intrigue:",
+                    "description": "If this character has at least 1 :intrigue: at Loop End, the tragedy side wins."
                 }
             ]
         },
@@ -126,7 +126,7 @@
                     "type": "Optional",
                     "timing": ["Incident trigger"],
                     "prerequisite": "This Character resolved an incident",
-                    "description": "Put 1 Goodwill, or 1 Paranoia, or 1 Intrigue on any character in this location."
+                    "description": "Put 1 Goodwill, or 1 Paranoia, or 1 :intrigue: on any character in this location."
                 }
             ]
         },
