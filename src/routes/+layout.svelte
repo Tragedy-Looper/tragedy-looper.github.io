@@ -6,6 +6,7 @@
     return getContext<LayoutProps['data']>('characterImages').tragedySetImages;
   }
 
+
   export function showTranslationMissingDialog(
     key: string,
     newTextCallback: (newText: string) => void
@@ -24,6 +25,7 @@
     highilghtMissing: true,
     inlineEdit: false,
     editLocals: false,
+    iconSet: 'zManText' as keyof typeof imageSets,
   };
 
   export let enableTranslationUi = $state(defaultSettings);
@@ -40,6 +42,7 @@
   import { addTranslation } from '../storage';
   import { get } from 'svelte/store';
   import { browser } from '$app/environment';
+    import type { imageSets } from '../view/translation.svelte';
 
   const contextKey = 'characterImages';
 
@@ -106,6 +109,7 @@
       <a href="https://github.com/LokiMidgard/tragedy-looper-deduction-tool/issues">GitHub</a>.
       {$getString('That way everyone can benefit from your translation.')}
     </p>
+
     <footer>
       <button class="outline" style="float: left;" onclick={() => closeDialog()}
         >{$getString('Close')}</button

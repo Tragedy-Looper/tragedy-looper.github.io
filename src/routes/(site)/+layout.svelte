@@ -50,7 +50,7 @@
   } from '../../translations';
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
-  import Translation from '../../view/translation.svelte';
+  import Translation, { imageSets } from '../../view/translation.svelte';
   import { enableTranslationUi } from '../+layout.svelte';
 
   let showOptionsDialog = $state(false);
@@ -136,6 +136,20 @@
           />
         </small>
       </label>
+
+      <label>
+        <Translation translationKey={'Icon Set'} />
+        <select bind:value={enableTranslationUi.iconSet}>
+          {#each Object.keys(imageSets) as set}
+            <option value={set}>{set}</option>
+          {/each}
+        </select>
+        <small>
+          <Translation
+            translationKey={'You can change if text or icons should be used, and what nomiclatur should be used.'}
+          />
+        </small></label
+      >
     </form>
     <footer>
       <button onclick={() => (showOptionsDialog = false)}>

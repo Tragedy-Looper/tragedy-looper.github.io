@@ -1,3 +1,44 @@
+<script lang="ts" module>
+  const icons = ['paranoia', 'goodwill', 'intrigue', 'hope', 'dispair'] as const;
+
+  export const imageSets = {
+    zMan: {
+      paranoia: { type: 'icon', imagePath: `${base}/icons/zMan/paranoia.png` },
+      goodwill: { type: 'icon', imagePath: `${base}/icons/zMan/goodwill.png` },
+      intrigue: { type: 'icon', imagePath: `${base}/icons/zMan/intrigue.png` },
+      hope: { type: 'icon', imagePath: `${base}/icons/zMan/hope.png` },
+      dispair: { type: 'icon', imagePath: `${base}/icons/zMan/dispair.png` },
+    },
+    wizKids: {
+      paranoia: { type: 'icon', imagePath: `${base}/icons/wizKids/unease.svg` },
+      goodwill: { type: 'icon', imagePath: `${base}/icons/wizKids/goodwill.svg` },
+      intrigue: { type: 'icon', imagePath: `${base}/icons/wizKids/intrigue.svg` },
+      hope: { type: 'icon', imagePath: `${base}/icons/zMan/hope.png` },
+      dispair: { type: 'icon', imagePath: `${base}/icons/zMan/dispair.png` },
+    },
+    zManText: {
+      paranoia: { type: 'text', text: `Paranoia` },
+      goodwill: { type: 'text', text: `Goodwill` },
+      intrigue: { type: 'text', text: `Intrigue` },
+      hope: { type: 'text', text: `Hope` },
+      dispair: { type: 'text', text: `Dispair` },
+    },
+    wizKidsText: {
+      paranoia: { type: 'text', text: `Unease` },
+      goodwill: { type: 'text', text: `Goodwill` },
+      intrigue: { type: 'text', text: `Intrigue` },
+      hope: { type: 'text', text: `Hope` },
+      dispair: { type: 'text', text: `Dispair` },
+    },
+  } satisfies Record<
+    string,
+    Record<
+      (typeof icons)[number],
+      { type: 'icon'; imagePath: string } | { type: 'text'; text: string }
+    >
+  >;
+</script>
+
 <script lang="ts" generics="TKey extends string | undefined">
   import { onDestroy, onMount, tick } from 'svelte';
   import { getString, language } from '../routes/(site)/+layout.svelte';
@@ -42,26 +83,9 @@
       : undefined
   );
 
-  const icons = ['paranoia', 'goodwill', 'intrigue', 'hope', 'dispair'] as const;
-
-  const set: keyof typeof images = 'wizKids';
-
-  let images = {
-    zMan: {
-      paranoia: `${base}/icons/zMan/paranoia.png`,
-      goodwill: `${base}/icons/zMan/goodwill.png`,
-      intrigue: `${base}/icons/zMan/intrigue.png`,
-      hope: `${base}/icons/zMan/hope.png`,
-      dispair: `${base}/icons/zMan/dispair.png`,
-    },
-    wizKids: {
-      paranoia: `${base}/icons/wizKids/unease.svg`,
-      goodwill: `${base}/icons/wizKids/goodwill.svg`,
-      intrigue: `${base}/icons/wizKids/intrigue.svg`,
-      hope: `${base}/icons/zMan/hope.png`,
-      dispair: `${base}/icons/zMan/dispair.png`,
-    },
-  } satisfies Record<string, Record<(typeof icons)[number], string>>;
+  let set = $derived(
+    enableTranslationUi.iconSet in imageSets ? enableTranslationUi.iconSet : 'zMan'
+  );
 
   const md = markdownit({
     html: false,
@@ -86,8 +110,15 @@
     if (!icons.includes(emojiName)) {
       return self.renderToken(tokens, idx, options);
     }
-    // Otherwise, return a custom rendering for paranoia
-    return `<span class="emoji" title="${$getString(emojiName)}"><img src="${images[set][emojiName]}" ></img></span>`;
+
+    const placholder = imageSets[set][emojiName];
+    if (placholder.type === 'text') {
+      return `<span class="emoji" title="${$getString(emojiName)}">${placholder.text}</span>`;
+    } else if (placholder.type === 'icon') {
+      return `<span class="emoji" title="${$getString(emojiName)}"><img src="${placholder.imagePath}" ></img></span>`;
+    } else {
+      return self.renderToken(tokens, idx, options);
+    }
   };
 
   // add base to links
