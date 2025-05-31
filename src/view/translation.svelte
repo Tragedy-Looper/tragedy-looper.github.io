@@ -11,6 +11,7 @@
   } from '../translations';
   import markdownit, { type Options } from 'markdown-it';
   import markdomnItKdb from 'markdown-it-kbd';
+  import { full as emoji } from 'markdown-it-emoji';
   import type { Renderer, Token } from 'markdown-it/index.js';
   import { base } from '$app/paths';
   import { enableTranslationUi, showTranslationMissingDialog } from '../routes/+layout.svelte';
@@ -41,11 +42,53 @@
       : undefined
   );
 
+  const icons = ['paranoia', 'goodwill', 'intrigue', 'hope', 'dispair'] as const;
+
+  const set: keyof typeof images = 'wizKids';
+
+  let images = {
+    zMan: {
+      paranoia: `${base}/icons/zMan/paranoia.png`,
+      goodwill: `${base}/icons/zMan/goodwill.png`,
+      intrigue: `${base}/icons/zMan/intrigue.png`,
+      hope: `${base}/icons/zMan/hope.png`,
+      dispair: `${base}/icons/zMan/dispair.png`,
+    },
+    wizKids: {
+      paranoia: `${base}/icons/wizKids/unease.svg`,
+      goodwill: `${base}/icons/wizKids/goodwill.svg`,
+      intrigue: `${base}/icons/wizKids/intrigue.svg`,
+      hope: `${base}/icons/zMan/hope.png`,
+      dispair: `${base}/icons/zMan/dispair.png`,
+    },
+  } satisfies Record<string, Record<(typeof icons)[number], string>>;
+
   const md = markdownit({
     html: false,
     linkify: false,
     typographer: true,
-  }).use(markdomnItKdb);
+  })
+    .use(markdomnItKdb)
+    .use(emoji, {
+      defs: Object.fromEntries(icons.map((icon) => [icon, icon] as const)),
+      enabled: icons,
+    });
+  md.renderer.rules.emoji = (
+    tokens: Token[],
+    idx: number,
+    options: Options,
+    env: unknown,
+    self: Renderer
+  ) => {
+    const token = tokens[idx];
+    const emojiName = token.content as (typeof icons)[number];
+    // If the emoji is not paranoia, return the default rendering
+    if (!icons.includes(emojiName)) {
+      return self.renderToken(tokens, idx, options);
+    }
+    // Otherwise, return a custom rendering for paranoia
+    return `<span class="emoji" title="${$getString(emojiName)}"><img src="${images[set][emojiName]}" ></img></span>`;
+  };
 
   // add base to links
 

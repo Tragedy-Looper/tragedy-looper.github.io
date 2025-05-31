@@ -56,6 +56,14 @@ label>small {
     color: var(--pico-muted-color);
 }
 
+.emoji{
+    display: inline;
+
+    img{
+        height: 1.8em;
+    }
+}
+
 body,
 html {
     margin: 0;
