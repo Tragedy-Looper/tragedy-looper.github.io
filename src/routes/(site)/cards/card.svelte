@@ -69,7 +69,7 @@
       ...value,
       forbiddenLocation:
         'forbiddenLocation' in value && value.forbiddenLocation ? value.forbiddenLocation : [],
-      name: $getString(value.name),
+      name: value.name,
       gender:
         (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
         (value.tags.includes('girl' as never) || value.tags.includes('woman' as never))
@@ -102,7 +102,7 @@
                 ? ability.restrictedToLocation
                 : [],
 
-            description: $getString(ability.description),
+            description: ability.description,
           };
         }) ?? [],
     };
