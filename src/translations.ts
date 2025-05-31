@@ -11,6 +11,7 @@ import { writable } from 'svelte/store';
 import { characters, incidents, keywords, plots, roles, scripts, tragedys } from './data';
 import MarkdownIt, { type Options } from 'markdown-it';
 import type { Renderer, Token } from 'markdown-it/index.js';
+import type { Script } from './scripts.g';
 
 
 
@@ -41,7 +42,7 @@ function getLinksFromMarkdown(markdown: string): Set<string> {
 
 
 
-const toCheck = [characters, incidents, plots, roles, keywords, tragedys, scripts.flatMap(x => [x.cast, x.title, x['victory-conditions'], x.story, x.mastermindHints]),
+const toCheck = [characters, incidents, plots, roles, keywords, tragedys, scripts.flatMap(x => [x.cast, ...(x as unknown as Script).set?.map(x => x.name).filter(x => x != undefined) ?? [], x.title, x['victory-conditions'], x.story, x.mastermindHints]),
     ...ui_strings,
     'Location Icons',
     'Intrigue Places',
