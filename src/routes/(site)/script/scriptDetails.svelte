@@ -111,7 +111,7 @@
         class="outline"
         on:click={() =>
           share(
-            `${base}/script/?script=${encodeURIComponent(JSON.stringify(script))}`,
+            `${base}/script/overview/?script=${encodeURIComponent(JSON.stringify(script))}`,
             script.title,
             'A Tragedy Looper Script'
           )}
