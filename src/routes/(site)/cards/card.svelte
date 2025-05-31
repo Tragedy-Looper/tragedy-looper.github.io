@@ -11,6 +11,8 @@
   import { getAvialableCharacterImages } from '../../+layout.svelte';
   import Translation from '../../../view/translation.svelte';
 
+  import * as data from '../../../data';
+
   const characterImages = getAvialableCharacterImages();
 
   type Card = {
@@ -65,7 +67,8 @@
     const dataFromCharacterName = {
       type: 'character' as const,
       ...value,
-      forbiddenLocation: 'forbiddenLocation' in value ? value.forbiddenLocation : [],
+      forbiddenLocation:
+        'forbiddenLocation' in value && value.forbiddenLocation ? value.forbiddenLocation : [],
       name: $getString(value.name),
       gender:
         (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
@@ -78,18 +81,26 @@
               : ('diverse' as const),
       tags: value.tags.map($getString).toSorted((a, b) => a.localeCompare(b)),
       image: characterImages[key as keyof typeof characterImages],
-      abilities: value.abilities.map((ability) => {
-        return {
-          ...ability,
-          timesPerLoop: 'timesPerLoop' in ability ? ability.timesPerLoop : 0,
-          immuneToGoodwillRefusel:
-            'immuneToGoodwillRefusel' in ability ? ability.immuneToGoodwillRefusel : false,
-          restrictedToLocation:
-            'restrictedToLocation' in ability ? ability.restrictedToLocation : [],
+      abilities:
+        value.abilities?.map((ability) => {
+          return {
+            ...ability,
+            timesPerLoop:
+              'timesPerLoop' in ability && ability.timesPerLoop != undefined
+                ? ability.timesPerLoop
+                : 0,
+            immuneToGoodwillRefusel:
+              'immuneToGoodwillRefusel' in ability && ability.immuneToGoodwillRefusel !== undefined
+                ? ability.immuneToGoodwillRefusel
+                : false,
+            restrictedToLocation:
+              'restrictedToLocation' in ability && ability.restrictedToLocation
+                ? ability.restrictedToLocation
+                : [],
 
-          description: $getString(ability.description),
-        };
-      }),
+            description: $getString(ability.description),
+          };
+        }) ?? [],
     };
 
     if (typeof c === 'string') {
@@ -319,7 +330,7 @@
                 <li>
                   <Iron />
                   <div>
-                    <Translation translationKey={tag} />
+                    <Translation translationKey={data.keywordsLookup[tag as keyof typeof data.keywordsLookup].name} />
                   </div>
                   <Iron />
                 </li>

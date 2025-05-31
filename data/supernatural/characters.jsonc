@@ -4,7 +4,8 @@
     // "$schema": "../characters.schema.json",
     "characters": [
         {
-            "name": "Crusader",
+            "id": "Crusader",
+"name": "Crusader",
             "tags": [
                 "man",
                 "adult"

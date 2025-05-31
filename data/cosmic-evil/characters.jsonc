@@ -4,7 +4,8 @@
     // "$schema": "../characters.schema.json",
     "characters": [
         {
-            "name": "Teacher",
+            "id": "Teacher",
+"name": "Teacher",
             "edition": "Cosmic Evil",
 "paranoiaLimit": 2,
             "tags": [
@@ -29,7 +30,8 @@
             ]
         },
         {
-            "name": "Transfer Student",
+            "id": "Transfer Student",
+"name": "Transfer Student",
             "edition": "Cosmic Evil",
 "paranoiaLimit": 2,
             "tags": [
@@ -39,7 +41,8 @@
             "comesInLater": true,
             "scriptSpecified": [
                 {
-                    "name": "enters on day",
+                    "id": "enters on day",
+"name": "enters on day",
                     "type": "number"
                 }
             ],
@@ -59,7 +62,8 @@
             ]
         },
         {
-            "name": "Soldier",
+            "id": "Soldier",
+"name": "Soldier",
             "edition": "Cosmic Evil",
 "paranoiaLimit": 3,
             "tags": [
@@ -85,7 +89,8 @@
             ]
         },
         {
-            "name": "Black Cat",
+            "id": "Black Cat",
+"name": "Black Cat",
             "edition": "Cosmic Evil",
 "paranoiaLimit": 0,
             "tags": [

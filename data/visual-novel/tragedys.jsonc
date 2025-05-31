@@ -4,7 +4,8 @@
     // "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "name": "Visual Novel",
+            "id": "Visual Novel",
+"name": "Visual Novel",
             "mainPlots": [
                 "The Last Miracle",
                 "Seal of the Evil Spirit",

@@ -4,7 +4,8 @@
     // "$schema": "../plots.schema.json",
     "plots": [
         {
-            "name": "Lost Heart",
+            "id": "Lost Heart",
+"name": "Lost Heart",
             "roles": {
                 "Agent": 1,
                 "Brain": 1
@@ -21,14 +22,16 @@
             ]
         },
         {
-            "name": "Shadow Demon King",
+            "id": "Shadow Demon King",
+"name": "Shadow Demon King",
             "roles": {
                 "Twilight": 1
             },
             "rules": []
         },
         {
-            "name": "The Devil’s Will",
+            "id": "The Devil’s Will",
+"name": "The Devil’s Will",
             "roles": {
                 "Agent": 1,
                 "Invader": 1,
@@ -37,7 +40,8 @@
             "rules": []
         },
         {
-            "name": "Parallel World War",
+            "id": "Parallel World War",
+"name": "Parallel World War",
             "roles": {
                 "Agent": 1
             },
@@ -56,7 +60,8 @@
             ]
         },
         {
-            "name": "Alien Erosion",
+            "id": "Alien Erosion",
+"name": "Alien Erosion",
             "roles": {
                 "Brain": 1,
                 "Invader": 1
@@ -79,7 +84,8 @@
             ]
         },
         {
-            "name": "The World of Dollhouse",
+            "id": "The World of Dollhouse",
+"name": "The World of Dollhouse",
             "roles": {
                 "Quidnunc": 1
             },
@@ -94,7 +100,8 @@
             ]
         },
         {
-            "name": "Ego Wave",
+            "id": "Ego Wave",
+"name": "Ego Wave",
             "roles": {
                 "Animus": 1,
                 "Agitator": 1
@@ -102,7 +109,8 @@
             "rules": []
         },
         {
-            "name": "The Closed Door",
+            "id": "The Closed Door",
+"name": "The Closed Door",
             "roles": {
                 "Quidnunc": 1,
                 "Agitator": 1
@@ -118,7 +126,8 @@
             ]
         },
         {
-            "name": "Moonside City",
+            "id": "Moonside City",
+"name": "Moonside City",
             "roles": {
                 "Quidnunc": 1,
                 "Neurosis": 1
@@ -143,7 +152,8 @@
             ]
         },
         {
-            "name": "Fanatic Fox",
+            "id": "Fanatic Fox",
+"name": "Fanatic Fox",
             "roles": {
                 "Animus": 1,
                 "Fanatic": 1
@@ -159,7 +169,8 @@
             ]
         },
         {
-            "name": "Somthing to invite",
+            "id": "Somthing to invite",
+"name": "Somthing to invite",
             "roles": {
                 "Enchanter": 1
             },

@@ -4,7 +4,8 @@
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "name": "Marionette (AHR)",
+            "id": "Marionette (AHR)",
+"name": "Marionette (AHR)",
             "goodwillRefusel": "Puppeted",
             "abilities": [
                 {
@@ -18,7 +19,8 @@
             ]
         },
         {
-            "name": "Lullaby",
+            "id": "Lullaby",
+"name": "Lullaby",
             "goodwillRefusel": "Puppeted",
             "abilities": [
                 {
@@ -46,7 +48,8 @@
             ]
         },
         {
-            "name": "Storyteller",
+            "id": "Storyteller",
+"name": "Storyteller",
             "tags": ["Immortal"],
             "abilities": [
                 {
@@ -68,7 +71,8 @@
             ]
         },
         {
-            "name": "Shifter",
+            "id": "Shifter",
+"name": "Shifter",
             "tags": ["Immortal"],
             "abilities": [
                 {
@@ -88,7 +92,8 @@
             ]
         },
         {
-            "name": "Alice",
+            "id": "Alice",
+"name": "Alice",
             "abilities": [
                 {
                     "type": "Mandatory Loss condition: Protagonists Death",
@@ -109,7 +114,8 @@
             ]
         },
         {
-            "name": "Fragment",
+            "id": "Fragment",
+"name": "Fragment",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -130,7 +136,8 @@
             ]
         },
         {
-            "name": "Pied Piper",
+            "id": "Pied Piper",
+"name": "Pied Piper",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -159,7 +166,8 @@
             ]
         },
         {
-            "name": "Gossip",
+            "id": "Gossip",
+"name": "Gossip",
             "max": 1,
             "abilities": [
                 {

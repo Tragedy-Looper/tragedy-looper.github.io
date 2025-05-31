@@ -4,7 +4,8 @@
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "name": "Sacrifice",
+            "id": "Sacrifice",
+"name": "Sacrifice",
             "tags": ["Immortal"],
             "abilities": [
                 {
@@ -29,7 +30,8 @@
             ]
         },
         {
-            "name": "Deep One",
+            "id": "Deep One",
+"name": "Deep One",
             "max": 1,
             "goodwillRefusel": "Optional",
             "abilities": [
@@ -50,7 +52,8 @@
             ]
         },
         {
-            "name": "Wizard",
+            "id": "Wizard",
+"name": "Wizard",
             "max": 1,
             "abilities": [
                 {
@@ -70,7 +73,8 @@
             ]
         },
         {
-            "name": "Witness",
+            "id": "Witness",
+"name": "Witness",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -83,7 +87,8 @@
             ]
         },
         {
-            "name": "Faceless",
+            "id": "Faceless",
+"name": "Faceless",
             "goodwillRefusel": "Optional",
             "tags": ["Immortal"],
             "abilities": [
@@ -106,7 +111,8 @@
             ]
         },
         {
-            "name": "Vampire",
+            "id": "Vampire",
+"name": "Vampire",
             "goodwillRefusel": "Optional",
             "tags": ["Immortal"],
             "abilities": [
@@ -128,7 +134,8 @@
             ]
         },
         {
-            "name": "Werewolf",
+            "id": "Werewolf",
+"name": "Werewolf",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -148,7 +155,8 @@
             ]
         },
         {
-            "name": "Nightmare",
+            "id": "Nightmare",
+"name": "Nightmare",
             "goodwillRefusel": "Optional",
             "tags": ["Immortal"],
             "abilities": [
@@ -169,7 +177,8 @@
             ]
         },
         {
-            "name": "Ghost",
+            "id": "Ghost",
+"name": "Ghost",
             "max": 1,
             "abilities": [
                 {
@@ -183,7 +192,8 @@
             ]
         },
         {
-            "name": "Show-Off",
+            "id": "Show-Off",
+"name": "Show-Off",
             "tags": ["Immortal"],
             "abilities": [
                 {
@@ -205,7 +215,8 @@
             ]
         },
         {
-            "name": "Coward",
+            "id": "Coward",
+"name": "Coward",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -218,7 +229,8 @@
             ]
         },
         {
-            "name": "Zombie",
+            "id": "Zombie",
+"name": "Zombie",
             "abilities": [
                 {
                     "type": "Mandatory",

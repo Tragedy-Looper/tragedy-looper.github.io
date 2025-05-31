@@ -4,7 +4,8 @@
     // "$schema": "../characters.schema.json",
     "characters": [
         {
-            "name": "Scientist",
+            "id": "Scientist",
+"name": "Scientist",
             "edition": "Midnight Circle",
 "paranoiaLimit": 2,
             "tags": [
@@ -27,7 +28,8 @@
             ]
         },
         {
-            "name": "Forensic Specialist",
+            "id": "Forensic Specialist",
+"name": "Forensic Specialist",
             "edition": "Midnight Circle",
 "paranoiaLimit": 3,
             "tags": [
@@ -53,7 +55,8 @@
             ]
         },
         {
-            "name": "A.I.",
+            "id": "A.I.",
+"name": "A.I.",
             "edition": "Midnight Circle",
 "paranoiaLimit": 4,
             "tags": [
@@ -85,7 +88,8 @@
             ]
         },
         {
-            "name": "Illusion",
+            "id": "Illusion",
+"name": "Illusion",
             "edition": "Midnight Circle",
 "paranoiaLimit": 3,
             "tags": [

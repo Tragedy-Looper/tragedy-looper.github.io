@@ -5,7 +5,7 @@ import { removeCommentsFromJson } from './generateTragedysSchema';
 import { validateScript } from './validation'
 
 
-const types = ['characters', 'plots', 'roles', 'tragedys', 'incidents', 'scripts'] as const;
+const types = ['keywords', 'characters', 'plots', 'roles', 'tragedys', 'incidents', 'scripts'] as const;
 
 const dirs = fs.readdirSync('./data');
 const data =
@@ -64,10 +64,18 @@ data.then(x => {
 
     return data.map(([type, arrays]) => {
 
-        return `export const ${type} = [\n${arrays.map(x => ` ...${x}`).reduce((p, c) => `${p}${p.length > 0 ? ',' : ''}\n${c}`, '')}\n] as const`;
+        return `
+export const ${type} = [\n${arrays.map(x => ` ...${x}`).reduce((p, c) => `${p}${p.length > 0 ? ',' : ''}\n${c}`, '')}\n] as const;
+
+` + (type !== 'scripts' ? `export const ${type}Lookup = ${type}.reduce((p, c) => {
+    if (typeof c === 'object' && c !== null && 'id' in c) {
+        p[c.id] = c;
+    }
+    return p;
+}, {} as Record<typeof ${type}[number]['id'], typeof ${type}[number]>); 
+`: '');
 
     }).reduce((p, c) => `${p};\n${c}`, '')
-
 
 
 

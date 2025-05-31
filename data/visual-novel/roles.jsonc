@@ -4,7 +4,8 @@
     //"$schema": "../roles.schema.json",
     "roles": [
         {
-            "name": "Sub Heroine",
+            "id": "Sub Heroine",
+"name": "Sub Heroine",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -16,7 +17,8 @@
             ]
         },
         {
-            "name": "Creature",
+            "id": "Creature",
+"name": "Creature",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -37,7 +39,8 @@
             ]
         },
         {
-            "name": "Possessed",
+            "id": "Possessed",
+"name": "Possessed",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -57,7 +60,8 @@
             ]
         },
         {
-            "name": "Slayer",
+            "id": "Slayer",
+"name": "Slayer",
             "max": 1,
             "abilities": [
                 {
@@ -77,7 +81,8 @@
             ]
         },
         {
-            "name": "Heavy Lovers",
+            "id": "Heavy Lovers",
+"name": "Heavy Lovers",
             "abilities": [
                 {
                     "type": "Optional",
@@ -98,7 +103,8 @@
             ]
         },
         {
-            "name": "Mood Maker",
+            "id": "Mood Maker",
+"name": "Mood Maker",
             "max": 1,
             "abilities": [
                 {
@@ -111,7 +117,8 @@
             ]
         },
         {
-            "name": "Troublemaker",
+            "id": "Troublemaker",
+"name": "Troublemaker",
             "max": 1,
             "abilities": [
                 {
@@ -124,7 +131,8 @@
             ]
         },
         {
-            "name": "Lunatic",
+            "id": "Lunatic",
+"name": "Lunatic",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {

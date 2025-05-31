@@ -4,7 +4,8 @@
     // "$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "name": "Abductions",
+            "id": "Abductions",
+"name": "Abductions",
             "effect": [
                 {
                     "description": "Move a Character from his/her location to another location. Move a second Character from his/her location to another location."
@@ -12,7 +13,8 @@
             ]
         },
         {
-            "name": "Crime of Passion",
+            "id": "Crime of Passion",
+"name": "Crime of Passion",
             "effect": [
                 {
                     "description": "Kill another Character in the Culprit's location."
@@ -20,7 +22,8 @@
             ]
         },
         {
-            "name": "Grave Robbing",
+            "id": "Grave Robbing",
+"name": "Grave Robbing",
             "effect": [
                 {
                     "description": "Place two :intrigue: on the Shrine. Move a Character from the Shrine to the School, if possible."
@@ -28,7 +31,8 @@
             ]
         },
         {
-            "name": "Indoctrination",
+            "id": "Indoctrination",
+"name": "Indoctrination",
             "effect": [
                 {
                     "description": "Remove all :goodwill: from a Character and replace with a mix of :paranoia: or :intrigue: that equals the removed :goodwill:."
@@ -36,7 +40,8 @@
             ]
         },
         {
-            "name": "Proselytizing",
+            "id": "Proselytizing",
+"name": "Proselytizing",
             "effect": [
                 {
                     "description": "Add one :intrigue: to a Character and one :intrigue: to that Character's location."
@@ -44,7 +49,8 @@
             ]
         },
         {
-            "name": "Ritual Sacrifice",
+            "id": "Ritual Sacrifice",
+"name": "Ritual Sacrifice",
             "effect": [
                 {
                     "description": "The Character with the highest :goodwill: is killed. If no Character has the highest, this Incident doesn't trigger."
@@ -52,7 +58,8 @@
             ]
         },
         {
-            "name": "Mass Hysteria",
+            "id": "Mass Hysteria",
+"name": "Mass Hysteria",
             "effect": [
                 {
                     "description": "Add 1 :paranoia: to every character."
@@ -60,7 +67,8 @@
             ]
         },
         {
-            "name": "School Shooting",
+            "id": "School Shooting",
+"name": "School Shooting",
             "effect": [
                 {
                     "prerequisite": "If at least 1 :intrigue: on the Culprit",
@@ -69,7 +77,8 @@
             ]
         },
         {
-            "name": "Dark Lesson",
+            "id": "Dark Lesson",
+"name": "Dark Lesson",
             "effect": [
                 {
                     "description": "Add an :intrigue: to all Characters at the Culprit's location."
@@ -77,7 +86,8 @@
             ]
         },
         {
-            "name": "Public Meltdown",
+            "id": "Public Meltdown",
+"name": "Public Meltdown",
             "effect": [
                 {
                     "description": "Reveal the role of the Culprit."
@@ -85,7 +95,8 @@
             ]
         },
         {
-            "name": "Fire and Brimstone",
+            "id": "Fire and Brimstone",
+"name": "Fire and Brimstone",
             "effect": [
                 {
                     "description": "Kill all Characters in all Locations except the Shrine."
@@ -93,7 +104,8 @@
             ]
         },
         {
-            "name": "Bomb Threat",
+            "id": "Bomb Threat",
+"name": "Bomb Threat",
             "effect": [
                 {
                     "description": "The Leader chooses a location. All Characters from that Location Move to the Location clockwise from their current Location."

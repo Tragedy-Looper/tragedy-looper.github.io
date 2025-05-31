@@ -4,7 +4,8 @@
     // "$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "name": "Murder",
+            "id": "Murder",
+"name": "Murder",
             "effect": [
                 {
                     "description": "One (1) other character in culprit’s Location dies"
@@ -12,7 +13,8 @@
             ]
         },
         {
-            "name": "Increasing Unease",
+            "id": "Increasing Unease",
+"name": "Increasing Unease",
             "effect": [
                 {
                     "description": "Place 2 :paranoia: on any character, then 1 :intrigue: on any other character."
@@ -20,7 +22,8 @@
             ]
         },
         {
-            "name": "Foul Evil",
+            "id": "Foul Evil",
+"name": "Foul Evil",
             "effect": [
                 {
                     "description": "Place 2 :intrigue: on the Shrine."
@@ -28,7 +31,8 @@
             ]
         },
         {
-            "name": "Suicide",
+            "id": "Suicide",
+"name": "Suicide",
             "effect": [
                 {
                     "description": "The culprit dies."
@@ -36,7 +40,8 @@
             ]
         },
         {
-            "name": "Hospital Incident",
+            "id": "Hospital Incident",
+"name": "Hospital Incident",
             "effect": [
                 {
                     "prerequisite": "1 :intrigue: on the Hospital",
@@ -49,7 +54,8 @@
             ]
         },
         {
-            "name": "Faraway Murder",
+            "id": "Faraway Murder",
+"name": "Faraway Murder",
             "effect": [
                 {
                     "description": "One character with at least 2 :intrigue: dies."
@@ -57,7 +63,8 @@
             ]
         },
         {
-            "name": "Missing Person",
+            "id": "Missing Person",
+"name": "Missing Person",
             "effect": [
                 {
                     "description": "Move culprit to any Location. Put 1 :intrigue: on that Location."
@@ -65,7 +72,8 @@
             ]
         },
         {
-            "name": "Spreading",
+            "id": "Spreading",
+"name": "Spreading",
             "effect": [
                 {
                     "description": "Move 2 :goodwill: from any character to any other character."
@@ -73,7 +81,8 @@
             ]
         },
         {
-            "name": "Butterfly Effect",
+            "id": "Butterfly Effect",
+"name": "Butterfly Effect",
             "effect": [
                 {
                     "description": "Put any counter on any character in culprit’s Location."

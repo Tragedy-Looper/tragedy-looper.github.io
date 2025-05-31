@@ -4,7 +4,8 @@
     // "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "name": "First Steps",
+            "id": "First Steps",
+"name": "First Steps",
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 1,
             "mainPlots": [
@@ -30,7 +31,8 @@
             "extraRules": []
         },
         {
-            "name": "Basic Tragedy",
+            "id": "Basic Tragedy",
+"name": "Basic Tragedy",
             "mainPlots": [
                 "Murder Plan",
                 "The Sealed Item",

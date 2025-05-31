@@ -4,7 +4,8 @@
     // "$schema": "../plots.schema.json",
     "plots": [
         {
-            "name": "Abomination",
+            "id": "Abomination",
+"name": "Abomination",
             "roles": {
                 "Mad Genius": 1,
                 "Supplicant": 1
@@ -20,7 +21,8 @@
             ]
         },
         {
-            "name": "Metamorphosis",
+            "id": "Metamorphosis",
+"name": "Metamorphosis",
             "roles": {
                 "Potentate": 1,
                 "Supplicant": 1,
@@ -37,7 +39,8 @@
             ]
         },
         {
-            "name": "Spore Pod",
+            "id": "Spore Pod",
+"name": "Spore Pod",
             "roles": {
                 "Facsimile": 1,
                 "Augur": 1
@@ -53,7 +56,8 @@
             ]
         },
         {
-            "name": "Demonic Portal",
+            "id": "Demonic Portal",
+"name": "Demonic Portal",
             "roles": {
                 "Potentate": 1,
                 "Augur": 1
@@ -70,7 +74,8 @@
             ]
         },
         {
-            "name": "The Seed",
+            "id": "The Seed",
+"name": "The Seed",
             "roles": {
                 "Seeder": 1,
                 "Serial Killer": 1
@@ -78,7 +83,8 @@
             "rules": []
         },
         {
-            "name": "Infestation",
+            "id": "Infestation",
+"name": "Infestation",
             "roles": {
                 "Facsimile": 2,
                 "Key Person": 1
@@ -95,7 +101,8 @@
             ]
         },
         {
-            "name": "Fatal Attraction",
+            "id": "Fatal Attraction",
+"name": "Fatal Attraction",
             "roles": {
                 "Lover": 3,
                 "Serial Killer": 1
@@ -103,7 +110,8 @@
             "rules": []
         },
         {
-            "name": "Manifestation",
+            "id": "Manifestation",
+"name": "Manifestation",
             "roles": {},
             "rules": [
                 {
@@ -117,7 +125,8 @@
             ]
         },
         {
-            "name": "Murder for Hire",
+            "id": "Murder for Hire",
+"name": "Murder for Hire",
             "roles": {
                 "Contract Killer": 1,
                 "Key Person": 1
@@ -125,7 +134,8 @@
             "rules": []
         },
         {
-            "name": "Remote Bombing",
+            "id": "Remote Bombing",
+"name": "Remote Bombing",
             "roles": {
                 "Mad Genius": 1
             },
@@ -140,7 +150,8 @@
             ]
         },
         {
-            "name": "Suicide Cult",
+            "id": "Suicide Cult",
+"name": "Suicide Cult",
             "roles": {
                 "Cult Member": 3
             },
@@ -156,7 +167,8 @@
             ]
         },
         {
-            "name": "Twisted Threads of Time",
+            "id": "Twisted Threads of Time",
+"name": "Twisted Threads of Time",
             "roles": {},
             "rules": [
                 {

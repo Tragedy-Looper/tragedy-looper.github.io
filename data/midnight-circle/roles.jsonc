@@ -4,7 +4,8 @@
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "name": "Poisoner",
+            "id": "Poisoner",
+"name": "Poisoner",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -26,7 +27,8 @@
             ]
         },
         {
-            "name": "Fool",
+            "id": "Fool",
+"name": "Fool",
             "max": 1,
             "abilities": [
                 {
@@ -43,7 +45,8 @@
             ]
         },
         {
-            "name": "Private Investigator",
+            "id": "Private Investigator",
+"name": "Private Investigator",
             "tags": ["Immortal"],
             "abilities": [
                 {
@@ -64,7 +67,8 @@
             ]
         },
         {
-            "name": "Paranoiac",
+            "id": "Paranoiac",
+"name": "Paranoiac",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -77,7 +81,8 @@
             ]
         },
         {
-            "name": "Twin",
+            "id": "Twin",
+"name": "Twin",
             "abilities": [
                 {
                     "type": "Script creation",
@@ -93,7 +98,8 @@
             ]
         },
         {
-            "name": "Obstinate",
+            "id": "Obstinate",
+"name": "Obstinate",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -110,7 +116,8 @@
             ]
         },
         {
-            "name": "Therapist",
+            "id": "Therapist",
+"name": "Therapist",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -123,7 +130,8 @@
             ]
         },
         {
-            "name": "Magician",
+            "id": "Magician",
+"name": "Magician",
             "abilities": [
                 {
                     "type": "Optional",
@@ -148,7 +156,8 @@
             ]
         },
         {
-            "name": "Ninja",
+            "id": "Ninja",
+"name": "Ninja",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -168,7 +177,8 @@
             ]
         },
         {
-            "name": "Prophet",
+            "id": "Prophet",
+"name": "Prophet",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -188,7 +198,8 @@
             ]
         },
         {
-            "name": "Immortal",
+            "id": "Immortal",
+"name": "Immortal",
             "tags": ["Immortal"],
             "abilities": []
         }

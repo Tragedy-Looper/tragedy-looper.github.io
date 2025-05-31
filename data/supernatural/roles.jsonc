@@ -4,7 +4,8 @@
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "name": "Augur",
+            "id": "Augur",
+"name": "Augur",
             "abilities": [
                 {
                     "type": "Optional",
@@ -17,7 +18,8 @@
             "max": 1
         },
         {
-            "name": "Contract Killer",
+            "id": "Contract Killer",
+"name": "Contract Killer",
             "abilities": [
                 {
                     "type": "Optional",
@@ -30,7 +32,8 @@
             "goodwillRefusel": "Mandatory"
         },
         {
-            "name": "Cult Member",
+            "id": "Cult Member",
+"name": "Cult Member",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -43,7 +46,8 @@
             ]
         },
         {
-            "name": "Mad Genius",
+            "id": "Mad Genius",
+"name": "Mad Genius",
             "goodwillRefusel": "Optional",
             "max": 1,
             "abilities": [
@@ -58,7 +62,8 @@
             ]
         },
         {
-            "name": "Potentate",
+            "id": "Potentate",
+"name": "Potentate",
             "goodwillRefusel": "Mandatory",
             "max": 1,
             "tags": [
@@ -75,7 +80,8 @@
             ]
         },
         {
-            "name": "Seeder",
+            "id": "Seeder",
+"name": "Seeder",
             "goodwillRefusel": "Mandatory",
             "max": 1,
             "tags": [
@@ -100,7 +106,8 @@
             ]
         },
         {
-            "name": "Supplicant",
+            "id": "Supplicant",
+"name": "Supplicant",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -113,7 +120,8 @@
             ]
         },
         {
-            "name": "Facsimile",
+            "id": "Facsimile",
+"name": "Facsimile",
             "tags": [
                 "Supernatural"
             ],

@@ -4,7 +4,8 @@
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "name": "Agent",
+            "id": "Agent",
+"name": "Agent",
             "abilities": [
                 {
                     "type": "Loss condition: Tragedy",
@@ -19,7 +20,8 @@
             ]
         },
         {
-            "name": "Invader",
+            "id": "Invader",
+"name": "Invader",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -30,7 +32,8 @@
             ]
         },
         {
-            "name": "Twilight",
+            "id": "Twilight",
+"name": "Twilight",
             "goodwillRefusel": "Optional",
             "goodwillOutburst": true,
             "tags": ["Immortal"],
@@ -43,11 +46,13 @@
             ]
         },
         {
-            "name": "Hider",
+            "id": "Hider",
+"name": "Hider",
             "goodwillRefusel": "Mandatory",
             "scriptSpecified": [
                 {
-                    "name": "world",
+                    "id": "world",
+"name": "world",
                     "type": "text",
                     "description": "abnormal or normal"
                 }
@@ -62,7 +67,8 @@
             ]
         },
         {
-            "name": "Quidnunc",
+            "id": "Quidnunc",
+"name": "Quidnunc",
             "abilities": [
                 {
                     "type": "Optional",
@@ -73,7 +79,8 @@
             ]
         },
         {
-            "name": "Fanatic",
+            "id": "Fanatic",
+"name": "Fanatic",
             "goodwillOutburst": true,
             "abilities": [
                 {
@@ -85,10 +92,12 @@
             ]
         },
         {
-            "name": "Animus",
+            "id": "Animus",
+"name": "Animus",
             "scriptSpecified": [
                 {
-                    "name": "world",
+                    "id": "world",
+"name": "world",
                     "type": "text",
                     "description": "abnormal or normal"
                 }
@@ -109,7 +118,8 @@
             ]
         },
         {
-            "name": "Neurosis",
+            "id": "Neurosis",
+"name": "Neurosis",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -120,7 +130,8 @@
             ]
         },
         {
-            "name": "Agitator",
+            "id": "Agitator",
+"name": "Agitator",
             "abilities": [
                 {
                     "type": "Optional",
@@ -131,7 +142,8 @@
             ]
         },
         {
-            "name": "Enchanter",
+            "id": "Enchanter",
+"name": "Enchanter",
             "goodwillOutburst": true,
             "abilities": [
                 {
@@ -142,7 +154,8 @@
             ]
         },
         {
-            "name": "Marionette",
+            "id": "Marionette",
+"name": "Marionette",
             "goodwillOutburst": true,
             "abilities": [
                 {
@@ -154,7 +167,8 @@
             ]
         },
         {
-            "name": "Shadow",
+            "id": "Shadow",
+"name": "Shadow",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {

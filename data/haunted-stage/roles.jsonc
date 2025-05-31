@@ -4,7 +4,8 @@
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "name": "Nightmare (Haunted Stage)",
+            "id": "Nightmare (Haunted Stage)",
+"name": "Nightmare (Haunted Stage)",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -17,7 +18,8 @@
             ]
         },
         {
-            "name": "Curse God",
+            "id": "Curse God",
+"name": "Curse God",
             "tags": [
                 "after death"
             ],
@@ -32,7 +34,8 @@
             ]
         },
         {
-            "name": "Human Doll",
+            "id": "Human Doll",
+"name": "Human Doll",
             "tags": [
                 "after death"
             ],
@@ -54,7 +57,8 @@
             ]
         },
         {
-            "name": "Werewolf (Haunted Stage)",
+            "id": "Werewolf (Haunted Stage)",
+"name": "Werewolf (Haunted Stage)",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -74,7 +78,8 @@
             ]
         },
         {
-            "name": "Vampire (Haunted Stage)",
+            "id": "Vampire (Haunted Stage)",
+"name": "Vampire (Haunted Stage)",
             "tags": [
                 "after death"
             ],
@@ -96,7 +101,8 @@
             ]
         },
         {
-            "name": "Ghost (Haunted Stage)",
+            "id": "Ghost (Haunted Stage)",
+"name": "Ghost (Haunted Stage)",
             "tags": [
                 "after death"
             ],
@@ -104,7 +110,8 @@
             "abilities": []
         },
         {
-            "name": "Monster",
+            "id": "Monster",
+"name": "Monster",
             "tags": [
                 "Immortal"
             ],
@@ -119,7 +126,8 @@
             ]
         },
         {
-            "name": "Spellcaster",
+            "id": "Spellcaster",
+"name": "Spellcaster",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -132,7 +140,8 @@
             ]
         },
         {
-            "name": "Zombie (Haunted Stage)",
+            "id": "Zombie (Haunted Stage)",
+"name": "Zombie (Haunted Stage)",
             "tags": [
                 "after death"
             ],
@@ -154,7 +163,8 @@
             ]
         },
         {
-            "name": "Poltergeist",
+            "id": "Poltergeist",
+"name": "Poltergeist",
             "max": 1,
             "goodwillRefusel": "Mandatory",
             "abilities": [
@@ -169,7 +179,8 @@
             ]
         },
         {
-            "name": "Horror",
+            "id": "Horror",
+"name": "Horror",
             "max": 1,
             "tags": [
                 "after death"
@@ -185,7 +196,8 @@
             ]
         },
         {
-            "name": "Overlord",
+            "id": "Overlord",
+"name": "Overlord",
             "tags": [
                 "after death"
             ],

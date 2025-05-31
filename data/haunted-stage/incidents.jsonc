@@ -4,7 +4,8 @@
     // "$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "name": "Sacrifice",
+            "id": "Sacrifice",
+"name": "Sacrifice",
             "effect": [
                 {
                     "description": "[When determining whether this Incident triggers or not, treat the culprit’s :paranoia: limit as 2 less than its printed limit.] Increase Extra Gauge by 1, then the Protagonist Leader chooses one character. That character is killed."
@@ -12,7 +13,8 @@
             ]
         },
         {
-            "name": "Blasphemy",
+            "id": "Blasphemy",
+"name": "Blasphemy",
             "effect": [
                 {
                     "description": "Blasphemy\tPlace 1 :paranoia: and 1 :intrigue: on any corpse."
@@ -20,7 +22,8 @@
             ]
         },
         {
-            "name": "Monster Liberation",
+            "id": "Monster Liberation",
+"name": "Monster Liberation",
             "effect": [
                 {
                     "description": "Put an Extra card on the culprit’s location. Thereafter, the card is treated as a character whose title is Demon Beast and gains Nightmare’s role."
@@ -28,7 +31,8 @@
             ]
         },
         {
-            "name": "Hundred Demons Night",
+            "id": "Hundred Demons Night",
+"name": "Hundred Demons Night",
             "effect": [
                 {
                     "prerequisite": "Culprit is dead",
@@ -37,7 +41,8 @@
             ]
         },
         {
-            "name": "Curse",
+            "id": "Curse",
+"name": "Curse",
             "effect": [
                 {
                     "prerequisite": "Culprit is dead",
@@ -46,7 +51,8 @@
             ]
         },
         {
-            "name": "Infestation",
+            "id": "Infestation",
+"name": "Infestation",
             "effect": [
                 {
                     "prerequisite": "Culprit is dead",
@@ -55,7 +61,8 @@
             ]
         },
         {
-            "name": "Repeating Nightmare",
+            "id": "Repeating Nightmare",
+"name": "Repeating Nightmare",
             "effect": [
                 {
                     "prerequisite": "Culprit is dead",

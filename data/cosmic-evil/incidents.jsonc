@@ -4,7 +4,8 @@
     // "$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "name": "Sacrilegious Murder",
+            "id": "Sacrilegious Murder",
+"name": "Sacrilegious Murder",
             "effect": [
                 {
                     "description": "Either kill another charcter in the same location as the culprit, or place an :intrigue: on the culprit’s location."
@@ -12,7 +13,8 @@
             ]
         },
         {
-            "name": "Evil Contamination",
+            "id": "Evil Contamination",
+"name": "Evil Contamination",
             "effect": [
                 {
                     "description": "Place 2 :intrigue: on the Shrine."
@@ -20,7 +22,8 @@
             ]
         },
         {
-            "name": "The Executioner",
+            "id": "The Executioner",
+"name": "The Executioner",
             "effect": [
                 {
                     "description": "The leader chooses one character. That charcter is killed."
@@ -28,7 +31,8 @@
             ]
         },
         {
-            "name": "Dark Rumor",
+            "id": "Dark Rumor",
+"name": "Dark Rumor",
             "effect": [
                 {
                     "description": "Attach a Curse on the culprit."
@@ -36,7 +40,8 @@
             ]
         },
         {
-            "name": "Barricade",
+            "id": "Barricade",
+"name": "Barricade",
             "effect": [
                 {
                     "description": "For each other character in cluprit’s location, pick any other location and move the character there."
@@ -44,7 +49,8 @@
             ]
         },
         {
-            "name": "Night of Madness",
+            "id": "Night of Madness",
+"name": "Night of Madness",
             "mob": 0,
             "effect": [
                 {
@@ -55,7 +61,8 @@
             ]
         },
         {
-            "name": "Awakened Curse",
+            "id": "Awakened Curse",
+"name": "Awakened Curse",
             "mob": 1,
             "effect": [
                 {
@@ -64,7 +71,8 @@
             ]
         },
         {
-            "name": "Fountain of Filth",
+            "id": "Fountain of Filth",
+"name": "Fountain of Filth",
             "mob": 2,
             "effect": [
                 {
@@ -73,7 +81,8 @@
             ]
         },
         {
-            "name": "Evangelium of the Dead",
+            "id": "Evangelium of the Dead",
+"name": "Evangelium of the Dead",
             "mob": 2,
             "effect": [
                 {
@@ -86,7 +95,8 @@
             ]
         },
         {
-            "name": "Insane Murder",
+            "id": "Insane Murder",
+"name": "Insane Murder",
             "effect": [
                 {
                     "description": "Kill any one character (including culprit) in the same location as the culprit."
@@ -94,7 +104,8 @@
             ]
         },
         {
-            "name": "Mass Suicide",
+            "id": "Mass Suicide",
+"name": "Mass Suicide",
             "effect": [
                 {
                     "prerequisite": "1 :intrigue: on the culprit",
@@ -103,7 +114,8 @@
             ]
         },
         {
-            "name": "Fire of Demise",
+            "id": "Fire of Demise",
+"name": "Fire of Demise",
             "timesPerGame": 1,
             "effect": [
                 {
@@ -113,7 +125,8 @@
             ]
         },
         {
-            "name": "Hound Dog Scent",
+            "id": "Hound Dog Scent",
+"name": "Hound Dog Scent",
             "effect": [
                 {
                     "type": "Delayed Loss condition: Protagonists Death",
@@ -122,7 +135,8 @@
             ]
         },
         {
-            "name": "Discovery",
+            "id": "Discovery",
+"name": "Discovery",
             "effect": [
                 {
                     "description": "Increase the Extra Gauge 1 step."

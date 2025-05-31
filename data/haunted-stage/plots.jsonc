@@ -4,7 +4,8 @@
     // "$schema": "../plots.schema.json",
     "plots": [
         {
-            "name": "Ancient Shrine",
+            "id": "Ancient Shrine",
+"name": "Ancient Shrine",
             "roles": {
                 "Nightmare (Haunted Stage)": 1,
                 "Curse God": 1,
@@ -14,7 +15,8 @@
             "rules": []
         },
         {
-            "name": "The Cursed Doll",
+            "id": "The Cursed Doll",
+"name": "The Cursed Doll",
             "roles": {
                 "Nightmare (Haunted Stage)": 1,
                 "Human Doll": 1,
@@ -24,7 +26,8 @@
             "rules": []
         },
         {
-            "name": "Full Moon Night",
+            "id": "Full Moon Night",
+"name": "Full Moon Night",
             "roles": {
                 "Nightmare (Haunted Stage)": 1,
                 "Werewolf (Haunted Stage)": 1,
@@ -33,7 +36,8 @@
             "rules": []
         },
         {
-            "name": "A Strange Story",
+            "id": "A Strange Story",
+"name": "A Strange Story",
             "roles": {
                 "Nightmare (Haunted Stage)": 1,
                 "Vampire (Haunted Stage)": 1,
@@ -47,7 +51,8 @@
             ]
         },
         {
-            "name": "Prim Evil",
+            "id": "Prim Evil",
+"name": "Prim Evil",
             "roles": {
                 "Nightmare (Haunted Stage)": 1,
                 "Ghost (Haunted Stage)": 1,
@@ -64,7 +69,8 @@
             ]
         },
         {
-            "name": "The Deep Hole",
+            "id": "The Deep Hole",
+"name": "The Deep Hole",
             "roles": {
                 "Monster": 1,
                 "Horror": 1
@@ -80,7 +86,8 @@
             ]
         },
         {
-            "name": "Zombie Apocalypse",
+            "id": "Zombie Apocalypse",
+"name": "Zombie Apocalypse",
             "roles": {
                 "Spellcaster": 1,
                 "Horror": 1
@@ -96,7 +103,8 @@
             ]
         },
         {
-            "name": "Expanding Urban Legend",
+            "id": "Expanding Urban Legend",
+"name": "Expanding Urban Legend",
             "roles": {
                 "Poltergeist": 1,
                 "Horror": 1
@@ -104,7 +112,8 @@
             "rules": []
         },
         {
-            "name": "Haunted City",
+            "id": "Haunted City",
+"name": "Haunted City",
             "roles": {
                 "Ghost (Haunted Stage)": 1,
                 "Poltergeist": 1
@@ -120,7 +129,8 @@
             ]
         },
         {
-            "name": "Dance Party of the Dead",
+            "id": "Dance Party of the Dead",
+"name": "Dance Party of the Dead",
             "roles": {
                 "Ghost (Haunted Stage)": 1,
                 "Horror": 1
@@ -136,7 +146,8 @@
             ]
         },
         {
-            "name": "Max Crazy Gauge",
+            "id": "Max Crazy Gauge",
+"name": "Max Crazy Gauge",
             "roles": {
                 "Ghost (Haunted Stage)": 1
             },
@@ -151,7 +162,8 @@
             ]
         },
         {
-            "name": "Boundary Between Life and Death",
+            "id": "Boundary Between Life and Death",
+"name": "Boundary Between Life and Death",
             "roles": {
                 "Monster": 1,
                 "Overlord": 1

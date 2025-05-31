@@ -4,7 +4,8 @@
     //"$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "name": "Parting",
+            "id": "Parting",
+"name": "Parting",
             "effect": [
                 {
                     "description": "Move the Culprit to any Location."
@@ -12,7 +13,8 @@
             ]
         },
         {
-            "name": "Exposure",
+            "id": "Exposure",
+"name": "Exposure",
             "effect": [
                 {
                     "description": "Choose one: 1. Remove up to 2 (cumulative total) :goodwill: counters from characters in the same Location as the Culprit. 2. Place up to 2 (cumulative total) :goodwill: counters on characters in the same Location as the Culprit."
@@ -20,7 +22,8 @@
             ]
         },
         {
-            "name": "Friction",
+            "id": "Friction",
+"name": "Friction",
             "effect": [
                 {
                     "prerequisite": "Culprit must have at least 1+ :goodwill:.",
@@ -29,7 +32,8 @@
             ]
         },
         {
-            "name": "Route Branching",
+            "id": "Route Branching",
+"name": "Route Branching",
             "effect": [
                 {
                     "prerequisite": "The Culprit must have enough :goodwill: to use a :goodwill: Ability.",
@@ -38,7 +42,8 @@
             ]
         },
         {
-            "name": "Relocation",
+            "id": "Relocation",
+"name": "Relocation",
             "effect": [
                 {
                     "description": "The Culprit is treated as if they are not in any Location, and cannot have Action cards placed on them."
@@ -46,7 +51,8 @@
             ]
         },
         {
-            "name": "Heart-Pounding Time Bomb",
+            "id": "Heart-Pounding Time Bomb",
+"name": "Heart-Pounding Time Bomb",
             "effect": [
                 {
                     "prerequisite": "The Culprit must not have any :goodwill: on them when this Incident occurs.",

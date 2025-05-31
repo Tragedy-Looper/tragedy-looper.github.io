@@ -4,7 +4,8 @@
     // "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "name": "Mystery Circle",
+            "id": "Mystery Circle",
+"name": "Mystery Circle",
             "mainPlots": [
                 "Murder Plan",
                 "Tightrope Plan",
@@ -38,17 +39,20 @@
             "numberOfSubPlots": 2,
             "extraRules": [
                 {
-                    "name": "Extra Gauge: Number of Incidents",
+                    "id": "Extra Gauge: Number of Incidents",
+"name": "Extra Gauge: Number of Incidents",
                     "description": "During \"removal and placment of counters\" set the Extra Gauge to 0. For each Incident that occurse, increase the Extra Gauge by 1. This is done regardless of whether the Event itself has any effect or not."
                 },
                 {
-                    "name": "Extra Cads",
+                    "id": "Extra Cads",
+"name": "Extra Cads",
                     "description": "During the \"removal and placement of counters\" step during Loop start also remove all Extra cards. Then, place the cards according to plot rules (if applicable)."
                 }
             ]
         },
         {
-            "name": "Midnight Zone",
+            "id": "Midnight Zone",
+"name": "Midnight Zone",
             "mainPlots": [
                 "The Sealed Item",
                 "Secret Record",
@@ -82,7 +86,8 @@
             "numberOfSubPlots": 2,
             "extraRules": [
                 {
-                    "name": "Extra Cads",
+                    "id": "Extra Cads",
+"name": "Extra Cads",
                     "description": "During the \"removal and placement of counters\" step during Loop start also remove all Extra cards. Then, place the cards according to plot rules (if applicable)."
                 }
             ]

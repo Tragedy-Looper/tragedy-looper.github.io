@@ -14,7 +14,7 @@ const srcDir = path.join(__dirname, '../src');
 
 const names = {
     tags: collectNamesFromJsonFiles('tags'),
-    keywords: collectNamesFromJsonFiles('keywords'),
+    keywords: collectIdsFromJsonFiles('keywords'),
     plotNames: collectNamesFromJsonFiles('plots'),
     incidentNames: collectNamesFromJsonFiles('incidents'),
     roleNames: collectNamesFromJsonFiles('roles'),
@@ -316,6 +316,33 @@ export function removeCommentsFromJson(text: string): string {
     return result;
 }
 
+function collectIdsFromJsonFiles(type: string): Set<string> {
+    const files = findAllJsonFiles(dataDir, `${type}.json`, `${type}.jsonc`);
+    const names = new Set<string>();
+    for (const file of files) {
+        const text = fs.readFileSync(file, 'utf-8');
+
+        // Remove comments if it's a JSONC file that is not in a string
+        const jsonText = removeCommentsFromJson(text);
+        const data = JSON.parse(jsonText);
+        if (Array.isArray(data)) {
+            for (const entry of data) {
+                if (typeof entry.id === 'string') {
+                    names.add(entry.id);
+                }
+            }
+        } else if (typeof data == 'object' && type in data && Array.isArray(data[type])) {
+            for (const entry of data[type]) {
+                if (typeof entry.id === 'string') {
+                    names.add(entry.id);
+                }
+            }
+        } else {
+            console.log('Error: ', file, 'is not an array or object');
+        }
+    }
+    return names;
+}
 function collectNamesFromJsonFiles(type: string): Set<string> {
     const files = findAllJsonFiles(dataDir, `${type}.json`, `${type}.jsonc`);
     const names = new Set<string>();
@@ -398,10 +425,10 @@ function generateKeywordsSchema({ roleNames }: Names) {
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
-                        "key": { "type": "string" },
+                        "id": { "type": "string" },
                         "name": { "type": "string" },
                     },
-                    "required": ["name", "key"],
+                    "required": ["name", "id"],
                 }
             }
         }
@@ -627,7 +654,7 @@ function generateCharactersSchema({ keywords }: Names) {
 
                         // ...weitere properties nach Bedarf...
                     },
-                    "required": ["name"],
+                    "required": ["name", "tags", "startLocation"],
 
                 }
             }

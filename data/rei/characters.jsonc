@@ -4,7 +4,8 @@
     // "$schema": "../characters.schema.json",
     "characters": [
         {
-            "name": "Part-Timer",
+            "id": "Part-Timer",
+"name": "Part-Timer",
             "edition": "Rei",
             "paranoiaLimit": 1,
             "tags": [
@@ -31,7 +32,8 @@
             ]
         },
         {
-            "name": "Part-Timer(?)",
+            "id": "Part-Timer(?)",
+"name": "Part-Timer(?)",
             "edition": "Rei",
             "paranoiaLimit": 3,
             "tags": [
@@ -56,7 +58,8 @@
             ]
         },
         {
-            "name": "Sect Founder",
+            "id": "Sect Founder",
+"name": "Sect Founder",
             "edition": "Rei",
             "paranoiaLimit": 3,
             "tags": [
@@ -86,7 +89,8 @@
             ]
         },
         {
-            "name": "Metaworld Denizen",
+            "id": "Metaworld Denizen",
+"name": "Metaworld Denizen",
             "edition": "Rei",
             "paranoiaLimit": 2,
             "tags": [
@@ -106,7 +110,8 @@
             ]
         },
         {
-            "name": "Little Sister",
+            "id": "Little Sister",
+"name": "Little Sister",
             "edition": "Rei",
             "paranoiaLimit": 3,
             "tags": [
@@ -130,7 +135,8 @@
             ]
         },
         {
-            "name": "Sacred Tree",
+            "id": "Sacred Tree",
+"name": "Sacred Tree",
             "edition": "Rei",
             "paranoiaLimit": 4,
             "tags": [

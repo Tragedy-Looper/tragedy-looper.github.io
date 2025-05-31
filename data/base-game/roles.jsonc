@@ -4,11 +4,13 @@
     // "$schema": "../roles.schema.json", 
     "roles": [
         {
-            "name": "Person",
+            "id": "Person",
+"name": "Person",
             "abilities": []
         },
         {
-            "name": "Key Person",
+            "id": "Key Person",
+"name": "Key Person",
             "abilities": [
                 {
                     "type": "Loss condition: Tragedy",
@@ -21,12 +23,14 @@
             ]
         },
         {
-            "name": "Curmudgeon",
+            "id": "Curmudgeon",
+"name": "Curmudgeon",
             "goodwillRefusel": "Optional",
             "abilities": []
         },
         {
-            "name": "Killer",
+            "id": "Killer",
+"name": "Killer",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -47,7 +51,8 @@
             ]
         },
         {
-            "name": "Brain",
+            "id": "Brain",
+"name": "Brain",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -60,7 +65,8 @@
             ]
         },
         {
-            "name": "Cultist",
+            "id": "Cultist",
+"name": "Cultist",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -73,7 +79,8 @@
             ]
         },
         {
-            "name": "Time Traveler",
+            "id": "Time Traveler",
+"name": "Time Traveler",
             "tags": ["Immortal"],
             "abilities": [
                 {
@@ -95,12 +102,14 @@
             ]
         },
         {
-            "name": "Witch",
+            "id": "Witch",
+"name": "Witch",
             "goodwillRefusel": "Mandatory",
             "abilities": []
         },
         {
-            "name": "Friend",
+            "id": "Friend",
+"name": "Friend",
             "max": 2,
             "abilities": [
                 {
@@ -122,7 +131,8 @@
             ]
         },
         {
-            "name": "Conspiracy Theorist",
+            "id": "Conspiracy Theorist",
+"name": "Conspiracy Theorist",
             "max": 1,
             "abilities": [
                 {
@@ -135,7 +145,8 @@
             ]
         },
         {
-            "name": "Lover",
+            "id": "Lover",
+"name": "Lover",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -148,7 +159,8 @@
             ]
         },
         {
-            "name": "Loved One",
+            "id": "Loved One",
+"name": "Loved One",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -168,7 +180,8 @@
             ]
         },
         {
-            "name": "Serial Killer",
+            "id": "Serial Killer",
+"name": "Serial Killer",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -181,7 +194,8 @@
             ]
         },
         {
-            "name": "Factor",
+            "id": "Factor",
+"name": "Factor",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {

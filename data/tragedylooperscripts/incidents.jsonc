@@ -4,7 +4,8 @@
     // "$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "name": "Diagonal Destruction",
+            "id": "Diagonal Destruction",
+"name": "Diagonal Destruction",
             "effect": [
                 {
                     "type": "Loss condition: Tragedy",
@@ -14,7 +15,8 @@
             ]
         },
         {
-            "name": "Diagonal Destruction 3",
+            "id": "Diagonal Destruction 3",
+"name": "Diagonal Destruction 3",
             "effect": [
                 {
                     "description": "everyone in the diagonally opposite location dies"
@@ -29,7 +31,8 @@
             ]
         },
         {
-            "name": "Diagonal Destruction 2",
+            "id": "Diagonal Destruction 2",
+"name": "Diagonal Destruction 2",
             "effect": [
                 {
                     "description": "Everyone in the diagonally opposite location of the culprit dies"

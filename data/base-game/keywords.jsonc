@@ -4,43 +4,43 @@
     "$schema": "../keywords.schema.json",
     "keywords": [
         {
-            "key": "boy",
+            "id": "boy",
             "name": "Boy"
         },
         {
-            "key": "girl",
+            "id": "girl",
             "name": "Girl"
         },
         {
-            "key": "student",
+            "id": "student",
             "name": "Student"
         },
         {
-            "key": "man",
+            "id": "man",
             "name": "Man"
         },
         {
-            "key": "woman",
+            "id": "woman",
             "name": "Woman"
         },
         {
-            "key": "adult",
+            "id": "adult",
             "name": "Adult"
         },
         {
-            "key": "construct",
+            "id": "construct",
             "name": "Construct"
         },
         {
-            "key": "animal",
+            "id": "animal",
             "name": "Animal"
         },
         {
-            "key": "tree",
+            "id": "tree",
             "name": "Tree"
         },
         {
-            "key": "little sister",
+            "id": "little sister",
             "name": "Little Sister"
         }
     ]

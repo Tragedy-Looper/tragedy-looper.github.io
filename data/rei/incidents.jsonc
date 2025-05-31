@@ -4,7 +4,8 @@
     // "$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "name": "Crime of Passion",
+            "id": "Crime of Passion",
+"name": "Crime of Passion",
             "effect": [
                 {
                     "description": "One other character at the culprit’s location dies, if possible. When determining if this Incident triggers, treat the culprit’s :paranoia: Limit as 1 lower."
@@ -12,7 +13,8 @@
             ]
         },
         {
-            "name": "Dimensional Distortion",
+            "id": "Dimensional Distortion",
+"name": "Dimensional Distortion",
             "effect": [
                 {
                     "description": "You may trigger a Warp. When determining if this Incident triggers, it always triggers regardless of the number of counters on the culprit."
@@ -20,7 +22,8 @@
             ]
         },
         {
-            "name": "Dimensional Perversion",
+            "id": "Dimensional Perversion",
+"name": "Dimensional Perversion",
             "effect": [
                 {
                     "description": "You may trigger a Warp. Place 2 :paranoia: counters on any character, and 2 :goodwill: counters on any other character."
@@ -28,7 +31,8 @@
             ]
         },
         {
-            "name": "Dimensional Fracture",
+            "id": "Dimensional Fracture",
+"name": "Dimensional Fracture",
             "effect": [
                 {
                     "type": "Mandatory Loss condition: Protagonists Death",
@@ -37,7 +41,8 @@
             ]
         },
         {
-            "name": "Left Behind",
+            "id": "Left Behind",
+"name": "Left Behind",
             "effect": [
                 {
                     "description": "Place 1 :intrigue: counter on a character at the culprit’s location, then move the culprit to any location."
@@ -45,7 +50,8 @@
             ]
         },
         {
-            "name": "Phantasmal Incident",
+            "id": "Phantasmal Incident",
+"name": "Phantasmal Incident",
             "effect": [
                 {
                     "description": "Resolve the effect of Crime of Passion, Dimensional Perversion, or Left Behind. When determining if this Incident triggers, refer to the number of :intrigue: counters on the culprit instead of the original type of counter."
@@ -53,7 +59,8 @@
             ]
         },
         {
-            "name": "Last Will",
+            "id": "Last Will",
+"name": "Last Will",
             "effect": [
                 {
                     "description": "The culprit dies. At the start of the next loop, the Protagonists add \"Hope +1\" to hand."
@@ -61,7 +68,8 @@
             ]
         },
         {
-            "name": "The Singularity",
+            "id": "The Singularity",
+"name": "The Singularity",
             "effect": [
                 {
                     "type": "Mandatory Loss condition: Protagonists Death",
@@ -78,7 +86,8 @@
             ]
         },
         {
-            "name": "Seeping Daylight",
+            "id": "Seeping Daylight",
+"name": "Seeping Daylight",
             "effect": [
                 {
                     "description": "The Leader chooses a character. Place 1 Hope counter on that character."
@@ -86,7 +95,8 @@
             ]
         },
         {
-            "name": "The Murk of Despair",
+            "id": "The Murk of Despair",
+"name": "The Murk of Despair",
             "effect": [
                 {
                     "description": "Place 1 Despair counter on any character."

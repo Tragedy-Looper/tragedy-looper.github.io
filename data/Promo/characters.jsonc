@@ -4,7 +4,8 @@
     // "$schema": "../characters.schema.json",
     "characters": [
         {
-            "name": "Young Girl",
+            "id": "Young Girl",
+"name": "Young Girl",
             "edition": "Promo",
             "paranoiaLimit": 1,
             "tags": [
@@ -34,7 +35,8 @@
             ]
         },
         {
-            "name": "Copycat",
+            "id": "Copycat",
+"name": "Copycat",
             "edition": "Promo",
             "paranoiaLimit": 2,
             "plotLessRole": "plot duplicate",
@@ -59,7 +61,8 @@
             ]
         },
         {
-            "name": "Servant",
+            "id": "Servant",
+"name": "Servant",
             "edition": "Promo",
             "paranoiaLimit": 3,
             "tags": [

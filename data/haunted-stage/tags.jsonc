@@ -4,7 +4,8 @@
     // "$schema": "../tags.schema.json",
     "tags": [
         {
-            "name": "after death",
+            "id": "after death",
+"name": "after death",
             "showInGmScreen": true
         }
     ]

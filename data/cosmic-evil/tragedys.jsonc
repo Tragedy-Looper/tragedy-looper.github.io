@@ -4,7 +4,8 @@
     // "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "name": "Prime Evil",
+            "id": "Prime Evil",
+"name": "Prime Evil",
             "mainPlots": [
                 "The Noble Bloodline",
                 "Moonlight Beast",
@@ -41,21 +42,25 @@
             "numberOfSubPlots": 2,
             "extraRules": [
                 {
-                    "name": "Victims",
+                    "id": "Victims",
+"name": "Victims",
                     "description": "Every Inrigue on locations counts as a corpse with the role Person. If such a corpse is revived by the power of the Alien, is is simply removed from the board."
                 },
                 {
-                    "name": "Mob Incidents",
+                    "id": "Mob Incidents",
+"name": "Mob Incidents",
                     "description": "These Incidents do not specify a character as a culprit, but a location. If there are enough corpses (specified by the incident) on the specific location, the incident happens."
                 },
                 {
-                    "name": "Curse cards",
+                    "id": "Curse cards",
+"name": "Curse cards",
                     "description": "Extra cards are treated as Curse cards. They can be placed on a location or be attached to characters and corpses. At the end of Day, before everything else, each curse is handeld. On a location the mastermind attaches a curse to any character in that location. Characters may have more than one curse. Characters with curses are killed (at the same time so a character that got a curse this step is not killed.) and the curse moves to the location. At the end of each loop, all Curses are removed."
                 }
             ]
         },
         {
-            "name": "Cosmic Mythology",
+            "id": "Cosmic Mythology",
+"name": "Cosmic Mythology",
             "mainPlots": [
                 "Choir to the Outside God",
                 "The Sacred Words of Dagon",
@@ -89,23 +94,28 @@
             "numberOfSubPlots": 2,
             "extraRules": [
                 {
-                    "name": "Extra Gauge: Mythos knowlege",
+                    "id": "Extra Gauge: Mythos knowlege",
+"name": "Extra Gauge: Mythos knowlege",
                     "description": "1. The Extra gauge starts on zero and dose not reset between loops. 2. Every time :goodwill: ability is refused, immediately increase the Extra Gauge. 3. The Extra Gauge unlooks spells for the characters (Level in parenthises behind the spell name)."
                 },
                 {
-                    "name": "Spell of Sympathy (1)",
+                    "id": "Spell of Sympathy (1)",
+"name": "Spell of Sympathy (1)",
                     "description": "At the start of the first day, the Leader may place 2 :goodwill: on any one character of his choice."
                 },
                 {
-                    "name": "Reminiscence of the Forefathers (2)",
+                    "id": "Reminiscence of the Forefathers (2)",
+"name": "Reminiscence of the Forefathers (2)",
                     "description": "At the end of the loop, the Protagonists get to know the first subplot."
                 },
                 {
-                    "name": "Ancient Seal (3)",
+                    "id": "Ancient Seal (3)",
+"name": "Ancient Seal (3)",
                     "description": "The Protagonist’s \"Forbid :intrigue:\" cards are no longer nullified if more then one of them are played in the same day."
                 },
                 {
-                    "name": "Madness (4)",
+                    "id": "Madness (4)",
+"name": "Madness (4)",
                     "description": "At the end of the Day the Protagonists die. This happens after everything else. No more loops can be played. Go to Final Guess."
                 }
             ]

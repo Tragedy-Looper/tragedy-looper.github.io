@@ -4,7 +4,8 @@
     // "$schema": "../plots.schema.json",
     "plots": [
         {
-            "name": "Light of the Avenger",
+            "id": "Light of the Avenger",
+"name": "Light of the Avenger",
             "roles": {
                 "Brain": 1
             },
@@ -19,7 +20,8 @@
             ]
         },
         {
-            "name": "A Place to Protect",
+            "id": "A Place to Protect",
+"name": "A Place to Protect",
             "roles": {
                 "Key Person": 1,
                 "Cultist": 1
@@ -35,7 +37,8 @@
             ]
         },
         {
-            "name": "Shadow of the Ripper",
+            "id": "Shadow of the Ripper",
+"name": "Shadow of the Ripper",
             "roles": {
                 "Conspiracy Theorist": 1,
                 "Serial Killer": 1
@@ -43,7 +46,8 @@
             "rules": []
         },
         {
-            "name": "An Unsettling Rumor",
+            "id": "An Unsettling Rumor",
+"name": "An Unsettling Rumor",
             "roles": {
                 "Conspiracy Theorist": 1
             },
@@ -59,7 +63,8 @@
             ]
         },
         {
-            "name": "A Hideous Script",
+            "id": "A Hideous Script",
+"name": "A Hideous Script",
             "roles": {
                 "Conspiracy Theorist": 1,
                 "Curmudgeon": [
@@ -76,7 +81,8 @@
             ]
         },
         {
-            "name": "Murder Plan",
+            "id": "Murder Plan",
+"name": "Murder Plan",
             "roles": {
                 "Key Person": 1,
                 "Killer": 1,
@@ -85,7 +91,8 @@
             "rules": []
         },
         {
-            "name": "The Sealed Item",
+            "id": "The Sealed Item",
+"name": "The Sealed Item",
             "roles": {
                 "Brain": 1,
                 "Cultist": 1
@@ -101,7 +108,8 @@
             ]
         },
         {
-            "name": "Sign with me!",
+            "id": "Sign with me!",
+"name": "Sign with me!",
             "roles": {
                 "Key Person": 1
             },
@@ -120,7 +128,8 @@
             ]
         },
         {
-            "name": "Change of Future",
+            "id": "Change of Future",
+"name": "Change of Future",
             "roles": {
                 "Cultist": 1,
                 "Time Traveler": 1
@@ -136,7 +145,8 @@
             ]
         },
         {
-            "name": "Giant Time Bomb",
+            "id": "Giant Time Bomb",
+"name": "Giant Time Bomb",
             "roles": {
                 "Witch": 1
             },
@@ -151,7 +161,8 @@
             ]
         },
         {
-            "name": "Circle of Friends",
+            "id": "Circle of Friends",
+"name": "Circle of Friends",
             "roles": {
                 "Friend": 2,
                 "Conspiracy Theorist": 1
@@ -159,7 +170,8 @@
             "rules": []
         },
         {
-            "name": "A Love Affair",
+            "id": "A Love Affair",
+"name": "A Love Affair",
             "roles": {
                 "Lover": 1,
                 "Loved One": 1
@@ -167,7 +179,8 @@
             "rules": []
         },
         {
-            "name": "The Hidden Freak",
+            "id": "The Hidden Freak",
+"name": "The Hidden Freak",
             "roles": {
                 "Serial Killer": 1,
                 "Friend": 1
@@ -175,7 +188,8 @@
             "rules": []
         },
         {
-            "name": "Paranoia Virus",
+            "id": "Paranoia Virus",
+"name": "Paranoia Virus",
             "roles": {
                 "Conspiracy Theorist": 1
             },
@@ -190,7 +204,8 @@
             ]
         },
         {
-            "name": "Threads of Fate",
+            "id": "Threads of Fate",
+"name": "Threads of Fate",
             "roles": {},
             "rules": [
                 {
@@ -203,14 +218,16 @@
             ]
         },
         {
-            "name": "Unknown Factor X",
+            "id": "Unknown Factor X",
+"name": "Unknown Factor X",
             "roles": {
                 "Factor": 1
             },
             "rules": []
         },
         {
-            "name": "The Noble Bloodline",
+            "id": "The Noble Bloodline",
+"name": "The Noble Bloodline",
             "roles": {
                 "Key Person": 1,
                 "Vampire": 1
