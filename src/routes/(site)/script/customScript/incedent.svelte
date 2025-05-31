@@ -13,11 +13,10 @@
       return a.localeCompare(b);
     });
   });
-  $: availableDays = incident.availableDays;
   $: options = incident.options;
   $: selectedCharacter = incident.selectedCharacter;
   $: isNotInTragedy = incident.notInTragedy;
-  $: selectedDay = incident.selectedDay;
+  $: selectedDay = incident.currentDay;
   $: selectedIncident = incident.selectedIncident;
   $: allTragedyIncidents = derived(incident.script.incidents, (a) =>
     a.toSorted((a, b) => a.localeCompare(b))
@@ -36,11 +35,7 @@
 
 <tr>
   <td>
-    <select bind:value={$selectedDay}>
-      {#each $availableDays as day}
-        <option>{day}</option>
-      {/each}
-    </select>
+    {selectedDay}
   </td>
   <td>
     <div role="group">
@@ -54,7 +49,7 @@
         />
       </label>
       <select bind:value={$selectedIncident}>
-        <option value="" disabled selected>{$getString('Select an incident')}</option>
+        <option value="" selected>{$getString('No incident')}</option>
         {#each $allIncidents as day}
           <option>{day}</option>
         {/each}
@@ -62,12 +57,14 @@
     </div>
   </td>
   <td>
-    <select bind:value={$selectedCharacter}>
-      <option value="" disabled selected>{$getString('Select a character')}</option>
-      {#each $availableCharacters as day}
-        <option>{day}</option>
-      {/each}
-    </select>
+    {#if $selectedIncident}
+      <select bind:value={$selectedCharacter}>
+        <option value="" disabled selected>{$getString('Select a character')}</option>
+        {#each $availableCharacters as day}
+          <option>{day}</option>
+        {/each}
+      </select>
+    {:else}{/if}
   </td>
   <td>
     {#each $options as option}

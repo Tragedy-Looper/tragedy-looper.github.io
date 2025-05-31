@@ -20,7 +20,6 @@ function generateIncidents<TCharacters extends CharacterName>(script: CustomScri
 
 
 export interface ICustomScriptIncidentSelectionGroup<TCharacters extends CharacterName> {
-    readonly selectedNumber: Writable<number>;
     readonly selectors: Readable<ICustomScriptIncidentSelection<TCharacters>[]>;
     readonly script: CustomScript;
 
@@ -28,24 +27,22 @@ export interface ICustomScriptIncidentSelectionGroup<TCharacters extends Charact
 class CustomScriptIncidentSelectionGroup<TCharacters extends CharacterName> implements ICustomScriptIncidentSelectionGroup<TCharacters> {
 
     public readonly script: CustomScript;
-    public readonly selectedNumber: Writable<number>;
     public readonly selectors: Readable<CustomScriptIncidentSelection<TCharacters>[]>;
 
 
     constructor(script: CustomScript, maxDays: Readable<number>, availableIncidents: Readable<readonly IncidentName[]>, availableCharacters: Readable<readonly TCharacters[]>) {
-        this.selectedNumber = writable(0);
         this.script = script;
         const currentList: CustomScriptIncidentSelection<TCharacters>[] = [];
-        this.selectors = derived(this.selectedNumber, n => {
+        this.selectors = derived(maxDays, n => {
             n = Math.max(n, 0);
             currentList.splice(n);
             while (currentList.length < n) {
-                const newIncident = new CustomScriptIncidentSelection(script, maxDays, availableIncidents, availableCharacters);
+                const newIncident = new CustomScriptIncidentSelection(script, currentList.length + 1, availableIncidents, availableCharacters);
                 currentList.push(newIncident);
             }
             this.Init();
 
-            currentList.sort((a, b) => get(a.selectedDay) - get(b.selectedDay))
+            currentList.sort((a, b) => a.currentDay - b.currentDay)
 
             return currentList;
         });
@@ -63,34 +60,30 @@ class CustomScriptIncidentSelectionGroup<TCharacters extends CharacterName> impl
 export interface ICustomScriptIncidentSelection<TCharacters extends CharacterName> {
     readonly script: CustomScript;
     readonly selectedCharacter: Writable<TCharacters>;
-    readonly selectedDay: Writable<number>;
+    readonly currentDay: number;
     readonly notInTragedy: Writable<boolean>;
     readonly selectedIncident: Writable<IncidentName | undefined>;
     readonly availableCharacters: Readable<readonly TCharacters[]>;
-    readonly availableDays: Readable<readonly number[]>;
     readonly options: Readable<readonly AdditionalOptions[]>;
 }
 class CustomScriptIncidentSelection<TCharacters extends CharacterName> implements ICustomScriptIncidentSelection<TCharacters> {
 
     public readonly script: CustomScript;
     public readonly selectedCharacter: Writable<TCharacters>;
-    public readonly selectedDay: Writable<number>;
+    public readonly currentDay: number;
     public readonly notInTragedy: Writable<boolean>;
     public readonly selectedIncident: Writable<IncidentName | undefined>;
     public readonly availableCharacters: Readable<readonly TCharacters[]>;
-    public readonly availableDays: Readable<readonly number[]>;
     public readonly options: Readable<readonly AdditionalOptions[]>;
 
     private readonly allCharacters: Readable<readonly TCharacters[]>
     private readonly _availableCharacters: Writable<Readable<readonly TCharacters[]>>;
-    private readonly _availableDays: Writable<Readable<readonly number[]>>;
-    private readonly maxDays: Readable<number>;
 
     /**
      *
      */
-    constructor(script: CustomScript, maxDays: Readable<number>, availableIncidents: Readable<readonly IncidentName[]>, availableCharacters: Readable<readonly TCharacters[]>) {
-        this.maxDays = maxDays;
+    constructor(script: CustomScript, currentDay: number, availableIncidents: Readable<readonly IncidentName[]>, availableCharacters: Readable<readonly TCharacters[]>) {
+        this.currentDay = currentDay;
         this.allCharacters = availableCharacters;
         this.script = script;
         // will be set by init
@@ -98,11 +91,8 @@ class CustomScriptIncidentSelection<TCharacters extends CharacterName> implement
         this.selectedCharacter = writable(undefined!);
         this.selectedIncident = writable(undefined);
         this.notInTragedy = writable(false);
-        this.selectedDay = writable(0);
         this._availableCharacters = writable(writable([]));
-        this._availableDays = writable(writable([]));
         this.availableCharacters = storeStore(this._availableCharacters);
-        this.availableDays = storeStore(this._availableDays);
 
         let lastOptions: AdditionalOptions[] = [];
         this.options = derived(this.selectedIncident, p => {
@@ -150,17 +140,7 @@ class CustomScriptIncidentSelection<TCharacters extends CharacterName> implement
             this.selectedCharacter.set(currentChar[0]);
         }
 
-        const derivideDays = derived([this.maxDays, storeStores(others, x => x.selectedDay, x => x !== this)], ([maxDays, otherSelections]) => {
-            const available = Array.from({ length: maxDays }).map((_, i) => i + 1);
 
-            const result = available.filter(x => otherSelections.length == 0 || !otherSelections.includes(x));
-            return result;
-        });
-        const currentDays = get(derivideDays);
-        this._availableDays.set(derivideDays);
-        if (get(this.selectedDay) == 0) {
-            this.selectedDay.set(currentDays[0]);
-        }
     }
 }
 
@@ -677,7 +657,7 @@ export class CustomScript {
     public import(script: Script) {
         this.title.set(script.title);
         this.creator.set(script.creator ?? '');
-   
+
         this.difficultySets.set(script.difficultySets ?? []);
         this.tragedySetName.set(script.tragedySet!);//TODO: check if it is a known tragedySet is set
 
@@ -721,7 +701,7 @@ export class CustomScript {
                 p.selectedPlot.set(sp as unknown as any);
             }
         });
-        this.daysPerLoop.set(script.daysPerLoop);
+        this.daysPerLoop.set(script.daysPerLoop ?? 1);
 
         Object.entries(Object.entries<CharacterName, RoleName | readonly [RoleName, Record<string, any>]>(script.cast as any).reduce((p, [key, value]) => {
             if (isCharacterName(key))
@@ -780,22 +760,23 @@ export class CustomScript {
             });
         });
 
-        this.incidentGroup.selectedNumber.set(script.incidents.length);
+        // this.incidentGroup.selectedNumber.set(script.daysPerLoop ?? 1);
 
         const incidents = get(this.incidentGroup.selectors)
 
-        script.incidents.forEach((ince, i) => {
-            incidents[i].selectedDay.set(ince.day);
-            incidents[i].selectedCharacter.set(ince.culprit as any); // Its not correct typed for mob incidents…
+        script.incidents.forEach((ince) => {
+            const index = ince.day - 1;
+            incidents[index];
+            incidents[index].selectedCharacter.set(ince.culprit as any); // Its not correct typed for mob incidents…
 
             if (typeof ince.incident == 'string') {
                 const name = ince.incident;
-                incidents[i].selectedIncident.set(name);
+                incidents[index].selectedIncident.set(name);
             } else {
                 const name = ince.incident[0];
-                incidents[i].selectedIncident.set(name);
+                incidents[index].selectedIncident.set(name);
 
-                const opt = get(incidents[i].options);
+                const opt = get(incidents[index].options);
                 opt.forEach(o => {
                     if (o.option.name == 'Faked as') {
                         o.value.set(ince.incident[1]);
@@ -873,12 +854,12 @@ export class CustomScript {
             ,
             // castOptions?: Options,
 
-            incidents: get(this.incidentGroup.selectors).map(x => {
+            incidents: get(this.incidentGroup.selectors).filter(x => get(x.selectedIncident) != undefined && (get(x.selectedIncident)?.length ?? 0) > 0).map(x => {
 
                 const incidentName = get(x.selectedIncident);
 
                 return {
-                    day: get(x.selectedDay),
+                    day: x.currentDay,
                     notTragedySpecified: get(x.notInTragedy) ? true : undefined,
 
                     incident: isFakeIncident(incidentName) ? [incidentName, get(get(x.options).filter(x => x.option.name == 'Faked as')[0].value)] as const : incidentName,

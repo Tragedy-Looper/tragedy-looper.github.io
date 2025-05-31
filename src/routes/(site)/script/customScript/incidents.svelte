@@ -5,15 +5,9 @@
 
   export let incedentGroup: ICustomScriptIncidentSelectionGroup<CharacterName>;
 
-  $: numberOfIncidetns = incedentGroup.selectedNumber;
   $: incidents = incedentGroup.selectors;
-  $: maxIncidents = incedentGroup.script.daysPerLoop;
 </script>
 
-<label>
-  Number of Incidents
-  <input type="number" bind:value={$numberOfIncidetns} max={$maxIncidents} />
-</label>
 
 <table>
   <thead>
