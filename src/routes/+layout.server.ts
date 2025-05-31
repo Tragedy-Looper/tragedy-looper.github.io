@@ -51,7 +51,7 @@ export const load: LayoutServerLoad = ({ params }) => {
         .map(file => [path.basename(file, path.extname(file)), path.extname(file)] as const) // get basename and extension
     );
 
-    const tragedySets = [...new Set((scripts as unknown as Script[]).map(x => x.set?.name ?? '').filter(x => x.length > 0))];
+    const tragedySets = [...new Set((scripts as unknown as Script[]).flatMap(x => x.set?.map(x => x.name ?? '') ?? []).filter(x => x.length > 0))];
     const tragedySetImages = Object.fromEntries(tragedySets.map(ts => [ts, normalizeTragedyName(ts)] as const).filter(([, fileName]) => {
         return fileName in packageImages;
     }).map(([keys, path]) => [keys, `${base}/packages/${path}${packageImages[path]}`])) as Partial<Record<string, string>>;
