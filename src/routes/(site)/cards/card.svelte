@@ -79,7 +79,11 @@
             : value.tags.includes('girl' as never) || value.tags.includes('woman' as never)
               ? ('female' as const)
               : ('diverse' as const),
-      tags: value.tags.map($getString).toSorted((a, b) => a.localeCompare(b)),
+      tags: value.tags.toSorted((a, b) =>
+        $getString(data.keywordsLookup[a as keyof typeof data.keywordsLookup].name).localeCompare(
+          $getString(data.keywordsLookup[b as keyof typeof data.keywordsLookup].name)
+        )
+      ),
       image: characterImages[key as keyof typeof characterImages],
       abilities:
         value.abilities?.map((ability) => {
@@ -330,7 +334,10 @@
                 <li>
                   <Iron />
                   <div>
-                    <Translation translationKey={data.keywordsLookup[tag as keyof typeof data.keywordsLookup].name} />
+                    <Translation
+                      translationKey={data.keywordsLookup[tag as keyof typeof data.keywordsLookup]
+                        .name}
+                    />
                   </div>
                   <Iron />
                 </li>
