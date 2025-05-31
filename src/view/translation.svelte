@@ -113,7 +113,7 @@
 
     const placholder = imageSets[set][emojiName];
     if (placholder.type === 'text') {
-      return `<span class="emoji" title="${$getString(emojiName)}">${placholder.text}</span>`;
+      return placholder.text;
     } else if (placholder.type === 'icon') {
       return `<span class="emoji" title="${$getString(emojiName)}"><img src="${placholder.imagePath}" ></img></span>`;
     } else {
