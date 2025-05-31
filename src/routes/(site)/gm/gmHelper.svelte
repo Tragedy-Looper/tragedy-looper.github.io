@@ -142,12 +142,12 @@
         <tr>
           <td> <Translation translationKey={'mandatory'} /> </td>
           <td>
-            {$getString(map.character) ?? ''}
+            <Translation translationKey={map.character} />
           </td>
           <td></td>
           <td> <Translation translationKey={"This Character can't die"} /> </td>
           <td>
-            {$getString(map.role) ?? ''}
+            <Translation translationKey={map.role} />
           </td>
         </tr>
       {/each}
@@ -159,19 +159,21 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            {$getString(map.character) ?? ''}
+            <Translation translationKey={map.character} />
           </td>
           <td>
-            {includes(map.timing, 'Last Day') ? $getString('Last Day') : ''}
-            {$getString(map.prerequisite) ?? ''}
+            {#if includes(map.timing, 'Last Day')}
+              <Translation translationKey={'Last Day'} />
+            {/if}
+            <Translation translationKey={map.prerequisite} />
           </td>
           <td>
-            {$getString(map.description) ?? ''}
+            <Translation translationKey={map.description} />
             <OncePer ability={map} />
           </td>
           <td>
-            {$getString(map.role) ?? ''}
-            {$getString(map.plot) ?? ''}
+            <Translation translationKey={map.role} />
+            <Translation translationKey={map.plot} />
           </td>
         </tr>
       {/each}
