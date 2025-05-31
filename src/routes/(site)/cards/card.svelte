@@ -350,6 +350,7 @@
     border: calc(1px * var(--scale)) solid #ccc;
     border-radius: calc(0.2cm * var(--scale));
     background-color: #000;
+    font-family: 'Noto Sans';
 
     @media print {
       break-inside: avoid;
@@ -390,7 +391,8 @@
       font-size: calc(11pt * var(--scale));
       align-items: center;
       justify-content: center;
-      color: #cfcec7;
+      color: #fff;
+      font-family: 'Times New Roman', serif;
 
       margin: 0;
       writing-mode: vertical-lr;
@@ -491,6 +493,7 @@
       font-size: calc(9pt * var(--scale));
       align-items: center;
       justify-content: top;
+      font-family: 'Times New Roman', Times, serif;
 
       li {
         display: inline-flex;
