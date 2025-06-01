@@ -64,7 +64,7 @@ export type Abilitie<Constraints extends object | void = void> = OncePer<'Loop' 
 
 export const rolesInternal = toRecord([
     ...data.roles,
-], 'name');
+], 'id');
 
 export type RoleName = keyof typeof rolesInternal | `${keyof typeof rolesInternal}|${keyof typeof rolesInternal}`;
 

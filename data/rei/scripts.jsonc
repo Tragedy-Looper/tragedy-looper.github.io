@@ -27,7 +27,7 @@
       "daysPerLoop": 4,
       "cast": {
         "Girl Student": "Alice",
-        "Rich Man’s Daughter": "Key Person|Brain",
+        "rich-student": "Key Person|Brain",
         "Class Rep": "Person",
         "Shrine Maiden": "Marionette",
         "Office Worker": "Marionette",
@@ -39,7 +39,7 @@
         {
           "day": 3,
           "incident": "Last Will",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 4,

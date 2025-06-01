@@ -173,7 +173,7 @@ export function isScript(obj: unknown): obj is Script {
     // if (!(!('set' in obj)
     //     || (typeof obj.set == 'object'
     //         && obj.set !== null
-    //         && 'name' in obj.set && typeof obj.set.name == 'string'
+    //         && 'id' in obj.set && typeof obj.set.name == 'string'
     //         && 'number' in obj.set && typeof obj.set.number == 'number')
     // )) { console.error("faild test set", obj); return false; }
     // if (!('difficultySets' in obj)) { console.error("faild test 'difficultySets' in obj", obj); return false; }
@@ -290,7 +290,7 @@ type ScriptInternal = Union<{
             numberOfLoops: number,
             difficulty: number,
         }[],
-        tragedySet: TragedySets[k]['name'],
+        tragedySet: TragedySets[k]['id'],
         mainPlot: readonly WithScriptSpecification<'plot', TragedySets[k]['mainPlots'][number]>[],
         subPlots: readonly WithScriptSpecification<'plot', TragedySets[k]['subPlots'][number]>[],
         daysPerLoop: number,

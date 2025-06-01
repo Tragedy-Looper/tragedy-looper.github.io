@@ -14,7 +14,7 @@ export type Option = Exclude<Plot['scriptSpecified'], undefined>[number];;
 export type Options = readonly Option[];
 
 export function isOption(params: unknown): params is Required<Option> {
-    return params !== undefined && params !== null && typeof params == 'object' && 'name' in params && 'type' in params;
+    return params !== undefined && params !== null && typeof params == 'object' && 'id' in params && 'type' in params;
 }
 export type ScriptSpecified = { scriptSpecified?: Options };
 
@@ -70,23 +70,23 @@ type NotExtended<Type extends 'role' | 'character' | 'incident' | 'plot', Keys e
 
     Type extends 'role'
     ? Keys extends NameDefinition<'role'>
-    ? Roles[Keys] extends Required<ScriptSpecified> ? never : Roles[Keys]['name']
+    ? Roles[Keys] extends Required<ScriptSpecified> ? never : Roles[Keys]['id']
     : never
 
     : Type extends 'character'
     ? Keys extends NameDefinition<'character'>
-    ? Characters[Keys] extends Required<ScriptSpecified> ? never : Characters[Keys]['name']
+    ? Characters[Keys] extends Required<ScriptSpecified> ? never : Characters[Keys]['id']
     : never
 
     : Type extends 'incident'
     ? Keys extends NameDefinition<'incident'>
-    ? Incidents[Keys] extends Required<ScriptSpecified> ? never : Incidents[Keys]['name']
+    ? Incidents[Keys] extends Required<ScriptSpecified> ? never : Incidents[Keys]['id']
     : never
 
 
     : Type extends 'plot'
     ? Keys extends NameDefinition<'plot'>
-    ? Plots[Keys] extends Required<ScriptSpecified> ? never : Plots[Keys]['name']
+    ? Plots[Keys] extends Required<ScriptSpecified> ? never : Plots[Keys]['id']
     : never
     : never
     ;
@@ -95,23 +95,23 @@ type Extended<Type extends 'role' | 'character' | 'incident' | 'plot', Keys exte
 
     Type extends 'role'
     ? Keys extends NameDefinition<'role'>
-    ? Roles[Keys] extends Required<ScriptSpecified> ? Roles[Keys]['name'] : never
+    ? Roles[Keys] extends Required<ScriptSpecified> ? Roles[Keys]['id'] : never
     : never
 
     : Type extends 'character'
     ? Keys extends NameDefinition<'character'>
-    ? Characters[Keys] extends Required<ScriptSpecified> ? Characters[Keys]['name'] : never
+    ? Characters[Keys] extends Required<ScriptSpecified> ? Characters[Keys]['id'] : never
     : never
 
     : Type extends 'incident'
     ? Keys extends NameDefinition<'incident'>
-    ? Incidents[Keys] extends Required<ScriptSpecified> ? Incidents[Keys]['name'] : never
+    ? Incidents[Keys] extends Required<ScriptSpecified> ? Incidents[Keys]['id'] : never
     : never
 
 
     : Type extends 'plot'
     ? Keys extends NameDefinition<'plot'>
-    ? Plots[Keys] extends Required<ScriptSpecified> ? Plots[Keys]['name'] : never
+    ? Plots[Keys] extends Required<ScriptSpecified> ? Plots[Keys]['id'] : never
     : never
     : never
     ;

@@ -12,14 +12,14 @@ export type Tag = 'boy' | 'girl' | 'student' | "man" | "woman" | "adult" | 'cons
 
 
 export type Characters = (typeof characters);
-export type CharacterName = typeof data.characters[number]['name'];
+export type CharacterName = typeof data.characters[number]['id'];
 
 
 
 type CharacterscomesInLaterHelper<T> = T extends { 'comesInLater': true } ? T : never;
-export type CharacterscomesInLater = CharacterscomesInLaterHelper<Character>['name'];
+export type CharacterscomesInLater = CharacterscomesInLaterHelper<Character>['id'];
 type CharactersPlotlessRole<T> = T extends { 'plotLessRole': 'all' | 'not in plots' | 'plot duplicate' } ? T : never;
-export type CharacterPlotless = CharactersPlotlessRole<Character>['name'];
+export type CharacterPlotless = CharactersPlotlessRole<Character>['id'];
 
 
 
@@ -51,9 +51,9 @@ export type Ability = {
 
 
 
-export const characters = toRecord([...data.characters] as const satisfies readonly CharacterIntern[], 'name') as Record<CharacterName, Character>;
+export const characters = toRecord([...data.characters] as const satisfies readonly CharacterIntern[], 'id') as Record<CharacterName, Character>;
 
-export const characterscomesInLater = Object.values(characters).filter(x => (x as { comesInLater?: true })['comesInLater']).map(x => x.name) as readonly CharacterscomesInLater[];
+export const characterscomesInLater = Object.values(characters).filter(x => (x as { comesInLater?: true })['comesInLater']).map(x => x.id) as readonly CharacterscomesInLater[];
 
 
 

@@ -30,7 +30,7 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Rich Man’s Daughter": "Conspiracy Theorist",
+                "rich-student": "Conspiracy Theorist",
                 "Class Rep": "Person",
                 "Alien": "Friend",
                 "Informer": "Loved One",
@@ -53,7 +53,7 @@
                 {
                     "day": 5,
                     "incident": "Suicide",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 },
                 {
                     "day": 6,
@@ -98,7 +98,7 @@
             "cast": {
                 "Boy Student": "Serial Killer",
                 "Girl Student": "Key Person",
-                "Rich Man’s Daughter": "Killer",
+                "rich-student": "Killer",
                 "Shrine Maiden": "Friend",
                 "Police Officer": "Brain",
                 "Office Worker": "Person",
@@ -219,7 +219,7 @@
             "cast": {
                 "Boy Student": "Person",
                 "Girl Student": "Obstinate",
-                "Rich Man’s Daughter": "Friend",
+                "rich-student": "Friend",
                 "Shrine Maiden": "Person",
                 "Alien": "Factor",
                 "Police Officer": "Person",
@@ -229,7 +229,7 @@
                 {
                     "day": 2,
                     "incident": "Confession",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 },
                 {
                     "day": 4,
@@ -274,7 +274,7 @@
             "daysPerLoop": 4,
             "cast": {
                 "Boy Student": "Obstinate",
-                "Rich Man’s Daughter": "Person",
+                "rich-student": "Person",
                 "Shrine Maiden": "Person",
                 "Alien": "Conspiracy Theorist",
                 "Godly Being": [
@@ -300,7 +300,7 @@
                 {
                     "day": 3,
                     "incident": "Increasing Unease",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 },
                 {
                     "day": 4,
@@ -412,7 +412,7 @@
             "daysPerLoop": 6,
             "cast": {
                 "Boy Student": "Magician",
-                "Rich Man’s Daughter": "Person",
+                "rich-student": "Person",
                 "Mystery Boy": "Prophet",
                 "Shrine Maiden": "Serial Killer",
                 "Police Officer": "Magician",
@@ -430,7 +430,7 @@
                 {
                     "day": 4,
                     "incident": "Missing Person",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 },
                 {
                     "day": 5,
@@ -471,7 +471,7 @@
             "daysPerLoop": 5,
             "cast": {
                 "Boy Student": "Brain",
-                "Rich Man’s Daughter": "Fool",
+                "rich-student": "Fool",
                 "Shrine Maiden": "Person",
                 "Alien": "Twin",
                 "Police Officer": "Paranoiac",
@@ -483,7 +483,7 @@
                 {
                     "day": 1,
                     "incident": "Portent",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 },
                 {
                     "day": 2,
@@ -534,7 +534,7 @@
             "cast": {
                 "Boy Student": "Paranoiac",
                 "Girl Student": "Person",
-                "Rich Man’s Daughter": "Person",
+                "rich-student": "Person",
                 "Shrine Maiden": "Twin",
                 "Office Worker": "Person",
                 "Journalist": "Conspiracy Theorist",
@@ -597,7 +597,7 @@
             "daysPerLoop": 7,
             "cast": {
                 "Girl Student": "Friend",
-                "Rich Man’s Daughter": "Private Investigator",
+                "rich-student": "Private Investigator",
                 "Shrine Maiden": "Poisoner",
                 "Alien": "Key Person",
                 "Informer": "Person",
@@ -660,7 +660,7 @@
             ],
             "daysPerLoop": 4,
             "cast": {
-                "Rich Man’s Daughter": "Fool",
+                "rich-student": "Fool",
                 "Class Rep": "Person",
                 "Shrine Maiden": "Paranoiac",
                 "Police Officer": "Therapist",
@@ -689,7 +689,7 @@
                 {
                     "day": 4,
                     "incident": "Portent",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
@@ -724,7 +724,7 @@
             "daysPerLoop": 7,
             "cast": {
                 "Girl Student": "Conspiracy Theorist",
-                "Rich Man’s Daughter": "Killer",
+                "rich-student": "Killer",
                 "Mystery Boy": "Poisoner",
                 "Alien": "Obstinate",
                 "Police Officer": "Private Investigator",
@@ -763,7 +763,7 @@
                 {
                     "day": 7,
                     "incident": "Bestial Murder",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",

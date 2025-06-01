@@ -21,7 +21,7 @@ type TragedySetInternal = {
     }[],
 } & CastOptions
 
-export type TragedySetName = TragedySet['name'];
+export type TragedySetName = TragedySet['id'];
 
 
 export type CastOptions = { castOptions?: Options };
@@ -75,7 +75,7 @@ export const tragedySets = toRecord([
 
     ...data.tragedys,
     
-] as const satisfies readonly TragedySetInternal[], 'name');
+] as const satisfies readonly TragedySetInternal[], 'id');
 
 
 

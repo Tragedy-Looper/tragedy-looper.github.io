@@ -1,15 +1,17 @@
 {
-    "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
-    // For dev purposes
-    // "$schema": "../scripts.schema.json",
+  //"$schema": "https://tragedy-looper.github.io/scripts.schema.json",
+  // For dev purposes
+  "$schema": "../scripts.schema.json",
   "scripts": [
     {
       "title": "The First Script",
       "creator": "BakaFire",
-      "set": [{
-        "name": "Tragedy Looper",
-        "number": 1
-      }],
+      "set": [
+        {
+          "name": "Tragedy Looper",
+          "number": 1
+        }
+      ],
       "tragedySet": "First Steps",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -95,10 +97,12 @@
     {
       "title": "Prevailing Secrecy",
       "creator": "BakaFire",
-      "set": [{
-        "name": "Tragedy Looper",
-        "number": 2
-      }],
+      "set": [
+        {
+          "name": "Tragedy Looper",
+          "number": 2
+        }
+      ],
       "tragedySet": "First Steps",
       "daysPerLoop": 5,
       "difficultySets": [
@@ -149,10 +153,12 @@
     {
       "title": "Young Women’s Battlefield",
       "creator": "Gayusu",
-      "set": [{
-        "name": "Tragedy Looper",
-        "number": 3
-      }],
+      "set": [
+        {
+          "name": "Tragedy Looper",
+          "number": 3
+        }
+      ],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -232,7 +238,7 @@
         "Boy Student": "Serial Killer",
         "Patient": "Person",
         "Teacher": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Shrine Maiden": "Friend"
       },
       "incidents": [
@@ -262,10 +268,12 @@
     {
       "title": "Lesser of Two Evils",
       "creator": "GEnd",
-      "set": [{
-        "name": "Tragedy Looper",
-        "number": 4
-      }],
+      "set": [
+        {
+          "name": "Tragedy Looper",
+          "number": 4
+        }
+      ],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -288,7 +296,7 @@
       "cast": {
         "Boy Student": "Person",
         "Girl Student": "Person",
-        "Rich Man’s Daughter": "Brain",
+        "rich-student": "Brain",
         "Shrine Maiden": "Friend",
         "Office Worker": "Serial Killer",
         "Informer": "Person",
@@ -300,7 +308,7 @@
         {
           "day": 2,
           "incident": "Increasing Unease",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 4,
@@ -325,10 +333,12 @@
     {
       "title": "The Secret That Was Kept",
       "creator": "BakaFire",
-      "set": [{
-        "name": "Tragedy Looper",
-        "number": 5
-      }],
+      "set": [
+        {
+          "name": "Tragedy Looper",
+          "number": 5
+        }
+      ],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -349,7 +359,7 @@
         "Circle of Friends"
       ],
       "cast": {
-        "Rich Man’s Daughter": "Witch",
+        "rich-student": "Witch",
         "Class Rep": "Person",
         "Shrine Maiden": "Person",
         "Alien": "Friend",
@@ -363,7 +373,7 @@
         {
           "day": 2,
           "incident": "Suicide",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 3,
@@ -393,10 +403,12 @@
     {
       "title": "The Future of the Gods",
       "creator": "Nightly Moonfire group",
-      "set": [{
-        "name": "Tragedy Looper",
-        "number": 6
-      }],
+      "set": [
+        {
+          "name": "Tragedy Looper",
+          "number": 6
+        }
+      ],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -414,7 +426,7 @@
       ],
       "cast": {
         "Boy Student": "Time Traveler",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Shrine Maiden": "Cultist",
         "Godly Being": [
           "Loved One",
@@ -457,10 +469,12 @@
     {
       "title": "Mirror Passcode",
       "creator": "M. Hydromel",
-      "set": [{
-        "name": "Tragedy Looper",
-        "number": 7
-      }],
+      "set": [
+        {
+          "name": "Tragedy Looper",
+          "number": 7
+        }
+      ],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -483,7 +497,7 @@
       "cast": {
         "Boy Student": "Person",
         "Girl Student": "Key Person",
-        "Rich Man’s Daughter": "Factor",
+        "rich-student": "Factor",
         "Mystery Boy": "Cultist",
         "Office Worker": "Person",
         "Informer": "Conspiracy Theorist",
@@ -495,7 +509,7 @@
         {
           "day": 3,
           "incident": "Missing Person",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 4,
@@ -520,10 +534,12 @@
     {
       "title": "Those with Antibodies",
       "creator": "Satoshi Sawamura",
-      "set": [{
-        "name": "Tragedy Looper",
-        "number": 8
-      }],
+      "set": [
+        {
+          "name": "Tragedy Looper",
+          "number": 8
+        }
+      ],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 4,
       "difficultySets": [
@@ -545,7 +561,7 @@
       ],
       "cast": {
         "Girl Student": "Person",
-        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "rich-student": "Conspiracy Theorist",
         "Class Rep": "Person",
         "Shrine Maiden": "Cultist",
         "Police Officer": "Person",
@@ -559,7 +575,7 @@
         {
           "day": 1,
           "incident": "Butterfly Effect",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -584,10 +600,12 @@
     {
       "title": "Prologue",
       "creator": "BakaFire",
-      "set": [{
-        "name": "Tragedy Looper",
-        "number": 9
-      }],
+      "set": [
+        {
+          "name": "Tragedy Looper",
+          "number": 9
+        }
+      ],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 7,
       "difficultySets": [
@@ -610,7 +628,7 @@
       "cast": {
         "Boy Student": "Lover",
         "Girl Student": "Loved One",
-        "Rich Man’s Daughter": "Killer",
+        "rich-student": "Killer",
         "Shrine Maiden": "Key Person",
         "Police Officer": "Conspiracy Theorist",
         "Office Worker": "Person",
@@ -647,10 +665,12 @@
     {
       "title": "Neverending Happy & Sad Story",
       "creator": "BF + 3G",
-      "set": [{
-        "name": "Tragedy Looper",
-        "number": 10
-      }],
+      "set": [
+        {
+          "name": "Tragedy Looper",
+          "number": 10
+        }
+      ],
       "tragedySet": "Basic Tragedy",
       "daysPerLoop": 6,
       "difficultySets": [
@@ -668,7 +688,7 @@
       ],
       "cast": {
         "Girl Student": "Person",
-        "Rich Man’s Daughter": "Loved One",
+        "rich-student": "Loved One",
         "Class Rep": "Person",
         "Mystery Boy": "Brain",
         "Alien": "Person",

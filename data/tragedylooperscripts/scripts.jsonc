@@ -9,7 +9,7 @@
         "Henchman": "Cultist",
         "Class Rep": "Conspiracy Theorist",
         "Boy Student": "Person",
-        "Rich Man’s Daughter": "Curmudgeon",
+        "rich-student": "Curmudgeon",
         "Patient": "Friend"
       },
       "incidents": [
@@ -64,7 +64,7 @@
       "cast": {
         "Boy Student": "Cultist",
         "Class Rep": "Brain",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Illusion": "Prophet",
         "Office Worker": "Magician",
         "Pop Idol": "Person",
@@ -75,7 +75,7 @@
         {
           "day": 1,
           "incident": "Suicide",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -129,7 +129,7 @@
     {
       "cast": {
         "Girl Student": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Class Rep": "Key Person",
         "Alien": "Killer",
         "Police Officer": "Person",
@@ -183,7 +183,7 @@
       "cast": {
         "Henchman": "Time Traveler",
         "Pop Idol": "Cultist",
-        "Rich Man’s Daughter": "Factor",
+        "rich-student": "Factor",
         "Nurse": "Conspiracy Theorist",
         "Mystery Boy": "Killer",
         "Informer": "Person",
@@ -330,7 +330,7 @@
             "enters on loop": 2
           }
         ],
-        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "rich-student": "Conspiracy Theorist",
         "A.I.": "Therapist",
         "Police Officer": "Obstinate",
         "Mystery Boy": "Friend",
@@ -348,7 +348,7 @@
         {
           "day": 2,
           "incident": "A Suspicious Letter",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 4,
@@ -413,7 +413,7 @@
         "Alien": "Person",
         "Pop Idol": "Person",
         "Office Worker": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Class Rep": "Person",
         "Doctor": "Person",
         "Patient": "Person"
@@ -632,7 +632,7 @@
     },
     {
       "cast": {
-        "Rich Man’s Daughter": "Brain",
+        "rich-student": "Brain",
         "Boss": [
           "Conspiracy Theorist",
           {
@@ -658,7 +658,7 @@
         {
           "day": 1,
           "incident": "Increasing Unease",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -720,7 +720,7 @@
         ],
         "Patient": "Obstinate",
         "Alien": "Fool",
-        "Rich Man’s Daughter": "Paranoiac",
+        "rich-student": "Paranoiac",
         "Henchman": "Twin",
         "Mystery Boy": "Killer",
         "Doctor": "Person",
@@ -732,7 +732,7 @@
         {
           "day": 1,
           "incident": "Increasing Unease",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -799,7 +799,7 @@
         "Police Officer": "Witch",
         "Journalist": "Person",
         "Informer": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Henchman": "Conspiracy Theorist"
       },
       "incidents": [
@@ -875,7 +875,7 @@
         "Informer": "Faceless",
         "Office Worker": "Wizard",
         "Journalist": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Boy Student": "Person"
       },
       "incidents": [
@@ -931,7 +931,7 @@
     {
       "cast": {
         "Journalist": "Ninja",
-        "Rich Man’s Daughter": "Friend",
+        "rich-student": "Friend",
         "Police Officer": "Obstinate",
         "Illusion": "Factor",
         "Forensic Specialist": "Person",
@@ -954,7 +954,7 @@
         {
           "day": 3,
           "incident": "Conspiracies",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 4,
@@ -1083,7 +1083,7 @@
         "Alien": "Fool",
         "Class Rep": "Serial Killer",
         "Shrine Maiden": "Paranoiac",
-        "Rich Man’s Daughter": "Therapist",
+        "rich-student": "Therapist",
         "Mystery Boy": "Poisoner",
         "Journalist": "Person",
         "Patient": "Person",
@@ -1096,7 +1096,7 @@
         {
           "day": 1,
           "incident": "Suicide",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -1155,7 +1155,7 @@
     {
       "cast": {
         "Girl Student": "Conspiracy Theorist",
-        "Rich Man’s Daughter": "Key Person",
+        "rich-student": "Key Person",
         "Alien": "Brain",
         "Office Worker": "Magician",
         "Shrine Maiden": "Magician",
@@ -1173,7 +1173,7 @@
         {
           "day": 2,
           "incident": "Conspiracies",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 3,
@@ -1235,7 +1235,7 @@
         "Patient": "Person",
         "Police Officer": "Witch",
         "Pop Idol": "Person",
-        "Rich Man’s Daughter": "Person"
+        "rich-student": "Person"
       },
       "incidents": [
         {
@@ -1246,7 +1246,7 @@
         {
           "day": 3,
           "incident": "Spreading",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 4,
@@ -1296,7 +1296,7 @@
         "Police Officer": "Friend",
         "Pop Idol": "Conspiracy Theorist",
         "Patient": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Godly Being": [
           "Person",
           {
@@ -1382,7 +1382,7 @@
           }
         ],
         "Henchman": "Twin",
-        "Rich Man’s Daughter": "Paranoiac",
+        "rich-student": "Paranoiac",
         "Boy Student": "Serial Killer",
         "Girl Student": "Friend",
         "Mystery Boy": "Private Investigator",
@@ -1399,7 +1399,7 @@
         {
           "day": 1,
           "incident": "Closed Circle",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -1459,7 +1459,7 @@
       "cast": {
         "Soldier": "Sacrifice",
         "A.I.": "Cultist",
-        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "rich-student": "Conspiracy Theorist",
         "Scientist": "Witness",
         "Police Officer": "Deep One",
         "Informer": "Paranoiac",
@@ -1477,7 +1477,7 @@
         {
           "day": 2,
           "incident": "Insane Murder",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 3,
@@ -1538,7 +1538,7 @@
         "Alien": "Fool",
         "Shrine Maiden": "Friend",
         "Mystery Boy": "Obstinate",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Patient": "Person"
       },
       "incidents": [
@@ -1552,7 +1552,7 @@
           "notTragedySpecified": true,
           "day": 2,
           "incident": "Diagonal Destruction 3",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "notTragedySpecified": true,
@@ -1691,7 +1691,7 @@
             "enters on day": 3
           }
         ],
-        "Rich Man’s Daughter": "Time Traveler",
+        "rich-student": "Time Traveler",
         "Black Cat": "Deep One",
         "Informer": "Paranoiac",
         "Teacher": "Person",
@@ -1701,7 +1701,7 @@
         {
           "day": 2,
           "incident": "Increasing Unease",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 3,
@@ -1753,7 +1753,7 @@
         "Alien": "Serial Killer",
         "Office Worker": "Loved One",
         "Girl Student": "Lover",
-        "Rich Man’s Daughter": "Friend",
+        "rich-student": "Friend",
         "Boss": [
           "Cultist",
           {
@@ -1778,7 +1778,7 @@
         {
           "day": 3,
           "incident": "Missing Person",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 4,
@@ -1944,7 +1944,7 @@
         "Shrine Maiden": "Friend",
         "Boy Student": "Conspiracy Theorist",
         "Girl Student": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Office Worker": "Cultist",
         "Informer": "Key Person",
         "Doctor": "Curmudgeon",
@@ -1998,7 +1998,7 @@
       "cast": {
         "Girl Student": "Key Person",
         "Shrine Maiden": "Killer",
-        "Rich Man’s Daughter": "Brain",
+        "rich-student": "Brain",
         "Boy Student": "Conspiracy Theorist",
         "Office Worker": "Serial Killer",
         "Nurse": "Person"
@@ -2007,7 +2007,7 @@
         {
           "day": 2,
           "incident": "Increasing Unease",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 3,
@@ -2247,14 +2247,14 @@
         "Illusion": "Prophet",
         "Alien": "Person",
         "Sacred Tree": "Magician",
-        "Rich Man’s Daughter": "Immortal",
+        "rich-student": "Immortal",
         "Copycat": "Person"
       },
       "incidents": [
         {
           "day": 1,
           "incident": "Suicide",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -2309,7 +2309,7 @@
         "Shrine Maiden": "Person",
         "Office Worker": "Friend",
         "Pop Idol": "Brain",
-        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "rich-student": "Conspiracy Theorist",
         "Mystery Boy": "Factor"
       },
       "incidents": [
@@ -2321,7 +2321,7 @@
         {
           "day": 2,
           "incident": "Increasing Unease",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 3,
@@ -2384,7 +2384,7 @@
         "Shrine Maiden": "Loved One",
         "Office Worker": "Person",
         "Police Officer": "Lover",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Boy Student": "Conspiracy Theorist",
         "Class Rep": "Key Person"
       },
@@ -2392,7 +2392,7 @@
         {
           "day": 1,
           "incident": "Increasing Unease",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -2642,7 +2642,7 @@
       "cast": {
         "Office Worker": "Conspiracy Theorist",
         "Boy Student": "Brain",
-        "Rich Man’s Daughter": "Killer",
+        "rich-student": "Killer",
         "Teacher": "Friend",
         "Nurse": "Friend",
         "Police Officer": "Key Person",
@@ -2658,7 +2658,7 @@
         {
           "day": 2,
           "incident": "Suicide",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 3,
@@ -2712,7 +2712,7 @@
         "Shrine Maiden": "Person",
         "Nurse": "Person",
         "Girl Student": "Person",
-        "Rich Man’s Daughter": "Loved One",
+        "rich-student": "Loved One",
         "Office Worker": "Killer",
         "Journalist": "Brain"
       },
@@ -2765,7 +2765,7 @@
       "cast": {
         "Class Rep": "Person",
         "Shrine Maiden": "Conspiracy Theorist",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Doctor": "Person",
         "Police Officer": "Cultist",
         "Journalist": "Brain"
@@ -2819,7 +2819,7 @@
       "cast": {
         "Boy Student": "Friend",
         "Girl Student": "Friend",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Shrine Maiden": "Person",
         "Police Officer": "Person",
         "Office Worker": "Person",
@@ -2875,7 +2875,7 @@
       "cast": {
         "Girl Student": "Factor",
         "Class Rep": "Conspiracy Theorist",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Shrine Maiden": "Person",
         "Doctor": "Person",
         "Patient": "Time Traveler",
@@ -2897,7 +2897,7 @@
         {
           "day": 4,
           "incident": "Missing Person",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 5,
@@ -2940,7 +2940,7 @@
     },
     {
       "cast": {
-        "Rich Man’s Daughter": "Augur",
+        "rich-student": "Augur",
         "Crusader": "Person",
         "Boy Student": "Lover",
         "Shrine Maiden": "Person",
@@ -2959,7 +2959,7 @@
         {
           "day": 2,
           "incident": "Ritual Sacrifice",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 3,
@@ -3004,7 +3004,7 @@
       "cast": {
         "Informer": "Person",
         "Police Officer": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Doctor": "Supplicant",
         "Shrine Maiden": "Mad Genius",
         "Office Worker": "Contract Killer",
@@ -3116,7 +3116,7 @@
     },
     {
       "cast": {
-        "Rich Man’s Daughter": "Brain",
+        "rich-student": "Brain",
         "Boy Student": "Person",
         "Police Officer": "Person",
         "Office Worker": "Conspiracy Theorist",
@@ -3132,7 +3132,7 @@
         {
           "day": 2,
           "incident": "Spreading",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 3,
@@ -3171,7 +3171,7 @@
       "cast": {
         "Shrine Maiden": "Person",
         "Nurse": "Friend",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Patient": "Conspiracy Theorist",
         "Alien": "Friend",
         "Pop Idol": "Person",
@@ -3283,7 +3283,7 @@
         "Nurse": "Person",
         "Journalist": "Person",
         "Office Worker": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Class Rep": "Person"
       },
       "incidents": [
@@ -3403,13 +3403,13 @@
         "Police Officer": "Person",
         "Nurse": "Friend",
         "Office Worker": "Conspiracy Theorist",
-        "Rich Man’s Daughter": "Brain"
+        "rich-student": "Brain"
       },
       "incidents": [
         {
           "day": 1,
           "incident": "Missing Person",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -3526,7 +3526,7 @@
       "cast": {
         "Girl Student": "Key Person",
         "Class Rep": "Key Person",
-        "Rich Man’s Daughter": "Key Person",
+        "rich-student": "Key Person",
         "Doctor": "Brain",
         "Patient": "Killer",
         "Informer": "Conspiracy Theorist",
@@ -3537,7 +3537,7 @@
         {
           "day": 2,
           "incident": "Missing Person",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 3,
@@ -3596,7 +3596,7 @@
       "cast": {
         "Shrine Maiden": "Key Person",
         "Class Rep": "Cultist",
-        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "rich-student": "Conspiracy Theorist",
         "Girl Student": "Serial Killer",
         "Nurse": "Person",
         "Informer": "Person"
@@ -3653,7 +3653,7 @@
       "cast": {
         "Boy Student": "Person",
         "Girl Student": "Key Person",
-        "Rich Man’s Daughter": "Friend",
+        "rich-student": "Friend",
         "Shrine Maiden": "Person",
         "Police Officer": "Conspiracy Theorist",
         "Office Worker": "Person",
@@ -3680,7 +3680,7 @@
         {
           "day": 8,
           "incident": "Hospital Incident",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         }
       ],
       "title": "We have no choice but to die",
@@ -3716,7 +3716,7 @@
         "Boy Student": "Killer",
         "Girl Student": "Key Person",
         "Class Rep": "Friend",
-        "Rich Man’s Daughter": "Brain",
+        "rich-student": "Brain",
         "Mystery Boy": "Serial Killer",
         "Pop Idol": "Person",
         "Shrine Maiden": "Conspiracy Theorist"
@@ -3725,7 +3725,7 @@
         {
           "day": 1,
           "incident": "Increasing Unease",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -3768,7 +3768,7 @@
     {
       "cast": {
         "Shrine Maiden": "Key Person",
-        "Rich Man’s Daughter": "Killer",
+        "rich-student": "Killer",
         "Doctor": "Brain",
         "Patient": "Lover",
         "Henchman": "Loved One",
@@ -3802,7 +3802,7 @@
         {
           "day": 7,
           "incident": "Murder",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         }
       ],
       "title": "Best in Class",
@@ -3837,7 +3837,7 @@
       "cast": {
         "Patient": "Key Person",
         "Boy Student": "Loved One",
-        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "rich-student": "Conspiracy Theorist",
         "Girl Student": "Lover",
         "Informer": "Killer",
         "Office Worker": "Brain",
@@ -3870,7 +3870,7 @@
         {
           "day": 7,
           "incident": "Hospital Incident",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         }
       ],
       "title": "Silly Things?",
@@ -3915,14 +3915,14 @@
           }
         ],
         "Journalist": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Henchman": "Paranoiac"
       },
       "incidents": [
         {
           "day": 1,
           "incident": "Increasing Unease",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -4033,7 +4033,7 @@
     {
       "cast": {
         "Class Rep": "Conspiracy Theorist",
-        "Rich Man’s Daughter": "Key Person",
+        "rich-student": "Key Person",
         "Doctor": "Brain",
         "Henchman": "Magician",
         "Shrine Maiden": "Immortal",
@@ -4051,7 +4051,7 @@
         {
           "day": 3,
           "incident": "Suicide",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 5,
@@ -4104,7 +4104,7 @@
             "Turf": "School"
           }
         ],
-        "Rich Man’s Daughter": "Friend",
+        "rich-student": "Friend",
         "Office Worker": "Serial Killer",
         "Mystery Boy": "Obstinate",
         "Nurse": "Person"
@@ -4118,7 +4118,7 @@
         {
           "day": 2,
           "incident": "Suicide",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 4,
@@ -4162,7 +4162,7 @@
     {
       "cast": {
         "Alien": "Key Person",
-        "Rich Man’s Daughter": "Cultist",
+        "rich-student": "Cultist",
         "Police Officer": "Ninja",
         "Doctor": "Magician",
         "Forensic Specialist": "Immortal",
@@ -4189,7 +4189,7 @@
         {
           "day": 5,
           "incident": "Serial Murder",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 6,
@@ -4228,7 +4228,7 @@
     {
       "cast": {
         "Doctor": "Person",
-        "Rich Man’s Daughter": "Friend",
+        "rich-student": "Friend",
         "Alien": "Obstinate",
         "Girl Student": "Person",
         "Godly Being": [
@@ -4260,7 +4260,7 @@
         {
           "day": 5,
           "incident": "Suicide",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 6,
@@ -4305,7 +4305,7 @@
         "Police Officer": "Poisoner",
         "Patient": "Fool",
         "Boy Student": "Friend",
-        "Rich Man’s Daughter": "Paranoiac",
+        "rich-student": "Paranoiac",
         "Girl Student": "Serial Killer",
         "Alien": "Twin",
         "Office Worker": "Person",
@@ -4321,7 +4321,7 @@
         {
           "day": 2,
           "incident": "Increasing Unease",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 3,
@@ -4375,7 +4375,7 @@
         "Henchman": "Friend",
         "A.I.": "Obstinate",
         "Shrine Maiden": "Factor",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Scientist": "Person",
         "Class Rep": "Person",
         "Patient": "Person"
@@ -4443,7 +4443,7 @@
         "Patient": "Lover",
         "Mystery Boy": "Conspiracy Theorist",
         "Office Worker": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Boy Student": "Person",
         "Girl Student": "Person",
         "Godly Being": [
@@ -4513,7 +4513,7 @@
         "Alien": "Brain",
         "Doctor": "Killer",
         "Pop Idol": "Key Person",
-        "Rich Man’s Daughter": "Factor",
+        "rich-student": "Factor",
         "Office Worker": "Serial Killer",
         "Patient": "Friend",
         "Police Officer": "Person",
@@ -4540,7 +4540,7 @@
         {
           "day": 6,
           "incident": "Suicide",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 7,
@@ -4584,7 +4584,7 @@
       "cast": {
         "Class Rep": "Person",
         "Girl Student": "Conspiracy Theorist",
-        "Rich Man’s Daughter": "Brain",
+        "rich-student": "Brain",
         "Shrine Maiden": "Person",
         "Police Officer": "Curmudgeon",
         "Office Worker": "Person",
@@ -4654,14 +4654,14 @@
         "Informer": "Serial Killer",
         "Class Rep": "Friend",
         "Girl Student": "Conspiracy Theorist",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Shrine Maiden": "Person"
       },
       "incidents": [
         {
           "day": 1,
           "incident": "Butterfly Effect",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -4713,7 +4713,7 @@
         "Doctor": "Cultist",
         "Nurse": "Friend",
         "Boy Student": "Friend",
-        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "rich-student": "Conspiracy Theorist",
         "Girl Student": "Person",
         "Class Rep": "Person",
         "Shrine Maiden": "Person",
@@ -4787,7 +4787,7 @@
           }
         ],
         "Shrine Maiden": "Brain",
-        "Rich Man’s Daughter": "Key Person",
+        "rich-student": "Key Person",
         "Girl Student": "Killer",
         "Mystery Boy": "Cultist"
       },
@@ -4795,7 +4795,7 @@
         {
           "day": 2,
           "incident": "Suicide",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 3,
@@ -4843,7 +4843,7 @@
     },
     {
       "cast": {
-        "Rich Man’s Daughter": "Brain",
+        "rich-student": "Brain",
         "Police Officer": "Fool",
         "Class Rep": "Friend",
         "Girl Student": "Conspiracy Theorist",
@@ -4916,7 +4916,7 @@
         "Mystery Boy": "Serial Killer",
         "Shrine Maiden": "Friend",
         "Police Officer": "Person",
-        "Rich Man’s Daughter": "Conspiracy Theorist",
+        "rich-student": "Conspiracy Theorist",
         "Office Worker": "Curmudgeon"
       },
       "incidents": [
@@ -4974,7 +4974,7 @@
         "Informer": "Brain",
         "Pop Idol": "Conspiracy Theorist",
         "Office Worker": "Magician",
-        "Rich Man’s Daughter": "Immortal",
+        "rich-student": "Immortal",
         "Shrine Maiden": "Prophet",
         "Alien": "Person",
         "Police Officer": "Person",
@@ -4995,7 +4995,7 @@
         {
           "day": 4,
           "incident": "Serial Murder",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 5,

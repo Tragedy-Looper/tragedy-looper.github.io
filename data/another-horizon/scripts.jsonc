@@ -29,7 +29,7 @@
       "daysPerLoop": 5,
       "cast": {
         "Boy Student": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Shrine Maiden": "Person",
         "Doctor": "Person",
         "Class Rep": "Person",
@@ -42,7 +42,7 @@
         {
           "day": 1,
           "incident": "Confession",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -176,7 +176,7 @@
       "cast": {
         "Boy Student": "Quidnunc",
         "Girl Student": "Agitator",
-        "Rich Man’s Daughter": "Neurosis",
+        "rich-student": "Neurosis",
         "Police Officer": "Agent",
         "Doctor": "Person",
         "Patient": "Brain",
@@ -198,7 +198,7 @@
         {
           "day": 2,
           "incident": "Hospital Incident",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         }
       ],
       "victory-conditions": "",
@@ -231,7 +231,7 @@
       "daysPerLoop": 6,
       "cast": {
         "Boy Student": "Person",
-        "Rich Man’s Daughter": "Quidnunc",
+        "rich-student": "Quidnunc",
         "Office Worker": "Person",
         "Patient": "Neurosis",
         "Mystery Boy": "Agent",
@@ -249,7 +249,7 @@
         {
           "day": 1,
           "incident": "World End",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 2,
@@ -307,7 +307,7 @@
       "daysPerLoop": 6,
       "cast": {
         "Boy Student": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Shrine Maiden": "Person",
         "Office Worker": "Person",
         "Informer": "Agitator",
@@ -379,7 +379,7 @@
       "daysPerLoop": 6,
       "cast": {
         "Boy Student": "Person",
-        "Rich Man’s Daughter": "Person",
+        "rich-student": "Person",
         "Shrine Maiden": "Person",
         "Office Worker": "Person",
         "Informer": "Agitator",
@@ -455,7 +455,7 @@
           }
         ],
         "Girl Student": "Person",
-        "Rich Man’s Daughter": "Agitator",
+        "rich-student": "Agitator",
         "Shrine Maiden": "Twilight",
         "Class Rep": [
           "Animus",
@@ -478,7 +478,7 @@
         {
           "day": 5,
           "incident": "Small Force",
-          "culprit": "Rich Man’s Daughter"
+          "culprit": "rich-student"
         },
         {
           "day": 6,

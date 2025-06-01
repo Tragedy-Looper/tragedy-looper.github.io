@@ -5,7 +5,7 @@
     "plots": [
         {
             "id": "The Noble Bloodline",
-"name": "The Noble Bloodline",
+            "name": "The Noble Bloodline",
             "roles": {
                 "Key Person": 1,
                 "Vampire": 1
@@ -19,7 +19,7 @@
         },
         {
             "id": "Moonlight Beast",
-"name": "Moonlight Beast",
+            "name": "Moonlight Beast",
             "roles": {
                 "Werewolf": 1
             },
@@ -27,7 +27,7 @@
         },
         {
             "id": "Night Mist Nightmare",
-"name": "Night Mist Nightmare",
+            "name": "Night Mist Nightmare",
             "roles": {
                 "Nightmare": 1
             },
@@ -35,7 +35,7 @@
         },
         {
             "id": "The Ones from the Grave",
-"name": "The Ones from the Grave",
+            "name": "The Ones from the Grave",
             "roles": {},
             "rules": [
                 {
@@ -49,7 +49,7 @@
         },
         {
             "id": "The Cursed Land",
-"name": "The Cursed Land",
+            "name": "The Cursed Land",
             "roles": {
                 "Ghost": 1,
                 "Show-Off": 1
@@ -73,7 +73,7 @@
         },
         {
             "id": "Those with Habits",
-"name": "Those with Habits",
+            "name": "Those with Habits",
             "roles": {
                 "Ghost": 1,
                 "Serial Killer": 1,
@@ -83,7 +83,7 @@
         },
         {
             "id": "Witch’s Curse",
-"name": "Witch’s Curse",
+            "name": "Witch’s Curse",
             "roles": {
                 "Conspiracy Theorist": 1,
                 "Witch": 1
@@ -100,7 +100,7 @@
         },
         {
             "id": "The Key Girl",
-"name": "The Key Girl",
+            "name": "The Key Girl",
             "roles": {
                 "Key Person": 1
             },
@@ -112,8 +112,8 @@
             ]
         },
         {
-            "id": "Monster :intrigue:",
-"name": "Monster :intrigue:",
+            "id": "Monster Intrigue",
+            "name": "Monster Intrigue",
             "roles": {
                 "Conspiracy Theorist": 1
             },
@@ -132,7 +132,7 @@
         },
         {
             "id": "Panic and Obsession",
-"name": "Panic and Obsession",
+            "name": "Panic and Obsession",
             "roles": {
                 "Serial Killer": 1,
                 "Coward": 1,
@@ -142,7 +142,7 @@
         },
         {
             "id": "People Who Don’t Listen",
-"name": "People Who Don’t Listen",
+            "name": "People Who Don’t Listen",
             "roles": {
                 "Show-Off": 1,
                 "Conspiracy Theorist": 1,
@@ -152,7 +152,7 @@
         },
         {
             "id": "Choir to the Outside God",
-"name": "Choir to the Outside God",
+            "name": "Choir to the Outside God",
             "roles": {
                 "Key Person": 1,
                 "Sacrifice": 1,
@@ -170,7 +170,7 @@
         },
         {
             "id": "The Sacred Words of Dagon",
-"name": "The Sacred Words of Dagon",
+            "name": "The Sacred Words of Dagon",
             "roles": {
                 "Key Person": 1,
                 "Cultist": 1,
@@ -189,7 +189,7 @@
         },
         {
             "id": "The King in Yellow",
-"name": "The King in Yellow",
+            "name": "The King in Yellow",
             "roles": {
                 "Sacrifice": 1,
                 "Cultist": 1
@@ -206,7 +206,7 @@
         },
         {
             "id": "Giant Time Bomb Again",
-"name": "Giant Time Bomb Again",
+            "name": "Giant Time Bomb Again",
             "roles": {
                 "Witch": 1,
                 "Deep One": 1
@@ -223,7 +223,7 @@
         },
         {
             "id": "Bloody Rites",
-"name": "Bloody Rites",
+            "name": "Bloody Rites",
             "roles": {
                 "Witch": 1,
                 "Immortal": 1
@@ -241,7 +241,7 @@
         },
         {
             "id": "The Resistance",
-"name": "The Resistance",
+            "name": "The Resistance",
             "roles": {
                 "Conspiracy Theorist": 1,
                 "Wizard": 1,
@@ -251,7 +251,7 @@
         },
         {
             "id": "People Who Saw",
-"name": "People Who Saw",
+            "name": "People Who Saw",
             "roles": {
                 "Conspiracy Theorist": 1,
                 "Witness": 1
@@ -260,7 +260,7 @@
         },
         {
             "id": "The Profound Race",
-"name": "The Profound Race",
+            "name": "The Profound Race",
             "roles": {
                 "Serial Killer": 1,
                 "Time Traveler": 1
@@ -269,7 +269,7 @@
         },
         {
             "id": "Whispers from the Deep",
-"name": "Whispers from the Deep",
+            "name": "Whispers from the Deep",
             "roles": {
                 "Deep One": 1,
                 "Paranoiac": 1
@@ -286,7 +286,7 @@
         },
         {
             "id": "The Faceless God",
-"name": "The Faceless God",
+            "name": "The Faceless God",
             "roles": {
                 "Wizard": 1,
                 "Faceless": 1
@@ -295,14 +295,14 @@
         },
         {
             "id": "Twisted Truth",
-"name": "Twisted Truth",
+            "name": "Twisted Truth",
             "roles": {
                 "Paranoiac": 1
             },
             "scriptSpecified": [
                 {
                     "id": "Extra Plot",
-"name": "Extra Plot",
+                    "name": "Extra Plot",
                     "type": "plot",
                     "addRolesForPlot": true
                 }

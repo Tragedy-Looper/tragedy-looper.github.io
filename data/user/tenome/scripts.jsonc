@@ -25,7 +25,7 @@
                 "Boy Student": "Brain",
                 "Nurse": "Cultist",
                 "Alien": "Friend",
-                "Rich Man’s Daughter": "Friend",
+                "rich-student": "Friend",
                 "Forensic Specialist": "Conspiracy Theorist",
                 "Soldier": "Person",
                 "Police Officer": "Person",
@@ -80,7 +80,7 @@
                 "Patient": "Person",
                 "Shrine Maiden": "Person",
                 "Boy Student": "Person",
-                "Rich Man’s Daughter": "Person"
+                "rich-student": "Person"
             },
             "incidents": [
                 {
@@ -91,7 +91,7 @@
                 {
                     "day": 4,
                     "incident": "Murder",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 },
                 {
                     "day": 5,
@@ -194,7 +194,7 @@
                 "Patient": "Person",
                 "Soldier": "Person",
                 "Class Rep": "Person",
-                "Rich Man’s Daughter": "Person"
+                "rich-student": "Person"
             },
             "incidents": [
                 {
@@ -220,7 +220,7 @@
                 {
                     "day": 5,
                     "incident": "Spreading",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 }
             ],
             "specialRules": [
@@ -249,7 +249,7 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Rich Man’s Daughter": "Key Person",
+                "rich-student": "Key Person",
                 "Pop Idol": "Killer",
                 "Boss": [
                     "Brain",
@@ -282,7 +282,7 @@
                 {
                     "day": 6,
                     "incident": "Missing Person",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 }
             ],
             "specialRules": [
@@ -441,7 +441,7 @@
                         "enters on loop": 3
                     }
                 ],
-                "Rich Man’s Daughter": "Serial Killer",
+                "rich-student": "Serial Killer",
                 "Illusion": "Friend",
                 "Shrine Maiden": "Person",
                 "Office Worker": "Person",
@@ -467,7 +467,7 @@
                 {
                     "day": 7,
                     "incident": "Faraway Murder",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 }
             ],
             "specialRules": [

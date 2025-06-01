@@ -41,8 +41,8 @@ export function isIncident(obj: unknown): obj is Incident {
 
     if (typeof obj == 'object'
         && obj != null
-        && 'name' in obj
-        && typeof obj.name == 'string'
+        && 'id' in obj
+        && typeof obj.id == 'string'
 
         && (!('faked' in obj)
             || (typeof obj.faked == 'boolean'
@@ -67,9 +67,9 @@ export function isIncident(obj: unknown): obj is Incident {
 export type IncidentName = keyof IncidentsHelper['incidents'];
 
 type MobIncidentHelper<T> = T extends { 'mob': number } ? T : never;
-export type MobIncident = MobIncidentHelper<Incident>['name'];
+export type MobIncident = MobIncidentHelper<Incident>['id'];
 type FakedIncidentHelper<T> = T extends { 'faked': true } ? T : never;
-export type FakedIncident = FakedIncidentHelper<Incident>['name'];
+export type FakedIncident = FakedIncidentHelper<Incident>['id'];
 
 
 
@@ -77,7 +77,7 @@ class IncidentsHelper {
     public readonly incidents = toRecord([
         ...data.incidents as unknown as readonly Incident[],
 
-    ], 'name');
+    ], 'id');
 }
 
 const i = new IncidentsHelper();

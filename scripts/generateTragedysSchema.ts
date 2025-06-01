@@ -27,12 +27,12 @@ const names = {
     namesPerTragedySet: Object.fromEntries(collectDataFromJsonFiles('tragedys').map((data) => {
         const plotData = collectDataFromJsonFiles('plots');
         const allPlots = new Set([...data.mainPlots, ...data.subPlots]);
-        return [data.name, {
+        return [data.id, {
             plotNames: allPlots,
             mainPlotNames: new Set(data.mainPlots),
             subPlotNames: new Set(data.subPlots),
             incidentNames: new Set(data.incidents),
-            roles: new Set<string>([...plotData.filter(p => allPlots.has(p.name)).flatMap(p => Object.keys(p.roles).map(r => r)),
+            roles: new Set<string>([...plotData.filter(p => allPlots.has(p.id)).flatMap(p => Object.keys(p.roles).map(r => r)),
             ...(data.aditionalRoles ?? []),
             ...['Person']
             ]),
@@ -45,21 +45,21 @@ const names = {
         roles: Set<string>,
     }>,
     RolaData: Object.fromEntries(collectDataFromJsonFiles('roles').map((data) => {
-        return [data.name, data] as const;
-    })) as Record<string, { name: string, scriptSpecified: { name: string, type: "number" | "plot" | "location" | "string" }[] }>,
+        return [data.id, data] as const;
+    })) as Record<string, { id: string, scriptSpecified: { name: string, type: "number" | "plot" | "location" | "string" }[] }>,
 
     PlotData: Object.fromEntries(collectDataFromJsonFiles('plots').map((data) => {
-        return [data.name, data] as const;
-    })) as Record<string, { name: string, roles: Record<string, number | [number, number]>, scriptSpecified: { name: string, type: "number" | "plot" | "location" | "string" }[] }>,
+        return [data.id, data] as const;
+    })) as Record<string, { id: string, roles: Record<string, number | [number, number]>, scriptSpecified: { name: string, type: "number" | "plot" | "location" | "string" }[] }>,
 
     IncidentData: Object.fromEntries(collectDataFromJsonFiles('incidents').map((data) => {
-        return [data.name, data] as const;
-    })) as Record<string, { name: string, faked: boolean, }>,
+        return [data.id, data] as const;
+    })) as Record<string, { id: string, faked: boolean, }>,
 
     CharacterData: Object.fromEntries(collectDataFromJsonFiles('characters').map((data) => {
-        return [data.name, data] as const;
-    })) as Record<string, { name: string, comesInLater: boolean, plotLessRole: boolean, startLocation: (typeof locations)[], scriptSpecified: { name: string, type: "number" | "plot" | "location" | "string" }[] }>,
-    mobIncidentNames: new Set<string>(collectDataFromJsonFiles('incidents').filter(x => x.mob !== undefined).map(x => x.name)),
+        return [data.id, data] as const;
+    })) as Record<string, { id: string, comesInLater: boolean, plotLessRole: boolean, startLocation: (typeof locations)[], scriptSpecified: { name: string, type: "number" | "plot" | "location" | "string" }[] }>,
+    mobIncidentNames: new Set<string>(collectDataFromJsonFiles('incidents').filter(x => x.mob !== undefined).map(x => x.id)),
 } as const;
 
 
@@ -361,14 +361,14 @@ function collectNamesFromJsonFiles(type: string): Set<string> {
         const data = JSON.parse(jsonText);
         if (Array.isArray(data)) {
             for (const entry of data) {
-                if (typeof entry.name === 'string') {
-                    names.add(entry.name);
+                if (typeof entry.id === 'string') {
+                    names.add(entry.id);
                 }
             }
         } else if (typeof data == 'object' && type in data && Array.isArray(data[type])) {
             for (const entry of data[type]) {
-                if (typeof entry.name === 'string') {
-                    names.add(entry.name);
+                if (typeof entry.id === 'string') {
+                    names.add(entry.id);
                 }
             }
         } else {
@@ -406,12 +406,13 @@ function generateTagssSchema({ roleNames }: Names) {
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
+                        "id": { "type": "string" },
                         "name": { "type": "string" },
                         "description": { "type": "string" },
                         "showInGmScreen": { "type": "boolean" },
                         "hideInPlayerScreen": { "type": "boolean" },
                     },
-                    "required": ["name"],
+                    "required": ["name", "id"],
                 }
             }
         }
@@ -458,6 +459,7 @@ function generatePlotsSchema({ roleNames }: Names) {
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
+                        "id": { "type": "string" },
                         "name": { "type": "string" },
                         "roles": {
                             "type": "object",
@@ -491,7 +493,7 @@ function generatePlotsSchema({ roleNames }: Names) {
 
 
                     },
-                    "required": ["name", "roles", "rules"],
+                    "required": ["id", "name", "roles", "rules"],
 
                 }
             }
@@ -514,6 +516,7 @@ function generateIncidentsSchema({ incidentNames }: Names) {
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
+                        "id": { "type": "string" },
                         "name": { "type": "string", },
                         "faked": { "type": "boolean" },
                         "repeatedCulprit": { "type": "boolean" },
@@ -546,7 +549,7 @@ function generateIncidentsSchema({ incidentNames }: Names) {
                             },
                         }
                     },
-                    "required": ["name", "effect"],
+                    "required": ["id", "name", "effect"],
                 }
             }
         },
@@ -568,6 +571,7 @@ function generateRolesSchema({ tags }: Names) {
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
+                        "id": { "type": "string" },
                         "name": { "type": "string" },
                         "goodwillRefusel": { "type": "string", "enum": ['Optional', 'Mandatory', 'Puppeted'] },
                         "goodwillOutburst": { "type": "boolean" },
@@ -583,7 +587,7 @@ function generateRolesSchema({ tags }: Names) {
                             "items": Abilitie
                         }
                     },
-                    "required": ["name"],
+                    "required": ["id", "name"],
                 }
             }
         }
@@ -605,6 +609,7 @@ function generateCharactersSchema({ keywords }: Names) {
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
+                        "id": { "type": "string" },
                         "name": { "type": "string" },
                         "edition": { "type": "string" },
                         "paranoiaLimit": { "type": "number", "minimum": 0, "maximum": 4 },
@@ -661,7 +666,7 @@ function generateCharactersSchema({ keywords }: Names) {
 
                         // ...weitere properties nach Bedarf...
                     },
-                    "required": ["name", "tags", "startLocation"],
+                    "required": ["id", "name", "tags", "startLocation"],
 
                 }
             }
@@ -695,8 +700,8 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                 incidentsWithoutFake: Array.from(incidentNames).filter((name) => !namesPerTragedySet[tragedySet].incidentNames.has(name) && !IncidentData[name].faked),
                             }
 
-                            const plotsWithScriptSpecified = new Set(Object.values(PlotData).filter(x => x.scriptSpecified?.length > 0).map(x => x.name));
-                            const plotsWithoutScriptSpecified = new Set(Object.values(PlotData).filter(x => (x.scriptSpecified?.length ?? 0) == 0).map(x => x.name));
+                            const plotsWithScriptSpecified = new Set(Object.values(PlotData).filter(x => x.scriptSpecified?.length > 0).map(x => x.id));
+                            const plotsWithoutScriptSpecified = new Set(Object.values(PlotData).filter(x => (x.scriptSpecified?.length ?? 0) == 0).map(x => x.id));
 
 
                             return ({
@@ -941,7 +946,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                         "properties": {
                                             ...Object.fromEntries(Array.from(characterNames).map((character) => {
 
-                                                const rolesWithScriptSpecified = Object.values(RolaData).filter(x => x.scriptSpecified?.length > 0).map(x => x.name);
+                                                const rolesWithScriptSpecified = Object.values(RolaData).filter(x => x.scriptSpecified?.length > 0).map(x => x.id);
 
                                                 const characterAlwaysScpecyfiedExtra = (CharacterData[character].scriptSpecified?.length ?? 0) > 0;
 
@@ -1078,6 +1083,7 @@ function generateTragedySetsSchema({ plotNames, incidentNames }: Names) {
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
+                        "id": { "type": "string" },
                         "name": { "type": "string" },
                         "numberOfMainPlots": { "type": "integer" },
                         "numberOfSubPlots": { "type": "integer" },
@@ -1114,7 +1120,7 @@ function generateTragedySetsSchema({ plotNames, incidentNames }: Names) {
                         }
                     },
 
-                    "required": ["name", "mainPlots", "subPlots", "incidents"],
+                    "required": ["id", "name", "mainPlots", "subPlots", "incidents"],
 
                 }
             }

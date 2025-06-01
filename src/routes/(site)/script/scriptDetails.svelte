@@ -1,15 +1,22 @@
 <script lang="ts">
-  import {  type isScriptName, toPlayerIncident } from '../../../model/script';
+  import { type isScriptName, toPlayerIncident } from '../../../model/script';
 
   import { onMount } from 'svelte';
 
-  import { characterscomesInLater, type CharacterName } from '../../../model/characters';
+  import {
+    characters,
+    characterscomesInLater,
+    type CharacterName,
+  } from '../../../model/characters';
   import { stringifySearchForPlayerAid } from '../../../serilezer';
   import { distinct, keys } from '../../../misc';
   import { base } from '$app/paths';
   import Translation from '../../../view/translation.svelte';
   import { getString } from '../+layout.svelte';
   import type { Script } from '../../../scripts.g';
+  import { roles } from '../../../model/roles';
+  import { plots } from '../../../model/plots';
+  import { tragedySets } from '../../../model/tragedySets';
   export let script: Script | undefined;
 
   let alwaysTransmitCharacters: boolean[] = characterscomesInLater.map(() => true);
@@ -182,26 +189,48 @@
     {/each}
   </header>
   <div>
-    <strong>{script.tragedySet}</strong>
+    <strong
+      ><Translation
+        translationKey={tragedySets[script.tragedySet ?? 'Basic Tragedy'].name}
+      /></strong
+    >
   </div>
   <div>
     <strong><Translation translationKey={'Days per Loop'} /></strong>{script.daysPerLoop}
   </div>
 
   <div style="display: grid; justify-content: start; align-content:  baseline; gap: 0.3em;">
-    <strong style="grid-column: 1; grid-row: 1;">Main Plot:</strong>
-    <span style="grid-column: 2; grid-row: 1;">{script.mainPlot}</span>
-    <strong style="grid-column: 1; grid-row: 2;">Sub Plot :</strong>
-    {#each script.subPlots as s, i}
-      <span style="grid-column: 2; grid-row: {i + 2};">
+    <strong style="grid-column: 1; grid-row: 1;"
+      ><Translation translationKey={'Main Plot'} />:</strong
+    >
+    {#each script.mainPlot as s, i}
+      <span style="grid-column: 2; grid-row: {i + 1};">
         {#if typeof s == 'string'}
-          {s}
+          <Translation translationKey={plots[s].name} />
         {:else}
-          {s[0]}
+          <Translation translationKey={plots[s[0]].name} />
           <small>
             {#each Object.entries(s[1]) as [key, value]}
               <br />
-              ({key}: {value})
+              (<Translation translationKey={key} />: <Translation translationKey={value} />)
+            {/each}
+          </small>
+        {/if}
+      </span>
+    {/each}
+    <strong style="grid-column: 1; grid-row: 2;"
+      ><Translation translationKey={'Sub Plot'} />:</strong
+    >
+    {#each script.subPlots as s, i}
+      <span style="grid-column: 2; grid-row: {i + 1 + script.mainPlot.length};">
+        {#if typeof s == 'string'}
+          <Translation translationKey={plots[s].name} />
+        {:else}
+          <Translation translationKey={plots[s[0]].name} />
+          <small>
+            {#each Object.entries(s[1]) as [key, value]}
+              <br />
+              (<Translation translationKey={key} />: <Translation translationKey={value} />)
             {/each}
           </small>
         {/if}
@@ -213,25 +242,27 @@
     <table>
       <thead>
         <tr>
-          <th>Cast</th>
-          <th>Role</th>
+          <th><Translation translationKey={'Cast'} /></th>
+          <th><Translation translationKey={'Role'} /></th>
         </tr>
       </thead>
       <tbody>
         {#each Object.entries(script.cast) as [cast, role]}
           <tr>
             <td>
-              {cast}
+              <Translation translationKey={characters[cast].name} />
             </td>
             <td>
               {#if Array.isArray(role)}
-                {role[0]}
+                <Translation translationKey={roles[role[0]].name} />
                 {#each Object.entries(role[1]) as [key, value]}
                   <br />
-                  {key}: {value}
+                  <Translation translationKey={key} />: <Translation
+                    translationKey={value?.toLocaleString() ?? ''}
+                  />
                 {/each}
-              {:else}
-                {role}
+              {:else if role != undefined}
+                <Translation translationKey={roles[role].name} />
               {/if}
             </td>
           </tr>
@@ -244,9 +275,9 @@
     <table>
       <thead>
         <tr>
-          <th>Day</th>
-          <th>Incident</th>
-          <th>Culprit</th>
+          <th><Translation translationKey={'Day'} /></th>
+          <th><Translation translationKey={'Incident'} /></th>
+          <th><Translation translationKey={'Culprit'} /></th>
         </tr>
       </thead>
       <tbody>

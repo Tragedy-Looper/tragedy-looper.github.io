@@ -545,7 +545,7 @@ export class CustomScript {
     public readonly mainPlots: Readable<readonly ICustomScriptPlotMutalExclusiveSelection<PlotName>[]>
     public readonly subPlots: Readable<readonly ICustomScriptPlotMutalExclusiveSelection<PlotName>[]>
     public readonly selectedPlots: Readable<readonly {
-        name: PlotName, options: {
+        id: PlotName, options: {
             settings: Option,
             value: any
         }[]
@@ -589,7 +589,7 @@ export class CustomScript {
         const mapPlotStores = (plots: typeof this.mainPlots | typeof this.subPlots) =>
             storeStores(storeStores(plots, x => derived([x.selectedPlot, x.options], ([selectedPlot, options]) => {
                 return {
-                    name: selectedPlot,
+                    id: selectedPlot,
                     options: options.map(x => derived(x.value, value => {
                         return {
                             settings: x.option,
@@ -599,7 +599,7 @@ export class CustomScript {
                 }
             })), x => derived([...x.options], ([...options]) => {
                 return {
-                    name: x.name,
+                    id: x.id,
                     options: options.map(o => ({
                         settings: o.settings,
                         value: o.value
@@ -616,14 +616,14 @@ export class CustomScript {
             return allRoles;
         });
         this.usedRoles = derived([this.selectedPlots], ([...selectedPlots]) => {
-            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y.name]?.roles ?? [])));
+            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y.id]?.roles ?? [])));
             const plotlist = selectedPlots.flatMap(x => x.flatMap(y => y));
             selectedPlots.flatMap(x => x).map(x => {
-                const plot = plots[x.name];
+                const plot = plots[x.id];
                 plot.scriptSpecified?.map(x => x.type)
             })
 
-            const additionalPlots = plotlist.flatMap(x => plots[x.name].scriptSpecified?.filter(x => x.type == 'plot' && x.addRolesForPlot).flatMap(additionalPlot => keys(plots[additionalPlot.name as keyof typeof plots]?.roles ?? {}) ?? []) ?? [])
+            const additionalPlots = plotlist.flatMap(x => plots[x.id].scriptSpecified?.filter(x => x.type == 'plot' && x.addRolesForPlot).flatMap(additionalPlot => keys(plots[additionalPlot.name as keyof typeof plots]?.roles ?? {}) ?? []) ?? [])
             return [...new Set([...used, ...additionalPlots])];
         });
 
@@ -633,7 +633,7 @@ export class CustomScript {
 
 
         this.roles = derived([this.selectedPlots], ([...selectiedPlots]) => {
-            const roleData = [...selectiedPlots.flatMap(x => x.map(y => plots[y.name]?.roles ?? {})),
+            const roleData = [...selectiedPlots.flatMap(x => x.map(y => plots[y.id]?.roles ?? {})),
 
             ...selectiedPlots.flatMap(x => x.flatMap(y => y.options).filter(x => x.settings.type == 'plot' && x.settings.addRolesForPlot).map(x => plots[x.value as keyof typeof plots]?.roles ?? {}))
             ];

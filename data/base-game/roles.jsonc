@@ -1,16 +1,16 @@
 {
-      "$schema": "https://tragedy-looper.github.io/roles.schema.json",
+    "$schema": "https://tragedy-looper.github.io/roles.schema.json",
     // For dev purposes
     // "$schema": "../roles.schema.json", 
     "roles": [
         {
             "id": "Person",
-"name": "Person",
+            "name": "Person",
             "abilities": []
         },
         {
             "id": "Key Person",
-"name": "Key Person",
+            "name": "Key Person",
             "abilities": [
                 {
                     "type": "Loss condition: Tragedy",
@@ -24,13 +24,13 @@
         },
         {
             "id": "Curmudgeon",
-"name": "Curmudgeon",
+            "name": "Curmudgeon",
             "goodwillRefusel": "Optional",
             "abilities": []
         },
         {
             "id": "Killer",
-"name": "Killer",
+            "name": "Killer",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -52,7 +52,7 @@
         },
         {
             "id": "Brain",
-"name": "Brain",
+            "name": "Brain",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -66,7 +66,7 @@
         },
         {
             "id": "Cultist",
-"name": "Cultist",
+            "name": "Cultist",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -80,8 +80,10 @@
         },
         {
             "id": "Time Traveler",
-"name": "Time Traveler",
-            "tags": ["Immortal"],
+            "name": "Time Traveler",
+            "tags": [
+                "Immortal"
+            ],
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -103,13 +105,13 @@
         },
         {
             "id": "Witch",
-"name": "Witch",
+            "name": "Witch",
             "goodwillRefusel": "Mandatory",
             "abilities": []
         },
         {
             "id": "Friend",
-"name": "Friend",
+            "name": "Friend",
             "max": 2,
             "abilities": [
                 {
@@ -132,7 +134,7 @@
         },
         {
             "id": "Conspiracy Theorist",
-"name": "Conspiracy Theorist",
+            "name": "Conspiracy Theorist",
             "max": 1,
             "abilities": [
                 {
@@ -146,7 +148,7 @@
         },
         {
             "id": "Lover",
-"name": "Lover",
+            "name": "Lover",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -160,7 +162,7 @@
         },
         {
             "id": "Loved One",
-"name": "Loved One",
+            "name": "Loved One",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -181,7 +183,7 @@
         },
         {
             "id": "Serial Killer",
-"name": "Serial Killer",
+            "name": "Serial Killer",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -195,7 +197,7 @@
         },
         {
             "id": "Factor",
-"name": "Factor",
+            "name": "Factor",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {

@@ -18,7 +18,7 @@ function normalizeTragedyName(name: string): string {
 }
 
 export const load: LayoutServerLoad = ({ params }) => {
-    const characterNames = characters.map(x => x.name);
+    const characterNames = characters.map(x => x.id);
     // find images for characters in static/cards/characters
 
     // get all images in static/cards/characters

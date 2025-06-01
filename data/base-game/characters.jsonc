@@ -1,11 +1,11 @@
 {
-      "$schema": "https://tragedy-looper.github.io/characters.schema.json",
+    //"$schema": "https://tragedy-looper.github.io/characters.schema.json",
     // For dev purposes
-    // "$schema": "../characters.schema.json",
+    "$schema": "../characters.schema.json",
     "characters": [
         {
             "id": "Boy Student",
-"name": "Boy Student",
+            "name": "Boy Student",
             "edition": "Base",
             "paranoiaLimit": 2,
             "tags": [
@@ -25,7 +25,7 @@
         },
         {
             "id": "Girl Student",
-"name": "Girl Student",
+            "name": "Girl Student",
             "edition": "Base",
             "paranoiaLimit": 3,
             "tags": [
@@ -44,8 +44,8 @@
             ]
         },
         {
-            "id": "Rich Man’s Daughter",
-"name": "Rich Man’s Daughter",
+            "id": "rich-student",
+            "name": "Rich Man’s Daughter",
             "edition": "Base",
             "paranoiaLimit": 1,
             "tags": [
@@ -69,7 +69,7 @@
         },
         {
             "id": "Class Rep",
-"name": "Class Rep",
+            "name": "Class Rep",
             "edition": "Base",
             "paranoiaLimit": 2,
             "tags": [
@@ -90,7 +90,7 @@
         },
         {
             "id": "Mystery Boy",
-"name": "Mystery Boy",
+            "name": "Mystery Boy",
             "edition": "Base",
             "paranoiaLimit": 3,
             "tags": [
@@ -116,7 +116,7 @@
         },
         {
             "id": "Shrine Maiden",
-"name": "Shrine Maiden",
+            "name": "Shrine Maiden",
             "edition": "Base",
             "paranoiaLimit": 2,
             "tags": [
@@ -148,7 +148,7 @@
         },
         {
             "id": "Alien",
-"name": "Alien",
+            "name": "Alien",
             "edition": "Base",
             "paranoiaLimit": 2,
             "tags": [
@@ -177,7 +177,7 @@
         },
         {
             "id": "Godly Being",
-"name": "Godly Being",
+            "name": "Godly Being",
             "edition": "Base",
             "paranoiaLimit": 3,
             "tags": [
@@ -191,7 +191,7 @@
             "scriptSpecified": [
                 {
                     "id": "enters on loop",
-"name": "enters on loop",
+                    "name": "enters on loop",
                     "type": "number"
                 }
             ],
@@ -215,7 +215,7 @@
         },
         {
             "id": "Police Officer",
-"name": "Police Officer",
+            "name": "Police Officer",
             "edition": "Base",
             "paranoiaLimit": 3,
             "tags": [
@@ -242,7 +242,7 @@
         },
         {
             "id": "Office Worker",
-"name": "Office Worker",
+            "name": "Office Worker",
             "edition": "Base",
             "paranoiaLimit": 2,
             "tags": [
@@ -265,7 +265,7 @@
         },
         {
             "id": "Informer",
-"name": "Informer",
+            "name": "Informer",
             "edition": "Base",
             "paranoiaLimit": 3,
             "tags": [
@@ -286,7 +286,7 @@
         },
         {
             "id": "Pop Idol",
-"name": "Pop Idol",
+            "name": "Pop Idol",
             "edition": "Base",
             "paranoiaLimit": 2,
             "tags": [
@@ -311,7 +311,7 @@
         },
         {
             "id": "Journalist",
-"name": "Journalist",
+            "name": "Journalist",
             "edition": "Base",
             "paranoiaLimit": 2,
             "tags": [
@@ -336,7 +336,7 @@
         },
         {
             "id": "Boss",
-"name": "Boss",
+            "name": "Boss",
             "edition": "Base",
             "paranoiaLimit": 4,
             "tags": [
@@ -349,7 +349,7 @@
             "scriptSpecified": [
                 {
                     "id": "Turf",
-"name": "Turf",
+                    "name": "Turf",
                     "type": "location"
                 }
             ],
@@ -368,7 +368,7 @@
         },
         {
             "id": "Doctor",
-"name": "Doctor",
+            "name": "Doctor",
             "edition": "Base",
             "paranoiaLimit": 2,
             "tags": [
@@ -393,7 +393,7 @@
         },
         {
             "id": "Patient",
-"name": "Patient",
+            "name": "Patient",
             "edition": "Base",
             "paranoiaLimit": 2,
             "tags": [
@@ -411,7 +411,7 @@
         },
         {
             "id": "Nurse",
-"name": "Nurse",
+            "name": "Nurse",
             "edition": "Base",
             "paranoiaLimit": 3,
             "tags": [
@@ -432,7 +432,7 @@
         },
         {
             "id": "Henchman",
-"name": "Henchman",
+            "name": "Henchman",
             "edition": "Base",
             "paranoiaLimit": 1,
             "tags": [

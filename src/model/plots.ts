@@ -5,11 +5,6 @@ import type { ScriptSpecified } from "./core";
 import type { Abilitie, RoleName } from "./roles";
 
 export type Plots = typeof plotsInternal;
-type PlotInternal = {
-    name: string,
-    roles: Readonly<Partial<Record<RoleName, number | readonly [number, number]>>>,
-    rules: readonly Abilitie[]
-} & ScriptSpecified;
 
 
 export type PlotName = keyof Plots;
@@ -23,7 +18,7 @@ const plotsInternal = toRecord([
     
 
 
-] as const satisfies readonly PlotInternal[], 'name');
+] as const satisfies readonly Plot[], 'id');
 
 
 export function isPlotName(name: string): name is PlotName {

@@ -31,7 +31,7 @@
             "daysPerLoop": 6,
             "cast": {
                 "Boy Student": "Person",
-                "Rich Man’s Daughter": "Cultist",
+                "rich-student": "Cultist",
                 "Teacher": "Conspiracy Theorist",
                 "Shrine Maiden": "Person",
                 "Black Cat": "Factor",
@@ -89,7 +89,7 @@
             "daysPerLoop": 4,
             "cast": {
                 "Boy Student": "Witch",
-                "Rich Man’s Daughter": "Ghost",
+                "rich-student": "Ghost",
                 "Class Rep": "Coward",
                 "Shrine Maiden": "Key Person",
                 "Police Officer": "Show-Off",
@@ -99,7 +99,7 @@
                 {
                     "day": 2,
                     "incident": "Missing Person",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 },
                 {
                     "day": 3,
@@ -359,7 +359,7 @@
             "cast": {
                 "Boy Student": "Conspiracy Theorist",
                 "Girl Student": "Witch",
-                "Rich Man’s Daughter": "Serial Killer",
+                "rich-student": "Serial Killer",
                 "Shrine Maiden": "Person",
                 "Police Officer": "Person",
                 "Office Worker": "Wizard",
@@ -369,7 +369,7 @@
                 {
                     "day": 2,
                     "incident": "Missing Person",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 },
                 {
                     "day": 3,
@@ -410,7 +410,7 @@
             "daysPerLoop": 5,
             "cast": {
                 "Girl Student": "Witness",
-                "Rich Man’s Daughter": "Person",
+                "rich-student": "Person",
                 "Class Rep": "Witch",
                 "Shrine Maiden": "Person",
                 "Alien": "Person",
@@ -547,7 +547,7 @@
             "daysPerLoop": 6,
             "cast": {
                 "Girl Student": "Person",
-                "Rich Man’s Daughter": "Faceless",
+                "rich-student": "Faceless",
                 "Mystery Boy": "Witch",
                 "Alien": "Wizard",
                 "Office Worker": "Cultist",
@@ -559,7 +559,7 @@
                 {
                     "day": 1,
                     "incident": "Insane Murder",
-                    "culprit": "Rich Man’s Daughter"
+                    "culprit": "rich-student"
                 },
                 {
                     "day": 3,
