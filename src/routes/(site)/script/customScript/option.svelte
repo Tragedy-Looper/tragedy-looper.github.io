@@ -1,8 +1,7 @@
 <script lang="ts">
   import { derived } from 'svelte/store';
-  import { characters } from '../../../../model/characters';
   import type { AdditionalOptions } from '../../../../model/customScript';
-
+ 
   // export let option: AdditionalOptions;
 
   let { option }: { option: AdditionalOptions } = $props();
@@ -22,7 +21,7 @@
 
   let usedCharacters = option.script.usedCharacters;
 
-  let viewOptional = false;
+  let viewOptional = $state(false);
 </script>
 
 <div>
@@ -51,7 +50,7 @@
         <option value={undefined}>Not Set</option>
       {/if}
       {#if option.option.type == 'plot'}
-        {#each otherPlots.filter((p) => !$selectodPlots.includes(p)) as p}
+        {#each otherPlots.filter((p) => !$selectodPlots.map(x=>x.id).includes(p)) as p}
           <option value={p}>{p}</option>
         {/each}
       {:else if option.option.type == 'character'}
@@ -79,7 +78,7 @@
           <option value={p}>{p}</option>
         {/each}
       {:else if Array.isArray(option.option.type)}
-        {#each option.option.type as p}
+        {#each option.option.type ?? [] as p}
           <option value={p}>{p}</option>
         {/each}
       {/if}

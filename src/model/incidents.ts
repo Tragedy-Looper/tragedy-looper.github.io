@@ -62,7 +62,7 @@ export function isIncident(obj: unknown): obj is Incident {
 }
 
 
-
+export const incidentNames = Object.keys(data.incidentsLookup) as readonly IncidentName[];
 export type IncidentName = keyof typeof data.incidentsLookup;
 
 type MobIncidentHelper<T> = T extends { 'mob': number } ? T : never;

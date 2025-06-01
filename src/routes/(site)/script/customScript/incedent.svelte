@@ -3,7 +3,7 @@
   import type { CharacterName } from '../../../../model/characters';
   import type { ICustomScriptIncidentSelection } from '../../../../model/customScript';
   import Option from './option.svelte';
-  import { incidentNames, incidents } from '../../../../model/incidents';
+  import { incidentNames } from '../../../../model/incidents';
   import { getString } from '../../+layout.svelte';
 
   export let incident: ICustomScriptIncidentSelection<CharacterName>;

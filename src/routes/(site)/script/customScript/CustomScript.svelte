@@ -1,14 +1,9 @@
 <script lang="ts">
   import { fromEntries, keys } from '../../../../misc';
-  import { plots, type Plot, type PlotName } from '../../../../model/plots';
+  import { type PlotName } from '../../../../model/plots';
   import type { RoleName } from '../../../../model/roles';
-  import { tragedySets, type TragedySet, type TragedySets } from '../../../../model/tragedySets';
-  import {
-    characters,
-    type Character,
-    type CharacterName,
-    isCharacterPlotless,
-  } from '../../../../model/characters';
+  import {} from '../../../../model/tragedySets';
+  import { type CharacterName, isCharacterPlotless } from '../../../../model/characters';
 
   import { CustomScript } from '../../../../model/customScript';
   import PlotSelection from './plotSelection.svelte';
@@ -24,6 +19,7 @@
   import { validateScript } from '../../../../model/validation';
   import type { ValidationError } from '@apideck/better-ajv-errors';
   import Translation from '../../../../view/translation.svelte';
+    import { tragedysLookup } from '../../../../data';
 
   const model = new CustomScript();
 
@@ -173,12 +169,12 @@
 
 <h2>Tragedy Set</h2>
 <select bind:value={$tragedySetName}>
-  {#each keys(tragedySets) as tgs}
+  {#each keys(tragedysLookup) as tgs}
     <option value={tgs}>{tgs}</option>
   {/each}
 </select>
 
-{#if $tragedySet['numberOfMainPlots'] > 1}
+{#if ($tragedySet['numberOfMainPlots'] ?? 0) > 1}
   <h2>Main Plots</h2>
 {:else}
   <h2>Main Plot</h2>
@@ -186,7 +182,7 @@
 {#each $mainPlots as plotSelection}
   <PlotSelection {plotSelection} />
 {/each}
-{#if $tragedySet['numberOfSubPlots'] > 1}
+{#if ($tragedySet['numberOfSubPlots'] ?? 0) > 1}
   <h2>Sub Plots</h2>
 {:else}
   <h2>Sub Plot</h2>

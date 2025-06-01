@@ -1,12 +1,14 @@
 import { writable, type Readable, type Writable, derived, type Unsubscriber, type Subscriber, get } from "svelte/store";
-import { tragedySets, type TragedySetName, type TragedySet, getTragedySetRoles, hasCastOption } from "./tragedySets";
+import { type TragedySetName, getTragedySetRoles, hasCastOption } from "./tragedySets";
 import { keys, require } from "../misc";
-import { plots, type PlotName } from "./plots";
-import { roles, type RoleName, isRoleName } from "./roles";
-import { characters, isCharacterPlotless, type CharacterName, locations, type LocationName, isCharacterName } from "./characters";
+import { type PlotName } from "./plots";
+import { type RoleName, type RoleNameSingle, isRoleName, singleRolenames } from "./roles";
+import { isCharacterPlotless, type CharacterName, locations, type LocationName, isCharacterName } from "./characters";
 import { isScriptSpecified, type Option } from "./core";
-import { incidents, type IncidentName, isFakeIncident, isMobIncident, isRepeatedCulpritIncident } from "./incidents";
+import { type IncidentName, isFakeIncident, isMobIncident, isRepeatedCulpritIncident } from "./incidents";
 import type { Script } from "../scripts.g";
+import { charactersLookup, incidentsLookup, plotsLookup, rolesLookup, tragedysLookup } from "../data";
+import type { Tragedy } from "../tragedys.g";
 
 
 const noop = () => { };
@@ -96,7 +98,7 @@ class CustomScriptIncidentSelection<TCharacters extends CharacterName> implement
 
         let lastOptions: AdditionalOptions[] = [];
         this.options = derived(this.selectedIncident, p => {
-            const incident = p ? incidents[p] : undefined;
+            const incident = p ? incidentsLookup[p] : undefined;
 
             const newOptions = [
                 ...(isScriptSpecified(incident) ? incident.scriptSpecified.map((s) => new AdditionalOptions(script, s)) : []),
@@ -283,7 +285,8 @@ function generateRoleSelection<TCharacters extends CharacterName>(script: Custom
 
     const groups = keys(allRols).map(key => [key, allRols[key] ?? [0, 0]] as const)
         .map(([key, [min, max]]) => {
-            const roleMaximum = roles[key].max ?? Number.MAX_SAFE_INTEGER;
+            // we may have a combined Role name, then it will not have a role maximum
+            const roleMaximum = rolesLookup[key as unknown as RoleNameSingle]?.max ?? Number.MAX_SAFE_INTEGER;
             return [key, [Math.min(Math.max(0, min), roleMaximum), Math.min(max, roleMaximum)]] as const;
         })
         .map(([key, [min, max]]) => {
@@ -390,9 +393,9 @@ class CustomScriptRoleExclusiveSelection<T extends CharacterName> implements Cus
         let lastOptions: AdditionalOptions[] = [];
 
         this.options = derived(this.selectedCharacter, p => {
-            const char = characters[p];
+            const char = charactersLookup[p];
 
-            const role = roles[roleName];
+            const roles = singleRolenames(roleName).map(x => rolesLookup[x]);
 
 
             const tg = get(script.tragedySet);
@@ -401,7 +404,7 @@ class CustomScriptRoleExclusiveSelection<T extends CharacterName> implements Cus
             const newOptions = [
                 ...(isScriptSpecified(char) ? char.scriptSpecified.map((s) => new AdditionalOptions(script, s)) : []),
                 ...(isCharacterPlotless(char) ? [new AdditionalOptions(script, { name: 'Role', type: char.plotLessRole == 'all' ? 'role in tragedy set' : char.plotLessRole == 'not in plots' ? 'role not in plot' : 'role in plot' })] : []),
-                ...(isScriptSpecified(role) ? role.scriptSpecified.map((s) => new AdditionalOptions(script, s)) : []),
+                ...roles.flatMap(role => (isScriptSpecified(role) ? role.scriptSpecified.map((s) => new AdditionalOptions(script, s)) : [])),
                 ...(hasCastOption(tg) ? tg.castOptions.map((s) => new AdditionalOptions(script, s)) : []),
             ];
 
@@ -488,7 +491,7 @@ class CustomScriptPlotMutalExclusiveSelection<T extends PlotName> implements ICu
         let lastOptions: AdditionalOptions[] = [];
 
         this.options = derived(this.selectedPlot, p => {
-            const plot = plots[p];
+            const plot = plotsLookup[p];
             if (isScriptSpecified(plot)) {
                 const newOptions = plot.scriptSpecified.map((s) => new AdditionalOptions(script, s));
                 lastOptions.forEach(e => {
@@ -540,7 +543,7 @@ export class CustomScript {
 
     public readonly daysPerLoop: Writable<number>
     public readonly tragedySetName: Writable<TragedySetName>
-    public readonly tragedySet: Readable<TragedySet>
+    public readonly tragedySet: Readable<Tragedy>
 
     public readonly mainPlots: Readable<readonly ICustomScriptPlotMutalExclusiveSelection<PlotName>[]>
     public readonly subPlots: Readable<readonly ICustomScriptPlotMutalExclusiveSelection<PlotName>[]>
@@ -577,13 +580,13 @@ export class CustomScript {
 
 
         this.locations = locations;
-        this.tragedySetName = writable(keys(tragedySets)[0]);
+        this.tragedySetName = writable(keys(tragedysLookup)[0]);
         this.daysPerLoop = writable(4);
         this.tragedySet = derived(this.tragedySetName, tgn => {
-            return tragedySets[tgn];
+            return tragedysLookup[tgn];
         });
-        this.mainPlots = derived(this.tragedySet, tg => generatePlotSelection(this, tg.mainPlots, tg.numberOfMainPlots));
-        this.subPlots = derived(this.tragedySet, tg => generatePlotSelection(this, tg.subPlots, tg.numberOfSubPlots));
+        this.mainPlots = derived(this.tragedySet, tg => generatePlotSelection(this, tg.mainPlots, tg.numberOfMainPlots ?? 1));
+        this.subPlots = derived(this.tragedySet, tg => generatePlotSelection(this, tg.subPlots, tg.numberOfSubPlots ?? 2));
         this.incidents = derived(this.tragedySet, tg => tg.incidents);
 
         const mapPlotStores = (plots: typeof this.mainPlots | typeof this.subPlots) =>
@@ -616,14 +619,14 @@ export class CustomScript {
             return allRoles;
         });
         this.usedRoles = derived([this.selectedPlots], ([...selectedPlots]) => {
-            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plots[y.id]?.roles ?? [])));
+            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plotsLookup[y.id]?.roles ?? [])));
             const plotlist = selectedPlots.flatMap(x => x.flatMap(y => y));
             selectedPlots.flatMap(x => x).map(x => {
-                const plot = plots[x.id];
+                const plot = plotsLookup[x.id];
                 plot.scriptSpecified?.map(x => x.type)
             })
 
-            const additionalPlots = plotlist.flatMap(x => plots[x.id].scriptSpecified?.filter(x => x.type == 'plot' && x.addRolesForPlot).flatMap(additionalPlot => keys(plots[additionalPlot.name as keyof typeof plots]?.roles ?? {}) ?? []) ?? [])
+            const additionalPlots = plotlist.flatMap(x => plotsLookup[x.id].scriptSpecified?.filter(x => x.type == 'plot' && x.addRolesForPlot).flatMap(additionalPlot => keys(plotsLookup[additionalPlot.name as PlotName]?.roles ?? {}) ?? []) ?? [])
             return [...new Set([...used, ...additionalPlots])];
         });
 
@@ -633,12 +636,12 @@ export class CustomScript {
 
 
         this.roles = derived([this.selectedPlots], ([...selectiedPlots]) => {
-            const roleData = [...selectiedPlots.flatMap(x => x.map(y => plots[y.id]?.roles ?? {})),
+            const roleData = [...selectiedPlots.flatMap(x => x.map(y => plotsLookup[y.id]?.roles ?? {})),
 
-            ...selectiedPlots.flatMap(x => x.flatMap(y => y.options).filter(x => x.settings.type == 'plot' && x.settings.addRolesForPlot).map(x => plots[x.value as keyof typeof plots]?.roles ?? {}))
+            ...selectiedPlots.flatMap(x => x.flatMap(y => y.options).filter(x => x.settings.type == 'plot' && x.settings.addRolesForPlot).map(x => plotsLookup[x.value as PlotName]?.roles ?? {}))
             ];
-            return generateRoleSelection(this, sumGroups(...roleData), keys(characters).filter(x => {
-                const char = characters[x];
+            return generateRoleSelection(this, sumGroups(...roleData), keys(charactersLookup).filter(x => {
+                const char = charactersLookup[x];
                 return !('nonSelectableCharacter' in char && char.nonSelectableCharacter);
             }))
         });
@@ -689,7 +692,7 @@ export class CustomScript {
                 if (typeof opt !== 'object' || Array.isArray(opt)) {
                     throw new Error(`Plot options is not an object: ${opt}`);
                 }
-                p.selectedPlot.set(name);
+                p.selectedPlot.set(name as PlotName);
                 const optionsToSet = get(p.options);
                 optionsToSet.forEach(os => {
                     const value = opt[os.option.name];
@@ -706,7 +709,7 @@ export class CustomScript {
         Object.entries(Object.entries<CharacterName, RoleName | readonly [RoleName, Record<string, any>]>(script.cast as any).reduce((p, [key, value]) => {
             if (isCharacterName(key))
 
-                if ((characters[key]).plotLessRole) {
+                if ((charactersLookup[key]).plotLessRole) {
                     const name = 'Person'; // Plotless characters are sorted under Persons and there role is in options
 
                     if (name in p && Array.isArray(p[name])) {
@@ -738,7 +741,7 @@ export class CustomScript {
             return p;
         }, {} as Partial<Record<RoleName, (CharacterName | readonly [CharacterName, Record<string, any>])[]>>)).map(([key, value]) => {
             const roleWraper = get(this.roles).filter(x => x.role == key)[0];
-            if (roleWraper === undefined) {
+            if (roleWraper === undefined || value == undefined) {
                 return;
             }
             roleWraper.selectedNumber.set(value.length);

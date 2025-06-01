@@ -385,7 +385,7 @@
             <Translation translationKey={charactersLookup[options[optionName]].name} />
           {:else if s.type === 'location' && isLocationName(options[optionName])}
             <Translation translationKey={options[optionName] as LocationName} />
-          {:else if s.type === 'role' && isRoleName(options[optionName])}
+          {:else if s.type.startsWith('role') && isRoleName(options[optionName])}
             {@const splitted = singleRolenames(options[optionName])}
             {#each splitted as optionName}
               <Translation translationKey={rolesLookup[optionName].name} />

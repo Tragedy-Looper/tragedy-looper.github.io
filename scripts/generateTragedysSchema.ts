@@ -69,7 +69,7 @@ const locations = ['Hospital', 'Shrine', 'City', 'School'] as const;
 
 
 
-const SpecificationType = ['location', 'incident', 'role', 'character', 'plot', 'number', 'text'] as const;
+const SpecificationType = ['location', 'incident', 'role in tragedy set', 'role not in plot', 'role in plot', 'character', 'plot', 'number', 'text'] as const;
 
 
 const AbilityTypeCreation = ['Script creation'] as const;
