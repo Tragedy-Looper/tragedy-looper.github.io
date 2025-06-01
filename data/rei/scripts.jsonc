@@ -10,13 +10,13 @@
         "name": "Rei",
         "number": 1
       }],
-      "tragedySet": "Another Horizon R",
+      "tragedySet": "anotherHorizonR",
       "mainPlot": [
-        "Into Nothingness"
+        "intoNothingness"
       ],
       "subPlots": [
-        "Jekyll and Hyde",
-        "Through the Looking-Glass"
+        "jekyllHyde",
+        "throughLookingGlass"
       ],
       "difficultySets": [
         {
@@ -26,24 +26,24 @@
       ],
       "daysPerLoop": 4,
       "cast": {
-        "girlStudent": "Alice",
+        "girlStudent": "alice",
         "richStudent": "Key Person|Brain",
         "classRep": "person",
         "shrineMaiden": "marionette",
         "officeWorker": "marionette",
         "popIdol": "obstinate",
-        "Part-Timer": "brain",
+        "partTimer": "brain",
         "soldier": "Conspiracy Theorist|Serial Killer"
       },
       "incidents": [
         {
           "day": 3,
-          "incident": "Last Will",
+          "incident": "lastWill",
           "culprit": "richStudent"
         },
         {
           "day": 4,
-          "incident": "Crime of Passion",
+          "incident": "crimePassion",
           "culprit": "popIdol"
         }
       ],

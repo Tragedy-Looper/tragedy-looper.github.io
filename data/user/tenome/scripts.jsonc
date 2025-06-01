@@ -315,13 +315,13 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "Sacred Tree": "keyPerson",
+                "sacredTree": "keyPerson",
                 "soldier": "killer",
                 "policeOfficer": "brain",
                 "doctor": "lover",
                 "classRep": "lovedOne",
                 "shrineMaiden": "serialKiller",
-                "Sect Founder": "friend",
+                "sectFounder": "friend",
                 "copycat": "brain",
                 "mysteryBoy": "conspiracyTheorist"
             },
@@ -339,7 +339,7 @@
                 {
                     "day": 5,
                     "incident": "increasingUnease",
-                    "culprit": "Sect Founder"
+                    "culprit": "sectFounder"
                 }
             ],
             "specialRules": [

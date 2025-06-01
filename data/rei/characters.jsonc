@@ -4,8 +4,8 @@
     // "$schema": "../characters.schema.json",
     "characters": [
         {
-            "id": "Part-Timer",
-"name": "Part-Timer",
+            "id": "partTimer",
+            "name": "Part-Timer",
             "edition": "Rei",
             "paranoiaLimit": 1,
             "tags": [
@@ -32,8 +32,8 @@
             ]
         },
         {
-            "id": "Part-Timer(?)",
-"name": "Part-Timer(?)",
+            "id": "partTimer2",
+            "name": "Part-Timer(?)",
             "edition": "Rei",
             "paranoiaLimit": 3,
             "tags": [
@@ -58,8 +58,8 @@
             ]
         },
         {
-            "id": "Sect Founder",
-"name": "Sect Founder",
+            "id": "sectFounder",
+            "name": "Sect Founder",
             "edition": "Rei",
             "paranoiaLimit": 3,
             "tags": [
@@ -89,8 +89,8 @@
             ]
         },
         {
-            "id": "Metaworld Denizen",
-"name": "Metaworld Denizen",
+            "id": "metaworldDenizen",
+            "name": "Metaworld Denizen",
             "edition": "Rei",
             "paranoiaLimit": 2,
             "tags": [
@@ -110,12 +110,12 @@
             ]
         },
         {
-            "id": "Little Sister",
-"name": "Little Sister",
+            "id": "littleSister",
+            "name": "Little Sister",
             "edition": "Rei",
             "paranoiaLimit": 3,
             "tags": [
-                "little sister",
+                "littleSisterKeyword",
                 "girl"
             ],
             "startLocation": [
@@ -135,8 +135,8 @@
             ]
         },
         {
-            "id": "Sacred Tree",
-"name": "Sacred Tree",
+            "id": "sacredTree",
+            "name": "Sacred Tree",
             "edition": "Rei",
             "paranoiaLimit": 4,
             "tags": [

@@ -1,14 +1,14 @@
 {
-      "$schema": "https://tragedy-looper.github.io/plots.schema.json",
+    "$schema": "https://tragedy-looper.github.io/plots.schema.json",
     // For dev purposes
     // "$schema": "../plots.schema.json",
     "plots": [
         {
-            "id": "The Forbidden Future",
-"name": "The Forbidden Future",
+            "id": "forbiddenFuture",
+            "name": "The Forbidden Future",
             "roles": {
-                "marionette": 1,
-                "Storyteller": 1,
+                "marionetteAHR": 1,
+                "storyteller": 1,
                 "Obstinate|Key Person": 1
             },
             "rules": [
@@ -22,20 +22,20 @@
             ]
         },
         {
-            "id": "Fairy-Tale Murderer",
-"name": "Fairy-Tale Murderer",
+            "id": "fairyTaleMurderer",
+            "name": "Fairy-Tale Murderer",
             "roles": {
                 "keyPerson": 1,
-                "Lullaby": 1,
+                "lullaby": 1,
                 "brain": 1
             }
         },
         {
-            "id": "Mother Goose Mystery",
-"name": "Mother Goose Mystery",
+            "id": "motherGooseMystery",
+            "name": "Mother Goose Mystery",
             "roles": {
-                "marionette": 1,
-                "Storyteller": 1
+                "marionetteAHR": 1,
+                "storyteller": 1
             },
             "rules": [
                 {
@@ -48,12 +48,12 @@
             ]
         },
         {
-            "id": "Dimensional Merger",
-"name": "Dimensional Merger",
+            "id": "dimensionalMerger",
+            "name": "Dimensional Merger",
             "roles": {
-                "Storyteller": 1,
-                "Shifter": 1,
-                "Fragment": 1
+                "storyteller": 1,
+                "shifter": 1,
+                "fragment": 1
             },
             "rules": [
                 {
@@ -66,11 +66,11 @@
             ]
         },
         {
-            "id": "Into Nothingness",
-"name": "Into Nothingness",
+            "id": "intoNothingness",
+            "name": "Into Nothingness",
             "roles": {
                 "obstinate": 1,
-                "marionette": 1,
+                "marionetteAHR": 1,
                 "brain": 1
             },
             "rules": [
@@ -84,28 +84,28 @@
             ]
         },
         {
-            "id": "Jekyll and Hyde",
-"name": "Jekyll and Hyde",
+            "id": "jekyllHyde",
+            "name": "Jekyll and Hyde",
             "roles": {
                 "Key Person|Brain": 1,
-                "marionette": 1
+                "marionetteAHR": 1
             },
             "rules": []
         },
         {
-            "id": "The Plaguebringer",
-"name": "The Plaguebringer",
+            "id": "plaguebringer",
+            "name": "The Plaguebringer",
             "roles": {
                 "Pied Piper|Gossip": 1
             },
             "rules": []
         },
         {
-            "id": "Puppeteer’s Strings",
-"name": "Puppeteer’s Strings",
+            "id": "puppeteersStrings",
+            "name": "Puppeteer’s Strings",
             "roles": {
-                "Fragment": 1,
-                "Gossip": 1,
+                "fragment": 1,
+                "gossip": 1,
                 "Person|Serial Killer": 1
             },
             "rules": [
@@ -119,11 +119,11 @@
             ]
         },
         {
-            "id": "Through the Looking-Glass",
-"name": "Through the Looking-Glass",
+            "id": "throughLookingGlass",
+            "name": "Through the Looking-Glass",
             "roles": {
                 "Conspiracy Theorist|Serial Killer": 1,
-                "Alice": 1
+                "alice": 1
             },
             "rules": [
                 {
@@ -133,8 +133,8 @@
             ]
         },
         {
-            "id": "Crossing World Lines",
-"name": "Crossing World Lines",
+            "id": "crossingWorldLines",
+            "name": "Crossing World Lines",
             "roles": {
                 "conspiracyTheorist": 1
             },
@@ -158,11 +158,11 @@
             ]
         },
         {
-            "id": "Unspeakable Horrors",
-"name": "Unspeakable Horrors",
+            "id": "unspeakableHorrors",
+            "name": "Unspeakable Horrors",
             "roles": {
                 "Conspiracy Theorist|Obstinate": 1,
-                "Gossip": 1
+                "gossip": 1
             },
             "rules": [
                 {
@@ -175,12 +175,12 @@
             ]
         },
         {
-            "id": "Hysteria Virus",
-"name": "Hysteria Virus",
+            "id": "hysteriaVirus",
+            "name": "Hysteria Virus",
             "roles": {
-                "Fragment": 1,
+                "fragment": 1,
                 "conspiracyTheorist": 1,
-                "Gossip": 1
+                "gossip": 1
             },
             "rules": [
                 {

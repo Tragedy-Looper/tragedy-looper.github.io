@@ -2191,7 +2191,7 @@
     {
       "cast": {
         "shrineMaiden": "vampire",
-        "Little Sister": "conspiracyTheorist",
+        "littleSister": "conspiracyTheorist",
         "blackCat": "serialKiller",
         "soldier": "showOff",
         "doctor": "coward",
@@ -2246,7 +2246,7 @@
         "henchman": "ninja",
         "illusion": "prophet",
         "alien": "person",
-        "Sacred Tree": "magician",
+        "sacredTree": "magician",
         "richStudent": "immortal",
         "copycat": "person"
       },
