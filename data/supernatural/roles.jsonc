@@ -1,11 +1,11 @@
 {
-      "$schema": "https://tragedy-looper.github.io/roles.schema.json",
+    "$schema": "https://tragedy-looper.github.io/roles.schema.json",
     // For dev purposes
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "id": "Augur",
-"name": "Augur",
+            "id": "augur",
+            "name": "Augur",
             "abilities": [
                 {
                     "type": "Optional",
@@ -18,8 +18,8 @@
             "max": 1
         },
         {
-            "id": "Contract Killer",
-"name": "Contract Killer",
+            "id": "contractKiller",
+            "name": "Contract Killer",
             "abilities": [
                 {
                     "type": "Optional",
@@ -32,8 +32,8 @@
             "goodwillRefusel": "Mandatory"
         },
         {
-            "id": "Cult Member",
-"name": "Cult Member",
+            "id": "cultMember",
+            "name": "Cult Member",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -46,8 +46,8 @@
             ]
         },
         {
-            "id": "Mad Genius",
-"name": "Mad Genius",
+            "id": "madGenius",
+            "name": "Mad Genius",
             "goodwillRefusel": "Optional",
             "max": 1,
             "abilities": [
@@ -62,12 +62,12 @@
             ]
         },
         {
-            "id": "Potentate",
-"name": "Potentate",
+            "id": "potentate",
+            "name": "Potentate",
             "goodwillRefusel": "Mandatory",
             "max": 1,
             "tags": [
-                "Supernatural"
+                "supernaturalTag"
             ],
             "abilities": [
                 {
@@ -80,12 +80,12 @@
             ]
         },
         {
-            "id": "Seeder",
-"name": "Seeder",
+            "id": "seeder",
+            "name": "Seeder",
             "goodwillRefusel": "Mandatory",
             "max": 1,
             "tags": [
-                "Supernatural"
+                "supernaturalTag"
             ],
             "abilities": [
                 {
@@ -106,8 +106,8 @@
             ]
         },
         {
-            "id": "Supplicant",
-"name": "Supplicant",
+            "id": "supplicant",
+            "name": "Supplicant",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -120,10 +120,10 @@
             ]
         },
         {
-            "id": "Facsimile",
-"name": "Facsimile",
+            "id": "facsimile",
+            "name": "Facsimile",
             "tags": [
-                "Supernatural"
+                "supernaturalTag"
             ],
             "abilities": [
                 {

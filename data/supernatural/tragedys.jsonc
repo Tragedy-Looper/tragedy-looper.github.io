@@ -1,41 +1,41 @@
 {
-      "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
+    "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
     // For dev purposes
     // "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "id": "Supernatural",
-"name": "Supernatural",
+            "id": "supernatural",
+            "name": "Supernatural",
             "mainPlots": [
-                "Abomination",
+                "abomination",
                 "Metamorphosis",
-                "Spore Pod",
-                "Demonic Portal",
-                "The Seed"
+                "sporePod",
+                "demonicPortal",
+                "seed"
             ],
             "subPlots": [
                 "infestationSupernatural",
-                "Fatal Attraction",
-                "Manifestation",
-                "Murder for Hire",
-                "Remote Bombing",
-                "Suicide Cult",
-                "Twisted Threads of Time"
+                "fatalAttraction",
+                "manifestation",
+                "murderHire",
+                "remoteBombing",
+                "suicideCult",
+                "twistedThreadsTime"
             ],
             "incidents": [
-                "Abductions",
+                "abductions",
                 "crimePassion",
-                "Grave Robbing",
-                "Indoctrination",
-                "Proselytizing",
-                "Ritual Sacrifice",
+                "graveRobbing",
+                "indoctrination",
+                "proselytizing",
+                "ritualSacrifice",
                 "suicide",
-                "Mass Hysteria",
-                "School Shooting",
-                "Dark Lesson",
-                "Public Meltdown",
-                "Fire and Brimstone",
-                "Bomb Threat"
+                "massHysteria",
+                "schoolShooting",
+                "darkLesson",
+                "publicMeltdown",
+                "fireBrimstone",
+                "bombThreat"
             ],
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 2

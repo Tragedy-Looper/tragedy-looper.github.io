@@ -4,13 +4,13 @@
     // "$schema": "../characters.schema.json",
     "characters": [
         {
-            "id": "Crusader",
-"name": "Crusader",
+            "id": "crusader",
+            "name": "Crusader",
             "tags": [
                 "man",
                 "adult"
             ],
-            "edition": "Supernatural",
+            "edition": "supernaturalTag",
             "paranoiaLimit": 4,
             "startLocation": [
                 "Shrine"

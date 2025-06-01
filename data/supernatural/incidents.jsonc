@@ -4,8 +4,8 @@
     // "$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "id": "Abductions",
-"name": "Abductions",
+            "id": "abductions",
+            "name": "Abductions",
             "effect": [
                 {
                     "description": "Move a Character from his/her location to another location. Move a second Character from his/her location to another location."
@@ -13,8 +13,9 @@
             ]
         },
         {
-            "id": "crimePassion",
-"name": "Crime of Passion",
+            "id": "crimePassion", // Is this another crime of passion then in Rei?
+            // Rei has an additional effect: "When determining if this Incident triggers, treat the culprit’s :paranoia: Limit as 1 lower."
+            "name": "Crime of Passion",
             "effect": [
                 {
                     "description": "Kill another Character in the Culprit's location."
@@ -22,8 +23,8 @@
             ]
         },
         {
-            "id": "Grave Robbing",
-"name": "Grave Robbing",
+            "id": "graveRobbing",
+            "name": "Grave Robbing",
             "effect": [
                 {
                     "description": "Place two :intrigue: on the Shrine. Move a Character from the Shrine to the School, if possible."
@@ -31,8 +32,8 @@
             ]
         },
         {
-            "id": "Indoctrination",
-"name": "Indoctrination",
+            "id": "indoctrination",
+            "name": "Indoctrination",
             "effect": [
                 {
                     "description": "Remove all :goodwill: from a Character and replace with a mix of :paranoia: or :intrigue: that equals the removed :goodwill:."
@@ -40,8 +41,8 @@
             ]
         },
         {
-            "id": "Proselytizing",
-"name": "Proselytizing",
+            "id": "proselytizing",
+            "name": "Proselytizing",
             "effect": [
                 {
                     "description": "Add one :intrigue: to a Character and one :intrigue: to that Character's location."
@@ -49,8 +50,8 @@
             ]
         },
         {
-            "id": "Ritual Sacrifice",
-"name": "Ritual Sacrifice",
+            "id": "ritualSacrifice",
+            "name": "Ritual Sacrifice",
             "effect": [
                 {
                     "description": "The Character with the highest :goodwill: is killed. If no Character has the highest, this Incident doesn't trigger."
@@ -58,8 +59,8 @@
             ]
         },
         {
-            "id": "Mass Hysteria",
-"name": "Mass Hysteria",
+            "id": "massHysteria",
+            "name": "Mass Hysteria",
             "effect": [
                 {
                     "description": "Add 1 :paranoia: to every character."
@@ -67,8 +68,8 @@
             ]
         },
         {
-            "id": "School Shooting",
-"name": "School Shooting",
+            "id": "schoolShooting",
+            "name": "School Shooting",
             "effect": [
                 {
                     "prerequisite": "If at least 1 :intrigue: on the Culprit",
@@ -77,8 +78,8 @@
             ]
         },
         {
-            "id": "Dark Lesson",
-"name": "Dark Lesson",
+            "id": "darkLesson",
+            "name": "Dark Lesson",
             "effect": [
                 {
                     "description": "Add an :intrigue: to all Characters at the Culprit's location."
@@ -86,8 +87,8 @@
             ]
         },
         {
-            "id": "Public Meltdown",
-"name": "Public Meltdown",
+            "id": "publicMeltdown",
+            "name": "Public Meltdown",
             "effect": [
                 {
                     "description": "Reveal the role of the Culprit."
@@ -95,8 +96,8 @@
             ]
         },
         {
-            "id": "Fire and Brimstone",
-"name": "Fire and Brimstone",
+            "id": "fireBrimstone",
+            "name": "Fire and Brimstone",
             "effect": [
                 {
                     "description": "Kill all Characters in all Locations except the Shrine."
@@ -104,8 +105,8 @@
             ]
         },
         {
-            "id": "Bomb Threat",
-"name": "Bomb Threat",
+            "id": "bombThreat",
+            "name": "Bomb Threat",
             "effect": [
                 {
                     "description": "The Leader chooses a location. All Characters from that Location Move to the Location clockwise from their current Location."

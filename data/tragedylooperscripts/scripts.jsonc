@@ -2940,12 +2940,12 @@
     },
     {
       "cast": {
-        "richStudent": "Augur",
-        "Crusader": "person",
+        "richStudent": "augur",
+        "crusader": "person",
         "boyStudent": "lover",
         "shrineMaiden": "person",
         "informer": "lover",
-        "journalist": "Potentate",
+        "journalist": "potentate",
         "doctor": "person",
         "patient": "serialKiller",
         "nurse": "lover"
@@ -2953,12 +2953,12 @@
       "incidents": [
         {
           "day": 1,
-          "incident": "Proselytizing",
+          "incident": "proselytizing",
           "culprit": "informer"
         },
         {
           "day": 2,
-          "incident": "Ritual Sacrifice",
+          "incident": "ritualSacrifice",
           "culprit": "richStudent"
         },
         {
@@ -2968,20 +2968,20 @@
         },
         {
           "day": 4,
-          "incident": "Grave Robbing",
+          "incident": "graveRobbing",
           "culprit": "nurse"
         }
       ],
       "title": "Supernatural Tragedy Story Script 1",
       "mainPlot": [
-        "Demonic Portal"
+        "demonicPortal"
       ],
       "subPlots": [
-        "Fatal Attraction",
-        "Manifestation"
+        "fatalAttraction",
+        "manifestation"
       ],
       "story": "This is an easy script that will help get players used to the Supernatural Tragedy ruleset.  This is the first script in a seven script story arc made for this ruleset.  I have only been able to do limited testing of this scenario and ruleset so any feedback is welcome! sean.petersen@gmail.com",
-      "tragedySet": "Supernatural",
+      "tragedySet": "supernatural",
       "mastermindHints": "Script: Undying Love\nTry to throw them off in the first loop by putting two :intrigue: on a character and making the players think that they lost to Metamorphosis when the actually lost to the Lovers.  If a Lover is killed, you can use the Potentate to move the :intrigue: from the character to the Shine to save the win.  You should centralize characters to mask the identity of the Potentate.",
       "specialRules": [
         "A character may be a culprit for more than one incident."
@@ -3005,25 +3005,25 @@
         "informer": "person",
         "policeOfficer": "person",
         "richStudent": "person",
-        "doctor": "Supplicant",
-        "shrineMaiden": "Mad Genius",
-        "officeWorker": "Contract Killer",
+        "doctor": "supplicant",
+        "shrineMaiden": "madGenius",
+        "officeWorker": "contractKiller",
         "boyStudent": "keyPerson"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Abductions",
+          "incident": "abductions",
           "culprit": "officeWorker"
         },
         {
           "day": 3,
-          "incident": "Proselytizing",
+          "incident": "proselytizing",
           "culprit": "boyStudent"
         },
         {
           "day": 4,
-          "incident": "Public Meltdown",
+          "incident": "publicMeltdown",
           "culprit": "boyStudent"
         },
         {
@@ -3034,14 +3034,14 @@
       ],
       "title": "Supernatural Ruleset Story Script 02",
       "mainPlot": [
-        "Abomination"
+        "abomination"
       ],
       "subPlots": [
-        "Remote Bombing",
-        "Murder for Hire"
+        "remoteBombing",
+        "murderHire"
       ],
       "story": "This is the second script in a seven script story arc made for this ruleset. I have only been able to do limited testing of this scenario and ruleset so any feedback is welcome! sean.petersen@gmail.com",
-      "tragedySet": "Supernatural",
+      "tragedySet": "supernatural",
       "mastermindHints": "Gather as many characters as you can into one location and kill someone with the Contract Killer (officeWorker) to give the Mad Genius Body Parts.  Having lots of characters present will protect the identity of the Mad Genius and the Contract Killer.",
       "specialRules": [
         "A character may be a culprit for more than one incident."
