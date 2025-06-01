@@ -12,6 +12,10 @@ const dataDir = path.join(__dirname, '../data');
 const staticDir = path.join(__dirname, '../static');
 const srcDir = path.join(__dirname, '../src');
 
+const targetSchemaLocations = [dataDir, staticDir, srcDir];
+const targetTypeScriptDefinitionLocations = [srcDir, __dirname];
+
+
 const names = {
     tags: collectNamesFromJsonFiles('tags'),
     keywords: collectIdsFromJsonFiles('keywords'),
@@ -272,7 +276,7 @@ function findAllJsonFiles(dir: string, ...filename: string[]): string[] {
     return results;
 }
 
-export function removeCommentsFromJson(text: string): string {
+export function transformJsoncToJSON(text: string): string {
 
     // run over the text for the first occurence of a //, but skip any that are inside a string
     let inString = false;
@@ -313,6 +317,9 @@ export function removeCommentsFromJson(text: string): string {
         }
         // If in comment, skip char (except for newline above)
     }
+
+    // remove trailing commas
+    result = result.replace(/,\s*([\]}])/g, '$1');
     return result;
 }
 
@@ -323,7 +330,7 @@ function collectIdsFromJsonFiles(type: string): Set<string> {
         const text = fs.readFileSync(file, 'utf-8');
 
         // Remove comments if it's a JSONC file that is not in a string
-        const jsonText = removeCommentsFromJson(text);
+        const jsonText = transformJsoncToJSON(text);
         const data = JSON.parse(jsonText);
         if (Array.isArray(data)) {
             for (const entry of data) {
@@ -350,7 +357,7 @@ function collectNamesFromJsonFiles(type: string): Set<string> {
         const text = fs.readFileSync(file, 'utf-8');
 
         // Remove comments if it's a JSONC file that is not in a string
-        const jsonText = removeCommentsFromJson(text);
+        const jsonText = transformJsoncToJSON(text);
         const data = JSON.parse(jsonText);
         if (Array.isArray(data)) {
             for (const entry of data) {
@@ -374,7 +381,7 @@ function collectNamesFromJsonFiles(type: string): Set<string> {
 function collectDataFromJsonFiles(type: string): any[] {
     const files = findAllJsonFiles(dataDir, `${type}.json`, `${type}.jsonc`);
     return files.flatMap((file) => {
-        const data = JSON.parse(removeCommentsFromJson(fs.readFileSync(file, 'utf-8')));
+        const data = JSON.parse(transformJsoncToJSON(fs.readFileSync(file, 'utf-8')));
         if (Array.isArray(data)) {
             return data;
         } else if (typeof data == 'object' && type in data && Array.isArray(data[type])) {
@@ -1123,7 +1130,7 @@ type ReadonlyArrayTransform<T> = T extends readonly (infer U)[]
     : T;
 
 function WriteSchema(schema: ReadonlyArrayTransform<JSONSchema>, type: string) {
-    const outPath = [dataDir, staticDir, srcDir].map(dir => path.join(dir, `${type}.schema.json`));
+    const outPath = targetSchemaLocations.map(dir => path.join(dir, `${type}.schema.json`));
     outPath.forEach((outPath) => {
         console.log('Schema geschrieben nach', outPath);
         fs.writeFileSync(outPath, JSON.stringify(schema, null, 2), 'utf-8');
@@ -1133,13 +1140,16 @@ function WriteSchema(schema: ReadonlyArrayTransform<JSONSchema>, type: string) {
 
         const typeName = `${toPascalCase(type).replace(/s$/, '')}`;
 
-        fs.writeFileSync(path.join(srcDir, `${type}.g.ts`), `
+        targetTypeScriptDefinitionLocations.map(dir => {
+            const srcDir = path.join(dir, `${type}.g.ts`);
+
+            console.log('TypeScript Definition geschrieben nach', srcDir);
+            fs.writeFileSync(srcDir, `
 export type ${typeName} = Exclude<(${toPascalCase(type)})['${type}'], undefined>[number]; 
 
 ${result}`, { encoding: 'utf-8' });
+        });
     });
-
-
 }
 
 

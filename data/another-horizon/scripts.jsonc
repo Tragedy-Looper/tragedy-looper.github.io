@@ -4,7 +4,7 @@
   // "$schema": "../scripts.schema.json",
   "scripts": [
     {
-      "title": "Actually, I Am...",
+      "title": "Actually, I Am…",
       "creator": "translated by megakun",
       "set": [
         {
@@ -67,7 +67,7 @@
       ],
       "victory-conditions": "",
       "mastermindHints": "",
-      "story": ""
+      "story": "This is the story of somthig eles"
     },
     {
       "title": "I‘m A Normal Human",

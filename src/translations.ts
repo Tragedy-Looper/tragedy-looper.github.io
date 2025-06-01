@@ -42,7 +42,7 @@ function getLinksFromMarkdown(markdown: string): Set<string> {
 
 
 
-const toCheck = [characters, incidents, plots, roles, keywords, tragedys, scripts.flatMap(x => [x.cast, ...(x as unknown as Script).set?.map(x => x.name).filter(x => x != undefined) ?? [], x.title, x['victory-conditions'], x.story, x.mastermindHints]),
+const toCheck = [
     ...ui_strings,
     'Location Icons',
     'Intrigue Places',
@@ -59,7 +59,7 @@ const toCheck = [characters, incidents, plots, roles, keywords, tragedys, script
     'Additional decorations',
 ];
 
-const allStrings = getAllStrings(toCheck);
+const allStrings = toCheck;
 
 const missingInToCheck: Set<string> = new Set();
 
@@ -215,16 +215,4 @@ export function getMissingForLanguage(lang: string) {
 
 export function getAllKeys(): string[] {
     return allStrings.filter(x => x.length > 0);
-}
-function getAllStrings(obj: unknown): string[] {
-    if (typeof obj === 'string') {
-        return obj.split('|').map(s => s.trim()).filter(s => s.length > 0);
-    } else if (typeof obj === 'object' && obj !== null) {
-        if (Array.isArray(obj)) {
-            return obj.flatMap(getAllStrings);
-        } else {
-            return [...Object.values(obj).flatMap(getAllStrings), ...Object.keys(obj).flatMap(getAllStrings)];
-        }
-    }
-    return [];
 }
