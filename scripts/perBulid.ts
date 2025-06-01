@@ -245,6 +245,14 @@ const uniqueStrings = [...new Set([...nonScriptStrings, ...srcTranslationStrings
 const targetSchemaLocations = ['./static', './translations'];
 targetSchemaLocations.forEach(location => writeSchema(uniqueStrings, location));
 
+function quoteString(text:string){
+    return `"${text.replaceAll('"','\\"')}"`
+}
+
+
+const translationObject = `export const ui_strings = [\n${uniqueStrings.map(quoteString).reduce((p, c) => `${p}${p.length == 0 ? '' : ','}\n${c}`, "")}\n] as const;`;
+fs.writeFileSync('./src/data-ui-strings.ts', translationObject);
+
 
 // write the typescript translationDictionaly:
 
@@ -287,4 +295,3 @@ const mergedTranslations = allTranslations.reduce((acc, curr) => {
 
 fs.writeFileSync('./src/data-translations.ts', `export const translations = ${JSON.stringify(mergedTranslations, undefined, 2)}\n`);
 console.log('Finished writing translations to src/data-translations.ts');
-
