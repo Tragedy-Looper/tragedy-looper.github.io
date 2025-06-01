@@ -178,7 +178,7 @@ function generateTranslationSchemaForDataFolder(dir: string) {
     const scriptObjects = getJsonObjectsWithSchemaWithoutSubfolder(dir, 'scripts');
     const nonScriptStrings = getAllStrings(nonScriptObjects);
     const scriptStrings = scriptObjects.flat().flatMap(script => [
-        `${script.title}.${script.creator ?? 'Unknown'}.descriptionion`,
+        `${script.title}.${script.creator ?? 'Unknown'}.description`,
         `${script.title}.${script.creator ?? 'Unknown'}.title`,
         `${script.title}.${script.creator ?? 'Unknown'}.mastermindHints`,
         `${script.title}.${script.creator ?? 'Unknown'}.specialRules`,
@@ -260,7 +260,7 @@ fs.writeFileSync('./src/data-ui-strings.ts', translationObject);
 
 const scriptReplacement = Object.fromEntries(getJsonObjectsWithSchema('./data', 'scripts').flat().flatMap(script => {
     return ([
-        [`${script.title}.${script.creator ?? 'Unknown'}.descriptionion`, script.description ?? ''],
+        [`${script.title}.${script.creator ?? 'Unknown'}.description`, script.description ?? ''],
         [`${script.title}.${script.creator ?? 'Unknown'}.title`, script.title ?? ''],
         [`${script.title}.${script.creator ?? 'Unknown'}.mastermindHints`, script.mastermindHints ?? ''],
         [`${script.title}.${script.creator ?? 'Unknown'}.specialRules`, script.specialRules?.join('\n\n') ?? ''],
