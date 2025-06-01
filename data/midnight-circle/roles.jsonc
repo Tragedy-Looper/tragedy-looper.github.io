@@ -1,11 +1,11 @@
 {
-      "$schema": "https://tragedy-looper.github.io/roles.schema.json",
+    "$schema": "https://tragedy-looper.github.io/roles.schema.json",
     // For dev purposes
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "id": "Poisoner",
-"name": "Poisoner",
+            "id": "poisoner",
+            "name": "Poisoner",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -27,8 +27,8 @@
             ]
         },
         {
-            "id": "Fool",
-"name": "Fool",
+            "id": "fool",
+            "name": "Fool",
             "max": 1,
             "abilities": [
                 {
@@ -45,9 +45,11 @@
             ]
         },
         {
-            "id": "Private Investigator",
-"name": "Private Investigator",
-            "tags": ["immortal"],
+            "id": "privateInvestigator",
+            "name": "Private Investigator",
+            "tags": [
+                "immortal"
+            ],
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -67,8 +69,8 @@
             ]
         },
         {
-            "id": "Paranoiac",
-"name": "Paranoiac",
+            "id": "paranoiac",
+            "name": "Paranoiac",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -81,8 +83,8 @@
             ]
         },
         {
-            "id": "Twin",
-"name": "Twin",
+            "id": "twin",
+            "name": "Twin",
             "abilities": [
                 {
                     "type": "Script creation",
@@ -98,8 +100,8 @@
             ]
         },
         {
-            "id": "Obstinate",
-"name": "Obstinate",
+            "id": "obstinate",
+            "name": "Obstinate",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -116,8 +118,8 @@
             ]
         },
         {
-            "id": "Therapist",
-"name": "Therapist",
+            "id": "therapist",
+            "name": "Therapist",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -130,8 +132,8 @@
             ]
         },
         {
-            "id": "Magician",
-"name": "Magician",
+            "id": "magician",
+            "name": "Magician",
             "abilities": [
                 {
                     "type": "Optional",
@@ -156,8 +158,8 @@
             ]
         },
         {
-            "id": "Ninja",
-"name": "Ninja",
+            "id": "ninja",
+            "name": "Ninja",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -177,8 +179,8 @@
             ]
         },
         {
-            "id": "Prophet",
-"name": "Prophet",
+            "id": "prophet",
+            "name": "Prophet",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -198,9 +200,11 @@
             ]
         },
         {
-            "id": "immortal",
-"name": "Immortal",
-            "tags": ["immortal"],
+            "id": "immortalRole",
+            "name": "Immortal",
+            "tags": [
+                "immortal"
+            ],
             "abilities": []
         }
     ]

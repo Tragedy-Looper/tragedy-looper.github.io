@@ -274,7 +274,7 @@
             "name": "Whispers from the Deep",
             "roles": {
                 "deepOne": 1,
-                "Paranoiac": 1
+                "paranoiac": 1
             },
             "rules": [
                 {
@@ -299,7 +299,7 @@
             "id": "twistedTruth",
             "name": "Twisted Truth",
             "roles": {
-                "Paranoiac": 1
+                "paranoiac": 1
             },
             "scriptSpecified": [
                 {

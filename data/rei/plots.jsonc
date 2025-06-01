@@ -69,7 +69,7 @@
             "id": "Into Nothingness",
 "name": "Into Nothingness",
             "roles": {
-                "Obstinate": 1,
+                "obstinate": 1,
                 "marionette": 1,
                 "brain": 1
             },

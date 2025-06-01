@@ -41,27 +41,27 @@
       "incidents": [
         {
           "day": 1,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "richStudent"
         },
         {
           "day": 2,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "popIdol"
         },
         {
           "day": 3,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "alien"
         },
         {
           "day": 4,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "classRep"
         },
         {
           "day": 5,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "shrineMaiden"
         }
       ],
@@ -116,7 +116,7 @@
       "incidents": [
         {
           "day": 1,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "alien"
         },
         {
@@ -126,22 +126,22 @@
         },
         {
           "day": 3,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "girlStudent"
         },
         {
           "day": 4,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "popIdol"
         },
         {
           "day": 5,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "informer"
         },
         {
           "day": 6,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "doctor"
         }
       ],

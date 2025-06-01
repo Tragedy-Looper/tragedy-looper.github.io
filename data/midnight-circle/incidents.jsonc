@@ -4,8 +4,8 @@
     // "$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "id": "Serial Murder",
-"name": "Serial Murder",
+            "id": "serialMurder",
+            "name": "Serial Murder",
             "repeatedCulprit": true,
             "effect": [
                 {
@@ -14,8 +14,8 @@
             ]
         },
         {
-            "id": "Portent",
-"name": "Portent",
+            "id": "portent",
+            "name": "Portent",
             "effect": [
                 {
                     "description": "[When determning wether this Incident triggers or not, treat the culprit’s :paranoia: limit ats 1 less then its printed limit] Put 1 :paranoia: counter on any character in the culprit’s location."
@@ -23,8 +23,8 @@
             ]
         },
         {
-            "id": "Terrorism",
-"name": "Terrorism",
+            "id": "terrorism",
+            "name": "Terrorism",
             "effect": [
                 {
                     "prerequisite": "1 :intrigue: on the City",
@@ -37,8 +37,8 @@
             ]
         },
         {
-            "id": "Bestial Murder",
-"name": "Bestial Murder",
+            "id": "bestialMurder",
+            "name": "Bestial Murder",
             "effect": [
                 {
                     "description": "[When determinig wether this Incident triggers or not, treat the culprit’s :paranoia: limit as 1 more than its printed limit.] Resolve \"Serial Murder\" and \"Increasing Unease\" in that order. Then increase the Extra Gauge by 1 more step."
@@ -46,8 +46,8 @@
             ]
         },
         {
-            "id": "A Suspicious Letter",
-"name": "A Suspicious Letter",
+            "id": "suspiciousLetter",
+            "name": "A Suspicious Letter",
             "effect": [
                 {
                     "description": "Move any character in the culprit’s location to any location. If the character actually changed location, that character cannot be moved the next day."
@@ -55,8 +55,8 @@
             ]
         },
         {
-            "id": "Faked Suicide",
-"name": "Faked Suicide",
+            "id": "fakedSuicide",
+            "name": "Faked Suicide",
             "effect": [
                 {
                     "description": "Set an Extra card on the culprit. Druing the remainder of the loop, the Protagonists may not play movement cards on characte(s) with an Extra card."
@@ -64,8 +64,8 @@
             ]
         },
         {
-            "id": "Closed Circle",
-"name": "Closed Circle",
+            "id": "closedCircle",
+            "name": "Closed Circle",
             "effect": [
                 {
                     "description": "Reveal the culprit’s locationto. For 3 days, including the day the incident occurred, any movement to or from that location is nullified."
@@ -73,8 +73,8 @@
             ]
         },
         {
-            "id": "The Silver Bullet",
-"name": "The Silver Bullet",
+            "id": "silverBullet",
+            "name": "The Silver Bullet",
             "effect": [
                 {
                     "description": "The loop ends after this Incident step (resulting in a Protagonist victory unless any loss condition is fullifilled). This Incident dose not increase the Extra Gauge."
@@ -82,8 +82,8 @@
             ]
         },
         {
-            "id": "Conspiracies",
-"name": "Conspiracies",
+            "id": "conspiracies",
+            "name": "Conspiracies",
             "effect": [
                 {
                     "description": "Resolve either a Serial Murder or a Missing Person Incident. Check :intrigue: instead of :paranoia: conters to trigger the Incident."
@@ -91,8 +91,8 @@
             ]
         },
         {
-            "id": "Uproar",
-"name": "Uproar",
+            "id": "uproar",
+            "name": "Uproar",
             "effect": [
                 {
                     "prerequisite": "1 :intrigue: on the School",
@@ -105,8 +105,8 @@
             ]
         },
         {
-            "id": "Fake Incident",
-"name": "Fake Incident",
+            "id": "fakeIncident",
+            "name": "Fake Incident",
             "effect": [
                 {
                     "type": "Mandatory Loss condition: Protagonists Death",
@@ -116,8 +116,8 @@
             "faked": true
         },
         {
-            "id": "Breakthrough",
-"name": "Breakthrough",
+            "id": "breakthrough",
+            "name": "Breakthrough",
             "effect": [
                 {
                     "description": "The Protagonist Leader chooses one location or character, and removes 2 :intrigue: counters from there."
@@ -125,8 +125,8 @@
             ]
         },
         {
-            "id": "Confession",
-"name": "Confession",
+            "id": "confession",
+            "name": "Confession",
             "effect": [
                 {
                     "description": "Reveal the culprit and the culprit’s role."

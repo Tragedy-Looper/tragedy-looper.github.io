@@ -1,11 +1,11 @@
 {
-      "$schema": "https://tragedy-looper.github.io/plots.schema.json",
+    "$schema": "https://tragedy-looper.github.io/plots.schema.json",
     // For dev purposes
     // "$schema": "../plots.schema.json",
     "plots": [
         {
-            "id": "Tightrope Plan",
-"name": "Tightrope Plan",
+            "id": "tightropePlan",
+            "name": "Tightrope Plan",
             "roles": {
                 "brain": 1,
                 "killer": 1
@@ -21,12 +21,12 @@
             ]
         },
         {
-            "id": "A Drop of Strychnine",
-"name": "A Drop of Strychnine",
+            "id": "dropStrychnine",
+            "name": "A Drop of Strychnine",
             "roles": {
                 "keyPerson": 1,
-                "Poisoner": 1,
-                "Fool": 1
+                "poisoner": 1,
+                "fool": 1
             },
             "rules": [
                 {
@@ -39,10 +39,10 @@
             ]
         },
         {
-            "id": "A Quilt of Incidents",
-"name": "A Quilt of Incidents",
+            "id": "quiltIncidents",
+            "name": "A Quilt of Incidents",
             "roles": {
-                "Fool": 1,
+                "fool": 1,
                 "conspiracyTheorist": 1
             },
             "rules": [
@@ -56,8 +56,8 @@
             ]
         },
         {
-            "id": "The Black School",
-"name": "The Black School",
+            "id": "blackSchool",
+            "name": "The Black School",
             "roles": {
                 "brain": 1
             },
@@ -72,21 +72,21 @@
             ]
         },
         {
-            "id": "Dance of Fools",
-"name": "Dance of Fools",
+            "id": "danceFools",
+            "name": "Dance of Fools",
             "roles": {
                 "friend": 1,
-                "Fool": 1
+                "fool": 1
             },
             "rules": []
         },
         {
-            "id": "Isolated Institution Psycho",
-"name": "Isolated Institution Psycho",
+            "id": "isolatedInstitutionPsycho",
+            "name": "Isolated Institution Psycho",
             "roles": {
                 "conspiracyTheorist": 1,
-                "Therapist": 1,
-                "Paranoiac": 1
+                "therapist": 1,
+                "paranoiac": 1
             },
             "rules": [
                 {
@@ -100,25 +100,25 @@
             ]
         },
         {
-            "id": "An Absolute Will",
-"name": "An Absolute Will",
+            "id": "anAbsoluteWill",
+            "name": "An Absolute Will",
             "roles": {
-                "Obstinate": 1
+                "obstinate": 1
             },
             "rules": []
         },
         {
-            "id": "Tricky Twins",
-"name": "Tricky Twins",
+            "id": "trickyTwins",
+            "name": "Tricky Twins",
             "roles": {
-                "Twin": 1,
-                "Paranoiac": 1
+                "twin": 1,
+                "paranoiac": 1
             },
             "rules": []
         },
         {
-            "id": "Smell of Gunpowder",
-"name": "Smell of Gunpowder",
+            "id": "smellGunpowder",
+            "name": "Smell of Gunpowder",
             "roles": {
                 "serialKiller": 1
             },
@@ -133,18 +133,18 @@
             ]
         },
         {
-            "id": "I am a Master Detective",
-"name": "I am a Master Detective",
+            "id": "masterDetective",
+            "name": "I am a Master Detective",
             "roles": {
                 "conspiracyTheorist": 1,
                 "friend": 1,
-                "Private Investigator": 1
+                "privateInvestigator": 1
             },
             "rules": []
         },
         {
-            "id": "Secret Record",
-"name": "Secret Record",
+            "id": "secretRecord",
+            "name": "Secret Record",
             "roles": {
                 "keyPerson": 1,
                 "brain": 1,
@@ -161,20 +161,20 @@
             ]
         },
         {
-            "id": "The Devil’s Hand",
-"name": "The Devil’s Hand",
+            "id": "devilsHand",
+            "name": "The Devil’s Hand",
             "roles": {
                 "keyPerson": 1,
                 "cultist": 1,
-                "Ninja": 1
+                "ninja": 1
             },
             "rules": []
         },
         {
-            "id": "Male Confrontation",
-"name": "Male Confrontation",
+            "id": "maleConfrontation",
+            "name": "Male Confrontation",
             "roles": {
-                "Ninja": 1
+                "ninja": 1
             },
             "rules": [
                 {
@@ -191,8 +191,8 @@
             ]
         },
         {
-            "id": "Fated Connections",
-"name": "Fated Connections",
+            "id": "fatedConnections",
+            "name": "Fated Connections",
             "roles": {
                 "conspiracyTheorist": 1,
                 "friend": 1,
@@ -210,20 +210,20 @@
             ]
         },
         {
-            "id": "Love-Hate Spiral",
-"name": "Love-Hate Spiral",
+            "id": "loveHateSpiral",
+            "name": "Love-Hate Spiral",
             "roles": {
                 "friend": 1,
-                "Obstinate": 1
+                "obstinate": 1
             },
             "rules": []
         },
         {
-            "id": "Showtime of Death",
-"name": "Showtime of Death",
+            "id": "showtimeDeath",
+            "name": "Showtime of Death",
             "roles": {
-                "Magician": 1,
-                "immortal": 1
+                "magician": 1,
+                "immortalRole": 1
             },
             "rules": [
                 {
@@ -236,8 +236,8 @@
             ]
         },
         {
-            "id": "Witches Tea Time",
-"name": "Witches Tea Time",
+            "id": "witchesTeaTime",
+            "name": "Witches Tea Time",
             "roles": {
                 "conspiracyTheorist": 1,
                 "friend": 1,
@@ -246,11 +246,11 @@
             "rules": []
         },
         {
-            "id": "Dice of the Gods",
-"name": "Dice of the Gods",
+            "id": "diceOfGods",
+            "name": "Dice of the Gods",
             "roles": {
                 "serialKiller": 1,
-                "Obstinate": 1
+                "obstinate": 1
             },
             "rules": [
                 {
@@ -264,11 +264,11 @@
             ]
         },
         {
-            "id": "Unanswered Heart",
-"name": "Unanswered Heart",
+            "id": "unansweredHeart",
+            "name": "Unanswered Heart",
             "roles": {
                 "conspiracyTheorist": 1,
-                "Magician": 1
+                "magician": 1
             },
             "rules": [
                 {
@@ -281,8 +281,8 @@
             ]
         },
         {
-            "id": "Unsafe Trigger",
-"name": "Unsafe Trigger",
+            "id": "unsafeTrigger",
+            "name": "Unsafe Trigger",
             "roles": {
                 "factor": 1
             },
@@ -299,10 +299,10 @@
             ]
         },
         {
-            "id": "Worshippers of the Apocalypse",
-"name": "Worshippers of the Apocalypse",
+            "id": "worshippersApocalypse",
+            "name": "Worshippers of the Apocalypse",
             "roles": {
-                "Prophet": 1
+                "prophet": 1
             },
             "rules": [
                 {

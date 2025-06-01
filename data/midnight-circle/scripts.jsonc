@@ -197,13 +197,13 @@
                 "name": "Midnight Circle",
                 "number": 4
             }],
-            "tragedySet": "Midnight Zone",
+            "tragedySet": "midnightZone",
             "mainPlot": [
-                "Male Confrontation"
+                "maleConfrontation"
             ],
             "subPlots": [
-                "Unsafe Trigger",
-                "Love-Hate Spiral"
+                "unsafeTrigger",
+                "loveHateSpiral"
             ],
             "difficultySets": [
                 {
@@ -218,22 +218,22 @@
             "daysPerLoop": 5,
             "cast": {
                 "boyStudent": "person",
-                "girlStudent": "Obstinate",
+                "girlStudent": "obstinate",
                 "richStudent": "friend",
                 "shrineMaiden": "person",
                 "alien": "factor",
                 "policeOfficer": "person",
-                "officeWorker": "Ninja"
+                "officeWorker": "ninja"
             },
             "incidents": [
                 {
                     "day": 2,
-                    "incident": "Confession",
+                    "incident": "confession",
                     "culprit": "richStudent"
                 },
                 {
                     "day": 4,
-                    "incident": "Confession",
+                    "incident": "confession",
                     "culprit": "officeWorker"
                 },
                 {
@@ -253,13 +253,13 @@
                 "name": "Midnight Circle",
                 "number": 5
             }],
-            "tragedySet": "Midnight Zone",
+            "tragedySet": "midnightZone",
             "mainPlot": [
-                "Secret Record"
+                "secretRecord"
             ],
             "subPlots": [
-                "Dice of the Gods",
-                "Unsafe Trigger"
+                "diceOfGods",
+                "unsafeTrigger"
             ],
             "difficultySets": [
                 {
@@ -273,7 +273,7 @@
             ],
             "daysPerLoop": 4,
             "cast": {
-                "boyStudent": "Obstinate",
+                "boyStudent": "obstinate",
                 "richStudent": "person",
                 "shrineMaiden": "person",
                 "alien": "conspiracyTheorist",
@@ -292,7 +292,7 @@
                 {
                     "day": 2,
                     "incident": [
-                        "Fake Incident",
+                        "fakeIncident",
                         "hospitalIncident"
                     ],
                     "culprit": "boyStudent"
@@ -304,7 +304,7 @@
                 },
                 {
                     "day": 4,
-                    "incident": "Serial Murder",
+                    "incident": "serialMurder",
                     "culprit": "doctor"
                 }
             ],
@@ -319,13 +319,13 @@
                 "name": "Midnight Circle",
                 "number": 6
             }],
-            "tragedySet": "Midnight Zone",
+            "tragedySet": "midnightZone",
             "mainPlot": [
                 "sealedItem"
             ],
             "subPlots": [
-                "Love-Hate Spiral",
-                "Worshippers of the Apocalypse"
+                "loveHateSpiral",
+                "worshippersApocalypse"
             ],
             "difficultySets": [
                 {
@@ -343,13 +343,13 @@
             ],
             "daysPerLoop": 4,
             "cast": {
-                "boyStudent": "Obstinate",
+                "boyStudent": "obstinate",
                 "classRep": "friend",
-                "mysteryBoy": "immortal",
+                "mysteryBoy": "immortalRole",
                 "shrineMaiden": "person",
                 "illusion": "brain",
                 "popIdol": "person",
-                "journalist": "Prophet",
+                "journalist": "prophet",
                 "doctor": "cultist",
                 "henchman": "person"
             },
@@ -362,23 +362,23 @@
                 {
                     "day": 2,
                     "incident": [
-                        "Fake Incident",
-                        "Breakthrough"
+                        "fakeIncident",
+                        "breakthrough"
                     ],
                     "culprit": "henchman"
                 },
                 {
                     "day": 3,
                     "incident": [
-                        "Fake Incident",
-                        "Uproar"
+                        "fakeIncident",
+                        "uproar"
                     ],
                     "culprit": "classRep"
                 },
                 {
                     "day": 4,
                     "incident": [
-                        "Fake Incident",
+                        "fakeIncident",
                         "hospitalIncident"
                     ],
                     "culprit": "boyStudent"
@@ -395,13 +395,13 @@
                 "name": "Midnight Circle",
                 "number": 7
             }],
-            "tragedySet": "Midnight Zone",
+            "tragedySet": "midnightZone",
             "mainPlot": [
-                "Fated Connections"
+                "fatedConnections"
             ],
             "subPlots": [
-                "Unanswered Heart",
-                "Showtime of Death"
+                "unansweredHeart",
+                "showtimeDeath"
             ],
             "difficultySets": [
                 {
@@ -411,20 +411,20 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "boyStudent": "Magician",
+                "boyStudent": "magician",
                 "richStudent": "person",
-                "mysteryBoy": "Prophet",
+                "mysteryBoy": "prophet",
                 "shrineMaiden": "serialKiller",
-                "policeOfficer": "Magician",
+                "policeOfficer": "magician",
                 "popIdol": "friend",
                 "journalist": "conspiracyTheorist",
                 "doctor": "person",
-                "patient": "immortal"
+                "patient": "immortalRole"
             },
             "incidents": [
                 {
                     "day": 3,
-                    "incident": "Faked Suicide",
+                    "incident": "fakedSuicide",
                     "culprit": "boyStudent"
                 },
                 {
@@ -434,12 +434,12 @@
                 },
                 {
                     "day": 5,
-                    "incident": "Uproar",
+                    "incident": "uproar",
                     "culprit": "journalist"
                 },
                 {
                     "day": 6,
-                    "incident": "Confession",
+                    "incident": "confession",
                     "culprit": "patient"
                 }
             ],
@@ -454,13 +454,13 @@
                 "name": "Midnight Circle",
                 "number": 8
             }],
-            "tragedySet": "Mystery Circle",
+            "tragedySet": "mysteryCircle",
             "mainPlot": [
-                "The Black School"
+                "blackSchool"
             ],
             "subPlots": [
-                "Tricky Twins",
-                "Dance of Fools"
+                "trickyTwins",
+                "danceFools"
             ],
             "difficultySets": [
                 {
@@ -471,10 +471,10 @@
             "daysPerLoop": 5,
             "cast": {
                 "boyStudent": "brain",
-                "richStudent": "Fool",
+                "richStudent": "fool",
                 "shrineMaiden": "person",
-                "alien": "Twin",
-                "policeOfficer": "Paranoiac",
+                "alien": "twin",
+                "policeOfficer": "paranoiac",
                 "officeWorker": "person",
                 "journalist": "person",
                 "patient": "friend"
@@ -482,12 +482,12 @@
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "Portent",
+                    "incident": "portent",
                     "culprit": "richStudent"
                 },
                 {
                     "day": 2,
-                    "incident": "The Silver Bullet",
+                    "incident": "silverBullet",
                     "culprit": "policeOfficer"
                 },
                 {
@@ -497,7 +497,7 @@
                 },
                 {
                     "day": 5,
-                    "incident": "Serial Murder",
+                    "incident": "serialMurder",
                     "culprit": "alien"
                 }
             ],
@@ -512,13 +512,13 @@
                 "name": "Midnight Circle",
                 "number": 9
             }],
-            "tragedySet": "Mystery Circle",
+            "tragedySet": "mysteryCircle",
             "mainPlot": [
-                "A Quilt of Incidents"
+                "quiltIncidents"
             ],
             "subPlots": [
-                "An Absolute Will",
-                "Tricky Twins"
+                "anAbsoluteWill",
+                "trickyTwins"
             ],
             "difficultySets": [
                 {
@@ -532,15 +532,15 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "boyStudent": "Paranoiac",
+                "boyStudent": "paranoiac",
                 "girlStudent": "person",
                 "richStudent": "person",
-                "shrineMaiden": "Twin",
+                "shrineMaiden": "twin",
                 "officeWorker": "person",
                 "journalist": "conspiracyTheorist",
                 "popIdol": "person",
-                "patient": "Fool",
-                "nurse": "Obstinate"
+                "patient": "fool",
+                "nurse": "obstinate"
             },
             "incidents": [
                 {
@@ -550,22 +550,22 @@
                 },
                 {
                     "day": 2,
-                    "incident": "Serial Murder",
+                    "incident": "serialMurder",
                     "culprit": "popIdol"
                 },
                 {
                     "day": 3,
-                    "incident": "Serial Murder",
+                    "incident": "serialMurder",
                     "culprit": "shrineMaiden"
                 },
                 {
                     "day": 4,
-                    "incident": "Serial Murder",
+                    "incident": "serialMurder",
                     "culprit": "patient"
                 },
                 {
                     "day": 5,
-                    "incident": "Serial Murder",
+                    "incident": "serialMurder",
                     "culprit": "shrineMaiden"
                 }
             ],
@@ -580,12 +580,12 @@
                 "name": "Midnight Circle",
                 "number": 10
             }],
-            "tragedySet": "Mystery Circle",
+            "tragedySet": "mysteryCircle",
             "mainPlot": [
-                "A Drop of Strychnine"
+                "dropStrychnine"
             ],
             "subPlots": [
-                "I am a Master Detective",
+                "masterDetective",
                 "hiddenFreak"
             ],
             "difficultySets": [
@@ -597,8 +597,8 @@
             "daysPerLoop": 7,
             "cast": {
                 "girlStudent": "friend",
-                "richStudent": "Private Investigator",
-                "shrineMaiden": "Poisoner",
+                "richStudent": "privateInvestigator",
+                "shrineMaiden": "poisoner",
                 "alien": "keyPerson",
                 "informer": "person",
                 "popIdol": "friend",
@@ -608,13 +608,13 @@
                         "Turf": "School"
                     }
                 ],
-                "doctor": "Fool",
+                "doctor": "fool",
                 "patient": "serialKiller"
             },
             "incidents": [
                 {
                     "day": 2,
-                    "incident": "Faked Suicide",
+                    "incident": "fakedSuicide",
                     "culprit": "shrineMaiden"
                 },
                 {
@@ -624,12 +624,12 @@
                 },
                 {
                     "day": 5,
-                    "incident": "Bestial Murder",
+                    "incident": "bestialMurder",
                     "culprit": "boss"
                 },
                 {
                     "day": 6,
-                    "incident": "Serial Murder",
+                    "incident": "serialMurder",
                     "culprit": "doctor"
                 }
             ],
@@ -644,13 +644,13 @@
                 "name": "Midnight Circle",
                 "number": 11
             }],
-            "tragedySet": "Mystery Circle",
+            "tragedySet": "mysteryCircle",
             "mainPlot": [
-                "A Quilt of Incidents"
+                "quiltIncidents"
             ],
             "subPlots": [
-                "Dance of Fools",
-                "Isolated Institution Psycho"
+                "danceFools",
+                "isolatedInstitutionPsycho"
             ],
             "difficultySets": [
                 {
@@ -660,10 +660,10 @@
             ],
             "daysPerLoop": 4,
             "cast": {
-                "richStudent": "Fool",
+                "richStudent": "fool",
                 "classRep": "person",
-                "shrineMaiden": "Paranoiac",
-                "policeOfficer": "Therapist",
+                "shrineMaiden": "paranoiac",
+                "policeOfficer": "therapist",
                 "officeWorker": "friend",
                 "journalist": "person",
                 "doctor": "person",
@@ -673,7 +673,7 @@
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "A Suspicious Letter",
+                    "incident": "suspiciousLetter",
                     "culprit": "classRep"
                 },
                 {
@@ -688,7 +688,7 @@
                 },
                 {
                     "day": 4,
-                    "incident": "Portent",
+                    "incident": "portent",
                     "culprit": "richStudent"
                 }
             ],
@@ -703,13 +703,13 @@
                 "name": "Midnight Circle",
                 "number": 12
             }],
-            "tragedySet": "Mystery Circle",
+            "tragedySet": "mysteryCircle",
             "mainPlot": [
-                "Tightrope Plan"
+                "tightropePlan"
             ],
             "subPlots": [
-                "An Absolute Will",
-                "I am a Master Detective"
+                "anAbsoluteWill",
+                "masterDetective"
             ],
             "difficultySets": [
                 {
@@ -725,9 +725,9 @@
             "cast": {
                 "girlStudent": "conspiracyTheorist",
                 "richStudent": "killer",
-                "mysteryBoy": "Poisoner",
-                "alien": "Obstinate",
-                "policeOfficer": "Private Investigator",
+                "mysteryBoy": "poisoner",
+                "alien": "obstinate",
+                "policeOfficer": "privateInvestigator",
                 "informer": "person",
                 "popIdol": "friend",
                 "patient": "brain",
@@ -742,27 +742,27 @@
                 },
                 {
                     "day": 2,
-                    "incident": "Terrorism",
+                    "incident": "terrorism",
                     "culprit": "alien"
                 },
                 {
                     "day": 4,
-                    "incident": "Portent",
+                    "incident": "portent",
                     "culprit": "henchman"
                 },
                 {
                     "day": 5,
-                    "incident": "Bestial Murder",
+                    "incident": "bestialMurder",
                     "culprit": "girlStudent"
                 },
                 {
                     "day": 6,
-                    "incident": "The Silver Bullet",
+                    "incident": "silverBullet",
                     "culprit": "scientist"
                 },
                 {
                     "day": 7,
-                    "incident": "Bestial Murder",
+                    "incident": "bestialMurder",
                     "culprit": "richStudent"
                 }
             ],

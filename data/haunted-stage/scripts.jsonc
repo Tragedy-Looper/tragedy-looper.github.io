@@ -157,7 +157,7 @@
         },
         {
           "day": 5,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "boyStudent"
         }
       ],

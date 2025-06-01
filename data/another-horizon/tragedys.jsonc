@@ -32,8 +32,8 @@
                 "worldEnd",
                 "worldConvergence",
                 "smallForce",
-                "Breakthrough",
-                "Confession"
+                "breakthrough",
+                "confession"
             ],
             "aditionalRoles": [
                 "shadow"

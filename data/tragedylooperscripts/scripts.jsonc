@@ -65,8 +65,8 @@
         "boyStudent": "cultist",
         "classRep": "brain",
         "richStudent": "person",
-        "illusion": "Prophet",
-        "officeWorker": "Magician",
+        "illusion": "prophet",
+        "officeWorker": "magician",
         "popIdol": "person",
         "patient": "immortal",
         "henchman": "person"
@@ -84,7 +84,7 @@
         },
         {
           "day": 3,
-          "incident": "Uproar",
+          "incident": "uproar",
           "culprit": "patient"
         },
         {
@@ -94,7 +94,7 @@
         },
         {
           "day": 5,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "henchman"
         }
       ],
@@ -103,11 +103,11 @@
         "sealedItem"
       ],
       "subPlots": [
-        "Worshippers of the Apocalypse",
-        "Showtime of Death"
+        "worshippersApocalypse",
+        "showtimeDeath"
       ],
       "story": "",
-      "tragedySet": "Midnight Zone",
+      "tragedySet": "midnightZone",
       "mastermindHints": "Note: The Day 5 incident is actually a Fake Incident!\n\nEvery location cares about having :intrigue: on it, and you have to play cards on locations to move the illusion, who has a really important role. Use this information to leave the protagonists guessing about which location is important or what you actually want to do with the illusion.",
       "specialRules": [
         ""
@@ -250,11 +250,11 @@
     },
     {
       "cast": {
-        "journalist": "Ninja",
+        "journalist": "ninja",
         "girlStudent": "friend",
-        "shrineMaiden": "Obstinate",
+        "shrineMaiden": "obstinate",
         "patient": "conspiracyTheorist",
-        "boyStudent": "Magician",
+        "boyStudent": "magician",
         "mysteryBoy": "keyPerson",
         "officeWorker": "person",
         "doctor": "person",
@@ -269,7 +269,7 @@
         },
         {
           "day": 3,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "henchman"
         },
         {
@@ -284,25 +284,25 @@
         },
         {
           "day": 6,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "shrineMaiden"
         },
         {
           "day": 7,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "shrineMaiden"
         }
       ],
       "title": "The Greatness Reborn",
       "mainPlot": [
-        "Male Confrontation"
+        "maleConfrontation"
       ],
       "subPlots": [
-        "Love-Hate Spiral",
-        "Unanswered Heart"
+        "loveHateSpiral",
+        "unansweredHeart"
       ],
       "story": "",
-      "tragedySet": "Midnight Zone",
+      "tragedySet": "midnightZone",
       "mastermindHints": "",
       "specialRules": [
         "None"
@@ -325,14 +325,14 @@
       "cast": {
         "henchman": "brain",
         "godlyBeing": [
-          "Paranoiac",
+          "paranoiac",
           {
             "enters on loop": 2
           }
         ],
         "richStudent": "conspiracyTheorist",
-        "ai": "Therapist",
-        "policeOfficer": "Obstinate",
+        "ai": "therapist",
+        "policeOfficer": "obstinate",
         "mysteryBoy": "friend",
         "classRep": "person",
         "nurse": "person",
@@ -342,17 +342,17 @@
       "incidents": [
         {
           "day": 1,
-          "incident": "Closed Circle",
+          "incident": "closedCircle",
           "culprit": "policeOfficer"
         },
         {
           "day": 2,
-          "incident": "A Suspicious Letter",
+          "incident": "suspiciousLetter",
           "culprit": "richStudent"
         },
         {
           "day": 4,
-          "incident": "Closed Circle",
+          "incident": "closedCircle",
           "culprit": "ai"
         },
         {
@@ -362,7 +362,7 @@
         },
         {
           "day": 6,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "godlyBeing"
         },
         {
@@ -373,14 +373,14 @@
       ],
       "title": "The Greatness Vroomed",
       "mainPlot": [
-        "The Black School"
+        "blackSchool"
       ],
       "subPlots": [
-        "Isolated Institution Psycho",
-        "An Absolute Will"
+        "isolatedInstitutionPsycho",
+        "anAbsoluteWill"
       ],
       "story": "",
-      "tragedySet": "Mystery Circle",
+      "tragedySet": "mysteryCircle",
       "mastermindHints": "Be careful not to let the therapist be revealed too easily. Also, try to bluff a private investigator for the first incident and play forbid :goodwill: on the mysteryBoy and/or godlyBeing in loops 2-4 to prevent that information from getting out.",
       "specialRules": [
         "None"
@@ -544,16 +544,16 @@
     },
     {
       "cast": {
-        "mysteryBoy": "Private Investigator",
-        "scientist": "Fool",
+        "mysteryBoy": "privateInvestigator",
+        "scientist": "fool",
         "boss": [
           "conspiracyTheorist",
           {
             "Turf": "School"
           }
         ],
-        "henchman": "Paranoiac",
-        "classRep": "Twin",
+        "henchman": "paranoiac",
+        "classRep": "twin",
         "doctor": "friend",
         "policeOfficer": "person",
         "forensicSpecialist": "person",
@@ -563,12 +563,12 @@
       "incidents": [
         {
           "day": 1,
-          "incident": "Closed Circle",
+          "incident": "closedCircle",
           "culprit": "classRep"
         },
         {
           "day": 2,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "henchman"
         },
         {
@@ -583,17 +583,17 @@
         },
         {
           "day": 5,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "henchman"
         },
         {
           "day": 6,
-          "incident": "The Silver Bullet",
+          "incident": "silverBullet",
           "culprit": "policeOfficer"
         },
         {
           "day": 7,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "henchman"
         },
         {
@@ -604,14 +604,14 @@
       ],
       "title": "Who Died? And Why?",
       "mainPlot": [
-        "A Quilt of Incidents"
+        "quiltIncidents"
       ],
       "subPlots": [
-        "Tricky Twins",
-        "Dance of Fools"
+        "trickyTwins",
+        "danceFools"
       ],
       "story": "YOU CAN READ THIS TO YOUR PLAYERS:\n\"Hello. If you have came here, we told you about our note detailing the upcoming... events. you are most likely in the understanding that no matter how hard you try, this mystery is far too difficult for any of our experts to solve. We have no idea what's going on. We've entitled this case therefore by the most prominent question, \"Who died? And why?\" because we need your help to answer them. We'll need your assistance in uncovering what roles and culprits there are, and convicting whoever is behind this. Judging by the patterns of crime recently, some mastermind is behind all of this. This, if we can find out information, might be the time we catch him.  Good luck.\"\n-Signed, someone... somewhere",
-      "tragedySet": "Mystery Circle",
+      "tragedySet": "mysteryCircle",
       "mastermindHints": "If you are playing this scenario, you should have TONS of experience. Go with your gut and really follow the basic rules. Don't give the Protagonists information, always try to win with the same loss conditions, and recognize them yourself - I'm too lazy right now.",
       "specialRules": [
         "N/A"
@@ -640,9 +640,9 @@
           }
         ],
         "doctor": "killer",
-        "scientist": "Paranoiac",
+        "scientist": "paranoiac",
         "godlyBeing": [
-          "Therapist",
+          "therapist",
           {
             "enters on loop": 2
           }
@@ -662,7 +662,7 @@
         },
         {
           "day": 2,
-          "incident": "The Silver Bullet",
+          "incident": "silverBullet",
           "culprit": "policeOfficer"
         },
         {
@@ -672,25 +672,25 @@
         },
         {
           "day": 5,
-          "incident": "Faked Suicide",
+          "incident": "fakedSuicide",
           "culprit": "doctor"
         },
         {
           "day": 6,
-          "incident": "Bestial Murder",
+          "incident": "bestialMurder",
           "culprit": "scientist"
         }
       ],
       "title": "Big Brother",
       "mainPlot": [
-        "Tightrope Plan"
+        "tightropePlan"
       ],
       "subPlots": [
-        "Isolated Institution Psycho",
-        "Smell of Gunpowder"
+        "isolatedInstitutionPsycho",
+        "smellGunpowder"
       ],
       "story": "",
-      "tragedySet": "Mystery Circle",
+      "tragedySet": "mysteryCircle",
       "mastermindHints": "Not sure yet",
       "specialRules": [
         "None"
@@ -713,15 +713,15 @@
       "cast": {
         "popIdol": "keyPerson",
         "godlyBeing": [
-          "Poisoner",
+          "poisoner",
           {
             "enters on loop": 2
           }
         ],
-        "patient": "Obstinate",
-        "alien": "Fool",
-        "richStudent": "Paranoiac",
-        "henchman": "Twin",
+        "patient": "obstinate",
+        "alien": "fool",
+        "richStudent": "paranoiac",
+        "henchman": "twin",
         "mysteryBoy": "killer",
         "doctor": "person",
         "journalist": "person",
@@ -736,7 +736,7 @@
         },
         {
           "day": 2,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "henchman"
         },
         {
@@ -751,20 +751,20 @@
         },
         {
           "day": 6,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "henchman"
         }
       ],
       "title": "The Revival of Greatness",
       "mainPlot": [
-        "A Drop of Strychnine"
+        "dropStrychnine"
       ],
       "subPlots": [
-        "An Absolute Will",
-        "Tricky Twins"
+        "anAbsoluteWill",
+        "trickyTwins"
       ],
       "story": "An exciting revival of the greatness.",
-      "tragedySet": "Mystery Circle",
+      "tragedySet": "mysteryCircle",
       "mastermindHints": "Force the increasing unease on day 1 by forbid :goodwill: on the boyStudent.",
       "specialRules": [
         "None"
@@ -930,9 +930,9 @@
     },
     {
       "cast": {
-        "journalist": "Ninja",
+        "journalist": "ninja",
         "richStudent": "friend",
-        "policeOfficer": "Obstinate",
+        "policeOfficer": "obstinate",
         "illusion": "factor",
         "forensicSpecialist": "person",
         "scientist": "person",
@@ -953,33 +953,33 @@
         },
         {
           "day": 3,
-          "incident": "Conspiracies",
+          "incident": "conspiracies",
           "culprit": "richStudent"
         },
         {
           "day": 4,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "classRep"
         },
         {
           "day": 5,
           "incident": [
-            "Fake Incident",
-            "Uproar"
+            "fakeIncident",
+            "uproar"
           ],
           "culprit": "forensicSpecialist"
         }
       ],
       "title": "They're Out to Get You",
       "mainPlot": [
-        "Male Confrontation"
+        "maleConfrontation"
       ],
       "subPlots": [
-        "Love-Hate Spiral",
-        "Unsafe Trigger"
+        "loveHateSpiral",
+        "unsafeTrigger"
       ],
       "story": "",
-      "tragedySet": "Midnight Zone",
+      "tragedySet": "midnightZone",
       "mastermindHints": "Mastermind secret rule: The :intrigue: from Increasing Unease cannot be placed on the journalist.",
       "specialRules": [
         "The Mastermind has a secret rule that dictates part of his/her play."
@@ -1006,7 +1006,7 @@
         "alien": "witch",
         "shrineMaiden": "friend",
         "patient": "friend",
-        "officeWorker": "Obstinate",
+        "officeWorker": "obstinate",
         "informer": "person",
         "journalist": "person"
       },
@@ -1018,7 +1018,7 @@
         },
         {
           "day": 2,
-          "incident": "Faked Suicide",
+          "incident": "fakedSuicide",
           "culprit": "journalist"
         },
         {
@@ -1029,16 +1029,16 @@
         {
           "day": 4,
           "incident": [
-            "Fake Incident",
-            "Confession"
+            "fakeIncident",
+            "confession"
           ],
           "culprit": "classRep"
         },
         {
           "day": 5,
           "incident": [
-            "Fake Incident",
-            "Breakthrough"
+            "fakeIncident",
+            "breakthrough"
           ],
           "culprit": "alien"
         },
@@ -1051,14 +1051,14 @@
       ],
       "title": "The Greatest Greatness",
       "mainPlot": [
-        "Fated Connections"
+        "fatedConnections"
       ],
       "subPlots": [
-        "Witches Tea Time",
-        "Love-Hate Spiral"
+        "witchesTeaTime",
+        "loveHateSpiral"
       ],
       "story": "Idk",
-      "tragedySet": "Midnight Zone",
+      "tragedySet": "midnightZone",
       "mastermindHints": "",
       "specialRules": [
         "New incident: Diagonal Destruction 2: Everyone in the diagonally opposite location of the culprit dies"
@@ -1080,11 +1080,11 @@
     {
       "cast": {
         "henchman": "conspiracyTheorist",
-        "alien": "Fool",
+        "alien": "fool",
         "classRep": "serialKiller",
-        "shrineMaiden": "Paranoiac",
-        "richStudent": "Therapist",
-        "mysteryBoy": "Poisoner",
+        "shrineMaiden": "paranoiac",
+        "richStudent": "therapist",
+        "mysteryBoy": "poisoner",
         "journalist": "person",
         "patient": "person",
         "policeOfficer": "person",
@@ -1105,35 +1105,35 @@
         },
         {
           "day": 3,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "henchman"
         },
         {
           "day": 4,
-          "incident": "A Suspicious Letter",
+          "incident": "suspiciousLetter",
           "culprit": "shrineMaiden"
         },
         {
           "day": 5,
-          "incident": "Portent",
+          "incident": "portent",
           "culprit": "alien"
         },
         {
           "day": 6,
-          "incident": "The Silver Bullet",
+          "incident": "silverBullet",
           "culprit": "informer"
         }
       ],
       "title": "Vroom Vroom Greatness",
       "mainPlot": [
-        "A Quilt of Incidents"
+        "quiltIncidents"
       ],
       "subPlots": [
-        "Smell of Gunpowder",
-        "Isolated Institution Psycho"
+        "smellGunpowder",
+        "isolatedInstitutionPsycho"
       ],
       "story": "A chance for the greatness to vroom.",
-      "tragedySet": "Mystery Circle",
+      "tragedySet": "mysteryCircle",
       "mastermindHints": "Be careful what you do.",
       "specialRules": [
         "Protagonists know when the incidents are and who does them except for day 5 but not which incident occurs on each day. The incident list is in the culprit list for the mastermind."
@@ -1157,8 +1157,8 @@
         "girlStudent": "conspiracyTheorist",
         "richStudent": "keyPerson",
         "alien": "brain",
-        "officeWorker": "Magician",
-        "shrineMaiden": "Magician",
+        "officeWorker": "magician",
+        "shrineMaiden": "magician",
         "popIdol": "immortal",
         "patient": "person",
         "policeOfficer": "person",
@@ -1167,27 +1167,27 @@
       "incidents": [
         {
           "day": 1,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "boyStudent"
         },
         {
           "day": 2,
-          "incident": "Conspiracies",
+          "incident": "conspiracies",
           "culprit": "richStudent"
         },
         {
           "day": 3,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "officeWorker"
         },
         {
           "day": 4,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "boyStudent"
         },
         {
           "day": 5,
-          "incident": "Uproar",
+          "incident": "uproar",
           "culprit": "policeOfficer"
         },
         {
@@ -1198,14 +1198,14 @@
       ],
       "title": "Night at the Vroomsbury",
       "mainPlot": [
-        "Secret Record"
+        "secretRecord"
       ],
       "subPlots": [
-        "Showtime of Death",
-        "Unanswered Heart"
+        "showtimeDeath",
+        "unansweredHeart"
       ],
       "story": "",
-      "tragedySet": "Midnight Zone",
+      "tragedySet": "midnightZone",
       "mastermindHints": "",
       "specialRules": [
         ""
@@ -1374,18 +1374,18 @@
     {
       "cast": {
         "informer": "keyPerson",
-        "policeOfficer": "Poisoner",
+        "policeOfficer": "poisoner",
         "godlyBeing": [
-          "Fool",
+          "fool",
           {
             "enters on loop": 2
           }
         ],
-        "henchman": "Twin",
-        "richStudent": "Paranoiac",
+        "henchman": "twin",
+        "richStudent": "paranoiac",
         "boyStudent": "serialKiller",
         "girlStudent": "friend",
-        "mysteryBoy": "Private Investigator",
+        "mysteryBoy": "privateInvestigator",
         "classRep": "person",
         "officeWorker": "person",
         "transferStudent": [
@@ -1398,12 +1398,12 @@
       "incidents": [
         {
           "day": 1,
-          "incident": "Closed Circle",
+          "incident": "closedCircle",
           "culprit": "richStudent"
         },
         {
           "day": 2,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "henchman"
         },
         {
@@ -1413,7 +1413,7 @@
         },
         {
           "day": 4,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "henchman"
         },
         {
@@ -1423,20 +1423,20 @@
         },
         {
           "day": 6,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "godlyBeing"
         }
       ],
       "title": "Zexal?",
       "mainPlot": [
-        "A Drop of Strychnine"
+        "dropStrychnine"
       ],
       "subPlots": [
-        "Tricky Twins",
+        "trickyTwins",
         "hiddenFreak"
       ],
       "story": "The Zexal has now taken over the world.",
-      "tragedySet": "Mystery Circle",
+      "tragedySet": "mysteryCircle",
       "mastermindHints": "None",
       "specialRules": [
         "None"
@@ -1462,7 +1462,7 @@
         "richStudent": "conspiracyTheorist",
         "scientist": "witness",
         "policeOfficer": "deepOne",
-        "informer": "Paranoiac",
+        "informer": "paranoiac",
         "transferStudent": [
           "person",
           {
@@ -1491,7 +1491,7 @@
         },
         {
           "day": 5,
-          "incident": "Uproar",
+          "incident": "uproar",
           "culprit": "soldier"
         },
         {
@@ -1533,11 +1533,11 @@
         "popIdol": "keyPerson",
         "policeOfficer": "brain",
         "informer": "killer",
-        "forensicSpecialist": "Twin",
-        "scientist": "Paranoiac",
-        "alien": "Fool",
+        "forensicSpecialist": "twin",
+        "scientist": "paranoiac",
+        "alien": "fool",
         "shrineMaiden": "friend",
-        "mysteryBoy": "Obstinate",
+        "mysteryBoy": "obstinate",
         "richStudent": "person",
         "patient": "person"
       },
@@ -1584,11 +1584,11 @@
         "murderPlan"
       ],
       "subPlots": [
-        "Tricky Twins",
-        "Dance of Fools"
+        "trickyTwins",
+        "danceFools"
       ],
       "story": "?",
-      "tragedySet": "Mystery Circle",
+      "tragedySet": "mysteryCircle",
       "mastermindHints": "?",
       "specialRules": [
         "Special Incident: Diagonal Destruction 3 (the culprit must kill up to 2 people in the diagonally opposite location)"
@@ -1610,11 +1610,11 @@
     {
       "cast": {
         "journalist": "keyPerson",
-        "forensicSpecialist": "Poisoner",
-        "alien": "Fool",
-        "classRep": "Paranoiac",
+        "forensicSpecialist": "poisoner",
+        "alien": "fool",
+        "classRep": "paranoiac",
         "officeWorker": "conspiracyTheorist",
-        "patient": "Therapist",
+        "patient": "therapist",
         "doctor": "serialKiller",
         "nurse": "person",
         "henchman": "person",
@@ -1628,12 +1628,12 @@
         },
         {
           "day": 2,
-          "incident": "Closed Circle",
+          "incident": "closedCircle",
           "culprit": "alien"
         },
         {
           "day": 3,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "officeWorker"
         },
         {
@@ -1643,7 +1643,7 @@
         },
         {
           "day": 5,
-          "incident": "Terrorism",
+          "incident": "terrorism",
           "culprit": "nurse"
         },
         {
@@ -1654,14 +1654,14 @@
       ],
       "title": "New Vroom",
       "mainPlot": [
-        "A Drop of Strychnine"
+        "dropStrychnine"
       ],
       "subPlots": [
-        "Isolated Institution Psycho",
-        "Smell of Gunpowder"
+        "isolatedInstitutionPsycho",
+        "smellGunpowder"
       ],
       "story": "A vroom",
-      "tragedySet": "Mystery Circle",
+      "tragedySet": "mysteryCircle",
       "mastermindHints": "?",
       "specialRules": [
         "None"
@@ -1693,7 +1693,7 @@
         ],
         "richStudent": "timeTraveler",
         "blackCat": "deepOne",
-        "informer": "Paranoiac",
+        "informer": "paranoiac",
         "teacher": "person",
         "shrineMaiden": "person"
       },
@@ -1715,7 +1715,7 @@
         },
         {
           "day": 5,
-          "incident": "Uproar",
+          "incident": "uproar",
           "culprit": "teacher"
         }
       ],
@@ -2112,11 +2112,11 @@
     {
       "cast": {
         "soldier": "person",
-        "blackCat": "Fool",
+        "blackCat": "fool",
         "shrineMaiden": "person",
-        "ai": "Poisoner",
+        "ai": "poisoner",
         "boss": [
-          "Private Investigator",
+          "privateInvestigator",
           {
             "Turf": "School"
           }
@@ -2135,40 +2135,40 @@
       "incidents": [
         {
           "day": 1,
-          "incident": "Closed Circle",
+          "incident": "closedCircle",
           "culprit": "youngGirl"
         },
         {
           "day": 2,
-          "incident": "Closed Circle",
+          "incident": "closedCircle",
           "culprit": "henchman"
         },
         {
           "day": 3,
-          "incident": "Closed Circle",
+          "incident": "closedCircle",
           "culprit": "soldier"
         },
         {
           "day": 4,
-          "incident": "Closed Circle",
+          "incident": "closedCircle",
           "culprit": "ai"
         },
         {
           "day": 5,
-          "incident": "Closed Circle",
+          "incident": "closedCircle",
           "culprit": "blackCat"
         }
       ],
       "title": "Break through the blockade？",
       "mainPlot": [
-        "A Drop of Strychnine"
+        "dropStrychnine"
       ],
       "subPlots": [
-        "Smell of Gunpowder",
-        "I am a Master Detective"
+        "smellGunpowder",
+        "masterDetective"
       ],
       "story": "",
-      "tragedySet": "Mystery Circle",
+      "tragedySet": "mysteryCircle",
       "mastermindHints": "Always use the first day's events（boss ability）and try to kill friend.\nSet :paranoia:+1】to boss and youngGirl,use CT‘s ability to youngGirl EVERY DAY,you will win（by 12 :paranoia:）.\nHide KP until the end.Poisoner only kill boss(undead) or AI itself\nSpecial rule is a trap for protagonists.\n*The protagonist's method of preventing victory*：Day 1 move boss or 2 characters into school and move heachman out,D2-4 use 3 :paranoia: -1】,D4-5 use youngGirl's teleport ability and kill any one have :paranoia:.",
       "specialRules": [
         "Mastermind removes :paranoia: -1】 from hand",
@@ -2243,10 +2243,10 @@
     },
     {
       "cast": {
-        "henchman": "Ninja",
-        "illusion": "Prophet",
+        "henchman": "ninja",
+        "illusion": "prophet",
         "alien": "person",
-        "Sacred Tree": "Magician",
+        "Sacred Tree": "magician",
         "richStudent": "immortal",
         "copycat": "person"
       },
@@ -2269,14 +2269,14 @@
       ],
       "title": "Deserted Street",
       "mainPlot": [
-        "Male Confrontation"
+        "maleConfrontation"
       ],
       "subPlots": [
-        "Showtime of Death",
-        "Worshippers of the Apocalypse"
+        "showtimeDeath",
+        "worshippersApocalypse"
       ],
       "story": "This script is used for a 2-player game only. And discussion is prohibited during each loop.",
-      "tragedySet": "Midnight Zone",
+      "tragedySet": "midnightZone",
       "mastermindHints": "Mix the winning conditions with 2 :intrigue: on the Shrine. Never let copycat suicide at 1 :paranoia:, using forbid :paranoia: and :paranoia: -1. Use movement to stop alien from killing RMD and Sacred Tree.",
       "specialRules": [
         "All cards in mastermind's hand have (1x∞)."
@@ -3905,8 +3905,8 @@
       "cast": {
         "policeOfficer": "brain",
         "popIdol": "killer",
-        "patient": "Obstinate",
-        "shrineMaiden": "Twin",
+        "patient": "obstinate",
+        "shrineMaiden": "twin",
         "alien": "person",
         "godlyBeing": [
           "person",
@@ -3916,7 +3916,7 @@
         ],
         "journalist": "person",
         "richStudent": "person",
-        "henchman": "Paranoiac"
+        "henchman": "paranoiac"
       },
       "incidents": [
         {
@@ -3926,17 +3926,17 @@
         },
         {
           "day": 2,
-          "incident": "Closed Circle",
+          "incident": "closedCircle",
           "culprit": "shrineMaiden"
         },
         {
           "day": 3,
-          "incident": "Bestial Murder",
+          "incident": "bestialMurder",
           "culprit": "henchman"
         },
         {
           "day": 4,
-          "incident": "Terrorism",
+          "incident": "terrorism",
           "culprit": "alien"
         },
         {
@@ -3947,14 +3947,14 @@
       ],
       "title": "Vroom Vroom",
       "mainPlot": [
-        "Tightrope Plan"
+        "tightropePlan"
       ],
       "subPlots": [
-        "An Absolute Will",
-        "Tricky Twins"
+        "anAbsoluteWill",
+        "trickyTwins"
       ],
       "story": "An exciting battle between the mastermind and the protagonists. Makes sense if you know me very well.",
-      "tragedySet": "Mystery Circle",
+      "tragedySet": "mysteryCircle",
       "mastermindHints": "Just win kids.",
       "specialRules": [
         "None"
@@ -4035,10 +4035,10 @@
         "classRep": "conspiracyTheorist",
         "richStudent": "keyPerson",
         "doctor": "brain",
-        "henchman": "Magician",
+        "henchman": "magician",
         "shrineMaiden": "immortal",
         "patient": "friend",
-        "policeOfficer": "Obstinate",
+        "policeOfficer": "obstinate",
         "alien": "person",
         "mysteryBoy": "factor"
       },
@@ -4055,7 +4055,7 @@
         },
         {
           "day": 5,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "henchman"
         },
         {
@@ -4066,14 +4066,14 @@
       ],
       "title": "The Zone of Midnight",
       "mainPlot": [
-        "Secret Record"
+        "secretRecord"
       ],
       "subPlots": [
-        "Showtime of Death",
-        "Love-Hate Spiral"
+        "showtimeDeath",
+        "loveHateSpiral"
       ],
       "story": "An exciting dance under the moonlight.",
-      "tragedySet": "Midnight Zone",
+      "tragedySet": "midnightZone",
       "mastermindHints": "",
       "specialRules": [
         "None"
@@ -4094,9 +4094,9 @@
     },
     {
       "cast": {
-        "forensicSpecialist": "Magician",
+        "forensicSpecialist": "magician",
         "alien": "immortal",
-        "patient": "Prophet",
+        "patient": "prophet",
         "boyStudent": "person",
         "boss": [
           "conspiracyTheorist",
@@ -4106,7 +4106,7 @@
         ],
         "richStudent": "friend",
         "officeWorker": "serialKiller",
-        "mysteryBoy": "Obstinate",
+        "mysteryBoy": "obstinate",
         "nurse": "person"
       },
       "incidents": [
@@ -4122,7 +4122,7 @@
         },
         {
           "day": 4,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "forensicSpecialist"
         },
         {
@@ -4133,14 +4133,14 @@
       ],
       "title": "Leave us to Die",
       "mainPlot": [
-        "Fated Connections"
+        "fatedConnections"
       ],
       "subPlots": [
-        "Showtime of Death",
-        "Worshippers of the Apocalypse"
+        "showtimeDeath",
+        "worshippersApocalypse"
       ],
       "story": "untested",
-      "tragedySet": "Midnight Zone",
+      "tragedySet": "midnightZone",
       "mastermindHints": "",
       "specialRules": [
         "Mastermind removes Forbid :goodwill: from hand"
@@ -4163,32 +4163,32 @@
       "cast": {
         "alien": "keyPerson",
         "richStudent": "cultist",
-        "policeOfficer": "Ninja",
-        "doctor": "Magician",
+        "policeOfficer": "ninja",
+        "doctor": "magician",
         "forensicSpecialist": "immortal",
-        "patient": "Prophet",
+        "patient": "prophet",
         "mysteryBoy": "conspiracyTheorist",
         "officeWorker": "person"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "forensicSpecialist"
         },
         {
           "day": 3,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "forensicSpecialist"
         },
         {
           "day": 4,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "forensicSpecialist"
         },
         {
           "day": 5,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "richStudent"
         },
         {
@@ -4199,14 +4199,14 @@
       ],
       "title": "Hide and Seek",
       "mainPlot": [
-        "The Devil’s Hand"
+        "devilsHand"
       ],
       "subPlots": [
-        "Showtime of Death",
-        "Worshippers of the Apocalypse"
+        "showtimeDeath",
+        "worshippersApocalypse"
       ],
       "story": "",
-      "tragedySet": "Midnight Zone",
+      "tragedySet": "midnightZone",
       "mastermindHints": "",
       "specialRules": [
         "mastermind removes forbid :goodwill: from hand"
@@ -4229,7 +4229,7 @@
       "cast": {
         "doctor": "person",
         "richStudent": "friend",
-        "alien": "Obstinate",
+        "alien": "obstinate",
         "girlStudent": "person",
         "godlyBeing": [
           "serialKiller",
@@ -4238,23 +4238,23 @@
           }
         ],
         "forensicSpecialist": "serialKiller",
-        "mysteryBoy": "Ninja",
-        "patient": "Prophet"
+        "mysteryBoy": "ninja",
+        "patient": "prophet"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Conspiracies",
+          "incident": "conspiracies",
           "culprit": "shrineMaiden"
         },
         {
           "day": 3,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "girlStudent"
         },
         {
           "day": 4,
-          "incident": "Uproar",
+          "incident": "uproar",
           "culprit": "policeOfficer"
         },
         {
@@ -4265,22 +4265,22 @@
         {
           "day": 6,
           "incident": [
-            "Fake Incident",
-            "Confession"
+            "fakeIncident",
+            "confession"
           ],
           "culprit": "alien"
         }
       ],
       "title": "Summoning the Old Ones",
       "mainPlot": [
-        "Fated Connections"
+        "fatedConnections"
       ],
       "subPlots": [
-        "Dice of the Gods",
-        "Worshippers of the Apocalypse"
+        "diceOfGods",
+        "worshippersApocalypse"
       ],
       "story": "untested",
-      "tragedySet": "Midnight Zone",
+      "tragedySet": "midnightZone",
       "mastermindHints": "",
       "specialRules": [
         "Mastermind removes forbid :goodwill: from hand"
@@ -4302,12 +4302,12 @@
     {
       "cast": {
         "informer": "keyPerson",
-        "policeOfficer": "Poisoner",
-        "patient": "Fool",
+        "policeOfficer": "poisoner",
+        "patient": "fool",
         "boyStudent": "friend",
-        "richStudent": "Paranoiac",
+        "richStudent": "paranoiac",
         "girlStudent": "serialKiller",
-        "alien": "Twin",
+        "alien": "twin",
         "officeWorker": "person",
         "henchman": "person",
         "journalist": "person"
@@ -4315,7 +4315,7 @@
       "incidents": [
         {
           "day": 1,
-          "incident": "Portent",
+          "incident": "portent",
           "culprit": "henchman"
         },
         {
@@ -4325,12 +4325,12 @@
         },
         {
           "day": 3,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "alien"
         },
         {
           "day": 5,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "alien"
         },
         {
@@ -4341,14 +4341,14 @@
       ],
       "title": "Let's Try Again",
       "mainPlot": [
-        "A Drop of Strychnine"
+        "dropStrychnine"
       ],
       "subPlots": [
-        "Tricky Twins",
+        "trickyTwins",
         "hiddenFreak"
       ],
       "story": "A new mystery circle script. I wanted to try to make one the protagonists could win this time.",
-      "tragedySet": "Mystery Circle",
+      "tragedySet": "mysteryCircle",
       "mastermindHints": "Not sure, do your best. Try to kill the informer as soon as possible.",
       "specialRules": [
         "None"
@@ -4373,7 +4373,7 @@
         "alien": "serialKiller",
         "journalist": "friend",
         "henchman": "friend",
-        "ai": "Obstinate",
+        "ai": "obstinate",
         "shrineMaiden": "factor",
         "richStudent": "person",
         "scientist": "person",
@@ -4383,7 +4383,7 @@
       "incidents": [
         {
           "day": 2,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "ai"
         },
         {
@@ -4393,7 +4393,7 @@
         },
         {
           "day": 4,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "ai"
         },
         {
@@ -4403,20 +4403,20 @@
         },
         {
           "day": 6,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "ai"
         }
       ],
       "title": "Vroom Vroom 2",
       "mainPlot": [
-        "Fated Connections"
+        "fatedConnections"
       ],
       "subPlots": [
-        "Love-Hate Spiral",
-        "Unsafe Trigger"
+        "loveHateSpiral",
+        "unsafeTrigger"
       ],
       "story": "",
-      "tragedySet": "Midnight Zone",
+      "tragedySet": "midnightZone",
       "mastermindHints": "",
       "specialRules": [
         "None"
@@ -4844,12 +4844,12 @@
     {
       "cast": {
         "richStudent": "brain",
-        "policeOfficer": "Fool",
+        "policeOfficer": "fool",
         "classRep": "friend",
         "girlStudent": "conspiracyTheorist",
         "shrineMaiden": "friend",
-        "alien": "Private Investigator",
-        "mysteryBoy": "Obstinate",
+        "alien": "privateInvestigator",
+        "mysteryBoy": "obstinate",
         "patient": "person",
         "henchman": "person",
         "officeWorker": "person"
@@ -4857,17 +4857,17 @@
       "incidents": [
         {
           "day": 1,
-          "incident": "Terrorism",
+          "incident": "terrorism",
           "culprit": "patient"
         },
         {
           "day": 2,
-          "incident": "Terrorism",
+          "incident": "terrorism",
           "culprit": "girlStudent"
         },
         {
           "day": 3,
-          "incident": "Faked Suicide",
+          "incident": "fakedSuicide",
           "culprit": "policeOfficer"
         },
         {
@@ -4883,14 +4883,14 @@
       ],
       "title": "The Fall of the Vroom",
       "mainPlot": [
-        "The Black School"
+        "blackSchool"
       ],
       "subPlots": [
-        "Dance of Fools",
-        "I am a Master Detective"
+        "danceFools",
+        "masterDetective"
       ],
       "story": "",
-      "tragedySet": "Mystery Circle",
+      "tragedySet": "mysteryCircle",
       "mastermindHints": "",
       "specialRules": [
         "None"
@@ -4973,9 +4973,9 @@
         "doctor": "keyPerson",
         "informer": "brain",
         "popIdol": "conspiracyTheorist",
-        "officeWorker": "Magician",
+        "officeWorker": "magician",
         "richStudent": "immortal",
-        "shrineMaiden": "Prophet",
+        "shrineMaiden": "prophet",
         "alien": "person",
         "policeOfficer": "person",
         "patient": "person",
@@ -4994,12 +4994,12 @@
         },
         {
           "day": 4,
-          "incident": "Serial Murder",
+          "incident": "serialMurder",
           "culprit": "richStudent"
         },
         {
           "day": 5,
-          "incident": "Uproar",
+          "incident": "uproar",
           "culprit": "forensicSpecialist"
         },
         {
@@ -5009,20 +5009,20 @@
         },
         {
           "day": 7,
-          "incident": "Confession",
+          "incident": "confession",
           "culprit": "officeWorker"
         }
       ],
       "title": "Overvroomed?",
       "mainPlot": [
-        "Secret Record"
+        "secretRecord"
       ],
       "subPlots": [
-        "Worshippers of the Apocalypse",
-        "Showtime of Death"
+        "worshippersApocalypse",
+        "showtimeDeath"
       ],
       "story": "",
-      "tragedySet": "Midnight Zone",
+      "tragedySet": "midnightZone",
       "mastermindHints": "",
       "specialRules": [
         "None"
