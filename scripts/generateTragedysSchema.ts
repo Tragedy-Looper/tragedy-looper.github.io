@@ -493,7 +493,7 @@ function generatePlotsSchema({ roleNames }: Names) {
 
 
                     },
-                    "required": ["id", "name", "roles", "rules"],
+                    "required": ["id", "name", "roles"],
 
                 }
             }
@@ -1072,7 +1072,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
 function generateTragedySetsSchema({ plotNames, incidentNames }: Names) {
     return {
         "$schema": "http://json-schema.org/draft-07/schema#",
-        "title": "Tragedy Sets",
+        "title": "Tragedys",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -1151,7 +1151,23 @@ function WriteSchema(schema: ReadonlyArrayTransform<JSONSchema>, type: string) {
 
             console.log('TypeScript Definition geschrieben nach', srcDir);
             fs.writeFileSync(srcDir, `
-export type ${typeName} = Exclude<(${toPascalCase(type)})['${type}'], undefined>[number]; 
+
+                
+type ReadonlyRecursive<T> = {
+  readonly [P in keyof T]: T[P] extends (infer U)[]
+  ? ReadonlyArray<ReadonlyRecursive<U>>
+  : T[P] extends string
+  ? T[P]
+  : T[P] extends number
+  ? T[P]
+  : T[P] extends null
+  ? null
+  : T[P] extends undefined
+  ? undefined
+  : ReadonlyRecursive<T[P]>;
+};
+
+export type ${typeName} = ReadonlyRecursive<Exclude<(${toPascalCase(type)})['${type}'], undefined>[number]>; 
 
 ${result}`, { encoding: 'utf-8' });
         });

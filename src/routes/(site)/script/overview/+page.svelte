@@ -9,6 +9,7 @@
   import { loadAllLocalScripts, loadScript } from '../../../../storage';
   import type { Script } from '../../../../scripts.g';
   import Rating from './../rating.svelte';
+  import Translation from '../../../../view/translation.svelte';
 
   $: scripts = Object.values(scriptLookup);
 
@@ -59,8 +60,6 @@
   }
 
   let exportJson: string | undefined;
-
- 
 </script>
 
 <ExportView bind:exportJson />
@@ -73,8 +72,15 @@
       {#each selectedScript as s}
         <div>
           <a href={`${base}/script/?script=${encodeURIComponent(JSON.stringify(s))}`}
-            >{s.set?.number ?? ''}
-            {s.set?.name ?? ''}
+            >{#each s.set ?? [] as set, i}
+              {#if i > 0}
+                /
+              {/if}
+              {set.number ?? ''}
+              {set.name ?? ''}
+            {:else}
+              <Translation translationKey="No Set" />
+            {/each}
             {s.title} by {s.creator} [{s.tragedySet}] difficulty {join(
               s.difficultySets?.map((x) => x.difficulty.toString()) ?? [],
               ' / '

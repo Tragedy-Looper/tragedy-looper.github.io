@@ -108,12 +108,33 @@ export const ${type} = [\n${filteredFiles.map(x => ` ...${x}`).reduce((p, c) => 
             p[c.id] = c;
         }
         return p;
-    }, {} as Record<typeof ${type}[number]['id'], typeof ${type}[number]>); 
+    }, {} as Record<typeof ${type}[number]['id'], ReadonlyRecursive<${type[0].toUpperCase()}${type.substring(1, type.length - 1)}>>);
     ` : '');
 }
 
+const premableTypes =
+    types.map(type => `import type { ${type[0].toUpperCase()}${type.substring(1, type.length - 1)} } from './${type}.g';\n`).reduce((p, c) => `${p}\n${c}`, '')
+    + `
 
-fs.writeFileSync('./src/data.ts', types.map(getTypescriptStrings).reduce((p, c) => `${p};\n\n${c}`, ''));
+type ReadonlyRecursive<T> = {
+  readonly [P in keyof T]: T[P] extends (infer U)[]
+  ? ReadonlyArray<ReadonlyRecursive<U>>
+  : T[P] extends string
+  ? T[P]
+  : T[P] extends number
+  ? T[P]
+  : T[P] extends null
+  ? null
+  : T[P] extends undefined
+  ? undefined
+  : ReadonlyRecursive<T[P]>
+  ;
+};
+
+`
+    ;
+
+fs.writeFileSync('./src/data.ts', premableTypes + types.map(getTypescriptStrings).reduce((p, c) => `${p};\n\n${c}`, ''));
 console.log('finished game data typescript generation');
 
 // translations
@@ -245,8 +266,8 @@ const uniqueStrings = [...new Set([...nonScriptStrings, ...srcTranslationStrings
 const targetSchemaLocations = ['./static', './translations'];
 targetSchemaLocations.forEach(location => writeSchema(uniqueStrings, location));
 
-function quoteString(text:string){
-    return `"${text.replaceAll('"','\\"')}"`
+function quoteString(text: string) {
+    return `"${text.replaceAll('"', '\\"')}"`
 }
 
 

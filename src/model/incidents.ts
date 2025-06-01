@@ -17,24 +17,24 @@ export function isMobIncident(name: unknown): name is MobIncident {
     if (typeof name !== 'string' || !isIncidentName(name)) {
         return false;
     }
-    const incident = incidents[name];
-    return 'mob' in incident && typeof incident.mob === 'number';
+    const incident = data.incidentsLookup[name];
+    return typeof incident.mob === 'number';
 }
 
 export function isFakeIncident(name: unknown): name is FakedIncident {
     if (typeof name != 'string' || !isIncidentName(name)) {
         return false;
     }
-    const incident = incidents[name];
-    return 'faked' in incident && incident.faked === true;
+    const incident = data.incidentsLookup[name];
+    return incident.faked === true;
 }
 
 export function isRepeatedCulpritIncident(name: unknown): name is MobIncident {
     if (typeof name !== 'string' || !isIncidentName(name)) {
         return false;
     }
-    const incident = incidents[name];
-    return 'repeatedCulprit' in incident && incident.repeatedCulprit === true;
+    const incident = data.incidentsLookup[name];
+    return incident.repeatedCulprit === true;
 }
 
 export function isIncident(obj: unknown): obj is Incident {
@@ -64,7 +64,7 @@ export function isIncident(obj: unknown): obj is Incident {
 
 
 
-export type IncidentName = keyof IncidentsHelper['incidents'];
+export type IncidentName = keyof typeof data.incidentsLookup;
 
 type MobIncidentHelper<T> = T extends { 'mob': number } ? T : never;
 export type MobIncident = MobIncidentHelper<Incident>['id'];
@@ -82,10 +82,8 @@ class IncidentsHelper {
 
 const i = new IncidentsHelper();
 
-export function isIncidentName(name: string): name is IncidentName {
-    return i.incidents[name as IncidentName] != undefined;
+export function isIncidentName(name: unknown): name is IncidentName {
+    return typeof name === 'string' && i.incidents[name as IncidentName] != undefined;
 }
 
-export const incidents = i.incidents;
 
-export const incidentNames = Object.keys(incidents) as IncidentName[];

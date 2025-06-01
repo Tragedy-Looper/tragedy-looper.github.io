@@ -4,19 +4,30 @@
   import { onMount } from 'svelte';
 
   import {
-    characters,
     characterscomesInLater,
+    isLocationName,
     type CharacterName,
+    type LocationName,
+    isCharacterName,
   } from '../../../model/characters';
   import { stringifySearchForPlayerAid } from '../../../serilezer';
-  import { distinct, keys } from '../../../misc';
+  import { distinct, isArray, keys } from '../../../misc';
   import { base } from '$app/paths';
   import Translation from '../../../view/translation.svelte';
   import { getString } from '../+layout.svelte';
   import type { Script } from '../../../scripts.g';
-  import { roles } from '../../../model/roles';
-  import { plots } from '../../../model/plots';
-  import { tragedySets } from '../../../model/tragedySets';
+  import { isRoleName, singleRolenames, type RoleName } from '../../../model/roles';
+  import {
+    charactersLookup,
+    incidentsLookup,
+    plotsLookup,
+    rolesLookup,
+    tragedysLookup,
+  } from '../../../data';
+  import { isIncidentName } from '../../../model/incidents';
+  import { isPlotName, type PlotName } from '../../../model/plots';
+  import { type Character } from '../../../characters.g';
+  import { type Plot } from '../../../plots.g';
   export let script: Script | undefined;
 
   let alwaysTransmitCharacters: boolean[] = characterscomesInLater.map(() => true);
@@ -191,7 +202,7 @@
   <div>
     <strong
       ><Translation
-        translationKey={tragedySets[script.tragedySet ?? 'Basic Tragedy'].name}
+        translationKey={tragedysLookup[script.tragedySet ?? 'Basic Tragedy'].name}
       /></strong
     >
   </div>
@@ -203,19 +214,19 @@
     <strong style="grid-column: 1; grid-row: 1;"
       ><Translation translationKey={'Main Plot'} />:</strong
     >
+    {#snippet plotEntry(s: PlotName | readonly [PlotName, Record<string, unknown>])}
+      {#if typeof s == 'string'}
+        <Translation translationKey={plotsLookup[s].name} />
+      {:else}
+        {@const plot = plotsLookup[s[0]]}
+        {@const options = s[1] ?? {}}
+        <Translation translationKey={plot.name} />
+        {@render renderOptions(options, [plot])}
+      {/if}
+    {/snippet}
     {#each script.mainPlot as s, i}
       <span style="grid-column: 2; grid-row: {i + 1};">
-        {#if typeof s == 'string'}
-          <Translation translationKey={plots[s].name} />
-        {:else}
-          <Translation translationKey={plots[s[0]].name} />
-          <small>
-            {#each Object.entries(s[1]) as [key, value]}
-              <br />
-              (<Translation translationKey={key} />: <Translation translationKey={value} />)
-            {/each}
-          </small>
-        {/if}
+        {@render plotEntry(s)}
       </span>
     {/each}
     <strong style="grid-column: 1; grid-row: 2;"
@@ -223,17 +234,7 @@
     >
     {#each script.subPlots as s, i}
       <span style="grid-column: 2; grid-row: {i + 1 + script.mainPlot.length};">
-        {#if typeof s == 'string'}
-          <Translation translationKey={plots[s].name} />
-        {:else}
-          <Translation translationKey={plots[s[0]].name} />
-          <small>
-            {#each Object.entries(s[1]) as [key, value]}
-              <br />
-              (<Translation translationKey={key} />: <Translation translationKey={value} />)
-            {/each}
-          </small>
-        {/if}
+        {@render plotEntry(s)}
       </span>
     {/each}
   </div>
@@ -250,19 +251,18 @@
         {#each Object.entries(script.cast) as [cast, role]}
           <tr>
             <td>
-              <Translation translationKey={characters[cast].name} />
+              <Translation translationKey={charactersLookup[cast].name} />
             </td>
             <td>
-              {#if Array.isArray(role)}
-                <Translation translationKey={roles[role[0]].name} />
-                {#each Object.entries(role[1]) as [key, value]}
-                  <br />
-                  <Translation translationKey={key} />: <Translation
-                    translationKey={value?.toLocaleString() ?? ''}
-                  />
-                {/each}
+              {#if isArray(role)}
+                {@const singleRols = singleRolenames(role[0])}
+                {@render renderRole(role[0])}
+                {@const roleData = singleRols.map((sr) => rolesLookup[sr])}
+                {@const castData = charactersLookup[cast]}
+                {@const options = { ...(role[1] ?? {}) }}
+                {@render renderOptions(options, [...roleData, castData])}
               {:else if role != undefined}
-                <Translation translationKey={roles[role].name} />
+                {@render renderRole(role)}
               {/if}
             </td>
           </tr>
@@ -287,17 +287,23 @@
               {day}
             </td>
             <td>
-              {#if Array.isArray(incident)}
-                {incident[0]}<br />
+              {#if isArray(incident)}
+                <Translation translationKey={incidentsLookup[incident[0]].name} /><br />
                 <small>
-                  ({incident[1]})
+                  (<Translation translationKey={incidentsLookup[incident[1]].name} />)
                 </small>
               {:else}
-                {incident}
+                <Translation translationKey={incidentsLookup[incident].name} />
               {/if}
             </td>
             <td>
-              {culprit}
+              {#if culprit === undefined}
+                <Translation translationKey={'No Culprit'} />
+              {:else if isLocationName(culprit)}
+                <Translation translationKey={culprit} />
+              {:else}
+                <Translation translationKey={charactersLookup[culprit].name} />
+              {/if}
             </td>
           </tr>
         {/each}
@@ -305,11 +311,11 @@
     </table>
   </div>
   {#if script.specialRules && script.specialRules?.filter((x) => x.length > 0).length > 0}
-    <h5>Special Rules</h5>
+    <h5><Translation translationKey={'Special Rules'} /></h5>
     <div>
       {#each script.specialRules?.filter((x) => x.length > 0) as s}
         <p>
-          {s}
+          <Translation translationKey={s} />
         </p>
       {/each}
     </div>
@@ -331,7 +337,7 @@
   <hr />
   <div>
     {#if host}
-      <strong>Always include suprise characters</strong>
+      <strong><Translation translationKey={'Always include suprise characters'} /></strong>
       <input
         type="checkbox"
         on:click={(e) => {
@@ -346,7 +352,7 @@
           <li>
             <lable>
               <input type="checkbox" role="switch" bind:checked={alwaysTransmitCharacters[i]} />
-              {a}
+              <Translation translationKey={charactersLookup[a].name} />
             </lable>
           </li>
         {/each}
@@ -354,6 +360,54 @@
     {/if}
   </div>
 {/if}
+
+{#snippet renderRole(role: RoleName)}
+  {@const roles = singleRolenames(role)}
+  {#each roles as r, i}
+    <Translation translationKey={rolesLookup[r].name} />
+    {#if i < roles.length - 1},
+    {/if}
+  {/each}
+{/snippet}
+{#snippet renderOptions(
+  options: Record<string, unknown>,
+  plots: { scriptSpecified?: (Character | Plot)['scriptSpecified'] }[]
+)}
+  {@const scriptSpecified = plots.flatMap((x) => x.scriptSpecified ?? [])}
+  {#if scriptSpecified.length > 0}
+    <small>
+      {#each scriptSpecified as s}
+        {@const optionName = s.name}
+        {#if optionName in options}
+          <br />
+          (<Translation translationKey={s.name} />:
+          {#if s.type === 'character' && isCharacterName(options[optionName])}
+            <Translation translationKey={charactersLookup[options[optionName]].name} />
+          {:else if s.type === 'location' && isLocationName(options[optionName])}
+            <Translation translationKey={options[optionName] as LocationName} />
+          {:else if s.type === 'role' && isRoleName(options[optionName])}
+            {@const splitted = singleRolenames(options[optionName])}
+            {#each splitted as optionName}
+              <Translation translationKey={rolesLookup[optionName].name} />
+              {#if optionName !== splitted[splitted.length - 1]},
+              {/if}
+            {/each}
+          {:else if s.type === 'plot' && isPlotName(options[optionName])}
+            <Translation translationKey={plotsLookup[options[optionName]].name} />
+          {:else if s.type === 'incident' && isIncidentName(options[optionName])}
+            <Translation translationKey={incidentsLookup[options[optionName]].name} />
+          {:else if s.type === 'number'}
+            {options[optionName]}
+          {:else if s.type === 'text' && typeof options[optionName] === 'string'}
+            <Translation translationKey={options[optionName]} />
+          {:else}
+            {options[optionName]}
+          {/if})
+        {/if}
+      {/each}
+    </small>
+  {/if}
+{/snippet}
 
 <style>
   header {

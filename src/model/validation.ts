@@ -2,7 +2,8 @@ import Ajv from 'ajv';
 import { betterAjvErrors, type ValidationError } from '@apideck/better-ajv-errors';
 import scriptSchema from './../scripts.schema.json' with { type: 'json' };
 import type { Script } from '../scripts.g';
-import { isTragedySetName, tragedySets } from './tragedySets';
+import { isTragedySetName } from './tragedySets';
+import { tragedysLookup } from '../data';
 
 
 export function validateScript(obj: unknown): { valid: true, script: Script } | { valid: false, errors: ValidationError[] } {
@@ -57,10 +58,10 @@ export function validateScript(obj: unknown): { valid: true, script: Script } | 
             errors: [{
                 context: {
                     errorType: 'enum',
-                    allowedValues: Object.keys(tragedySets),
+                    allowedValues: Object.keys(tragedysLookup),
                 },
                 path: '/tragedySet',
-                message: `must be one of the enum values: ${Object.keys(tragedySets).join(', ')}`
+                message: `must be one of the enum values: ${Object.keys(tragedysLookup).join(', ')}`
             }]
         };
     }
@@ -72,7 +73,7 @@ export function validateScript(obj: unknown): { valid: true, script: Script } | 
             errors: [{
                 context: {
                     errorType: 'enum',
-                    allowedValues: Object.keys(tragedySets),
+                    allowedValues: Object.keys(tragedysLookup),
                 },
                 message: `No schema found for tragedySet "${usedTragedySet}"`,
                 path: '/tragedySet'

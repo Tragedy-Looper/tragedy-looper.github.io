@@ -4,26 +4,15 @@ import type { Plot } from "../plots.g";
 import type { ScriptSpecified } from "./core";
 import type { Abilitie, RoleName } from "./roles";
 
-export type Plots = typeof plotsInternal;
 
 
-export type PlotName = keyof Plots;
+export type PlotName = keyof typeof data.plotsLookup;
 
 
 
 
-const plotsInternal = toRecord([
-    ...data.plots,
-
-    
-
-
-] as const satisfies readonly Plot[], 'id');
-
-
-export function isPlotName(name: string): name is PlotName {
-    return name in plotsInternal;
+export function isPlotName(name: unknown): name is PlotName {
+    return typeof name === 'string' && name in data.plotsLookup;
 }
 
-export const plots = plotsInternal as Record<PlotName, Plot>;
 

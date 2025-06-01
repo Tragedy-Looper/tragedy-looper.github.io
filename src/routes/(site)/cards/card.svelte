@@ -1,7 +1,7 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
-  import { characters, locations, type CharacterName } from '../../../model/characters';
+  import {  locations, type CharacterName } from '../../../model/characters';
   import Iron from './iron.svelte';
   import { Spring, spring } from 'svelte/motion';
   import { adjust, clamp, round } from '../../../misc';
@@ -63,7 +63,7 @@
 
   function getCarddataFromName(c: typeof card): Card {
     const key = typeof c === 'string' ? c : 'key' in c ? c.key : (c.name as CharacterName);
-    const value = typeof c === 'string' ? characters[c] : 'key' in c ? characters[c.key] : c;
+    const value = typeof c === 'string' ? data.charactersLookup[c] : 'key' in c ? data.charactersLookup[c.key] : c;
     const dataFromCharacterName = {
       type: 'character' as const,
       ...value,

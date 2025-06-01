@@ -1,27 +1,13 @@
 import * as data from "../data";
 import { distinct, keys, toRecord } from "../misc"
+import type { Tragedy } from "../tragedys.g";
 import { isOption, type Options } from "./core";
 import type { IncidentName } from "./incidents"
-import { plots, type PlotName } from "./plots"
+import { type PlotName } from "./plots"
 import { isRoleName, type RoleName } from "./roles";
 
-export type TragedySet = TragedySets[keyof TragedySets];
-export type TragedySets = typeof tragedySets;
-type TragedySetInternal = {
-    name: string,
-    mainPlots: readonly PlotName[]
-    subPlots: readonly PlotName[]
-    aditionalRoles?: readonly RoleName[],
-    numberOfMainPlots: number,
-    numberOfSubPlots: number,
-    incidents: readonly IncidentName[],
-    extraRules: readonly {
-        name: string,
-        description: string
-    }[],
-} & CastOptions
 
-export type TragedySetName = TragedySet['id'];
+export type TragedySetName = keyof typeof data.tragedysLookup;
 
 
 export type CastOptions = { castOptions?: Options };
@@ -60,26 +46,19 @@ export function hasAdditonalRoles<T>(obj: T): obj is T & { aditionalRoles: reado
 }
 
 
-export function getTragedySetRoles(tg: TragedySet) {
+export function getTragedySetRoles(tg: Tragedy) {
 
-    const plotRoles = [...tg.mainPlots, ...tg.subPlots].flatMap(x => keys(plots[x].roles));
+    const plotRoles = [...tg.mainPlots, ...tg.subPlots].flatMap(x => keys(data.plotsLookup[x].roles));
     const additionalRoles = hasAdditonalRoles(tg) ? tg.aditionalRoles : [];
 
     return distinct([...plotRoles, ...additionalRoles]);
-
 }
 
 
-
-export const tragedySets = toRecord([
-
-    ...data.tragedys,
-    
-] as const satisfies readonly TragedySetInternal[], 'id');
 
 
 
 
 export function isTragedySetName(name: string): name is TragedySetName {
-    return name in tragedySets;
+    return name in data.tragedysLookup;
 }

@@ -6,7 +6,7 @@
   import { getString } from '../routes/(site)/+layout.svelte';
     import Translation from './translation.svelte';
 
-  export let a: Abilitie<Record<string, any>>;
+  export let a: Abilitie;
   export let compact: boolean = false;
 
   $: ability = (a);

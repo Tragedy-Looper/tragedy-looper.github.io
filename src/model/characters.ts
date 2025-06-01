@@ -11,29 +11,15 @@ export type LocationName = typeof locations[number];
 export type Tag = 'boy' | 'girl' | 'student' | "man" | "woman" | "adult" | 'construct' | 'animal' | 'tree' | 'little sister';
 
 
-export type Characters = (typeof characters);
 export type CharacterName = typeof data.characters[number]['id'];
 
 
 
 type CharacterscomesInLaterHelper<T> = T extends { 'comesInLater': true } ? T : never;
-export type CharacterscomesInLater = CharacterscomesInLaterHelper<Character>['id'];
+export type CharacterscomesInLater = CharacterscomesInLaterHelper<typeof data.characters[number]>['id'];
 type CharactersPlotlessRole<T> = T extends { 'plotLessRole': 'all' | 'not in plots' | 'plot duplicate' } ? T : never;
-export type CharacterPlotless = CharactersPlotlessRole<Character>['id'];
+export type CharacterPlotless = CharactersPlotlessRole<typeof data.characters[number]>['id'];
 
-
-
-type CharacterIntern = {
-    name: string,
-    paranoiaLimit: number,
-    tags: readonly Tag[],
-    abilities: readonly Ability[],
-    startLocation: readonly LocationName[];
-    forbiddenLocation?: readonly LocationName[],
-    comesInLater?: true,
-    plotLessRole?: 'all' | 'not in plots' | 'plot duplicate',
-
-} & ScriptSpecified & DoseNotTriggerIncident;
 
 export type Ability = {
     type: 'active'
@@ -48,17 +34,12 @@ export type Ability = {
     description: string
 }
 
+export const characterscomesInLater = Object.values(data.charactersLookup).filter(x => (x.comesInLater)).map(x => x.id) as readonly CharacterscomesInLater[];
 
 
 
-export const characters = toRecord([...data.characters] as const satisfies readonly CharacterIntern[], 'id') as Record<CharacterName, Character>;
-
-export const characterscomesInLater = Object.values(characters).filter(x => (x as { comesInLater?: true })['comesInLater']).map(x => x.id) as readonly CharacterscomesInLater[];
-
-
-
-export function isCharacterLate(name: CharacterName): name is CharacterscomesInLater {
-    return (characters[name] as { comesInLater?: true })?.comesInLater ?? false;
+export function isCharacterLate(name: unknown): name is CharacterscomesInLater {
+    return isCharacterName(name) && ((data.charactersLookup[name])?.comesInLater ?? false);
 }
 export function isCharacterPlotless<T>(name: T): name is T & { plotLessRole: 'all' | 'not in plots' | 'plot duplicate' };
 export function isCharacterPlotless(name: CharacterName): name is CharacterPlotless;
@@ -66,15 +47,15 @@ export function isCharacterPlotless(name: unknown): name is CharacterPlotless {
     if (typeof name === 'object' && name !== null) {
         return 'plotLessRole' in name && ['all', 'not in plots', 'plot duplicate'].some(x => x == (name as { plotLessRole?: 'all' | 'not in plots' | 'plot duplicate' })?.plotLessRole);
     } else if (typeof name === 'string') {
-        return ['all', 'not in plots', 'plot duplicate'].some(x => x == ((characters[name as CharacterName] as { plotLessRole?: 'all' | 'not in plots' | 'plot duplicate' })?.plotLessRole));
+        return ['all', 'not in plots', 'plot duplicate'].some(x => x == ((data.charactersLookup[name as CharacterName])?.plotLessRole));
     } else {
         return false;
     }
 }
-export function isCharacterName(name: string): name is CharacterName {
-    return name in characters;
+export function isCharacterName(name: unknown): name is CharacterName {
+    return typeof name === 'string' && name in data.charactersLookup;
 }
-export function isLocationName(name: string): name is LocationName {
-    return locations.some(x => x == name);
+export function isLocationName(name: unknown): name is LocationName {
+    return typeof name === 'string' && locations.some(x => x == name);
 }
 

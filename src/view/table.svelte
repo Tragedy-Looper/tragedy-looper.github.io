@@ -1,17 +1,10 @@
 <script lang="ts">
   import { onDestroy, onMount } from 'svelte';
   import { cssesc, distinct, hasProp, join, keys, require, showAll } from '../misc';
-  import {
-    type CharacterName,
-    characterscomesInLater,
-    characters as characterLookup,
-    isCharacterLate,
-  } from '../model/characters';
-  import { incidents as incidentsLookup } from '../model/incidents';
-  import { plots } from '../model/plots';
-  import { roles, type Abilitie, type RoleName } from '../model/roles';
+  import { type CharacterName, characterscomesInLater, isCharacterLate } from '../model/characters';
+  import { isRoleName, singleRolenames, type RoleName, type RoleNameSingle } from '../model/roles';
   import type { ScriptIncidentPlayer } from '../model/script';
-  import { tragedySets, type TragedySet, type TragedySetName } from '../model/tragedySets';
+  import { type TragedySetName } from '../model/tragedySets';
   import Selection from './selection.svelte';
   import Ability from './Ability.svelte';
   import { getString, languageOverride } from '../routes/(site)/+layout.svelte';
@@ -240,46 +233,55 @@
 
   // $: tragedySet = script.tragedySet;
   $: chars = distinct(cast)
-    .map((x) => characterLookup[x])
+    .map((x) => data.charactersLookup[x])
     .sort((a, b) => a.name.localeCompare(b.name));
 
-  $: tg = tragedySets[tragedySet];
+  $: tg = data.tragedysLookup[tragedySet];
 
   $: r = distinct(
-    [...tg.mainPlots, ...tg.subPlots].flatMap((x) => keys(plots[x].roles) as RoleName[])
+    [...tg.mainPlots, ...tg.subPlots].flatMap((x) => keys(data.plotsLookup[x].roles) as RoleName[])
   )
-    .concat((tg).aditionalRoles ?? [])
+    .concat(tg.aditionalRoles ?? [])
     .flatMap((x) => {
       if (x.includes('|')) {
-        return [{ name: x, skip: false }, ...x.split('|').map((x) => ({ name: x, skip: true }))];
+        return [
+          { id: x, skip: false },
+          ...singleRolenames(x).map((x) => ({ id: x as RoleName, skip: true })),
+        ];
       } else {
-        return [{ name: x, skip: false }];
+        return [{ id: x, skip: false }];
       }
     })
-    .sort((a, b) => a.name.localeCompare(b.name))
-    .map(({ name, skip }) => {
-      if (name.includes('|')) {
-        return { name: name, abilities: [], skip, combined: true } satisfies Role & {
+    .sort((a, b) =>
+      $getString(data.rolesLookup[singleRolenames(a.id)[0]].name).localeCompare(
+        $getString(data.rolesLookup[singleRolenames(b.id)[0]].name)
+      )
+    )
+    .map(({ id, skip }) => {
+      const roleNames = singleRolenames(id);
+
+      if (roleNames.length > 1) {
+        return { abilities: [], skip, combined: true, id: id } satisfies Omit<Role, 'name'> & {
           skip: boolean;
           combined: boolean;
-        } as Role & {
+        } as Omit<Role, 'name'> & {
           skip: boolean;
           combined: boolean;
         };
       }
-      return { ...roles[name as keyof typeof roles], skip, combined: false };
+      return { ...data.rolesLookup[roleNames[0]], skip, combined: false };
     });
 
-  $: mainPlots = tragedySets[tragedySet].mainPlots.map((x) => plots[x]);
-  $: subPlots = tragedySets[tragedySet].subPlots.map((x) => plots[x]);
-  $: ince = incidents.map((x) => ({ ...incidentsLookup[x.incident], day: x.day }));
+  $: mainPlots = data.tragedysLookup[tragedySet].mainPlots.map((x) => data.plotsLookup[x]);
+  $: subPlots = data.tragedysLookup[tragedySet].subPlots.map((x) => data.plotsLookup[x]);
+  $: ince = incidents.map((x) => ({ ...data.incidentsLookup[x.incident], day: x.day }));
   $: inceForRules = [
     ...ince,
-    ...tragedySets[tragedySet].incidents
-      .filter((x) => incidentsLookup[x].faked)
+    ...data.tragedysLookup[tragedySet].incidents
+      .filter((x) => data.incidentsLookup[x].faked)
       .map((i) => {
         return {
-          ...incidentsLookup[i],
+          ...data.incidentsLookup[i],
           day: undefined,
         };
       }),
@@ -350,15 +352,15 @@
             .filter((x) => !x.skip)
             .map(
               (role) =>
-                ` main-role-plot-${cssesc(role.name, {
+                ` main-role-plot-${cssesc(role.id, {
                   isIdentifier: true,
-                })}-${cssesc(mp.name, { isIdentifier: true })} `
+                })}-${cssesc(mp.id, { isIdentifier: true })} `
             ),
-          `main-plot-header-${cssesc(mp.name, { isIdentifier: true })}`,
-          `main-plot-header-${cssesc(mp.name, { isIdentifier: true })}`,
+          `main-plot-header-${cssesc(mp.id, { isIdentifier: true })}`,
+          `main-plot-header-${cssesc(mp.id, { isIdentifier: true })}`,
           ...ince.concat([undefined] as any).map(
             () =>
-              `main-role-plot-rule-${cssesc(mp.name, {
+              `main-role-plot-rule-${cssesc(mp.id, {
                 isIdentifier: true,
               })}`
           ),
@@ -378,15 +380,15 @@
             .filter((x) => !x.skip)
             .map(
               (role) =>
-                ` sub-role-plot-${cssesc(role.name, {
+                ` sub-role-plot-${cssesc(role.id, {
                   isIdentifier: true,
-                })}-${cssesc(mp.name, { isIdentifier: true })} `
+                })}-${cssesc(mp.id, { isIdentifier: true })} `
             ),
-          `sub-plot-header-${cssesc(mp.name, { isIdentifier: true })}`,
-          `sub-plot-header-${cssesc(mp.name, { isIdentifier: true })}`,
+          `sub-plot-header-${cssesc(mp.id, { isIdentifier: true })}`,
+          `sub-plot-header-${cssesc(mp.id, { isIdentifier: true })}`,
           ...ince.concat([undefined] as any).map(
             () =>
-              `sub-role-plot-rule-${cssesc(mp.name, {
+              `sub-role-plot-rule-${cssesc(mp.id, {
                 isIdentifier: true,
               })}`
           ),
@@ -399,7 +401,7 @@
           'role-header',
           ...r
             .filter((x) => !x.skip)
-            .map((role) => `role-header-${cssesc(role.name, { isIdentifier: true })}`),
+            .map((role) => `role-header-${cssesc(role.id, { isIdentifier: true })}`),
           '.',
           'incident-header',
           ...ince.map((incident) => `incident-header-${incident.day}`),
@@ -412,7 +414,7 @@
           'role-header',
           ...r
             .filter((x) => !x.skip)
-            .map((role) => `role-header-${cssesc(role.name, { isIdentifier: true })}`),
+            .map((role) => `role-header-${cssesc(role.id, { isIdentifier: true })}`),
           '.',
           'incident-header-day',
           ...ince.map((incident) => `incident-day-${incident.day}`),
@@ -426,7 +428,7 @@
           .filter((x) => !x.skip)
           .map(
             (role) =>
-              ` role-char-${cssesc(role.name, { isIdentifier: true })}-${cssesc(char.name, {
+              ` role-char-${cssesc(role.id, { isIdentifier: true })}-${cssesc(char.name, {
                 isIdentifier: true,
               })} `
           ),
@@ -443,7 +445,7 @@
         'goodwillrefusal-header',
         ...r
           .filter((x) => !x.skip)
-          .map((role) => `goodwillrefusal-${cssesc(role.name, { isIdentifier: true })}`),
+          .map((role) => `goodwillrefusal-${cssesc(role.id, { isIdentifier: true })}`),
         '.',
         '.',
         ...ince.map((incident) => `incident-rule-${incident.day}`),
@@ -492,11 +494,11 @@
       {#each r.filter((x) => !x.skip) as ri}
         <div
           class="plot-main role-counter"
-          style="grid-area: main-role-plot-{cssesc(ri.name)}-{cssesc(p.name)};"
+          style="grid-area: main-role-plot-{cssesc(ri.id)}-{cssesc(p.name)};"
         >
           <div style="text-align: center;">
-            {#if hasProp(p.roles, ri.name)}
-              {@const amount = p.roles[ri.name]}
+            {#if hasProp(p.roles, ri.id)}
+              {@const amount = p.roles[ri.id]}
               {#if Array.isArray(amount)}
                 {amount[0]} - {amount[1]}
               {:else if typeof amount == 'number'}
@@ -516,17 +518,17 @@
         <Translation translationKey={p.name} />
       </div>
       <div class="plot-sub rules" style="grid-area: sub-role-plot-rule-{cssesc(p.name)};">
-        {#each p.rules as a}
+        {#each p.rules ?? [] as a}
           <Ability {a} compact />
         {/each}
       </div>
 
       {#each r.filter((x) => !x.skip) as ri}
         {@const roles = p.roles}
-        {@const name = ri.name}
+        {@const name = ri.id}
         <div
           class="plot-sub role-counter"
-          style="grid-area: sub-role-plot-{cssesc(ri.name)}-{cssesc(p.name)};"
+          style="grid-area: sub-role-plot-{cssesc(ri.id)}-{cssesc(p.name)};"
         >
           <div style="text-align: center;">
             {#if hasProp(roles, name)}
@@ -548,8 +550,14 @@
     </div>
     {#each r.filter((x) => !x.skip) as ri}
       {@const tags = (ri.tags ?? []).filter((x) => x.length > 0)}
-      <div class="vertical-header role" style="grid-area: role-header-{cssesc(ri.name)};">
-        <Translation translationKey={ri.name} />
+      {@const roleids = isRoleName(ri.id) ? singleRolenames(ri.id) : []}
+      <div class="vertical-header role" style="grid-area: role-header-{cssesc(ri.id)};">
+        {#each roleids as id, i}
+          {#if i > 0}
+            <br />
+          {/if}
+          <Translation translationKey={data.rolesLookup[id].name} />
+        {/each}
         {#if tags.length > 0}
           <small>
             {#each tags as tag, i}
@@ -581,12 +589,12 @@
     {#each chars as ci}
       <div class="character" style="grid-area: char-header-{cssesc(ci.name)}; ">
         <Translation translationKey={ci.name} />
-        {#if isCharacterLate(ci.name)}
+        {#if isCharacterLate(ci.id)}
           <i>(?)</i>{/if}
       </div>
 
       {#each r.filter((x) => !x.skip) as ri}
-        <div class="role-char" style="grid-area: role-char-{cssesc(ri.name)}-{cssesc(ci.name)};">
+        <div class="role-char" style="grid-area: role-char-{cssesc(ri.id)}-{cssesc(ci.name)};">
           <Selection />
         </div>
       {/each}
@@ -603,10 +611,10 @@
       </div>
     </div>
     {#each r.filter((x) => !x.skip) as ri}
-      <div class="vertical-header role" style="grid-area: goodwillrefusal-{cssesc(ri.name)};">
+      <div class="vertical-header role" style="grid-area: goodwillrefusal-{cssesc(ri.id)};">
         {#each [$getString(ri.goodwillRefusel ?? ''), ri.goodwillOutburst ? $getString('Goodwill Outburst') : '', ri.scriptSpecified?.some((x) => x.name == 'world') ? $getString('World Selection') : ''].filter((x) => x?.length > 0) as tag, i}
           {#if i > 0}
-            |
+            <br />
           {/if}
           {tag}
         {/each}
@@ -664,14 +672,14 @@
 
       {#each i.effect as e}
         <p>
-          {#if (e).type}
-            <b>[{$getString((e).type)}]</b>
+          {#if e.type}
+            <b>[{$getString(e.type)}]</b>
           {/if}
-          {#if (e).prerequisite}
-            [<i>{$getString((e).prerequisite)}</i>]{#if (e).description}⇒{/if}
+          {#if e.prerequisite}
+            [<i>{$getString(e.prerequisite)}</i>]{#if e.description}⇒{/if}
           {/if}
-          {#if (e).description}
-            {$getString((e).description)}
+          {#if e.description}
+            {$getString(e.description)}
           {/if}
         </p>
       {/each}
@@ -686,7 +694,7 @@
   {#each r.filter((x) => !x.combined) as ri}
     <article class="role">
       <h1>
-        <Translation translationKey={ri.name} />
+        <Translation translationKey={ri.id} />
       </h1>
       {#if ri.goodwillRefusel}
         <h2>
@@ -722,7 +730,7 @@
     </article>
   {/if}
 
-  {#each tg.extraRules as ri}
+  {#each tg.extraRules ?? [] as ri}
     <article class="tragedyRules">
       <h1>
         <Translation translationKey={ri.name} />

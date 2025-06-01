@@ -3,6 +3,7 @@ import { toRecord, type RequireAtLeastOne } from "../misc";
 import type { ScriptSpecified } from "./core";
 import type { DoseNotTriggerIncident } from "./incidents";
 import type { Role, Roles as RoleType } from '../roles.g'
+import type { Character } from "../characters.g";
 
 export type AbilityType = AbilityTypeLose | AbilityTypeCreation | AbilityTypeDefault;
 export type AbilityTypeLose = typeof loseTypes[number];
@@ -40,43 +41,55 @@ export type OncePer<Text extends string, Constraints extends object | void = voi
     [k in `timesPer${Capitalize<Text>}`]?: Constraints extends void ? number : number | readonly [number, RequireAtLeastOne<Constraints>]
 };
 
-export type Abilitie<Constraints extends object | void = void> = OncePer<'Loop' | 'day', Constraints, {
-    description: string,
-    prerequisite?: string,
-    type: AbilityTypeDefault,
-    // timesPerLoop?: Constraints extends void ? number : number | readonly [number, RequireAtLeastOne<Constraints>],
-    // timesPerDay?: Constraints extends void ? number : number | readonly [number, RequireAtLeastOne<Constraints>],
-    timing: readonly (timing)[]
-} | {
-    description?: string,
-    prerequisite: string,
-    type: AbilityTypeLose,
-    // timesPerLoop?: Constraints extends void ? number : number | readonly [number, RequireAtLeastOne<Constraints>],
-    // timesPerDay?: Constraints extends void ? number : number | readonly [number, RequireAtLeastOne<Constraints>],
-    timing: readonly (timing)[]
-}> | {
-    description: string,
-    type: AbilityTypeCreation,
+export type Abilitie = Exclude<Character['abilities'], undefined>[number]
+    | Exclude<Role['abilities'], undefined>[number];
+// export type Abilitie<Constraints extends object | void = void> = OncePer<'Loop' | 'day', Constraints, {
+//     description: string,
+//     prerequisite?: string,
+//     type: AbilityTypeDefault,
+//     // timesPerLoop?: Constraints extends void ? number : number | readonly [number, RequireAtLeastOne<Constraints>],
+//     // timesPerDay?: Constraints extends void ? number : number | readonly [number, RequireAtLeastOne<Constraints>],
+//     timing: readonly (timing)[]
+// } | {
+//     description?: string,
+//     prerequisite: string,
+//     type: AbilityTypeLose,
+//     // timesPerLoop?: Constraints extends void ? number : number | readonly [number, RequireAtLeastOne<Constraints>],
+//     // timesPerDay?: Constraints extends void ? number : number | readonly [number, RequireAtLeastOne<Constraints>],
+//     timing: readonly (timing)[]
+// }> | {
+//     description: string,
+//     type: AbilityTypeCreation,
+// }
+
+
+
+
+export type RoleNameSingle = keyof typeof data.rolesLookup;
+export type RoleNameDouble = `${RoleNameSingle}|${RoleNameSingle}`;
+
+export type RoleName = RoleNameSingle | RoleNameDouble;
+
+
+
+export function singleRolenames(role: RoleName): RoleNameSingle[] {
+    const spited = role.split('|');
+    if (spited.length === 1) {
+        return [role as RoleNameSingle];
+    } else if (spited.length === 2) {
+        return spited as RoleNameSingle[];
+    } else {
+        throw new Error(`Invalid role name: ${role}`);
+    }
 }
 
 
-
-
-export const rolesInternal = toRecord([
-    ...data.roles,
-], 'id');
-
-export type RoleName = keyof typeof rolesInternal | `${keyof typeof rolesInternal}|${keyof typeof rolesInternal}`;
-
-
-
-
-export const roles = rolesInternal as Record<RoleName, Role & { name: RoleName }>;
-
-
-export function isRoleName(name: string): name is RoleName {
+export function isRoleName(name: unknown): name is RoleName {
+    if (typeof name !== 'string' || name.length === 0) {
+        return false;
+    }
     const spited = name.split('|');
-    return spited.every(x => x in rolesInternal);
+    return spited.length <= 2 && spited.every(x => x in data.rolesLookup);
 }
 
 

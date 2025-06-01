@@ -2,12 +2,13 @@
   import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
   import { onMount } from 'svelte';
-  import { characters, type CharacterName } from '../../../model/characters';
+  import { type CharacterName } from '../../../model/characters';
   import Iron from './iron.svelte';
   import Card from './card.svelte';
   import { getString } from '../+layout.svelte';
   import { getAvialableCharacterImages } from '../../+layout.svelte';
   import Translation from '../../../view/translation.svelte';
+  import { charactersLookup } from '../../../data';
 
   const characterImages = getAvialableCharacterImages();
 
@@ -25,7 +26,7 @@
   );
 
   let cards = $derived(
-    Object.keys(characters)
+    Object.keys(charactersLookup)
       .toSorted((a, b) => $getString(a).localeCompare($getString(b)))
       .map((key) => {
         return {
@@ -137,7 +138,9 @@
 
     <div>
       <p>
-        <Translation translationKey={'Use the **Print** button of your browser (default shortcut[[Ctrl]]+[[P]]) to print the cards.'} />
+        <Translation
+          translationKey={'Use the **Print** button of your browser (default shortcut[[Ctrl]]+[[P]]) to print the cards.'}
+        />
       </p>
       <p>
         {#if printCardBacks}
