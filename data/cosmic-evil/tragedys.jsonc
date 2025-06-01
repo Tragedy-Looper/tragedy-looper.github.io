@@ -44,7 +44,7 @@
                 {
                     "id": "Victims",
 "name": "Victims",
-                    "description": "Every Inrigue on locations counts as a corpse with the role Person. If such a corpse is revived by the power of the Alien, is is simply removed from the board."
+                    "description": "Every Inrigue on locations counts as a corpse with the role Person. If such a corpse is revived by the power of the alien, is is simply removed from the board."
                 },
                 {
                     "id": "Mob Incidents",

@@ -1,13 +1,13 @@
 {
-      "$schema": "https://tragedy-looper.github.io/characters.schema.json",
+    "$schema": "https://tragedy-looper.github.io/characters.schema.json",
     // For dev purposes
     // "$schema": "../characters.schema.json",
     "characters": [
         {
-            "id": "Scientist",
-"name": "Scientist",
+            "id": "scientist",
+            "name": "Scientist",
             "edition": "Midnight Circle",
-"paranoiaLimit": 2,
+            "paranoiaLimit": 2,
             "tags": [
                 "adult",
                 "man"
@@ -28,10 +28,10 @@
             ]
         },
         {
-            "id": "Forensic Specialist",
-"name": "Forensic Specialist",
+            "id": "forensicSpecialist",
+            "name": "Forensic Specialist",
             "edition": "Midnight Circle",
-"paranoiaLimit": 3,
+            "paranoiaLimit": 3,
             "tags": [
                 "adult",
                 "man"
@@ -55,10 +55,10 @@
             ]
         },
         {
-            "id": "A.I.",
-"name": "A.I.",
+            "id": "ai",
+            "name": "A.I.",
             "edition": "Midnight Circle",
-"paranoiaLimit": 4,
+            "paranoiaLimit": 4,
             "tags": [
                 "construct"
             ],
@@ -83,15 +83,15 @@
                     "type": "active",
                     "goodwillRank": 3,
                     "timesPerLoop": 1,
-                    "description": "The Leader may resolve one incident in the Script, wit the A.I. as the culprit. (This is not considered triggering the event.)"
+                    "description": "The Leader may resolve one incident in the Script, wit the ai as the culprit. (This is not considered triggering the event.)"
                 }
             ]
         },
         {
-            "id": "Illusion",
-"name": "Illusion",
+            "id": "illusion",
+            "name": "Illusion",
             "edition": "Midnight Circle",
-"paranoiaLimit": 3,
+            "paranoiaLimit": 3,
             "tags": [
                 "construct",
                 "woman"

@@ -26,25 +26,25 @@
       ],
       "daysPerLoop": 4,
       "cast": {
-        "Girl Student": "Alice",
-        "rich-student": "Key Person|Brain",
-        "Class Rep": "Person",
-        "Shrine Maiden": "Marionette",
-        "Office Worker": "Marionette",
-        "Pop Idol": "Obstinate",
+        "girlStudent": "Alice",
+        "richStudent": "Key Person|Brain",
+        "classRep": "Person",
+        "shrineMaiden": "Marionette",
+        "officeWorker": "Marionette",
+        "popIdol": "Obstinate",
         "Part-Timer": "Brain",
-        "Soldier": "Conspiracy Theorist|Serial Killer"
+        "soldier": "Conspiracy Theorist|Serial Killer"
       },
       "incidents": [
         {
           "day": 3,
           "incident": "Last Will",
-          "culprit": "rich-student"
+          "culprit": "richStudent"
         },
         {
           "day": 4,
           "incident": "Crime of Passion",
-          "culprit": "Pop Idol"
+          "culprit": "popIdol"
         }
       ],
       "victory-conditions": "",

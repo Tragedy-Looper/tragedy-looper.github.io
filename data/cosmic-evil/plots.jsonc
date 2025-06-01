@@ -310,7 +310,7 @@
             "rules": [
                 {
                     "type": "Script creation",
-                    "description": "The Informer must be included. The script writer then chooses one \"extra\" main plot."
+                    "description": "The informer must be included. The script writer then chooses one \"extra\" main plot."
                 },
                 {
                     "type": "Mandatory",

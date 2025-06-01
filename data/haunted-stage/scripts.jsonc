@@ -26,31 +26,31 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "Boy Student": "Spellcaster",
-        "Girl Student": "Person",
-        "rich-student": "Nightmare (Haunted Stage)",
-        "Shrine Maiden": "Human Doll",
-        "Police Officer": "Ghost (Haunted Stage)",
-        "Office Worker": "Person",
-        "Informer": "Poltergeist",
-        "Doctor": "Horror",
-        "Patient": "Ghost (Haunted Stage)"
+        "boyStudent": "Spellcaster",
+        "girlStudent": "Person",
+        "richStudent": "Nightmare (Haunted Stage)",
+        "shrineMaiden": "Human Doll",
+        "policeOfficer": "Ghost (Haunted Stage)",
+        "officeWorker": "Person",
+        "informer": "Poltergeist",
+        "doctor": "Horror",
+        "patient": "Ghost (Haunted Stage)"
       },
       "incidents": [
         {
           "day": 2,
           "incident": "Curse",
-          "culprit": "Boy Student"
+          "culprit": "boyStudent"
         },
         {
           "day": 4,
           "incident": "Blasphemy",
-          "culprit": "Girl Student"
+          "culprit": "girlStudent"
         },
         {
           "day": 5,
           "incident": "Infestation",
-          "culprit": "Shrine Maiden"
+          "culprit": "shrineMaiden"
         }
       ],
       "victory-conditions": "",
@@ -80,31 +80,31 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "Boy Student": "Spellcaster",
-        "Girl Student": "Horror",
-        "rich-student": "Person",
-        "Shrine Maiden": "Monster",
-        "Police Officer": "Person",
-        "Office Worker": "Person",
-        "Informer": "Person",
-        "Doctor": "Nightmare (Haunted Stage)",
-        "Patient": "Ghost (Haunted Stage)"
+        "boyStudent": "Spellcaster",
+        "girlStudent": "Horror",
+        "richStudent": "Person",
+        "shrineMaiden": "Monster",
+        "policeOfficer": "Person",
+        "officeWorker": "Person",
+        "informer": "Person",
+        "doctor": "Nightmare (Haunted Stage)",
+        "patient": "Ghost (Haunted Stage)"
       },
       "incidents": [
         {
           "day": 1,
           "incident": "Sacrifice",
-          "culprit": "Patient"
+          "culprit": "patient"
         },
         {
           "day": 4,
           "incident": "Monster Liberation",
-          "culprit": "Boy Student"
+          "culprit": "boyStudent"
         },
         {
           "day": 5,
           "incident": "Hundred Demons Night",
-          "culprit": "Office Worker"
+          "culprit": "officeWorker"
         }
       ],
       "victory-conditions": "",
@@ -134,31 +134,31 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "Boy Student": "Horror",
-        "Girl Student": "Person",
-        "rich-student": "Spellcaster",
-        "Shrine Maiden": "Werewolf (Haunted Stage)",
-        "Police Officer": "Monster",
-        "Office Worker": "Nightmare (Haunted Stage)",
-        "Informer": "Overlord",
-        "Doctor": "Monster",
-        "Patient": "Person"
+        "boyStudent": "Horror",
+        "girlStudent": "Person",
+        "richStudent": "Spellcaster",
+        "shrineMaiden": "Werewolf (Haunted Stage)",
+        "policeOfficer": "Monster",
+        "officeWorker": "Nightmare (Haunted Stage)",
+        "informer": "Overlord",
+        "doctor": "Monster",
+        "patient": "Person"
       },
       "incidents": [
         {
           "day": 1,
           "incident": "Increasing Unease",
-          "culprit": "rich-student"
+          "culprit": "richStudent"
         },
         {
           "day": 2,
           "incident": "Blasphemy",
-          "culprit": "Girl Student"
+          "culprit": "girlStudent"
         },
         {
           "day": 5,
           "incident": "Serial Murder",
-          "culprit": "Boy Student"
+          "culprit": "boyStudent"
         }
       ],
       "victory-conditions": "",
@@ -188,31 +188,31 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "Boy Student": "Nightmare (Haunted Stage)",
-        "Girl Student": "Werewolf (Haunted Stage)",
-        "rich-student": "Spellcaster",
-        "Shrine Maiden": "Spellcaster",
-        "Police Officer": "Person",
-        "Office Worker": "Person",
-        "Informer": "Horror",
-        "Doctor": "Person",
-        "Patient": "Monster"
+        "boyStudent": "Nightmare (Haunted Stage)",
+        "girlStudent": "Werewolf (Haunted Stage)",
+        "richStudent": "Spellcaster",
+        "shrineMaiden": "Spellcaster",
+        "policeOfficer": "Person",
+        "officeWorker": "Person",
+        "informer": "Horror",
+        "doctor": "Person",
+        "patient": "Monster"
       },
       "incidents": [
         {
           "day": 1,
           "incident": "Sacrifice",
-          "culprit": "Boy Student"
+          "culprit": "boyStudent"
         },
         {
           "day": 2,
           "incident": "Infestation",
-          "culprit": "Office Worker"
+          "culprit": "officeWorker"
         },
         {
           "day": 5,
           "incident": "Repeating Nightmare",
-          "culprit": "Girl Student"
+          "culprit": "girlStudent"
         }
       ],
       "victory-conditions": "",
@@ -242,41 +242,41 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "Boy Student": "Horror",
-        "Girl Student": "Nightmare (Haunted Stage)",
-        "rich-student": "Person",
-        "Shrine Maiden": "Monster",
-        "Police Officer": "Ghost (Haunted Stage)",
-        "Office Worker": "Person",
-        "Informer": "Person",
-        "Doctor": "Ghost (Haunted Stage)",
-        "Patient": "Overlord"
+        "boyStudent": "Horror",
+        "girlStudent": "Nightmare (Haunted Stage)",
+        "richStudent": "Person",
+        "shrineMaiden": "Monster",
+        "policeOfficer": "Ghost (Haunted Stage)",
+        "officeWorker": "Person",
+        "informer": "Person",
+        "doctor": "Ghost (Haunted Stage)",
+        "patient": "Overlord"
       },
       "incidents": [
         {
           "day": 1,
           "incident": "Increasing Unease",
-          "culprit": "rich-student"
+          "culprit": "richStudent"
         },
         {
           "day": 2,
           "incident": "Monster Liberation",
-          "culprit": "Shrine Maiden"
+          "culprit": "shrineMaiden"
         },
         {
           "day": 3,
           "incident": "Blasphemy",
-          "culprit": "Girl Student"
+          "culprit": "girlStudent"
         },
         {
           "day": 4,
           "incident": "Infestation",
-          "culprit": "Patient"
+          "culprit": "patient"
         },
         {
           "day": 5,
           "incident": "Hospital Incident",
-          "culprit": "Boy Student"
+          "culprit": "boyStudent"
         }
       ],
       "victory-conditions": "",
@@ -306,41 +306,41 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "Boy Student": "Spellcaster",
-        "rich-student": "Person",
-        "Shrine Maiden": "Person",
-        "Police Officer": "Nightmare (Haunted Stage)",
-        "Patient": "Person",
-        "Pop Idol": "Horror",
-        "Journalist": "Person",
-        "Henchman": "Ghost (Haunted Stage)",
-        "Scientist": "Curse God"
+        "boyStudent": "Spellcaster",
+        "richStudent": "Person",
+        "shrineMaiden": "Person",
+        "policeOfficer": "Nightmare (Haunted Stage)",
+        "patient": "Person",
+        "popIdol": "Horror",
+        "journalist": "Person",
+        "henchman": "Ghost (Haunted Stage)",
+        "scientist": "Curse God"
       },
       "incidents": [
         {
           "day": 1,
           "incident": "Sacrifice",
-          "culprit": "Shrine Maiden"
+          "culprit": "shrineMaiden"
         },
         {
           "day": 2,
           "incident": "Sacrifice",
-          "culprit": "Boy Student"
+          "culprit": "boyStudent"
         },
         {
           "day": 3,
           "incident": "Sacrifice",
-          "culprit": "Pop Idol"
+          "culprit": "popIdol"
         },
         {
           "day": 4,
           "incident": "Sacrifice",
-          "culprit": "rich-student"
+          "culprit": "richStudent"
         },
         {
           "day": 5,
           "incident": "Sacrifice",
-          "culprit": "Henchman"
+          "culprit": "henchman"
         }
       ],
       "victory-conditions": "",
@@ -348,7 +348,7 @@
       "mastermindHints": ""
     },
     {
-      "title": "蘇る幻影（マボロシ） (Reviving Illusion)",
+      "title": "蘇る幻影（マボロシ） (Reviving illusion)",
       "creator": "Translated by megakun",
       "set": [{
         "name": "Haunted Stage",
@@ -370,41 +370,41 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "Boy Student": "Person",
-        "Doctor": "Person",
-        "Patient": "Monster",
-        "Class Rep": "Person",
-        "Alien": "Person",
-        "Pop Idol": "Ghost (Haunted Stage)",
-        "Journalist": "Horror",
-        "Boss": [
+        "boyStudent": "Person",
+        "doctor": "Person",
+        "patient": "Monster",
+        "classRep": "Person",
+        "alien": "Person",
+        "popIdol": "Ghost (Haunted Stage)",
+        "journalist": "Horror",
+        "boss": [
           "Nightmare (Haunted Stage)",
           {
             "Turf": "School"
           }
         ],
-        "Illusion": "Ghost (Haunted Stage)"
+        "illusion": "Ghost (Haunted Stage)"
       },
       "incidents": [
         {
           "day": 2,
           "incident": "Increasing Unease",
-          "culprit": "Journalist"
+          "culprit": "journalist"
         },
         {
           "day": 4,
           "incident": "Curse",
-          "culprit": "Boy Student"
+          "culprit": "boyStudent"
         },
         {
           "day": 5,
           "incident": "Repeating Nightmare",
-          "culprit": "Illusion"
+          "culprit": "illusion"
         },
         {
           "day": 6,
           "incident": "Monster Liberation",
-          "culprit": "Patient"
+          "culprit": "patient"
         }
       ],
       "specialRules": [
@@ -415,7 +415,7 @@
       "mastermindHints": ""
     },
     {
-      "title": "幻想は都市で死ぬ (Illusions Die in the City)",
+      "title": "幻想は都市で死ぬ (illusions Die in the City)",
       "creator": "Translated by megakun",
       "set": [{
         "name": "Haunted Stage",
@@ -437,31 +437,31 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "Boy Student": "Werewolf (Haunted Stage)",
-        "Shrine Maiden": "Person",
-        "Office Worker": "Ghost (Haunted Stage)",
-        "Informer": "Horror",
-        "Mystery Boy": "Curse God",
-        "Pop Idol": "Nightmare (Haunted Stage)",
-        "Journalist": "Spellcaster",
-        "Scientist": "Monster",
-        "Illusion": "Person"
+        "boyStudent": "Werewolf (Haunted Stage)",
+        "shrineMaiden": "Person",
+        "officeWorker": "Ghost (Haunted Stage)",
+        "informer": "Horror",
+        "mysteryBoy": "Curse God",
+        "popIdol": "Nightmare (Haunted Stage)",
+        "journalist": "Spellcaster",
+        "scientist": "Monster",
+        "illusion": "Person"
       },
       "incidents": [
         {
           "day": 3,
           "incident": "Curse",
-          "culprit": "Boy Student"
+          "culprit": "boyStudent"
         },
         {
           "day": 5,
           "incident": "Repeating Nightmare",
-          "culprit": "Shrine Maiden"
+          "culprit": "shrineMaiden"
         },
         {
           "day": 6,
           "incident": "Blasphemy",
-          "culprit": "Scientist"
+          "culprit": "scientist"
         }
       ],
       "specialRules": [

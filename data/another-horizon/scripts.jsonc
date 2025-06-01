@@ -28,41 +28,41 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "Boy Student": "Person",
-        "rich-student": "Person",
-        "Shrine Maiden": "Person",
-        "Doctor": "Person",
-        "Class Rep": "Person",
-        "Alien": "Person",
-        "Pop Idol": "Person",
-        "Journalist": "Quidnunc",
-        "Henchman": "Twilight"
+        "boyStudent": "Person",
+        "richStudent": "Person",
+        "shrineMaiden": "Person",
+        "doctor": "Person",
+        "classRep": "Person",
+        "alien": "Person",
+        "popIdol": "Person",
+        "journalist": "Quidnunc",
+        "henchman": "Twilight"
       },
       "incidents": [
         {
           "day": 1,
           "incident": "Confession",
-          "culprit": "rich-student"
+          "culprit": "richStudent"
         },
         {
           "day": 2,
           "incident": "Confession",
-          "culprit": "Pop Idol"
+          "culprit": "popIdol"
         },
         {
           "day": 3,
           "incident": "Confession",
-          "culprit": "Alien"
+          "culprit": "alien"
         },
         {
           "day": 4,
           "incident": "Confession",
-          "culprit": "Class Rep"
+          "culprit": "classRep"
         },
         {
           "day": 5,
           "incident": "Confession",
-          "culprit": "Shrine Maiden"
+          "culprit": "shrineMaiden"
         }
       ],
       "victory-conditions": "",
@@ -94,19 +94,19 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "Girl Student": "Person",
-        "Shrine Maiden": "Person",
-        "Informer": "Person",
-        "Doctor": "Person",
-        "Alien": "Person",
-        "Godly Being": [
+        "girlStudent": "Person",
+        "shrineMaiden": "Person",
+        "informer": "Person",
+        "doctor": "Person",
+        "alien": "Person",
+        "godlyBeing": [
           "Agent",
           {
             "enters on loop": 2
           }
         ],
-        "Pop Idol": "Person",
-        "Boss": [
+        "popIdol": "Person",
+        "boss": [
           "Quidnunc",
           {
             "Turf": "Hospital"
@@ -117,32 +117,32 @@
         {
           "day": 1,
           "incident": "Confession",
-          "culprit": "Alien"
+          "culprit": "alien"
         },
         {
           "day": 2,
           "incident": "World Convergence",
-          "culprit": "Godly Being"
+          "culprit": "godlyBeing"
         },
         {
           "day": 3,
           "incident": "Confession",
-          "culprit": "Girl Student"
+          "culprit": "girlStudent"
         },
         {
           "day": 4,
           "incident": "Confession",
-          "culprit": "Pop Idol"
+          "culprit": "popIdol"
         },
         {
           "day": 5,
           "incident": "Confession",
-          "culprit": "Informer"
+          "culprit": "informer"
         },
         {
           "day": 6,
           "incident": "Confession",
-          "culprit": "Doctor"
+          "culprit": "doctor"
         }
       ],
       "victory-conditions": "",
@@ -174,31 +174,31 @@
       ],
       "daysPerLoop": 2,
       "cast": {
-        "Boy Student": "Quidnunc",
-        "Girl Student": "Agitator",
-        "rich-student": "Neurosis",
-        "Police Officer": "Agent",
-        "Doctor": "Person",
-        "Patient": "Brain",
-        "Journalist": "Person",
-        "Henchman": [
+        "boyStudent": "Quidnunc",
+        "girlStudent": "Agitator",
+        "richStudent": "Neurosis",
+        "policeOfficer": "Agent",
+        "doctor": "Person",
+        "patient": "Brain",
+        "journalist": "Person",
+        "henchman": [
           "Animus",
           {
             "world": "abnormal"
           }
         ],
-        "Illusion": "Person"
+        "illusion": "Person"
       },
       "incidents": [
         {
           "day": 1,
           "incident": "Small Force",
-          "culprit": "Police Officer"
+          "culprit": "policeOfficer"
         },
         {
           "day": 2,
           "incident": "Hospital Incident",
-          "culprit": "rich-student"
+          "culprit": "richStudent"
         }
       ],
       "victory-conditions": "",
@@ -230,15 +230,15 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "Boy Student": "Person",
-        "rich-student": "Quidnunc",
-        "Office Worker": "Person",
-        "Patient": "Neurosis",
-        "Mystery Boy": "Agent",
-        "Pop Idol": "Twilight",
-        "Journalist": "Person",
-        "Scientist": "Agitator",
-        "Illusion": [
+        "boyStudent": "Person",
+        "richStudent": "Quidnunc",
+        "officeWorker": "Person",
+        "patient": "Neurosis",
+        "mysteryBoy": "Agent",
+        "popIdol": "Twilight",
+        "journalist": "Person",
+        "scientist": "Agitator",
+        "illusion": [
           "Animus",
           {
             "world": "normal"
@@ -249,32 +249,32 @@
         {
           "day": 1,
           "incident": "World End",
-          "culprit": "rich-student"
+          "culprit": "richStudent"
         },
         {
           "day": 2,
           "incident": "World Convergence",
-          "culprit": "Mystery Boy"
+          "culprit": "mysteryBoy"
         },
         {
           "day": 3,
           "incident": "Increasing Unease",
-          "culprit": "Patient"
+          "culprit": "patient"
         },
         {
           "day": 4,
           "incident": "Assassination",
-          "culprit": "Journalist"
+          "culprit": "journalist"
         },
         {
           "day": 5,
           "incident": "Drifting to Another World",
-          "culprit": "Illusion"
+          "culprit": "illusion"
         },
         {
           "day": 6,
           "incident": "Missing Person",
-          "culprit": "Office Worker"
+          "culprit": "officeWorker"
         }
       ],
       "victory-conditions": "",
@@ -306,26 +306,26 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "Boy Student": "Person",
-        "rich-student": "Person",
-        "Shrine Maiden": "Person",
-        "Office Worker": "Person",
-        "Informer": "Agitator",
-        "Doctor": [
+        "boyStudent": "Person",
+        "richStudent": "Person",
+        "shrineMaiden": "Person",
+        "officeWorker": "Person",
+        "informer": "Agitator",
+        "doctor": [
           "Animus",
           {
             "world": "abnormal"
           }
         ],
-        "Class Rep": "Person",
-        "Godly Being": [
+        "classRep": "Person",
+        "godlyBeing": [
           "Agent",
           {
             "enters on loop": 3
           }
         ],
-        "Pop Idol": "Fanatic",
-        "Illusion": [
+        "popIdol": "Fanatic",
+        "illusion": [
           "Animus",
           {
             "world": "normal"
@@ -336,17 +336,17 @@
         {
           "day": 3,
           "incident": "World Convergence",
-          "culprit": "Doctor"
+          "culprit": "doctor"
         },
         {
           "day": 4,
           "incident": "World Convergence",
-          "culprit": "Godly Being"
+          "culprit": "godlyBeing"
         },
         {
           "day": 6,
           "incident": "World End",
-          "culprit": "Illusion"
+          "culprit": "illusion"
         }
       ],
       "victory-conditions": "",
@@ -378,26 +378,26 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "Boy Student": "Person",
-        "rich-student": "Person",
-        "Shrine Maiden": "Person",
-        "Office Worker": "Person",
-        "Informer": "Agitator",
-        "Doctor": [
+        "boyStudent": "Person",
+        "richStudent": "Person",
+        "shrineMaiden": "Person",
+        "officeWorker": "Person",
+        "informer": "Agitator",
+        "doctor": [
           "Animus",
           {
             "world": "abnormal"
           }
         ],
-        "Class Rep": "Person",
-        "Godly Being": [
+        "classRep": "Person",
+        "godlyBeing": [
           "Agent",
           {
             "enters on loop": 3
           }
         ],
-        "Pop Idol": "Agitator",
-        "Illusion": [
+        "popIdol": "Agitator",
+        "illusion": [
           "Animus",
           {
             "world": "normal"
@@ -408,17 +408,17 @@
         {
           "day": 3,
           "incident": "World Convergence",
-          "culprit": "Doctor"
+          "culprit": "doctor"
         },
         {
           "day": 4,
           "incident": "World Convergence",
-          "culprit": "Godly Being"
+          "culprit": "godlyBeing"
         },
         {
           "day": 6,
           "incident": "World End",
-          "culprit": "Illusion"
+          "culprit": "illusion"
         }
       ],
       "victory-conditions": "",
@@ -444,20 +444,20 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "Doctor": "Person",
-        "Patient": "Person",
-        "Police Officer": "Person",
-        "Office Worker": "Fanatic",
-        "Informer": [
+        "doctor": "Person",
+        "patient": "Person",
+        "policeOfficer": "Person",
+        "officeWorker": "Fanatic",
+        "informer": [
           "Animus",
           {
             "world": "normal"
           }
         ],
-        "Girl Student": "Person",
-        "rich-student": "Agitator",
-        "Shrine Maiden": "Twilight",
-        "Class Rep": [
+        "girlStudent": "Person",
+        "richStudent": "Agitator",
+        "shrineMaiden": "Twilight",
+        "classRep": [
           "Animus",
           {
             "world": "abnormal"
@@ -468,22 +468,22 @@
         {
           "day": 3,
           "incident": "Assassination",
-          "culprit": "Class Rep"
+          "culprit": "classRep"
         },
         {
           "day": 4,
           "incident": "World End",
-          "culprit": "Patient"
+          "culprit": "patient"
         },
         {
           "day": 5,
           "incident": "Small Force",
-          "culprit": "rich-student"
+          "culprit": "richStudent"
         },
         {
           "day": 6,
           "incident": "Insane Murder",
-          "culprit": "Police Officer"
+          "culprit": "policeOfficer"
         }
       ],
       "victory-conditions": "",

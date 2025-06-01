@@ -4,8 +4,8 @@
     // "$schema": "../characters.schema.json",
     "characters": [
         {
-            "id": "Young Girl",
-"name": "Young Girl",
+            "id": "youngGirl",
+            "name": "Young Girl",
             "edition": "Promo",
             "paranoiaLimit": 1,
             "tags": [
@@ -35,8 +35,8 @@
             ]
         },
         {
-            "id": "Copycat",
-"name": "Copycat",
+            "id": "copycat",
+            "name": "Copycat",
             "edition": "Promo",
             "paranoiaLimit": 2,
             "plotLessRole": "plot duplicate",
@@ -56,13 +56,13 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "Loop 2 or later: Reveal the name of all characters with the same Role as Copycat. This cannot be refused by :goodwill: Refusal."
+                    "description": "Loop 2 or later: Reveal the name of all characters with the same Role as :copycat:. This cannot be refused by :goodwill: Refusal."
                 }
             ]
         },
         {
-            "id": "Servant",
-"name": "Servant",
+            "id": "servant",
+            "name": "Servant",
             "edition": "Promo",
             "paranoiaLimit": 3,
             "tags": [
@@ -77,7 +77,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "The Servant serves the Rich Man's Daughter and the Boss. If one of them moves and she shares the location, the Leader moves her with one of them ignoring her own movement. If any onf them dies at her location, she dies instead."
+                    "description": "The :servant: serves the :richStudent: and the :boss:. If one of them moves and she shares the location, the Leader moves her with one of them ignoring her own movement. If any onf them dies at her location, she dies instead."
                 },
                 {
                     "type": "active",

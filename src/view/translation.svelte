@@ -56,6 +56,8 @@
   import type { Renderer, Token } from 'markdown-it/index.js';
   import { base } from '$app/paths';
   import { enableTranslationUi, showTranslationMissingDialog } from '../routes/+layout.svelte';
+  import { charactersLookup } from '../data';
+  import { isCharacterName } from '../model/characters';
 
   type Parameters = {
     translationKey:
@@ -87,6 +89,11 @@
     enableTranslationUi.iconSet in imageSets ? enableTranslationUi.iconSet : 'zMan'
   );
 
+  const defs = Object.fromEntries([
+    ...icons.map((icon) => [icon, icon] as const),
+    ...Object.keys(charactersLookup).map((char) => [char, char] as const),
+  ]);
+
   const md = markdownit({
     html: false,
     linkify: false,
@@ -94,8 +101,8 @@
   })
     .use(markdomnItKdb)
     .use(emoji, {
-      defs: Object.fromEntries(icons.map((icon) => [icon, icon] as const)),
-      enabled: icons,
+      defs,
+      enabled: Object.keys(defs),
     });
   md.renderer.rules.emoji = (
     tokens: Token[],
@@ -105,20 +112,22 @@
     self: Renderer
   ) => {
     const token = tokens[idx];
-    const emojiName = token.content as (typeof icons)[number];
+    const emojiName = token.content;
     // If the emoji is not paranoia, return the default rendering
-    if (!icons.includes(emojiName)) {
-      return self.renderToken(tokens, idx, options);
+    if (emojiName in imageSets[set]) {
+      const placholder = imageSets[set][emojiName as keyof (typeof imageSets)[typeof set]];
+      if (placholder.type === 'text') {
+        return placholder.text;
+      } else if (placholder.type === 'icon') {
+        return `<span class="emoji" title="${$getString(emojiName)}"><img src="${placholder.imagePath}" ></img></span>`;
+      } else {
+        return self.renderToken(tokens, idx, options);
+      }
+    } else if (isCharacterName(emojiName)) {
+      const character = charactersLookup[emojiName];
+      return $getString(character.name);
     }
-
-    const placholder = imageSets[set][emojiName];
-    if (placholder.type === 'text') {
-      return placholder.text;
-    } else if (placholder.type === 'icon') {
-      return `<span class="emoji" title="${$getString(emojiName)}"><img src="${placholder.imagePath}" ></img></span>`;
-    } else {
-      return self.renderToken(tokens, idx, options);
-    }
+    return self.renderToken(tokens, idx, options);
   };
 
   // add base to links

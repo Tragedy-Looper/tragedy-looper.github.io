@@ -30,31 +30,31 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Boy Student": "Person",
-                "rich-student": "Cultist",
-                "Teacher": "Conspiracy Theorist",
-                "Shrine Maiden": "Person",
-                "Black Cat": "Factor",
-                "Office Worker": "Person",
-                "Informer": "Brain",
-                "Patient": "Person",
-                "Soldier": "Person"
+                "boyStudent": "Person",
+                "richStudent": "Cultist",
+                "teacher": "Conspiracy Theorist",
+                "shrineMaiden": "Person",
+                "blackCat": "Factor",
+                "officeWorker": "Person",
+                "informer": "Brain",
+                "patient": "Person",
+                "soldier": "Person"
             },
             "incidents": [
                 {
                     "day": 3,
                     "incident": "Missing Person",
-                    "culprit": "Boy Student"
+                    "culprit": "boyStudent"
                 },
                 {
                     "day": 4,
                     "incident": "Hospital Incident",
-                    "culprit": "Shrine Maiden"
+                    "culprit": "shrineMaiden"
                 },
                 {
                     "day": 6,
                     "incident": "Butterfly Effect",
-                    "culprit": "Black Cat"
+                    "culprit": "blackCat"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -88,23 +88,23 @@
             ],
             "daysPerLoop": 4,
             "cast": {
-                "Boy Student": "Witch",
-                "rich-student": "Ghost",
-                "Class Rep": "Coward",
-                "Shrine Maiden": "Key Person",
-                "Police Officer": "Show-Off",
-                "Office Worker": "Serial Killer"
+                "boyStudent": "Witch",
+                "richStudent": "Ghost",
+                "classRep": "Coward",
+                "shrineMaiden": "Key Person",
+                "policeOfficer": "Show-Off",
+                "officeWorker": "Serial Killer"
             },
             "incidents": [
                 {
                     "day": 2,
                     "incident": "Missing Person",
-                    "culprit": "rich-student"
+                    "culprit": "richStudent"
                 },
                 {
                     "day": 3,
                     "incident": "Sacrilegious Murder",
-                    "culprit": "Class Rep"
+                    "culprit": "classRep"
                 },
                 {
                     "day": 4,
@@ -143,15 +143,15 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "Boy Student": "Person",
-                "Girl Student": "Key Person",
-                "Class Rep": "Person",
-                "Shrine Maiden": "Loved One",
-                "Alien": "Conspiracy Theorist",
-                "Police Officer": "Ghost",
-                "Office Worker": "Vampire",
-                "Pop Idol": "Witch",
-                "Patient": "Serial Killer"
+                "boyStudent": "Person",
+                "girlStudent": "Key Person",
+                "classRep": "Person",
+                "shrineMaiden": "Loved One",
+                "alien": "Conspiracy Theorist",
+                "policeOfficer": "Ghost",
+                "officeWorker": "Vampire",
+                "popIdol": "Witch",
+                "patient": "Serial Killer"
             },
             "incidents": [
                 {
@@ -167,7 +167,7 @@
                 {
                     "day": 5,
                     "incident": "Sacrilegious Murder",
-                    "culprit": "Boy Student"
+                    "culprit": "boyStudent"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -201,32 +201,32 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Girl Student": "Person",
-                "Mystery Boy": "Zombie",
-                "Transfer Student": [
+                "girlStudent": "Person",
+                "mysteryBoy": "Zombie",
+                "transferStudent": [
                     "Lover",
                     {
                         "enters on day": 5
                     }
                 ],
-                "Shrine Maiden": "Person",
-                "Office Worker": "Person",
-                "Informer": "Show-Off",
-                "Journalist": "Person",
-                "Patient": "Loved One",
-                "Nurse": "Conspiracy Theorist",
-                "Henchman": "Coward"
+                "shrineMaiden": "Person",
+                "officeWorker": "Person",
+                "informer": "Show-Off",
+                "journalist": "Person",
+                "patient": "Loved One",
+                "nurse": "Conspiracy Theorist",
+                "henchman": "Coward"
             },
             "incidents": [
                 {
                     "day": 2,
                     "incident": "Evil Contamination",
-                    "culprit": "Henchman"
+                    "culprit": "henchman"
                 },
                 {
                     "day": 3,
                     "incident": "Missing Person",
-                    "culprit": "Journalist"
+                    "culprit": "journalist"
                 },
                 {
                     "day": 4,
@@ -236,7 +236,7 @@
                 {
                     "day": 5,
                     "incident": "Sacrilegious Murder",
-                    "culprit": "Patient"
+                    "culprit": "patient"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -270,26 +270,26 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Girl Student": "Person",
-                "Mystery Boy": "Nightmare",
-                "Teacher": "Person",
-                "Transfer Student": [
+                "girlStudent": "Person",
+                "mysteryBoy": "Nightmare",
+                "teacher": "Person",
+                "transferStudent": [
                     "Coward",
                     {
                         "enters on day": 5
                     }
                 ],
-                "Alien": "Person",
-                "Godly Being": [
+                "alien": "Person",
+                "godlyBeing": [
                     "Person",
                     {
                         "enters on loop": 2
                     }
                 ],
-                "Pop Idol": "Person",
-                "Forensic Specialist": "Conspiracy Theorist",
-                "Soldier": "Show-Off",
-                "Patient": "Werewolf"
+                "popIdol": "Person",
+                "forensicSpecialist": "Conspiracy Theorist",
+                "soldier": "Show-Off",
+                "patient": "Werewolf"
             },
             "incidents": [
                 {
@@ -300,17 +300,17 @@
                 {
                     "day": 2,
                     "incident": "Increasing Unease",
-                    "culprit": "Pop Idol"
+                    "culprit": "popIdol"
                 },
                 {
                     "day": 3,
                     "incident": "The Executioner",
-                    "culprit": "Girl Student"
+                    "culprit": "girlStudent"
                 },
                 {
                     "day": 4,
                     "incident": "Sacrilegious Murder",
-                    "culprit": "Soldier"
+                    "culprit": "soldier"
                 },
                 {
                     "day": 5,
@@ -320,7 +320,7 @@
                 {
                     "day": 6,
                     "incident": "Missing Person",
-                    "culprit": "Mystery Boy"
+                    "culprit": "mysteryBoy"
                 }
             ],
             "specialRules": [
@@ -357,29 +357,29 @@
             ],
             "daysPerLoop": 4,
             "cast": {
-                "Boy Student": "Conspiracy Theorist",
-                "Girl Student": "Witch",
-                "rich-student": "Serial Killer",
-                "Shrine Maiden": "Person",
-                "Police Officer": "Person",
-                "Office Worker": "Wizard",
-                "Doctor": "Deep One"
+                "boyStudent": "Conspiracy Theorist",
+                "girlStudent": "Witch",
+                "richStudent": "Serial Killer",
+                "shrineMaiden": "Person",
+                "policeOfficer": "Person",
+                "officeWorker": "Wizard",
+                "doctor": "Deep One"
             },
             "incidents": [
                 {
                     "day": 2,
                     "incident": "Missing Person",
-                    "culprit": "rich-student"
+                    "culprit": "richStudent"
                 },
                 {
                     "day": 3,
                     "incident": "Evil Contamination",
-                    "culprit": "Shrine Maiden"
+                    "culprit": "shrineMaiden"
                 },
                 {
                     "day": 4,
                     "incident": "Insane Murder",
-                    "culprit": "Boy Student"
+                    "culprit": "boyStudent"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -409,36 +409,36 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "Girl Student": "Witness",
-                "rich-student": "Person",
-                "Class Rep": "Witch",
-                "Shrine Maiden": "Person",
-                "Alien": "Person",
-                "Office Worker": "Conspiracy Theorist",
-                "Informer": "Time Traveler",
-                "Doctor": "Serial Killer",
-                "Patient": "Immortal"
+                "girlStudent": "Witness",
+                "richStudent": "Person",
+                "classRep": "Witch",
+                "shrineMaiden": "Person",
+                "alien": "Person",
+                "officeWorker": "Conspiracy Theorist",
+                "informer": "Time Traveler",
+                "doctor": "Serial Killer",
+                "patient": "Immortal"
             },
             "incidents": [
                 {
                     "day": 2,
                     "incident": "Missing Person",
-                    "culprit": "Doctor"
+                    "culprit": "doctor"
                 },
                 {
                     "day": 3,
                     "incident": "Hound Dog Scent",
-                    "culprit": "Alien"
+                    "culprit": "alien"
                 },
                 {
                     "day": 4,
                     "incident": "The Executioner",
-                    "culprit": "Girl Student"
+                    "culprit": "girlStudent"
                 },
                 {
                     "day": 5,
                     "incident": "Insane Murder",
-                    "culprit": "Office Worker"
+                    "culprit": "officeWorker"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -477,41 +477,41 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "Class Rep": "Sacrifice",
-                "Mystery Boy": "Serial Killer",
-                "Godly Being": [
+                "classRep": "Sacrifice",
+                "mysteryBoy": "Serial Killer",
+                "godlyBeing": [
                     "Paranoiac",
                     {
                         "enters on loop": 2
                     }
                 ],
-                "Office Worker": "Cultist",
-                "Informer": "Person",
-                "Journalist": "Person",
-                "Pop Idol": "Person",
-                "Patient": "Immortal",
-                "Nurse": "Paranoiac"
+                "officeWorker": "Cultist",
+                "informer": "Person",
+                "journalist": "Person",
+                "popIdol": "Person",
+                "patient": "Immortal",
+                "nurse": "Paranoiac"
             },
             "incidents": [
                 {
                     "day": 1,
                     "incident": "The Executioner",
-                    "culprit": "Patient"
+                    "culprit": "patient"
                 },
                 {
                     "day": 2,
                     "incident": "Discovery",
-                    "culprit": "Office Worker"
+                    "culprit": "officeWorker"
                 },
                 {
                     "day": 4,
                     "incident": "Insane Murder",
-                    "culprit": "Class Rep"
+                    "culprit": "classRep"
                 },
                 {
                     "day": 5,
                     "incident": "Uproar",
-                    "culprit": "Godly Being"
+                    "culprit": "godlyBeing"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -546,35 +546,35 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Girl Student": "Person",
-                "rich-student": "Faceless",
-                "Mystery Boy": "Witch",
-                "Alien": "Wizard",
-                "Office Worker": "Cultist",
-                "Informer": "Deep One",
-                "Journalist": "Key Person",
-                "Patient": "Paranoiac"
+                "girlStudent": "Person",
+                "richStudent": "Faceless",
+                "mysteryBoy": "Witch",
+                "alien": "Wizard",
+                "officeWorker": "Cultist",
+                "informer": "Deep One",
+                "journalist": "Key Person",
+                "patient": "Paranoiac"
             },
             "incidents": [
                 {
                     "day": 1,
                     "incident": "Insane Murder",
-                    "culprit": "rich-student"
+                    "culprit": "richStudent"
                 },
                 {
                     "day": 3,
                     "incident": "Fire of Demise",
-                    "culprit": "Alien"
+                    "culprit": "alien"
                 },
                 {
                     "day": 4,
                     "incident": "Uproar",
-                    "culprit": "Patient"
+                    "culprit": "patient"
                 },
                 {
                     "day": 6,
                     "incident": "Evil Contamination",
-                    "culprit": "Informer"
+                    "culprit": "informer"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -604,52 +604,52 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Class Rep": "Person",
-                "Mystery Boy": "Immortal",
-                "Alien": "Person",
-                "Godly Being": [
+                "classRep": "Person",
+                "mysteryBoy": "Immortal",
+                "alien": "Person",
+                "godlyBeing": [
                     "Sacrifice",
                     {
                         "enters on loop": 5
                     }
                 ],
-                "Illusion": "Serial Killer",
-                "Black Cat": "Cultist",
-                "Office Worker": "Person",
-                "Journalist": "Wizard",
-                "Nurse": "Faceless",
-                "Henchman": "Conspiracy Theorist"
+                "illusion": "Serial Killer",
+                "blackCat": "Cultist",
+                "officeWorker": "Person",
+                "journalist": "Wizard",
+                "nurse": "Faceless",
+                "henchman": "Conspiracy Theorist"
             },
             "incidents": [
                 {
                     "day": 1,
                     "incident": "Discovery",
-                    "culprit": "Henchman"
+                    "culprit": "henchman"
                 },
                 {
                     "day": 2,
                     "incident": "Insane Murder",
-                    "culprit": "Black Cat"
+                    "culprit": "blackCat"
                 },
                 {
                     "day": 3,
                     "incident": "Increasing Unease",
-                    "culprit": "Office Worker"
+                    "culprit": "officeWorker"
                 },
                 {
                     "day": 4,
                     "incident": "Increasing Unease",
-                    "culprit": "Journalist"
+                    "culprit": "journalist"
                 },
                 {
                     "day": 5,
                     "incident": "Evil Contamination",
-                    "culprit": "Class Rep"
+                    "culprit": "classRep"
                 },
                 {
                     "day": 6,
                     "incident": "The Executioner",
-                    "culprit": "Godly Being"
+                    "culprit": "godlyBeing"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
