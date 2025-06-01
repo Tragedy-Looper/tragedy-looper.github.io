@@ -1,11 +1,11 @@
 {
-      "$schema": "https://tragedy-looper.github.io/plots.schema.json",
+    "$schema": "https://tragedy-looper.github.io/plots.schema.json",
     // For dev purposes
     // "$schema": "../plots.schema.json",
     "plots": [
         {
             "id": "Abomination",
-"name": "Abomination",
+            "name": "Abomination",
             "roles": {
                 "Mad Genius": 1,
                 "Supplicant": 1
@@ -22,7 +22,7 @@
         },
         {
             "id": "Metamorphosis",
-"name": "Metamorphosis",
+            "name": "Metamorphosis",
             "roles": {
                 "Potentate": 1,
                 "Supplicant": 1,
@@ -40,7 +40,7 @@
         },
         {
             "id": "Spore Pod",
-"name": "Spore Pod",
+            "name": "Spore Pod",
             "roles": {
                 "Facsimile": 1,
                 "Augur": 1
@@ -57,7 +57,7 @@
         },
         {
             "id": "Demonic Portal",
-"name": "Demonic Portal",
+            "name": "Demonic Portal",
             "roles": {
                 "Potentate": 1,
                 "Augur": 1
@@ -75,7 +75,7 @@
         },
         {
             "id": "The Seed",
-"name": "The Seed",
+            "name": "The Seed",
             "roles": {
                 "Seeder": 1,
                 "serialKiller": 1
@@ -83,8 +83,8 @@
             "rules": []
         },
         {
-            "id": "Infestation",
-"name": "Infestation",
+            "id": "infestationSupernatural",
+            "name": "Infestation",
             "roles": {
                 "Facsimile": 2,
                 "keyPerson": 1
@@ -102,7 +102,7 @@
         },
         {
             "id": "Fatal Attraction",
-"name": "Fatal Attraction",
+            "name": "Fatal Attraction",
             "roles": {
                 "lover": 3,
                 "serialKiller": 1
@@ -111,7 +111,7 @@
         },
         {
             "id": "Manifestation",
-"name": "Manifestation",
+            "name": "Manifestation",
             "roles": {},
             "rules": [
                 {
@@ -126,7 +126,7 @@
         },
         {
             "id": "Murder for Hire",
-"name": "Murder for Hire",
+            "name": "Murder for Hire",
             "roles": {
                 "Contract Killer": 1,
                 "keyPerson": 1
@@ -135,7 +135,7 @@
         },
         {
             "id": "Remote Bombing",
-"name": "Remote Bombing",
+            "name": "Remote Bombing",
             "roles": {
                 "Mad Genius": 1
             },
@@ -151,7 +151,7 @@
         },
         {
             "id": "Suicide Cult",
-"name": "Suicide Cult",
+            "name": "Suicide Cult",
             "roles": {
                 "Cult Member": 3
             },
@@ -168,7 +168,7 @@
         },
         {
             "id": "Twisted Threads of Time",
-"name": "Twisted Threads of Time",
+            "name": "Twisted Threads of Time",
             "roles": {},
             "rules": [
                 {

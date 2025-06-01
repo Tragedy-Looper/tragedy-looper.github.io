@@ -10,13 +10,13 @@
         "name": "Haunted Stage",
         "number": 1
       }],
-      "tragedySet": "Haunted Stage",
+      "tragedySet": "hauntedStage",
       "mainPlot": [
         "The Cursed Doll"
       ],
       "subPlots": [
-        "Expanding Urban Legend",
-        "Max Crazy Gauge"
+        "expandingUrbanLegend",
+        "maxCrazyGauge"
       ],
       "difficultySets": [
         {
@@ -26,30 +26,30 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "boyStudent": "Spellcaster",
+        "boyStudent": "spellcaster",
         "girlStudent": "person",
-        "richStudent": "Nightmare (Haunted Stage)",
-        "shrineMaiden": "Human Doll",
-        "policeOfficer": "Ghost (Haunted Stage)",
+        "richStudent": "nightmareHaunted",
+        "shrineMaiden": "humanDoll",
+        "policeOfficer": "GhostHaunted",
         "officeWorker": "person",
-        "informer": "Poltergeist",
-        "doctor": "Horror",
-        "patient": "Ghost (Haunted Stage)"
+        "informer": "poltergeist",
+        "doctor": "horror",
+        "patient": "GhostHaunted"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Curse",
+          "incident": "curse",
           "culprit": "boyStudent"
         },
         {
           "day": 4,
-          "incident": "Blasphemy",
+          "incident": "blasphemy",
           "culprit": "girlStudent"
         },
         {
           "day": 5,
-          "incident": "Infestation",
+          "incident": "infestation",
           "culprit": "shrineMaiden"
         }
       ],
@@ -64,13 +64,13 @@
         "name": "Haunted Stage",
         "number": 2
       }],
-      "tragedySet": "Haunted Stage",
+      "tragedySet": "hauntedStage",
       "mainPlot": [
-        "Prim Evil"
+        "primEvil"
       ],
       "subPlots": [
-        "Zombie Apocalypse",
-        "The Deep Hole"
+        "zombieApocalypse",
+        "deepHole"
       ],
       "difficultySets": [
         {
@@ -80,30 +80,30 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "boyStudent": "Spellcaster",
-        "girlStudent": "Horror",
+        "boyStudent": "spellcaster",
+        "girlStudent": "horror",
         "richStudent": "person",
-        "shrineMaiden": "Monster",
+        "shrineMaiden": "monster",
         "policeOfficer": "person",
         "officeWorker": "person",
         "informer": "person",
-        "doctor": "Nightmare (Haunted Stage)",
-        "patient": "Ghost (Haunted Stage)"
+        "doctor": "nightmareHaunted",
+        "patient": "GhostHaunted"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "sacrifice",
+          "incident": "sacrificeHaunted",
           "culprit": "patient"
         },
         {
           "day": 4,
-          "incident": "Monster Liberation",
+          "incident": "monsterLiberation",
           "culprit": "boyStudent"
         },
         {
           "day": 5,
-          "incident": "Hundred Demons Night",
+          "incident": "hundredDemonsNight",
           "culprit": "officeWorker"
         }
       ],
@@ -118,13 +118,13 @@
         "name": "Haunted Stage",
         "number": 3
       }],
-      "tragedySet": "Haunted Stage",
+      "tragedySet": "hauntedStage",
       "mainPlot": [
-        "Full Moon Night"
+        "fullMoonNight"
       ],
       "subPlots": [
-        "Boundary Between Life and Death",
-        "The Deep Hole"
+        "boundaryBetweenLifeDeath",
+        "deepHole"
       ],
       "difficultySets": [
         {
@@ -134,14 +134,14 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "boyStudent": "Horror",
+        "boyStudent": "horror",
         "girlStudent": "person",
-        "richStudent": "Spellcaster",
-        "shrineMaiden": "Werewolf (Haunted Stage)",
-        "policeOfficer": "Monster",
-        "officeWorker": "Nightmare (Haunted Stage)",
-        "informer": "Overlord",
-        "doctor": "Monster",
+        "richStudent": "spellcaster",
+        "shrineMaiden": "werewolfHaunted",
+        "policeOfficer": "monster",
+        "officeWorker": "nightmareHaunted",
+        "informer": "overlord",
+        "doctor": "monster",
         "patient": "person"
       },
       "incidents": [
@@ -152,7 +152,7 @@
         },
         {
           "day": 2,
-          "incident": "Blasphemy",
+          "incident": "blasphemy",
           "culprit": "girlStudent"
         },
         {
@@ -172,13 +172,13 @@
         "name": "Haunted Stage",
         "number": 4
       }],
-      "tragedySet": "Haunted Stage",
+      "tragedySet": "hauntedStage",
       "mainPlot": [
-        "Full Moon Night"
+        "fullMoonNight"
       ],
       "subPlots": [
-        "Zombie Apocalypse",
-        "The Deep Hole"
+        "zombieApocalypse",
+        "deepHole"
       ],
       "difficultySets": [
         {
@@ -188,25 +188,25 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "boyStudent": "Nightmare (Haunted Stage)",
-        "girlStudent": "Werewolf (Haunted Stage)",
-        "richStudent": "Spellcaster",
-        "shrineMaiden": "Spellcaster",
+        "boyStudent": "nightmareHaunted",
+        "girlStudent": "werewolfHaunted",
+        "richStudent": "spellcaster",
+        "shrineMaiden": "spellcaster",
         "policeOfficer": "person",
         "officeWorker": "person",
-        "informer": "Horror",
+        "informer": "horror",
         "doctor": "person",
-        "patient": "Monster"
+        "patient": "monster"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "sacrifice",
+          "incident": "sacrificeHaunted",
           "culprit": "boyStudent"
         },
         {
           "day": 2,
-          "incident": "Infestation",
+          "incident": "infestation",
           "culprit": "officeWorker"
         },
         {
@@ -226,13 +226,13 @@
         "name": "Haunted Stage",
         "number": 5
       }],
-      "tragedySet": "Haunted Stage",
+      "tragedySet": "hauntedStage",
       "mainPlot": [
-        "Prim Evil"
+        "primEvil"
       ],
       "subPlots": [
-        "Boundary Between Life and Death",
-        "Dance Party of the Dead"
+        "boundaryBetweenLifeDeath",
+        "dancePartyDead"
       ],
       "difficultySets": [
         {
@@ -242,15 +242,15 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "boyStudent": "Horror",
-        "girlStudent": "Nightmare (Haunted Stage)",
+        "boyStudent": "horror",
+        "girlStudent": "nightmareHaunted",
         "richStudent": "person",
-        "shrineMaiden": "Monster",
-        "policeOfficer": "Ghost (Haunted Stage)",
+        "shrineMaiden": "monster",
+        "policeOfficer": "GhostHaunted",
         "officeWorker": "person",
         "informer": "person",
-        "doctor": "Ghost (Haunted Stage)",
-        "patient": "Overlord"
+        "doctor": "GhostHaunted",
+        "patient": "overlord"
       },
       "incidents": [
         {
@@ -260,17 +260,17 @@
         },
         {
           "day": 2,
-          "incident": "Monster Liberation",
+          "incident": "monsterLiberation",
           "culprit": "shrineMaiden"
         },
         {
           "day": 3,
-          "incident": "Blasphemy",
+          "incident": "blasphemy",
           "culprit": "girlStudent"
         },
         {
           "day": 4,
-          "incident": "Infestation",
+          "incident": "infestation",
           "culprit": "patient"
         },
         {
@@ -290,13 +290,13 @@
         "name": "Haunted Stage",
         "number": 6
       }],
-      "tragedySet": "Haunted Stage",
+      "tragedySet": "hauntedStage",
       "mainPlot": [
-        "Ancient Shrine"
+        "ancientShrine"
       ],
       "subPlots": [
-        "Max Crazy Gauge",
-        "Expanding Urban Legend"
+        "maxCrazyGauge",
+        "expandingUrbanLegend"
       ],
       "difficultySets": [
         {
@@ -306,40 +306,40 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "boyStudent": "Spellcaster",
+        "boyStudent": "spellcaster",
         "richStudent": "person",
         "shrineMaiden": "person",
-        "policeOfficer": "Nightmare (Haunted Stage)",
+        "policeOfficer": "nightmareHaunted",
         "patient": "person",
-        "popIdol": "Horror",
+        "popIdol": "horror",
         "journalist": "person",
-        "henchman": "Ghost (Haunted Stage)",
-        "scientist": "Curse God"
+        "henchman": "GhostHaunted",
+        "scientist": "curseGod"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "sacrifice",
+          "incident": "sacrificeHaunted",
           "culprit": "shrineMaiden"
         },
         {
           "day": 2,
-          "incident": "sacrifice",
+          "incident": "sacrificeHaunted",
           "culprit": "boyStudent"
         },
         {
           "day": 3,
-          "incident": "sacrifice",
+          "incident": "sacrificeHaunted",
           "culprit": "popIdol"
         },
         {
           "day": 4,
-          "incident": "sacrifice",
+          "incident": "sacrificeHaunted",
           "culprit": "richStudent"
         },
         {
           "day": 5,
-          "incident": "sacrifice",
+          "incident": "sacrificeHaunted",
           "culprit": "henchman"
         }
       ],
@@ -354,13 +354,13 @@
         "name": "Haunted Stage",
         "number": 7
       }],
-      "tragedySet": "Haunted Stage",
+      "tragedySet": "hauntedStage",
       "mainPlot": [
-        "Prim Evil"
+        "primEvil"
       ],
       "subPlots": [
-        "The Deep Hole",
-        "Dance Party of the Dead"
+        "deepHole",
+        "dancePartyDead"
       ],
       "difficultySets": [
         {
@@ -372,18 +372,18 @@
       "cast": {
         "boyStudent": "person",
         "doctor": "person",
-        "patient": "Monster",
+        "patient": "monster",
         "classRep": "person",
         "alien": "person",
-        "popIdol": "Ghost (Haunted Stage)",
-        "journalist": "Horror",
+        "popIdol": "GhostHaunted",
+        "journalist": "horror",
         "boss": [
-          "Nightmare (Haunted Stage)",
+          "nightmareHaunted",
           {
             "Turf": "School"
           }
         ],
-        "illusion": "Ghost (Haunted Stage)"
+        "illusion": "GhostHaunted"
       },
       "incidents": [
         {
@@ -393,7 +393,7 @@
         },
         {
           "day": 4,
-          "incident": "Curse",
+          "incident": "curse",
           "culprit": "boyStudent"
         },
         {
@@ -403,7 +403,7 @@
         },
         {
           "day": 6,
-          "incident": "Monster Liberation",
+          "incident": "monsterLiberation",
           "culprit": "patient"
         }
       ],
@@ -421,13 +421,13 @@
         "name": "Haunted Stage",
         "number": 8
       }],
-      "tragedySet": "Haunted Stage",
+      "tragedySet": "hauntedStage",
       "mainPlot": [
-        "Full Moon Night"
+        "fullMoonNight"
       ],
       "subPlots": [
-        "The Deep Hole",
-        "Max Crazy Gauge"
+        "deepHole",
+        "maxCrazyGauge"
       ],
       "difficultySets": [
         {
@@ -437,20 +437,20 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "boyStudent": "Werewolf (Haunted Stage)",
+        "boyStudent": "werewolfHaunted",
         "shrineMaiden": "person",
-        "officeWorker": "Ghost (Haunted Stage)",
-        "informer": "Horror",
-        "mysteryBoy": "Curse God",
-        "popIdol": "Nightmare (Haunted Stage)",
-        "journalist": "Spellcaster",
-        "scientist": "Monster",
+        "officeWorker": "GhostHaunted",
+        "informer": "horror",
+        "mysteryBoy": "curseGod",
+        "popIdol": "nightmareHaunted",
+        "journalist": "spellcaster",
+        "scientist": "monster",
         "illusion": "person"
       },
       "incidents": [
         {
           "day": 3,
-          "incident": "Curse",
+          "incident": "curse",
           "culprit": "boyStudent"
         },
         {
@@ -460,7 +460,7 @@
         },
         {
           "day": 6,
-          "incident": "Blasphemy",
+          "incident": "blasphemy",
           "culprit": "scientist"
         }
       ],

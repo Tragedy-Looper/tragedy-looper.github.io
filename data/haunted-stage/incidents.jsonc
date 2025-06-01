@@ -4,7 +4,7 @@
     // "$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "id": "sacrifice",
+            "id": "sacrificeHaunted",
             "name": "Sacrifice",
             "effect": [
                 {
@@ -13,7 +13,7 @@
             ]
         },
         {
-            "id": "Blasphemy",
+            "id": "blasphemy",
             "name": "Blasphemy",
             "effect": [
                 {
@@ -22,7 +22,7 @@
             ]
         },
         {
-            "id": "Monster Liberation",
+            "id": "monsterLiberation",
             "name": "Monster Liberation",
             "effect": [
                 {
@@ -31,7 +31,7 @@
             ]
         },
         {
-            "id": "Hundred Demons Night",
+            "id": "hundredDemonsNight",
             "name": "Hundred Demons Night",
             "effect": [
                 {
@@ -41,7 +41,7 @@
             ]
         },
         {
-            "id": "Curse",
+            "id": "curse",
             "name": "Curse",
             "effect": [
                 {
@@ -51,7 +51,7 @@
             ]
         },
         {
-            "id": "Infestation",
+            "id": "infestation",
             "name": "Infestation",
             "effect": [
                 {
@@ -61,7 +61,7 @@
             ]
         },
         {
-            "id": "Repeating Nightmare",
+            "id": "repeatingNightmare",
             "name": "Repeating Nightmare",
             "effect": [
                 {

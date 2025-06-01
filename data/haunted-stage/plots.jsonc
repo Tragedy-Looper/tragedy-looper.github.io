@@ -1,47 +1,47 @@
 {
-      "$schema": "https://tragedy-looper.github.io/plots.schema.json",
+    "$schema": "https://tragedy-looper.github.io/plots.schema.json",
     // For dev purposes
     // "$schema": "../plots.schema.json",
     "plots": [
         {
-            "id": "Ancient Shrine",
-"name": "Ancient Shrine",
+            "id": "ancientShrine",
+            "name": "Ancient Shrine",
             "roles": {
-                "Nightmare (Haunted Stage)": 1,
-                "Curse God": 1,
-                "Ghost (Haunted Stage)": 1,
-                "Spellcaster": 1
+                "nightmareHaunted": 1,
+                "curseGod": 1,
+                "GhostHaunted": 1,
+                "spellcaster": 1
             },
             "rules": []
         },
         {
-            "id": "The Cursed Doll",
-"name": "The Cursed Doll",
+            "id": "cursedDoll",
+            "name": "The Cursed Doll",
             "roles": {
-                "Nightmare (Haunted Stage)": 1,
-                "Human Doll": 1,
-                "Ghost (Haunted Stage)": 1,
-                "Spellcaster": 1
+                "nightmareHaunted": 1,
+                "humanDoll": 1,
+                "GhostHaunted": 1,
+                "spellcaster": 1
             },
             "rules": []
         },
         {
-            "id": "Full Moon Night",
-"name": "Full Moon Night",
+            "id": "fullMoonNight",
+            "name": "Full Moon Night",
             "roles": {
-                "Nightmare (Haunted Stage)": 1,
-                "Werewolf (Haunted Stage)": 1,
-                "Spellcaster": 1
+                "nightmareHaunted": 1,
+                "werewolfHaunted": 1,
+                "spellcaster": 1
             },
             "rules": []
         },
         {
-            "id": "A Strange Story",
-"name": "A Strange Story",
+            "id": "strangeStory",
+            "name": "A Strange Story",
             "roles": {
-                "Nightmare (Haunted Stage)": 1,
-                "Vampire (Haunted Stage)": 1,
-                "Monster": 1
+                "nightmareHaunted": 1,
+                "vampireHaunted": 1,
+                "monster": 1
             },
             "rules": [
                 {
@@ -51,12 +51,12 @@
             ]
         },
         {
-            "id": "Prim Evil",
-"name": "Prim Evil",
+            "id": "primEvil",
+            "name": "Prim Evil",
             "roles": {
-                "Nightmare (Haunted Stage)": 1,
-                "Ghost (Haunted Stage)": 1,
-                "Monster": 1
+                "nightmareHaunted": 1,
+                "GhostHaunted": 1,
+                "monster": 1
             },
             "rules": [
                 {
@@ -69,11 +69,11 @@
             ]
         },
         {
-            "id": "The Deep Hole",
-"name": "The Deep Hole",
+            "id": "deepHole",
+            "name": "The Deep Hole",
             "roles": {
-                "Monster": 1,
-                "Horror": 1
+                "monster": 1,
+                "horror": 1
             },
             "rules": [
                 {
@@ -86,11 +86,11 @@
             ]
         },
         {
-            "id": "Zombie Apocalypse",
-"name": "Zombie Apocalypse",
+            "id": "zombieApocalypse",
+            "name": "Zombie Apocalypse",
             "roles": {
-                "Spellcaster": 1,
-                "Horror": 1
+                "spellcaster": 1,
+                "horror": 1
             },
             "rules": [
                 {
@@ -103,20 +103,20 @@
             ]
         },
         {
-            "id": "Expanding Urban Legend",
-"name": "Expanding Urban Legend",
+            "id": "expandingUrbanLegend",
+            "name": "Expanding Urban Legend",
             "roles": {
-                "Poltergeist": 1,
-                "Horror": 1
+                "poltergeist": 1,
+                "horror": 1
             },
             "rules": []
         },
         {
-            "id": "Haunted City",
-"name": "Haunted City",
+            "id": "hauntedCity",
+            "name": "Haunted City",
             "roles": {
-                "Ghost (Haunted Stage)": 1,
-                "Poltergeist": 1
+                "GhostHaunted": 1,
+                "poltergeist": 1
             },
             "rules": [
                 {
@@ -129,11 +129,11 @@
             ]
         },
         {
-            "id": "Dance Party of the Dead",
-"name": "Dance Party of the Dead",
+            "id": "dancePartyDead",
+            "name": "Dance Party of the Dead",
             "roles": {
-                "Ghost (Haunted Stage)": 1,
-                "Horror": 1
+                "GhostHaunted": 1,
+                "horror": 1
             },
             "rules": [
                 {
@@ -146,10 +146,10 @@
             ]
         },
         {
-            "id": "Max Crazy Gauge",
-"name": "Max Crazy Gauge",
+            "id": "maxCrazyGauge",
+            "name": "Max Crazy Gauge",
             "roles": {
-                "Ghost (Haunted Stage)": 1
+                "GhostHaunted": 1
             },
             "rules": [
                 {
@@ -162,11 +162,11 @@
             ]
         },
         {
-            "id": "Boundary Between Life and Death",
-"name": "Boundary Between Life and Death",
+            "id": "boundaryBetweenLifeDeath",
+            "name": "Boundary Between Life and Death",
             "roles": {
-                "Monster": 1,
-                "Overlord": 1
+                "monster": 1,
+                "overlord": 1
             },
             "rules": [
                 {
