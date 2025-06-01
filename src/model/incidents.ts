@@ -1,8 +1,7 @@
 import * as data from "../data";
 import type { Incident } from "../incidents.g";
 import { toRecord, type Union } from "../misc";
-import type { ScriptSpecified } from "./core";
-import type { AbilityTypeLose, OncePer } from "./roles";
+
 
 
 // export type Incident = IncidentInternal & {

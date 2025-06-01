@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { getRoleOfCast, type Script } from '../../../model/script';
+  import { getRoleOfCast } from '../../../model/script';
   import '@picocss/pico/css/pico.css';
-  import { roles, type RoleName, type AbilityType } from '../../../model/roles';
-  import { characters, type CharacterName, isCharacterName } from '../../../model/characters';
+  import { type RoleName, type AbilityType, singleRolenames } from '../../../model/roles';
+  import { type CharacterName, isCharacterName } from '../../../model/characters';
   import {
     fromEntries,
     hasProp,
@@ -10,41 +10,46 @@
     isArray,
     keys,
     renderCharacterDeath,
-    require,
     showAll,
     type RenderCharacterDeath,
   } from '../../../misc';
-  import { plots } from '../../../model/plots';
   import OncePer from './oncePer.svelte';
-  import { incidents } from '../../../model/incidents';
   import { getString } from '../+layout.svelte';
   import { get } from 'svelte/store';
   import type { Role } from '../../../roles.g';
   import Translation from '../../../view/translation.svelte';
+  import type { Script } from '../../../scripts.g';
+  import { charactersLookup, incidentsLookup, plotsLookup, rolesLookup } from '../../../data';
 
   export let selectedScript: Script;
 
-  $: usedIncidents = showAll(
-    selectedScript.incidents.map(
-      (x) => [x, incidents[typeof x.incident === 'string' ? x.incident : x.incident[0]]] as const
+  $: usedIncidents = selectedScript.incidents
+    .map(
+      (x) =>
+        [x, incidentsLookup[typeof x.incident === 'string' ? x.incident : x.incident[0]]] as const
     )
-  ).map(([scriptIncident, incidendtMeta]) => {
-    return {
-      ...scriptIncident,
-      ...incidendtMeta,
-      effect: incidendtMeta.effect
-        .map((x) => require(x))
-        .map((x) => ({ ...x, type: x.type?.replaceAll('Character Death', 'Character Death') })),
-    };
-  });
+    .map(([scriptIncident, incidendtMeta]) => {
+      return {
+        ...scriptIncident,
+        ...incidendtMeta,
+        effect: incidendtMeta.effect.map((x) => ({
+          ...x,
+          type: x.type?.replaceAll('Character Death', 'Character Death'),
+        })),
+      };
+    });
 
-  $: usedCharacters = Object.entries(selectedScript.cast).map(([key, value]) => {
-    if (typeof value === 'string') {
-      return { character: key, role: value };
-    } else {
-      return { character: key, role: value[0], ...value[1] };
-    }
-  });
+  $: usedCharacters = Object.entries(selectedScript.cast)
+    .map(([key, value]) => {
+      if (!value) {
+        return undefined;
+      } else if (typeof value === 'string') {
+        return { character: key, role: value };
+      } else {
+        return { character: key, role: value[0], ...value[1] };
+      }
+    })
+    .filter((x) => x !== undefined);
 
   $: plotabilities = [...selectedScript.mainPlot, ...selectedScript.subPlots]
     .map((x) => {
@@ -54,34 +59,35 @@
       return { plot: x[0], ...x[1] };
     })
     .flatMap((x) => {
-      const plot = require(plots[x.plot]);
-      return plot.rules.map((y) => ({ ...x, ...plot, ...y }));
+      const plot = plotsLookup[x.plot];
+      return plot.rules?.map((y) => ({ ...x, ...plot, ...y })) ?? [];
     })
     .map((x) => {
-      const { name, ...rest } = x;
-      return { ...rest, plot: name };
+      const { id, ...rest } = x;
+      return { ...rest, plot: id };
     });
   $: scriptRoles = Object.entries(selectedScript.cast)
-    .flatMap(([character, x]) => {
-      if (typeof x == 'string') {
-        if (x.includes('|')) {
-          const [role, ...rest] = x.split('|');
-
-          return x.split('|').map((x) => {
-            return { ...roles[x as keyof typeof roles], character };
-          });
-        } else {
-          return [{ ...roles[x as keyof typeof roles], character }];
-        }
+    .flatMap(([character, roleIds]) => {
+      if (roleIds == undefined) {
+        return [];
+      }
+      if (typeof roleIds == 'string') {
+        const roles = singleRolenames(roleIds);
+        return roles.map((x) => {
+          return { ...rolesLookup[x], character };
+        });
       } else {
-        return [{ ...roles[x[0]], character, ...x[1] }];
+        const roles = singleRolenames(roleIds[0]);
+        return roles.map((x) => {
+          return { ...rolesLookup[x], character, ...roleIds[1] };
+        });
       }
     })
     .map((x) => {
       const { name, ...rest } = x;
       return { role: name, ...rest } as Role & { role: RoleName; character: CharacterName };
     });
-  $: roleabilities = scriptRoles.flatMap((x) => x.abilities.map((a) => ({ ...a, ...x })));
+  $: roleabilities = scriptRoles.flatMap((x) => x.abilities?.map((a) => ({ ...a, ...x })) ?? []);
 
   $: abilities = [...plotabilities, ...roleabilities].map((x) => ({
     ...x,
@@ -116,8 +122,10 @@
   <h1><Translation translationKey={selectedScript.title} /></h1>
 
   <h2>
-    {#if selectedScript.set}
-      ({selectedScript.set.number}) <Translation translationKey={selectedScript.set.name} />
+    {#if (selectedScript.set?.length ?? 0) > 0}
+      ({#each selectedScript.set ?? [] as set}{set.number}) <Translation
+          translationKey={set.name}
+        />{/each}
     {/if}
   </h2>
 </hgroup>
@@ -514,8 +522,8 @@
         </tr>
       {/each}
       {#each usedIncidents as i}
-        {@const char = isCharacterName(i.culprit) ? characters[i.culprit] : undefined}
-        {@const limit = char ? char.paranoiaLimit : require(i).mob}
+        {@const char = isCharacterName(i.culprit) ? charactersLookup[i.culprit] : undefined}
+        {@const limit = char ? char.paranoiaLimit : i.mob}
         {#each i.effect as e}
           <tr>
             <td>
@@ -529,16 +537,16 @@
             </td>
             <td>
               <Translation translationKey={['On day {day}', { day: i.day }]} />
-              {#if limit ?? 0 > 0}<Translation translationKey={(['limit {limit}', { limit }])} />{/if}
+              {#if limit ?? 0 > 0}<Translation translationKey={['limit {limit}', { limit }]} />{/if}
               {#if e.prerequisite}
                 | <Translation translationKey={e.prerequisite} />
               {/if}
             </td>
 
             <td>
-              {#if require(char)?.doseNotTriggerIncidentEffect}
+              {#if char?.doseNotTriggerIncidentEffect}
                 <Translation translationKey={'This has no effect but the incident is triggered.'} />
-              {:else if char?.name && roles[getRoleOfCast(selectedScript, char.name) ?? 'Person']?.doseNotTriggerIncidentEffect}
+              {:else if char?.name && rolesLookup[getRoleOfCast(selectedScript, char.id) ?? 'Person']?.doseNotTriggerIncidentEffect}
                 <Translation translationKey={'This has no effect but the incident is triggered.'} />
               {:else}
                 <Translation translationKey={e.description} />

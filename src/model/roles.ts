@@ -5,10 +5,7 @@ import type { DoseNotTriggerIncident } from "./incidents";
 import type { Role, Roles as RoleType } from '../roles.g'
 import type { Character } from "../characters.g";
 
-export type AbilityType = AbilityTypeLose | AbilityTypeCreation | AbilityTypeDefault;
-export type AbilityTypeLose = typeof loseTypes[number];
-export type AbilityTypeCreation = 'Script creation';
-export type AbilityTypeDefault = 'Optional' | 'Mandatory';
+export type AbilityType = Abilitie['type'];
 
 export const loseTypes = [
     'Mandatory Loss condition: Protagonists Death',
