@@ -47,7 +47,7 @@
         {
             "id": "Private Investigator",
 "name": "Private Investigator",
-            "tags": ["Immortal"],
+            "tags": ["immortal"],
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -198,9 +198,9 @@
             ]
         },
         {
-            "id": "Immortal",
+            "id": "immortal",
 "name": "Immortal",
-            "tags": ["Immortal"],
+            "tags": ["immortal"],
             "abilities": []
         }
     ]

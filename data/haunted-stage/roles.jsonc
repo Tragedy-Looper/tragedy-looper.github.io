@@ -113,7 +113,7 @@
             "id": "Monster",
 "name": "Monster",
             "tags": [
-                "Immortal"
+                "immortal"
             ],
             "abilities": [
                 {

@@ -4,7 +4,7 @@
     // "$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "id": "Drifting to Another World",
+            "id": "driftingToAnotherWorld",
             "name": "Drifting to Another World",
             "effect": [
                 {
@@ -18,7 +18,7 @@
             ]
         },
         {
-            "id": "Assassination",
+            "id": "assassination",
             "name": "Assassination",
             "effect": [
                 {
@@ -27,7 +27,7 @@
             ]
         },
         {
-            "id": "World End",
+            "id": "worldEnd",
             "name": "World End",
             "effect": [
                 {
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "id": "World Convergence",
+            "id": "worldConvergence",
             "name": "World Convergence",
             "effect": [
                 {
@@ -47,7 +47,7 @@
             ]
         },
         {
-            "id": "Small Force",
+            "id": "smallForce",
             "name": "Small Force",
             "effect": [
                 {

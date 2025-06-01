@@ -10,13 +10,13 @@
                 "name": "Midnight Circle",
                 "number": 1
             }],
-            "tragedySet": "Basic Tragedy",
+            "tragedySet": "basicTragedy",
             "mainPlot": [
-                "Change of Future"
+                "changeOfFuture"
             ],
             "subPlots": [
-                "A Love Affair",
-                "Circle of Friends"
+                "loveAffair",
+                "circleFriends"
             ],
             "difficultySets": [
                 {
@@ -30,34 +30,34 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "richStudent": "Conspiracy Theorist",
-                "classRep": "Person",
-                "alien": "Friend",
-                "informer": "Loved One",
-                "forensicSpecialist": "Friend",
-                "ai": "Time Traveler",
-                "patient": "Cultist",
-                "scientist": "Lover"
+                "richStudent": "conspiracyTheorist",
+                "classRep": "person",
+                "alien": "friend",
+                "informer": "lovedOne",
+                "forensicSpecialist": "friend",
+                "ai": "timeTraveler",
+                "patient": "cultist",
+                "scientist": "lover"
             },
             "incidents": [
                 {
                     "day": 3,
-                    "incident": "Murder",
+                    "incident": "murder",
                     "culprit": "informer"
                 },
                 {
                     "day": 4,
-                    "incident": "Butterfly Effect",
+                    "incident": "butterflyEffect",
                     "culprit": "ai"
                 },
                 {
                     "day": 5,
-                    "incident": "Suicide",
+                    "incident": "suicide",
                     "culprit": "richStudent"
                 },
                 {
                     "day": 6,
-                    "incident": "Hospital Incident",
+                    "incident": "hospitalIncident",
                     "culprit": "scientist"
                 }
             ],
@@ -72,13 +72,13 @@
                 "name": "Midnight Circle",
                 "number": 2
             }],
-            "tragedySet": "Basic Tragedy",
+            "tragedySet": "basicTragedy",
             "mainPlot": [
-                "Change of Future"
+                "changeOfFuture"
             ],
             "subPlots": [
-                "A Love Affair",
-                "Circle of Friends"
+                "loveAffair",
+                "circleFriends"
             ],
             "difficultySets": [
                 {
@@ -96,35 +96,35 @@
             ],
             "daysPerLoop": 7,
             "cast": {
-                "boyStudent": "Serial Killer",
-                "girlStudent": "Key Person",
-                "richStudent": "Killer",
-                "shrineMaiden": "Friend",
-                "policeOfficer": "Brain",
-                "officeWorker": "Person",
-                "informer": "Person",
-                "doctor": "Conspiracy Theorist",
-                "patient": "Cultist"
+                "boyStudent": "serialKiller",
+                "girlStudent": "keyPerson",
+                "richStudent": "killer",
+                "shrineMaiden": "friend",
+                "policeOfficer": "brain",
+                "officeWorker": "person",
+                "informer": "person",
+                "doctor": "conspiracyTheorist",
+                "patient": "cultist"
             },
             "incidents": [
                 {
                     "day": 2,
-                    "incident": "Increasing Unease",
+                    "incident": "increasingUnease",
                     "culprit": "patient"
                 },
                 {
                     "day": 4,
-                    "incident": "Hospital Incident",
+                    "incident": "hospitalIncident",
                     "culprit": "shrineMaiden"
                 },
                 {
                     "day": 5,
-                    "incident": "Missing Person",
+                    "incident": "missingPerson",
                     "culprit": "boyStudent"
                 },
                 {
                     "day": 7,
-                    "incident": "Murder",
+                    "incident": "murder",
                     "culprit": "officeWorker"
                 }
             ],
@@ -139,13 +139,13 @@
                 "name": "Midnight Circle",
                 "number": 3
             }],
-            "tragedySet": "Basic Tragedy",
+            "tragedySet": "basicTragedy",
             "mainPlot": [
-                "Change of Future"
+                "changeOfFuture"
             ],
             "subPlots": [
-                "The Hidden Freak",
-                "Circle of Friends"
+                "hiddenFreak",
+                "circleFriends"
             ],
             "difficultySets": [
                 {
@@ -159,30 +159,30 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "girlStudent": "Person",
-                "classRep": "Friend",
-                "shrineMaiden": "Friend",
-                "alien": "Person",
-                "informer": "Conspiracy Theorist",
-                "popIdol": "Cultist",
-                "journalist": "Person",
-                "doctor": "Serial Killer",
-                "patient": "Time Traveler"
+                "girlStudent": "person",
+                "classRep": "friend",
+                "shrineMaiden": "friend",
+                "alien": "person",
+                "informer": "conspiracyTheorist",
+                "popIdol": "cultist",
+                "journalist": "person",
+                "doctor": "serialKiller",
+                "patient": "timeTraveler"
             },
             "incidents": [
                 {
                     "day": 2,
-                    "incident": "Butterfly Effect",
+                    "incident": "butterflyEffect",
                     "culprit": "classRep"
                 },
                 {
                     "day": 4,
-                    "incident": "Faraway Murder",
+                    "incident": "farawayMurder",
                     "culprit": "doctor"
                 },
                 {
                     "day": 5,
-                    "incident": "Hospital Incident",
+                    "incident": "hospitalIncident",
                     "culprit": "informer"
                 }
             ],
@@ -217,12 +217,12 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "boyStudent": "Person",
+                "boyStudent": "person",
                 "girlStudent": "Obstinate",
-                "richStudent": "Friend",
-                "shrineMaiden": "Person",
-                "alien": "Factor",
-                "policeOfficer": "Person",
+                "richStudent": "friend",
+                "shrineMaiden": "person",
+                "alien": "factor",
+                "policeOfficer": "person",
                 "officeWorker": "Ninja"
             },
             "incidents": [
@@ -238,7 +238,7 @@
                 },
                 {
                     "day": 4,
-                    "incident": "Increasing Unease",
+                    "incident": "increasingUnease",
                     "culprit": "girlStudent"
                 }
             ],
@@ -274,32 +274,32 @@
             "daysPerLoop": 4,
             "cast": {
                 "boyStudent": "Obstinate",
-                "richStudent": "Person",
-                "shrineMaiden": "Person",
-                "alien": "Conspiracy Theorist",
+                "richStudent": "person",
+                "shrineMaiden": "person",
+                "alien": "conspiracyTheorist",
                 "godlyBeing": [
-                    "Brain",
+                    "brain",
                     {
                         "enters on loop": 2
                     }
                 ],
-                "policeOfficer": "Serial Killer",
-                "officeWorker": "Factor",
-                "doctor": "Person",
-                "patient": "Key Person"
+                "policeOfficer": "serialKiller",
+                "officeWorker": "factor",
+                "doctor": "person",
+                "patient": "keyPerson"
             },
             "incidents": [
                 {
                     "day": 2,
                     "incident": [
                         "Fake Incident",
-                        "Hospital Incident"
+                        "hospitalIncident"
                     ],
                     "culprit": "boyStudent"
                 },
                 {
                     "day": 3,
-                    "incident": "Increasing Unease",
+                    "incident": "increasingUnease",
                     "culprit": "richStudent"
                 },
                 {
@@ -321,7 +321,7 @@
             }],
             "tragedySet": "Midnight Zone",
             "mainPlot": [
-                "The Sealed Item"
+                "sealedItem"
             ],
             "subPlots": [
                 "Love-Hate Spiral",
@@ -344,19 +344,19 @@
             "daysPerLoop": 4,
             "cast": {
                 "boyStudent": "Obstinate",
-                "classRep": "Friend",
-                "mysteryBoy": "Immortal",
-                "shrineMaiden": "Person",
-                "illusion": "Brain",
-                "popIdol": "Person",
+                "classRep": "friend",
+                "mysteryBoy": "immortal",
+                "shrineMaiden": "person",
+                "illusion": "brain",
+                "popIdol": "person",
                 "journalist": "Prophet",
-                "doctor": "Cultist",
-                "henchman": "Person"
+                "doctor": "cultist",
+                "henchman": "person"
             },
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "Suicide",
+                    "incident": "suicide",
                     "culprit": "popIdol"
                 },
                 {
@@ -379,7 +379,7 @@
                     "day": 4,
                     "incident": [
                         "Fake Incident",
-                        "Hospital Incident"
+                        "hospitalIncident"
                     ],
                     "culprit": "boyStudent"
                 }
@@ -412,14 +412,14 @@
             "daysPerLoop": 6,
             "cast": {
                 "boyStudent": "Magician",
-                "richStudent": "Person",
+                "richStudent": "person",
                 "mysteryBoy": "Prophet",
-                "shrineMaiden": "Serial Killer",
+                "shrineMaiden": "serialKiller",
                 "policeOfficer": "Magician",
-                "popIdol": "Friend",
-                "journalist": "Conspiracy Theorist",
-                "doctor": "Person",
-                "patient": "Immortal"
+                "popIdol": "friend",
+                "journalist": "conspiracyTheorist",
+                "doctor": "person",
+                "patient": "immortal"
             },
             "incidents": [
                 {
@@ -429,7 +429,7 @@
                 },
                 {
                     "day": 4,
-                    "incident": "Missing Person",
+                    "incident": "missingPerson",
                     "culprit": "richStudent"
                 },
                 {
@@ -470,14 +470,14 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "boyStudent": "Brain",
+                "boyStudent": "brain",
                 "richStudent": "Fool",
-                "shrineMaiden": "Person",
+                "shrineMaiden": "person",
                 "alien": "Twin",
                 "policeOfficer": "Paranoiac",
-                "officeWorker": "Person",
-                "journalist": "Person",
-                "patient": "Friend"
+                "officeWorker": "person",
+                "journalist": "person",
+                "patient": "friend"
             },
             "incidents": [
                 {
@@ -492,7 +492,7 @@
                 },
                 {
                     "day": 4,
-                    "incident": "Hospital Incident",
+                    "incident": "hospitalIncident",
                     "culprit": "shrineMaiden"
                 },
                 {
@@ -533,19 +533,19 @@
             "daysPerLoop": 5,
             "cast": {
                 "boyStudent": "Paranoiac",
-                "girlStudent": "Person",
-                "richStudent": "Person",
+                "girlStudent": "person",
+                "richStudent": "person",
                 "shrineMaiden": "Twin",
-                "officeWorker": "Person",
-                "journalist": "Conspiracy Theorist",
-                "popIdol": "Person",
+                "officeWorker": "person",
+                "journalist": "conspiracyTheorist",
+                "popIdol": "person",
                 "patient": "Fool",
                 "nurse": "Obstinate"
             },
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "Increasing Unease",
+                    "incident": "increasingUnease",
                     "culprit": "nurse"
                 },
                 {
@@ -586,7 +586,7 @@
             ],
             "subPlots": [
                 "I am a Master Detective",
-                "The Hidden Freak"
+                "hiddenFreak"
             ],
             "difficultySets": [
                 {
@@ -596,20 +596,20 @@
             ],
             "daysPerLoop": 7,
             "cast": {
-                "girlStudent": "Friend",
+                "girlStudent": "friend",
                 "richStudent": "Private Investigator",
                 "shrineMaiden": "Poisoner",
-                "alien": "Key Person",
-                "informer": "Person",
-                "popIdol": "Friend",
+                "alien": "keyPerson",
+                "informer": "person",
+                "popIdol": "friend",
                 "boss": [
-                    "Conspiracy Theorist",
+                    "conspiracyTheorist",
                     {
                         "Turf": "School"
                     }
                 ],
                 "doctor": "Fool",
-                "patient": "Serial Killer"
+                "patient": "serialKiller"
             },
             "incidents": [
                 {
@@ -619,7 +619,7 @@
                 },
                 {
                     "day": 3,
-                    "incident": "Suicide",
+                    "incident": "suicide",
                     "culprit": "girlStudent"
                 },
                 {
@@ -661,14 +661,14 @@
             "daysPerLoop": 4,
             "cast": {
                 "richStudent": "Fool",
-                "classRep": "Person",
+                "classRep": "person",
                 "shrineMaiden": "Paranoiac",
                 "policeOfficer": "Therapist",
-                "officeWorker": "Friend",
-                "journalist": "Person",
-                "doctor": "Person",
-                "patient": "Person",
-                "henchman": "Conspiracy Theorist"
+                "officeWorker": "friend",
+                "journalist": "person",
+                "doctor": "person",
+                "patient": "person",
+                "henchman": "conspiracyTheorist"
             },
             "incidents": [
                 {
@@ -678,12 +678,12 @@
                 },
                 {
                     "day": 2,
-                    "incident": "Increasing Unease",
+                    "incident": "increasingUnease",
                     "culprit": "henchman"
                 },
                 {
                     "day": 3,
-                    "incident": "Increasing Unease",
+                    "incident": "increasingUnease",
                     "culprit": "patient"
                 },
                 {
@@ -723,21 +723,21 @@
             ],
             "daysPerLoop": 7,
             "cast": {
-                "girlStudent": "Conspiracy Theorist",
-                "richStudent": "Killer",
+                "girlStudent": "conspiracyTheorist",
+                "richStudent": "killer",
                 "mysteryBoy": "Poisoner",
                 "alien": "Obstinate",
                 "policeOfficer": "Private Investigator",
-                "informer": "Person",
-                "popIdol": "Friend",
-                "patient": "Brain",
-                "scientist": "Person",
-                "henchman": "Person"
+                "informer": "person",
+                "popIdol": "friend",
+                "patient": "brain",
+                "scientist": "person",
+                "henchman": "person"
             },
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "Hospital Incident",
+                    "incident": "hospitalIncident",
                     "culprit": "informer"
                 },
                 {

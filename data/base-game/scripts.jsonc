@@ -12,7 +12,7 @@
           "number": 1
         }
       ],
-      "tragedySet": "First Steps",
+      "tragedySet": "firstSteps",
       "daysPerLoop": 4,
       "difficultySets": [
         {
@@ -21,28 +21,28 @@
         }
       ],
       "mainPlot": [
-        "Murder Plan"
+        "murderPlan"
       ],
       "subPlots": [
-        "Shadow of the Ripper"
+        "shadowRipper"
       ],
       "cast": {
-        "boyStudent": "Person",
-        "girlStudent": "Key Person",
-        "shrineMaiden": "Serial Killer",
-        "policeOfficer": "Conspiracy Theorist",
-        "officeWorker": "Killer",
-        "doctor": "Brain"
+        "boyStudent": "person",
+        "girlStudent": "keyPerson",
+        "shrineMaiden": "serialKiller",
+        "policeOfficer": "conspiracyTheorist",
+        "officeWorker": "killer",
+        "doctor": "brain"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Murder",
+          "incident": "murder",
           "culprit": "officeWorker"
         },
         {
           "day": 3,
-          "incident": "Suicide",
+          "incident": "suicide",
           "culprit": "girlStudent"
         }
       ],
@@ -59,31 +59,31 @@
           "difficulty": 1
         }
       ],
-      "tragedySet": "First Steps",
+      "tragedySet": "firstSteps",
       "mainPlot": [
-        "Light of the Avenger"
+        "lightAvenger"
       ],
       "subPlots": [
-        "A Hideous Script"
+        "hideousScript"
       ],
       "daysPerLoop": 4,
       "cast": {
-        "alien": "Brain",
-        "policeOfficer": "Conspiracy Theorist",
-        "officeWorker": "Curmudgeon",
-        "patient": "Friend",
-        "shrineMaiden": "Person",
-        "popIdol": "Person"
+        "alien": "brain",
+        "policeOfficer": "conspiracyTheorist",
+        "officeWorker": "curmudgeon",
+        "patient": "friend",
+        "shrineMaiden": "person",
+        "popIdol": "person"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Missing Person",
+          "incident": "missingPerson",
           "culprit": "officeWorker"
         },
         {
           "day": 3,
-          "incident": "Hospital Incident",
+          "incident": "hospitalIncident",
           "culprit": "shrineMaiden"
         }
       ],
@@ -103,7 +103,7 @@
           "number": 2
         }
       ],
-      "tragedySet": "First Steps",
+      "tragedySet": "firstSteps",
       "daysPerLoop": 5,
       "difficultySets": [
         {
@@ -116,33 +116,33 @@
         }
       ],
       "mainPlot": [
-        "A Place to Protect"
+        "placeProtect"
       ],
       "subPlots": [
-        "An Unsettling Rumor"
+        "unsettlingRumor"
       ],
       "cast": {
-        "boyStudent": "Cultist",
-        "girlStudent": "Person",
-        "shrineMaiden": "Conspiracy Theorist",
-        "officeWorker": "Person",
-        "doctor": "Key Person",
-        "patient": "Person"
+        "boyStudent": "cultist",
+        "girlStudent": "person",
+        "shrineMaiden": "conspiracyTheorist",
+        "officeWorker": "person",
+        "doctor": "keyPerson",
+        "patient": "person"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "Increasing Unease",
+          "incident": "increasingUnease",
           "culprit": "shrineMaiden"
         },
         {
           "day": 3,
-          "incident": "Hospital Incident",
+          "incident": "hospitalIncident",
           "culprit": "boyStudent"
         },
         {
           "day": 5,
-          "incident": "Faraway Murder",
+          "incident": "farawayMurder",
           "culprit": "patient"
         }
       ],
@@ -159,7 +159,7 @@
           "number": 3
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 6,
       "difficultySets": [
         {
@@ -172,37 +172,37 @@
         }
       ],
       "mainPlot": [
-        "Sign with me!"
+        "signWithMe"
       ],
       "subPlots": [
-        "A Love Affair",
-        "The Hidden Freak"
+        "loveAffair",
+        "hiddenFreak"
       ],
       "cast": {
-        "boyStudent": "Person",
-        "girlStudent": "Friend",
-        "classRep": "Loved One",
-        "shrineMaiden": "Key Person",
-        "policeOfficer": "Person",
-        "officeWorker": "Lover",
-        "informer": "Serial Killer",
-        "patient": "Person",
-        "nurse": "Person"
+        "boyStudent": "person",
+        "girlStudent": "friend",
+        "classRep": "lovedOne",
+        "shrineMaiden": "keyPerson",
+        "policeOfficer": "person",
+        "officeWorker": "lover",
+        "informer": "serialKiller",
+        "patient": "person",
+        "nurse": "person"
       },
       "incidents": [
         {
           "day": 3,
-          "incident": "Foul Evil",
+          "incident": "foulEvil",
           "culprit": "officeWorker"
         },
         {
           "day": 4,
-          "incident": "Increasing Unease",
+          "incident": "increasingUnease",
           "culprit": "classRep"
         },
         {
           "day": 6,
-          "incident": "Suicide",
+          "incident": "suicide",
           "culprit": "girlStudent"
         }
       ],
@@ -223,38 +223,38 @@
           "difficulty": 3
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "mainPlot": [
-        "Sign with me!"
+        "signWithMe"
       ],
       "subPlots": [
-        "An Unsettling Rumor",
-        "The Hidden Freak"
+        "unsettlingRumor",
+        "hiddenFreak"
       ],
       "daysPerLoop": 5,
       "cast": {
-        "popIdol": "Key Person",
-        "doctor": "Conspiracy Theorist",
-        "boyStudent": "Serial Killer",
-        "patient": "Person",
-        "teacher": "Person",
-        "richStudent": "Person",
-        "shrineMaiden": "Friend"
+        "popIdol": "keyPerson",
+        "doctor": "conspiracyTheorist",
+        "boyStudent": "serialKiller",
+        "patient": "person",
+        "teacher": "person",
+        "richStudent": "person",
+        "shrineMaiden": "friend"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Increasing Unease",
+          "incident": "increasingUnease",
           "culprit": "patient"
         },
         {
           "day": 3,
-          "incident": "Hospital Incident",
+          "incident": "hospitalIncident",
           "culprit": "shrineMaiden"
         },
         {
           "day": 5,
-          "incident": "Missing Person",
+          "incident": "missingPerson",
           "culprit": "boyStudent"
         }
       ],
@@ -274,7 +274,7 @@
           "number": 4
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 7,
       "difficultySets": [
         {
@@ -287,42 +287,42 @@
         }
       ],
       "mainPlot": [
-        "The Sealed Item"
+        "sealedItem"
       ],
       "subPlots": [
-        "The Hidden Freak",
-        "Unknown Factor X"
+        "hiddenFreak",
+        "unknownFactor"
       ],
       "cast": {
-        "boyStudent": "Person",
-        "girlStudent": "Person",
-        "richStudent": "Brain",
-        "shrineMaiden": "Friend",
-        "officeWorker": "Serial Killer",
-        "informer": "Person",
-        "journalist": "Factor",
-        "patient": "Person",
-        "nurse": "Cultist"
+        "boyStudent": "person",
+        "girlStudent": "person",
+        "richStudent": "brain",
+        "shrineMaiden": "friend",
+        "officeWorker": "serialKiller",
+        "informer": "person",
+        "journalist": "factor",
+        "patient": "person",
+        "nurse": "cultist"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Increasing Unease",
+          "incident": "increasingUnease",
           "culprit": "richStudent"
         },
         {
           "day": 4,
-          "incident": "Missing Person",
+          "incident": "missingPerson",
           "culprit": "nurse"
         },
         {
           "day": 5,
-          "incident": "Missing Person",
+          "incident": "missingPerson",
           "culprit": "boyStudent"
         },
         {
           "day": 7,
-          "incident": "Suicide",
+          "incident": "suicide",
           "culprit": "journalist"
         }
       ],
@@ -339,7 +339,7 @@
           "number": 5
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 7,
       "difficultySets": [
         {
@@ -352,47 +352,47 @@
         }
       ],
       "mainPlot": [
-        "Giant Time Bomb"
+        "giantTimeBomb"
       ],
       "subPlots": [
-        "Threads of Fate",
-        "Circle of Friends"
+        "threadsFate",
+        "circleFriends"
       ],
       "cast": {
-        "richStudent": "Witch",
-        "classRep": "Person",
-        "shrineMaiden": "Person",
-        "alien": "Friend",
-        "officeWorker": "Friend",
-        "informer": "Conspiracy Theorist",
-        "popIdol": "Person",
-        "journalist": "Person",
-        "patient": "Person"
+        "richStudent": "witch",
+        "classRep": "person",
+        "shrineMaiden": "person",
+        "alien": "friend",
+        "officeWorker": "friend",
+        "informer": "conspiracyTheorist",
+        "popIdol": "person",
+        "journalist": "person",
+        "patient": "person"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Suicide",
+          "incident": "suicide",
           "culprit": "richStudent"
         },
         {
           "day": 3,
-          "incident": "Missing Person",
+          "incident": "missingPerson",
           "culprit": "officeWorker"
         },
         {
           "day": 4,
-          "incident": "Hospital Incident",
+          "incident": "hospitalIncident",
           "culprit": "journalist"
         },
         {
           "day": 6,
-          "incident": "Spreading",
+          "incident": "spreading",
           "culprit": "shrineMaiden"
         },
         {
           "day": 7,
-          "incident": "Foul Evil",
+          "incident": "foulEvil",
           "culprit": "popIdol"
         }
       ],
@@ -409,7 +409,7 @@
           "number": 6
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 7,
       "difficultySets": [
         {
@@ -418,47 +418,47 @@
         }
       ],
       "mainPlot": [
-        "Change of Future"
+        "changeOfFuture"
       ],
       "subPlots": [
-        "The Hidden Freak",
-        "A Love Affair"
+        "hiddenFreak",
+        "loveAffair"
       ],
       "cast": {
-        "boyStudent": "Time Traveler",
-        "richStudent": "Person",
-        "shrineMaiden": "Cultist",
+        "boyStudent": "timeTraveler",
+        "richStudent": "person",
+        "shrineMaiden": "cultist",
         "godlyBeing": [
-          "Loved One",
+          "lovedOne",
           {
             "enters on loop": 3
           }
         ],
-        "policeOfficer": "Person",
-        "officeWorker": "Serial Killer",
-        "popIdol": "Lover",
-        "patient": "Person",
-        "nurse": "Friend"
+        "policeOfficer": "person",
+        "officeWorker": "serialKiller",
+        "popIdol": "lover",
+        "patient": "person",
+        "nurse": "friend"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Suicide",
+          "incident": "suicide",
           "culprit": "popIdol"
         },
         {
           "day": 4,
-          "incident": "Increasing Unease",
+          "incident": "increasingUnease",
           "culprit": "shrineMaiden"
         },
         {
           "day": 5,
-          "incident": "Butterfly Effect",
+          "incident": "butterflyEffect",
           "culprit": "policeOfficer"
         },
         {
           "day": 7,
-          "incident": "Foul Evil",
+          "incident": "foulEvil",
           "culprit": "patient"
         }
       ],
@@ -475,7 +475,7 @@
           "number": 7
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 7,
       "difficultySets": [
         {
@@ -488,42 +488,42 @@
         }
       ],
       "mainPlot": [
-        "Sign with me!"
+        "signWithMe"
       ],
       "subPlots": [
-        "Unknown Factor X",
-        "Paranoia Virus"
+        "unknownFactor",
+        "paranoiaVirus"
       ],
       "cast": {
-        "boyStudent": "Person",
-        "girlStudent": "Key Person",
-        "richStudent": "Factor",
-        "mysteryBoy": "Cultist",
-        "officeWorker": "Person",
-        "informer": "Conspiracy Theorist",
-        "journalist": "Person",
-        "patient": "Person",
-        "nurse": "Person"
+        "boyStudent": "person",
+        "girlStudent": "keyPerson",
+        "richStudent": "factor",
+        "mysteryBoy": "cultist",
+        "officeWorker": "person",
+        "informer": "conspiracyTheorist",
+        "journalist": "person",
+        "patient": "person",
+        "nurse": "person"
       },
       "incidents": [
         {
           "day": 3,
-          "incident": "Missing Person",
+          "incident": "missingPerson",
           "culprit": "richStudent"
         },
         {
           "day": 4,
-          "incident": "Increasing Unease",
+          "incident": "increasingUnease",
           "culprit": "journalist"
         },
         {
           "day": 5,
-          "incident": "Hospital Incident",
+          "incident": "hospitalIncident",
           "culprit": "mysteryBoy"
         },
         {
           "day": 7,
-          "incident": "Murder",
+          "incident": "murder",
           "culprit": "boyStudent"
         }
       ],
@@ -540,7 +540,7 @@
           "number": 8
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 4,
       "difficultySets": [
         {
@@ -553,43 +553,43 @@
         }
       ],
       "mainPlot": [
-        "Change of Future"
+        "changeOfFuture"
       ],
       "subPlots": [
-        "Threads of Fate",
-        "Paranoia Virus"
+        "threadsFate",
+        "paranoiaVirus"
       ],
       "cast": {
-        "girlStudent": "Person",
-        "richStudent": "Conspiracy Theorist",
-        "classRep": "Person",
-        "shrineMaiden": "Cultist",
-        "policeOfficer": "Person",
-        "officeWorker": "Person",
-        "informer": "Conspiracy Theorist",
-        "doctor": "Person",
-        "patient": "Person",
-        "henchman": "Time Traveler"
+        "girlStudent": "person",
+        "richStudent": "conspiracyTheorist",
+        "classRep": "person",
+        "shrineMaiden": "cultist",
+        "policeOfficer": "person",
+        "officeWorker": "person",
+        "informer": "conspiracyTheorist",
+        "doctor": "person",
+        "patient": "person",
+        "henchman": "timeTraveler"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "Butterfly Effect",
+          "incident": "butterflyEffect",
           "culprit": "richStudent"
         },
         {
           "day": 2,
-          "incident": "Foul Evil",
+          "incident": "foulEvil",
           "culprit": "henchman"
         },
         {
           "day": 3,
-          "incident": "Spreading",
+          "incident": "spreading",
           "culprit": "doctor"
         },
         {
           "day": 4,
-          "incident": "Missing Person",
+          "incident": "missingPerson",
           "culprit": "policeOfficer"
         }
       ],
@@ -606,7 +606,7 @@
           "number": 9
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 7,
       "difficultySets": [
         {
@@ -619,42 +619,42 @@
         }
       ],
       "mainPlot": [
-        "Murder Plan"
+        "murderPlan"
       ],
       "subPlots": [
-        "Circle of Friends",
-        "A Love Affair"
+        "circleFriends",
+        "loveAffair"
       ],
       "cast": {
-        "boyStudent": "Lover",
-        "girlStudent": "Loved One",
-        "richStudent": "Killer",
-        "shrineMaiden": "Key Person",
-        "policeOfficer": "Conspiracy Theorist",
-        "officeWorker": "Person",
-        "informer": "Friend",
-        "doctor": "Brain",
-        "patient": "Friend"
+        "boyStudent": "lover",
+        "girlStudent": "lovedOne",
+        "richStudent": "killer",
+        "shrineMaiden": "keyPerson",
+        "policeOfficer": "conspiracyTheorist",
+        "officeWorker": "person",
+        "informer": "friend",
+        "doctor": "brain",
+        "patient": "friend"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Increasing Unease",
+          "incident": "increasingUnease",
           "culprit": "officeWorker"
         },
         {
           "day": 4,
-          "incident": "Suicide",
+          "incident": "suicide",
           "culprit": "girlStudent"
         },
         {
           "day": 5,
-          "incident": "Hospital Incident",
+          "incident": "hospitalIncident",
           "culprit": "boyStudent"
         },
         {
           "day": 7,
-          "incident": "Murder",
+          "incident": "murder",
           "culprit": "policeOfficer"
         }
       ],
@@ -671,7 +671,7 @@
           "number": 10
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 6,
       "difficultySets": [
         {
@@ -680,59 +680,59 @@
         }
       ],
       "mainPlot": [
-        "Giant Time Bomb"
+        "giantTimeBomb"
       ],
       "subPlots": [
-        "An Unsettling Rumor",
-        "A Love Affair"
+        "unsettlingRumor",
+        "loveAffair"
       ],
       "cast": {
-        "girlStudent": "Person",
-        "richStudent": "Loved One",
-        "classRep": "Person",
-        "mysteryBoy": "Brain",
-        "alien": "Person",
+        "girlStudent": "person",
+        "richStudent": "lovedOne",
+        "classRep": "person",
+        "mysteryBoy": "brain",
+        "alien": "person",
         "godlyBeing": [
-          "Witch",
+          "witch",
           {
             "enters on loop": 4
           }
         ],
-        "officeWorker": "Person",
-        "popIdol": "Person",
+        "officeWorker": "person",
+        "popIdol": "person",
         "boss": [
-          "Conspiracy Theorist",
+          "conspiracyTheorist",
           {
             "Turf": "School"
           }
         ],
-        "patient": "Lover",
-        "nurse": "Person"
+        "patient": "lover",
+        "nurse": "person"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Butterfly Effect",
+          "incident": "butterflyEffect",
           "culprit": "classRep"
         },
         {
           "day": 3,
-          "incident": "Increasing Unease",
+          "incident": "increasingUnease",
           "culprit": "alien"
         },
         {
           "day": 4,
-          "incident": "Missing Person",
+          "incident": "missingPerson",
           "culprit": "officeWorker"
         },
         {
           "day": 5,
-          "incident": "Missing Person",
+          "incident": "missingPerson",
           "culprit": "nurse"
         },
         {
           "day": 6,
-          "incident": "Missing Person",
+          "incident": "missingPerson",
           "culprit": "patient"
         }
       ],

@@ -12,13 +12,13 @@
           "number": 1
         }
       ],
-      "tragedySet": "Another Horizon",
+      "tragedySet": "anotherHorizon",
       "mainPlot": [
-        "Shadow Demon King"
+        "shadowDemonKing"
       ],
       "subPlots": [
-        "The World of Dollhouse",
-        "Threads of Fate"
+        "worldDollhouse",
+        "threadsFate"
       ],
       "difficultySets": [
         {
@@ -28,15 +28,15 @@
       ],
       "daysPerLoop": 5,
       "cast": {
-        "boyStudent": "Person",
-        "richStudent": "Person",
-        "shrineMaiden": "Person",
-        "doctor": "Person",
-        "classRep": "Person",
-        "alien": "Person",
-        "popIdol": "Person",
-        "journalist": "Quidnunc",
-        "henchman": "Twilight"
+        "boyStudent": "person",
+        "richStudent": "person",
+        "shrineMaiden": "person",
+        "doctor": "person",
+        "classRep": "person",
+        "alien": "person",
+        "popIdol": "person",
+        "journalist": "quidnunc",
+        "henchman": "twilight"
       },
       "incidents": [
         {
@@ -78,13 +78,13 @@
           "number": 2
         }
       ],
-      "tragedySet": "Another Horizon",
+      "tragedySet": "anotherHorizon",
       "mainPlot": [
-        "Parallel World War"
+        "parallelWorldWar"
       ],
       "subPlots": [
-        "Threads of Fate",
-        "The World of Dollhouse"
+        "threadsFate",
+        "worldDollhouse"
       ],
       "difficultySets": [
         {
@@ -94,20 +94,20 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "girlStudent": "Person",
-        "shrineMaiden": "Person",
-        "informer": "Person",
-        "doctor": "Person",
-        "alien": "Person",
+        "girlStudent": "person",
+        "shrineMaiden": "person",
+        "informer": "person",
+        "doctor": "person",
+        "alien": "person",
         "godlyBeing": [
-          "Agent",
+          "agent",
           {
             "enters on loop": 2
           }
         ],
-        "popIdol": "Person",
+        "popIdol": "person",
         "boss": [
-          "Quidnunc",
+          "quidnunc",
           {
             "Turf": "Hospital"
           }
@@ -121,7 +121,7 @@
         },
         {
           "day": 2,
-          "incident": "World Convergence",
+          "incident": "worldConvergence",
           "culprit": "godlyBeing"
         },
         {
@@ -158,13 +158,13 @@
           "number": 3
         }
       ],
-      "tragedySet": "Another Horizon",
+      "tragedySet": "anotherHorizon",
       "mainPlot": [
-        "Lost Heart"
+        "lostHeart"
       ],
       "subPlots": [
-        "Ego Wave",
-        "Moonside City"
+        "egoWave",
+        "moonsideCity"
       ],
       "difficultySets": [
         {
@@ -174,30 +174,30 @@
       ],
       "daysPerLoop": 2,
       "cast": {
-        "boyStudent": "Quidnunc",
-        "girlStudent": "Agitator",
-        "richStudent": "Neurosis",
-        "policeOfficer": "Agent",
-        "doctor": "Person",
-        "patient": "Brain",
-        "journalist": "Person",
+        "boyStudent": "quidnunc",
+        "girlStudent": "agitator",
+        "richStudent": "neurosis",
+        "policeOfficer": "agent",
+        "doctor": "person",
+        "patient": "brain",
+        "journalist": "person",
         "henchman": [
-          "Animus",
+          "animus",
           {
             "world": "abnormal"
           }
         ],
-        "illusion": "Person"
+        "illusion": "person"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "Small Force",
+          "incident": "smallForce",
           "culprit": "policeOfficer"
         },
         {
           "day": 2,
-          "incident": "Hospital Incident",
+          "incident": "hospitalIncident",
           "culprit": "richStudent"
         }
       ],
@@ -214,13 +214,13 @@
           "number": 4
         }
       ],
-      "tragedySet": "Another Horizon",
+      "tragedySet": "anotherHorizon",
       "mainPlot": [
-        "Shadow Demon King"
+        "shadowDemonKing"
       ],
       "subPlots": [
-        "Ego Wave",
-        "Moonside City"
+        "egoWave",
+        "moonsideCity"
       ],
       "difficultySets": [
         {
@@ -230,16 +230,16 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "boyStudent": "Person",
-        "richStudent": "Quidnunc",
-        "officeWorker": "Person",
-        "patient": "Neurosis",
-        "mysteryBoy": "Agent",
-        "popIdol": "Twilight",
-        "journalist": "Person",
-        "scientist": "Agitator",
+        "boyStudent": "person",
+        "richStudent": "quidnunc",
+        "officeWorker": "person",
+        "patient": "neurosis",
+        "mysteryBoy": "agent",
+        "popIdol": "twilight",
+        "journalist": "person",
+        "scientist": "agitator",
         "illusion": [
-          "Animus",
+          "animus",
           {
             "world": "normal"
           }
@@ -248,32 +248,32 @@
       "incidents": [
         {
           "day": 1,
-          "incident": "World End",
+          "incident": "worldEnd",
           "culprit": "richStudent"
         },
         {
           "day": 2,
-          "incident": "World Convergence",
+          "incident": "worldConvergence",
           "culprit": "mysteryBoy"
         },
         {
           "day": 3,
-          "incident": "Increasing Unease",
+          "incident": "increasingUnease",
           "culprit": "patient"
         },
         {
           "day": 4,
-          "incident": "Assassination",
+          "incident": "assassination",
           "culprit": "journalist"
         },
         {
           "day": 5,
-          "incident": "Drifting to Another World",
+          "incident": "driftingToAnotherWorld",
           "culprit": "illusion"
         },
         {
           "day": 6,
-          "incident": "Missing Person",
+          "incident": "missingPerson",
           "culprit": "officeWorker"
         }
       ],
@@ -290,13 +290,13 @@
           "number": 5
         }
       ],
-      "tragedySet": "Another Horizon",
+      "tragedySet": "anotherHorizon",
       "mainPlot": [
-        "Parallel World War"
+        "parallelWorldWar"
       ],
       "subPlots": [
-        "Fanatic Fox",
-        "Ego Wave"
+        "fanaticFox",
+        "egoWave"
       ],
       "difficultySets": [
         {
@@ -306,27 +306,27 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "boyStudent": "Person",
-        "richStudent": "Person",
-        "shrineMaiden": "Person",
-        "officeWorker": "Person",
-        "informer": "Agitator",
+        "boyStudent": "person",
+        "richStudent": "person",
+        "shrineMaiden": "person",
+        "officeWorker": "person",
+        "informer": "agitator",
         "doctor": [
-          "Animus",
+          "animus",
           {
             "world": "abnormal"
           }
         ],
-        "classRep": "Person",
+        "classRep": "person",
         "godlyBeing": [
-          "Agent",
+          "agent",
           {
             "enters on loop": 3
           }
         ],
-        "popIdol": "Fanatic",
+        "popIdol": "fanatic",
         "illusion": [
-          "Animus",
+          "animus",
           {
             "world": "normal"
           }
@@ -335,17 +335,17 @@
       "incidents": [
         {
           "day": 3,
-          "incident": "World Convergence",
+          "incident": "worldConvergence",
           "culprit": "doctor"
         },
         {
           "day": 4,
-          "incident": "World Convergence",
+          "incident": "worldConvergence",
           "culprit": "godlyBeing"
         },
         {
           "day": 6,
-          "incident": "World End",
+          "incident": "worldEnd",
           "culprit": "illusion"
         }
       ],
@@ -362,13 +362,13 @@
           "number": 5
         }
       ],
-      "tragedySet": "Another Horizon",
+      "tragedySet": "anotherHorizon",
       "mainPlot": [
-        "Parallel World War"
+        "parallelWorldWar"
       ],
       "subPlots": [
-        "Fanatic Fox",
-        "Ego Wave"
+        "fanaticFox",
+        "egoWave"
       ],
       "difficultySets": [
         {
@@ -378,27 +378,27 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "boyStudent": "Person",
-        "richStudent": "Person",
-        "shrineMaiden": "Person",
-        "officeWorker": "Person",
-        "informer": "Agitator",
+        "boyStudent": "person",
+        "richStudent": "person",
+        "shrineMaiden": "person",
+        "officeWorker": "person",
+        "informer": "agitator",
         "doctor": [
-          "Animus",
+          "animus",
           {
             "world": "abnormal"
           }
         ],
-        "classRep": "Person",
+        "classRep": "person",
         "godlyBeing": [
-          "Agent",
+          "agent",
           {
             "enters on loop": 3
           }
         ],
-        "popIdol": "Agitator",
+        "popIdol": "agitator",
         "illusion": [
-          "Animus",
+          "animus",
           {
             "world": "normal"
           }
@@ -407,17 +407,17 @@
       "incidents": [
         {
           "day": 3,
-          "incident": "World Convergence",
+          "incident": "worldConvergence",
           "culprit": "doctor"
         },
         {
           "day": 4,
-          "incident": "World Convergence",
+          "incident": "worldConvergence",
           "culprit": "godlyBeing"
         },
         {
           "day": 6,
-          "incident": "World End",
+          "incident": "worldEnd",
           "culprit": "illusion"
         }
       ],
@@ -428,13 +428,13 @@
     {
       "title": "Unknown",
       "creator": "Hallycon translated by megakun",
-      "tragedySet": "Another Horizon",
+      "tragedySet": "anotherHorizon",
       "mainPlot": [
-        "Shadow Demon King"
+        "shadowDemonKing"
       ],
       "subPlots": [
-        "Fanatic Fox",
-        "Ego Wave"
+        "fanaticFox",
+        "egoWave"
       ],
       "difficultySets": [
         {
@@ -444,21 +444,21 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "doctor": "Person",
-        "patient": "Person",
-        "policeOfficer": "Person",
-        "officeWorker": "Fanatic",
+        "doctor": "person",
+        "patient": "person",
+        "policeOfficer": "person",
+        "officeWorker": "fanatic",
         "informer": [
-          "Animus",
+          "animus",
           {
             "world": "normal"
           }
         ],
-        "girlStudent": "Person",
-        "richStudent": "Agitator",
-        "shrineMaiden": "Twilight",
+        "girlStudent": "person",
+        "richStudent": "agitator",
+        "shrineMaiden": "twilight",
         "classRep": [
-          "Animus",
+          "animus",
           {
             "world": "abnormal"
           }
@@ -467,22 +467,22 @@
       "incidents": [
         {
           "day": 3,
-          "incident": "Assassination",
+          "incident": "assassination",
           "culprit": "classRep"
         },
         {
           "day": 4,
-          "incident": "World End",
+          "incident": "worldEnd",
           "culprit": "patient"
         },
         {
           "day": 5,
-          "incident": "Small Force",
+          "incident": "smallForce",
           "culprit": "richStudent"
         },
         {
           "day": 6,
-          "incident": "Insane Murder",
+          "incident": "insaneMurder",
           "culprit": "policeOfficer"
         }
       ],

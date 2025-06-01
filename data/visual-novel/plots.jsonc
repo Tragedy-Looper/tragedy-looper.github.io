@@ -7,7 +7,7 @@
             "id": "The Last Miracle",
 "name": "The Last Miracle",
             "roles": {
-                "Key Person": 1,
+                "keyPerson": 1,
                 "Sub Heroine": 1
             },
             "rules": [
@@ -31,7 +31,7 @@
             "id": "Seal of the Evil Spirit",
 "name": "Seal of the Evil Spirit",
             "roles": {
-                "Brain": 1,
+                "brain": 1,
                 "Possessed": 1
             },
             "rules": [
@@ -48,7 +48,7 @@
             "id": "Promise of a Smile",
 "name": "Promise of a Smile",
             "roles": {
-                "Key Person": 1,
+                "keyPerson": 1,
                 "Mood Maker": 1
             },
             "rules": [
@@ -74,7 +74,7 @@
 "name": "Album of Memories",
             "roles": {
                 "Mood Maker": 1,
-                "Friend": 1
+                "friend": 1
             },
             "rules": [
                 {
@@ -97,7 +97,7 @@
             "id": "The Monster Inside Me",
 "name": "The Monster Inside Me",
             "roles": {
-                "Key Person": 1
+                "keyPerson": 1
             },
             "rules": [
                 {
@@ -121,7 +121,7 @@
             "id": "Noisy Classmates",
 "name": "Noisy Classmates",
             "roles": {
-                "Friend": 1,
+                "friend": 1,
                 "Mood Maker": 1,
                 "Troublemaker": 1
             },
@@ -133,7 +133,7 @@
             "roles": {
                 "Heavy Lovers": 1,
                 "Mood Maker": 1,
-                "Conspiracy Theorist": 1
+                "conspiracyTheorist": 1
             },
             "rules": []
         },
@@ -141,9 +141,9 @@
             "id": "The Seven School Mysteries",
 "name": "The Seven School Mysteries",
             "roles": {
-                "Friend": 1,
+                "friend": 1,
                 "Troublemaker": 1,
-                "Conspiracy Theorist": 1
+                "conspiracyTheorist": 1
             },
             "rules": [
                 {
@@ -162,7 +162,7 @@
             "roles": {
                 "Slayer": 1,
                 "Creature": 1,
-                "Conspiracy Theorist": 1
+                "conspiracyTheorist": 1
             },
             "rules": []
         },

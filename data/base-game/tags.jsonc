@@ -2,8 +2,8 @@
     "$schema": "./../tags.schema.json",
     "tags": [
         {
-            "id": "Immortal",
-"name": "Immortal",
+            "id": "immortal",
+            "name": "Immortal",
             "description": "This character cannot die.",
             "showInGmScreen": true
         }

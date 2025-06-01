@@ -27,11 +27,11 @@
       "daysPerLoop": 5,
       "cast": {
         "boyStudent": "Spellcaster",
-        "girlStudent": "Person",
+        "girlStudent": "person",
         "richStudent": "Nightmare (Haunted Stage)",
         "shrineMaiden": "Human Doll",
         "policeOfficer": "Ghost (Haunted Stage)",
-        "officeWorker": "Person",
+        "officeWorker": "person",
         "informer": "Poltergeist",
         "doctor": "Horror",
         "patient": "Ghost (Haunted Stage)"
@@ -82,18 +82,18 @@
       "cast": {
         "boyStudent": "Spellcaster",
         "girlStudent": "Horror",
-        "richStudent": "Person",
+        "richStudent": "person",
         "shrineMaiden": "Monster",
-        "policeOfficer": "Person",
-        "officeWorker": "Person",
-        "informer": "Person",
+        "policeOfficer": "person",
+        "officeWorker": "person",
+        "informer": "person",
         "doctor": "Nightmare (Haunted Stage)",
         "patient": "Ghost (Haunted Stage)"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "Sacrifice",
+          "incident": "sacrifice",
           "culprit": "patient"
         },
         {
@@ -135,19 +135,19 @@
       "daysPerLoop": 5,
       "cast": {
         "boyStudent": "Horror",
-        "girlStudent": "Person",
+        "girlStudent": "person",
         "richStudent": "Spellcaster",
         "shrineMaiden": "Werewolf (Haunted Stage)",
         "policeOfficer": "Monster",
         "officeWorker": "Nightmare (Haunted Stage)",
         "informer": "Overlord",
         "doctor": "Monster",
-        "patient": "Person"
+        "patient": "person"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "Increasing Unease",
+          "incident": "increasingUnease",
           "culprit": "richStudent"
         },
         {
@@ -192,16 +192,16 @@
         "girlStudent": "Werewolf (Haunted Stage)",
         "richStudent": "Spellcaster",
         "shrineMaiden": "Spellcaster",
-        "policeOfficer": "Person",
-        "officeWorker": "Person",
+        "policeOfficer": "person",
+        "officeWorker": "person",
         "informer": "Horror",
-        "doctor": "Person",
+        "doctor": "person",
         "patient": "Monster"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "Sacrifice",
+          "incident": "sacrifice",
           "culprit": "boyStudent"
         },
         {
@@ -244,18 +244,18 @@
       "cast": {
         "boyStudent": "Horror",
         "girlStudent": "Nightmare (Haunted Stage)",
-        "richStudent": "Person",
+        "richStudent": "person",
         "shrineMaiden": "Monster",
         "policeOfficer": "Ghost (Haunted Stage)",
-        "officeWorker": "Person",
-        "informer": "Person",
+        "officeWorker": "person",
+        "informer": "person",
         "doctor": "Ghost (Haunted Stage)",
         "patient": "Overlord"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "Increasing Unease",
+          "incident": "increasingUnease",
           "culprit": "richStudent"
         },
         {
@@ -275,7 +275,7 @@
         },
         {
           "day": 5,
-          "incident": "Hospital Incident",
+          "incident": "hospitalIncident",
           "culprit": "boyStudent"
         }
       ],
@@ -307,39 +307,39 @@
       "daysPerLoop": 5,
       "cast": {
         "boyStudent": "Spellcaster",
-        "richStudent": "Person",
-        "shrineMaiden": "Person",
+        "richStudent": "person",
+        "shrineMaiden": "person",
         "policeOfficer": "Nightmare (Haunted Stage)",
-        "patient": "Person",
+        "patient": "person",
         "popIdol": "Horror",
-        "journalist": "Person",
+        "journalist": "person",
         "henchman": "Ghost (Haunted Stage)",
         "scientist": "Curse God"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "Sacrifice",
+          "incident": "sacrifice",
           "culprit": "shrineMaiden"
         },
         {
           "day": 2,
-          "incident": "Sacrifice",
+          "incident": "sacrifice",
           "culprit": "boyStudent"
         },
         {
           "day": 3,
-          "incident": "Sacrifice",
+          "incident": "sacrifice",
           "culprit": "popIdol"
         },
         {
           "day": 4,
-          "incident": "Sacrifice",
+          "incident": "sacrifice",
           "culprit": "richStudent"
         },
         {
           "day": 5,
-          "incident": "Sacrifice",
+          "incident": "sacrifice",
           "culprit": "henchman"
         }
       ],
@@ -370,11 +370,11 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "boyStudent": "Person",
-        "doctor": "Person",
+        "boyStudent": "person",
+        "doctor": "person",
         "patient": "Monster",
-        "classRep": "Person",
-        "alien": "Person",
+        "classRep": "person",
+        "alien": "person",
         "popIdol": "Ghost (Haunted Stage)",
         "journalist": "Horror",
         "boss": [
@@ -388,7 +388,7 @@
       "incidents": [
         {
           "day": 2,
-          "incident": "Increasing Unease",
+          "incident": "increasingUnease",
           "culprit": "journalist"
         },
         {
@@ -438,14 +438,14 @@
       "daysPerLoop": 6,
       "cast": {
         "boyStudent": "Werewolf (Haunted Stage)",
-        "shrineMaiden": "Person",
+        "shrineMaiden": "person",
         "officeWorker": "Ghost (Haunted Stage)",
         "informer": "Horror",
         "mysteryBoy": "Curse God",
         "popIdol": "Nightmare (Haunted Stage)",
         "journalist": "Spellcaster",
         "scientist": "Monster",
-        "illusion": "Person"
+        "illusion": "person"
       },
       "incidents": [
         {

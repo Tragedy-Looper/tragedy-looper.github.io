@@ -28,11 +28,11 @@
       "cast": {
         "girlStudent": "Alice",
         "richStudent": "Key Person|Brain",
-        "classRep": "Person",
-        "shrineMaiden": "Marionette",
-        "officeWorker": "Marionette",
+        "classRep": "person",
+        "shrineMaiden": "marionette",
+        "officeWorker": "marionette",
         "popIdol": "Obstinate",
-        "Part-Timer": "Brain",
+        "Part-Timer": "brain",
         "soldier": "Conspiracy Theorist|Serial Killer"
       },
       "incidents": [

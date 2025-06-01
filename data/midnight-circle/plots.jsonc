@@ -7,8 +7,8 @@
             "id": "Tightrope Plan",
 "name": "Tightrope Plan",
             "roles": {
-                "Brain": 1,
-                "Killer": 1
+                "brain": 1,
+                "killer": 1
             },
             "rules": [
                 {
@@ -24,7 +24,7 @@
             "id": "A Drop of Strychnine",
 "name": "A Drop of Strychnine",
             "roles": {
-                "Key Person": 1,
+                "keyPerson": 1,
                 "Poisoner": 1,
                 "Fool": 1
             },
@@ -43,7 +43,7 @@
 "name": "A Quilt of Incidents",
             "roles": {
                 "Fool": 1,
-                "Conspiracy Theorist": 1
+                "conspiracyTheorist": 1
             },
             "rules": [
                 {
@@ -59,7 +59,7 @@
             "id": "The Black School",
 "name": "The Black School",
             "roles": {
-                "Brain": 1
+                "brain": 1
             },
             "rules": [
                 {
@@ -75,7 +75,7 @@
             "id": "Dance of Fools",
 "name": "Dance of Fools",
             "roles": {
-                "Friend": 1,
+                "friend": 1,
                 "Fool": 1
             },
             "rules": []
@@ -84,7 +84,7 @@
             "id": "Isolated Institution Psycho",
 "name": "Isolated Institution Psycho",
             "roles": {
-                "Conspiracy Theorist": 1,
+                "conspiracyTheorist": 1,
                 "Therapist": 1,
                 "Paranoiac": 1
             },
@@ -120,7 +120,7 @@
             "id": "Smell of Gunpowder",
 "name": "Smell of Gunpowder",
             "roles": {
-                "Serial Killer": 1
+                "serialKiller": 1
             },
             "rules": [
                 {
@@ -136,8 +136,8 @@
             "id": "I am a Master Detective",
 "name": "I am a Master Detective",
             "roles": {
-                "Conspiracy Theorist": 1,
-                "Friend": 1,
+                "conspiracyTheorist": 1,
+                "friend": 1,
                 "Private Investigator": 1
             },
             "rules": []
@@ -146,9 +146,9 @@
             "id": "Secret Record",
 "name": "Secret Record",
             "roles": {
-                "Key Person": 1,
-                "Brain": 1,
-                "Conspiracy Theorist": 1
+                "keyPerson": 1,
+                "brain": 1,
+                "conspiracyTheorist": 1
             },
             "rules": [
                 {
@@ -164,8 +164,8 @@
             "id": "The Devil’s Hand",
 "name": "The Devil’s Hand",
             "roles": {
-                "Key Person": 1,
-                "Cultist": 1,
+                "keyPerson": 1,
+                "cultist": 1,
                 "Ninja": 1
             },
             "rules": []
@@ -194,9 +194,9 @@
             "id": "Fated Connections",
 "name": "Fated Connections",
             "roles": {
-                "Conspiracy Theorist": 1,
-                "Friend": 1,
-                "Serial Killer": 1
+                "conspiracyTheorist": 1,
+                "friend": 1,
+                "serialKiller": 1
             },
             "rules": [
                 {
@@ -213,7 +213,7 @@
             "id": "Love-Hate Spiral",
 "name": "Love-Hate Spiral",
             "roles": {
-                "Friend": 1,
+                "friend": 1,
                 "Obstinate": 1
             },
             "rules": []
@@ -223,7 +223,7 @@
 "name": "Showtime of Death",
             "roles": {
                 "Magician": 1,
-                "Immortal": 1
+                "immortal": 1
             },
             "rules": [
                 {
@@ -239,9 +239,9 @@
             "id": "Witches Tea Time",
 "name": "Witches Tea Time",
             "roles": {
-                "Conspiracy Theorist": 1,
-                "Friend": 1,
-                "Witch": 2
+                "conspiracyTheorist": 1,
+                "friend": 1,
+                "witch": 2
             },
             "rules": []
         },
@@ -249,7 +249,7 @@
             "id": "Dice of the Gods",
 "name": "Dice of the Gods",
             "roles": {
-                "Serial Killer": 1,
+                "serialKiller": 1,
                 "Obstinate": 1
             },
             "rules": [
@@ -267,7 +267,7 @@
             "id": "Unanswered Heart",
 "name": "Unanswered Heart",
             "roles": {
-                "Conspiracy Theorist": 1,
+                "conspiracyTheorist": 1,
                 "Magician": 1
             },
             "rules": [
@@ -284,7 +284,7 @@
             "id": "Unsafe Trigger",
 "name": "Unsafe Trigger",
             "roles": {
-                "Factor": 1
+                "factor": 1
             },
             "rules": [
                 {

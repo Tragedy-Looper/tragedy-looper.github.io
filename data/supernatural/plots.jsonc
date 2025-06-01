@@ -26,7 +26,7 @@
             "roles": {
                 "Potentate": 1,
                 "Supplicant": 1,
-                "Lover": 1
+                "lover": 1
             },
             "rules": [
                 {
@@ -78,7 +78,7 @@
 "name": "The Seed",
             "roles": {
                 "Seeder": 1,
-                "Serial Killer": 1
+                "serialKiller": 1
             },
             "rules": []
         },
@@ -87,7 +87,7 @@
 "name": "Infestation",
             "roles": {
                 "Facsimile": 2,
-                "Key Person": 1
+                "keyPerson": 1
             },
             "rules": [
                 {
@@ -104,8 +104,8 @@
             "id": "Fatal Attraction",
 "name": "Fatal Attraction",
             "roles": {
-                "Lover": 3,
-                "Serial Killer": 1
+                "lover": 3,
+                "serialKiller": 1
             },
             "rules": []
         },
@@ -129,7 +129,7 @@
 "name": "Murder for Hire",
             "roles": {
                 "Contract Killer": 1,
-                "Key Person": 1
+                "keyPerson": 1
             },
             "rules": []
         },

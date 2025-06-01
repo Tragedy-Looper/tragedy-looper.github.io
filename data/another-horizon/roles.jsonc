@@ -1,58 +1,67 @@
 {
-      "$schema": "https://tragedy-looper.github.io/roles.schema.json",
+    "$schema": "https://tragedy-looper.github.io/roles.schema.json",
     // For dev purposes
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "id": "Agent",
-"name": "Agent",
+            "id": "agent",
+            "name": "Agent",
             "abilities": [
                 {
                     "type": "Loss condition: Tragedy",
-                    "timing": ["On character death"],
+                    "timing": [
+                        "On character death"
+                    ],
                     "prerequisite": "This character dies"
                 },
                 {
                     "type": "Mandatory",
-                    "timing": ["After Goodwill Ability used"],
+                    "timing": [
+                        "After Goodwill Ability used"
+                    ],
                     "description": "Remove 1 :intrigue: in this Location or on any character in this Location"
                 }
             ]
         },
         {
-            "id": "Invader",
-"name": "Invader",
+            "id": "invader",
+            "name": "Invader",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
                     "type": "Optional",
-                    "timing": ["Mastermind Ability"],                    
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
                     "description": "If there are at least 2 :intrigue: in this location: Switch the world."
                 }
             ]
         },
         {
-            "id": "Twilight",
-"name": "Twilight",
+            "id": "twilight",
+            "name": "Twilight",
             "goodwillRefusel": "Optional",
             "goodwillOutburst": true,
-            "tags": ["Immortal"],
+            "tags": [
+                "immortal"
+            ],
             "abilities": [
                 {
                     "type": "Mandatory",
-                    "timing": ["Always"],                    
+                    "timing": [
+                        "Always"
+                    ],
                     "description": "If there are at least 2 :intrigue: in this location: Switch the world."
                 }
             ]
         },
         {
-            "id": "Hider",
-"name": "Hider",
+            "id": "hider",
+            "name": "Hider",
             "goodwillRefusel": "Mandatory",
             "scriptSpecified": [
                 {
-                    "id": "world",
-"name": "world",
+                    "name": "world",
                     "type": "text",
                     "description": "abnormal or normal"
                 }
@@ -60,44 +69,47 @@
             "abilities": [
                 {
                     "type": "Loss condition: Tragedy",
-                    "timing": ["Loop End"],
+                    "timing": [
+                        "Loop End"
+                    ],
                     "prerequisite": "This character has at least 1 :intrigue:",
                     "description": "If this character has at least 1 :intrigue: at Loop End, the tragedy side wins."
                 }
             ]
         },
         {
-            "id": "Quidnunc",
-"name": "Quidnunc",
+            "id": "quidnunc",
+            "name": "Quidnunc",
             "abilities": [
                 {
                     "type": "Optional",
-                    "timing": ["Mastermind Ability"],
-                    
+                    "timing": [
+                        "Mastermind Ability"
+                    ],
                     "description": "You may place 1 :goodwill: on any character in this location."
                 }
             ]
         },
         {
-            "id": "Fanatic",
-"name": "Fanatic",
+            "id": "fanatic",
+            "name": "Fanatic",
             "goodwillOutburst": true,
             "abilities": [
                 {
                     "type": "Mandatory",
-                    "timing": ["After Goodwill Ability used"],
-                    
+                    "timing": [
+                        "After Goodwill Ability used"
+                    ],
                     "description": "Choose any character in this location and kill it."
                 }
             ]
         },
         {
-            "id": "Animus",
-"name": "Animus",
+            "id": "animus",
+            "name": "Animus",
             "scriptSpecified": [
                 {
-                    "id": "world",
-"name": "world",
+                    "name": "world",
                     "type": "text",
                     "description": "abnormal or normal"
                 }
@@ -105,75 +117,87 @@
             "abilities": [
                 {
                     "type": "Mandatory",
-                    "timing": ["Always"],
-                    
+                    "timing": [
+                        "Always"
+                    ],
                     "description": "The sex of this character is reversed."
                 },
                 {
                     "type": "Mandatory",
-                    "timing": ["Incident step"],
-                    
-                    "description": "This character always triggers its incidents (if alive), regardless the amount of :paranoia: on it. After resolving the Incident, the Mastermind declared that “Animus abilities were used.”."
+                    "timing": [
+                        "Incident step"
+                    ],
+                    "description": "This character always triggers its incidents (if alive), regardless the amount of :paranoia: on it. After resolving the Incident, the Mastermind declared that “animus abilities were used.”."
                 }
             ]
         },
         {
-            "id": "Neurosis",
-"name": "Neurosis",
+            "id": "neurosis",
+            "name": "Neurosis",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
                     "type": "Mandatory",
-                    "timing": ["Incident step"],                    
+                    "timing": [
+                        "Incident step"
+                    ],
                     "description": "When determining whether an Incident, for which this character is the culprit, will occur or not, this character is regarded as having :paranoia: Limit -1."
                 }
             ]
         },
         {
-            "id": "Agitator",
-"name": "Agitator",
+            "id": "agitator",
+            "name": "Agitator",
             "abilities": [
                 {
                     "type": "Optional",
-                    "timing": ["Incident trigger"],
+                    "timing": [
+                        "Incident trigger"
+                    ],
                     "prerequisite": "This Character resolved an incident",
                     "description": "Put 1 :goodwill:, or 1 :paranoia:, or 1 :intrigue: on any character in this location."
                 }
             ]
         },
         {
-            "id": "Enchanter",
-"name": "Enchanter",
+            "id": "enchanter",
+            "name": "Enchanter",
             "goodwillOutburst": true,
             "abilities": [
                 {
                     "type": "Optional",
-                    "timing": ["After Goodwill Ability used"],                    
-                    "description": "The Mastermind may declare that “Enchanter‘s abilities were used.” If you do, the next day Leader are prohibited from switching the world and setting action cards."
+                    "timing": [
+                        "After Goodwill Ability used"
+                    ],
+                    "description": "The Mastermind may declare that “enchanter‘s abilities were used.” If you do, the next day Leader are prohibited from switching the world and setting action cards."
                 }
             ]
         },
         {
-            "id": "Marionette",
-"name": "Marionette",
+            "id": "marionette",
+            "name": "Marionette",
             "goodwillOutburst": true,
             "abilities": [
                 {
                     "type": "Delayed Loss condition: Protagonists Death",
-                    "timing": ["Day End"],                   
-                    "prerequisite": "After resolving this character's :goodwill: ability", 
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "After resolving this character's :goodwill: ability",
                     "description": "(optional) The protagonists die during the Day end."
                 }
             ]
         },
         {
-            "id": "Shadow",
-"name": "Shadow",
+            "id": "shadow",
+            "name": "Shadow",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
                     "type": "Delayed Loss condition: Protagonists Death",
-                    "timing": ["Incident trigger"],
+                    "timing": [
+                        "Incident trigger"
+                    ],
                     "prerequisite": "This Character resolves an incident",
                     "description": "(optional) The protagonists die during the Day end."
                 }

@@ -7,7 +7,7 @@
             "id": "The Forbidden Future",
 "name": "The Forbidden Future",
             "roles": {
-                "Marionette": 1,
+                "marionette": 1,
                 "Storyteller": 1,
                 "Obstinate|Key Person": 1
             },
@@ -25,16 +25,16 @@
             "id": "Fairy-Tale Murderer",
 "name": "Fairy-Tale Murderer",
             "roles": {
-                "Key Person": 1,
+                "keyPerson": 1,
                 "Lullaby": 1,
-                "Brain": 1
+                "brain": 1
             }
         },
         {
             "id": "Mother Goose Mystery",
 "name": "Mother Goose Mystery",
             "roles": {
-                "Marionette": 1,
+                "marionette": 1,
                 "Storyteller": 1
             },
             "rules": [
@@ -70,8 +70,8 @@
 "name": "Into Nothingness",
             "roles": {
                 "Obstinate": 1,
-                "Marionette": 1,
-                "Brain": 1
+                "marionette": 1,
+                "brain": 1
             },
             "rules": [
                 {
@@ -88,7 +88,7 @@
 "name": "Jekyll and Hyde",
             "roles": {
                 "Key Person|Brain": 1,
-                "Marionette": 1
+                "marionette": 1
             },
             "rules": []
         },
@@ -136,7 +136,7 @@
             "id": "Crossing World Lines",
 "name": "Crossing World Lines",
             "roles": {
-                "Conspiracy Theorist": 1
+                "conspiracyTheorist": 1
             },
             "rules": [
                 {
@@ -179,7 +179,7 @@
 "name": "Hysteria Virus",
             "roles": {
                 "Fragment": 1,
-                "Conspiracy Theorist": 1,
+                "conspiracyTheorist": 1,
                 "Gossip": 1
             },
             "rules": [

@@ -4,7 +4,7 @@
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "id": "Marionette (AHR)",
+            "id": "marionette (AHR)",
 "name": "Marionette (AHR)",
             "goodwillRefusel": "Puppeted",
             "abilities": [
@@ -50,7 +50,7 @@
         {
             "id": "Storyteller",
 "name": "Storyteller",
-            "tags": ["Immortal"],
+            "tags": ["immortal"],
             "abilities": [
                 {
                     "type": "Optional",
@@ -73,7 +73,7 @@
         {
             "id": "Shifter",
 "name": "Shifter",
-            "tags": ["Immortal"],
+            "tags": ["immortal"],
             "abilities": [
                 {
                     "type": "Mandatory",

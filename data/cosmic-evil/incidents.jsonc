@@ -4,8 +4,8 @@
     // "$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "id": "Sacrilegious Murder",
-"name": "Sacrilegious Murder",
+            "id": "sacrilegiousMurder",
+            "name": "Sacrilegious Murder",
             "effect": [
                 {
                     "description": "Either kill another charcter in the same location as the culprit, or place an :intrigue: on the culprit’s location."
@@ -13,8 +13,8 @@
             ]
         },
         {
-            "id": "Evil Contamination",
-"name": "Evil Contamination",
+            "id": "evilContamination",
+            "name": "Evil Contamination",
             "effect": [
                 {
                     "description": "Place 2 :intrigue: on the Shrine."
@@ -22,8 +22,8 @@
             ]
         },
         {
-            "id": "The Executioner",
-"name": "The Executioner",
+            "id": "executioner",
+            "name": "The Executioner",
             "effect": [
                 {
                     "description": "The leader chooses one character. That charcter is killed."
@@ -31,8 +31,8 @@
             ]
         },
         {
-            "id": "Dark Rumor",
-"name": "Dark Rumor",
+            "id": "darkRumor",
+            "name": "Dark Rumor",
             "effect": [
                 {
                     "description": "Attach a Curse on the culprit."
@@ -40,8 +40,8 @@
             ]
         },
         {
-            "id": "Barricade",
-"name": "Barricade",
+            "id": "barricade",
+            "name": "Barricade",
             "effect": [
                 {
                     "description": "For each other character in cluprit’s location, pick any other location and move the character there."
@@ -49,8 +49,8 @@
             ]
         },
         {
-            "id": "Night of Madness",
-"name": "Night of Madness",
+            "id": "nightMadness",
+            "name": "Night of Madness",
             "mob": 0,
             "effect": [
                 {
@@ -61,8 +61,8 @@
             ]
         },
         {
-            "id": "Awakened Curse",
-"name": "Awakened Curse",
+            "id": "awakenedCurse",
+            "name": "Awakened Curse",
             "mob": 1,
             "effect": [
                 {
@@ -71,8 +71,8 @@
             ]
         },
         {
-            "id": "Fountain of Filth",
-"name": "Fountain of Filth",
+            "id": "fountainFilth",
+            "name": "Fountain of Filth",
             "mob": 2,
             "effect": [
                 {
@@ -81,8 +81,8 @@
             ]
         },
         {
-            "id": "Evangelium of the Dead",
-"name": "Evangelium of the Dead",
+            "id": "evangeliumDead",
+            "name": "Evangelium of the Dead",
             "mob": 2,
             "effect": [
                 {
@@ -95,8 +95,8 @@
             ]
         },
         {
-            "id": "Insane Murder",
-"name": "Insane Murder",
+            "id": "insaneMurder",
+            "name": "Insane Murder",
             "effect": [
                 {
                     "description": "Kill any one character (including culprit) in the same location as the culprit."
@@ -104,8 +104,8 @@
             ]
         },
         {
-            "id": "Mass Suicide",
-"name": "Mass Suicide",
+            "id": "massSuicide",
+            "name": "Mass Suicide",
             "effect": [
                 {
                     "prerequisite": "1 :intrigue: on the culprit",
@@ -114,8 +114,8 @@
             ]
         },
         {
-            "id": "Fire of Demise",
-"name": "Fire of Demise",
+            "id": "fireDemise",
+            "name": "Fire of Demise",
             "timesPerGame": 1,
             "effect": [
                 {
@@ -125,8 +125,8 @@
             ]
         },
         {
-            "id": "Hound Dog Scent",
-"name": "Hound Dog Scent",
+            "id": "houndDogScent",
+            "name": "Hound Dog Scent",
             "effect": [
                 {
                     "type": "Delayed Loss condition: Protagonists Death",
@@ -135,8 +135,8 @@
             ]
         },
         {
-            "id": "Discovery",
-"name": "Discovery",
+            "id": "discovery",
+            "name": "Discovery",
             "effect": [
                 {
                     "description": "Increase the Extra Gauge 1 step."
