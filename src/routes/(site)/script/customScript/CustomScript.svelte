@@ -19,7 +19,7 @@
   import { validateScript } from '../../../../model/validation';
   import type { ValidationError } from '@apideck/better-ajv-errors';
   import Translation from '../../../../view/translation.svelte';
-    import { tragedysLookup } from '../../../../data';
+  import { tragedysLookup } from '../../../../data';
 
   const model = new CustomScript();
 
@@ -30,7 +30,7 @@
 
   const rolesGroup = derived(model.roles, (a) =>
     a.toSorted((a, b) =>
-      a.role == 'Person' ? +1 : b.role == 'Person' ? -1 : a.role.localeCompare(b.role)
+      a.role == 'person' ? +1 : b.role == 'person' ? -1 : a.role.localeCompare(b.role)
     )
   );
   const days = model.daysPerLoop;
@@ -170,7 +170,7 @@
 <h2>Tragedy Set</h2>
 <select bind:value={$tragedySetName}>
   {#each keys(tragedysLookup) as tgs}
-    <option value={tgs}>{tgs}</option>
+    <option value={tgs}><Translation translationKey={tragedysLookup[tgs].name} /></option>
   {/each}
 </select>
 

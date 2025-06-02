@@ -10,7 +10,7 @@
 </script>
 
 <h3>
-  {#if group.role === 'Person'}
+  {#if group.role === 'person'}
     <Translation translationKey={'Number of Characters not in Plot roles'} />
   {:else}
     {group.role}
@@ -19,7 +19,7 @@
 
 {#if group.min !== group.max}
   <label>
-    {#if group.role === 'Person'}
+    {#if group.role === 'person'}
       <small>(<Translation translationKey={'This inculdes Characters like Mystery Boy'} />)</small>
     {:else}
       Number of {group.role}'s

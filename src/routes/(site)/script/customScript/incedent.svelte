@@ -5,6 +5,8 @@
   import Option from './option.svelte';
   import { incidentNames } from '../../../../model/incidents';
   import { getString } from '../../+layout.svelte';
+  import Translation from '../../../../view/translation.svelte';
+  import { charactersLookup, incidentsLookup } from '../../../../data';
 
   export let incident: ICustomScriptIncidentSelection<CharacterName>;
 
@@ -50,8 +52,10 @@
       </label>
       <select bind:value={$selectedIncident}>
         <option value="" selected>{$getString('No incident')}</option>
-        {#each $allIncidents as day}
-          <option>{day}</option>
+        {#each $allIncidents as incident}
+          <option value={incident}
+            ><Translation translationKey={incidentsLookup[incident].name} /></option
+          >
         {/each}
       </select>
     </div>
@@ -61,7 +65,7 @@
       <select bind:value={$selectedCharacter}>
         <option value="" disabled selected>{$getString('Select a character')}</option>
         {#each $availableCharacters as day}
-          <option>{day}</option>
+          <option value={day} ><Translation translationKey={charactersLookup[day].name} /></option>
         {/each}
       </select>
     {:else}{/if}
