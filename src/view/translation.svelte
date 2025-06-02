@@ -56,6 +56,22 @@
   import type { Renderer, Token } from 'markdown-it/index.js';
   import { base } from '$app/paths';
   import { enableTranslationUi, showTranslationMissingDialog } from '../routes/+layout.svelte';
+  import {
+    charactersLookup,
+    incidentsLookup,
+    isCharacterId,
+    isKeywordId,
+    isPlotId,
+    isTagId,
+    keywordsLookup,
+    plotsLookup,
+    rolesLookup,
+    tagsLookup,
+    tragedysLookup,
+  } from '../data';
+  import { isIncidentName } from '../model/incidents';
+  import { isRoleName, singleRolenames } from '../model/roles';
+  import { isTragedySetName } from '../model/tragedySets';
 
   type Parameters = {
     translationKey:
@@ -87,6 +103,17 @@
     enableTranslationUi.iconSet in imageSets ? enableTranslationUi.iconSet : 'zMan'
   );
 
+  const defs = Object.fromEntries([
+    ...icons.map((icon) => [icon, icon] as const),
+    ...Object.keys(charactersLookup).map((char) => [char, char] as const),
+    ...Object.keys(incidentsLookup).map((char) => [char, char] as const),
+    ...Object.keys(rolesLookup).map((char) => [char, char] as const),
+    ...Object.keys(plotsLookup).map((char) => [char, char] as const),
+    ...Object.keys(tragedysLookup).map((char) => [char, char] as const),
+    ...Object.keys(keywordsLookup).map((char) => [char, char] as const),
+    ...Object.keys(tagsLookup).map((char) => [char, char] as const),
+  ]);
+
   const md = markdownit({
     html: false,
     linkify: false,
@@ -94,8 +121,8 @@
   })
     .use(markdomnItKdb)
     .use(emoji, {
-      defs: Object.fromEntries(icons.map((icon) => [icon, icon] as const)),
-      enabled: icons,
+      defs,
+      enabled: Object.keys(defs),
     });
   md.renderer.rules.emoji = (
     tokens: Token[],
@@ -105,20 +132,47 @@
     self: Renderer
   ) => {
     const token = tokens[idx];
-    const emojiName = token.content as (typeof icons)[number];
+    const emojiName = token.content;
     // If the emoji is not paranoia, return the default rendering
-    if (!icons.includes(emojiName)) {
-      return self.renderToken(tokens, idx, options);
-    }
+    if (emojiName in imageSets[set]) {
+      const placholder = imageSets[set][emojiName as keyof (typeof imageSets)[typeof set]];
+      if (placholder.type === 'text') {
+        return placholder.text;
+      } else if (placholder.type === 'icon') {
+        return `<span class="emoji" title="${$getString(emojiName)}"><img src="${placholder.imagePath}" ></img></span>`;
+      } else {
+        return self.renderToken(tokens, idx, options);
+      }
+    } else if (isCharacterId(emojiName)) {
+      const character = charactersLookup[emojiName];
+      return $getString(character.name);
+    } else if (isIncidentName(emojiName)) {
+      const incident = incidentsLookup[emojiName];
+      return $getString(incident.name);
+    } else if (isRoleName(emojiName)) {
+      const roleNames = singleRolenames(emojiName);
 
-    const placholder = imageSets[set][emojiName];
-    if (placholder.type === 'text') {
-      return placholder.text;
-    } else if (placholder.type === 'icon') {
-      return `<span class="emoji" title="${$getString(emojiName)}"><img src="${placholder.imagePath}" ></img></span>`;
-    } else {
-      return self.renderToken(tokens, idx, options);
+      return roleNames
+        .map((roleName) => {
+          const role = rolesLookup[roleName];
+          return $getString(role.name);
+        })
+        .join(', ');
+    } else if (isPlotId(emojiName)) {
+      const plot = plotsLookup[emojiName];
+      return $getString(plot.name);
+    } else if (isTragedySetName(emojiName)) {
+      const tragedy = tragedysLookup[emojiName];
+      return $getString(tragedy.name);
+    } else if (isKeywordId(emojiName)) {
+      const keyword = keywordsLookup[emojiName];
+      return $getString(keyword.name);
+    } else if (isTagId(emojiName)) {
+      const tag = tagsLookup[emojiName];
+      return $getString(tag.name);
     }
+    return `EMOCO: ${emojiName}`;
+    return self.renderToken(tokens, idx, options);
   };
 
   // add base to links

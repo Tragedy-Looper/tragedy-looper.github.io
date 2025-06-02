@@ -10,13 +10,13 @@
                 "name": "Cosmic Evil",
                 "number": 1
             }],
-            "tragedySet": "Basic Tragedy",
+            "tragedySet": "basicTragedy",
             "mainPlot": [
-                "The Sealed Item"
+                "sealedItem"
             ],
             "subPlots": [
-                "Paranoia Virus",
-                "Unknown Factor X"
+                "paranoiaVirus",
+                "unknownFactor"
             ],
             "difficultySets": [
                 {
@@ -30,31 +30,31 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Boy Student": "Person",
-                "rich-student": "Cultist",
-                "Teacher": "Conspiracy Theorist",
-                "Shrine Maiden": "Person",
-                "Black Cat": "Factor",
-                "Office Worker": "Person",
-                "Informer": "Brain",
-                "Patient": "Person",
-                "Soldier": "Person"
+                "boyStudent": "person",
+                "richStudent": "cultist",
+                "teacher": "conspiracyTheorist",
+                "shrineMaiden": "person",
+                "blackCat": "factor",
+                "officeWorker": "person",
+                "informer": "brain",
+                "patient": "person",
+                "soldier": "person"
             },
             "incidents": [
                 {
                     "day": 3,
-                    "incident": "Missing Person",
-                    "culprit": "Boy Student"
+                    "incident": "missingPerson",
+                    "culprit": "boyStudent"
                 },
                 {
                     "day": 4,
-                    "incident": "Hospital Incident",
-                    "culprit": "Shrine Maiden"
+                    "incident": "hospitalIncident",
+                    "culprit": "shrineMaiden"
                 },
                 {
                     "day": 6,
-                    "incident": "Butterfly Effect",
-                    "culprit": "Black Cat"
+                    "incident": "butterflyEffect",
+                    "culprit": "blackCat"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -68,13 +68,13 @@
                 "name": "Cosmic Evil",
                 "number": 2
             }],
-            "tragedySet": "Prime Evil",
+            "tragedySet": "primeEvil",
             "mainPlot": [
-                "The Cursed Land"
+                "cursedLand"
             ],
             "subPlots": [
-                "Panic and Obsession",
-                "The Key Girl"
+                "panicObsession",
+                "keyGirl"
             ],
             "difficultySets": [
                 {
@@ -88,27 +88,27 @@
             ],
             "daysPerLoop": 4,
             "cast": {
-                "Boy Student": "Witch",
-                "rich-student": "Ghost",
-                "Class Rep": "Coward",
-                "Shrine Maiden": "Key Person",
-                "Police Officer": "Show-Off",
-                "Office Worker": "Serial Killer"
+                "boyStudent": "witch",
+                "richStudent": "ghost",
+                "classRep": "coward",
+                "shrineMaiden": "keyPerson",
+                "policeOfficer": "showOff",
+                "officeWorker": "serialKiller"
             },
             "incidents": [
                 {
                     "day": 2,
-                    "incident": "Missing Person",
-                    "culprit": "rich-student"
+                    "incident": "missingPerson",
+                    "culprit": "richStudent"
                 },
                 {
                     "day": 3,
-                    "incident": "Sacrilegious Murder",
-                    "culprit": "Class Rep"
+                    "incident": "sacrilegiousMurder",
+                    "culprit": "classRep"
                 },
                 {
                     "day": 4,
-                    "incident": "Evangelium of the Dead",
+                    "incident": "evangeliumDead",
                     "culprit": "School"
                 }
             ],
@@ -123,13 +123,13 @@
                 "name": "Cosmic Evil",
                 "number": 3
             }],
-            "tragedySet": "Prime Evil",
+            "tragedySet": "primeEvil",
             "mainPlot": [
-                "The Noble Bloodline"
+                "nobleBloodline"
             ],
             "subPlots": [
-                "Those with Habits",
-                "Witch’s Curse"
+                "thoseHabits",
+                "witchsCurse"
             ],
             "difficultySets": [
                 {
@@ -143,31 +143,31 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "Boy Student": "Person",
-                "Girl Student": "Key Person",
-                "Class Rep": "Person",
-                "Shrine Maiden": "Loved One",
-                "Alien": "Conspiracy Theorist",
-                "Police Officer": "Ghost",
-                "Office Worker": "Vampire",
-                "Pop Idol": "Witch",
-                "Patient": "Serial Killer"
+                "boyStudent": "person",
+                "girlStudent": "keyPerson",
+                "classRep": "person",
+                "shrineMaiden": "lovedOne",
+                "alien": "conspiracyTheorist",
+                "policeOfficer": "ghost",
+                "officeWorker": "vampire",
+                "popIdol": "witch",
+                "patient": "serialKiller"
             },
             "incidents": [
                 {
                     "day": 3,
-                    "incident": "Fountain of Filth",
+                    "incident": "fountainFilth",
                     "culprit": "Hospital"
                 },
                 {
                     "day": 4,
-                    "incident": "Night of Madness",
+                    "incident": "nightMadness",
                     "culprit": "City"
                 },
                 {
                     "day": 5,
-                    "incident": "Sacrilegious Murder",
-                    "culprit": "Boy Student"
+                    "incident": "sacrilegiousMurder",
+                    "culprit": "boyStudent"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -181,13 +181,13 @@
                 "name": "Cosmic Evil",
                 "number": 4
             }],
-            "tragedySet": "Prime Evil",
+            "tragedySet": "primeEvil",
             "mainPlot": [
-                "The Ones from the Grave"
+                "OnesFromGrave"
             ],
             "subPlots": [
-                "A Love Affair",
-                "People Who Don’t Listen"
+                "loveAffair",
+                "peopleDontListen"
             ],
             "difficultySets": [
                 {
@@ -201,42 +201,42 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Girl Student": "Person",
-                "Mystery Boy": "Zombie",
-                "Transfer Student": [
-                    "Lover",
+                "girlStudent": "person",
+                "mysteryBoy": "zombie",
+                "transferStudent": [
+                    "lover",
                     {
                         "enters on day": 5
                     }
                 ],
-                "Shrine Maiden": "Person",
-                "Office Worker": "Person",
-                "Informer": "Show-Off",
-                "Journalist": "Person",
-                "Patient": "Loved One",
-                "Nurse": "Conspiracy Theorist",
-                "Henchman": "Coward"
+                "shrineMaiden": "person",
+                "officeWorker": "person",
+                "informer": "showOff",
+                "journalist": "person",
+                "patient": "lovedOne",
+                "nurse": "conspiracyTheorist",
+                "henchman": "coward"
             },
             "incidents": [
                 {
                     "day": 2,
-                    "incident": "Evil Contamination",
-                    "culprit": "Henchman"
+                    "incident": "evilContamination",
+                    "culprit": "henchman"
                 },
                 {
                     "day": 3,
-                    "incident": "Missing Person",
-                    "culprit": "Journalist"
+                    "incident": "missingPerson",
+                    "culprit": "journalist"
                 },
                 {
                     "day": 4,
-                    "incident": "Night of Madness",
+                    "incident": "nightMadness",
                     "culprit": "Shrine"
                 },
                 {
                     "day": 5,
-                    "incident": "Sacrilegious Murder",
-                    "culprit": "Patient"
+                    "incident": "sacrilegiousMurder",
+                    "culprit": "patient"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -250,13 +250,13 @@
                 "name": "Cosmic Evil",
                 "number": 5
             }],
-            "tragedySet": "Prime Evil",
+            "tragedySet": "primeEvil",
             "mainPlot": [
-                "Moonlight Beast"
+                "moonlightBeast"
             ],
             "subPlots": [
-                "Monster Intrigue",
-                "People Who Don’t Listen"
+                "monsterIntrigue",
+                "peopleDontListen"
             ],
             "difficultySets": [
                 {
@@ -270,57 +270,57 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Girl Student": "Person",
-                "Mystery Boy": "Nightmare",
-                "Teacher": "Person",
-                "Transfer Student": [
-                    "Coward",
+                "girlStudent": "person",
+                "mysteryBoy": "nightmare",
+                "teacher": "person",
+                "transferStudent": [
+                    "coward",
                     {
                         "enters on day": 5
                     }
                 ],
-                "Alien": "Person",
-                "Godly Being": [
-                    "Person",
+                "alien": "person",
+                "godlyBeing": [
+                    "person",
                     {
                         "enters on loop": 2
                     }
                 ],
-                "Pop Idol": "Person",
-                "Forensic Specialist": "Conspiracy Theorist",
-                "Soldier": "Show-Off",
-                "Patient": "Werewolf"
+                "popIdol": "person",
+                "forensicSpecialist": "conspiracyTheorist",
+                "soldier": "showOff",
+                "patient": "werewolf"
             },
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "Awakened Curse",
+                    "incident": "awakenedCurse",
                     "culprit": "School"
                 },
                 {
                     "day": 2,
-                    "incident": "Increasing Unease",
-                    "culprit": "Pop Idol"
+                    "incident": "increasingUnease",
+                    "culprit": "popIdol"
                 },
                 {
                     "day": 3,
-                    "incident": "The Executioner",
-                    "culprit": "Girl Student"
+                    "incident": "executioner",
+                    "culprit": "girlStudent"
                 },
                 {
                     "day": 4,
-                    "incident": "Sacrilegious Murder",
-                    "culprit": "Soldier"
+                    "incident": "sacrilegiousMurder",
+                    "culprit": "soldier"
                 },
                 {
                     "day": 5,
-                    "incident": "Night of Madness",
+                    "incident": "nightMadness",
                     "culprit": "Hospital"
                 },
                 {
                     "day": 6,
-                    "incident": "Missing Person",
-                    "culprit": "Mystery Boy"
+                    "incident": "missingPerson",
+                    "culprit": "mysteryBoy"
                 }
             ],
             "specialRules": [
@@ -337,13 +337,13 @@
                 "name": "Cosmic Evil",
                 "number": 6
             }],
-            "tragedySet": "Cosmic Mythology",
+            "tragedySet": "cosmicMythology",
             "mainPlot": [
-                "Giant Time Bomb Again"
+                "giantTimeBombAgain"
             ],
             "subPlots": [
-                "The Resistance",
-                "An Unsettling Rumor"
+                "resistance",
+                "unsettlingRumor"
             ],
             "difficultySets": [
                 {
@@ -357,29 +357,29 @@
             ],
             "daysPerLoop": 4,
             "cast": {
-                "Boy Student": "Conspiracy Theorist",
-                "Girl Student": "Witch",
-                "rich-student": "Serial Killer",
-                "Shrine Maiden": "Person",
-                "Police Officer": "Person",
-                "Office Worker": "Wizard",
-                "Doctor": "Deep One"
+                "boyStudent": "conspiracyTheorist",
+                "girlStudent": "witch",
+                "richStudent": "serialKiller",
+                "shrineMaiden": "person",
+                "policeOfficer": "person",
+                "officeWorker": "wizard",
+                "doctor": "deepOne"
             },
             "incidents": [
                 {
                     "day": 2,
-                    "incident": "Missing Person",
-                    "culprit": "rich-student"
+                    "incident": "missingPerson",
+                    "culprit": "richStudent"
                 },
                 {
                     "day": 3,
-                    "incident": "Evil Contamination",
-                    "culprit": "Shrine Maiden"
+                    "incident": "evilContamination",
+                    "culprit": "shrineMaiden"
                 },
                 {
                     "day": 4,
-                    "incident": "Insane Murder",
-                    "culprit": "Boy Student"
+                    "incident": "insaneMurder",
+                    "culprit": "boyStudent"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -393,13 +393,13 @@
                 "name": "Cosmic Evil",
                 "number": 7
             }],
-            "tragedySet": "Cosmic Mythology",
+            "tragedySet": "cosmicMythology",
             "mainPlot": [
-                "Bloody Rites"
+                "bloodyRites"
             ],
             "subPlots": [
-                "People Who Saw",
-                "The Profound Race"
+                "peopleWhoSaw",
+                "greatRace"
             ],
             "difficultySets": [
                 {
@@ -409,36 +409,36 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "Girl Student": "Witness",
-                "rich-student": "Person",
-                "Class Rep": "Witch",
-                "Shrine Maiden": "Person",
-                "Alien": "Person",
-                "Office Worker": "Conspiracy Theorist",
-                "Informer": "Time Traveler",
-                "Doctor": "Serial Killer",
-                "Patient": "Immortal"
+                "girlStudent": "witness",
+                "richStudent": "person",
+                "classRep": "witch",
+                "shrineMaiden": "person",
+                "alien": "person",
+                "officeWorker": "conspiracyTheorist",
+                "informer": "timeTraveler",
+                "doctor": "serialKiller",
+                "patient": "immortalRole"
             },
             "incidents": [
                 {
                     "day": 2,
-                    "incident": "Missing Person",
-                    "culprit": "Doctor"
+                    "incident": "missingPerson",
+                    "culprit": "doctor"
                 },
                 {
                     "day": 3,
-                    "incident": "Hound Dog Scent",
-                    "culprit": "Alien"
+                    "incident": "houndDogScent",
+                    "culprit": "alien"
                 },
                 {
                     "day": 4,
-                    "incident": "The Executioner",
-                    "culprit": "Girl Student"
+                    "incident": "executioner",
+                    "culprit": "girlStudent"
                 },
                 {
                     "day": 5,
-                    "incident": "Insane Murder",
-                    "culprit": "Office Worker"
+                    "incident": "insaneMurder",
+                    "culprit": "officeWorker"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -452,18 +452,18 @@
                 "name": "Cosmic Evil",
                 "number": 8
             }],
-            "tragedySet": "Cosmic Mythology",
+            "tragedySet": "cosmicMythology",
             "mainPlot": [
-                "The King in Yellow"
+                "kingYellow"
             ],
             "subPlots": [
                 [
-                    "Twisted Truth",
+                    "twistedTruth",
                     {
-                        "Extra Plot": "Bloody Rites"
+                        "Extra Plot": "bloodyRites"
                     }
                 ],
-                "Whispers from the Deep"
+                "whispersFromDeep"
             ],
             "difficultySets": [
                 {
@@ -477,41 +477,41 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "Class Rep": "Sacrifice",
-                "Mystery Boy": "Serial Killer",
-                "Godly Being": [
-                    "Paranoiac",
+                "classRep": "sacrifice",
+                "mysteryBoy": "serialKiller",
+                "godlyBeing": [
+                    "paranoiac",
                     {
                         "enters on loop": 2
                     }
                 ],
-                "Office Worker": "Cultist",
-                "Informer": "Person",
-                "Journalist": "Person",
-                "Pop Idol": "Person",
-                "Patient": "Immortal",
-                "Nurse": "Paranoiac"
+                "officeWorker": "cultist",
+                "informer": "person",
+                "journalist": "person",
+                "popIdol": "person",
+                "patient": "immortalRole",
+                "nurse": "paranoiac"
             },
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "The Executioner",
-                    "culprit": "Patient"
+                    "incident": "executioner",
+                    "culprit": "patient"
                 },
                 {
                     "day": 2,
-                    "incident": "Discovery",
-                    "culprit": "Office Worker"
+                    "incident": "discovery",
+                    "culprit": "officeWorker"
                 },
                 {
                     "day": 4,
-                    "incident": "Insane Murder",
-                    "culprit": "Class Rep"
+                    "incident": "insaneMurder",
+                    "culprit": "classRep"
                 },
                 {
                     "day": 5,
-                    "incident": "Uproar",
-                    "culprit": "Godly Being"
+                    "incident": "uproar",
+                    "culprit": "godlyBeing"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -525,16 +525,16 @@
                 "name": "Cosmic Evil",
                 "number": 9
             }],
-            "tragedySet": "Cosmic Mythology",
+            "tragedySet": "cosmicMythology",
             "mainPlot": [
-                "The Sacred Words of Dagon"
+                "sacredWordsDagon"
             ],
             "subPlots": [
-                "The Faceless God",
+                "facelessGod",
                 [
-                    "Twisted Truth",
+                    "twistedTruth",
                     {
-                        "Extra Plot": "Giant Time Bomb Again"
+                        "Extra Plot": "giantTimeBombAgain"
                     }
                 ]
             ],
@@ -546,35 +546,35 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Girl Student": "Person",
-                "rich-student": "Faceless",
-                "Mystery Boy": "Witch",
-                "Alien": "Wizard",
-                "Office Worker": "Cultist",
-                "Informer": "Deep One",
-                "Journalist": "Key Person",
-                "Patient": "Paranoiac"
+                "girlStudent": "person",
+                "richStudent": "faceless",
+                "mysteryBoy": "witch",
+                "alien": "wizard",
+                "officeWorker": "cultist",
+                "informer": "deepOne",
+                "journalist": "keyPerson",
+                "patient": "paranoiac"
             },
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "Insane Murder",
-                    "culprit": "rich-student"
+                    "incident": "insaneMurder",
+                    "culprit": "richStudent"
                 },
                 {
                     "day": 3,
-                    "incident": "Fire of Demise",
-                    "culprit": "Alien"
+                    "incident": "fireDemise",
+                    "culprit": "alien"
                 },
                 {
                     "day": 4,
-                    "incident": "Uproar",
-                    "culprit": "Patient"
+                    "incident": "uproar",
+                    "culprit": "patient"
                 },
                 {
                     "day": 6,
-                    "incident": "Evil Contamination",
-                    "culprit": "Informer"
+                    "incident": "evilContamination",
+                    "culprit": "informer"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",
@@ -588,13 +588,13 @@
                 "name": "Cosmic Evil",
                 "number": 10
             }],
-            "tragedySet": "Cosmic Mythology",
+            "tragedySet": "cosmicMythology",
             "mainPlot": [
-                "The King in Yellow"
+                "kingYellow"
             ],
             "subPlots": [
-                "The Faceless God",
-                "The Resistance"
+                "facelessGod",
+                "resistance"
             ],
             "difficultySets": [
                 {
@@ -604,52 +604,52 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Class Rep": "Person",
-                "Mystery Boy": "Immortal",
-                "Alien": "Person",
-                "Godly Being": [
-                    "Sacrifice",
+                "classRep": "person",
+                "mysteryBoy": "immortalRole",
+                "alien": "person",
+                "godlyBeing": [
+                    "sacrifice",
                     {
                         "enters on loop": 5
                     }
                 ],
-                "Illusion": "Serial Killer",
-                "Black Cat": "Cultist",
-                "Office Worker": "Person",
-                "Journalist": "Wizard",
-                "Nurse": "Faceless",
-                "Henchman": "Conspiracy Theorist"
+                "illusion": "serialKiller",
+                "blackCat": "cultist",
+                "officeWorker": "person",
+                "journalist": "wizard",
+                "nurse": "faceless",
+                "henchman": "conspiracyTheorist"
             },
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "Discovery",
-                    "culprit": "Henchman"
+                    "incident": "discovery",
+                    "culprit": "henchman"
                 },
                 {
                     "day": 2,
-                    "incident": "Insane Murder",
-                    "culprit": "Black Cat"
+                    "incident": "insaneMurder",
+                    "culprit": "blackCat"
                 },
                 {
                     "day": 3,
-                    "incident": "Increasing Unease",
-                    "culprit": "Office Worker"
+                    "incident": "increasingUnease",
+                    "culprit": "officeWorker"
                 },
                 {
                     "day": 4,
-                    "incident": "Increasing Unease",
-                    "culprit": "Journalist"
+                    "incident": "increasingUnease",
+                    "culprit": "journalist"
                 },
                 {
                     "day": 5,
-                    "incident": "Evil Contamination",
-                    "culprit": "Class Rep"
+                    "incident": "evilContamination",
+                    "culprit": "classRep"
                 },
                 {
                     "day": 6,
-                    "incident": "The Executioner",
-                    "culprit": "Godly Being"
+                    "incident": "executioner",
+                    "culprit": "godlyBeing"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Cosmic Evil Mastermind Handbook",

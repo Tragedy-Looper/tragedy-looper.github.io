@@ -1,14 +1,14 @@
 {
-      "$schema": "https://tragedy-looper.github.io/plots.schema.json",
+    "$schema": "https://tragedy-looper.github.io/plots.schema.json",
     // For dev purposes
     // "$schema": "../plots.schema.json",
     "plots": [
         {
-            "id": "Tightrope Plan",
-"name": "Tightrope Plan",
+            "id": "tightropePlan",
+            "name": "Tightrope Plan",
             "roles": {
-                "Brain": 1,
-                "Killer": 1
+                "brain": 1,
+                "killer": 1
             },
             "rules": [
                 {
@@ -21,12 +21,12 @@
             ]
         },
         {
-            "id": "A Drop of Strychnine",
-"name": "A Drop of Strychnine",
+            "id": "dropStrychnine",
+            "name": "A Drop of Strychnine",
             "roles": {
-                "Key Person": 1,
-                "Poisoner": 1,
-                "Fool": 1
+                "keyPerson": 1,
+                "poisoner": 1,
+                "fool": 1
             },
             "rules": [
                 {
@@ -34,16 +34,16 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "description": "When determining whether \"Serial Murde,\" or \"Suicide\" triggers, count :intrigue: counters also as :paranoia: counters."
+                    "description": "When determining whether \":serialMurde:,\" or \":suicide:\" triggers, count :intrigue: counters also as :paranoia: counters."
                 }
             ]
         },
         {
-            "id": "A Quilt of Incidents",
-"name": "A Quilt of Incidents",
+            "id": "quiltIncidents",
+            "name": "A Quilt of Incidents",
             "roles": {
-                "Fool": 1,
-                "Conspiracy Theorist": 1
+                "fool": 1,
+                "conspiracyTheorist": 1
             },
             "rules": [
                 {
@@ -56,10 +56,10 @@
             ]
         },
         {
-            "id": "The Black School",
-"name": "The Black School",
+            "id": "blackSchool",
+            "name": "The Black School",
             "roles": {
-                "Brain": 1
+                "brain": 1
             },
             "rules": [
                 {
@@ -72,21 +72,21 @@
             ]
         },
         {
-            "id": "Dance of Fools",
-"name": "Dance of Fools",
+            "id": "danceFools",
+            "name": "Dance of Fools",
             "roles": {
-                "Friend": 1,
-                "Fool": 1
+                "friend": 1,
+                "fool": 1
             },
             "rules": []
         },
         {
-            "id": "Isolated Institution Psycho",
-"name": "Isolated Institution Psycho",
+            "id": "isolatedInstitutionPsycho",
+            "name": "Isolated Institution Psycho",
             "roles": {
-                "Conspiracy Theorist": 1,
-                "Therapist": 1,
-                "Paranoiac": 1
+                "conspiracyTheorist": 1,
+                "therapist": 1,
+                "paranoiac": 1
             },
             "rules": [
                 {
@@ -100,27 +100,27 @@
             ]
         },
         {
-            "id": "An Absolute Will",
-"name": "An Absolute Will",
+            "id": "anAbsoluteWill",
+            "name": "An Absolute Will",
             "roles": {
-                "Obstinate": 1
+                "obstinate": 1
             },
             "rules": []
         },
         {
-            "id": "Tricky Twins",
-"name": "Tricky Twins",
+            "id": "trickyTwins",
+            "name": "Tricky Twins",
             "roles": {
-                "Twin": 1,
-                "Paranoiac": 1
+                "twin": 1,
+                "paranoiac": 1
             },
             "rules": []
         },
         {
-            "id": "Smell of Gunpowder",
-"name": "Smell of Gunpowder",
+            "id": "smellGunpowder",
+            "name": "Smell of Gunpowder",
             "roles": {
-                "Serial Killer": 1
+                "serialKiller": 1
             },
             "rules": [
                 {
@@ -133,22 +133,22 @@
             ]
         },
         {
-            "id": "I am a Master Detective",
-"name": "I am a Master Detective",
+            "id": "masterDetective",
+            "name": "I am a Master Detective",
             "roles": {
-                "Conspiracy Theorist": 1,
-                "Friend": 1,
-                "Private Investigator": 1
+                "conspiracyTheorist": 1,
+                "friend": 1,
+                "privateInvestigator": 1
             },
             "rules": []
         },
         {
-            "id": "Secret Record",
-"name": "Secret Record",
+            "id": "secretRecord",
+            "name": "Secret Record",
             "roles": {
-                "Key Person": 1,
-                "Brain": 1,
-                "Conspiracy Theorist": 1
+                "keyPerson": 1,
+                "brain": 1,
+                "conspiracyTheorist": 1
             },
             "rules": [
                 {
@@ -161,20 +161,20 @@
             ]
         },
         {
-            "id": "The Devil’s Hand",
-"name": "The Devil’s Hand",
+            "id": "devilsHand",
+            "name": "The Devil’s Hand",
             "roles": {
-                "Key Person": 1,
-                "Cultist": 1,
-                "Ninja": 1
+                "keyPerson": 1,
+                "cultist": 1,
+                "ninja": 1
             },
             "rules": []
         },
         {
-            "id": "Male Confrontation",
-"name": "Male Confrontation",
+            "id": "maleConfrontation",
+            "name": "Male Confrontation",
             "roles": {
-                "Ninja": 1
+                "ninja": 1
             },
             "rules": [
                 {
@@ -182,21 +182,21 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "The Ninja (or its corpse) has at least 2 :intrigue: counters."
+                    "prerequisite": "The :ninja: (or its corpse) has at least 2 :intrigue: counters."
                 },
                 {
                     "type": "Script creation",
-                    "description": "The Ninja (for this plot) must have the tag man."
+                    "description": "The :ninja: (for this plot) must have the tag man."
                 }
             ]
         },
         {
-            "id": "Fated Connections",
-"name": "Fated Connections",
+            "id": "fatedConnections",
+            "name": "Fated Connections",
             "roles": {
-                "Conspiracy Theorist": 1,
-                "Friend": 1,
-                "Serial Killer": 1
+                "conspiracyTheorist": 1,
+                "friend": 1,
+                "serialKiller": 1
             },
             "rules": [
                 {
@@ -205,25 +205,25 @@
                         "Loop Start"
                     ],
                     "prerequisite": "A Character died the last turn.",
-                    "description": "Chose one of those. Plac any Extra Card on that character. Character(s) with an Extra card has their role changed into a Key Person."
+                    "description": "Chose one of those. Plac any Extra Card on that character. Character(s) with an Extra card has their role changed into a :keyPerson:."
                 }
             ]
         },
         {
-            "id": "Love-Hate Spiral",
-"name": "Love-Hate Spiral",
+            "id": "loveHateSpiral",
+            "name": "Love-Hate Spiral",
             "roles": {
-                "Friend": 1,
-                "Obstinate": 1
+                "friend": 1,
+                "obstinate": 1
             },
             "rules": []
         },
         {
-            "id": "Showtime of Death",
-"name": "Showtime of Death",
+            "id": "showtimeDeath",
+            "name": "Showtime of Death",
             "roles": {
-                "Magician": 1,
-                "Immortal": 1
+                "magician": 1,
+                "immortalRole": 1
             },
             "rules": [
                 {
@@ -236,21 +236,21 @@
             ]
         },
         {
-            "id": "Witches Tea Time",
-"name": "Witches Tea Time",
+            "id": "witchesTeaTime",
+            "name": "Witches' Tea Time",
             "roles": {
-                "Conspiracy Theorist": 1,
-                "Friend": 1,
-                "Witch": 2
+                "conspiracyTheorist": 1,
+                "friend": 1,
+                "witch": 2
             },
             "rules": []
         },
         {
-            "id": "Dice of the Gods",
-"name": "Dice of the Gods",
+            "id": "diceOfGods",
+            "name": "Dice of the Gods",
             "roles": {
-                "Serial Killer": 1,
-                "Obstinate": 1
+                "serialKiller": 1,
+                "obstinate": 1
             },
             "rules": [
                 {
@@ -264,11 +264,11 @@
             ]
         },
         {
-            "id": "Unanswered Heart",
-"name": "Unanswered Heart",
+            "id": "unansweredHeart",
+            "name": "Unanswered Heart",
             "roles": {
-                "Conspiracy Theorist": 1,
-                "Magician": 1
+                "conspiracyTheorist": 1,
+                "magician": 1
             },
             "rules": [
                 {
@@ -281,10 +281,10 @@
             ]
         },
         {
-            "id": "Unsafe Trigger",
-"name": "Unsafe Trigger",
+            "id": "unsafeTrigger",
+            "name": "Unsafe Trigger",
             "roles": {
-                "Factor": 1
+                "factor": 1
             },
             "rules": [
                 {
@@ -294,15 +294,15 @@
                     ],
                     "timesPerLoop": 1,
                     "prerequisite": "The Factor is alive.",
-                    "description": "You may place 1 Intruge counter on the Factor’s location"
+                    "description": "You may place 1 Intruge counter on the :factor:’s location"
                 }
             ]
         },
         {
-            "id": "Worshippers of the Apocalypse",
-"name": "Worshippers of the Apocalypse",
+            "id": "worshippersApocalypse",
+            "name": "Worshippers of the Apocalypse",
             "roles": {
-                "Prophet": 1
+                "prophet": 1
             },
             "rules": [
                 {
@@ -314,7 +314,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "prerequisite": "The Culprit is a Person and the Prophet is alive.",
+                    "prerequisite": "The Culprit is a :person: and the Prophet is alive.",
                     "description": "When determning whether an Incident triggers, the culprit is regarded as having 1 less than its printed :paranoia: limit."
                 }
             ]

@@ -3,12 +3,14 @@
     // For dev purposes
     // "$schema": "../plots.schema.json",
     "plots": [
+        // TODO: Noble Blodline is already in base game. Check wich one is correct.
+        // They are at least identicle
         {
-            "id": "The Noble Bloodline",
+            "id": "nobleBloodline",
             "name": "The Noble Bloodline",
             "roles": {
-                "Key Person": 1,
-                "Vampire": 1
+                "keyPerson": 1,
+                "vampire": 1
             },
             "rules": [
                 {
@@ -18,23 +20,23 @@
             ]
         },
         {
-            "id": "Moonlight Beast",
+            "id": "moonlightBeast",
             "name": "Moonlight Beast",
             "roles": {
-                "Werewolf": 1
+                "werewolf": 1
             },
             "rules": []
         },
         {
-            "id": "Night Mist Nightmare",
+            "id": "nightMistNightmare",
             "name": "Night Mist Nightmare",
             "roles": {
-                "Nightmare": 1
+                "nightmare": 1
             },
             "rules": []
         },
         {
-            "id": "The Ones from the Grave",
+            "id": "OnesFromGrave",
             "name": "The Ones from the Grave",
             "roles": {},
             "rules": [
@@ -43,16 +45,16 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "All corpses that had the role Person, Coward or Show-Off change into having the role of Zombie"
+                    "description": "All corpses that had the role :person:, :coward: or :showOff: change into having the role of :zombie:"
                 }
             ]
         },
         {
-            "id": "The Cursed Land",
+            "id": "cursedLand",
             "name": "The Cursed Land",
             "roles": {
-                "Ghost": 1,
-                "Show-Off": 1
+                "ghost": 1,
+                "showOff": 1
             },
             "rules": [
                 {
@@ -60,7 +62,7 @@
                     "timing": [
                         "Loop Start"
                     ],
-                    "description": "Place a Curse on the Ghost’s starting location"
+                    "description": "Place a Curse on the :ghost:’s starting location"
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -72,21 +74,21 @@
             ]
         },
         {
-            "id": "Those with Habits",
+            "id": "thoseHabits",
             "name": "Those with Habits",
             "roles": {
-                "Ghost": 1,
-                "Serial Killer": 1,
-                "Loved One": 1
+                "ghost": 1,
+                "serialKiller": 1,
+                "lovedOne": 1
             },
             "rules": []
         },
         {
-            "id": "Witch’s Curse",
+            "id": "witchsCurse",
             "name": "Witch’s Curse",
             "roles": {
-                "Conspiracy Theorist": 1,
-                "Witch": 1
+                "conspiracyTheorist": 1,
+                "witch": 1
             },
             "rules": [
                 {
@@ -94,28 +96,28 @@
                     "timing": [
                         "Loop Start"
                     ],
-                    "description": "Place a Curse on the Witch’s startiong location."
+                    "description": "Place a Curse on the :witch:’s startiong location."
                 }
             ]
         },
         {
-            "id": "The Key Girl",
+            "id": "keyGirl",
             "name": "The Key Girl",
             "roles": {
-                "Key Person": 1
+                "keyPerson": 1
             },
             "rules": [
                 {
                     "type": "Script creation",
-                    "description": "The Key Person must be a Girl."
+                    "description": "The :keyPerson: must be a :girl:."
                 }
             ]
         },
         {
-            "id": "Monster Intrigue",
+            "id": "monsterIntrigue",
             "name": "Monster Intrigue",
             "roles": {
-                "Conspiracy Theorist": 1
+                "conspiracyTheorist": 1
             },
             "rules": [
                 {
@@ -131,32 +133,32 @@
             ]
         },
         {
-            "id": "Panic and Obsession",
+            "id": "panicObsession",
             "name": "Panic and Obsession",
             "roles": {
-                "Serial Killer": 1,
-                "Coward": 1,
-                "Witch": 1
+                "serialKiller": 1,
+                "coward": 1,
+                "witch": 1
             },
             "rules": []
         },
         {
-            "id": "People Who Don’t Listen",
+            "id": "peopleDontListen",
             "name": "People Who Don’t Listen",
             "roles": {
-                "Show-Off": 1,
-                "Conspiracy Theorist": 1,
-                "Coward": 1
+                "showOff": 1,
+                "conspiracyTheorist": 1,
+                "coward": 1
             },
             "rules": []
         },
         {
-            "id": "Choir to the Outside God",
+            "id": "choirOuterGod",
             "name": "Choir to the Outside God",
             "roles": {
-                "Key Person": 1,
-                "Sacrifice": 1,
-                "Immortal": 1
+                "keyPerson": 1,
+                "sacrifice": 1,
+                "immortalRole": 1
             },
             "rules": [
                 {
@@ -169,12 +171,12 @@
             ]
         },
         {
-            "id": "The Sacred Words of Dagon",
+            "id": "sacredWordsDagon",
             "name": "The Sacred Words of Dagon",
             "roles": {
-                "Key Person": 1,
-                "Cultist": 1,
-                "Deep One": 1
+                "keyPerson": 1,
+                "cultist": 1,
+                "deepOne": 1
             },
             "rules": [
                 {
@@ -188,11 +190,11 @@
             ]
         },
         {
-            "id": "The King in Yellow",
+            "id": "kingYellow",
             "name": "The King in Yellow",
             "roles": {
-                "Sacrifice": 1,
-                "Cultist": 1
+                "sacrifice": 1,
+                "cultist": 1
             },
             "rules": [
                 {
@@ -205,11 +207,11 @@
             ]
         },
         {
-            "id": "Giant Time Bomb Again",
+            "id": "giantTimeBombAgain",
             "name": "Giant Time Bomb Again",
             "roles": {
-                "Witch": 1,
-                "Deep One": 1
+                "witch": 1,
+                "deepOne": 1
             },
             "rules": [
                 {
@@ -217,16 +219,16 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 :intrigue: on the Witch’s starting location."
+                    "prerequisite": "2 :intrigue: on the :witch:’s starting location."
                 }
             ]
         },
         {
-            "id": "Bloody Rites",
+            "id": "bloodyRites",
             "name": "Bloody Rites",
             "roles": {
-                "Witch": 1,
-                "Immortal": 1
+                "witch": 1,
+                "immortalRole": 1
             },
             "rules": [
                 {
@@ -240,39 +242,39 @@
             ]
         },
         {
-            "id": "The Resistance",
+            "id": "resistance",
             "name": "The Resistance",
             "roles": {
-                "Conspiracy Theorist": 1,
-                "Wizard": 1,
-                "Serial Killer": 1
+                "conspiracyTheorist": 1,
+                "wizard": 1,
+                "serialKiller": 1
             },
             "rules": []
         },
         {
-            "id": "People Who Saw",
+            "id": "peopleWhoSaw",
             "name": "People Who Saw",
             "roles": {
-                "Conspiracy Theorist": 1,
-                "Witness": 1
+                "conspiracyTheorist": 1,
+                "witness": 1
             },
             "rules": []
         },
         {
-            "id": "The Profound Race",
+            "id": "greatRace",
             "name": "The Profound Race",
             "roles": {
-                "Serial Killer": 1,
-                "Time Traveler": 1
+                "serialKiller": 1,
+                "timeTraveler": 1
             },
             "rules": []
         },
         {
-            "id": "Whispers from the Deep",
+            "id": "whispersFromDeep",
             "name": "Whispers from the Deep",
             "roles": {
-                "Deep One": 1,
-                "Paranoiac": 1
+                "deepOne": 1,
+                "paranoiac": 1
             },
             "rules": [
                 {
@@ -280,28 +282,27 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "The :paranoia:c gains all the abilities of the Key Person"
+                    "description": "The :paranoiac: gains all the abilities of the :keyPerson:"
                 }
             ]
         },
         {
-            "id": "The Faceless God",
+            "id": "facelessGod",
             "name": "The Faceless God",
             "roles": {
-                "Wizard": 1,
-                "Faceless": 1
+                "wizard": 1,
+                "faceless": 1
             },
             "rules": []
         },
         {
-            "id": "Twisted Truth",
+            "id": "twistedTruth",
             "name": "Twisted Truth",
             "roles": {
-                "Paranoiac": 1
+                "paranoiac": 1
             },
             "scriptSpecified": [
                 {
-                    "id": "Extra Plot",
                     "name": "Extra Plot",
                     "type": "plot",
                     "addRolesForPlot": true
@@ -310,7 +311,7 @@
             "rules": [
                 {
                     "type": "Script creation",
-                    "description": "The Informer must be included. The script writer then chooses one \"extra\" main plot."
+                    "description": "The :informer: must be included. The script writer then chooses one \"extra\" main plot."
                 },
                 {
                     "type": "Mandatory",

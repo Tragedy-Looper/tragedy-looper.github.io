@@ -1,11 +1,11 @@
 {
-      "$schema": "https://tragedy-looper.github.io/roles.schema.json",
+    "$schema": "https://tragedy-looper.github.io/roles.schema.json",
     // For dev purposes
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "id": "Marionette (AHR)",
-"name": "Marionette (AHR)",
+            "id": "marionetteAHR",
+            "name": "Marionette",
             "goodwillRefusel": "Puppeted",
             "abilities": [
                 {
@@ -19,8 +19,8 @@
             ]
         },
         {
-            "id": "Lullaby",
-"name": "Lullaby",
+            "id": "lullaby",
+            "name": "Lullaby",
             "goodwillRefusel": "Puppeted",
             "abilities": [
                 {
@@ -48,9 +48,11 @@
             ]
         },
         {
-            "id": "Storyteller",
-"name": "Storyteller",
-            "tags": ["Immortal"],
+            "id": "storyteller",
+            "name": "Storyteller",
+            "tags": [
+                "immortal"
+            ],
             "abilities": [
                 {
                     "type": "Optional",
@@ -71,9 +73,11 @@
             ]
         },
         {
-            "id": "Shifter",
-"name": "Shifter",
-            "tags": ["Immortal"],
+            "id": "shifter",
+            "name": "Shifter",
+            "tags": [
+                "immortal"
+            ],
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -92,8 +96,8 @@
             ]
         },
         {
-            "id": "Alice",
-"name": "Alice",
+            "id": "alice",
+            "name": "Alice",
             "abilities": [
                 {
                     "type": "Mandatory Loss condition: Protagonists Death",
@@ -114,8 +118,8 @@
             ]
         },
         {
-            "id": "Fragment",
-"name": "Fragment",
+            "id": "fragment",
+            "name": "Fragment",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -136,8 +140,8 @@
             ]
         },
         {
-            "id": "Pied Piper",
-"name": "Pied Piper",
+            "id": "piedPiper",
+            "name": "Pied Piper",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -166,8 +170,8 @@
             ]
         },
         {
-            "id": "Gossip",
-"name": "Gossip",
+            "id": "gossip",
+            "name": "Gossip",
             "max": 1,
             "abilities": [
                 {

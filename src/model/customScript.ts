@@ -3,11 +3,11 @@ import { type TragedySetName, getTragedySetRoles, hasCastOption } from "./traged
 import { keys, require } from "../misc";
 import { type PlotName } from "./plots";
 import { type RoleName, type RoleNameSingle, isRoleName, singleRolenames } from "./roles";
-import { isCharacterPlotless, type CharacterName, locations, type LocationName, isCharacterName } from "./characters";
+import { isCharacterPlotless, type CharacterName, locations, type LocationName } from "./characters";
 import { isScriptSpecified, type Option } from "./core";
 import { type IncidentName, isFakeIncident, isMobIncident, isRepeatedCulpritIncident } from "./incidents";
 import type { Script } from "../scripts.g";
-import { charactersLookup, incidentsLookup, plotsLookup, rolesLookup, tragedysLookup } from "../data";
+import { charactersLookup, incidentsLookup, isCharacterId, plotsLookup, rolesLookup, tragedysLookup } from "../data";
 import type { Tragedy } from "../tragedys.g";
 
 
@@ -281,7 +281,7 @@ function storeStore<T>(target: Readable<Readable<T>>): Readable<T> {
 function generateRoleSelection<TCharacters extends CharacterName>(script: CustomScript, allRols: Partial<Record<RoleName, readonly [number, number]>>, characters: readonly TCharacters[]): ICustomScriptRoleExclusiveSelectionGroup<TCharacters>[] {
 
     const additionalPersons = characters.length - (Object.values(allRols).map(x => x[0])).reduce((p, c) => p + c, 0);
-    allRols.Person = [0, additionalPersons];
+    allRols.person = [0, additionalPersons];
 
     const groups = keys(allRols).map(key => [key, allRols[key] ?? [0, 0]] as const)
         .map(([key, [min, max]]) => {
@@ -343,7 +343,7 @@ class CustomScriptRoleExclusiveSelectionGroup<TCharacters extends CharacterName>
 
             roles.splice(n);
             while (roles.length < n) {
-                const newRole = new CustomScriptRoleExclusiveSelection(script, role, allCharacters.filter(x => role == 'Person' || !isCharacterPlotless(x)));
+                const newRole = new CustomScriptRoleExclusiveSelection(script, role, allCharacters.filter(x => role == 'person' || !isCharacterPlotless(x)));
                 roles.push(newRole);
             }
             return roles;
@@ -660,7 +660,7 @@ export class CustomScript {
     public import(script: Script) {
         this.title.set(script.title);
         this.creator.set(script.creator ?? '');
-
+        this.description.set(script.description ?? '');
         this.difficultySets.set(script.difficultySets ?? []);
         this.tragedySetName.set(script.tragedySet!);//TODO: check if it is a known tragedySet is set
 
@@ -707,10 +707,10 @@ export class CustomScript {
         this.daysPerLoop.set(script.daysPerLoop ?? 1);
 
         Object.entries(Object.entries<CharacterName, RoleName | readonly [RoleName, Record<string, any>]>(script.cast as any).reduce((p, [key, value]) => {
-            if (isCharacterName(key))
+            if (isCharacterId(key))
 
                 if ((charactersLookup[key]).plotLessRole) {
-                    const name = 'Person'; // Plotless characters are sorted under Persons and there role is in options
+                    const name = 'person'; // Plotless characters are sorted under Persons and there role is in options
 
                     if (name in p && Array.isArray(p[name])) {
                         p[name].push([key, { 'Role': value }]);
@@ -869,6 +869,7 @@ export class CustomScript {
                     culprit: get(x.selectedCharacter)
                 };
             }),
+            description: get(this.description),
             specialRules: [get(this.specialRules)],
             'victory-conditions': get(this.victoryConditions),
             story: get(this.story),

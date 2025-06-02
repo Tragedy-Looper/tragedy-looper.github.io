@@ -26,8 +26,10 @@
   );
 
   let cards = $derived(
-    Object.keys(charactersLookup)
-      .toSorted((a, b) => $getString(a).localeCompare($getString(b)))
+    (Object.keys(charactersLookup) as CharacterName[])
+      .toSorted((a, b) =>
+        $getString(charactersLookup[a].name).localeCompare($getString(charactersLookup[b].name))
+      )
       .map((key) => {
         return {
           type: 'character' as const,

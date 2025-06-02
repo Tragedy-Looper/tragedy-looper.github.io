@@ -8,7 +8,6 @@
     isLocationName,
     type CharacterName,
     type LocationName,
-    isCharacterName,
   } from '../../../model/characters';
   import { stringifySearchForPlayerAid } from '../../../serilezer';
   import { distinct, isArray, keys } from '../../../misc';
@@ -20,6 +19,7 @@
   import {
     charactersLookup,
     incidentsLookup,
+    isCharacterId,
     plotsLookup,
     rolesLookup,
     tragedysLookup,
@@ -176,7 +176,7 @@
     <div>
       {#if script.description}
         <div class="description">
-          {script.description}
+          <Translation translationKey={script.description} />
         </div>
         <label
           style="--show-more: '{$getString('Show more')}'; --show-less: '{$getString('Show less')}'"
@@ -202,7 +202,7 @@
   <div>
     <strong
       ><Translation
-        translationKey={tragedysLookup[script.tragedySet ?? 'Basic Tragedy'].name}
+        translationKey={tragedysLookup[script.tragedySet ?? 'basicTragedy'].name}
       /></strong
     >
   </div>
@@ -381,7 +381,7 @@
         {#if optionName in options}
           <br />
           (<Translation translationKey={s.name} />:
-          {#if s.type === 'character' && isCharacterName(options[optionName])}
+          {#if s.type === 'character' && isCharacterId(options[optionName])}
             <Translation translationKey={charactersLookup[options[optionName]].name} />
           {:else if s.type === 'location' && isLocationName(options[optionName])}
             <Translation translationKey={options[optionName] as LocationName} />

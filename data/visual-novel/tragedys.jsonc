@@ -4,39 +4,39 @@
     // "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "id": "Visual Novel",
-"name": "Visual Novel",
+            "id": "visualNovel",
+            "name": "Visual Novel",
             "mainPlots": [
-                "The Last Miracle",
-                "Seal of the Evil Spirit",
-                "Promise of a Smile",
-                "Album of Memories",
-                "The Monster Inside Me"
+                "lastMiracle",
+                "sealEvilSpirit",
+                "promiseSmile",
+                "albumMemories",
+                "monsterInsideMe"
             ],
             "subPlots": [
-                "Noisy Classmates",
-                "The Missing Highlight",
-                "The Seven School Mysteries",
-                "Behind the Scenes",
-                "Howling in the Moonlit Night",
-                "The Hidden Freak",
-                "The Spreading Infection"
+                "noisyClassmates",
+                "missingHighlight",
+                "sevenSchoolMysteries",
+                "behindScenes",
+                "howlingMoonlitNight",
+                "hiddenFreak",
+                "spreadingInfection"
             ],
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 2,
             "extraRules": [],
             "incidents": [
-                "Murder",
-                "Increasing Unease",
-                "Parting",
-                "Foul Evil",
-                "Exposure",
-                "Terrorism",
-                "Friction",
-                "Closed Circle",
-                "Route Branching",
-                "Relocation",
-                "Heart-Pounding Time Bomb"
+                "murder",
+                "increasingUnease",
+                "parting",
+                "foulEvil",
+                "exposure",
+                "terrorism",
+                "friction",
+                "closedCircle",
+                "routeBranching",
+                "relocation",
+                "heartPoundingTimeBomb"
             ]
         }
     ]

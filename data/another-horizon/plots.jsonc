@@ -1,14 +1,14 @@
 {
-      "$schema": "https://tragedy-looper.github.io/plots.schema.json",
+    "$schema": "https://tragedy-looper.github.io/plots.schema.json",
     // For dev purposes
     // "$schema": "../plots.schema.json",
     "plots": [
         {
-            "id": "Lost Heart",
-"name": "Lost Heart",
+            "id": "lostHeart",
+            "name": "Lost Heart",
             "roles": {
-                "Agent": 1,
-                "Brain": 1
+                "agent": 1,
+                "brain": 1
             },
             "rules": [
                 {
@@ -17,33 +17,33 @@
                         "Always"
                     ],
                     "prerequisite": "At least 1 :intrigue:, 1 :goodwill:, and 1 :paranoia: are placed on the character whose original role is a Person",
-                    "description": "The character gains :goodwill: Outburst and Marionette’s ability."
+                    "description": "The character gains :goodwill: Outburst and :marionette:’s ability."
                 }
             ]
         },
         {
-            "id": "Shadow Demon King",
-"name": "Shadow Demon King",
+            "id": "shadowDemonKing",
+            "name": "Shadow Demon King",
             "roles": {
-                "Twilight": 1
+                "twilight": 1
             },
             "rules": []
         },
         {
-            "id": "The Devil’s Will",
-"name": "The Devil’s Will",
+            "id": "devilsWill",
+            "name": "The Devil’s Will",
             "roles": {
-                "Agent": 1,
-                "Invader": 1,
-                "Hider": 1
+                "agent": 1,
+                "invader": 1,
+                "hider": 1
             },
             "rules": []
         },
         {
-            "id": "Parallel World War",
-"name": "Parallel World War",
+            "id": "parallelWorldWar",
+            "name": "Parallel World War",
             "roles": {
-                "Agent": 1
+                "agent": 1
             },
             "rules": [
                 {
@@ -51,20 +51,20 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "World Convergence hasn‘t occured this loop."
+                    "prerequisite": ":worldConvergence: hasn‘t occured this loop."
                 },
                 {
                     "type": "Script creation",
-                    "description": "The Agent must be the World Convergent culprit."
+                    "description": "The :agent: must be the World Convergent culprit."
                 }
             ]
         },
         {
-            "id": "Alien Erosion",
-"name": "Alien Erosion",
+            "id": "alienErosion",
+            "name": "Alien Erosion",
             "roles": {
-                "Brain": 1,
-                "Invader": 1
+                "brain": 1,
+                "invader": 1
             },
             "rules": [
                 {
@@ -79,15 +79,15 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "The current world is Abnormal world and there are at least 2 :intrigue: on the Invader‘s starting Location"
+                    "prerequisite": "The current world is Abnormal world and there are at least 2 :intrigue: on the :invader:‘s starting Location"
                 }
             ]
         },
         {
-            "id": "The World of Dollhouse",
-"name": "The World of Dollhouse",
+            "id": "worldDollhouse",
+            "name": "The World of Dollhouse",
             "roles": {
-                "Quidnunc": 1
+                "gossiper": 1
             },
             "rules": [
                 {
@@ -100,20 +100,20 @@
             ]
         },
         {
-            "id": "Ego Wave",
-"name": "Ego Wave",
+            "id": "egoWave",
+            "name": "Ego Wave",
             "roles": {
-                "Animus": 1,
-                "Agitator": 1
+                "animus": 1,
+                "agitator": 1
             },
             "rules": []
         },
         {
-            "id": "The Closed Door",
-"name": "The Closed Door",
+            "id": "closedDoor",
+            "name": "The Closed Door",
             "roles": {
-                "Quidnunc": 1,
-                "Agitator": 1
+                "gossiper": 1,
+                "agitator": 1
             },
             "rules": [
                 {
@@ -126,11 +126,11 @@
             ]
         },
         {
-            "id": "Moonside City",
-"name": "Moonside City",
+            "id": "moonsideCity",
+            "name": "Moonside City",
             "roles": {
-                "Quidnunc": 1,
-                "Neurosis": 1
+                "gossiper": 1,
+                "neurotic": 1
             },
             "rules": [
                 {
@@ -152,11 +152,11 @@
             ]
         },
         {
-            "id": "Fanatic Fox",
-"name": "Fanatic Fox",
+            "id": "fanaticSacrifices",
+            "name": "Fanatic’s Sacrifices",
             "roles": {
-                "Animus": 1,
-                "Fanatic": 1
+                "animus": 1,
+                "fanatic": 1
             },
             "rules": [
                 {
@@ -169,10 +169,10 @@
             ]
         },
         {
-            "id": "Somthing to invite",
-"name": "Somthing to invite",
+            "id": "someoneInvites",
+            "name": "The One Who Invites",
             "roles": {
-                "Enchanter": 1
+                "enchanter": 1
             },
             "rules": []
         }
