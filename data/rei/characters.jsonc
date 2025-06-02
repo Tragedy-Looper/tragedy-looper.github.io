@@ -32,7 +32,7 @@
             ]
         },
         {
-            "id": "partTimer2",
+            "id": "partTimerAlternate",
             "name": "Part-Timer(?)",
             "edition": "Rei",
             "paranoiaLimit": 3,

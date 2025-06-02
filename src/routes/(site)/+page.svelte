@@ -116,9 +116,9 @@
     </p>
     <a href="{base}/cards">
       <div class="cards">
-        <Card scale={0.3} animated face="back" card={'Boy Student'} />
-        <Card scale={0.3} animated face="back" card={'Girl Student'} />
-        <Card scale={0.3} animated face="back" card={'Black Cat'} />
+        <Card scale={0.3} animated face="back" card={'boyStudent'} />
+        <Card scale={0.3} animated face="back" card={'girlStudent'} />
+        <Card scale={0.3} animated face="back" card={'blackCat'} />
       </div>
     </a>
   </article>
