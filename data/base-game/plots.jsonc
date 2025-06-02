@@ -224,20 +224,6 @@
                 "factor": 1
             },
             "rules": []
-        },
-        {
-            "id": "nobleBloodline",
-            "name": "The Noble Bloodline",
-            "roles": {
-                "keyPerson": 1,
-                "vampire": 1
-            },
-            "rules": [
-                {
-                    "type": "Script creation",
-                    "description": ":keyPerson: and :vampire: must be of oposing sex."
-                }
-            ]
         }
     ]
 }

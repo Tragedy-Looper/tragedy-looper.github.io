@@ -2,7 +2,7 @@
   import { getRoleOfCast } from '../../../model/script';
   import '@picocss/pico/css/pico.css';
   import { type RoleName, type AbilityType, singleRolenames } from '../../../model/roles';
-  import { type CharacterName, isCharacterName } from '../../../model/characters';
+  import { type CharacterName } from '../../../model/characters';
   import {
     fromEntries,
     hasProp,
@@ -19,7 +19,13 @@
   import type { Role } from '../../../roles.g';
   import Translation from '../../../view/translation.svelte';
   import type { Script } from '../../../scripts.g';
-  import { charactersLookup, incidentsLookup, plotsLookup, rolesLookup } from '../../../data';
+  import {
+    charactersLookup,
+    incidentsLookup,
+    isCharacterId,
+    plotsLookup,
+    rolesLookup,
+  } from '../../../data';
 
   export let selectedScript: Script;
 
@@ -140,13 +146,13 @@
     </tr>
   </thead>
   <tbody>
-    {#if scriptRoles.filter((x) => x.tags?.includes('Immortal')).length + showAll(abilities)
+    {#if scriptRoles.filter((x) => x.tags?.includes('immortal')).length + showAll(abilities)
         .filter((x) => includes(x['timing'], 'Always'))
         .sort(sortabilities).length > 0}
       <tr>
         <td colspan="7"><Translation translationKey={'Always'} /></td>
       </tr>
-      {#each scriptRoles.filter((x) => x.tags?.includes('Immortal')) as map}
+      {#each scriptRoles.filter((x) => x.tags?.includes('immortal')) as map}
         <tr>
           <td> <Translation translationKey={'mandatory'} /> </td>
           <td>
@@ -522,7 +528,7 @@
         </tr>
       {/each}
       {#each usedIncidents as i}
-        {@const char = isCharacterName(i.culprit) ? charactersLookup[i.culprit] : undefined}
+        {@const char = isCharacterId(i.culprit) ? charactersLookup[i.culprit] : undefined}
         {@const limit = char ? char.paranoiaLimit : i.mob}
         {#each i.effect as e}
           <tr>
@@ -546,7 +552,10 @@
             <td>
               {#if char?.doseNotTriggerIncidentEffect}
                 <Translation translationKey={'This has no effect but the incident is triggered.'} />
-              {:else if char?.name && rolesLookup[getRoleOfCast(selectedScript, char.id) ?? 'Person']?.doseNotTriggerIncidentEffect}
+              {:else if isCharacterId(char?.id) && [getRoleOfCast(selectedScript, char.id)]
+                  .filter((x) => x != undefined)
+                  .flatMap(singleRolenames)
+                  .some((role) => rolesLookup[role].doseNotTriggerIncidentEffect)}
                 <Translation translationKey={'This has no effect but the incident is triggered.'} />
               {:else}
                 <Translation translationKey={e.description} />

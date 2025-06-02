@@ -1,5 +1,6 @@
 import { browser } from "$app/environment";
-import { isCharacterName, type CharacterName } from "./model/characters";
+import { isCharacterId } from "./data";
+import { type CharacterName } from "./model/characters";
 import { isScriptIncidentWithoutCulprit, type ScriptIncidentPlayer } from "./model/script";
 import { isTragedySetName, type TragedySetName } from "./model/tragedySets";
 
@@ -10,7 +11,7 @@ export function parseSearchForPlayerAid(searchParams: URLSearchParams | undefine
     }
 
     const tragedySet = searchParams?.getAll('set').filter(isTragedySetName)[0];
-    const cast = searchParams?.getAll('cast').filter(isCharacterName);
+    const cast = searchParams?.getAll('cast').filter(isCharacterId);
     const incidents = searchParams
         ?.getAll('incident')
         .map((x) => {

@@ -39,7 +39,7 @@ export const characterscomesInLater = Object.values(data.charactersLookup).filte
 
 
 export function isCharacterLate(name: unknown): name is CharacterscomesInLater {
-    return isCharacterName(name) && ((data.charactersLookup[name])?.comesInLater ?? false);
+    return data.isCharacterId(name) && ((data.charactersLookup[name])?.comesInLater ?? false);
 }
 export function isCharacterPlotless<T>(name: T): name is T & { plotLessRole: 'all' | 'not in plots' | 'plot duplicate' };
 export function isCharacterPlotless(name: CharacterName): name is CharacterPlotless;
@@ -51,9 +51,6 @@ export function isCharacterPlotless(name: unknown): name is CharacterPlotless {
     } else {
         return false;
     }
-}
-export function isCharacterName(name: unknown): name is CharacterName {
-    return typeof name === 'string' && name in data.charactersLookup;
 }
 export function isLocationName(name: unknown): name is LocationName {
     return typeof name === 'string' && locations.some(x => x == name);

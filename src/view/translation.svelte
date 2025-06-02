@@ -56,8 +56,22 @@
   import type { Renderer, Token } from 'markdown-it/index.js';
   import { base } from '$app/paths';
   import { enableTranslationUi, showTranslationMissingDialog } from '../routes/+layout.svelte';
-  import { charactersLookup } from '../data';
-  import { isCharacterName } from '../model/characters';
+  import {
+    charactersLookup,
+    incidentsLookup,
+    isCharacterId,
+    isKeywordId,
+    isPlotId,
+    isTagId,
+    keywordsLookup,
+    plotsLookup,
+    rolesLookup,
+    tagsLookup,
+    tragedysLookup,
+  } from '../data';
+  import { isIncidentName } from '../model/incidents';
+  import { isRoleName, singleRolenames } from '../model/roles';
+  import { isTragedySetName } from '../model/tragedySets';
 
   type Parameters = {
     translationKey:
@@ -92,6 +106,12 @@
   const defs = Object.fromEntries([
     ...icons.map((icon) => [icon, icon] as const),
     ...Object.keys(charactersLookup).map((char) => [char, char] as const),
+    ...Object.keys(incidentsLookup).map((char) => [char, char] as const),
+    ...Object.keys(rolesLookup).map((char) => [char, char] as const),
+    ...Object.keys(plotsLookup).map((char) => [char, char] as const),
+    ...Object.keys(tragedysLookup).map((char) => [char, char] as const),
+    ...Object.keys(keywordsLookup).map((char) => [char, char] as const),
+    ...Object.keys(tagsLookup).map((char) => [char, char] as const),
   ]);
 
   const md = markdownit({
@@ -123,10 +143,35 @@
       } else {
         return self.renderToken(tokens, idx, options);
       }
-    } else if (isCharacterName(emojiName)) {
+    } else if (isCharacterId(emojiName)) {
       const character = charactersLookup[emojiName];
       return $getString(character.name);
+    } else if (isIncidentName(emojiName)) {
+      const incident = incidentsLookup[emojiName];
+      return $getString(incident.name);
+    } else if (isRoleName(emojiName)) {
+      const roleNames = singleRolenames(emojiName);
+
+      return roleNames
+        .map((roleName) => {
+          const role = rolesLookup[roleName];
+          return $getString(role.name);
+        })
+        .join(', ');
+    } else if (isPlotId(emojiName)) {
+      const plot = plotsLookup[emojiName];
+      return $getString(plot.name);
+    } else if (isTragedySetName(emojiName)) {
+      const tragedy = tragedysLookup[emojiName];
+      return $getString(tragedy.name);
+    } else if (isKeywordId(emojiName)) {
+      const keyword = keywordsLookup[emojiName];
+      return $getString(keyword.name);
+    } else if (isTagId(emojiName)) {
+      const tag = tagsLookup[emojiName];
+      return $getString(tag.name);
     }
+    return `EMOCO: ${emojiName}`;
     return self.renderToken(tokens, idx, options);
   };
 

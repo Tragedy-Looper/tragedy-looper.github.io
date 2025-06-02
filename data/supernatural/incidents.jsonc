@@ -13,8 +13,7 @@
             ]
         },
         {
-            "id": "crimePassion", // Is this another crime of passion then in Rei?
-            // Rei has an additional effect: "When determining if this Incident triggers, treat the culprit’s :paranoia: Limit as 1 lower."
+            "id": "crimePassionSupernatural",
             "name": "Crime of Passion",
             "effect": [
                 {
