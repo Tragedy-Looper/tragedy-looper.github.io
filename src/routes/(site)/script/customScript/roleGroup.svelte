@@ -1,6 +1,7 @@
 <script lang="ts">
-  import { rolesLookup } from '../../../../data';
-  import type { CharacterName } from '../../../../model/characters';
+    import { getString } from '../../+layout.svelte';
+  import { characters, rolesLookup } from '../../../../data';
+  import { isCharacterPlotless, type CharacterName } from '../../../../model/characters';
   import type { ICustomScriptRoleExclusiveSelectionGroup } from '../../../../model/customScript';
   import { singleRolenames } from '../../../../model/roles';
   import Translation from '../../../../view/translation.svelte';
@@ -26,7 +27,7 @@
 {#if group.min !== group.max}
   <label>
     {#if group.role === 'person'}
-      <small>(<Translation translationKey={'This inculdes Characters like Mystery Boy'} />)</small>
+      <small>(<Translation translationKey={['This inculdes Characters like {char}',{char:characters.filter(isCharacterPlotless).map(x=>$getString(x.name)).filter((x,i)=>i<2).join(` ${$getString('or')} `)}]} />)</small>
     {:else}
       Number of {#each singleRolenames(group.role) as role, index}
         {#if index > 0},
