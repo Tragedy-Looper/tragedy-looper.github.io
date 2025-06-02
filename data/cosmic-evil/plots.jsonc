@@ -153,7 +153,7 @@
             "rules": []
         },
         {
-            "id": "choirOutsideGod",
+            "id": "choirOuterGod",
             "name": "Choir to the Outside God",
             "roles": {
                 "keyPerson": 1,
@@ -261,7 +261,7 @@
             "rules": []
         },
         {
-            "id": "profoundRace",
+            "id": "greatRace",
             "name": "The Profound Race",
             "roles": {
                 "serialKiller": 1,

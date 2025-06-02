@@ -35,7 +35,7 @@
         "classRep": "person",
         "alien": "person",
         "popIdol": "person",
-        "journalist": "quidnunc",
+        "journalist": "gossiper",
         "henchman": "twilight"
       },
       "incidents": [
@@ -107,7 +107,7 @@
         ],
         "popIdol": "person",
         "boss": [
-          "quidnunc",
+          "gossiper",
           {
             "Turf": "Hospital"
           }
@@ -174,9 +174,9 @@
       ],
       "daysPerLoop": 2,
       "cast": {
-        "boyStudent": "quidnunc",
+        "boyStudent": "gossiper",
         "girlStudent": "agitator",
-        "richStudent": "neurosis",
+        "richStudent": "neurotic",
         "policeOfficer": "agent",
         "doctor": "person",
         "patient": "brain",
@@ -231,9 +231,9 @@
       "daysPerLoop": 6,
       "cast": {
         "boyStudent": "person",
-        "richStudent": "quidnunc",
+        "richStudent": "gossiper",
         "officeWorker": "person",
-        "patient": "neurosis",
+        "patient": "neurotic",
         "mysteryBoy": "agent",
         "popIdol": "twilight",
         "journalist": "person",
@@ -295,7 +295,7 @@
         "parallelWorldWar"
       ],
       "subPlots": [
-        "fanaticFox",
+        "fanaticSacrifices",
         "egoWave"
       ],
       "difficultySets": [
@@ -367,7 +367,7 @@
         "parallelWorldWar"
       ],
       "subPlots": [
-        "fanaticFox",
+        "fanaticSacrifices",
         "egoWave"
       ],
       "difficultySets": [
@@ -433,7 +433,7 @@
         "shadowDemonKing"
       ],
       "subPlots": [
-        "fanaticFox",
+        "fanaticSacrifices",
         "egoWave"
       ],
       "difficultySets": [

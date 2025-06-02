@@ -78,8 +78,8 @@
             ]
         },
         {
-            "id": "quidnunc",
-            "name": "Quidnunc",
+            "id": "gossiper",
+            "name": "Gossiper",
             "abilities": [
                 {
                     "type": "Optional",
@@ -132,8 +132,8 @@
             ]
         },
         {
-            "id": "neurosis",
-            "name": "Neurosis",
+            "id": "neurotic",
+            "name": "Neurotic",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {

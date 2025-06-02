@@ -87,7 +87,7 @@
             "id": "worldDollhouse",
             "name": "The World of Dollhouse",
             "roles": {
-                "quidnunc": 1
+                "gossiper": 1
             },
             "rules": [
                 {
@@ -112,7 +112,7 @@
             "id": "closedDoor",
             "name": "The Closed Door",
             "roles": {
-                "quidnunc": 1,
+                "gossiper": 1,
                 "agitator": 1
             },
             "rules": [
@@ -129,8 +129,8 @@
             "id": "moonsideCity",
             "name": "Moonside City",
             "roles": {
-                "quidnunc": 1,
-                "neurosis": 1
+                "gossiper": 1,
+                "neurotic": 1
             },
             "rules": [
                 {
@@ -152,8 +152,8 @@
             ]
         },
         {
-            "id": "fanaticFox",
-            "name": "Fanatic Fox",
+            "id": "fanaticSacrifices",
+            "name": "Fanatic’s Sacrifices",
             "roles": {
                 "animus": 1,
                 "fanatic": 1
@@ -169,8 +169,8 @@
             ]
         },
         {
-            "id": "somthingInvite",
-            "name": "Somthing to invite",
+            "id": "someoneInvites",
+            "name": "The One Who Invites",
             "roles": {
                 "enchanter": 1
             },
