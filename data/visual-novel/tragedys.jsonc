@@ -4,23 +4,23 @@
     // "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "id": "Visual Novel",
-"name": "Visual Novel",
+            "id": "visualNovel",
+            "name": "Visual Novel",
             "mainPlots": [
-                "The Last Miracle",
-                "Seal of the Evil Spirit",
-                "Promise of a Smile",
-                "Album of Memories",
-                "The Monster Inside Me"
+                "lastMiracle",
+                "sealEvilSpirit",
+                "promiseSmile",
+                "albumMemories",
+                "monsterInsideMe"
             ],
             "subPlots": [
-                "Noisy Classmates",
-                "The Missing Highlight",
-                "The Seven School Mysteries",
-                "Behind the Scenes",
-                "Howling in the Moonlit Night",
+                "noisyClassmates",
+                "missingHighlight",
+                "sevenSchoolMysteries",
+                "behindScenes",
+                "howlingMoonlitNight",
                 "hiddenFreak",
-                "The Spreading Infection"
+                "spreadingInfection"
             ],
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 2,
@@ -28,15 +28,15 @@
             "incidents": [
                 "murder",
                 "increasingUnease",
-                "Parting",
+                "parting",
                 "foulEvil",
-                "Exposure",
+                "exposure",
                 "terrorism",
-                "Friction",
+                "friction",
                 "closedCircle",
-                "Route Branching",
-                "Relocation",
-                "Heart-Pounding Time Bomb"
+                "routeBranching",
+                "relocation",
+                "heartPoundingTimeBomb"
             ]
         }
     ]

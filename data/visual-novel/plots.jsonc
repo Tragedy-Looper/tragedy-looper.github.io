@@ -4,11 +4,11 @@
     //"$schema": "../plots.schema.json",
     "plots": [
         {
-            "id": "The Last Miracle",
-"name": "The Last Miracle",
+            "id": "lastMiracle",
+            "name": "The Last Miracle",
             "roles": {
                 "keyPerson": 1,
-                "Sub Heroine": 1
+                "subHeroine": 1
             },
             "rules": [
                 {
@@ -28,11 +28,11 @@
             ]
         },
         {
-            "id": "Seal of the Evil Spirit",
-"name": "Seal of the Evil Spirit",
+            "id": "sealEvilSpirit",
+            "name": "Seal of the Evil Spirit",
             "roles": {
                 "brain": 1,
-                "Possessed": 1
+                "possessed": 1
             },
             "rules": [
                 {
@@ -45,11 +45,11 @@
             ]
         },
         {
-            "id": "Promise of a Smile",
-"name": "Promise of a Smile",
+            "id": "promiseSmile",
+            "name": "Promise of a Smile",
             "roles": {
                 "keyPerson": 1,
-                "Mood Maker": 1
+                "moodMaker": 1
             },
             "rules": [
                 {
@@ -70,10 +70,10 @@
             ]
         },
         {
-            "id": "Album of Memories",
-"name": "Album of Memories",
+            "id": "albumMemories",
+            "name": "Album of Memories",
             "roles": {
-                "Mood Maker": 1,
+                "moodMaker": 1,
                 "friend": 1
             },
             "rules": [
@@ -94,8 +94,8 @@
             ]
         },
         {
-            "id": "The Monster Inside Me",
-"name": "The Monster Inside Me",
+            "id": "monsterInsideMe",
+            "name": "The Monster Inside Me",
             "roles": {
                 "keyPerson": 1
             },
@@ -118,31 +118,31 @@
             ]
         },
         {
-            "id": "Noisy Classmates",
-"name": "Noisy Classmates",
+            "id": "noisyClassmates",
+            "name": "Noisy Classmates",
             "roles": {
                 "friend": 1,
-                "Mood Maker": 1,
-                "Troublemaker": 1
+                "moodMaker": 1,
+                "troublemaker": 1
             },
             "rules": []
         },
         {
-            "id": "The Missing Highlight",
-"name": "The Missing Highlight",
+            "id": "missingHighlight",
+            "name": "The Missing Highlight",
             "roles": {
-                "Heavy Lovers": 1,
-                "Mood Maker": 1,
+                "heavyLovers": 1,
+                "moodMaker": 1,
                 "conspiracyTheorist": 1
             },
             "rules": []
         },
         {
-            "id": "The Seven School Mysteries",
-"name": "The Seven School Mysteries",
+            "id": "sevenSchoolMysteries",
+            "name": "The Seven School Mysteries",
             "roles": {
                 "friend": 1,
-                "Troublemaker": 1,
+                "troublemaker": 1,
                 "conspiracyTheorist": 1
             },
             "rules": [
@@ -157,20 +157,20 @@
             ]
         },
         {
-            "id": "Behind the Scenes",
-"name": "Behind the Scenes",
+            "id": "behindScenes",
+            "name": "Behind the Scenes",
             "roles": {
-                "Slayer": 1,
-                "Creature": 1,
+                "slayer": 1,
+                "creature": 1,
                 "conspiracyTheorist": 1
             },
             "rules": []
         },
         {
-            "id": "Howling in the Moonlit Night",
-"name": "Howling in the Moonlit Night",
+            "id": "howlingMoonlitNight",
+            "name": "Howling in the Moonlit Night",
             "roles": {
-                "Lunatic": 1
+                "lunatic": 1
             },
             "rules": [
                 {
@@ -183,10 +183,10 @@
             ]
         },
         {
-            "id": "The Spreading Infection",
-"name": "The Spreading Infection",
+            "id": "spreadingInfection",
+            "name": "The Spreading Infection",
             "roles": {
-                "Slayer": 1
+                "slayer": 1
             },
             "rules": [
                 {

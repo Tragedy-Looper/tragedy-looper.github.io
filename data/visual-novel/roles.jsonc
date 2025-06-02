@@ -4,8 +4,8 @@
     //"$schema": "../roles.schema.json",
     "roles": [
         {
-            "id": "Sub Heroine",
-"name": "Sub Heroine",
+            "id": "subHeroine",
+            "name": "Sub Heroine",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -17,8 +17,8 @@
             ]
         },
         {
-            "id": "Creature",
-"name": "Creature",
+            "id": "creature",
+            "name": "Creature",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -39,8 +39,8 @@
             ]
         },
         {
-            "id": "Possessed",
-"name": "Possessed",
+            "id": "possessed",
+            "name": "Possessed",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -60,8 +60,8 @@
             ]
         },
         {
-            "id": "Slayer",
-"name": "Slayer",
+            "id": "slayer",
+            "name": "Slayer",
             "max": 1,
             "abilities": [
                 {
@@ -81,8 +81,8 @@
             ]
         },
         {
-            "id": "Heavy Lovers",
-"name": "Heavy Lovers",
+            "id": "heavyLovers",
+            "name": "Heavy Lovers",
             "abilities": [
                 {
                     "type": "Optional",
@@ -103,8 +103,8 @@
             ]
         },
         {
-            "id": "Mood Maker",
-"name": "Mood Maker",
+            "id": "moodMaker",
+            "name": "Mood Maker",
             "max": 1,
             "abilities": [
                 {
@@ -117,8 +117,8 @@
             ]
         },
         {
-            "id": "Troublemaker",
-"name": "Troublemaker",
+            "id": "troublemaker",
+            "name": "Troublemaker",
             "max": 1,
             "abilities": [
                 {
@@ -131,8 +131,8 @@
             ]
         },
         {
-            "id": "Lunatic",
-"name": "Lunatic",
+            "id": "lunatic",
+            "name": "Lunatic",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
