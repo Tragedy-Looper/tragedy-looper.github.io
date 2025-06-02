@@ -17,7 +17,7 @@
                         "Always"
                     ],
                     "prerequisite": "At least 1 :intrigue:, 1 :goodwill:, and 1 :paranoia: are placed on the character whose original role is a Person",
-                    "description": "The character gains :goodwill: Outburst and marionette’s ability."
+                    "description": "The character gains :goodwill: Outburst and :marionette:’s ability."
                 }
             ]
         },
@@ -51,11 +51,11 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "worldConvergence hasn‘t occured this loop."
+                    "prerequisite": ":worldConvergence: hasn‘t occured this loop."
                 },
                 {
                     "type": "Script creation",
-                    "description": "The agent must be the World Convergent culprit."
+                    "description": "The :agent: must be the World Convergent culprit."
                 }
             ]
         },
@@ -79,7 +79,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "The current world is Abnormal world and there are at least 2 :intrigue: on the invader‘s starting Location"
+                    "prerequisite": "The current world is Abnormal world and there are at least 2 :intrigue: on the :invader:‘s starting Location"
                 }
             ]
         },

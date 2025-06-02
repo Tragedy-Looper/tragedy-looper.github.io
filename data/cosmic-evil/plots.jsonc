@@ -45,7 +45,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "All corpses that had the role Person, Coward or Show-Off change into having the role of Zombie"
+                    "description": "All corpses that had the role :person:, :coward: or :showOff: change into having the role of :zombie:"
                 }
             ]
         },
@@ -62,7 +62,7 @@
                     "timing": [
                         "Loop Start"
                     ],
-                    "description": "Place a Curse on the Ghost’s starting location"
+                    "description": "Place a Curse on the :ghost:’s starting location"
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -96,7 +96,7 @@
                     "timing": [
                         "Loop Start"
                     ],
-                    "description": "Place a Curse on the Witch’s startiong location."
+                    "description": "Place a Curse on the :witch:’s startiong location."
                 }
             ]
         },
@@ -109,7 +109,7 @@
             "rules": [
                 {
                     "type": "Script creation",
-                    "description": "The Key Person must be a Girl."
+                    "description": "The :keyPerson: must be a :girl:."
                 }
             ]
         },
@@ -219,7 +219,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 :intrigue: on the Witch’s starting location."
+                    "prerequisite": "2 :intrigue: on the :witch:’s starting location."
                 }
             ]
         },
@@ -282,7 +282,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "The :paranoia:c gains all the abilities of the Key Person"
+                    "description": "The :paranoiac: gains all the abilities of the :keyPerson:"
                 }
             ]
         },
@@ -311,7 +311,7 @@
             "rules": [
                 {
                     "type": "Script creation",
-                    "description": "The informer must be included. The script writer then chooses one \"extra\" main plot."
+                    "description": "The :informer: must be included. The script writer then chooses one \"extra\" main plot."
                 },
                 {
                     "type": "Mandatory",

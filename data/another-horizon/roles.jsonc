@@ -127,7 +127,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "description": "This character always triggers its incidents (if alive), regardless the amount of :paranoia: on it. After resolving the Incident, the Mastermind declared that “animus abilities were used.”."
+                    "description": "This character always triggers its incidents (if alive), regardless the amount of :paranoia: on it. After resolving the Incident, the Mastermind declared that “:animus: abilities were used.”."
                 }
             ]
         },
@@ -169,7 +169,7 @@
                     "timing": [
                         "After Goodwill Ability used"
                     ],
-                    "description": "The Mastermind may declare that “enchanter‘s abilities were used.” If you do, the next day Leader are prohibited from switching the world and setting action cards."
+                    "description": "The Mastermind may declare that “:enchanter:‘s abilities were used.” If you do, the next day Leader are prohibited from switching the world and setting action cards."
                 }
             ]
         },

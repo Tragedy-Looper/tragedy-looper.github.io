@@ -38,8 +38,8 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "The Key Person has at least 2 :intrigue: and is in this char acter‘s location",
-                    "description": "Kill the Key Person"
+                    "prerequisite": "The :keyPerson: has at least 2 :intrigue: and is in this character‘s location",
+                    "description": "Kill the keyPerson:"
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -206,7 +206,7 @@
                         "Always"
                     ],
                     "prerequisite": "There is at least 2 :intrigue: on the School",
-                    "description": "This character gains the Conspiracy Theorist‘s ability, but not its role."
+                    "description": "This character gains the :conspiracyTheorist:‘s ability, but not its role."
                 },
                 {
                     "type": "Mandatory",
@@ -214,7 +214,7 @@
                         "Always"
                     ],
                     "prerequisite": "There is at least 2 :intrigue: on the City",
-                    "description": "This character gains the Key Person’s ability, but not its role."
+                    "description": "This character gains the keyPerson:’s ability, but not its role."
                 }
             ]
         }

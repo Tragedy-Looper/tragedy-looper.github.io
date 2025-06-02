@@ -34,7 +34,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "description": "When determining whether \"Serial Murde,\" or \"Suicide\" triggers, count :intrigue: counters also as :paranoia: counters."
+                    "description": "When determining whether \":serialMurde:,\" or \":suicide:\" triggers, count :intrigue: counters also as :paranoia: counters."
                 }
             ]
         },
@@ -182,11 +182,11 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "The Ninja (or its corpse) has at least 2 :intrigue: counters."
+                    "prerequisite": "The :ninja: (or its corpse) has at least 2 :intrigue: counters."
                 },
                 {
                     "type": "Script creation",
-                    "description": "The Ninja (for this plot) must have the tag man."
+                    "description": "The :ninja: (for this plot) must have the tag man."
                 }
             ]
         },
@@ -205,7 +205,7 @@
                         "Loop Start"
                     ],
                     "prerequisite": "A Character died the last turn.",
-                    "description": "Chose one of those. Plac any Extra Card on that character. Character(s) with an Extra card has their role changed into a Key Person."
+                    "description": "Chose one of those. Plac any Extra Card on that character. Character(s) with an Extra card has their role changed into a :keyPerson:."
                 }
             ]
         },
@@ -294,7 +294,7 @@
                     ],
                     "timesPerLoop": 1,
                     "prerequisite": "The Factor is alive.",
-                    "description": "You may place 1 Intruge counter on the Factor’s location"
+                    "description": "You may place 1 Intruge counter on the :factor:’s location"
                 }
             ]
         },
@@ -314,7 +314,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "prerequisite": "The Culprit is a Person and the Prophet is alive.",
+                    "prerequisite": "The Culprit is a :person: and the Prophet is alive.",
                     "description": "When determning whether an Incident triggers, the culprit is regarded as having 1 less than its printed :paranoia: limit."
                 }
             ]

@@ -41,7 +41,7 @@
             "name": "Bestial Murder",
             "effect": [
                 {
-                    "description": "[When determinig wether this Incident triggers or not, treat the culprit’s :paranoia: limit as 1 more than its printed limit.] Resolve \"Serial Murder\" and \"Increasing Unease\" in that order. Then increase the Extra Gauge by 1 more step."
+                    "description": "[When determinig wether this Incident triggers or not, treat the culprit’s :paranoia: limit as 1 more than its printed limit.] Resolve \":sserialMurder:\" and \":increasingUnease:\" in that order. Then increase the Extra Gauge by 1 more step."
                 }
             ]
         },
@@ -86,7 +86,7 @@
             "name": "Conspiracies",
             "effect": [
                 {
-                    "description": "Resolve either a Serial Murder or a Missing Person Incident. Check :intrigue: instead of :paranoia: conters to trigger the Incident."
+                    "description": "Resolve either a :serialMurder: or a :missingPerson: Incident. Check :intrigue: instead of :paranoia: conters to trigger the Incident."
                 }
             ]
         },

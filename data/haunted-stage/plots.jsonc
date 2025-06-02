@@ -46,7 +46,7 @@
             "rules": [
                 {
                     "type": "Script creation",
-                    "description": "Vampire and Nightmare must be the same sex."
+                    "description": ":vampire and :nightmare: must be the same sex."
                 }
             ]
         },
@@ -98,7 +98,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "A corpse whose original role does not have After Death activity will be changed to a Zombie as long as it has at least 1 :intrigue:."
+                    "description": "A corpse whose original role does not have :afterDeath: activity will be changed to a :zombie: as long as it has at least 1 :intrigue:."
                 }
             ]
         },
@@ -124,7 +124,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "There are at least 3 :paranoia: on the Ghost’s corpse."
+                    "prerequisite": "There are at least 3 :paranoia: on the :ghost:’s corpse."
                 }
             ]
         },
@@ -175,7 +175,7 @@
                         "Day End",
                         "First Day"
                     ],
-                    "description": "Kill one character in the same location as Overlord."
+                    "description": "Kill one character in the same location as :overlord:."
                 }
             ]
         }

@@ -69,7 +69,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "description": "If the Slayer is alone with the Creature, the Creature dies."
+                    "description": "If the :slayer: is alone with the :creature:, the :creature: dies."
                 },
                 {
                     "type": "Mandatory",

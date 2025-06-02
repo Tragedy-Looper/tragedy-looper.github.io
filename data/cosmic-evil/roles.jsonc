@@ -102,7 +102,7 @@
                         "Always"
                     ],
                     "prerequisite": "The Extra Gauge is 1 or less",
-                    "description": "This character gains the abilities of a Conspiracy Theorist."
+                    "description": "This character gains the abilities of a :conspiracyTheorist:."
                 },
                 {
                     "type": "Mandatory",
@@ -110,7 +110,7 @@
                         "Always"
                     ],
                     "prerequisite": "the Extra Gauge is 2 or more",
-                    "description": "This character gains the abilities of a Deep One."
+                    "description": "This character gains the abilities of a :deepOne:."
                 }
             ]
         },
@@ -128,7 +128,7 @@
                         "Day End"
                     ],
                     "prerequisite": "The Key Person has at least 2 :intrigue: and is in this character’s location",
-                    "description": "You may kill the Key Person."
+                    "description": "You may kill the :keyPerson:."
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -195,7 +195,7 @@
                         "Mastermind Ability"
                     ],
                     "prerequisite": "This card is a corpse",
-                    "description": "Palce 1 :paranoia: on any character in this location, or any character in the Ghost’s starting location."
+                    "description": "Palce 1 :paranoia: on any character in this location, or any character in the :ghost:’s starting location."
                 }
             ]
         },
@@ -212,7 +212,7 @@
                         "Always"
                     ],
                     "prerequisite": "This charcter has more then 2 :paranoia:",
-                    "description": "This Character loses the Immortal aspect."
+                    "description": "This Character loses the :immortal: aspect."
                 },
                 {
                     "type": "Mandatory",
@@ -253,7 +253,7 @@
                             "Over all Roles": true
                         }
                     ],
-                    "description": "If there is a location where there are more zombies than non-zombies, kill one character in that location (reminder: a corpse is no longer considered as a character)."
+                    "description": "If there is a location where there are more :zombies: than non-:zombies:, kill one character in that location (reminder: a corpse is no longer considered as a character)."
                 },
                 {
                     "type": "Optional",
@@ -266,7 +266,7 @@
                             "Over all Roles": true
                         }
                     ],
-                    "description": "You may move one zombie corpse to a neighboring location."
+                    "description": "You may move one :zombie: corpse to a neighboring location."
                 }
             ]
         }

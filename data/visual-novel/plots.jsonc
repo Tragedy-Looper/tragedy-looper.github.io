@@ -105,7 +105,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "If the Key Person kills someone, the Protagonists lose."
+                    "prerequisite": "If the :keyPerson: kills someone, the Protagonists lose."
                 },
                 {
                     "type": "Mandatory",
@@ -113,7 +113,7 @@
                         "Day End"
                     ],
                     "prerequisite": "3+ :paranoia:.",
-                    "description": "Character gains an additional role of \"Serial Killer.\""
+                    "description": "Character gains an additional role of \":serialKiller:.\""
                 }
             ]
         },
@@ -194,8 +194,8 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "3+ :intrigue: on a Person.",
-                    "description": "Character becomes the role \"Creature.\""
+                    "prerequisite": "3+ :intrigue: on a :person:.",
+                    "description": "Character becomes the role \":creature:.\""
                 }
             ]
         }

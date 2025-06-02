@@ -101,7 +101,7 @@
                         "Mastermind Ability"
                     ],
                     "timesPerLoop": 1,
-                    "description": "Add one :paranoia: to another non-Supernatural chracter in the same Location and change the Characters role to Key Person. Teh Seeder looses all abilities and Effects after using this ability."
+                    "description": "Add one :paranoia: to another non-:supernaturalTag: chracter in the same Location and change the Characters role to Key Person. Teh Seeder looses all abilities and Effects after using this ability."
                 }
             ]
         },
@@ -112,7 +112,7 @@
                 {
                     "type": "Mandatory",
                     "prerequisite": "The Supplicant has 1 :intrigue: and is in the same location as the Lover",
-                    "description": "The Supplicant gainst Supernatural tag.",
+                    "description": "The Supplicant gainst :supernaturalTag: tag.",
                     "timing": [
                         "Day End"
                     ]
@@ -128,16 +128,16 @@
             "abilities": [
                 {
                     "type": "Mandatory",
-                    "prerequisite": "If half or more of the characters in this location are Facsimiles",
-                    "description": "All characters in the location become Facsimiles.",
+                    "prerequisite": "If half or more of the characters in this location are :facsimile:s",
+                    "description": "All characters in the location become :facsimile:s.",
                     "timing": [
                         "Day End"
                     ]
                 },
                 {
                     "type": "Mandatory",
-                    "prerequisite": "The Facsimile is in the same location as the Key Person",
-                    "description": "The Facsimile is Killed.",
+                    "prerequisite": "The :facsimile: is in the same location as the :keyPerson:",
+                    "description": "The :facsimile: is Killed.",
                     "timing": [
                         "Day End"
                     ]

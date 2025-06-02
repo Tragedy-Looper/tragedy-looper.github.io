@@ -51,7 +51,7 @@
                 },
                 {
                     "name": "Extra Gauge Increase factors",
-                    "description": "Action card set on a corpse that has no After Death activity (+1) Declaration of using :goodwill: abilities of corpse that has no After Death activity (+1) Using :goodwill: ability to corpse that has no After Death activity (+1) Subplot The Deep Hole at the end of the loop (+ 0-3) Role Ability of Monster (+2) Role Ability of Zombie (+1) Incident Effect (Sacrifice, :repeatingNightmare:) (+1)."
+                    "description": "Action card set on a corpse that has no :afterDeath: activity (+1) Declaration of using :goodwill: abilities of corpse that has no After Death activity (+1) Using :goodwill: ability to corpse that has no :afterDeath: activity (+1) Subplot :deepHole: at the end of the loop (+ 0-3) Role Ability of :monster: (+2) Role Ability of :zombie: (+1) Incident Effect (:sacrifice:, :repeatingNightmare:) (+1)."
                 }
             ]
         }

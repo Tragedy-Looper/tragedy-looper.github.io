@@ -34,7 +34,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "Supplicant is alive and has the supernatural tag"
+                    "prerequisite": "Supplicant is alive and has the :supernaturalTag: tag"
                 }
             ]
         },

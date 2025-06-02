@@ -10,7 +10,7 @@
                 "man",
                 "adult"
             ],
-            "edition": "supernaturalTag",
+            "edition": "Supernatural",
             "paranoiaLimit": 4,
             "startLocation": [
                 "Shrine"
@@ -18,12 +18,12 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "If this character gains supernatural his :goodwill: abilities are automatically refused."
+                    "description": "If this character gains :supernaturalTag: his :goodwill: abilities are automatically refused."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "Kill any character in the same location. If that character is not supernatural, the Protagonists lose."
+                    "description": "Kill any character in the same location. If that character is not :supernaturalTag:, the Protagonists lose."
                 }
             ]
         }

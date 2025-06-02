@@ -158,7 +158,7 @@
                             "Over all Roles": true
                         }
                     ],
-                    "description": "If there is a location where there are more zombies than non-zombies, kill one character in that location, then increase the Extra Gauge by 1 (reminder: a corpse is no longer considered as a character)."
+                    "description": "If there is a location where there are more :zombie:s than non-:zombie:s, kill one character in that location, then increase the Extra Gauge by 1 (reminder: a corpse is no longer considered as a character)."
                 }
             ]
         },

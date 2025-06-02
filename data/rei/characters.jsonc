@@ -19,7 +19,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "This character ignores its Role and is a Person instead."
+                    "description": "This character ignores its Role and is a :person: instead."
                 },
                 {
                     "type": "passive",
@@ -27,7 +27,7 @@
                 },
                 {
                     "type": "passive",
-                    "description": "At the start of the day, if this character is dead, place 'Part-Timer(?)' in the City."
+                    "description": "At the start of the day, if this character is dead, place ':partTimerAlternate:' in the City."
                 }
             ]
         },
@@ -47,7 +47,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "This character has the same Role, and is the Culprit of the same Incident(s), as Part-Timer."
+                    "description": "This character has the same Role, and is the Culprit of the same Incident(s), as :partTimer:."
                 },
                 {
                     "type": "active",

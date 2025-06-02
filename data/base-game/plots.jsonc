@@ -15,7 +15,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 :intrigue: on the Brain’s starting location"
+                    "prerequisite": "2 :intrigue: on the :brain:’s starting location"
                 }
             ]
         },
@@ -116,14 +116,14 @@
             "rules": [
                 {
                     "type": "Script creation",
-                    "description": "Key Person must be a girl."
+                    "description": ":keyPerson: must be a :girl:."
                 },
                 {
                     "type": "Loss condition: Tragedy",
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 :intrigue: on the Key Person."
+                    "prerequisite": "2 :intrigue: on the :keyPerson:."
                 }
             ]
         },
@@ -140,7 +140,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "˝Butterfly Effect˝ has occured this loop."
+                    "prerequisite": "˝:butterflyEffect:˝ has occured this loop."
                 }
             ]
         },
@@ -156,7 +156,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 :intrigue: on the Witch’s starting location."
+                    "prerequisite": "2 :intrigue: on the :Witch:’s starting location."
                 }
             ]
         },
@@ -199,7 +199,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "All Persons with at least 3 :paranoia: turn into Serial Killers."
+                    "description": "All Persons with at least 3 :paranoia: turn into :serialKillers:."
                 }
             ]
         },
@@ -235,7 +235,7 @@
             "rules": [
                 {
                     "type": "Script creation",
-                    "description": "Key Person and Vampire must be of oposing sex."
+                    "description": ":keyPerson: and :vampire: must be of oposing sex."
                 }
             ]
         }

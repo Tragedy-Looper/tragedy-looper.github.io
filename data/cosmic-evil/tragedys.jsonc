@@ -43,7 +43,7 @@
             "extraRules": [
                 {
                     "name": "Victims",
-                    "description": "Every Inrigue on locations counts as a corpse with the role Person. If such a corpse is revived by the power of the alien, is is simply removed from the board."
+                    "description": "Every :inrigue: on locations counts as a corpse with the role :person:. If such a corpse is revived by the power of the :alien:, it is simply removed from the board."
                 },
                 {
                     "name": "Mob Incidents",
