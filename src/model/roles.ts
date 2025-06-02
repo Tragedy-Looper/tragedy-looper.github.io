@@ -69,7 +69,10 @@ export type RoleName = RoleNameSingle | RoleNameDouble;
 
 
 
-export function singleRolenames(role: RoleName): RoleNameSingle[] {
+export function singleRolenames(role: RoleName | undefined): RoleNameSingle[] {
+    if (undefined === role) {
+        return [];
+    }
     const spited = role.split('|');
     if (spited.length === 1) {
         return [role as RoleNameSingle];
