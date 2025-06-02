@@ -71,7 +71,7 @@
     <article>
       {#each selectedScript as s}
         <div>
-          <a href={`${base}/script/?script=${encodeURIComponent(JSON.stringify(s))}`}
+          <a href={`${base}/script/overview/?script=${encodeURIComponent(JSON.stringify(s))}`}
             >{#each s.set ?? [] as set, i}
               {#if i > 0}
                 /
