@@ -12,7 +12,7 @@
       }],
       "tragedySet": "hauntedStage",
       "mainPlot": [
-        "The Cursed Doll"
+        "cursedDoll"
       ],
       "subPlots": [
         "expandingUrbanLegend",
@@ -211,7 +211,7 @@
         },
         {
           "day": 5,
-          "incident": "Repeating Nightmare",
+          "incident": "repeatingNightmare",
           "culprit": "girlStudent"
         }
       ],
@@ -398,7 +398,7 @@
         },
         {
           "day": 5,
-          "incident": "Repeating Nightmare",
+          "incident": "repeatingNightmare",
           "culprit": "illusion"
         },
         {
@@ -455,7 +455,7 @@
         },
         {
           "day": 5,
-          "incident": "Repeating Nightmare",
+          "incident": "repeatingNightmare",
           "culprit": "shrineMaiden"
         },
         {

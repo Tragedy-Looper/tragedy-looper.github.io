@@ -158,7 +158,7 @@
             "roles": {
                 "keyPerson": 1,
                 "sacrifice": 1,
-                "immortal": 1
+                "immortalRole": 1
             },
             "rules": [
                 {
@@ -228,7 +228,7 @@
             "name": "Bloody Rites",
             "roles": {
                 "witch": 1,
-                "immortal": 1
+                "immortalRole": 1
             },
             "rules": [
                 {

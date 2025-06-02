@@ -417,7 +417,7 @@
                 "officeWorker": "conspiracyTheorist",
                 "informer": "timeTraveler",
                 "doctor": "serialKiller",
-                "patient": "immortal"
+                "patient": "immortalRole"
             },
             "incidents": [
                 {
@@ -489,7 +489,7 @@
                 "informer": "person",
                 "journalist": "person",
                 "popIdol": "person",
-                "patient": "immortal",
+                "patient": "immortalRole",
                 "nurse": "paranoiac"
             },
             "incidents": [
@@ -605,7 +605,7 @@
             "daysPerLoop": 6,
             "cast": {
                 "classRep": "person",
-                "mysteryBoy": "immortal",
+                "mysteryBoy": "immortalRole",
                 "alien": "person",
                 "godlyBeing": [
                     "sacrifice",

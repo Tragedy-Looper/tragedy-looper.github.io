@@ -68,7 +68,7 @@
         "illusion": "prophet",
         "officeWorker": "magician",
         "popIdol": "person",
-        "patient": "immortal",
+        "patient": "immortalRole",
         "henchman": "person"
       },
       "incidents": [
@@ -1159,7 +1159,7 @@
         "alien": "brain",
         "officeWorker": "magician",
         "shrineMaiden": "magician",
-        "popIdol": "immortal",
+        "popIdol": "immortalRole",
         "patient": "person",
         "policeOfficer": "person",
         "boyStudent": "person"
@@ -1684,7 +1684,7 @@
       "cast": {
         "scientist": "keyPerson",
         "journalist": "sacrifice",
-        "ai": "immortal",
+        "ai": "immortalRole",
         "transferStudent": [
           "serialKiller",
           {
@@ -2247,7 +2247,7 @@
         "illusion": "prophet",
         "alien": "person",
         "sacredTree": "magician",
-        "richStudent": "immortal",
+        "richStudent": "immortalRole",
         "copycat": "person"
       },
       "incidents": [
@@ -4036,7 +4036,7 @@
         "richStudent": "keyPerson",
         "doctor": "brain",
         "henchman": "magician",
-        "shrineMaiden": "immortal",
+        "shrineMaiden": "immortalRole",
         "patient": "friend",
         "policeOfficer": "obstinate",
         "alien": "person",
@@ -4095,7 +4095,7 @@
     {
       "cast": {
         "forensicSpecialist": "magician",
-        "alien": "immortal",
+        "alien": "immortalRole",
         "patient": "prophet",
         "boyStudent": "person",
         "boss": [
@@ -4165,7 +4165,7 @@
         "richStudent": "cultist",
         "policeOfficer": "ninja",
         "doctor": "magician",
-        "forensicSpecialist": "immortal",
+        "forensicSpecialist": "immortalRole",
         "patient": "prophet",
         "mysteryBoy": "conspiracyTheorist",
         "officeWorker": "person"
@@ -4974,7 +4974,7 @@
         "informer": "brain",
         "popIdol": "conspiracyTheorist",
         "officeWorker": "magician",
-        "richStudent": "immortal",
+        "richStudent": "immortalRole",
         "shrineMaiden": "prophet",
         "alien": "person",
         "policeOfficer": "person",

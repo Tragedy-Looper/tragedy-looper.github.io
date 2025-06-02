@@ -9,7 +9,7 @@
             "roles": {
                 "marionetteAHR": 1,
                 "storyteller": 1,
-                "Obstinate|Key Person": 1
+                "obstinate|keyPerson": 1
             },
             "rules": [
                 {
@@ -87,7 +87,7 @@
             "id": "jekyllHyde",
             "name": "Jekyll and Hyde",
             "roles": {
-                "Key Person|Brain": 1,
+                "keyPerson|brain": 1,
                 "marionetteAHR": 1
             },
             "rules": []
@@ -96,7 +96,7 @@
             "id": "plaguebringer",
             "name": "The Plaguebringer",
             "roles": {
-                "Pied Piper|Gossip": 1
+                "piedPiper|gossip": 1
             },
             "rules": []
         },
@@ -106,7 +106,7 @@
             "roles": {
                 "fragment": 1,
                 "gossip": 1,
-                "Person|Serial Killer": 1
+                "person|serialKiller": 1
             },
             "rules": [
                 {
@@ -122,7 +122,7 @@
             "id": "throughLookingGlass",
             "name": "Through the Looking-Glass",
             "roles": {
-                "Conspiracy Theorist|Serial Killer": 1,
+                "conspiracyTheorist|serialKiller": 1,
                 "alice": 1
             },
             "rules": [
@@ -161,7 +161,7 @@
             "id": "unspeakableHorrors",
             "name": "Unspeakable Horrors",
             "roles": {
-                "Conspiracy Theorist|Obstinate": 1,
+                "conspiracyTheorist|obstinate": 1,
                 "gossip": 1
             },
             "rules": [

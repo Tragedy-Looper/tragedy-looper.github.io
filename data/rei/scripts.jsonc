@@ -1,15 +1,17 @@
 {
-    "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
-    // For dev purposes
-    // "$schema": "../scripts.schema.json",
+  "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
+  // For dev purposes
+  // "$schema": "../scripts.schema.json",
   "scripts": [
     {
       "title": "Beyond Praying Stage",
       "creator": "NAOKI",
-      "set": [{
-        "name": "Rei",
-        "number": 1
-      }],
+      "set": [
+        {
+          "name": "Rei",
+          "number": 1
+        }
+      ],
       "tragedySet": "anotherHorizonR",
       "mainPlot": [
         "intoNothingness"
@@ -27,13 +29,13 @@
       "daysPerLoop": 4,
       "cast": {
         "girlStudent": "alice",
-        "richStudent": "Key Person|Brain",
+        "richStudent": "keyPerson|brain",
         "classRep": "person",
-        "shrineMaiden": "marionette",
-        "officeWorker": "marionette",
+        "shrineMaiden": "marionetteAHR",
+        "officeWorker": "marionetteAHR",
         "popIdol": "obstinate",
         "partTimer": "brain",
-        "soldier": "Conspiracy Theorist|Serial Killer"
+        "soldier": "conspiracyTheorist|serialKiller"
       },
       "incidents": [
         {

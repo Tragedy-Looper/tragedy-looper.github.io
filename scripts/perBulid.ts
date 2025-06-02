@@ -89,7 +89,7 @@ function getTypescriptStrings<T extends typeof types[number]>(type: T) {
                 .map((script) => {
                     const validatedScript = validateScript(script);
                     if (!validatedScript.valid) {
-                        console.error(`Invalid script found in ${x}:\n`, validatedScript.errors);
+                        console.error(`Invalid script found in:\(${JSON.stringify(script, undefined, 2)}:\n`, JSON.stringify(validatedScript.errors,undefined,2));
                     }
                     return validatedScript;
                 })
