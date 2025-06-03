@@ -3,6 +3,8 @@
   import { scripts as scriptLookup } from '../../../../model/script';
   import ScriptDetails from './../scriptDetails.svelte';
   import { onMount } from 'svelte';
+  import { unzip } from 'gzip-js';
+
   import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
   import ExportView from '../../../../view/exportView.svelte';
@@ -38,6 +40,18 @@
   $: author = searchParams?.get('author');
 
   $: serilizedScript = searchParams?.get('script');
+  $: zipdScript = searchParams?.get('zip');
+  $: {
+    if (zipdScript != undefined) {
+      console.log('datas', zipdScript);
+      const decoded = atob(decodeURIComponent(zipdScript));
+      const uarray = Uint8Array.from(decoded, (c) => c.charCodeAt(0));
+      const unziped = unzip(uarray);
+      const scriptData = new TextDecoder('utf-8').decode(new Uint8Array(unziped));
+      console.log(scriptData);
+      serilizedScript = scriptData;
+    }
+  }
 
   $: {
     if (serilizedScript != undefined) {

@@ -1,6 +1,8 @@
 <script lang="ts">
   import { type isScriptName, toPlayerIncident } from '../../../model/script';
 
+  import { zip , unzip} from 'gzip-js';
+
   import { onMount } from 'svelte';
 
   import {
@@ -69,6 +71,30 @@
     host = document.location.host;
     protocoll = document.location.protocol;
   });
+
+  async function generateShareLink(script: Script): Promise<string> {
+    if (!script || !script.tragedySet) {
+      return '';
+    }
+    const data = JSON.stringify(script);
+    const simpleString = `${base}/script/overview/?script=${encodeURIComponent(data)}`;
+
+    const zipped = zip(new TextEncoder().encode(data));
+    const binaryString = String.fromCharCode(...zipped);
+    const base64 = btoa(binaryString);
+    const zipedString = `${base}/script/overview/?zip=${encodeURIComponent(base64)}`;
+
+    const decoded = atob(base64);
+    const uarray = Uint8Array.from(decoded, c=>c.charCodeAt(0))
+    const unziped = unzip(uarray);
+          const scriptData = new TextDecoder().decode(new Uint8Array(unziped));
+
+
+    console.log("datas", base64)
+
+    return zipedString.length < simpleString.length ? zipedString : simpleString;
+  }
+
   async function share(shareLink: string, title: string, text: string) {
     const shareData = {
       title: title,
@@ -127,12 +153,8 @@
         tabindex="0"
         aria-disabled={script == undefined}
         class="outline"
-        on:click={() =>
-          share(
-            `${base}/script/overview/?script=${encodeURIComponent(JSON.stringify(script))}`,
-            script.title,
-            'A Tragedy Looper Script'
-          )}
+        on:click={async () =>
+          share(await generateShareLink(script), script.title, 'A Tragedy Looper Script')}
         style="grid-row: 1; grid-column: 1;"
         >Share Script
       </button>
