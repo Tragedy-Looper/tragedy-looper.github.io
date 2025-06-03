@@ -1,48 +1,60 @@
 {
-      "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
+    "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
     // For dev purposes
     // "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "id": "Another Horizon",
-"name": "Another Horizon",
-            "mainPlots": ["Lost Heart", "Shadow Demon King", "The Devil’s Will", "Parallel World War", "Alien Erosion"],
-            "subPlots": ["The World of Dollhouse", "Ego Wave", "The Closed Door", "Threads of Fate", "Moonside City", "Fanatic Fox", "Somthing to invite"],
-            "incidents": [
-                "Insane Murder",
-                "Increasing Unease",
-                "Missing Person",
-                "Hospital Incident",
-                "Drifting to Another World",
-                "Assassination",
-                "World End",
-                "World Convergence",
-                "Small Force",
-                "Breakthrough",
-                "Confession"
+            "id": "anotherHorizon",
+            "name": "Another Horizon",
+            "mainPlots": [
+                "lostHeart",
+                "shadowDemonKing",
+                "devilsWill",
+                "parallelWorldWar",
+                "alienErosion"
             ],
-            "aditionalRoles": ["Shadow"],
+            "subPlots": [
+                "worldDollhouse",
+                "egoWave",
+                "closedDoor",
+                "threadsFate",
+                "moonsideCity",
+                "fanaticSacrifices",
+                "someoneInvites"
+            ],
+            "incidents": [
+                "insaneMurder",
+                "increasingUnease",
+                "missingPerson",
+                "hospitalIncident",
+                "driftingToAnotherWorld",
+                "assassination",
+                "worldEnd",
+                "worldConvergence",
+                "smallForce",
+                "breakthrough",
+                "confession"
+            ],
+            "aditionalRoles": [
+                "shadow"
+            ],
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 2,
             "extraRules": [
                 {
-                    "id": "World Switch",
-"name": "World Switch",
+                    "name": "World Switch",
                     "description": "Protagonist Leader may request to switch the world during the Day Start"
                 },
                 {
-                    "id": "Extra Gauge",
-"name": "Extra Gauge",
+                    "name": "Extra Gauge",
                     "description": "Indicate World, 1: Normal and intial World, 2: Abnormal World."
                 },
                 {
-                    "id": "Abnormal World",
-"name": "Abnormal World",
+                    "name": "Abnormal World",
                     "description": "The numbers of :goodwill: counter need to reach :paranoia: Limit to trigger the incident. Also sufficient numbers of :paranoia: needed to activate the character’s :goodwill: ability."
                 },
                 {
-                    "id": " :goodwill: Outburst",
-"name": " :goodwill: Outburst",
+                    "name": " :goodwill: Outburst",
                     "description": "Mastermind able to use the character’s :goodwill: abilities whose role has :goodwill: Outburst."
                 }
             ]

@@ -1,11 +1,11 @@
 {
-      "$schema": "https://tragedy-looper.github.io/tags.schema.json",
+    "$schema": "https://tragedy-looper.github.io/tags.schema.json",
     // For dev purposes
     // "$schema": "../tags.schema.json",
     "tags": [
         {
-            "id": "after death",
-"name": "after death",
+            "id": "afterdeath",
+            "name": "after death",
             "showInGmScreen": true
         }
     ]

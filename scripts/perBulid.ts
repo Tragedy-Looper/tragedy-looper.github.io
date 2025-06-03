@@ -11,9 +11,10 @@ import { Role } from './roles.g'
 import { Script } from './scripts.g'
 import { Tag } from './tags.g'
 import { Tragedy } from './tragedys.g'
+import { exit } from 'process';
 
 
-const types = ['keywords', 'characters', 'plots', 'roles', 'tragedys', 'incidents', 'scripts'] as const;
+const types = ['keywords', 'characters', 'plots', 'roles', 'tragedys', 'incidents', 'scripts', 'tags'] as const;
 const schemaTypes = [...types, 'translations'] as const;
 
 type getJsonObjectsWithSchemaResult<T> = T extends 'translations'
@@ -89,7 +90,7 @@ function getTypescriptStrings<T extends typeof types[number]>(type: T) {
                 .map((script) => {
                     const validatedScript = validateScript(script);
                     if (!validatedScript.valid) {
-                        console.error(`Invalid script found in ${x}:\n`, validatedScript.errors);
+                        console.error(`Invalid script found in:\(${JSON.stringify(script, undefined, 2)}:\n`, JSON.stringify(validatedScript.errors, undefined, 2));
                     }
                     return validatedScript;
                 })
@@ -109,6 +110,11 @@ export const ${type} = [\n${filteredFiles.map(x => ` ...${x}`).reduce((p, c) => 
         }
         return p;
     }, {} as Record<typeof ${type}[number]['id'], ReadonlyRecursive<${type[0].toUpperCase()}${type.substring(1, type.length - 1)}>>);
+    
+    export function is${type[0].toUpperCase()}${type.substring(1, type.length - 1)}Id(id: unknown): id is keyof typeof ${type}Lookup {
+        return typeof id === 'string' && id in ${type}Lookup;
+    }
+    
     ` : '');
 }
 
@@ -316,3 +322,52 @@ const mergedTranslations = allTranslations.reduce((acc, curr) => {
 
 fs.writeFileSync('./src/data-translations.ts', `export const translations = ${JSON.stringify(mergedTranslations, undefined, 2)}\n`);
 console.log('Finished writing translations to src/data-translations.ts');
+
+
+//check if ids are unique in all json files
+
+function getIdsPerPath(dir: string): Record<string, string[]> {
+    const files = fs.readdirSync(dir);
+    const ids: Record<string, string[]> = {};
+    for (const file of files) {
+        const filePath = path.join(dir, file);
+        if (fs.statSync(filePath).isDirectory()) {
+            Object.assign(ids, getIdsPerPath(filePath));
+        } else if (file.endsWith('.json') || file.endsWith('.jsonc')) {
+            const data = fs.readFileSync(filePath, 'utf-8');
+            try {
+                const parsedData = JSON.parse(transformJsoncToJSON(data));
+                if (!ids[filePath]) {
+                    ids[filePath] = [];
+                }
+
+                const idsInFile = Object.values(parsedData).filter(x => Array.isArray(x)).flat().map(x => x.id).filter((x): x is string => typeof x === 'string');
+
+                ids[filePath].push(...idsInFile);
+            } catch (error) {
+                console.error(`Error parsing JSON in ${filePath}:`, error);
+            }
+        }
+    }
+    return ids;
+}
+
+const ids = getIdsPerPath('./data');
+const idsToPath = Object.entries(ids).reduce((acc, [file, ids]) => {
+    ids.forEach(id => {
+        if (!acc[id]) {
+            acc[id] = [];
+        }
+        acc[id].push(file);
+    });
+    return acc;
+}, {} as Record<string, string[]>);
+
+const idsWithMorePaths = Object.entries(idsToPath).filter(([id, paths]) => paths.length > 1);
+if (idsWithMorePaths.length > 0) {
+    console.error('Found duplicate IDs in the following files:');
+    idsWithMorePaths.forEach(([id, paths]) => {
+        console.error(`ID "${id}" found in files: ${paths.join(', ')}`);
+    });
+    exit(1);
+}

@@ -1,93 +1,90 @@
 {
-      "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
+    "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
     // For dev purposes
     // "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "id": "Mystery Circle",
-"name": "Mystery Circle",
+            "id": "mysteryCircle",
+            "name": "Mystery Circle",
             "mainPlots": [
-                "Murder Plan",
-                "Tightrope Plan",
-                "A Drop of Strychnine",
-                "A Quilt of Incidents",
-                "The Black School"
+                "murderPlan",
+                "tightropePlan",
+                "dropStrychnine",
+                "quiltIncidents",
+                "blackSchool"
             ],
             "subPlots": [
-                "The Hidden Freak",
-                "Dance of Fools",
-                "Isolated Institution Psycho",
-                "An Absolute Will",
-                "Tricky Twins",
-                "Smell of Gunpowder",
-                "I am a Master Detective"
+                "hiddenFreak",
+                "danceFools",
+                "isolatedInstitutionPsycho",
+                "anAbsoluteWill",
+                "trickyTwins",
+                "smellGunpowder",
+                "masterDetective"
             ],
             "incidents": [
-                "Serial Murder",
-                "Hospital Incident",
-                "Portent",
-                "Increasing Unease",
-                "Terrorism",
-                "Bestial Murder",
-                "Suicide",
-                "A Suspicious Letter",
-                "Faked Suicide",
-                "Closed Circle",
-                "The Silver Bullet"
+                "serialMurder",
+                "hospitalIncident",
+                "portent",
+                "increasingUnease",
+                "terrorism",
+                "bestialMurder",
+                "suicide",
+                "suspiciousLetter",
+                "fakedSuicide",
+                "closedCircle",
+                "silverBullet"
             ],
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 2,
             "extraRules": [
                 {
-                    "id": "Extra Gauge: Number of Incidents",
-"name": "Extra Gauge: Number of Incidents",
+                    "name": "Extra Gauge: Number of Incidents",
                     "description": "During \"removal and placment of counters\" set the Extra Gauge to 0. For each Incident that occurse, increase the Extra Gauge by 1. This is done regardless of whether the Event itself has any effect or not."
                 },
                 {
-                    "id": "Extra Cads",
-"name": "Extra Cads",
+                    "name": "Extra Cads",
                     "description": "During the \"removal and placement of counters\" step during Loop start also remove all Extra cards. Then, place the cards according to plot rules (if applicable)."
                 }
             ]
         },
         {
-            "id": "Midnight Zone",
-"name": "Midnight Zone",
+            "id": "midnightZone",
+            "name": "Midnight Zone",
             "mainPlots": [
-                "The Sealed Item",
-                "Secret Record",
-                "The Devil’s Hand",
-                "Male Confrontation",
-                "Fated Connections"
+                "sealedItem",
+                "secretRecord",
+                "devilsHand",
+                "maleConfrontation",
+                "fatedConnections"
             ],
             "subPlots": [
-                "Love-Hate Spiral",
-                "Showtime of Death",
-                "Witches Tea Time",
-                "Dice of the Gods",
-                "Unanswered Heart",
-                "Unsafe Trigger",
-                "Worshippers of the Apocalypse"
+                "loveHateSpiral",
+                "showtimeDeath",
+                "witchesTeaTime",
+                "diceOfGods",
+                "unansweredHeart",
+                "unsafeTrigger",
+                "worshippersApocalypse"
             ],
             "incidents": [
-                "Serial Murder",
-                "Missing Person",
-                "Suicide",
-                "Conspiracies",
-                "Increasing Unease",
-                "Hospital Incident",
-                "Uproar",
-                "Fake Incident",
-                "Breakthrough",
-                "Faked Suicide",
-                "Confession"
+                "serialMurder",
+                "missingPerson",
+                "suicide",
+                "conspiracies",
+                "increasingUnease",
+                "hospitalIncident",
+                "uproar",
+                "fakeIncident",
+                "breakthrough",
+                "fakedSuicide",
+                "confession"
             ],
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 2,
             "extraRules": [
                 {
-                    "id": "Extra Cads",
-"name": "Extra Cads",
+                    "name": "Extra Cads",
                     "description": "During the \"removal and placement of counters\" step during Loop start also remove all Extra cards. Then, place the cards according to plot rules (if applicable)."
                 }
             ]

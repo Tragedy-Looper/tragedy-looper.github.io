@@ -306,7 +306,7 @@ function parseMastermindData(txt: string, id: number): false | Script {
     }
 
     const result = {
-        cast: Object.fromEntries(scriptRawData.cast.map(x => [x.name, !x.role ? 'Person' : x.role] as const)),
+        cast: Object.fromEntries(scriptRawData.cast.map(x => [x.name, !x.role ? 'person' : x.role] as const)),
         incidents: scriptRawData.Incidents.map(x => ({
             day: x.day,
             incident: x.incidentName,

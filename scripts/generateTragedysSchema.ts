@@ -34,7 +34,7 @@ const names = {
             incidentNames: new Set(data.incidents),
             roles: new Set<string>([...plotData.filter(p => allPlots.has(p.id)).flatMap(p => Object.keys(p.roles).map(r => r)),
             ...(data.aditionalRoles ?? []),
-            ...['Person']
+            ...['person']
             ]),
         }] as const;
     })) as Record<string, {

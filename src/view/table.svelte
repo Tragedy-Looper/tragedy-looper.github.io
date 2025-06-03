@@ -428,15 +428,15 @@
           .filter((x) => !x.skip)
           .map(
             (role) =>
-              ` role-char-${cssesc(role.id, { isIdentifier: true })}-${cssesc(char.name, {
+              ` role-char-${cssesc(role.id, { isIdentifier: true })}-${cssesc(char.id, {
                 isIdentifier: true,
               })} `
           ),
-        ` char-header-${cssesc(char.name, { isIdentifier: true })} `,
-        ` char-header-${cssesc(char.name, { isIdentifier: true })} `,
+        ` char-header-${cssesc(char.id, { isIdentifier: true })} `,
+        ` char-header-${cssesc(char.id, { isIdentifier: true })} `,
         ...ince.map(
           (incident) =>
-            ` incdent-char-${incident.day}-${cssesc(char.name, { isIdentifier: true })} `
+            ` incdent-char-${incident.day}-${cssesc(char.id, { isIdentifier: true })} `
         ),
         'rest-2',
         'rest-3',
@@ -482,10 +482,10 @@
       <Translation translationKey={'Main Plot'} />
     </div>
     {#each mainPlots as p}
-      <div class="plot-main" style="grid-area: main-plot-header-{cssesc(p.name)};">
+      <div class="plot-main" style="grid-area: main-plot-header-{cssesc(p.id)};">
         <Translation translationKey={p.name} />
       </div>
-      <div class="plot-main rules" style="grid-area: main-role-plot-rule-{cssesc(p.name)};">
+      <div class="plot-main rules" style="grid-area: main-role-plot-rule-{cssesc(p.id)};">
         {#each p.rules ?? [] as a}
           <Ability {a} compact />
         {/each}
@@ -494,7 +494,7 @@
       {#each r.filter((x) => !x.skip) as ri}
         <div
           class="plot-main role-counter"
-          style="grid-area: main-role-plot-{cssesc(ri.id)}-{cssesc(p.name)};"
+          style="grid-area: main-role-plot-{cssesc(ri.id)}-{cssesc(p.id)};"
         >
           <div style="text-align: center;">
             {#if hasProp(p.roles, ri.id)}
@@ -514,10 +514,10 @@
       <Translation translationKey={'Sub Plot'} />
     </div>
     {#each subPlots as p}
-      <div class="plot-sub" style="grid-area: sub-plot-header-{cssesc(p.name)};">
+      <div class="plot-sub" style="grid-area: sub-plot-header-{cssesc(p.id)};">
         <Translation translationKey={p.name} />
       </div>
-      <div class="plot-sub rules" style="grid-area: sub-role-plot-rule-{cssesc(p.name)};">
+      <div class="plot-sub rules" style="grid-area: sub-role-plot-rule-{cssesc(p.id)};">
         {#each p.rules ?? [] as a}
           <Ability {a} compact />
         {/each}
@@ -528,7 +528,7 @@
         {@const name = ri.id}
         <div
           class="plot-sub role-counter"
-          style="grid-area: sub-role-plot-{cssesc(ri.id)}-{cssesc(p.name)};"
+          style="grid-area: sub-role-plot-{cssesc(ri.id)}-{cssesc(p.id)};"
         >
           <div style="text-align: center;">
             {#if hasProp(roles, name)}
@@ -587,19 +587,19 @@
       <Translation translationKey={'Characters'} />
     </div>
     {#each chars as ci}
-      <div class="character" style="grid-area: char-header-{cssesc(ci.name)}; ">
+      <div class="character" style="grid-area: char-header-{cssesc(ci.id)}; ">
         <Translation translationKey={ci.name} />
         {#if isCharacterLate(ci.id)}
           <i>(?)</i>{/if}
       </div>
 
       {#each r.filter((x) => !x.skip) as ri}
-        <div class="role-char" style="grid-area: role-char-{cssesc(ri.id)}-{cssesc(ci.name)};">
+        <div class="role-char" style="grid-area: role-char-{cssesc(ri.id)}-{cssesc(ci.id)};">
           <Selection />
         </div>
       {/each}
       {#each ince as ri}
-        <div class="incident-char" style="grid-area: incdent-char-{ri.day}-{cssesc(ci.name)};">
+        <div class="incident-char" style="grid-area: incdent-char-{ri.day}-{cssesc(ci.id)};">
           <Selection />
         </div>
       {/each}

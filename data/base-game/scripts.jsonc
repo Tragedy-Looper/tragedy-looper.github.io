@@ -12,7 +12,7 @@
           "number": 1
         }
       ],
-      "tragedySet": "First Steps",
+      "tragedySet": "firstSteps",
       "daysPerLoop": 4,
       "difficultySets": [
         {
@@ -21,29 +21,29 @@
         }
       ],
       "mainPlot": [
-        "Murder Plan"
+        "murderPlan"
       ],
       "subPlots": [
-        "Shadow of the Ripper"
+        "shadowRipper"
       ],
       "cast": {
-        "Boy Student": "Person",
-        "Girl Student": "Key Person",
-        "Shrine Maiden": "Serial Killer",
-        "Police Officer": "Conspiracy Theorist",
-        "Office Worker": "Killer",
-        "Doctor": "Brain"
+        "boyStudent": "person",
+        "girlStudent": "keyPerson",
+        "shrineMaiden": "serialKiller",
+        "policeOfficer": "conspiracyTheorist",
+        "officeWorker": "killer",
+        "doctor": "brain"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Murder",
-          "culprit": "Office Worker"
+          "incident": "murder",
+          "culprit": "officeWorker"
         },
         {
           "day": 3,
-          "incident": "Suicide",
-          "culprit": "Girl Student"
+          "incident": "suicide",
+          "culprit": "girlStudent"
         }
       ],
       "victory-conditions": "See Tragedy Looper Mastermind Handbook",
@@ -59,40 +59,40 @@
           "difficulty": 1
         }
       ],
-      "tragedySet": "First Steps",
+      "tragedySet": "firstSteps",
       "mainPlot": [
-        "Light of the Avenger"
+        "lightAvenger"
       ],
       "subPlots": [
-        "A Hideous Script"
+        "hideousScript"
       ],
       "daysPerLoop": 4,
       "cast": {
-        "Alien": "Brain",
-        "Police Officer": "Conspiracy Theorist",
-        "Office Worker": "Curmudgeon",
-        "Patient": "Friend",
-        "Shrine Maiden": "Person",
-        "Pop Idol": "Person"
+        "alien": "brain",
+        "policeOfficer": "conspiracyTheorist",
+        "officeWorker": "curmudgeon",
+        "patient": "friend",
+        "shrineMaiden": "person",
+        "popIdol": "person"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Missing Person",
-          "culprit": "Office Worker"
+          "incident": "missingPerson",
+          "culprit": "officeWorker"
         },
         {
           "day": 3,
-          "incident": "Hospital Incident",
-          "culprit": "Shrine Maiden"
+          "incident": "hospitalIncident",
+          "culprit": "shrineMaiden"
         }
       ],
       "specialRules": [
         ""
       ],
       "victory-conditions": "In the Godless Temple is an advanced training script, to be played after the First Script. This is a perfect script to learn how to use :intrigue: counters. After The First Script and this, you’ll get the hang of most victory tactics for the Mastermind.",
-      "story": "A decrepit shrine at the outskirts of town. Whatever is hallowed there, it’s not a god. And it wants revenge. Revenge on the shrine maiden that summoned it and consequently all humans. \n\nThis being confuses people and pushes the ill will of the broken shrine maiden and less-than-good-tempered people onto the Protagonists. Will the heroes be able to stop this incarnation of darkness and evil from getting its revenge?",
-      "mastermindHints": "The basic way to win is to have 2 :intrigue: on the Shrine at the end of the loop. It’s good to also have 2 :intrigue: on the City, so that you can hide who the Brain is. When you use the Brain’s ability, see to it that the Office Worker and the Alien are in the same area.\n\nAnother way to win is the Hospital Horror, while having 1 or more :intrigue: on the Hospital, killing the Patient who is the Friend, triggering a win condition for you.\n\nIn either case, you should get the Office Worker to trigger Missing Person to help place :intrigue:. Use the Conspiracy Theorist ability from Day 1. But if you think you can win with 2 :intrigue: on the Shrine, don’t aim for the Hospital Horror. It’s best to hide who the culprit is there, and to place a lot of Unease on them once you need to.\n\nVictory conditions:\n1. At loop end, have 2 :intrigue: on the Shrine, triggering the loss condition of Fire of the Avenger.\n\n2. At end of day 3, have at least 1 :intrigue: on the Hospital and at least 2 Unease on the Shrine Maiden, triggering the Hospital Horror, killing the Patient, and triggering the Friend’s loss condition at loop end.\n\n3. At end of day 3, have at least 2 :intrigue: on the Hospital and at least 2 Unease on the Shrine Maiden, triggering the Hospital Horror, killing the Protagonists.\n\nA PLAY GUIDE FOR “IN THE GODLESS TEMPLE”\nWe present a briefer play-through guide for this script.\n\nDay 1: Card playing phase\nOn loop 1, play these cards:\n• City: :intrigue: +2\n• Shrine: :intrigue: +1\n• Hospital: Any card (mainly to bluff)\n\nOn loop 2, play any of the below:\n• City or Shrine: :intrigue: +1, :intrigue: +2, or any other card\n• Hospital: :intrigue: +1 or any other card\n• Office Worker: Unease +1\n• Shrine Maiden: Vertical Movement\n\nDay 1-4: Mastermind ability step\n• If it’s day 1 or 2, and the Office Worker and Police Officer are in the same area, place an Unease token on the Office Worker.\n• If it’s day 1, 2 or 3, and the Shrine Maiden and Police Officer are in the same area, and you have 1 or more :intrigue: on the Hospital, put an Unease on the Shrine Maiden.\n• If the Alien and Police Officer are together at the City or Shrine, and you have 1 or less :intrigue: on that location, place one :intrigue: there.\n• If the Alien is in the Shrine, and you really need to, place 1 :intrigue: there.\n\nDay 2-4: Card playing phase\nPlay cards or move, as needed:\n• City or Shrine: :intrigue: +1, :intrigue: +2 or any other card.\n• Hospital: :intrigue: +1 or any other card.\n• Shrine Maiden: Unease +1, Forbid :goodwill:, or move her away from the Shrine.\n• Alien: Move it to Shrine or City.\n• Police Officer: Move to same location as Shrine Maiden or Office Worker.\n• Office Worker: Unease +1 or move to same location as Alien.\n• Pop Idol: Forbid :goodwill: or move her so she can’t use her :goodwill: ability.\n• Patient: Don’t place anything on him."
+      "story": "A decrepit shrine at the outskirts of town. Whatever is hallowed there, it’s not a god. And it wants revenge. Revenge on the :shrineMaiden: that summoned it and consequently all humans. \n\nThis being confuses people and pushes the ill will of the broken :shrineMaiden: and less-than-good-tempered people onto the Protagonists. Will the heroes be able to stop this incarnation of darkness and evil from getting its revenge?",
+      "mastermindHints": "The basic way to win is to have 2 :intrigue: on the Shrine at the end of the loop. It’s good to also have 2 :intrigue: on the City, so that you can hide who the :brain: is. When you use the :brain:’s ability, see to it that the :officeWorker: and the :alien: are in the same area.\n\nAnother way to win is the :hospitalIncident:, while having 1 or more :intrigue: on the Hospital, killing the :patient: who is the :friend:, triggering a win condition for you.\n\nIn either case, you should get the :officeWorker: to trigger :missingPerson: to help place :intrigue:. Use the conspiracyTheorist: ability from Day 1. But if you think you can win with 2 :intrigue: on the Shrine, don’t aim for the :hospitalIncident:. It’s best to hide who the culprit is there, and to place a lot of :paranoia: on them once you need to.\n\nVictory conditions:\n1. At loop end, have 2 :intrigue: on the Shrine, triggering the loss condition of :lightAvenger:.\n\n2. At end of day 3, have at least 1 :intrigue: on the Hospital and at least 2 :paranoia: on the shrineMaiden, triggering the :hospitalIncident:, killing the :patient:, and triggering the :friend:’s loss condition at loop end.\n\n3. At end of day 3, have at least 2 :intrigue: on the Hospital and at least 2 :paranoia: on the :shrineMaiden:, triggering the :hospitalIncident:, killing the Protagonists.\n\nA PLAY GUIDE FOR “IN THE GODLESS TEMPLE”\nWe present a briefer play-through guide for this script.\n\nDay 1: Card playing phase\nOn loop 1, play these cards:\n• City: :intrigue: +2\n• Shrine: :intrigue: +1\n• Hospital: Any card (mainly to bluff)\n\nOn loop 2, play any of the below:\n• City or Shrine: :intrigue: +1, :intrigue: +2, or any other card\n• Hospital: :intrigue: +1 or any other card\n• :officeWorker:: :paranoia: +1\n• :shrineMaiden:: Vertical Movement\n\nDay 1-4: Mastermind ability step\n• If it’s day 1 or 2, and the :officeWorker: and :policeOfficer: are in the same area, place an :paranoia: token on the :officeWorker:.\n• If it’s day 1, 2 or 3, and the :shrineMaiden: and :policeOfficer: are in the same area, and you have 1 or more :intrigue: on the Hospital, put an :paranoia: on the :shrineMaiden:.\n• If the :alien: and :policeOfficer: are together at the City or Shrine, and you have 1 or less :intrigue: on that location, place one :intrigue: there.\n• If the :alien: is in the Shrine, and you really need to, place 1 :intrigue: there.\n\nDay 2-4: Card playing phase\nPlay cards or move, as needed:\n• City or Shrine: :intrigue: +1, :intrigue: +2 or any other card.\n• Hospital: :intrigue: +1 or any other card.\n• :shrineMaiden:: :paranoia: +1, Forbid :goodwill:, or move her away from the Shrine.\n• :alien:: Move it to Shrine or City.\n• :policeOfficer:: Move to same location as :shrineMaiden: or :officeWorker:.\n• :officeWorker:: :paranoia: +1 or move to same location as :alien:.\n• :popIdol:: Forbid :goodwill: or move her so she can’t use her :goodwill: ability.\n• :patient:: Don’t place anything on him."
     },
     {
       "title": "Prevailing Secrecy",
@@ -103,7 +103,7 @@
           "number": 2
         }
       ],
-      "tragedySet": "First Steps",
+      "tragedySet": "firstSteps",
       "daysPerLoop": 5,
       "difficultySets": [
         {
@@ -116,34 +116,34 @@
         }
       ],
       "mainPlot": [
-        "A Place to Protect"
+        "placeProtect"
       ],
       "subPlots": [
-        "An Unsettling Rumor"
+        "unsettlingRumor"
       ],
       "cast": {
-        "Boy Student": "Cultist",
-        "Girl Student": "Person",
-        "Shrine Maiden": "Conspiracy Theorist",
-        "Office Worker": "Person",
-        "Doctor": "Key Person",
-        "Patient": "Person"
+        "boyStudent": "cultist",
+        "girlStudent": "person",
+        "shrineMaiden": "conspiracyTheorist",
+        "officeWorker": "person",
+        "doctor": "keyPerson",
+        "patient": "person"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "Increasing Unease",
-          "culprit": "Shrine Maiden"
+          "incident": "increasingUnease",
+          "culprit": "shrineMaiden"
         },
         {
           "day": 3,
-          "incident": "Hospital Incident",
-          "culprit": "Boy Student"
+          "incident": "hospitalIncident",
+          "culprit": "boyStudent"
         },
         {
           "day": 5,
-          "incident": "Faraway Murder",
-          "culprit": "Patient"
+          "incident": "farawayMurder",
+          "culprit": "patient"
         }
       ],
       "victory-conditions": "See Tragedy Looper Mastermind Handbook",
@@ -159,7 +159,7 @@
           "number": 3
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 6,
       "difficultySets": [
         {
@@ -172,38 +172,38 @@
         }
       ],
       "mainPlot": [
-        "Sign with me!"
+        "signWithMe"
       ],
       "subPlots": [
-        "A Love Affair",
-        "The Hidden Freak"
+        "loveAffair",
+        "hiddenFreak"
       ],
       "cast": {
-        "Boy Student": "Person",
-        "Girl Student": "Friend",
-        "Class Rep": "Loved One",
-        "Shrine Maiden": "Key Person",
-        "Police Officer": "Person",
-        "Office Worker": "Lover",
-        "Informer": "Serial Killer",
-        "Patient": "Person",
-        "Nurse": "Person"
+        "boyStudent": "person",
+        "girlStudent": "friend",
+        "classRep": "lovedOne",
+        "shrineMaiden": "keyPerson",
+        "policeOfficer": "person",
+        "officeWorker": "lover",
+        "informer": "serialKiller",
+        "patient": "person",
+        "nurse": "person"
       },
       "incidents": [
         {
           "day": 3,
-          "incident": "Foul Evil",
-          "culprit": "Office Worker"
+          "incident": "foulEvil",
+          "culprit": "officeWorker"
         },
         {
           "day": 4,
-          "incident": "Increasing Unease",
-          "culprit": "Class Rep"
+          "incident": "increasingUnease",
+          "culprit": "classRep"
         },
         {
           "day": 6,
-          "incident": "Suicide",
-          "culprit": "Girl Student"
+          "incident": "suicide",
+          "culprit": "girlStudent"
         }
       ],
       "victory-conditions": "See Tragedy Looper Mastermind Handbook",
@@ -223,47 +223,47 @@
           "difficulty": 3
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "mainPlot": [
-        "Sign with me!"
+        "signWithMe"
       ],
       "subPlots": [
-        "An Unsettling Rumor",
-        "The Hidden Freak"
+        "unsettlingRumor",
+        "hiddenFreak"
       ],
       "daysPerLoop": 5,
       "cast": {
-        "Pop Idol": "Key Person",
-        "Doctor": "Conspiracy Theorist",
-        "Boy Student": "Serial Killer",
-        "Patient": "Person",
-        "Teacher": "Person",
-        "rich-student": "Person",
-        "Shrine Maiden": "Friend"
+        "popIdol": "keyPerson",
+        "doctor": "conspiracyTheorist",
+        "boyStudent": "serialKiller",
+        "patient": "person",
+        "teacher": "person",
+        "richStudent": "person",
+        "shrineMaiden": "friend"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Increasing Unease",
-          "culprit": "Patient"
+          "incident": "increasingUnease",
+          "culprit": "patient"
         },
         {
           "day": 3,
-          "incident": "Hospital Incident",
-          "culprit": "Shrine Maiden"
+          "incident": "hospitalIncident",
+          "culprit": "shrineMaiden"
         },
         {
           "day": 5,
-          "incident": "Missing Person",
-          "culprit": "Boy Student"
+          "incident": "missingPerson",
+          "culprit": "boyStudent"
         }
       ],
       "specialRules": [
         ""
       ],
       "victory-conditions": "This is a script recommended for those who are playing Basic Tragedy for the first time. This is where it begins for real. Now you have 2 Subplots and seven people in the cast. Also, there are 5 days each loop!\n\nThat said, the difficulty is still set to very low. Protagonists who come from First Steps won’t feel super confused and will be able to enjoy the extra additions well enough. It’s not difficult to play as Mastermind either. But beware of the Final Guess. If all roles are clear, then you will lose, and that is more stressful than it may seem.",
-      "story": "For boys and girls, the world is a constant battlefield. Each tiny little disturbance will shake their inexperienced souls. Especially in this town, where seductors lure with the promise of magic powers – without explaining the consequences!\n\nThe school was bubbling with talk. “Spells” and “magic”, and everyone knows that you CAN become a magical girl, if you just sign the contract. Eventually, the pop idol will sign, and she will die. Can the Protagonists stop this tragedy from happening?",
-      "mastermindHints": "The best way to win is through the Hospital Horror and to place :intrigue: on the Idol. This reveals the least information.\n\nStart day 1 and 2 with Unease +1 on the Patient, and a bluff and :intrigue: +1 on the Shrine and Hospital respectively.\n\nAlso from day 1, use the Conspiracy Theorist and trigger Spreading Unease. If you get some :intrigue: on the Hospital, put 2 Unease on the Shrine Maiden, and trigger the Hospital Horror.\n\nOn day 3, you can use the Unsettling Rumor effect to put the second :intrigue: on the Hospital and kill the Protagonists.\n\nIf you can’t seem to get any :intrigue: on the Hospital, put instead 2 :intrigue: on the Idol and if possible, also on the Shrine, Rich Student, and Shrine Maiden. For this, Spreading Unease and An Unsettling Rumor will help you.\n\nHide the Serial Killer as long as you can and use him to kill the Key Person as your last resort. Killing the Friend will make the Final Guess easy for the Protagonists, so avoid that as much as possible.\n\nThe Final Guess can easily become your downfall. Either you hide the Conspiracy Theorist or the Friend. Try to make it look like a Murderer or a Brain instead.\n\nVictory conditions\n1. At any day end, have the Pop Idol and the Boy Student alone in a location, triggering the Serial Killer effect and thus the Key Person’s loss condition immediately.\n\n2. At end of day 3, have at least 1 :intrigue: on the Hospital, at least 2 Unease on the Shrine Maiden, and the Pop Idol in the Hospital, triggering Hospital Horror, killing the Pop Idol and triggering the Key Person’s loss condition immediately.\n\n3. At loop end, have 2 :intrigue: on the Pop Idol, triggering the loss condition for “Sign with Me!”.\n\n4. At any day end, have the Shrine Maiden and the Boy Student alone in a location, triggering the Serial Killer effect and thus the Friend’s loss condition at loop end.\n\n5. At end of day 3, have at least 1 :intrigue: on the Hospital, at least 2 Unease on the Shrine Maiden who should be in the Hospital, triggering the Hospital Horror, killing the Shrine Maiden, and triggering the Friend’s loss condition at loop end.\n\n6. At the end of day 3, have at least 2 :intrigue: on the Hospital, at least 2 Unease on the Shrine Maiden, triggering the Hospital Horror killing the Protagonists."
+      "story": "For boys and girls, the world is a constant battlefield. Each tiny little disturbance will shake their inexperienced souls. Especially in this town, where seductors lure with the promise of magic powers – without explaining the consequences!\n\nThe school was bubbling with talk. “Spells” and “magic”, and everyone knows that you CAN become a magical girl, if you just sign the contract. Eventually, the :popIdol: will sign, and she will die. Can the Protagonists stop this tragedy from happening?",
+      "mastermindHints": "The best way to win is through the Hospital Horror and to place :intrigue: on the Idol. This reveals the least information.\n\nStart day 1 and 2 with Unease +1 on the patient, and a bluff and :intrigue: +1 on the Shrine and Hospital respectively.\n\nAlso from day 1, use the Conspiracy Theorist and trigger Spreading Unease. If you get some :intrigue: on the Hospital, put 2 Unease on the :shrineMaiden:, and trigger the Hospital Horror.\n\nOn day 3, you can use the Unsettling Rumor effect to put the second :intrigue: on the Hospital and kill the Protagonists.\n\nIf you can’t seem to get any :intrigue: on the Hospital, put instead 2 :intrigue: on the Idol and if possible, also on the Shrine, Rich Student, and shrineMaiden. For this, Spreading Unease and An Unsettling Rumor will help you.\n\nHide the Serial Killer as long as you can and use him to kill the Key Person as your last resort. Killing the Friend will make the Final Guess easy for the Protagonists, so avoid that as much as possible.\n\nThe Final Guess can easily become your downfall. Either you hide the Conspiracy Theorist or the Friend. Try to make it look like a Murderer or a Brain instead.\n\nVictory conditions\n1. At any day end, have the popIdol and the boyStudent alone in a location, triggering the Serial Killer effect and thus the Key Person’s loss condition immediately.\n\n2. At end of day 3, have at least 1 :intrigue: on the Hospital, at least 2 Unease on the shrineMaiden, and the popIdol in the Hospital, triggering Hospital Horror, killing the popIdol and triggering the Key Person’s loss condition immediately.\n\n3. At loop end, have 2 :intrigue: on the popIdol, triggering the loss condition for “Sign with Me!”.\n\n4. At any day end, have the shrineMaiden and the boyStudent alone in a location, triggering the Serial Killer effect and thus the Friend’s loss condition at loop end.\n\n5. At end of day 3, have at least 1 :intrigue: on the Hospital, at least 2 Unease on the shrineMaiden who should be in the Hospital, triggering the Hospital Horror, killing the shrineMaiden, and triggering the Friend’s loss condition at loop end.\n\n6. At the end of day 3, have at least 2 :intrigue: on the Hospital, at least 2 Unease on the shrineMaiden, triggering the Hospital Horror killing the Protagonists."
     },
     {
       "title": "Lesser of Two Evils",
@@ -274,7 +274,7 @@
           "number": 4
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 7,
       "difficultySets": [
         {
@@ -287,43 +287,43 @@
         }
       ],
       "mainPlot": [
-        "The Sealed Item"
+        "sealedItem"
       ],
       "subPlots": [
-        "The Hidden Freak",
-        "Unknown Factor X"
+        "hiddenFreak",
+        "unknownFactor"
       ],
       "cast": {
-        "Boy Student": "Person",
-        "Girl Student": "Person",
-        "rich-student": "Brain",
-        "Shrine Maiden": "Friend",
-        "Office Worker": "Serial Killer",
-        "Informer": "Person",
-        "Journalist": "Factor",
-        "Patient": "Person",
-        "Nurse": "Cultist"
+        "boyStudent": "person",
+        "girlStudent": "person",
+        "richStudent": "brain",
+        "shrineMaiden": "friend",
+        "officeWorker": "serialKiller",
+        "informer": "person",
+        "journalist": "factor",
+        "patient": "person",
+        "nurse": "cultist"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Increasing Unease",
-          "culprit": "rich-student"
+          "incident": "increasingUnease",
+          "culprit": "richStudent"
         },
         {
           "day": 4,
-          "incident": "Missing Person",
-          "culprit": "Nurse"
+          "incident": "missingPerson",
+          "culprit": "nurse"
         },
         {
           "day": 5,
-          "incident": "Missing Person",
-          "culprit": "Boy Student"
+          "incident": "missingPerson",
+          "culprit": "boyStudent"
         },
         {
           "day": 7,
-          "incident": "Suicide",
-          "culprit": "Journalist"
+          "incident": "suicide",
+          "culprit": "journalist"
         }
       ],
       "victory-conditions": "See Tragedy Looper Mastermind Handbook",
@@ -339,7 +339,7 @@
           "number": 5
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 7,
       "difficultySets": [
         {
@@ -352,48 +352,48 @@
         }
       ],
       "mainPlot": [
-        "Giant Time Bomb"
+        "giantTimeBomb"
       ],
       "subPlots": [
-        "Threads of Fate",
-        "Circle of Friends"
+        "threadsFate",
+        "circleFriends"
       ],
       "cast": {
-        "rich-student": "Witch",
-        "Class Rep": "Person",
-        "Shrine Maiden": "Person",
-        "Alien": "Friend",
-        "Office Worker": "Friend",
-        "Informer": "Conspiracy Theorist",
-        "Pop Idol": "Person",
-        "Journalist": "Person",
-        "Patient": "Person"
+        "richStudent": "witch",
+        "classRep": "person",
+        "shrineMaiden": "person",
+        "alien": "friend",
+        "officeWorker": "friend",
+        "informer": "conspiracyTheorist",
+        "popIdol": "person",
+        "journalist": "person",
+        "patient": "person"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Suicide",
-          "culprit": "rich-student"
+          "incident": "suicide",
+          "culprit": "richStudent"
         },
         {
           "day": 3,
-          "incident": "Missing Person",
-          "culprit": "Office Worker"
+          "incident": "missingPerson",
+          "culprit": "officeWorker"
         },
         {
           "day": 4,
-          "incident": "Hospital Incident",
-          "culprit": "Journalist"
+          "incident": "hospitalIncident",
+          "culprit": "journalist"
         },
         {
           "day": 6,
-          "incident": "Spreading",
-          "culprit": "Shrine Maiden"
+          "incident": "spreading",
+          "culprit": "shrineMaiden"
         },
         {
           "day": 7,
-          "incident": "Foul Evil",
-          "culprit": "Pop Idol"
+          "incident": "foulEvil",
+          "culprit": "popIdol"
         }
       ],
       "victory-conditions": "See Tragedy Looper Mastermind Handbook",
@@ -409,7 +409,7 @@
           "number": 6
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 7,
       "difficultySets": [
         {
@@ -418,48 +418,48 @@
         }
       ],
       "mainPlot": [
-        "Change of Future"
+        "changeOfFuture"
       ],
       "subPlots": [
-        "The Hidden Freak",
-        "A Love Affair"
+        "hiddenFreak",
+        "loveAffair"
       ],
       "cast": {
-        "Boy Student": "Time Traveler",
-        "rich-student": "Person",
-        "Shrine Maiden": "Cultist",
-        "Godly Being": [
-          "Loved One",
+        "boyStudent": "timeTraveler",
+        "richStudent": "person",
+        "shrineMaiden": "cultist",
+        "godlyBeing": [
+          "lovedOne",
           {
             "enters on loop": 3
           }
         ],
-        "Police Officer": "Person",
-        "Office Worker": "Serial Killer",
-        "Pop Idol": "Lover",
-        "Patient": "Person",
-        "Nurse": "Friend"
+        "policeOfficer": "person",
+        "officeWorker": "serialKiller",
+        "popIdol": "lover",
+        "patient": "person",
+        "nurse": "friend"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Suicide",
-          "culprit": "Pop Idol"
+          "incident": "suicide",
+          "culprit": "popIdol"
         },
         {
           "day": 4,
-          "incident": "Increasing Unease",
-          "culprit": "Shrine Maiden"
+          "incident": "increasingUnease",
+          "culprit": "shrineMaiden"
         },
         {
           "day": 5,
-          "incident": "Butterfly Effect",
-          "culprit": "Police Officer"
+          "incident": "butterflyEffect",
+          "culprit": "policeOfficer"
         },
         {
           "day": 7,
-          "incident": "Foul Evil",
-          "culprit": "Patient"
+          "incident": "foulEvil",
+          "culprit": "patient"
         }
       ],
       "victory-conditions": "See Tragedy Looper Mastermind Handbook",
@@ -475,7 +475,7 @@
           "number": 7
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 7,
       "difficultySets": [
         {
@@ -488,43 +488,43 @@
         }
       ],
       "mainPlot": [
-        "Sign with me!"
+        "signWithMe"
       ],
       "subPlots": [
-        "Unknown Factor X",
-        "Paranoia Virus"
+        "unknownFactor",
+        "paranoiaVirus"
       ],
       "cast": {
-        "Boy Student": "Person",
-        "Girl Student": "Key Person",
-        "rich-student": "Factor",
-        "Mystery Boy": "Cultist",
-        "Office Worker": "Person",
-        "Informer": "Conspiracy Theorist",
-        "Journalist": "Person",
-        "Patient": "Person",
-        "Nurse": "Person"
+        "boyStudent": "person",
+        "girlStudent": "keyPerson",
+        "richStudent": "factor",
+        "mysteryBoy": "cultist",
+        "officeWorker": "person",
+        "informer": "conspiracyTheorist",
+        "journalist": "person",
+        "patient": "person",
+        "nurse": "person"
       },
       "incidents": [
         {
           "day": 3,
-          "incident": "Missing Person",
-          "culprit": "rich-student"
+          "incident": "missingPerson",
+          "culprit": "richStudent"
         },
         {
           "day": 4,
-          "incident": "Increasing Unease",
-          "culprit": "Journalist"
+          "incident": "increasingUnease",
+          "culprit": "journalist"
         },
         {
           "day": 5,
-          "incident": "Hospital Incident",
-          "culprit": "Mystery Boy"
+          "incident": "hospitalIncident",
+          "culprit": "mysteryBoy"
         },
         {
           "day": 7,
-          "incident": "Murder",
-          "culprit": "Boy Student"
+          "incident": "murder",
+          "culprit": "boyStudent"
         }
       ],
       "victory-conditions": "See Tragedy Looper Mastermind Handbook",
@@ -540,7 +540,7 @@
           "number": 8
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 4,
       "difficultySets": [
         {
@@ -553,44 +553,44 @@
         }
       ],
       "mainPlot": [
-        "Change of Future"
+        "changeOfFuture"
       ],
       "subPlots": [
-        "Threads of Fate",
-        "Paranoia Virus"
+        "threadsFate",
+        "paranoiaVirus"
       ],
       "cast": {
-        "Girl Student": "Person",
-        "rich-student": "Conspiracy Theorist",
-        "Class Rep": "Person",
-        "Shrine Maiden": "Cultist",
-        "Police Officer": "Person",
-        "Office Worker": "Person",
-        "Informer": "Conspiracy Theorist",
-        "Doctor": "Person",
-        "Patient": "Person",
-        "Henchman": "Time Traveler"
+        "girlStudent": "person",
+        "richStudent": "conspiracyTheorist",
+        "classRep": "person",
+        "shrineMaiden": "cultist",
+        "policeOfficer": "person",
+        "officeWorker": "person",
+        "informer": "conspiracyTheorist",
+        "doctor": "person",
+        "patient": "person",
+        "henchman": "timeTraveler"
       },
       "incidents": [
         {
           "day": 1,
-          "incident": "Butterfly Effect",
-          "culprit": "rich-student"
+          "incident": "butterflyEffect",
+          "culprit": "richStudent"
         },
         {
           "day": 2,
-          "incident": "Foul Evil",
-          "culprit": "Henchman"
+          "incident": "foulEvil",
+          "culprit": "henchman"
         },
         {
           "day": 3,
-          "incident": "Spreading",
-          "culprit": "Doctor"
+          "incident": "spreading",
+          "culprit": "doctor"
         },
         {
           "day": 4,
-          "incident": "Missing Person",
-          "culprit": "Police Officer"
+          "incident": "missingPerson",
+          "culprit": "policeOfficer"
         }
       ],
       "victory-conditions": "See Tragedy Looper Mastermind Handbook",
@@ -606,7 +606,7 @@
           "number": 9
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 7,
       "difficultySets": [
         {
@@ -619,43 +619,43 @@
         }
       ],
       "mainPlot": [
-        "Murder Plan"
+        "murderPlan"
       ],
       "subPlots": [
-        "Circle of Friends",
-        "A Love Affair"
+        "circleFriends",
+        "loveAffair"
       ],
       "cast": {
-        "Boy Student": "Lover",
-        "Girl Student": "Loved One",
-        "rich-student": "Killer",
-        "Shrine Maiden": "Key Person",
-        "Police Officer": "Conspiracy Theorist",
-        "Office Worker": "Person",
-        "Informer": "Friend",
-        "Doctor": "Brain",
-        "Patient": "Friend"
+        "boyStudent": "lover",
+        "girlStudent": "lovedOne",
+        "richStudent": "killer",
+        "shrineMaiden": "keyPerson",
+        "policeOfficer": "conspiracyTheorist",
+        "officeWorker": "person",
+        "informer": "friend",
+        "doctor": "brain",
+        "patient": "friend"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Increasing Unease",
-          "culprit": "Office Worker"
+          "incident": "increasingUnease",
+          "culprit": "officeWorker"
         },
         {
           "day": 4,
-          "incident": "Suicide",
-          "culprit": "Girl Student"
+          "incident": "suicide",
+          "culprit": "girlStudent"
         },
         {
           "day": 5,
-          "incident": "Hospital Incident",
-          "culprit": "Boy Student"
+          "incident": "hospitalIncident",
+          "culprit": "boyStudent"
         },
         {
           "day": 7,
-          "incident": "Murder",
-          "culprit": "Police Officer"
+          "incident": "murder",
+          "culprit": "policeOfficer"
         }
       ],
       "victory-conditions": "See Tragedy Looper Mastermind Handbook",
@@ -671,7 +671,7 @@
           "number": 10
         }
       ],
-      "tragedySet": "Basic Tragedy",
+      "tragedySet": "basicTragedy",
       "daysPerLoop": 6,
       "difficultySets": [
         {
@@ -680,60 +680,60 @@
         }
       ],
       "mainPlot": [
-        "Giant Time Bomb"
+        "giantTimeBomb"
       ],
       "subPlots": [
-        "An Unsettling Rumor",
-        "A Love Affair"
+        "unsettlingRumor",
+        "loveAffair"
       ],
       "cast": {
-        "Girl Student": "Person",
-        "rich-student": "Loved One",
-        "Class Rep": "Person",
-        "Mystery Boy": "Brain",
-        "Alien": "Person",
-        "Godly Being": [
-          "Witch",
+        "girlStudent": "person",
+        "richStudent": "lovedOne",
+        "classRep": "person",
+        "mysteryBoy": "brain",
+        "alien": "person",
+        "godlyBeing": [
+          "witch",
           {
             "enters on loop": 4
           }
         ],
-        "Office Worker": "Person",
-        "Pop Idol": "Person",
-        "Boss": [
-          "Conspiracy Theorist",
+        "officeWorker": "person",
+        "popIdol": "person",
+        "boss": [
+          "conspiracyTheorist",
           {
             "Turf": "School"
           }
         ],
-        "Patient": "Lover",
-        "Nurse": "Person"
+        "patient": "lover",
+        "nurse": "person"
       },
       "incidents": [
         {
           "day": 2,
-          "incident": "Butterfly Effect",
-          "culprit": "Class Rep"
+          "incident": "butterflyEffect",
+          "culprit": "classRep"
         },
         {
           "day": 3,
-          "incident": "Increasing Unease",
-          "culprit": "Alien"
+          "incident": "increasingUnease",
+          "culprit": "alien"
         },
         {
           "day": 4,
-          "incident": "Missing Person",
-          "culprit": "Office Worker"
+          "incident": "missingPerson",
+          "culprit": "officeWorker"
         },
         {
           "day": 5,
-          "incident": "Missing Person",
-          "culprit": "Nurse"
+          "incident": "missingPerson",
+          "culprit": "nurse"
         },
         {
           "day": 6,
-          "incident": "Missing Person",
-          "culprit": "Patient"
+          "incident": "missingPerson",
+          "culprit": "patient"
         }
       ],
       "specialRules": [

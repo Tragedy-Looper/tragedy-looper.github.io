@@ -1,6 +1,6 @@
 /* eslint-disable no-extra-boolean-cast */
 import { type KeysOfUnion, type Union, toRecord, require } from "../misc";
-import { isCharacterName, type CharacterName, type LocationName, isLocationName } from "./characters";
+import {  type CharacterName, type LocationName, isLocationName } from "./characters";
 import type { DefinitionRecord, Options, WithScriptSpecification } from "./core";
 import { isIncidentName, type IncidentName, type FakedIncident, type MobIncident, isIncident } from "./incidents";
 import { isPlotName } from "./plots";
@@ -100,7 +100,7 @@ export function isScriptIncident(obj: unknown, omitCulprit?: true): obj is Scrip
                     return false;
                 }
             } else {
-                if (!isCharacterName(obj.culprit)) {
+                if (!data.isCharacterId(obj.culprit)) {
                     console.error('Not a charcter name', obj.culprit)
                     return false;
                 }
@@ -108,7 +108,7 @@ export function isScriptIncident(obj: unknown, omitCulprit?: true): obj is Scrip
         } else {
             false;
         }
-        // if ((typeof obj.culprit !== 'string' || (!isCharacterName(obj.culprit) && !isLocationName(obj.culprit))) &&
+        // if ((typeof obj.culprit !== 'string' || (!isCharacterId(obj.culprit) && !isLocationName(obj.culprit))) &&
         //     (!Array.isArray(obj.culprit) || obj.culprit.length != 2 || !isLocationName(obj.culprit[0]) || typeof obj.culprit[1] != 'number')) {
         //     return false;
         // }

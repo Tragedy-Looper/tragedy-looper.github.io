@@ -4,8 +4,8 @@
     // "$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "id": "Murder",
-"name": "Murder",
+            "id": "murder",
+            "name": "Murder",
             "effect": [
                 {
                     "description": "One (1) other character in culprit’s Location dies"
@@ -13,8 +13,8 @@
             ]
         },
         {
-            "id": "Increasing Unease",
-"name": "Increasing Unease",
+            "id": "increasingUnease",
+            "name": "Increasing Unease",
             "effect": [
                 {
                     "description": "Place 2 :paranoia: on any character, then 1 :intrigue: on any other character."
@@ -22,8 +22,8 @@
             ]
         },
         {
-            "id": "Foul Evil",
-"name": "Foul Evil",
+            "id": "foulEvil",
+            "name": "Foul Evil",
             "effect": [
                 {
                     "description": "Place 2 :intrigue: on the Shrine."
@@ -31,8 +31,8 @@
             ]
         },
         {
-            "id": "Suicide",
-"name": "Suicide",
+            "id": "suicide",
+            "name": "Suicide",
             "effect": [
                 {
                     "description": "The culprit dies."
@@ -40,8 +40,8 @@
             ]
         },
         {
-            "id": "Hospital Incident",
-"name": "Hospital Incident",
+            "id": "hospitalIncident",
+            "name": "Hospital Incident",
             "effect": [
                 {
                     "prerequisite": "1 :intrigue: on the Hospital",
@@ -54,8 +54,8 @@
             ]
         },
         {
-            "id": "Faraway Murder",
-"name": "Faraway Murder",
+            "id": "farawayMurder",
+            "name": "Faraway Murder",
             "effect": [
                 {
                     "description": "One character with at least 2 :intrigue: dies."
@@ -63,8 +63,8 @@
             ]
         },
         {
-            "id": "Missing Person",
-"name": "Missing Person",
+            "id": "missingPerson",
+            "name": "Missing Person",
             "effect": [
                 {
                     "description": "Move culprit to any Location. Put 1 :intrigue: on that Location."
@@ -72,8 +72,8 @@
             ]
         },
         {
-            "id": "Spreading",
-"name": "Spreading",
+            "id": "spreading",
+            "name": "Spreading",
             "effect": [
                 {
                     "description": "Move 2 :goodwill: from any character to any other character."
@@ -81,8 +81,8 @@
             ]
         },
         {
-            "id": "Butterfly Effect",
-"name": "Butterfly Effect",
+            "id": "butterflyEffect",
+            "name": "Butterfly Effect",
             "effect": [
                 {
                     "description": "Put any counter on any character in culprit’s Location."

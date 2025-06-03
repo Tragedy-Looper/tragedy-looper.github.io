@@ -1,12 +1,14 @@
 {
-      "$schema": "https://tragedy-looper.github.io/roles.schema.json",
+    "$schema": "https://tragedy-looper.github.io/roles.schema.json",
     // For dev purposes
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "id": "Sacrifice",
-"name": "Sacrifice",
-            "tags": ["Immortal"],
+            "id": "sacrifice",
+            "name": "Sacrifice",
+            "tags": [
+                "immortal"
+            ],
             "abilities": [
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -30,8 +32,8 @@
             ]
         },
         {
-            "id": "Deep One",
-"name": "Deep One",
+            "id": "deepOne",
+            "name": "Deep One",
             "max": 1,
             "goodwillRefusel": "Optional",
             "abilities": [
@@ -52,8 +54,8 @@
             ]
         },
         {
-            "id": "Wizard",
-"name": "Wizard",
+            "id": "wizard",
+            "name": "Wizard",
             "max": 1,
             "abilities": [
                 {
@@ -73,8 +75,8 @@
             ]
         },
         {
-            "id": "Witness",
-"name": "Witness",
+            "id": "witness",
+            "name": "Witness",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -87,10 +89,12 @@
             ]
         },
         {
-            "id": "Faceless",
-"name": "Faceless",
+            "id": "faceless",
+            "name": "Faceless",
             "goodwillRefusel": "Optional",
-            "tags": ["Immortal"],
+            "tags": [
+                "immortal"
+            ],
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -98,7 +102,7 @@
                         "Always"
                     ],
                     "prerequisite": "The Extra Gauge is 1 or less",
-                    "description": "This character gains the abilities of a Conspiracy Theorist."
+                    "description": "This character gains the abilities of a :conspiracyTheorist:."
                 },
                 {
                     "type": "Mandatory",
@@ -106,15 +110,17 @@
                         "Always"
                     ],
                     "prerequisite": "the Extra Gauge is 2 or more",
-                    "description": "This character gains the abilities of a Deep One."
+                    "description": "This character gains the abilities of a :deepOne:."
                 }
             ]
         },
         {
-            "id": "Vampire",
-"name": "Vampire",
+            "id": "vampire",
+            "name": "Vampire",
             "goodwillRefusel": "Optional",
-            "tags": ["Immortal"],
+            "tags": [
+                "immortal"
+            ],
             "abilities": [
                 {
                     "type": "Optional",
@@ -122,7 +128,7 @@
                         "Day End"
                     ],
                     "prerequisite": "The Key Person has at least 2 :intrigue: and is in this character’s location",
-                    "description": "You may kill the Key Person."
+                    "description": "You may kill the :keyPerson:."
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -134,8 +140,8 @@
             ]
         },
         {
-            "id": "Werewolf",
-"name": "Werewolf",
+            "id": "werewolf",
+            "name": "Werewolf",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -155,10 +161,12 @@
             ]
         },
         {
-            "id": "Nightmare",
-"name": "Nightmare",
+            "id": "nightmare",
+            "name": "Nightmare",
             "goodwillRefusel": "Optional",
-            "tags": ["Immortal"],
+            "tags": [
+                "immortal"
+            ],
             "abilities": [
                 {
                     "type": "Optional",
@@ -177,8 +185,8 @@
             ]
         },
         {
-            "id": "Ghost",
-"name": "Ghost",
+            "id": "ghost",
+            "name": "Ghost",
             "max": 1,
             "abilities": [
                 {
@@ -187,14 +195,16 @@
                         "Mastermind Ability"
                     ],
                     "prerequisite": "This card is a corpse",
-                    "description": "Palce 1 :paranoia: on any character in this location, or any character in the Ghost’s starting location."
+                    "description": "Palce 1 :paranoia: on any character in this location, or any character in the :ghost:’s starting location."
                 }
             ]
         },
         {
-            "id": "Show-Off",
-"name": "Show-Off",
-            "tags": ["Immortal"],
+            "id": "showOff",
+            "name": "Show-Off",
+            "tags": [
+                "immortal"
+            ],
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -202,7 +212,7 @@
                         "Always"
                     ],
                     "prerequisite": "This charcter has more then 2 :paranoia:",
-                    "description": "This Character loses the Immortal aspect."
+                    "description": "This Character loses the :immortal: aspect."
                 },
                 {
                     "type": "Mandatory",
@@ -215,8 +225,8 @@
             ]
         },
         {
-            "id": "Coward",
-"name": "Coward",
+            "id": "coward",
+            "name": "Coward",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -229,8 +239,8 @@
             ]
         },
         {
-            "id": "Zombie",
-"name": "Zombie",
+            "id": "zombie",
+            "name": "Zombie",
             "abilities": [
                 {
                     "type": "Mandatory",
@@ -243,7 +253,7 @@
                             "Over all Roles": true
                         }
                     ],
-                    "description": "If there is a location where there are more zombies than non-zombies, kill one character in that location (reminder: a corpse is no longer considered as a character)."
+                    "description": "If there is a location where there are more :zombies: than non-:zombies:, kill one character in that location (reminder: a corpse is no longer considered as a character)."
                 },
                 {
                     "type": "Optional",
@@ -256,7 +266,7 @@
                             "Over all Roles": true
                         }
                     ],
-                    "description": "You may move one zombie corpse to a neighboring location."
+                    "description": "You may move one :zombie: corpse to a neighboring location."
                 }
             ]
         }

@@ -10,7 +10,7 @@ function escapeRegExp(string: string): string {
 }
 
 function normalizeCharacterName(name: string): string {
-    return name.replace(/[^a-zA-Z0-9\(\)]/g, '').toLowerCase(); // remove non-alphanumeric characters and convert to lowercase
+    return name.replace(/[^a-zA-Z0-9]/g, '').toLowerCase(); // remove non-alphanumeric characters and convert to lowercase
 }
 
 function normalizeTragedyName(name: string): string {

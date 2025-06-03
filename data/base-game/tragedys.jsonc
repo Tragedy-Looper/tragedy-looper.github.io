@@ -1,67 +1,66 @@
 {
-      "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
+    "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
     // For dev purposes
     // "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "id": "First Steps",
-"name": "First Steps",
+            "id": "firstSteps",
+            "name": "First Steps",
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 1,
             "mainPlots": [
-                "Murder Plan",
-                "Light of the Avenger",
-                "A Place to Protect"
+                "murderPlan",
+                "lightAvenger",
+                "placeProtect"
             ],
             "subPlots": [
-                "Shadow of the Ripper",
-                "An Unsettling Rumor",
-                "A Hideous Script"
+                "shadowRipper",
+                "unsettlingRumor",
+                "hideousScript"
             ],
             "incidents": [
-                "Murder",
-                "Increasing Unease",
-                "Suicide",
-                "Hospital Incident",
-                "Faraway Murder",
-                "Missing Person",
-                "Spreading"
+                "murder",
+                "increasingUnease",
+                "suicide",
+                "hospitalIncident",
+                "farawayMurder",
+                "missingPerson",
+                "spreading"
             ],
-
             "extraRules": []
         },
         {
-            "id": "Basic Tragedy",
-"name": "Basic Tragedy",
+            "id": "basicTragedy",
+            "name": "Basic Tragedy",
             "mainPlots": [
-                "Murder Plan",
-                "The Sealed Item",
-                "Sign with me!",
-                "Change of Future",
-                "Giant Time Bomb"
+                "murderPlan",
+                "sealedItem",
+                "signWithMe",
+                "changeOfFuture",
+                "giantTimeBomb"
             ],
             "subPlots": [
-                "Circle of Friends",
-                "A Love Affair",
-                "The Hidden Freak",
-                "An Unsettling Rumor",
-                "Paranoia Virus",
-                "Threads of Fate",
-                "Unknown Factor X"
+                "circleFriends",
+                "loveAffair",
+                "hiddenFreak",
+                "unsettlingRumor",
+                "paranoiaVirus",
+                "threadsFate",
+                "unknownFactor"
             ],
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 2,
             "extraRules": [],
             "incidents": [
-                "Butterfly Effect",
-                "Faraway Murder",
-                "Foul Evil",
-                "Hospital Incident",
-                "Increasing Unease",
-                "Missing Person",
-                "Murder",
-                "Spreading",
-                "Suicide"
+                "butterflyEffect",
+                "farawayMurder",
+                "foulEvil",
+                "hospitalIncident",
+                "increasingUnease",
+                "missingPerson",
+                "murder",
+                "spreading",
+                "suicide"
             ]
         }
     ]

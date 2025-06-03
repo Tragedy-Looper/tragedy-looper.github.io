@@ -1,6 +1,9 @@
 <script lang="ts">
-  import type { CharacterName } from '../../../../model/characters';
+    import { getString } from '../../+layout.svelte';
+  import { characters, rolesLookup } from '../../../../data';
+  import { isCharacterPlotless, type CharacterName } from '../../../../model/characters';
   import type { ICustomScriptRoleExclusiveSelectionGroup } from '../../../../model/customScript';
+  import { singleRolenames } from '../../../../model/roles';
   import Translation from '../../../../view/translation.svelte';
   import RoleSelect from './roleSelect.svelte';
 
@@ -10,19 +13,27 @@
 </script>
 
 <h3>
-  {#if group.role === 'Person'}
+  {#if group.role === 'person'}
     <Translation translationKey={'Number of Characters not in Plot roles'} />
   {:else}
-    {group.role}
+    {#each singleRolenames(group.role) as role, index}
+      {#if index > 0},
+      {/if}
+      <Translation translationKey={rolesLookup[role].name} />
+    {/each}
   {/if}
 </h3>
 
 {#if group.min !== group.max}
   <label>
-    {#if group.role === 'Person'}
-      <small>(<Translation translationKey={'This inculdes Characters like Mystery Boy'} />)</small>
+    {#if group.role === 'person'}
+      <small>(<Translation translationKey={['This inculdes Characters like {char}',{char:characters.filter(isCharacterPlotless).map(x=>$getString(x.name)).filter((x,i)=>i<2).join(` ${$getString('or')} `)}]} />)</small>
     {:else}
-      Number of {group.role}'s
+      Number of {#each singleRolenames(group.role) as role, index}
+        {#if index > 0},
+        {/if}
+        <Translation translationKey={rolesLookup[role].name} />
+      {/each}'s
     {/if}
     <input type="number" bind:value={$numberOfRoles} min={group.min} max={group.max} />
   </label>

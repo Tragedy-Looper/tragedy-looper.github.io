@@ -1,60 +1,57 @@
 {
-      "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
+    "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
     // For dev purposes
     // "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "id": "Haunted Stage",
-"name": "Haunted Stage",
+            "id": "hauntedStage",
+            "name": "Haunted Stage",
             "mainPlots": [
-                "Ancient Shrine",
-                "The Cursed Doll",
-                "Full Moon Night",
-                "A Strange Story",
-                "Prim Evil"
+                "ancientShrine",
+                "cursedDoll",
+                "fullMoonNight",
+                "strangeStory",
+                "primeEvilPlot"
             ],
             "subPlots": [
-                "The Deep Hole",
-                "Zombie Apocalypse",
-                "Expanding Urban Legend",
-                "Haunted City",
-                "Dance Party of the Dead",
-                "Max Crazy Gauge",
-                "Boundary Between Life and Death"
+                "deepHole",
+                "zombieApocalypse",
+                "expandingUrbanLegend",
+                "hauntedCity",
+                "dancePartyDead",
+                "maxCrazyGauge",
+                "boundaryBetweenLifeDeath"
             ],
             "aditionalRoles": [
-                "Zombie (Haunted Stage)"
+                "ZombieHaunted"
             ],
             "incidents": [
-                "Serial Murder",
-                "Increasing Unease",
-                "Mass Suicide",
-                "Sacrifice",
-                "Hospital Incident",
-                "Blasphemy",
-                "Monster Liberation",
-                "Hundred Demons Night",
-                "Curse",
-                "Infestation",
-                "Repeating Nightmare"
+                "serialMurder",
+                "increasingUnease",
+                "massSuicide",
+                "sacrificeHaunted",
+                "hospitalIncident",
+                "blasphemy",
+                "monsterLiberation",
+                "hundredDemonsNight",
+                "curse",
+                "infestation",
+                "repeatingNightmare"
             ],
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 2,
             "extraRules": [
                 {
-                    "id": "After Death",
-"name": "After Death",
+                    "name": "After Death",
                     "description": "Protagonist can place cards on the corpse, and use its :goodwill: abilities. However, there is a penalty for corpses that do not have After Death activity. Set Extra Gauge at 0 at the start of the game. Extra Gauge doesn’t reset after loop end."
                 },
                 {
-                    "id": "Extra Gauge Effect",
-"name": "Extra Gauge Effect",
+                    "name": "Extra Gauge Effect",
                     "description": "Madness [Extra Gauge 4 or more]: Decrease the Extra Gauge by 4 and kill the Protagonists at the end of the day."
                 },
                 {
-                    "id": "Extra Gauge Increase factors",
-"name": "Extra Gauge Increase factors",
-                    "description": "Action card set on a corpse that has no After Death activity (+1) Declaration of using :goodwill: abilities of corpse that has no After Death activity (+1) Using :goodwill: ability to corpse that has no After Death activity (+1) Subplot The Deep Hole at the end of the loop (+ 0-3) Role Ability of Monster (+2) Role Ability of Zombie (+1) Incident Effect (Sacrifice, Repeating Nightmare) (+1)."
+                    "name": "Extra Gauge Increase factors",
+                    "description": "Action card set on a corpse that has no :afterDeath: activity (+1) Declaration of using :goodwill: abilities of corpse that has no After Death activity (+1) Using :goodwill: ability to corpse that has no :afterDeath: activity (+1) Subplot :deepHole: at the end of the loop (+ 0-3) Role Ability of :monster: (+2) Role Ability of :zombie: (+1) Incident Effect (:sacrifice:, :repeatingNightmare:) (+1)."
                 }
             ]
         }

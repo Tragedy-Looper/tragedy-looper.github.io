@@ -1,76 +1,69 @@
 {
-      "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
+    "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
     // For dev purposes
     // "$schema": "../tragedys.schema.json",
     "tragedys": [
         {
-            "id": "Another Horizon R",
-"name": "Another Horizon R",
+            "id": "anotherHorizonR",
+            "name": "Another Horizon R",
             "mainPlots": [
-                "The Forbidden Future",
-                "Fairy-Tale Murderer",
-                "Mother Goose Mystery",
-                "Dimensional Merger",
-                "Into Nothingness"
+                "forbiddenFuture",
+                "fairyTaleMurderer",
+                "motherGooseMystery",
+                "dimensionalMerger",
+                "intoNothingness"
             ],
             "subPlots": [
-                "Jekyll and Hyde",
-                "The Plaguebringer",
-                "Puppeteer’s Strings",
-                "Through the Looking-Glass",
-                "Crossing World Lines",
-                "Unspeakable Horrors",
-                "Hysteria Virus"
+                "jekyllHyde",
+                "plaguebringer",
+                "puppeteersStrings",
+                "throughLookingGlass",
+                "crossingWorldLines",
+                "unspeakableHorrors",
+                "hysteriaVirus"
             ],
             "incidents": [
-                "Crime of Passion",
-                "Dimensional Distortion",
-                "Dimensional Perversion",
-                "Dimensional Fracture",
-                "Left Behind",
-                "Phantasmal Incident",
-                "Hospital Incident",
-                "Last Will",
-                "The Singularity",
-                "Seeping Daylight",
-                "The Murk of Despair"
+                "crimePassion",
+                "dimensionalDistortion",
+                "dimensionalPerversion",
+                "dimensionalFracture",
+                "leftBehind",
+                "phantasmalIncident",
+                "hospitalIncident",
+                "lastWill",
+                "singularity",
+                "seepingDaylight",
+                "murkDespair"
             ],
             "numberOfMainPlots": 1,
             "numberOfSubPlots": 2,
             "extraRules": [
                 {
-                    "id": "Warping",
-"name": "Warping",
+                    "name": "Warping",
                     "description": "Many abilities and effects in this Set “trigger a Warp”. If one or more Warps are triggered on a given day, at the end of that day, increase the Extra Gauge by 1. This increase happens before any other effects during the Day end phase, including Mandatory effects. Note that even if multiple Warps are triggered on the same day, the Gauge still only increases by 1. The Mastermind is not obliged to announce when a Warp is triggered. As such, if a Warp is triggered, but the loop ends before the end of that day, they can hide the fact that it triggered at all."
                 },
                 {
-                    "id": "Extra Gauge",
-"name": "Extra Gauge",
+                    "name": "Extra Gauge",
                     "description": "At the start of each loop, set the Extra Gauge to 0. Indicate World, even: Light World, odd: Dark World."
                 },
                 {
-                    "id": " :goodwill: & Wrarp",
-"name": " :goodwill: & Wrarp",
+                    "name": " Goodwill & Wrarp",
                     "description": "In addition to effects that trigger a Warp, a Warp is automatically triggered after each time any player, Protagonist or Mastermind, uses a 1x∞ :goodwill: ability. (Thematically these abilities have a powerful effect on the world, causing instability in the timeline.)"
                 },
                 {
-                    "id": "Change of Heart",
-"name": "Change of Heart",
+                    "name": "Change of Heart",
                     "description": "When determining if an Incident triggers, :goodwill: is counted instead of :paranoia:. When determining if a :goodwill: ability can be used, :paranoia: is counted instead of :goodwill:."
                 },
                 {
-                    "id": "Puppeted :goodwill: Refusal",
-"name": "Puppeted :goodwill: Refusal",
+                    "name": "Puppeted :goodwill: Refusal",
                     "description": "Puppeted :goodwill: Refusal is a new form of :goodwill: Refusal. In addition to providing the basic effect of :goodwill: Refusal, the Mastermind may use the :goodwill: abilities of a character with Puppeted :goodwill: Refusal during the Mastermind abilities phase, provided that there are sufficient counters on that character. When they do, they must announce what ability is being used, and any targets that ability has, if applicable."
                 },
                 {
-                    "id": "Dual Roles",
-"name": "Dual Roles",
+                    "name": "Dual Roles",
                     "description": "Some plots have dual roles. These roles are always on the same character. The first role is in the Light World, and the second role is in the Dark World. The character’s role is determined by the world they are in."
                 },
                 {
-                    "id": "Changes to Starting Action Cards",
-"name": "Changes to Starting Action Cards",
+                    "name": "Changes to Starting Action Cards",
                     "description": "The Protagonists additionally each have a :paranoia: +2 (1x∞) card, and the Mastermind additionally has a :goodwill: +1 card. Furthermore, the Mastermind also adds a Despair +1 (1x∞) card to their hand for the first loop only. (On later loops, they only gain it if an effect allows them to do so.)"
                 }
             ]

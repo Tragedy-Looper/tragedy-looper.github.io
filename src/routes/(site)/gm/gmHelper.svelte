@@ -2,7 +2,7 @@
   import { getRoleOfCast } from '../../../model/script';
   import '@picocss/pico/css/pico.css';
   import { type RoleName, type AbilityType, singleRolenames } from '../../../model/roles';
-  import { type CharacterName, isCharacterName } from '../../../model/characters';
+  import { type CharacterName } from '../../../model/characters';
   import {
     fromEntries,
     hasProp,
@@ -19,7 +19,14 @@
   import type { Role } from '../../../roles.g';
   import Translation from '../../../view/translation.svelte';
   import type { Script } from '../../../scripts.g';
-  import { charactersLookup, incidentsLookup, plotsLookup, rolesLookup } from '../../../data';
+  import {
+    charactersLookup,
+    incidentsLookup,
+    isCharacterId,
+    isPlotId,
+    plotsLookup,
+    rolesLookup,
+  } from '../../../data';
 
   export let selectedScript: Script;
 
@@ -84,8 +91,8 @@
       }
     })
     .map((x) => {
-      const { name, ...rest } = x;
-      return { role: name, ...rest } as Role & { role: RoleName; character: CharacterName };
+      const { id, ...rest } = x;
+      return { role: id, ...rest } as Role & { role: RoleName; character: CharacterName };
     });
   $: roleabilities = scriptRoles.flatMap((x) => x.abilities?.map((a) => ({ ...a, ...x })) ?? []);
 
@@ -140,22 +147,30 @@
     </tr>
   </thead>
   <tbody>
-    {#if scriptRoles.filter((x) => x.tags?.includes('Immortal')).length + showAll(abilities)
+    {#if scriptRoles.filter((x) => x.tags?.includes('immortal')).length + showAll(abilities)
         .filter((x) => includes(x['timing'], 'Always'))
         .sort(sortabilities).length > 0}
       <tr>
         <td colspan="7"><Translation translationKey={'Always'} /></td>
       </tr>
-      {#each scriptRoles.filter((x) => x.tags?.includes('Immortal')) as map}
+      {#each scriptRoles.filter((x) => x.tags?.includes('immortal')) as map}
         <tr>
           <td> <Translation translationKey={'mandatory'} /> </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td></td>
           <td> <Translation translationKey={"This Character can't die"} /> </td>
           <td>
-            <Translation translationKey={map.role} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
           </td>
         </tr>
       {/each}
@@ -167,7 +182,9 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             {#if includes(map.timing, 'Last Day')}
@@ -180,8 +197,15 @@
             <OncePer ability={map} />
           </td>
           <td>
-            <Translation translationKey={map.role} />
-            <Translation translationKey={map.plot} />
+            {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+            {#if isPlotId(map.plot)}
+              <Translation translationKey={plotsLookup[map.plot].name} />
+            {/if}
           </td>
         </tr>
       {/each}
@@ -198,7 +222,9 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             {#if includes(map.timing, 'Last Day')}
@@ -211,8 +237,16 @@
             <OncePer ability={map} />
           </td>
           <td>
-            <Translation translationKey={map.role} />
-            <Translation translationKey={map.plot} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
+            {#if isPlotId(map.plot)}
+              <Translation translationKey={plotsLookup[map.plot].name} />
+            {/if}
           </td>
         </tr>
       {/each}
@@ -229,7 +263,9 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             {#if includes(map.timing, 'Last Day')}
@@ -242,8 +278,16 @@
             <OncePer ability={map} />
           </td>
           <td>
-            <Translation translationKey={map.role} />
-            <Translation translationKey={map.plot} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
+            {#if isPlotId(map.plot)}
+              <Translation translationKey={plotsLookup[map.plot].name} />
+            {/if}
           </td>
         </tr>
       {/each}
@@ -256,7 +300,9 @@
         <tr>
           <td> <Translation translationKey={'mandatory'} /> </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             <Translation translationKey={['On Loop {day}', { day: map['enters on loop'] }]} />
@@ -264,7 +310,13 @@
 
           <td> <Translation translationKey={'Enters Play'} /> </td>
           <td>
-            <Translation translationKey={map.role} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
           </td>
         </tr>
       {/each}
@@ -277,7 +329,9 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             {#if includes(map.timing, 'Last Day')}
@@ -291,8 +345,16 @@
             <OncePer ability={map} />
           </td>
           <td>
-            <Translation translationKey={map.role} />
-            <Translation translationKey={map.plot} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
+            {#if isPlotId(map.plot)}
+              <Translation translationKey={plotsLookup[map.plot].name} />
+            {/if}
           </td>
         </tr>
       {/each}
@@ -305,7 +367,9 @@
         <tr>
           <td> <Translation translationKey={'mandatory'} /> </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             <Translation translationKey={['On Day {day}', { day: map['enters on day'] }]} />
@@ -313,7 +377,13 @@
 
           <td> <Translation translationKey={'Enters Play'} /> </td>
           <td>
-            <Translation translationKey={map.role} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
           </td>
         </tr>
       {/each}
@@ -330,7 +400,9 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             {#if includes(map.timing, 'Last Day')}
@@ -344,8 +416,16 @@
             <OncePer ability={map} />
           </td>
           <td>
-            <Translation translationKey={map.role} />
-            <Translation translationKey={map.plot} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
+            {#if isPlotId(map.plot)}
+              <Translation translationKey={plotsLookup[map.plot].name} />
+            {/if}
           </td>
         </tr>
       {/each}
@@ -362,7 +442,9 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             {#if includes(map.timing, 'Last Day')}
@@ -376,8 +458,16 @@
             <OncePer ability={map} />
           </td>
           <td>
-            <Translation translationKey={map.role} />
-            <Translation translationKey={map.plot} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
+            {#if isPlotId(map.plot)}
+              <Translation translationKey={plotsLookup[map.plot].name} />
+            {/if}
           </td>
         </tr>
       {/each}
@@ -394,7 +484,9 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             {#if includes(map.timing, 'Last Day')}
@@ -408,8 +500,16 @@
             <OncePer ability={map} />
           </td>
           <td>
-            <Translation translationKey={map.role} />
-            <Translation translationKey={map.plot} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
+            {#if isPlotId(map.plot)}
+              <Translation translationKey={plotsLookup[map.plot].name} />
+            {/if}
           </td>
         </tr>
       {/each}
@@ -426,7 +526,9 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             {#if includes(map.timing, 'Last Day')}
@@ -440,8 +542,16 @@
             <OncePer ability={map} />
           </td>
           <td>
-            <Translation translationKey={map.role} />
-            <Translation translationKey={map.plot} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
+            {#if isPlotId(map.plot)}
+              <Translation translationKey={plotsLookup[map.plot].name} />
+            {/if}
           </td>
         </tr>
       {/each}
@@ -453,12 +563,20 @@
             <Translation translationKey={map.goodwillRefusel} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td></td>
           <td> <Translation translationKey={'Refuse Goodwill Ability'} /> </td>
           <td>
-            <Translation translationKey={map.role} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
           </td>
         </tr>
       {/each}
@@ -475,7 +593,9 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             {#if includes(map.timing, 'Last Day')}
@@ -489,8 +609,16 @@
             <OncePer ability={map} />
           </td>
           <td>
-            <Translation translationKey={map.role} />
-            <Translation translationKey={map.plot} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
+            {#if isPlotId(map.plot)}
+              <Translation translationKey={plotsLookup[map.plot].name} />
+            {/if}
           </td>
         </tr>
       {/each}
@@ -502,7 +630,9 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             {#if includes(map.timing, 'Last Day')}
@@ -516,13 +646,21 @@
             <OncePer ability={map} />
           </td>
           <td>
-            <Translation translationKey={map.role} />
-            <Translation translationKey={map.plot} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
+            {#if isPlotId(map.plot)}
+              <Translation translationKey={plotsLookup[map.plot].name} />
+            {/if}
           </td>
         </tr>
       {/each}
       {#each usedIncidents as i}
-        {@const char = isCharacterName(i.culprit) ? charactersLookup[i.culprit] : undefined}
+        {@const char = isCharacterId(i.culprit) ? charactersLookup[i.culprit] : undefined}
         {@const limit = char ? char.paranoiaLimit : i.mob}
         {#each i.effect as e}
           <tr>
@@ -532,8 +670,9 @@
             <td>
               {#if char == undefined}
                 <Translation translationKey={'Mob'} />:
+              {:else}
+                <Translation translationKey={char.name} />
               {/if}
-              <Translation translationKey={i.culprit} />
             </td>
             <td>
               <Translation translationKey={['On day {day}', { day: i.day }]} />
@@ -546,7 +685,10 @@
             <td>
               {#if char?.doseNotTriggerIncidentEffect}
                 <Translation translationKey={'This has no effect but the incident is triggered.'} />
-              {:else if char?.name && rolesLookup[getRoleOfCast(selectedScript, char.id) ?? 'Person']?.doseNotTriggerIncidentEffect}
+              {:else if isCharacterId(char?.id) && [getRoleOfCast(selectedScript, char.id)]
+                  .filter((x) => x != undefined)
+                  .flatMap(singleRolenames)
+                  .some((role) => rolesLookup[role].doseNotTriggerIncidentEffect)}
                 <Translation translationKey={'This has no effect but the incident is triggered.'} />
               {:else}
                 <Translation translationKey={e.description} />
@@ -561,10 +703,10 @@
                   {#if index > 0}
                     →
                   {/if}
-                  <Translation translationKey={incident} />
+                  <Translation translationKey={incidentsLookup[incident].name} />
                 {/each}
               {:else}
-                <Translation translationKey={i.incident} />
+                <Translation translationKey={incidentsLookup[i.incident].name} />
               {/if}
             </td>
           </tr>
@@ -583,7 +725,9 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             {#if includes(map.timing, 'Last Day')}
@@ -597,8 +741,16 @@
             <OncePer ability={map} />
           </td>
           <td>
-            <Translation translationKey={map.role} />
-            <Translation translationKey={map.plot} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
+            {#if map.plot}
+              <Translation translationKey={plotsLookup[map.plot].name} />
+            {/if}
           </td>
         </tr>
       {/each}
@@ -615,7 +767,9 @@
             <Translation translationKey={map.type} />
           </td>
           <td>
-            <Translation translationKey={map.character} />
+            {#if map.character}
+              <Translation translationKey={charactersLookup[map.character].name} />
+            {/if}
           </td>
           <td>
             {#if includes(map.timing, 'Last Day')}
@@ -629,8 +783,16 @@
             <OncePer ability={map} />
           </td>
           <td>
-            <Translation translationKey={map.role} />
-            <Translation translationKey={map.plot} />
+                        {#each singleRolenames(map.role) as role, i}
+              {#if i > 0}
+                ,
+              {/if}
+              <Translation translationKey={rolesLookup[role].name} />
+            {/each}
+
+            {#if map.plot}
+              <Translation translationKey={plotsLookup[map.plot].name} />
+            {/if}
           </td>
         </tr>
       {/each}

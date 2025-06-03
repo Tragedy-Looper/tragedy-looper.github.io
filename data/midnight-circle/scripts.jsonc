@@ -10,13 +10,13 @@
                 "name": "Midnight Circle",
                 "number": 1
             }],
-            "tragedySet": "Basic Tragedy",
+            "tragedySet": "basicTragedy",
             "mainPlot": [
-                "Change of Future"
+                "changeOfFuture"
             ],
             "subPlots": [
-                "A Love Affair",
-                "Circle of Friends"
+                "loveAffair",
+                "circleFriends"
             ],
             "difficultySets": [
                 {
@@ -30,35 +30,35 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "rich-student": "Conspiracy Theorist",
-                "Class Rep": "Person",
-                "Alien": "Friend",
-                "Informer": "Loved One",
-                "Forensic Specialist": "Friend",
-                "A.I.": "Time Traveler",
-                "Patient": "Cultist",
-                "Scientist": "Lover"
+                "richStudent": "conspiracyTheorist",
+                "classRep": "person",
+                "alien": "friend",
+                "informer": "lovedOne",
+                "forensicSpecialist": "friend",
+                "ai": "timeTraveler",
+                "patient": "cultist",
+                "scientist": "lover"
             },
             "incidents": [
                 {
                     "day": 3,
-                    "incident": "Murder",
-                    "culprit": "Informer"
+                    "incident": "murder",
+                    "culprit": "informer"
                 },
                 {
                     "day": 4,
-                    "incident": "Butterfly Effect",
-                    "culprit": "A.I."
+                    "incident": "butterflyEffect",
+                    "culprit": "ai"
                 },
                 {
                     "day": 5,
-                    "incident": "Suicide",
-                    "culprit": "rich-student"
+                    "incident": "suicide",
+                    "culprit": "richStudent"
                 },
                 {
                     "day": 6,
-                    "incident": "Hospital Incident",
-                    "culprit": "Scientist"
+                    "incident": "hospitalIncident",
+                    "culprit": "scientist"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
@@ -72,13 +72,13 @@
                 "name": "Midnight Circle",
                 "number": 2
             }],
-            "tragedySet": "Basic Tragedy",
+            "tragedySet": "basicTragedy",
             "mainPlot": [
-                "Change of Future"
+                "changeOfFuture"
             ],
             "subPlots": [
-                "A Love Affair",
-                "Circle of Friends"
+                "loveAffair",
+                "circleFriends"
             ],
             "difficultySets": [
                 {
@@ -96,36 +96,36 @@
             ],
             "daysPerLoop": 7,
             "cast": {
-                "Boy Student": "Serial Killer",
-                "Girl Student": "Key Person",
-                "rich-student": "Killer",
-                "Shrine Maiden": "Friend",
-                "Police Officer": "Brain",
-                "Office Worker": "Person",
-                "Informer": "Person",
-                "Doctor": "Conspiracy Theorist",
-                "Patient": "Cultist"
+                "boyStudent": "serialKiller",
+                "girlStudent": "keyPerson",
+                "richStudent": "killer",
+                "shrineMaiden": "friend",
+                "policeOfficer": "brain",
+                "officeWorker": "person",
+                "informer": "person",
+                "doctor": "conspiracyTheorist",
+                "patient": "cultist"
             },
             "incidents": [
                 {
                     "day": 2,
-                    "incident": "Increasing Unease",
-                    "culprit": "Patient"
+                    "incident": "increasingUnease",
+                    "culprit": "patient"
                 },
                 {
                     "day": 4,
-                    "incident": "Hospital Incident",
-                    "culprit": "Shrine Maiden"
+                    "incident": "hospitalIncident",
+                    "culprit": "shrineMaiden"
                 },
                 {
                     "day": 5,
-                    "incident": "Missing Person",
-                    "culprit": "Boy Student"
+                    "incident": "missingPerson",
+                    "culprit": "boyStudent"
                 },
                 {
                     "day": 7,
-                    "incident": "Murder",
-                    "culprit": "Office Worker"
+                    "incident": "murder",
+                    "culprit": "officeWorker"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
@@ -139,13 +139,13 @@
                 "name": "Midnight Circle",
                 "number": 3
             }],
-            "tragedySet": "Basic Tragedy",
+            "tragedySet": "basicTragedy",
             "mainPlot": [
-                "Change of Future"
+                "changeOfFuture"
             ],
             "subPlots": [
-                "The Hidden Freak",
-                "Circle of Friends"
+                "hiddenFreak",
+                "circleFriends"
             ],
             "difficultySets": [
                 {
@@ -159,31 +159,31 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "Girl Student": "Person",
-                "Class Rep": "Friend",
-                "Shrine Maiden": "Friend",
-                "Alien": "Person",
-                "Informer": "Conspiracy Theorist",
-                "Pop Idol": "Cultist",
-                "Journalist": "Person",
-                "Doctor": "Serial Killer",
-                "Patient": "Time Traveler"
+                "girlStudent": "person",
+                "classRep": "friend",
+                "shrineMaiden": "friend",
+                "alien": "person",
+                "informer": "conspiracyTheorist",
+                "popIdol": "cultist",
+                "journalist": "person",
+                "doctor": "serialKiller",
+                "patient": "timeTraveler"
             },
             "incidents": [
                 {
                     "day": 2,
-                    "incident": "Butterfly Effect",
-                    "culprit": "Class Rep"
+                    "incident": "butterflyEffect",
+                    "culprit": "classRep"
                 },
                 {
                     "day": 4,
-                    "incident": "Faraway Murder",
-                    "culprit": "Doctor"
+                    "incident": "farawayMurder",
+                    "culprit": "doctor"
                 },
                 {
                     "day": 5,
-                    "incident": "Hospital Incident",
-                    "culprit": "Informer"
+                    "incident": "hospitalIncident",
+                    "culprit": "informer"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
@@ -197,13 +197,13 @@
                 "name": "Midnight Circle",
                 "number": 4
             }],
-            "tragedySet": "Midnight Zone",
+            "tragedySet": "midnightZone",
             "mainPlot": [
-                "Male Confrontation"
+                "maleConfrontation"
             ],
             "subPlots": [
-                "Unsafe Trigger",
-                "Love-Hate Spiral"
+                "unsafeTrigger",
+                "loveHateSpiral"
             ],
             "difficultySets": [
                 {
@@ -217,29 +217,29 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "Boy Student": "Person",
-                "Girl Student": "Obstinate",
-                "rich-student": "Friend",
-                "Shrine Maiden": "Person",
-                "Alien": "Factor",
-                "Police Officer": "Person",
-                "Office Worker": "Ninja"
+                "boyStudent": "person",
+                "girlStudent": "obstinate",
+                "richStudent": "friend",
+                "shrineMaiden": "person",
+                "alien": "factor",
+                "policeOfficer": "person",
+                "officeWorker": "ninja"
             },
             "incidents": [
                 {
                     "day": 2,
-                    "incident": "Confession",
-                    "culprit": "rich-student"
+                    "incident": "confession",
+                    "culprit": "richStudent"
                 },
                 {
                     "day": 4,
-                    "incident": "Confession",
-                    "culprit": "Office Worker"
+                    "incident": "confession",
+                    "culprit": "officeWorker"
                 },
                 {
                     "day": 4,
-                    "incident": "Increasing Unease",
-                    "culprit": "Girl Student"
+                    "incident": "increasingUnease",
+                    "culprit": "girlStudent"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
@@ -253,13 +253,13 @@
                 "name": "Midnight Circle",
                 "number": 5
             }],
-            "tragedySet": "Midnight Zone",
+            "tragedySet": "midnightZone",
             "mainPlot": [
-                "Secret Record"
+                "secretRecord"
             ],
             "subPlots": [
-                "Dice of the Gods",
-                "Unsafe Trigger"
+                "diceOfGods",
+                "unsafeTrigger"
             ],
             "difficultySets": [
                 {
@@ -273,39 +273,39 @@
             ],
             "daysPerLoop": 4,
             "cast": {
-                "Boy Student": "Obstinate",
-                "rich-student": "Person",
-                "Shrine Maiden": "Person",
-                "Alien": "Conspiracy Theorist",
-                "Godly Being": [
-                    "Brain",
+                "boyStudent": "obstinate",
+                "richStudent": "person",
+                "shrineMaiden": "person",
+                "alien": "conspiracyTheorist",
+                "godlyBeing": [
+                    "brain",
                     {
                         "enters on loop": 2
                     }
                 ],
-                "Police Officer": "Serial Killer",
-                "Office Worker": "Factor",
-                "Doctor": "Person",
-                "Patient": "Key Person"
+                "policeOfficer": "serialKiller",
+                "officeWorker": "factor",
+                "doctor": "person",
+                "patient": "keyPerson"
             },
             "incidents": [
                 {
                     "day": 2,
                     "incident": [
-                        "Fake Incident",
-                        "Hospital Incident"
+                        "fakeIncident",
+                        "hospitalIncident"
                     ],
-                    "culprit": "Boy Student"
+                    "culprit": "boyStudent"
                 },
                 {
                     "day": 3,
-                    "incident": "Increasing Unease",
-                    "culprit": "rich-student"
+                    "incident": "increasingUnease",
+                    "culprit": "richStudent"
                 },
                 {
                     "day": 4,
-                    "incident": "Serial Murder",
-                    "culprit": "Doctor"
+                    "incident": "serialMurder",
+                    "culprit": "doctor"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
@@ -319,13 +319,13 @@
                 "name": "Midnight Circle",
                 "number": 6
             }],
-            "tragedySet": "Midnight Zone",
+            "tragedySet": "midnightZone",
             "mainPlot": [
-                "The Sealed Item"
+                "sealedItem"
             ],
             "subPlots": [
-                "Love-Hate Spiral",
-                "Worshippers of the Apocalypse"
+                "loveHateSpiral",
+                "worshippersApocalypse"
             ],
             "difficultySets": [
                 {
@@ -343,45 +343,45 @@
             ],
             "daysPerLoop": 4,
             "cast": {
-                "Boy Student": "Obstinate",
-                "Class Rep": "Friend",
-                "Mystery Boy": "Immortal",
-                "Shrine Maiden": "Person",
-                "Illusion": "Brain",
-                "Pop Idol": "Person",
-                "Journalist": "Prophet",
-                "Doctor": "Cultist",
-                "Henchman": "Person"
+                "boyStudent": "obstinate",
+                "classRep": "friend",
+                "mysteryBoy": "immortalRole",
+                "shrineMaiden": "person",
+                "illusion": "brain",
+                "popIdol": "person",
+                "journalist": "prophet",
+                "doctor": "cultist",
+                "henchman": "person"
             },
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "Suicide",
-                    "culprit": "Pop Idol"
+                    "incident": "suicide",
+                    "culprit": "popIdol"
                 },
                 {
                     "day": 2,
                     "incident": [
-                        "Fake Incident",
-                        "Breakthrough"
+                        "fakeIncident",
+                        "breakthrough"
                     ],
-                    "culprit": "Henchman"
+                    "culprit": "henchman"
                 },
                 {
                     "day": 3,
                     "incident": [
-                        "Fake Incident",
-                        "Uproar"
+                        "fakeIncident",
+                        "uproar"
                     ],
-                    "culprit": "Class Rep"
+                    "culprit": "classRep"
                 },
                 {
                     "day": 4,
                     "incident": [
-                        "Fake Incident",
-                        "Hospital Incident"
+                        "fakeIncident",
+                        "hospitalIncident"
                     ],
-                    "culprit": "Boy Student"
+                    "culprit": "boyStudent"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
@@ -395,13 +395,13 @@
                 "name": "Midnight Circle",
                 "number": 7
             }],
-            "tragedySet": "Midnight Zone",
+            "tragedySet": "midnightZone",
             "mainPlot": [
-                "Fated Connections"
+                "fatedConnections"
             ],
             "subPlots": [
-                "Unanswered Heart",
-                "Showtime of Death"
+                "unansweredHeart",
+                "showtimeDeath"
             ],
             "difficultySets": [
                 {
@@ -411,36 +411,36 @@
             ],
             "daysPerLoop": 6,
             "cast": {
-                "Boy Student": "Magician",
-                "rich-student": "Person",
-                "Mystery Boy": "Prophet",
-                "Shrine Maiden": "Serial Killer",
-                "Police Officer": "Magician",
-                "Pop Idol": "Friend",
-                "Journalist": "Conspiracy Theorist",
-                "Doctor": "Person",
-                "Patient": "Immortal"
+                "boyStudent": "magician",
+                "richStudent": "person",
+                "mysteryBoy": "prophet",
+                "shrineMaiden": "serialKiller",
+                "policeOfficer": "magician",
+                "popIdol": "friend",
+                "journalist": "conspiracyTheorist",
+                "doctor": "person",
+                "patient": "immortalRole"
             },
             "incidents": [
                 {
                     "day": 3,
-                    "incident": "Faked Suicide",
-                    "culprit": "Boy Student"
+                    "incident": "fakedSuicide",
+                    "culprit": "boyStudent"
                 },
                 {
                     "day": 4,
-                    "incident": "Missing Person",
-                    "culprit": "rich-student"
+                    "incident": "missingPerson",
+                    "culprit": "richStudent"
                 },
                 {
                     "day": 5,
-                    "incident": "Uproar",
-                    "culprit": "Journalist"
+                    "incident": "uproar",
+                    "culprit": "journalist"
                 },
                 {
                     "day": 6,
-                    "incident": "Confession",
-                    "culprit": "Patient"
+                    "incident": "confession",
+                    "culprit": "patient"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
@@ -454,13 +454,13 @@
                 "name": "Midnight Circle",
                 "number": 8
             }],
-            "tragedySet": "Mystery Circle",
+            "tragedySet": "mysteryCircle",
             "mainPlot": [
-                "The Black School"
+                "blackSchool"
             ],
             "subPlots": [
-                "Tricky Twins",
-                "Dance of Fools"
+                "trickyTwins",
+                "danceFools"
             ],
             "difficultySets": [
                 {
@@ -470,35 +470,35 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "Boy Student": "Brain",
-                "rich-student": "Fool",
-                "Shrine Maiden": "Person",
-                "Alien": "Twin",
-                "Police Officer": "Paranoiac",
-                "Office Worker": "Person",
-                "Journalist": "Person",
-                "Patient": "Friend"
+                "boyStudent": "brain",
+                "richStudent": "fool",
+                "shrineMaiden": "person",
+                "alien": "twin",
+                "policeOfficer": "paranoiac",
+                "officeWorker": "person",
+                "journalist": "person",
+                "patient": "friend"
             },
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "Portent",
-                    "culprit": "rich-student"
+                    "incident": "portent",
+                    "culprit": "richStudent"
                 },
                 {
                     "day": 2,
-                    "incident": "The Silver Bullet",
-                    "culprit": "Police Officer"
+                    "incident": "silverBullet",
+                    "culprit": "policeOfficer"
                 },
                 {
                     "day": 4,
-                    "incident": "Hospital Incident",
-                    "culprit": "Shrine Maiden"
+                    "incident": "hospitalIncident",
+                    "culprit": "shrineMaiden"
                 },
                 {
                     "day": 5,
-                    "incident": "Serial Murder",
-                    "culprit": "Alien"
+                    "incident": "serialMurder",
+                    "culprit": "alien"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
@@ -512,13 +512,13 @@
                 "name": "Midnight Circle",
                 "number": 9
             }],
-            "tragedySet": "Mystery Circle",
+            "tragedySet": "mysteryCircle",
             "mainPlot": [
-                "A Quilt of Incidents"
+                "quiltIncidents"
             ],
             "subPlots": [
-                "An Absolute Will",
-                "Tricky Twins"
+                "anAbsoluteWill",
+                "trickyTwins"
             ],
             "difficultySets": [
                 {
@@ -532,41 +532,41 @@
             ],
             "daysPerLoop": 5,
             "cast": {
-                "Boy Student": "Paranoiac",
-                "Girl Student": "Person",
-                "rich-student": "Person",
-                "Shrine Maiden": "Twin",
-                "Office Worker": "Person",
-                "Journalist": "Conspiracy Theorist",
-                "Pop Idol": "Person",
-                "Patient": "Fool",
-                "Nurse": "Obstinate"
+                "boyStudent": "paranoiac",
+                "girlStudent": "person",
+                "richStudent": "person",
+                "shrineMaiden": "twin",
+                "officeWorker": "person",
+                "journalist": "conspiracyTheorist",
+                "popIdol": "person",
+                "patient": "fool",
+                "nurse": "obstinate"
             },
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "Increasing Unease",
-                    "culprit": "Nurse"
+                    "incident": "increasingUnease",
+                    "culprit": "nurse"
                 },
                 {
                     "day": 2,
-                    "incident": "Serial Murder",
-                    "culprit": "Pop Idol"
+                    "incident": "serialMurder",
+                    "culprit": "popIdol"
                 },
                 {
                     "day": 3,
-                    "incident": "Serial Murder",
-                    "culprit": "Shrine Maiden"
+                    "incident": "serialMurder",
+                    "culprit": "shrineMaiden"
                 },
                 {
                     "day": 4,
-                    "incident": "Serial Murder",
-                    "culprit": "Patient"
+                    "incident": "serialMurder",
+                    "culprit": "patient"
                 },
                 {
                     "day": 5,
-                    "incident": "Serial Murder",
-                    "culprit": "Shrine Maiden"
+                    "incident": "serialMurder",
+                    "culprit": "shrineMaiden"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
@@ -580,13 +580,13 @@
                 "name": "Midnight Circle",
                 "number": 10
             }],
-            "tragedySet": "Mystery Circle",
+            "tragedySet": "mysteryCircle",
             "mainPlot": [
-                "A Drop of Strychnine"
+                "dropStrychnine"
             ],
             "subPlots": [
-                "I am a Master Detective",
-                "The Hidden Freak"
+                "masterDetective",
+                "hiddenFreak"
             ],
             "difficultySets": [
                 {
@@ -596,41 +596,41 @@
             ],
             "daysPerLoop": 7,
             "cast": {
-                "Girl Student": "Friend",
-                "rich-student": "Private Investigator",
-                "Shrine Maiden": "Poisoner",
-                "Alien": "Key Person",
-                "Informer": "Person",
-                "Pop Idol": "Friend",
-                "Boss": [
-                    "Conspiracy Theorist",
+                "girlStudent": "friend",
+                "richStudent": "privateInvestigator",
+                "shrineMaiden": "poisoner",
+                "alien": "keyPerson",
+                "informer": "person",
+                "popIdol": "friend",
+                "boss": [
+                    "conspiracyTheorist",
                     {
                         "Turf": "School"
                     }
                 ],
-                "Doctor": "Fool",
-                "Patient": "Serial Killer"
+                "doctor": "fool",
+                "patient": "serialKiller"
             },
             "incidents": [
                 {
                     "day": 2,
-                    "incident": "Faked Suicide",
-                    "culprit": "Shrine Maiden"
+                    "incident": "fakedSuicide",
+                    "culprit": "shrineMaiden"
                 },
                 {
                     "day": 3,
-                    "incident": "Suicide",
-                    "culprit": "Girl Student"
+                    "incident": "suicide",
+                    "culprit": "girlStudent"
                 },
                 {
                     "day": 5,
-                    "incident": "Bestial Murder",
-                    "culprit": "Boss"
+                    "incident": "bestialMurder",
+                    "culprit": "boss"
                 },
                 {
                     "day": 6,
-                    "incident": "Serial Murder",
-                    "culprit": "Doctor"
+                    "incident": "serialMurder",
+                    "culprit": "doctor"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
@@ -644,13 +644,13 @@
                 "name": "Midnight Circle",
                 "number": 11
             }],
-            "tragedySet": "Mystery Circle",
+            "tragedySet": "mysteryCircle",
             "mainPlot": [
-                "A Quilt of Incidents"
+                "quiltIncidents"
             ],
             "subPlots": [
-                "Dance of Fools",
-                "Isolated Institution Psycho"
+                "danceFools",
+                "isolatedInstitutionPsycho"
             ],
             "difficultySets": [
                 {
@@ -660,36 +660,36 @@
             ],
             "daysPerLoop": 4,
             "cast": {
-                "rich-student": "Fool",
-                "Class Rep": "Person",
-                "Shrine Maiden": "Paranoiac",
-                "Police Officer": "Therapist",
-                "Office Worker": "Friend",
-                "Journalist": "Person",
-                "Doctor": "Person",
-                "Patient": "Person",
-                "Henchman": "Conspiracy Theorist"
+                "richStudent": "fool",
+                "classRep": "person",
+                "shrineMaiden": "paranoiac",
+                "policeOfficer": "therapist",
+                "officeWorker": "friend",
+                "journalist": "person",
+                "doctor": "person",
+                "patient": "person",
+                "henchman": "conspiracyTheorist"
             },
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "A Suspicious Letter",
-                    "culprit": "Class Rep"
+                    "incident": "suspiciousLetter",
+                    "culprit": "classRep"
                 },
                 {
                     "day": 2,
-                    "incident": "Increasing Unease",
-                    "culprit": "Henchman"
+                    "incident": "increasingUnease",
+                    "culprit": "henchman"
                 },
                 {
                     "day": 3,
-                    "incident": "Increasing Unease",
-                    "culprit": "Patient"
+                    "incident": "increasingUnease",
+                    "culprit": "patient"
                 },
                 {
                     "day": 4,
-                    "incident": "Portent",
-                    "culprit": "rich-student"
+                    "incident": "portent",
+                    "culprit": "richStudent"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
@@ -703,13 +703,13 @@
                 "name": "Midnight Circle",
                 "number": 12
             }],
-            "tragedySet": "Mystery Circle",
+            "tragedySet": "mysteryCircle",
             "mainPlot": [
-                "Tightrope Plan"
+                "tightropePlan"
             ],
             "subPlots": [
-                "An Absolute Will",
-                "I am a Master Detective"
+                "anAbsoluteWill",
+                "masterDetective"
             ],
             "difficultySets": [
                 {
@@ -723,47 +723,47 @@
             ],
             "daysPerLoop": 7,
             "cast": {
-                "Girl Student": "Conspiracy Theorist",
-                "rich-student": "Killer",
-                "Mystery Boy": "Poisoner",
-                "Alien": "Obstinate",
-                "Police Officer": "Private Investigator",
-                "Informer": "Person",
-                "Pop Idol": "Friend",
-                "Patient": "Brain",
-                "Scientist": "Person",
-                "Henchman": "Person"
+                "girlStudent": "conspiracyTheorist",
+                "richStudent": "killer",
+                "mysteryBoy": "poisoner",
+                "alien": "obstinate",
+                "policeOfficer": "privateInvestigator",
+                "informer": "person",
+                "popIdol": "friend",
+                "patient": "brain",
+                "scientist": "person",
+                "henchman": "person"
             },
             "incidents": [
                 {
                     "day": 1,
-                    "incident": "Hospital Incident",
-                    "culprit": "Informer"
+                    "incident": "hospitalIncident",
+                    "culprit": "informer"
                 },
                 {
                     "day": 2,
-                    "incident": "Terrorism",
-                    "culprit": "Alien"
+                    "incident": "terrorism",
+                    "culprit": "alien"
                 },
                 {
                     "day": 4,
-                    "incident": "Portent",
-                    "culprit": "Henchman"
+                    "incident": "portent",
+                    "culprit": "henchman"
                 },
                 {
                     "day": 5,
-                    "incident": "Bestial Murder",
-                    "culprit": "Girl Student"
+                    "incident": "bestialMurder",
+                    "culprit": "girlStudent"
                 },
                 {
                     "day": 6,
-                    "incident": "The Silver Bullet",
-                    "culprit": "Scientist"
+                    "incident": "silverBullet",
+                    "culprit": "scientist"
                 },
                 {
                     "day": 7,
-                    "incident": "Bestial Murder",
-                    "culprit": "rich-student"
+                    "incident": "bestialMurder",
+                    "culprit": "richStudent"
                 }
             ],
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",

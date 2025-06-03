@@ -1,7 +1,10 @@
 <script lang="ts">
   import { derived } from 'svelte/store';
   import type { AdditionalOptions } from '../../../../model/customScript';
- 
+  import Translation from '../../../../view/translation.svelte';
+  import { charactersLookup, incidentsLookup, plotsLookup, rolesLookup } from '../../../../data';
+  import { singleRolenames } from '../../../../model/roles';
+
   // export let option: AdditionalOptions;
 
   let { option }: { option: AdditionalOptions } = $props();
@@ -50,32 +53,44 @@
         <option value={undefined}>Not Set</option>
       {/if}
       {#if option.option.type == 'plot'}
-        {#each otherPlots.filter((p) => !$selectodPlots.map(x=>x.id).includes(p)) as p}
-          <option value={p}>{p}</option>
+        {#each otherPlots.filter((p) => !$selectodPlots.map((x) => x.id).includes(p)) as p}
+          <option value={p}><Translation translationKey={plotsLookup[p].name} /></option>
         {/each}
       {:else if option.option.type == 'character'}
         {#each $usedCharacters as p}
-          <option value={p}>{p}</option>
+          <option value={p}><Translation translationKey={charactersLookup[p].name} /></option>
         {/each}
       {:else if option.option.type == 'location'}
         {#each option.script.locations as p}
-          <option value={p}>{p}</option>
+          <option value={p}><Translation translationKey={p} /></option>
         {/each}
       {:else if option.option.type == 'incident'}
         {#each $incidents as p}
-          <option value={p}>{p}</option>
+          <option value={p}><Translation translationKey={incidentsLookup[p].name} /></option>
         {/each}
       {:else if option.option.type == 'role not in plot'}
         {#each $unusedRoles as p}
-          <option value={p}>{p}</option>
+          <option value={p}
+            >{#each singleRolenames(p) as role}<Translation
+                translationKey={rolesLookup[role].name}
+              />{/each}</option
+          >
         {/each}
       {:else if option.option.type == 'role in plot'}
         {#each $usedRoles as p}
-          <option value={p}>{p}</option>
+          <option value={p}
+            >{#each singleRolenames(p) as role}<Translation
+                translationKey={rolesLookup[role].name}
+              />{/each}</option
+          >
         {/each}
       {:else if option.option.type == 'role in tragedy set'}
         {#each $allRoles as p}
-          <option value={p}>{p}</option>
+          <option value={p}
+            >{#each singleRolenames(p) as role}<Translation
+                translationKey={rolesLookup[role].name}
+              />{/each}</option
+          >
         {/each}
       {:else if Array.isArray(option.option.type)}
         {#each option.option.type ?? [] as p}

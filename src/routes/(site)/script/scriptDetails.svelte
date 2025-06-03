@@ -8,9 +8,7 @@
     isLocationName,
     type CharacterName,
     type LocationName,
-    isCharacterName,
   } from '../../../model/characters';
-  import { stringifySearchForPlayerAid } from '../../../serilezer';
   import { distinct, isArray, keys } from '../../../misc';
   import { base } from '$app/paths';
   import Translation from '../../../view/translation.svelte';
@@ -20,6 +18,7 @@
   import {
     charactersLookup,
     incidentsLookup,
+    isCharacterId,
     plotsLookup,
     rolesLookup,
     tragedysLookup,
@@ -28,6 +27,10 @@
   import { isPlotName, type PlotName } from '../../../model/plots';
   import { type Character } from '../../../characters.g';
   import { type Plot } from '../../../plots.g';
+  import { generateUrl } from '../../../zipQueryHelper';
+  import { linkOverview } from './overview/+page.svelte';
+  import { linkPlayerAid } from '../../player/+page.svelte';
+  import { linkScriptEdit } from './customScript/+page.svelte';
   export let script: Script | undefined;
 
   let alwaysTransmitCharacters: boolean[] = characterscomesInLater.map(() => true);
@@ -49,19 +52,22 @@
     .filter(([x]) => x)
     .map(([, x]) => x);
 
-  function getParams(script: Script, additionalCharacters: CharacterName[]) {
+  function getPlayerAidLink(script: Script, additionalCharacters: CharacterName[]) {
     if (!script || !script.tragedySet) {
       return '';
     }
-    return stringifySearchForPlayerAid(
-      script.tragedySet,
-      distinct(keys<Partial<Record<CharacterName, any>>>(script.cast).concat(additionalCharacters)),
-      script.incidents.map(toPlayerIncident),
-      script.specialRules ?? []
-    ).toString();
+
+    return linkPlayerAid({
+      tragedySet: script.tragedySet,
+      cast: distinct(
+        keys<Partial<Record<CharacterName, any>>>(script.cast).concat(additionalCharacters)
+      ),
+      incidents: script.incidents.map(toPlayerIncident),
+      specialRules: script.specialRules ?? [],
+    });
   }
 
-  $: parameter = script ? getParams(script, additionalCharacters) : undefined;
+  $: playerAidLink = script ? getPlayerAidLink(script, additionalCharacters) : undefined;
   let host = '';
   let protocoll = '';
 
@@ -69,6 +75,15 @@
     host = document.location.host;
     protocoll = document.location.protocol;
   });
+
+  async function generateShareLink(script: Script): Promise<string> {
+    if (!script || !script.tragedySet) {
+      return '';
+    }
+
+    return linkOverview({ script });
+  }
+
   async function share(shareLink: string, title: string, text: string) {
     const shareData = {
       title: title,
@@ -117,7 +132,7 @@
     >
       <a
         aria-disabled={script == undefined}
-        href={`${base}/script/customScript/?script=${encodeURIComponent(JSON.stringify(script))}`}
+        href={linkScriptEdit({ script })}
         class="outline"
         style="grid-row: 1; grid-column: 2; margin-bottom: var(--spacing);"
         role="button">Edit</a
@@ -127,12 +142,8 @@
         tabindex="0"
         aria-disabled={script == undefined}
         class="outline"
-        on:click={() =>
-          share(
-            `${base}/script/overview/?script=${encodeURIComponent(JSON.stringify(script))}`,
-            script.title,
-            'A Tragedy Looper Script'
-          )}
+        on:click={async () =>
+          share(await generateShareLink(script), script.title, 'A Tragedy Looper Script')}
         style="grid-row: 1; grid-column: 1;"
         >Share Script
       </button>
@@ -140,8 +151,11 @@
       <button
         aria-disabled={script == undefined}
         class="outline"
-        on:click={() =>
-          share(`${base}/player/?${parameter}`, 'Player Aid', 'A Tragedy Looper Player Aid')}
+        on:click={() => {
+          if (playerAidLink) {
+            share(playerAidLink, 'Player Aid', 'A Tragedy Looper Player Aid');
+          }
+        }}
         style=" grid-row: 2; grid-column: 1 / span 2"
         >Share Player Aid
       </button>
@@ -176,7 +190,7 @@
     <div>
       {#if script.description}
         <div class="description">
-          {script.description}
+          <Translation translationKey={script.description} />
         </div>
         <label
           style="--show-more: '{$getString('Show more')}'; --show-less: '{$getString('Show less')}'"
@@ -202,7 +216,7 @@
   <div>
     <strong
       ><Translation
-        translationKey={tragedysLookup[script.tragedySet ?? 'Basic Tragedy'].name}
+        translationKey={tragedysLookup[script.tragedySet ?? 'basicTragedy'].name}
       /></strong
     >
   </div>
@@ -381,7 +395,7 @@
         {#if optionName in options}
           <br />
           (<Translation translationKey={s.name} />:
-          {#if s.type === 'character' && isCharacterName(options[optionName])}
+          {#if s.type === 'character' && isCharacterId(options[optionName])}
             <Translation translationKey={charactersLookup[options[optionName]].name} />
           {:else if s.type === 'location' && isLocationName(options[optionName])}
             <Translation translationKey={options[optionName] as LocationName} />

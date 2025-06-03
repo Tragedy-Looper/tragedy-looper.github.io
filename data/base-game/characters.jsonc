@@ -1,10 +1,10 @@
 {
-    //"$schema": "https://tragedy-looper.github.io/characters.schema.json",
+    "$schema": "https://tragedy-looper.github.io/characters.schema.json",
     // For dev purposes
-    "$schema": "../characters.schema.json",
+    // "$schema": "../characters.schema.json",
     "characters": [
         {
-            "id": "Boy Student",
+            "id": "boyStudent",
             "name": "Boy Student",
             "edition": "Base",
             "paranoiaLimit": 2,
@@ -24,7 +24,7 @@
             ]
         },
         {
-            "id": "Girl Student",
+            "id": "girlStudent",
             "name": "Girl Student",
             "edition": "Base",
             "paranoiaLimit": 3,
@@ -44,7 +44,7 @@
             ]
         },
         {
-            "id": "rich-student",
+            "id": "richStudent",
             "name": "Rich Man’s Daughter",
             "edition": "Base",
             "paranoiaLimit": 1,
@@ -68,7 +68,7 @@
             ]
         },
         {
-            "id": "Class Rep",
+            "id": "classRep",
             "name": "Class Rep",
             "edition": "Base",
             "paranoiaLimit": 2,
@@ -89,7 +89,7 @@
             ]
         },
         {
-            "id": "Mystery Boy",
+            "id": "mysteryBoy",
             "name": "Mystery Boy",
             "edition": "Base",
             "paranoiaLimit": 3,
@@ -115,7 +115,7 @@
             ]
         },
         {
-            "id": "Shrine Maiden",
+            "id": "shrineMaiden",
             "name": "Shrine Maiden",
             "edition": "Base",
             "paranoiaLimit": 2,
@@ -147,7 +147,7 @@
             ]
         },
         {
-            "id": "Alien",
+            "id": "alien",
             "name": "Alien",
             "edition": "Base",
             "paranoiaLimit": 2,
@@ -176,7 +176,7 @@
             ]
         },
         {
-            "id": "Godly Being",
+            "id": "godlyBeing",
             "name": "Godly Being",
             "edition": "Base",
             "paranoiaLimit": 3,
@@ -190,7 +190,6 @@
             "comesInLater": true,
             "scriptSpecified": [
                 {
-                    "id": "enters on loop",
                     "name": "enters on loop",
                     "type": "number"
                 }
@@ -214,7 +213,7 @@
             ]
         },
         {
-            "id": "Police Officer",
+            "id": "policeOfficer",
             "name": "Police Officer",
             "edition": "Base",
             "paranoiaLimit": 3,
@@ -241,7 +240,7 @@
             ]
         },
         {
-            "id": "Office Worker",
+            "id": "officeWorker",
             "name": "Office Worker",
             "edition": "Base",
             "paranoiaLimit": 2,
@@ -264,7 +263,7 @@
             ]
         },
         {
-            "id": "Informer",
+            "id": "informer",
             "name": "Informer",
             "edition": "Base",
             "paranoiaLimit": 3,
@@ -285,7 +284,7 @@
             ]
         },
         {
-            "id": "Pop Idol",
+            "id": "popIdol",
             "name": "Pop Idol",
             "edition": "Base",
             "paranoiaLimit": 2,
@@ -310,7 +309,7 @@
             ]
         },
         {
-            "id": "Journalist",
+            "id": "journalist",
             "name": "Journalist",
             "edition": "Base",
             "paranoiaLimit": 2,
@@ -335,7 +334,7 @@
             ]
         },
         {
-            "id": "Boss",
+            "id": "boss",
             "name": "Boss",
             "edition": "Base",
             "paranoiaLimit": 4,
@@ -348,7 +347,6 @@
             ],
             "scriptSpecified": [
                 {
-                    "id": "Turf",
                     "name": "Turf",
                     "type": "location"
                 }
@@ -367,7 +365,7 @@
             ]
         },
         {
-            "id": "Doctor",
+            "id": "doctor",
             "name": "Doctor",
             "edition": "Base",
             "paranoiaLimit": 2,
@@ -387,12 +385,12 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "revoke location restirction for Patient."
+                    "description": "revoke location restirction for :patient:."
                 }
             ]
         },
         {
-            "id": "Patient",
+            "id": "patient",
             "name": "Patient",
             "edition": "Base",
             "paranoiaLimit": 2,
@@ -410,7 +408,7 @@
             "abilities": []
         },
         {
-            "id": "Nurse",
+            "id": "nurse",
             "name": "Nurse",
             "edition": "Base",
             "paranoiaLimit": 3,
@@ -431,7 +429,7 @@
             ]
         },
         {
-            "id": "Henchman",
+            "id": "henchman",
             "name": "Henchman",
             "edition": "Base",
             "paranoiaLimit": 1,

@@ -1,11 +1,11 @@
 {
-      "$schema": "https://tragedy-looper.github.io/roles.schema.json",
+    "$schema": "https://tragedy-looper.github.io/roles.schema.json",
     // For dev purposes
     // "$schema": "../roles.schema.json",
     "roles": [
         {
-            "id": "Nightmare (Haunted Stage)",
-"name": "Nightmare (Haunted Stage)",
+            "id": "nightmareHaunted",
+            "name": "Nightmare (Haunted Stage)",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -18,10 +18,10 @@
             ]
         },
         {
-            "id": "Curse God",
-"name": "Curse God",
+            "id": "curseGod",
+            "name": "Curse God",
             "tags": [
-                "after death"
+                "afterdeath"
             ],
             "abilities": [
                 {
@@ -34,10 +34,10 @@
             ]
         },
         {
-            "id": "Human Doll",
-"name": "Human Doll",
+            "id": "humanDoll",
+            "name": "Human Doll",
             "tags": [
-                "after death"
+                "afterdeath"
             ],
             "abilities": [
                 {
@@ -57,8 +57,8 @@
             ]
         },
         {
-            "id": "Werewolf (Haunted Stage)",
-"name": "Werewolf (Haunted Stage)",
+            "id": "werewolfHaunted",
+            "name": "Werewolf (Haunted Stage)",
             "goodwillRefusel": "Mandatory",
             "abilities": [
                 {
@@ -78,10 +78,10 @@
             ]
         },
         {
-            "id": "Vampire (Haunted Stage)",
-"name": "Vampire (Haunted Stage)",
+            "id": "vampireHaunted",
+            "name": "Vampire (Haunted Stage)",
             "tags": [
-                "after death"
+                "afterdeath"
             ],
             "abilities": [
                 {
@@ -101,19 +101,19 @@
             ]
         },
         {
-            "id": "Ghost (Haunted Stage)",
-"name": "Ghost (Haunted Stage)",
+            "id": "GhostHaunted",
+            "name": "Ghost (Haunted Stage)",
             "tags": [
-                "after death"
+                "afterdeath"
             ],
             "max": 2,
             "abilities": []
         },
         {
-            "id": "Monster",
-"name": "Monster",
+            "id": "monster",
+            "name": "Monster",
             "tags": [
-                "Immortal"
+                "immortal"
             ],
             "abilities": [
                 {
@@ -126,8 +126,8 @@
             ]
         },
         {
-            "id": "Spellcaster",
-"name": "Spellcaster",
+            "id": "spellcaster",
+            "name": "Spellcaster",
             "goodwillRefusel": "Optional",
             "abilities": [
                 {
@@ -140,10 +140,10 @@
             ]
         },
         {
-            "id": "Zombie (Haunted Stage)",
-"name": "Zombie (Haunted Stage)",
+            "id": "ZombieHaunted",
+            "name": "Zombie (Haunted Stage)",
             "tags": [
-                "after death"
+                "afterdeath"
             ],
             "goodwillRefusel": "Mandatory",
             "abilities": [
@@ -158,13 +158,13 @@
                             "Over all Roles": true
                         }
                     ],
-                    "description": "If there is a location where there are more zombies than non-zombies, kill one character in that location, then increase the Extra Gauge by 1 (reminder: a corpse is no longer considered as a character)."
+                    "description": "If there is a location where there are more :zombie:s than non-:zombie:s, kill one character in that location, then increase the Extra Gauge by 1 (reminder: a corpse is no longer considered as a character)."
                 }
             ]
         },
         {
-            "id": "Poltergeist",
-"name": "Poltergeist",
+            "id": "poltergeist",
+            "name": "Poltergeist",
             "max": 1,
             "goodwillRefusel": "Mandatory",
             "abilities": [
@@ -179,11 +179,11 @@
             ]
         },
         {
-            "id": "Horror",
-"name": "Horror",
+            "id": "horror",
+            "name": "Horror",
             "max": 1,
             "tags": [
-                "after death"
+                "afterdeath"
             ],
             "abilities": [
                 {
@@ -196,10 +196,10 @@
             ]
         },
         {
-            "id": "Overlord",
-"name": "Overlord",
+            "id": "overlord",
+            "name": "Overlord",
             "tags": [
-                "after death"
+                "afterdeath"
             ],
             "abilities": [
                 {

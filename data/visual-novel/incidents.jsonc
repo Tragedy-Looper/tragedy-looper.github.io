@@ -4,8 +4,8 @@
     //"$schema": "../incidents.schema.json",
     "incidents": [
         {
-            "id": "Parting",
-"name": "Parting",
+            "id": "parting",
+            "name": "Parting",
             "effect": [
                 {
                     "description": "Move the Culprit to any Location."
@@ -13,8 +13,8 @@
             ]
         },
         {
-            "id": "Exposure",
-"name": "Exposure",
+            "id": "exposure",
+            "name": "Exposure",
             "effect": [
                 {
                     "description": "Choose one: 1. Remove up to 2 (cumulative total) :goodwill: counters from characters in the same Location as the Culprit. 2. Place up to 2 (cumulative total) :goodwill: counters on characters in the same Location as the Culprit."
@@ -22,8 +22,8 @@
             ]
         },
         {
-            "id": "Friction",
-"name": "Friction",
+            "id": "friction",
+            "name": "Friction",
             "effect": [
                 {
                     "prerequisite": "Culprit must have at least 1+ :goodwill:.",
@@ -32,8 +32,8 @@
             ]
         },
         {
-            "id": "Route Branching",
-"name": "Route Branching",
+            "id": "routeBranching",
+            "name": "Route Branching",
             "effect": [
                 {
                     "prerequisite": "The Culprit must have enough :goodwill: to use a :goodwill: Ability.",
@@ -42,8 +42,8 @@
             ]
         },
         {
-            "id": "Relocation",
-"name": "Relocation",
+            "id": "relocation",
+            "name": "Relocation",
             "effect": [
                 {
                     "description": "The Culprit is treated as if they are not in any Location, and cannot have Action cards placed on them."
@@ -51,8 +51,8 @@
             ]
         },
         {
-            "id": "Heart-Pounding Time Bomb",
-"name": "Heart-Pounding Time Bomb",
+            "id": "heartPoundingTimeBomb",
+            "name": "Heart-Pounding Time Bomb",
             "effect": [
                 {
                     "prerequisite": "The Culprit must not have any :goodwill: on them when this Incident occurs.",
