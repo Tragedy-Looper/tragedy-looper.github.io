@@ -1,8 +1,6 @@
 <script lang="ts">
   import { type isScriptName, toPlayerIncident } from '../../../model/script';
 
-  import { zip , unzip} from 'gzip-js';
-
   import { onMount } from 'svelte';
 
   import {
@@ -11,7 +9,6 @@
     type CharacterName,
     type LocationName,
   } from '../../../model/characters';
-  import { stringifySearchForPlayerAid } from '../../../serilezer';
   import { distinct, isArray, keys } from '../../../misc';
   import { base } from '$app/paths';
   import Translation from '../../../view/translation.svelte';
@@ -30,6 +27,10 @@
   import { isPlotName, type PlotName } from '../../../model/plots';
   import { type Character } from '../../../characters.g';
   import { type Plot } from '../../../plots.g';
+  import { generateUrl } from '../../../zipQueryHelper';
+  import { linkOverview } from './overview/+page.svelte';
+  import { linkPlayerAid } from '../../player/+page.svelte';
+  import { linkScriptEdit } from './customScript/+page.svelte';
   export let script: Script | undefined;
 
   let alwaysTransmitCharacters: boolean[] = characterscomesInLater.map(() => true);
@@ -51,19 +52,22 @@
     .filter(([x]) => x)
     .map(([, x]) => x);
 
-  function getParams(script: Script, additionalCharacters: CharacterName[]) {
+  function getPlayerAidLink(script: Script, additionalCharacters: CharacterName[]) {
     if (!script || !script.tragedySet) {
       return '';
     }
-    return stringifySearchForPlayerAid(
-      script.tragedySet,
-      distinct(keys<Partial<Record<CharacterName, any>>>(script.cast).concat(additionalCharacters)),
-      script.incidents.map(toPlayerIncident),
-      script.specialRules ?? []
-    ).toString();
+
+    return linkPlayerAid({
+      tragedySet: script.tragedySet,
+      cast: distinct(
+        keys<Partial<Record<CharacterName, any>>>(script.cast).concat(additionalCharacters)
+      ),
+      incidents: script.incidents.map(toPlayerIncident),
+      specialRules: script.specialRules ?? [],
+    });
   }
 
-  $: parameter = script ? getParams(script, additionalCharacters) : undefined;
+  $: playerAidLink = script ? getPlayerAidLink(script, additionalCharacters) : undefined;
   let host = '';
   let protocoll = '';
 
@@ -76,23 +80,8 @@
     if (!script || !script.tragedySet) {
       return '';
     }
-    const data = JSON.stringify(script);
-    const simpleString = `${base}/script/overview/?script=${encodeURIComponent(data)}`;
 
-    const zipped = zip(new TextEncoder().encode(data));
-    const binaryString = String.fromCharCode(...zipped);
-    const base64 = btoa(binaryString);
-    const zipedString = `${base}/script/overview/?zip=${encodeURIComponent(base64)}`;
-
-    const decoded = atob(base64);
-    const uarray = Uint8Array.from(decoded, c=>c.charCodeAt(0))
-    const unziped = unzip(uarray);
-          const scriptData = new TextDecoder().decode(new Uint8Array(unziped));
-
-
-    console.log("datas", base64)
-
-    return zipedString.length < simpleString.length ? zipedString : simpleString;
+    return linkOverview({ script });
   }
 
   async function share(shareLink: string, title: string, text: string) {
@@ -143,7 +132,7 @@
     >
       <a
         aria-disabled={script == undefined}
-        href={`${base}/script/customScript/?script=${encodeURIComponent(JSON.stringify(script))}`}
+        href={linkScriptEdit({ script })}
         class="outline"
         style="grid-row: 1; grid-column: 2; margin-bottom: var(--spacing);"
         role="button">Edit</a
@@ -162,8 +151,11 @@
       <button
         aria-disabled={script == undefined}
         class="outline"
-        on:click={() =>
-          share(`${base}/player/?${parameter}`, 'Player Aid', 'A Tragedy Looper Player Aid')}
+        on:click={() => {
+          if (playerAidLink) {
+            share(playerAidLink, 'Player Aid', 'A Tragedy Looper Player Aid');
+          }
+        }}
         style=" grid-row: 2; grid-column: 1 / span 2"
         >Share Player Aid
       </button>

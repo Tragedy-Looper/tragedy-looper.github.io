@@ -1,9 +1,42 @@
+<script lang="ts" module>
+  type RequireAtLeastOne<T, Keys extends keyof T = keyof T> = Pick<T, Exclude<keyof T, Keys>> &
+    {
+      [K in Keys]-?: Required<Pick<T, K>> & Partial<Pick<T, Exclude<Keys, K>>>;
+    }[Keys];
+
+  export function linkOverview(
+    params: RequireAtLeastOne<{
+      title: string;
+      author: string;
+      set: { name: string; number: number };
+    }>
+  ): string;
+  export function linkOverview(params: { script: Script }): string;
+  export function linkOverview(
+    params:
+      | { script: Script }
+      | RequireAtLeastOne<{ title: string; author: string; set: { name: string; number: number } }>
+  ): string {
+    const transfareObject =
+      'script' in params
+        ? {
+            script: params.script,
+          }
+        : {
+            setNumber: params.set?.number,
+            setName: params.set?.name,
+            title: params.title,
+            author: params.author,
+          };
+    return generateUrl(`${base}/script/overview/`, transfareObject);
+  }
+</script>
+
 <script lang="ts">
-  import { distinct, join } from '../../../../misc';
-  import { scripts as scriptLookup } from '../../../../model/script';
+  import { join } from '../../../../misc';
+  import { isScript, scripts as scriptLookup } from '../../../../model/script';
   import ScriptDetails from './../scriptDetails.svelte';
   import { onMount } from 'svelte';
-  import { unzip } from 'gzip-js';
 
   import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
@@ -12,6 +45,8 @@
   import type { Script } from '../../../../scripts.g';
   import Rating from './../rating.svelte';
   import Translation from '../../../../view/translation.svelte';
+  import { generateUrl, getParams } from '../../../../zipQueryHelper';
+  import { goto } from '$app/navigation';
 
   $: scripts = Object.values(scriptLookup);
 
@@ -34,33 +69,31 @@
     ownScripts = await loadAllLocalScripts();
   });
 
-  $: setNumber = parseInt(searchParams?.get('setNumber') ?? '-1');
-  $: setName = searchParams?.get('setName');
-  $: title = searchParams?.get('title');
-  $: author = searchParams?.get('author');
+  $: decodedParams = (searchParams ? getParams(searchParams) : {}) as Partial<{
+    script: Script & {
+      local: true | undefined;
+    };
+    setNumber: number;
+    setName: string;
+    title: string;
+    author: string;
+  }>;
 
-  $: serilizedScript = searchParams?.get('script');
-  $: zipdScript = searchParams?.get('zip');
-  $: {
-    if (zipdScript != undefined) {
-      console.log('datas', zipdScript);
-      const decoded = atob(decodeURIComponent(zipdScript));
-      const uarray = Uint8Array.from(decoded, (c) => c.charCodeAt(0));
-      const unziped = unzip(uarray);
-      const scriptData = new TextDecoder('utf-8').decode(new Uint8Array(unziped));
-      console.log(scriptData);
-      serilizedScript = scriptData;
-    }
-  }
+  $: setNumber = decodedParams.setNumber;
+  $: setName = decodedParams.setName;
+  $: title = decodedParams.title;
+  $: author = decodedParams.author;
+
+  $: serilizedScript = decodedParams.script;
 
   $: {
     if (serilizedScript != undefined) {
-      selectedScript = JSON.parse(serilizedScript);
+      selectedScript = serilizedScript;
     } else if (searchParams) {
       const search = {
         title,
         author,
-        set: setName && setNumber > -1 ? { name: setName, number: setNumber } : undefined,
+        set: setName && setNumber != undefined ? { name: setName, number: setNumber } : undefined,
       };
 
       loadScript(search).then((loading) => {
@@ -85,7 +118,7 @@
     <article>
       {#each selectedScript as s}
         <div>
-          <a href={`${base}/script/overview/?script=${encodeURIComponent(JSON.stringify(s))}`}
+          <a href={linkOverview({ script: s })}
             >{#each s.set ?? [] as set, i}
               {#if i > 0}
                 /

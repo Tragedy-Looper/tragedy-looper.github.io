@@ -1,15 +1,28 @@
+<script lang="ts" module>
+  type linkParameters = {
+    tragedySet: TragedySetName;
+    cast: readonly CharacterName[];
+    incidents: readonly ScriptIncidentPlayer[];
+    specialRules: readonly string[];
+  };
+  export function linkPlayerAid(params: linkParameters): string {
+    return generateUrl(`${base}/player/`, params);
+  }
+</script>
+
 <script lang="ts">
   import { onMount } from 'svelte';
   import type { ScriptIncidentPlayer } from '../../model/script';
   import Table from '../../view/table.svelte';
   import type { CharacterName } from '../../model/characters';
   import type { TragedySetName } from '../../model/tragedySets';
-  import { parseSearchForPlayerAid } from '../../serilezer';
   import './page.css';
   import './dialog.css';
   import { getString, languageOverride, navigationLanguage } from '../(site)/+layout.svelte';
   import { getDeployedLanguage } from '../../translations';
   import Translation from '../../view/translation.svelte';
+  import { base } from '$app/paths';
+  import { generateUrl, getParams } from '../../zipQueryHelper';
 
   let searchParams: URLSearchParams | undefined;
 
@@ -24,11 +37,11 @@
     };
   });
 
-  let tragedySet: TragedySetName | undefined;
-  let cast: CharacterName[] | undefined;
-  let incidents: ScriptIncidentPlayer[] | undefined;
-  let specialRules: string[] | undefined;
-  $: [tragedySet, cast, incidents, specialRules] = parseSearchForPlayerAid(searchParams);
+  $: parameters = (searchParams ? getParams(searchParams) : {}) as Partial<linkParameters>;
+  $: tragedySet = parameters.tragedySet;
+  $: cast = parameters.cast;
+  $: incidents = parameters.incidents;
+  $: specialRules = parameters.specialRules;
   $: tablet = searchParams?.has('tablet');
   $: touchTarget = searchParams?.has('touchTarget');
 

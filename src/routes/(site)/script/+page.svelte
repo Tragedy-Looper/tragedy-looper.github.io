@@ -10,6 +10,8 @@
   import Rating from './rating.svelte';
   import Translation from '../../../view/translation.svelte';
   import { getAvialablePackageImages } from '../../+layout.svelte';
+  import { linkOverview } from './overview/+page.svelte';
+  import { tragedysLookup } from '../../../data';
 
   const scripts = Object.values(scriptLookup);
 
@@ -124,10 +126,7 @@
       </header>
       {#each ownScripts as s}
         <div style="display: flex; align-items: center;  gap: 0.5rem;">
-          <a
-            style="flex-grow: 2;"
-            href={`${base}/script/overview/?script=${encodeURIComponent(JSON.stringify(s))}`}
-          >
+          <a style="flex-grow: 2;" href={linkOverview({ script: s })}>
             {s.title} by {s.creator} [{s.tragedySet}] difficulty {join(
               s.difficultySets?.map((x) => x.difficulty.toString()) ?? [],
               ' / '
@@ -163,10 +162,11 @@
   {:else if tab == 'tragedy'}
     {#each distinct(scripts
         .map((key) => key.tragedySet)
+        .filter((x) => x != undefined)
         .sort( (a, b) => (a == undefined ? (b == undefined ? 0 : -1) : b == undefined ? 1 : a.localeCompare(b)) )) as set}
       <article>
         <header>
-          <h2>{set ?? 'Independent'}</h2>
+          <h2><Translation translationKey={tragedysLookup[set].name}/></h2>
         </header>
         {#each scripts
           .filter((x) => x.tragedySet == set)
@@ -226,9 +226,7 @@
 
 {#snippet scriptEntry(s: Script)}
   <div style="margin-bottom: 0.5em;">
-    <a href={`${base}/script/overview/?title=${encodeURIComponent(s.title)}`}>
-      {s.title} by {s.creator}</a
-    ><br />
+    <a href={linkOverview({ title: s.title })}> {s.title} by {s.creator}</a><br />
 
     <em style="display: block;">
       {#each s.set ?? [] as set}
@@ -241,7 +239,11 @@
 
     <Translation translationKey={'Tragedy'} />
     <strong>
-      {s.tragedySet}
+      {#if s.tragedySet}
+        <Translation translationKey={tragedysLookup[s.tragedySet].name} />
+      {:else}
+        <Translation translationKey={'No Set'} />
+      {/if}
     </strong>
 
     {#if s.difficultySets && s.difficultySets.length > 0}
