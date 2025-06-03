@@ -201,7 +201,7 @@
     }
   }
   @media print {
-    article {
+    nav {
       display: none;
     }
   }
