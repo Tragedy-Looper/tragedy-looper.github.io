@@ -742,6 +742,81 @@
       "victory-conditions": "See Tragedy Looper Mastermind Handbook",
       "story": "See Tragedy Looper Mastermind Handbook",
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
+    },
+    {
+      "title": "脚本家Ｘの献身 (Devotion of Mastermind X)",
+      "creator": "Lapras-hst@パーソン",
+      "difficultySets": [
+        {
+          "numberOfLoops": 6,
+          "difficulty": 6
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "changeOfFuture"
+      ],
+      "subPlots": [
+        "circleFriends",
+        "threadsFate"
+      ],
+      "daysPerLoop": 4,
+      "cast": {
+        "blackCat": "cultist",
+        "godlyBeing": [
+          "timeTraveler",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "patient": "friend",
+        "richStudent": "friend",
+        "transferStudent": [
+          "conspiracyTheorist",
+          {
+            "enters on day": 3
+          }
+        ],
+        "doctor": "person",
+        "soldier": "person",
+        "boss": [
+          "person",
+          {
+            "Turf": "Hospital"
+          }
+        ],
+        "forensicSpecialist": "person",
+        "popIdol": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "suicide",
+          "culprit": "richStudent"
+        },
+        {
+          "day": 2,
+          "incident": "spreading",
+          "culprit": "boss"
+        },
+        {
+          "day": 3,
+          "incident": "hospitalIncident",
+          "culprit": "forensicSpecialist"
+        },
+        {
+          "day": 4,
+          "incident": "butterflyEffect",
+          "culprit": "blackCat"
+        }
+      ],
+      "description": "This is a script with special rules aimed at intermediate to advanced players who are accustomed to playing Tragedy Looper. I recommend getting the protagonist's consent before playing, as this may ruin the original enjoyment of the game.\n\nAlso, make sure everyone knows beforehand that this is a script in which the protagonist is guaranteed to win if played correctly.",
+      "specialRules": [
+        "Mastermind can't use \"Intrigue +1,\" \"Paranoia -1,\" or \"Diagonal Movement.\"\n\nThere is no Final Guess.\n\nThere is one Secret Rule known only to the Mastermind."
+      ],
+      "victory-conditions": "Hidden Special Rule:\n\nThe Mastermind wins if the Protagonists win. However, the Protagonists' optional Loss Condition will be forcibly triggered if other Loss Conditions are not met.",
+      "story": "A scriptwriter weaves a tragedy spanning countless timelines. The protagonists are struggling to keep up, failing every time.  However, there is something strange about the world they have wandered into this time.\n\nWhen you find yourself hanging on the edge of despair, reach out and grasp the flickering light of hope.\n\nAll you need is a flash of inspiration.\n\nDon't give up. Let's start the next loop.",
+      "mastermindHints": "Contrary to the usual rules, the screenwriter's true goal is to \"support the Protagonists and free them from the Loop.\"\n\nPlay with a poker face so that your goal is not revealed. We recommend that you keep your communication with the Protagonists to a minimum except for answering their questions, and leave your seat between Loops.\n\nWhen the Public Sheet is presented, the Protagonists may laugh at the limitations on the Mastermind, but they won't be laughing much longer.\n\nBasically, aim for Spreading and Hospital Incident to occur, and for Immortal to take effect by involving Godly Being. Move Doctor to City (preparing for Goodwill and Paranoia boost), and keep placing Paranoia on Forensic Specialist and Boss. Move Black Cat to Hospital, and at the same time, place Intrigue +2 on Hospital. \n\nAlthough the Protagonists will initially see this as a normal power play and try to thwart it, you should make full use of the abilities of the Conspiracy Theorist and Cultist.\n\nIn the unlikely event that Spreading does occur, remove it from Rich Man's Daughter and place it on Doctor, Godly Being, or Forensic Specialist.\n\nIf you have extra hands, place Forbid Goodwill on Rich Man's Daughter or move it to the City (so that you can use Forensic Specialist to remove it if Goodwill is placed). The Protagonists will probably not understand your intentions, and a spiteful Protagonist who is used to the game will sneak through and place Paranoia or Goodwill on it, not realizing that they're tying their own noose.\n\nWhen the Culprit behind Butterfly Effect and role of the Godly Being are revealed, the Protagonists will feel the difficulty of breaking the loop, and the strange discomfort caused by the Mastermind's actions. Once they realize the true purpose behind everything, it's time for telepathic cooperation. Let's break out of this accursed Loop, together.\n\nTo break the loop, you need to do the following 4 things:\n\n- Cause a Hospital Incident\n\n- Move the Patient out of the Hospital before the Incident occurs\n\n- Involve the Black Cat in the Hospital Incident\n\n- Place 3 Goodwill on Godly Being\n\nThere are two routes: use Godly Being to remove one Intrigue from the Hospital, or use the Soldier to make the Protagonists Immortal.\n\nIf the role of Rich Man's Daughter is exposed due to the whims of the Protagonists, it will be more difficult to break through the Loop. In that case, on the first day, place a Vertical Movement on Doctor, a Horizontal Movement on Rich Man's Daughter, and a Paranoia +1 on Forensic Specialist or Boss to support them.\n\nIn any case, if the Protagonists and Mastermind work together perfectly, at the end of the last day:\n\n- All characters except Black Cat will survive and gather in the City\n- All Paranoia counters will be zero\n- Everyone will have Goodwill counters on them\n\nYou can do it. Good luck."
     }
   ]
 }
