@@ -219,6 +219,12 @@
     {
       "title": "Magical Girls' Superiority",
       "creator": "M.Hydrome",
+      "set": [
+        {
+          "name": "New Tragedies",
+          "number": 3
+        },
+      ],
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -270,6 +276,68 @@
       "victory-conditions": "This is a script recommended for those who are playing Basic Tragedy for the first time. This is where it begins for real. Now you have 2 Subplots and seven people in the cast. Also, there are 5 days each loop!\n\nThat said, the difficulty is still set to very low. Protagonists who come from First Steps won’t feel super confused and will be able to enjoy the extra additions well enough. It’s not difficult to play as Mastermind either. But beware of the Final Guess. If all roles are clear, then you will lose, and that is more stressful than it may seem.",
       "story": "For boys and girls, the world is a constant battlefield. Each tiny little disturbance will shake their inexperienced souls. Especially in this town, where seductors lure with the promise of magic powers – without explaining the consequences!\n\nThe school was bubbling with talk. “Spells” and “magic”, and everyone knows that you CAN become a magical girl, if you just sign the contract. Eventually, the :popIdol: will sign, and she will die. Can the Protagonists stop this tragedy from happening?",
       "mastermindHints": "The best way to win is through the Hospital Horror and to place :intrigue: on the Idol. This reveals the least information.\n\nStart day 1 and 2 with Unease +1 on the patient, and a bluff and :intrigue: +1 on the Shrine and Hospital respectively.\n\nAlso from day 1, use the Conspiracy Theorist and trigger Spreading Unease. If you get some :intrigue: on the Hospital, put 2 Unease on the :shrineMaiden:, and trigger the Hospital Horror.\n\nOn day 3, you can use the Unsettling Rumor effect to put the second :intrigue: on the Hospital and kill the Protagonists.\n\nIf you can’t seem to get any :intrigue: on the Hospital, put instead 2 :intrigue: on the Idol and if possible, also on the Shrine, Rich Student, and shrineMaiden. For this, Spreading Unease and An Unsettling Rumor will help you.\n\nHide the Serial Killer as long as you can and use him to kill the Key Person as your last resort. Killing the Friend will make the Final Guess easy for the Protagonists, so avoid that as much as possible.\n\nThe Final Guess can easily become your downfall. Either you hide the Conspiracy Theorist or the Friend. Try to make it look like a Murderer or a Brain instead.\n\nVictory conditions\n1. At any day end, have the popIdol and the boyStudent alone in a location, triggering the Serial Killer effect and thus the Key Person’s loss condition immediately.\n\n2. At end of day 3, have at least 1 :intrigue: on the Hospital, at least 2 Unease on the shrineMaiden, and the popIdol in the Hospital, triggering Hospital Horror, killing the popIdol and triggering the Key Person’s loss condition immediately.\n\n3. At loop end, have 2 :intrigue: on the popIdol, triggering the loss condition for “Sign with Me!”.\n\n4. At any day end, have the shrineMaiden and the boyStudent alone in a location, triggering the Serial Killer effect and thus the Friend’s loss condition at loop end.\n\n5. At end of day 3, have at least 1 :intrigue: on the Hospital, at least 2 Unease on the shrineMaiden who should be in the Hospital, triggering the Hospital Horror, killing the shrineMaiden, and triggering the Friend’s loss condition at loop end.\n\n6. At the end of day 3, have at least 2 :intrigue: on the Hospital, at least 2 Unease on the shrineMaiden, triggering the Hospital Horror killing the Protagonists."
+    },
+    {
+      "title": "The Cat Box",
+      "creator": "GEnd",
+      "set": [
+        {
+          "name": "New Tragedies",
+          "number": 4
+        },
+      ],
+      "difficultySets": [
+        {
+          "numberOfLoops": 3,
+          "difficulty": 5
+        },
+        {
+          "numberOfLoops": 4,
+          "difficulty": 3
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "giantTimeBomb"
+      ],
+      "subPlots": [
+        "loveAffair",
+        "unknownFactor"
+      ],
+      "daysPerLoop": 5,
+      "cast": {
+        "nurse": "witch",
+        "alien": "lover",
+        "officeWorker": "lovedOne",
+        "blackCat": "factor",
+        "richStudent": "person",
+        "popIdol": "person",
+        "soldier": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "suicide",
+          "culprit": "richStudent"
+        },
+        {
+          "day": 4,
+          "incident": "missingPerson",
+          "culprit": "officeWorker"
+        },
+        {
+          "day": 5,
+          "incident": "missingPerson",
+          "culprit": "alien"
+        }
+      ],
+      "description": "The Cat Box is a perfect script to play as your second Basic Tragedy script. The complexity is slightly higher, and there are now 8 characters in the cast. The idea of this script is to introduce two new things. \n\nThe first is the Mystery Boy and the Black Cat; both a bit strange. It’s a good chance to get to know rather complicated characters. But don’t fret; neither of them will mess up things too badly. \n\nThe second is the trick to find the Witch, who has mandatory Goodwill Refusal. This will have the Protagonists learn how to use this technique.",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "1. At loop end, have 2 Intrigue on the Hospital, triggering the loss condition of “Giant Time Bomb.”\n\n2. At any day end, have 3 or more Unease and 1 or more Intrigue on the Office Worker, triggering the Loved One'’s Protagonist kill.",
+      "story": "The witch laughs and the cat familiar meows. A mistake in a ritual has summoned a strange existence from another world. And to make matters worse, it fell in love with a human. \n\nThe witch decides to burn the entire town to hide the evidence. But to do that, she needs to stay hidden. Time is of the essence: kill the witch and shut the lid on this box forever.",
+      "mastermindHints": "You can win with either 2 Intrigue on the Hospital or the ability of the Loved One. Your first choice should be the former, but the latter hides more information. \n\nFirst day on loop 1 should be an Intrigue +2 on the School, an Intrigue +1 on the Hospital, and a bluff card on the Shrine. Then put an Unease on the Rich Student using the Conspiracy Theorist and kill her with Suicide. This is to give the impression that she might be the Witch! \n\nAfter that, try triggering both Missing Person Incidents by putting out Unease. Use the Conspiracy Theorist’s and Factor’s abilities (Subplot “Unknown Factor”: Putting 2 Intrigue on the School makes the Black Cat able to act as a Conspiracy Theorist!) when you need. Putting Unease on the Office Worker is effective both for Missing Person and for the Loved One ability. \n\nFinally, if you can get 2 Intrigue on the School, Shrine, and Hospital, the first loop is perfected. You can try to get that result in future loops too, but it’ll be hard with Forbid Intrigue and trying to prevent the Protagonists from finding the Witch with Goodwill Refusal. \n\nIt’s super easy to hide the Factor, so you don’t need to worry about the Final Guess."
     },
     {
       "title": "Lesser of Two Evils",
