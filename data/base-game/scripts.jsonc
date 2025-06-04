@@ -1358,6 +1358,60 @@
       "mastermindHints": "In loop 1, put a Vertical Movement on the :prophet: and end everything straight away. The remaining two actions can be Forbid :goodwill: and Horizontal Movement on the :copycat:. If you by some reason should fail to end it there, put some :paranoia: on the :prophet: with the :conspiracyTheorist:’s ability. \n\nFrom loop 2 and on, start aiming for a :lovedOne: victory. However, for that, the :suicide: on day 2 is a crutch. The best is if :classRep: has exactly 1 :paranoia: on day 2. \n\nThe :spreading: :paranoia: of the :prophet: has extreme explosive power. If the :classRep: lives, put 1 :intrigue: and 1 :paranoia: on her, and you’ve basically won. Or you could put 2 :intrigue: on the Holy :tree: and kill it with the :murder:er. It should be easy if you use the :conspiracyTheorist:’s ability. \n\nIt looks as if it’s easy to win, but the roles are as easily revealed too, so take great care. If you put cards on the two :murder:ers, and total 4 :intrigue: on them, you can win on pure luck, but you’ll end up revealing both :murder:ers. If you put :intrigue: on the Holy :tree: outside of :spreading: :paranoia:, you won’t have time for much more, and it’s hard to win by just that. \n\nIt’s next to hopeless to hide much for the Final Guess. You need to stop the deaths of the :friend:, :lovedOne:, and :lover:, and try to desperately cloud who are the :murder:ers and :brain:. "
     },
     {
+      "title": "邪悪なる汚染領域 (Evil Contaminated Realm)",
+      "creator": "ペンスキー",
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 4
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "sealedItem"
+      ],
+      "subPlots": [
+        "circleFriends",
+        "paranoiaVirus"
+      ],
+      "daysPerLoop": 6,
+      "cast": {
+        "boyStudent": "brain",
+        "nurse": "cultist",
+        "alien": "friend",
+        "richStudent": "friend",
+        "forensicSpecialist": "conspiracyTheorist",
+        "soldier": "person",
+        "policeOfficer": "person",
+        "officeWorker": "person",
+        "teacher": "person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "suicide",
+          "culprit": "teacher"
+        },
+        {
+          "day": 5,
+          "incident": "foulEvil",
+          "culprit": "boyStudent"
+        },
+        {
+          "day": 6,
+          "incident": "increasingUnease",
+          "culprit": "officeWorker"
+        }
+      ],
+      "description": "This script can be developed in two ways: CS-based and PP-based. It is up to the scriptwriter to decide which one to use, so please choose according to your preference.\n\nEither way, it is important to identify the culprit of the incident. The Police Officer will be very useful.",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "This script can be developed in two ways: CS-based and PP-based. It is up to the scriptwriter to decide which one to use, so please choose according to your preference.\n\nIn either case, it is important to identify the culprit of the incident. The :policeOfficer: will be very useful.",
+      "story": "",
+      "mastermindHints": "The scriptwriter's means of victory are killing :sealedItem: and :friend:. However, since the use of :paranoiaVirus: is essential to killing :friend:, we will first aim to win with :sealedItem:.\n\nIn the case of CS axis, CS of the main plot is very important.\n\nPut :intrigue: on boards other than City and :alien: to expand the possibilities of the main plot. For that, incidents are a strong support. Since you want to cause all incidents while concealing the culprit, scatter :paranoia: with all your might. You can also use :conspiracyTheorist: from the beginning. Be careful of the movement of the :policeOfficer: so that you do not narrow down the culprit of :foulEvil:.\n\nIn the case of PP axis, use :cultist: to win the first loop. If you pass :intrigue: to Shrine, it is better not to cause :foulEvil:. The first loop is very stable, but since you want to hide the :cultist: until the final battle, you need to move in such a way that the :alien:'s :goodwill: ability is never used. Use Forbid :goodwill: at full power, but be careful of :richStudent: and :forensicSpecialist:'s :goodwill: abilities.\n\nAs the game progresses, it becomes more difficult to win with :sealedItem:. Then it's time to use :paranoiaVirus:.\n\nOn the final day, leave the :person: and :friend: alone and aim for a surprise attack by turning them into a :serialKiller: with :increasingUnease:. If the person has one :paranoia: counter on them, they can be a candidate, so it is important to spread :paranoia:.\n\nIn the final battle, hide the :cultist:. It is a role that is difficult to find, but it may be revealed by :nurse:'s trait, :paranoiaVirus:, :forensicSpecialist:, etc."
+    },s
+    {
       "title": "脚本家Ｘの献身 (Devotion of Mastermind X)",
       "creator": "Lapras-hst@パーソン",
       "difficultySets": [
