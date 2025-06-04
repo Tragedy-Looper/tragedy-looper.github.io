@@ -53,6 +53,12 @@
     {
       "title": "In the Godless Temple",
       "creator": "Kaijin",
+      "set": [
+        {
+          "name": New Tragedies,
+          "number": 2
+        }
+      ],
       "difficultySets": [
         {
           "numberOfLoops": 3,
