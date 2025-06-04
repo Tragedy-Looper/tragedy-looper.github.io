@@ -412,6 +412,75 @@
       "mastermindHints": "The :henchman: should start in the Hospital in every loop. \n\nThe first thing to aim for is a Factor kill. First loop, :intrigue: +2 :intrigue: on the School, :intrigue: +1 on the City and a bluff on the Hospital. If the :boss: is in the City, use him to place the second :intrigue: on the City there, and :suicide: the :factor:. Use the same cards in Loop 2 but interchange them. \n\nIf that gets stopped, then you should aim for a :hospitalIorror:. The :boss: can spread :intrigue: here and there. The :goodwill: effects of the :henchman: and :alien: will get in your way. Spread out Unease everywhere to make it hard to pinpoint the culprit. \n\nIf that also gets stopped, then it’s the :transferStudent:. With the :conspiracyTheorist:’s ability, you will for sure be able to activate :farawayMurder:, so have 2 :intrigue: on the :informant: (and :boyStudent:). \n\nWith the :paranoiaVirus:, you might activate a lot of :serialKillers:, but beware so you don’t get trapped in that. You can use that to get a win if you need. \n\nFor the Final Guess, you need to hide the Murderer. Don’t use the Murderer’s ability unless you can safely do so. "
     },
     {
+      "title": "Those with Antibodies",
+      "creator": "Satoru Sawamura",
+      "set": [
+        {
+          "name": "New Tragedies",
+          "number": 7
+        }
+      ],
+      "difficultySets": [
+        {
+          "numberOfLoops": 5,
+          "difficulty": 4
+        },
+        {
+          "numberOfLoops": 4,
+          "difficulty": 6
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "changeOfFuture"
+      ],
+      "subPlots": [
+        "paranoiaVirus",
+        "threadsFate"
+      ],
+      "daysPerLoop": 4,
+      "cast": {
+        "shrineMaiden": "cultist",
+        "informer": "timeTraveler",
+        "richStudent": "conspiracyTheorist",
+        "classRep": "person",
+        "officeWorker": "person",
+        "forensicSpecialist": "person",
+        "doctor": "person",
+        "soldier": "person",
+        "henchman": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "butterflyEffect",
+          "culprit": "richStudent"
+        },
+        {
+          "day": 2,
+          "incident": "foulEvil",
+          "culprit": "henchman"
+        },
+        {
+          "day": 3,
+          "incident": "spreading",
+          "culprit": "doctor"
+        },
+        {
+          "day": 4,
+          "incident": "missingPerson",
+          "culprit": "forensicSpecialist"
+        }
+      ],
+      "description": "In each loop of this script, the Mastermind has a fool-proof way to win. That means that the Protagonists have no other choice than to find out what is happening and aim for the Final Guess. It’s a puzzle to solve. But not a regular, decent puzzle. And it’s a question of whether the Protagonists can notice this and find the answer.",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "* Note: Due to Subplot, Paranoia Virus, the Class Rep, Office Worker, Forensic Specialist, Doctor, Soldier, and Henchman become Serial Killers while they have 3 or more Unease on them. \n\n1. At the end of day 1, have at least 1 Unease on the Rich Student, triggering the Butterfly Effect, thus triggering the loss condition in “Changing the Future” at loop end. \n\n2. End the final day with 2 or less Goodwill tokens on the Informant, triggering the loss condition of the Time Traveler.",
+      "story": "Cascading viruses—this is the future that we have no way to avoid. An insignificant start, small as the fluuttering of a butterfly’s wing, soon weaves its threads into a spiral, gradually turning it into an unavoidable maelstrom. The Protagonists cannot escape. They cannot change the future. Whatever plan of change they may have, it’s fruitless. Pointless. Completely in vain. \n\nThey must accept the future to live on and grasp the possibility of escaping the virus. Yes. That is the answer. They must find Those with Antibodies.",
+      "mastermindHints": "The Henchman should always start at the School.\n\nUnless you mess up badly, you should be able to win in every loop. In loop 1, put Unease on Rich Student and the Henchman, and Forbid Goodwill on the Forensic Specialist. Activate the Butterfly Effect, if necessary, by using the Conspiracy Theorist’s ability, and place a Goodwill token on the Rich Student. In this way, you’ll be able to trigger the Butterfly Effect in all subsequent loops. \n\nAfter that, place Intrigue tokens on the Shrine by the Foul Evil effect, and delay the discovery of the Main Plot by, for example, placing Intrigue on a girl. It’s recommended to use Forbid Goodwill somewhere every single round. \n\nOne winning strategy for the Protagonists will be to try to use the effect from Paranoia Virus, that Persons change into Serial Killers with enough Unease counters, and by this method, discover which characters don’t change and which don’t die. Threads of Fate can also be used to pile up the Unease tokens. So, once the Protagonists catch this one, make their lives miserable with Unease -1 and Forbid Unease."
+    },
+    {
             "title": "The Future Assassin",
             "creator": "unun",
             "set": [
