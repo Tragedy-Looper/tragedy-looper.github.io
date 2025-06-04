@@ -340,6 +340,70 @@
       "mastermindHints": "You can win with either 2 Intrigue on the Hospital or the ability of the Loved One. Your first choice should be the former, but the latter hides more information. \n\nFirst day on loop 1 should be an Intrigue +2 on the School, an Intrigue +1 on the Hospital, and a bluff card on the Shrine. Then put an Unease on the Rich Student using the Conspiracy Theorist and kill her with Suicide. This is to give the impression that she might be the Witch! \n\nAfter that, try triggering both Missing Person Incidents by putting out Unease. Use the Conspiracy Theorist’s and Factor’s abilities (Subplot “Unknown Factor”: Putting 2 Intrigue on the School makes the Black Cat able to act as a Conspiracy Theorist!) when you need. Putting Unease on the Office Worker is effective both for Missing Person and for the Loved One ability. \n\nFinally, if you can get 2 Intrigue on the School, Shrine, and Hospital, the first loop is perfected. You can try to get that result in future loops too, but it’ll be hard with Forbid Intrigue and trying to prevent the Protagonists from finding the Witch with Goodwill Refusal. \n\nIt’s super easy to hide the Factor, so you don’t need to worry about the Final Guess."
     },
     {
+            "title": "The Future Assassin",
+            "creator": "unun",
+            "set": [
+            {
+                "name": "Midnight Circle",
+                "number": 3
+            },
+            {
+                "name": "New Tragedies",
+                "numbers": 5
+            }
+            ],
+            "tragedySet": "basicTragedy",
+            "mainPlot": [
+                "changeOfFuture"
+            ],
+            "subPlots": [
+                "hiddenFreak",
+                "circleFriends"
+            ],
+            "difficultySets": [
+                {
+                    "numberOfLoops": 5,
+                    "difficulty": 3
+                },
+                {
+                    "numberOfLoops": 4,
+                    "difficulty": 5
+                }
+            ],
+            "daysPerLoop": 5,
+            "cast": {
+                "girlStudent": "person",
+                "classRep": "friend",
+                "shrineMaiden": "friend",
+                "alien": "person",
+                "informer": "conspiracyTheorist",
+                "popIdol": "cultist",
+                "journalist": "person",
+                "doctor": "serialKiller",
+                "patient": "timeTraveler"
+            },
+            "incidents": [
+                {
+                    "day": 2,
+                    "incident": "butterflyEffect",
+                    "culprit": "classRep"
+                },
+                {
+                    "day": 4,
+                    "incident": "farawayMurder",
+                    "culprit": "doctor"
+                },
+                {
+                    "day": 5,
+                    "incident": "hospitalIncident",
+                    "culprit": "informer"
+                }
+            ],
+            "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
+            "story": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
+            "mastermindHints": "See Tragedy Looper: Midnight Circle Mastermind Handbook"
+        },
+    {
       "title": "Lesser of Two Evils",
       "creator": "GEnd",
       "set": [
