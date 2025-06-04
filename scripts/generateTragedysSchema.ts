@@ -1144,7 +1144,7 @@ function WriteSchema(schema: ReadonlyArrayTransform<JSONSchema>, type: string) {
     // hack, we only use anyOf in one place and that prevents the schema from being transformed to typescript type
     compile(flterObject(schema, (key, value) => key !== 'anyOf') as JSONSchema, type).then((result) => {
 
-        const typeName = `${toPascalCase(type).replaceAll(/s$/, '')}`;
+        const typeName = `${toPascalCase(type).replaceAll(/s$/g, '')}`;
 
         targetTypeScriptDefinitionLocations.map(dir => {
             const srcDir = path.join(dir, `${type}.g.ts`);
