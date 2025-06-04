@@ -153,6 +153,7 @@
     for (const [key, value] of Object.entries(obj)) {
       if (key === 'name' && typeof value === 'string') {
         // do not replace the name field
+        newObj[key] = value; // keep original name
         continue; // skip further processing for this key
       }
       newObj[key] = replaceTextInObject(value);
