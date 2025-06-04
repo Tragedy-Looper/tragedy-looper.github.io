@@ -1150,6 +1150,76 @@
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
     {
+      "title": "The Illusion Under the Cherry Tree",
+      "creator": "BakaFire",
+      "set": [
+        {
+          "name": "New Tragedies",
+          "number": 11
+        }
+      ],
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 6
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "sealedItem"
+      ],
+      "subPlots": [
+        "unsettlingRumor",
+        "hiddenFreak"
+      ],
+      "daysPerLoop": 7,
+      "cast": {
+        "doctor": "brain",
+        "boyStudent": "cultist",
+        "godlyBeing": [
+          "conspiracyTheorist",
+          {
+            "enters on loop": 3
+          }
+        ],
+        "richStudent": "serialKiller",
+        "illusion": "friend",
+        "shrineMaiden": "person",
+        "officeWorker": "person",
+        "informer": "person",
+        "scientist": "person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "increasingUnease",
+          "culprit": "shrineMaiden"
+        },
+        {
+          "day": 4,
+          "incident": "butterflyEffect",
+          "culprit": "scientist"
+        },
+        {
+          "day": 5,
+          "incident": "missingPerson",
+          "culprit": "illusion"
+        },
+        {
+          "day": 7,
+          "incident": "farawayMurder",
+          "culprit": "richStudent"
+        }
+      ],
+      "description": "This script is for players who are used to Tragedy Looper. The Protagonists should have at least 2 or 3 games under their belt. It circles around the uncanny abilities of the Illusion. Enjoy the weirdness that changes the very point of many of the Action cards.",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "1. At loop end, have 2 Intrigue on the Shrine, triggering the loss condition for “The Sealed Item”. \n\n2. At any day end, have the Rich Student alone with the Illusion, triggering the Serial Killer’s ability and thus triggering the loss condition of the Friend at loop end. \n\n3. At the end of day 7, have at least 1 Unease on the Rich Student, triggering Faraway Murder, and at least 2 Intrigue on the Illusion, selecting her as a target, triggering the loss condition of the Friend at loop end.",
+      "story": "She has materialized in this world to protect the Seal at the Shrine. And by chance, she becomes friends to the Protagonists. The enemies are many: A fanatic who has lost his mind, am artistic killer, and an amnesiac god. The Protagonists must fight with her to protect the Seal, helped by her strange abilities. But the Illusion will fade in the end. It will fade. Hopefully, it will not do so in vain. And beautifully, under the Cherry Tree.",
+      "mastermindHints": "You’ll aim for Intrigue at the Shrine by using several methods, such as An Unsettling Rumor, Missing Person, and Action cards, as well as a killing of the Illusion by the Serial Killer or Faraway Murder. It’s easiest if you don’t put all your eggs in one basket though. \n\nAs the Illusion is there, the setting of Action cards on the board is much more powerful. For example, assume that you’ve set Intrigue +1 on the Shrine and Unease +1 on the School. If the Illusion is in the School, you’ll get 1 Unease on her, which looks good, as well as an unsettling Intrigue on the Shrine. Try to use this as a way of confusing the Protagonists as much as you can. Bluntly put, you can put an Action card on the board where the Illusion is, every single day. \n\nWinning by Faraway Murder is a safe bet. The Protagonists will probably pump Goodwill on the Illusion to remove her from the board. You can’t completely stop that with Forbid Goodwill but try to mess with that as much as you can. \n\nFor the Final Guess, hide the Conspiracy Theorist or the Brain. Once the Godly Being enters in loop 3, it’s easy to hide either of them. "
+    },
+    {
       "title": "脚本家Ｘの献身 (Devotion of Mastermind X)",
       "creator": "Lapras-hst@パーソン",
       "difficultySets": [

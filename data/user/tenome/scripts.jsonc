@@ -419,69 +419,6 @@
             "victory-conditions": "",
             "story": "The hospital was empty, a ruin. Shut down by a combination of unfortunate events and political decisions. Forgotten, and abandoned. \n\nBut it harbored a secret. Here, in this very building, they had researched a new type of virus. One woman who worked as an informant had gotten ahold of this information, and the former CEO of the hospital, the boss, decided to silence her once and for all. Dedicated to his task, the boss plans to send his henchman to eliminate the evidence by destroying the building entirely, together with the boy who had contracted the virus. \n\nBut, one day a girl shows up, transferred back to the school in town. A girl with ties to the hospital and a burning hatred, accelerating the looming tragedy. \n\nCan the players outmaneuver the henchman and the vengeful girl?",
             "mastermindHints": "The :henchman: should start in the Hospital in every loop. \n\nThe first thing to aim for is a Factor kill. First loop, :intrigue: +2 :intrigue: on the School, :intrigue: +1 on the City and a bluff on the Hospital. If the :boss: is in the City, use him to place the second :intrigue: on the City there, and :suicide: the :factor:. Use the same cards in Loop 2 but interchange them. \n\nIf that gets stopped, then you should aim for a :hospitalIorror:. The :boss: can spread :intrigue: here and there. The :goodwill: effects of the :henchman: and :alien: will get in your way. Spread out Unease everywhere to make it hard to pinpoint the culprit. \n\nIf that also gets stopped, then it’s the :transferStudent:. With the :conspiracyTheorist:’s ability, you will for sure be able to activate :farawayMurder:, so have 2 :intrigue: on the :informant: (and :boyStudent:). \n\nWith the :paranoiaVirus:, you might activate a lot of :serialKillers:, but beware so you don’t get trapped in that. You can use that to get a win if you need. \n\nFor the Final Guess, you need to hide the Murderer. Don’t use the Murderer’s ability unless you can safely do so. "
-        },
-        {
-            "title": "The illusion Under the Cherry Tree",
-            "creator": "BakaFire",
-            "difficultySets": [
-                {
-                    "numberOfLoops": 4,
-                    "difficulty": 6
-                }
-            ],
-            "tragedySet": "basicTragedy",
-            "mainPlot": [
-                "sealedItem"
-            ],
-            "subPlots": [
-                "unsettlingRumor",
-                "hiddenFreak"
-            ],
-            "daysPerLoop": 7,
-            "cast": {
-                "doctor": "brain",
-                "boyStudent": "cultist",
-                "godlyBeing": [
-                    "conspiracyTheorist",
-                    {
-                        "enters on loop": 3
-                    }
-                ],
-                "richStudent": "serialKiller",
-                "illusion": "friend",
-                "shrineMaiden": "person",
-                "officeWorker": "person",
-                "informer": "person",
-                "scientist": "person"
-            },
-            "incidents": [
-                {
-                    "day": 2,
-                    "incident": "increasingUnease",
-                    "culprit": "shrineMaiden"
-                },
-                {
-                    "day": 4,
-                    "incident": "butterflyEffect",
-                    "culprit": "scientist"
-                },
-                {
-                    "day": 5,
-                    "incident": "missingPerson",
-                    "culprit": "illusion"
-                },
-                {
-                    "day": 7,
-                    "incident": "farawayMurder",
-                    "culprit": "richStudent"
-                }
-            ],
-            "specialRules": [
-                ""
-            ],
-            "victory-conditions": "",
-            "story": "She has materialized in this world to protect the Seal at the Shrine. And by chance, she becomes friends to the Protagonists. The enemies are many: A fanatic who has lost his mind, am artistic killer, and an amnesiac god. The Protagonists must fight with her to protect the Seal, helped by her strange abilities. But the :illusion: will fade in the end. It will fade. Hopefully, it will not do so in vain. And beautifully, under the Cherry Tree.",
-            "mastermindHints": "You’ll aim for :intrigue: at the Shrine by using several methods, such as An Unsettling Rumor, Missing Person, and Action cards, as well as a killing of the :illusion: by the :serialKiller: or :farawayMurder:. It’s easiest if you don’t put all your eggs in one basket though. \n\nAs the :illusion: is there, the setting of Action cards on the board is much more powerful. For example, assume that you’ve set :intrigue: +1 on the Shrine and Unease +1 on the School. If the :illusion: is in the School, you’ll get 1 Unease on her, which looks good, as well as an unsettling :intrigue: on the Shrine. Try to use this as a way of confusing the Protagonists as much as you can. Bluntly put, you can put an Action card on the board where the :illusion: is, every single day. \n\nWinning by :farawayMurder: is a safe bet. The Protagonists will probably pump :goodwill: on the :illusion: to remove her from the board. You can’t completely stop that with Forbid :goodwill: but try to mess with that as much as you can. \n\nFor the Final Guess, hide the :conspiracyTheorist: or the :brain:. Once the :godlyBeing: enters in loop 3, it’s easy to hide either of them. "
         }
     ]
 }
