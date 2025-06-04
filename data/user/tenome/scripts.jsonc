@@ -293,63 +293,6 @@
             "mastermindHints": "You have very strong power play. They can ruin it with Threads into Virus."
         },
         {
-            "title": "Fall-Sakura Gathering",
-            "creator": "Kyokei",
-            "difficultySets": [
-                {
-                    "numberOfLoops": 4,
-                    "difficulty": 3
-                },
-                {
-                    "numberOfLoops": 5,
-                    "difficulty": 6
-                }
-            ],
-            "tragedySet": "basicTragedy",
-            "mainPlot": [
-                "murderPlan"
-            ],
-            "subPlots": [
-                "loveAffair",
-                "hiddenFreak"
-            ],
-            "daysPerLoop": 5,
-            "cast": {
-                "sacredTree": "keyPerson",
-                "soldier": "killer",
-                "policeOfficer": "brain",
-                "doctor": "lover",
-                "classRep": "lovedOne",
-                "shrineMaiden": "serialKiller",
-                "sectFounder": "friend",
-                "copycat": "brain",
-                "mysteryBoy": "conspiracyTheorist"
-            },
-            "incidents": [
-                {
-                    "day": 2,
-                    "incident": "suicide",
-                    "culprit": "classRep"
-                },
-                {
-                    "day": 4,
-                    "incident": "butterflyEffect",
-                    "culprit": "doctor"
-                },
-                {
-                    "day": 5,
-                    "incident": "increasingUnease",
-                    "culprit": "sectFounder"
-                }
-            ],
-            "specialRules": [
-                ""
-            ],
-            "victory-conditions": "",
-            "story": "A giant cherry tree in the middle of the shrine. It has been used to keep evil powers away for centuries and is said to bloom in full even in fall. Hence, the worshipping of this tree has a long history in this little town, and for generations, this local religion has been passed down since the founder. But that's far from the truth. Long ago, a warlord hid a large sum of money under the tree and died, and this religious lie has been kept alive to protect the treasure. And some individuals, who have found out this truth, are coming to town. They have fooled the :shrineMaiden: and made her insane. They lured a young boy into town and pushed him down the path of evil. Their goal is to cut down the cherry tree and take the treasure for themselves. The Protagonists must find out their scheme and protect the secret. ",
-            "mastermindHints": " In loop 1, put a Vertical Movement on the Prophet and end everything straight away. The remaining two actions can be Forbid :goodwill: and Horizontal Movement on the :copycat:. If you by some reason should fail to end it there, put some :paranoia: on the Prophet with the :conspiracyTheorist:’s ability. From loop 2 and on, start aiming for a :lovedOne: victory. However, for that, the :suicide: on day 2 is a crutch. The best is if :classRep: has exactly 1 :paranoia: on day 2. The Spreading Unease of the :prophet: has extreme explosive power. If the :classRep: lives, put 1 :intrigue: and 1 :paranoia: on her, and you’ve basically won. Or you could put 2 :intrigue: on the :holyTree: and kill it with the Murderer. It should be easy if you use the :conspiracyTheorist:’s ability. It looks as if it’s easy to win, but the roles are as easily revealed too, so take great care. If you put cards on the two Murderers, and total 4 :intrigue: on them, you can win on pure luck, but you’ll end up revealing both Murderers. If you put :intrigue: on the :holyTree: outside of Spreading Unease, you won’t have time for much more, and it’s hard to win by just that. It’s next to hopeless to hide much for the Final Guess. You need to stop the deaths of the :friend:, :lovedOne:, and :lover:, and try to desperately cloud who are the Murderers and :brain:."
-        },
-        {
             "title": "Crushed by the Hospital Building in Doronoki",
             "creator": "ロキルス",
             "set": [

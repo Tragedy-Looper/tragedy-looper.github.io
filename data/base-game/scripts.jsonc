@@ -1294,6 +1294,70 @@
       "mastermindHints": "The first loop, aim to win by killing the Friend (Little Girl). Put a Horizontal Movement on the Rich Student, and Unease +1 on the Little Girl and Class Rep. Then put an Unease on the Rich Student using the Conspiracy Theorist’s ability, trigger Spreading Unease, and put two Unease on the Class Rep and an Intrigue on the Alien. This way, you can kill the Friend all the while hiding a lot of other information. If you succeed, just keep hiding information for all remaining loops. It’s important to keep the Class Rep’s Unease at 3 or more. If you fail, keep going in loop 2 as per below, and try to hide the Main Plot. \n\nFrom loop 2 and on, keep killing the Friend. If her power is used on day 1, use that to put Intrigue on the Shrine with Missing Person. Generally, it’s easy to win, but the Serial Killers are hard to contain, and things are hard to hide. Try as much as you can to hide the Journalist’s role of Time Traveler and try to keep the Main Plot hidden. It’s easy to camouflage the Main Plot as anything but Premeditated Murder. Put Intrigue on the Shrine and on the girls, to keep things fuzzy. \n\nFor the Final Guess, keep either Main Plot, the Paranoia Virus Subplot, who the first Serial Killer is, or who the Time Traveler and the Conspiracy Theorist are, hidden."
     },
     {
+      "title": "Fall-Sakura Gathering",
+      "creator": "Kyokei",
+      "set": [
+        {
+          "name": "New Tragedies",
+          "number": 13
+        }
+      ],
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 3
+        },
+        {
+          "numberOfLoops": 5,
+          "difficulty": 6
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "murderPlan"
+      ],
+      "subPlots": [
+        "loveAffair",
+        "hiddenFreak"
+      ],
+      "daysPerLoop": 5,
+      "cast": {
+        "sacredTree": "keyPerson",
+        "soldier": "killer",
+        "policeOfficer": "brain",
+        "doctor": "lover",
+        "classRep": "lovedOne",
+        "shrineMaiden": "serialKiller",
+        "sectFounder": "friend",
+        "copycat": "brain",
+        "mysteryBoy": "conspiracyTheorist"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "suicide",
+          "culprit": "classRep"
+        },
+        {
+          "day": 4,
+          "incident": "butterflyEffect",
+          "culprit": "doctor"
+        },
+        {
+          "day": 5,
+          "incident": "increasingUnease",
+          "culprit": "sectFounder"
+        }
+      ],
+      "description": " This script is for players who have played at least once. It’s specifically designed to highlight the use three of the characters that originally came with the Second Script Collection: Copycat, Holy Tree, and Prophet. ",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "1. At any day end, let the Shrine Maiden be alone with the Holy Tree, or have at least 2 Intrigue on the Holy Tree and in the same location as the Soldier or Copycat. This kills the Holy Tree and triggers the loss condition for the Key Person immediately. \n\n2. At any day end, let the Shrine Maiden be alone with the Prophet, triggering the Serial Killer’s ability, and thus the loss condition for Friend at loop end. \n\n3. At any day end, have at least 1 Intrigue and at least 3 Unease on the Class Rep (Loved One), or at least 4 Intrigue on the Soldier or Copycat (Murderers), triggering a Protagonist kill.",
+      "story": "A giant cherry tree in the middle of the shrine. It has been used to keep evil powers away for centuries and is said to bloom in full even in fall. Hence, the worshipping of this tree has a long history in this little town, and for generations, this local religion has been passed down since the founder. But that's far from the truth. Long ago, a warlord hid a large sum of money under the tree and died, and this religious lie has been kept alive to protect the treasure. And some individuals, who have found out this truth, are coming to town. They have fooled the shrine maiden and made her insane. They lured a young boy into town and pushed him down the path of evil. Their goal is to cut down the cherry tree and take the treasure for themselves. The Protagonists must find out their scheme and protect the secret. ",
+      "mastermindHints": "In loop 1, put a Vertical Movement on the Prophet and end everything straight away. The remaining two actions can be Forbid Goodwill and Horizontal Movement on the Copycat. If you by some reason should fail to end it there, put some Unease on the Prophet with the Conspiracy Theorist’s ability. \n\nFrom loop 2 and on, start aiming for a Loved One victory. However, for that, the Suicide on day 2 is a crutch. The best is if Class Rep has exactly 1 Unease on day 2. \n\nThe Spreading Unease of the Prophet has extreme explosive power. If the Class Rep lives, put 1 Intrigue and 1 Unease on her, and you’ve basically won. Or you could put 2 Intrigue on the Holy Tree and kill it with the Murderer. It should be easy if you use the Conspiracy Theorist’s ability. \n\nIt looks as if it’s easy to win, but the roles are as easily revealed too, so take great care. If you put cards on the two Murderers, and total 4 Intrigue on them, you can win on pure luck, but you’ll end up revealing both Murderers. If you put Intrigue on the Holy Tree outside of Spreading Unease, you won’t have time for much more, and it’s hard to win by just that. \n\nIt’s next to hopeless to hide much for the Final Guess. You need to stop the deaths of the Friend, Loved One, and Lover, and try to desperately cloud who are the Murderers and Brain. "
+    },
+    {
       "title": "脚本家Ｘの献身 (Devotion of Mastermind X)",
       "creator": "Lapras-hst@パーソン",
       "difficultySets": [
