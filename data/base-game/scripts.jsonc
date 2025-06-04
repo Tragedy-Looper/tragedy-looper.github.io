@@ -1485,6 +1485,56 @@
       "victory-conditions": "Hidden Special Rule:\n\nThe Mastermind wins if the Protagonists win. However, the Protagonists' optional Loss Condition will be forcibly triggered if other Loss Conditions are not met.",
       "story": "A scriptwriter weaves a tragedy spanning countless timelines. The protagonists are struggling to keep up, failing every time.  However, there is something strange about the world they have wandered into this time.\n\nWhen you find yourself hanging on the edge of despair, reach out and grasp the flickering light of hope.\n\nAll you need is a flash of inspiration.\n\nDon't give up. Let's start the next loop.",
       "mastermindHints": "Contrary to the usual rules, the screenwriter's true goal is to \"support the Protagonists and free them from the Loop.\"\n\nPlay with a poker face so that your goal is not revealed. We recommend that you keep your communication with the Protagonists to a minimum except for answering their questions, and leave your seat between Loops.\n\nWhen the Public Sheet is presented, the Protagonists may laugh at the limitations on the Mastermind, but they won't be laughing much longer.\n\nBasically, aim for :spreading: and :hospitalIncident: to occur, and for :immortal: to take effect by involving :godlyBeing:. Move :doctor: to City (preparing for :goodwill: and :paranoia: boost), and keep placing :paranoia: on :forensicSpecialist: and :boss:. Move :blackCat: to Hospital, and at the same time, place :intrigue: +2 on Hospital. \n\nAlthough the Protagonists will initially see this as a normal power play and try to thwart it, you should make full use of the abilities of the :conspiracyTheorist: and :cultist:.\n\nIn the unlikely event that :spreading: does occur, remove it from :richStudent: and place it on :doctor:, :godlyBeing:, or :forensicSpecialist:.\n\nIf you have extra hands, place Forbid :goodwill: on :richStudent: or move it to the City (so that you can use :forensicSpecialist: to remove it if :goodwill: is placed). The Protagonists will probably not understand your intentions, and a spiteful Protagonist who is used to the game will sneak through and place :paranoia: or :goodwill: on it, not realizing that they're tying their own noose.\n\nWhen the Culprit behind :butterflyEffect: and role of the :godlyBeing: are revealed, the Protagonists will feel the difficulty of breaking the loop, and the strange discomfort caused by the Mastermind's actions. Once they realize the true purpose behind everything, it's time for telepathic cooperation. Let's break out of this accursed Loop, together.\n\nTo break the loop, you need to do the following 4 things:\n\n- Cause a :hospitalIncident:\n\n- Move the :patient: out of the Hospital before the Incident occurs\n\n- Involve the :blackCat: in the :hospitalIncident:\n\n- Place 3 :goodwill: on :godlyBeing:\n\nThere are two routes: use :godlyBeing: to remove one :intrigue: from the Hospital, or use the :soldier: to make the Protagonists :immortal:.\n\nIf the role of :richStudent: is exposed due to the whims of the Protagonists, it will be more difficult to break through the Loop. In that case, on the first day, place a Vertical Movement on :doctor:, a Horizontal Movement on :richStudent:, and a :paranoia: +1 on :forensicSpecialist: or :boss: to support them.\n\nIn any case, if the Protagonists and Mastermind work together perfectly, at the end of the last day:\n\n- All characters except :blackCat: will survive and gather in the City\n- All :paranoia: counters will be zero\n- Everyone will have :goodwill: counters on them\n\nYou can do it. Good luck."
-    }
+    },
+    {
+      "title": "Thunder in the City",
+      "creator": "Redless",
+      "difficultySets": [
+            {
+                "numberOfLoops": 5,
+                "difficulty": 0
+            }
+        ],
+      "tragedySet": "firstSteps",
+        "mainPlot": [
+            "lightAvenger"
+        ],
+      "subPlots": [
+            "unsettlingRumor"
+        ],
+      "daysPerLoop": 5,
+      "cast": {
+            "popIdol": "brain",
+            "girlStudent": "conspiracyTheorist",
+            "journalist": "person",
+            "patient": "person",
+            "shrineMaiden": "person",
+            "boyStudent": "person",
+            "richStudent": "person"
+        },
+      "incidents": [
+            {
+                "day": 3,
+                "incident": "hospitalIncident",
+                "culprit": "boyStudent"
+            },
+            {
+                "day": 4,
+                "incident": "murder",
+                "culprit": "richStudent"
+            },
+            {
+                "day": 5,
+                "incident": "missingPerson",
+                "culprit": "shrineMaiden"
+            }
+        ],
+      "specialRules": [
+            ""
+        ],
+      "victory-conditions": "",
+      "story": "",
+      "mastermindHints": "This script is in an awkward spot, since it requires a fair bit of skill to solve and because it's very long, yet it's a :firstSteps: script. the kind of people who would like this script would definitely be good at this game, and if that's the case, why play a :firststeps: script with them? maybe if some people haven't played it before and some have? anyways, this script is meant to introduce the players to deep bluffing and trickery, 'coverups' in other words. to do that, we have the :brain: and :increasingUnease: subplot to obfuscate who the :brain: is. loop 1, you should try to place an :intrigue: on the city, school, and hospital. I'd put the 2 on the city since it's most important and they're less likely to block it, and one on the hospital to make it easier to set the incident off (if you definitely don't want the incident, you can also do school). then, you want to set off the :hospitalIncident: by placing a :paranoia: AND using the contheorist's ability on the :boyStudent: on day 3, to surprise the protagonists, while placing :paranoia: on other people to bluff the culprits. alternately, if they blocked on hospital or something, try to get them to block there again for the free school :intrigue:, move the :journalist: or :popIdol: over (:journalist: probably better) and/or trigger :missingPerson: so that you can go for the :placeProtect: bluff. in future loops, try to confuse the protagonists about who and where the :brain: is, and who does the :hospitalIncident:. the presence of the :murder: incident makes it harder to bluff that RMD does the :hospitalIncident:, but makes it easier to bluff place to protect and ultimately a hideous script. slowly, more and more things will be revealed over the course of five loops. it's subtle, it's a marathon, and it requires GOOD play from the protagonists to have any chance at all, but I hope and think it does a suitable job introducing the more trickery focused side of looper."
+    },
   ]
 }
