@@ -352,6 +352,12 @@
         {
             "title": "Crushed by the Hospital Building in Doronoki",
             "creator": "ロキルス",
+            "set": [
+                {
+                    "name": "New Tragedies",
+                    "number": 6
+                }
+            ],
             "difficultySets": [
                 {
                     "numberOfLoops": 5,
@@ -476,50 +482,6 @@
             "victory-conditions": "",
             "story": "She has materialized in this world to protect the Seal at the Shrine. And by chance, she becomes friends to the Protagonists. The enemies are many: A fanatic who has lost his mind, am artistic killer, and an amnesiac god. The Protagonists must fight with her to protect the Seal, helped by her strange abilities. But the :illusion: will fade in the end. It will fade. Hopefully, it will not do so in vain. And beautifully, under the Cherry Tree.",
             "mastermindHints": "You’ll aim for :intrigue: at the Shrine by using several methods, such as An Unsettling Rumor, Missing Person, and Action cards, as well as a killing of the :illusion: by the :serialKiller: or :farawayMurder:. It’s easiest if you don’t put all your eggs in one basket though. \n\nAs the :illusion: is there, the setting of Action cards on the board is much more powerful. For example, assume that you’ve set :intrigue: +1 on the Shrine and Unease +1 on the School. If the :illusion: is in the School, you’ll get 1 Unease on her, which looks good, as well as an unsettling :intrigue: on the Shrine. Try to use this as a way of confusing the Protagonists as much as you can. Bluntly put, you can put an Action card on the board where the :illusion: is, every single day. \n\nWinning by :farawayMurder: is a safe bet. The Protagonists will probably pump :goodwill: on the :illusion: to remove her from the board. You can’t completely stop that with Forbid :goodwill: but try to mess with that as much as you can. \n\nFor the Final Guess, hide the :conspiracyTheorist: or the :brain:. Once the :godlyBeing: enters in loop 3, it’s easy to hide either of them. "
-        },
-        {
-            "title": "In the Godless Temple",
-            "creator": "Kaijin",
-            "difficultySets": [
-                {
-                    "numberOfLoops": 3,
-                    "difficulty": 1
-                }
-            ],
-            "tragedySet": "firstSteps",
-            "mainPlot": [
-                "lightAvenger"
-            ],
-            "subPlots": [
-                "hideousScript"
-            ],
-            "daysPerLoop": 4,
-            "cast": {
-                "alien": "brain",
-                "policeOfficer": "conspiracyTheorist",
-                "officeWorker": "curmudgeon",
-                "patient": "friend",
-                "shrineMaiden": "person",
-                "popIdol": "person"
-            },
-            "incidents": [
-                {
-                    "day": 2,
-                    "incident": "missingPerson",
-                    "culprit": "officeWorker"
-                },
-                {
-                    "day": 3,
-                    "incident": "hospitalIncident",
-                    "culprit": "shrineMaiden"
-                }
-            ],
-            "specialRules": [
-                ""
-            ],
-            "victory-conditions": "In the Godless Temple is an advanced training script, to be played after the First Script. This is a perfect script to learn how to use :intrigue: counters. After The First Script and this, you’ll get the hang of most victory tactics for the Mastermind.",
-            "story": "A decrepit shrine at the outskirts of town. Whatever is hallowed there, it’s not a god. And it wants revenge. Revenge on the :shrineMaiden: that summoned it and consequently all humans. \n\nThis being confuses people and pushes the ill will of the broken :shrineMaiden: and less-than-good-tempered people onto the Protagonists. Will the heroes be able to stop this incarnation of darkness and evil from getting its revenge?",
-            "mastermindHints": "The basic way to win is to have 2 :intrigue: on the Shrine at the end of the loop. It’s good to also have 2 :intrigue: on the City, so that you can hide who the Brain is. When you use the Brain’s ability, see to it that the :officeWorker: and the :alien: are in the same area.\n\nAnother way to win is the Hospital Horror, while having 1 or more :intrigue: on the Hospital, killing the :patient: who is the :friend:, triggering a win condition for you.\n\nIn either case, you should get the :officeWorker: to trigger :missingPerson: to help place :intrigue:. Use the :conspiracyTheorist: ability from Day 1. But if you think you can win with 2 :intrigue: on the Shrine, don’t aim for the Hospital Horror. It’s best to hide who the culprit is there, and to place a lot of :paranoia: on them once you need to.\n\nVictory conditions:\n1. At loop end, have 2 :intrigue: on the Shrine, triggering the loss condition of Fire of the Avenger.\n\n2. At end of day 3, have at least 1 :intrigue: on the Hospital and at least 2 :paranoia: on the :shrineMaiden:, triggering the :hospitalIorror:, killing the :patient:, and triggering the :friend:’s loss condition at loop end.\n\n3. At end of day 3, have at least 2 :intrigue: on the Hospital and at least 2 :paranoia: on the :shrineMaiden:, triggering the :hospitalHorror:, killing the Protagonists.\n\nA PLAY GUIDE FOR “IN THE GODLESS TEMPLE”\nWe present a briefer play-through guide for this script.\n\nDay 1: Card playing phase\nOn loop 1, play these cards:\n• City: :intrigue: +2\n• Shrine: :intrigue: +1\n• Hospital: Any card (mainly to bluff)\n\nOn loop 2, play any of the below:\n• City or Shrine: :intrigue: +1, :intrigue: +2, or any other card\n• Hospital: :intrigue: +1 or any other card\n• :officeWorker:: Unease +1\n• :shrineMaiden:: Vertical Movement\n\nDay 1-4: Mastermind ability step\n• If it’s day 1 or 2, and the :officeWorker: and :policeOfficer: are in the same area, place an :paranoia: token on the :officeWorker:.\n• If it’s day 1, 2 or 3, and the :shrineMaiden: and :policeOfficer: are in the same area, and you have 1 or more :intrigue: on the Hospital, put an :paranoia on the :shrineMaiden:.\n• If the :alien: and :policeOfficer: are together at the City or Shrine, and you have 1 or less :intrigue: on that location, place one :intrigue: there.\n• If the :alien: is in the Shrine, and you really need to, place 1 :intrigue: there.\n\nDay 2-4: Card playing phase\nPlay cards or move, as needed:\n• City or Shrine: :intrigue: +1, :intrigue: +2 or any other card.\n• Hospital: :intrigue: +1 or any other card.\n• :shrineMaiden:: :paranoia: +1, Forbid :goodwill:, or move her away from the Shrine.\n• :alien:: Move it to Shrine or City.\n• :policeOfficer:: Move to same location as :shrineMaiden: or :officeWorker:.\n• :officeWorker:: :paranoia +1 or move to same location as :alien:.\n• :popIdol:: Forbid :goodwill: or move her so she can’t use her :goodwill: ability.\n• :patient:: Don’t place anything on him."
         }
     ]
 }
