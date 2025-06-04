@@ -590,7 +590,81 @@
             "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
             "story": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
             "mastermindHints": "See Tragedy Looper: Midnight Circle Mastermind Handbook"
-        },
+    },
+{
+  "title": "Un Rerum",
+  "creator": "GaRSoBaG",
+  "set": [
+    {
+      "name": "New Tragedies",
+      "number": 8
+    }
+  ],
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 6
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "sealedItem"
+  ],
+  "subPlots": [
+    "circleFriends",
+    "threadsFate"
+  ],
+  "daysPerLoop": 6,
+  "cast": {
+    "ai": "brain",
+    "richStudent": "cultist",
+    "alien": "friend",
+    "officeWorker": "friend",
+    "blackCat": "conspiracyTheorist",
+    "mysteryBoy": "lover",
+    "classRep": "person",
+    "forensicSpecialist": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "suicide",
+      "culprit": "blackCat"
+    },
+    {
+      "day": 2,
+      "incident": "foulEvil",
+      "culprit": "ai"
+    },
+    {
+      "day": 3,
+      "incident": "missingPerson",
+      "culprit": "mysteryBoy"
+    },
+    {
+      "day": 4,
+      "incident": "spreading",
+      "culprit": "officeWorker"
+    },
+    {
+      "day": 5,
+      "incident": "butterflyEffect",
+      "culprit": "classRep"
+    },
+    {
+      "day": 6,
+      "incident": "murder",
+      "culprit": "alien"
+    }
+  ],
+  "description": "“un rerum”’s specialty is its usage of Threads of Fate. Horribly enough, if you fail in loop 3, you won’t be able to win the last loop. Also, the A.I. appears, and you’ll need to use that one’s abilities.",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "1. At loop end, have 2 Intrigue on the Shrine, triggering the loss condition for “The Sealed Item”. \n\n2. At the end of day 6, have the Office Worker in the same location as the Alien, and at least 2 Unease on the Alien, triggering Homicide, and thus triggering the loss condition of Friend at loop end.",
+  "story": "In a corner of the city, a lot of electronics have started blinking. One advanced computer, said to be able to change the world, has become self-aware. And it tries to replace reality with supernaturality, truly changing the world. The last hope IS the Shrine; that area has not yet fallen victim to this new order. If that one falls, then the entire city is lost",
+  "mastermindHints": "Thanks to the Black Cat, you can win by placing that needed Intrigue on the Shrine. \n\nOn day 1, move the Rich Student vertically, play Intrigue +1 on the Shrine, and Intrigue +2 on the City. If the Shrine’s Intrigue is blocked, then you’ll have to use the Cultist’s power to unblock it. After that, place Unease tokens to trigger Transfer Friendship and Butterfly Effect. \n\nIn loops 2 and 3, you’ll probably have Unease on the A.I. and the Mystery Boy. If you trigger Foul Evil or Missing Person, you’ll win. Specifically, in loop 2, the Protagonists will probably place Goodwill tokens on the Mystery Boy, so you’ll mostly win by Missing Person in loop 3. \n\nIt’s also important to place Goodwill on the A.I. and Mystery Boy with Transfer Friendship and Butterfly Effect. If you start a loop with Unease on both, place Intrigue +2 on the A.I., Intrigue +1 on the Shrine, and Unease +1 on the Mystery Boy, and you’ll have it. \n\nIf you avoid using Goodwill Refusal on the A.I., it’ll take time for the Protagonists to realize she’s the Brain. Use the Goodwill Refusal with wisdom. \n\nFor the Final Guess, hide either the Friend or Conspiracy Theorist."
+},
     {
       "title": "Lesser of Two Evils",
       "creator": "GEnd",
