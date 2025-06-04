@@ -151,9 +151,21 @@
     // if obj is an object, create a new object with replaced text
     const newObj: Record<string, any> = {};
     for (const [key, value] of Object.entries(obj)) {
-      if ((key === 'name' || key === 'id') && typeof value === 'string') {
-        // do not replace the name or id field
-        newObj[key] = value; // keep original name
+      if (typeof value === 'string') {
+        // we do not want to replace text in all fields
+        const fieldsToReplace = [
+          'victory-conditions',
+          'description',
+          'story',
+          'mastermindHints',
+          'prerequisite',
+        ];
+        if (fieldsToReplace.includes(key)) {
+          newObj[key] = replaceText(value);
+        } else {
+          newObj[key] = value; // keep original name
+        }
+
         continue; // skip further processing for this key
       }
       newObj[key] = replaceTextInObject(value);
