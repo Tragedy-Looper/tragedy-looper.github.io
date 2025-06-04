@@ -6,15 +6,15 @@ import type { LayoutServerLoad } from './$types';
 import * as fs from 'fs';
 
 function escapeRegExp(string: string): string {
-    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+    return string.replaceAll(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
 }
 
 function normalizeCharacterName(name: string): string {
-    return name.replace(/[^a-zA-Z0-9]/g, '').toLowerCase(); // remove non-alphanumeric characters and convert to lowercase
+    return name.replaceAll(/[^a-zA-Z0-9]/g, '').toLowerCase(); // remove non-alphanumeric characters and convert to lowercase
 }
 
 function normalizeTragedyName(name: string): string {
-    return name.replace(/[^a-zA-Z0-9\(\) _\-]/g, '').replace(' ', '_').toLowerCase(); // remove non-alphanumeric characters and convert to lowercase
+    return name.replaceAll(/[^a-zA-Z0-9\(\) _\-]/g, '').replaceAll(' ', '_').toLowerCase(); // remove non-alphanumeric characters and convert to lowercase
 }
 
 export const load: LayoutServerLoad = ({ params }) => {
@@ -30,7 +30,7 @@ export const load: LayoutServerLoad = ({ params }) => {
     // filter characterNames to only those that have an image in the static/cards/characters folder
     const images = fs.readdirSync(characterImagesPath)
         .filter(file => file.endsWith('.png'))
-        .map(file => file.replace('.png', '')); // remove .png extension
+        .map(file => path.basename( file, '.png')); // remove .png extension
 
     const characterMapImages = characterNames.reduce((acc, name) => {
         // /^${name}(\d+)?$/i
@@ -51,7 +51,13 @@ export const load: LayoutServerLoad = ({ params }) => {
         .map(file => [path.basename(file, path.extname(file)), path.extname(file)] as const) // get basename and extension
     );
 
+    console.warn(`Found ${Object.keys(packageImages).length} package images in ${packageImagePath}`);
+    console.warn(`Keys are: ${Object.keys(packageImages).join(', ')}`);
+    console.warn(`normalized keys are: ${Object.keys(packageImages).map(x => normalizeTragedyName(x)).join(', ')}`);
+
     const tragedySets = [...new Set((scripts as unknown as Script[]).flatMap(x => x.set?.map(x => x.name ?? '') ?? []).filter(x => x.length > 0))];
+    console.warn(`Found ${tragedySets.length} tragedy sets: ${tragedySets.join(', ')}`);
+    console.warn(`Normalized tragedy sets: ${tragedySets.map(x => normalizeTragedyName(x)).join(', ')}`);
     const tragedySetImages = Object.fromEntries(tragedySets.map(ts => [ts, normalizeTragedyName(ts)] as const).filter(([, fileName]) => {
         return fileName in packageImages;
     }).map(([keys, path]) => [keys, `${base}/packages/${path}${packageImages[path]}`])) as Partial<Record<string, string>>;
