@@ -206,8 +206,8 @@ export function join(array: readonly string[], delimeter?: string, lastDelimeter
 
 export function toPascalCase(str: string): string {
     return str
-        .replace(/(?:^\w|[A-Z]|\b\w)/g, (match) => match.toUpperCase())
-        .replace(/\s+/g, '');
+        .replaceAll(/(?:^\w|[A-Z]|\b\w)/g, (match) => match.toUpperCase())
+        .replaceAll(/\s+/g, '');
 }
 
 
@@ -314,7 +314,7 @@ export function cssesc(string: string, options?: Partial<Options>) {
     // Remove spaces after `\HEX` escapes that are not followed by a hex digit,
     // since they’re redundant. Note that this is only possible if the escape
     // sequence isn’t preceded by an odd number of backslashes.
-    output = output.replace(regexExcessiveSpaces, function ($0, $1, $2) {
+    output = output.replaceAll(regexExcessiveSpaces, function ($0, $1, $2) {
         if ($1 && $1.length % 2) {
             // It’s not safe to remove the space, so don’t.
             return $0;

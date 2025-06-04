@@ -1,0 +1,10 @@
+{
+    "$schema": "./translationsOverride.schema.json",
+    "translations": {
+        "en": {
+            "richStudent.name": [
+                "Rich Student"
+            ]
+        }
+    }
+}

@@ -197,6 +197,44 @@ function writeSchema(translationStrings: string[], location: string) {
     fs.writeFileSync(path.join(location, 'translations.schema.json'), JSON.stringify(translationSchema, undefined, 2));
     console.debug(`Finished writing translation schema to ${path.join(location, 'translations.schema.json')}`);
 }
+function writeOverrideSchema(translationStrings: string[], location: string) {
+    if (translationStrings.length === 0) {
+        return;
+    }
+    const translationSchema = {
+        $schema: "http://json-schema.org/draft-07/schema#",
+        title: "Translations",
+        type: "object",
+        "additionalProperties": false,
+        properties: {
+            "$schema": {
+                type: "string"
+            },
+            translations: {
+                type: "object",
+                "additionalProperties": {
+                    "$ref": "#/definitions/laguages",
+                },
+            },
+        },
+        description: "Translations for the Tragedy Looper game. Each key is a language code, and the value is an object with translation keys and their corresponding translations.",
+        "definitions": {
+            "laguages": {
+                type: "object",
+                "additionalProperties": {
+                    type: "array",
+                    items: { tyep: "string" }
+                },
+                "propertyNames": {
+                    "enum": [...new Set(translationStrings)]
+                },
+            },
+
+        }
+    };
+    fs.writeFileSync(path.join(location, 'translationsOverride.schema.json'), JSON.stringify(translationSchema, undefined, 2));
+    console.debug(`Finished writing translationOveride schema to ${path.join(location, 'translationsOverride.schema.json')}`);
+}
 
 // first we make the jsons cshemas for each data folder,
 
@@ -219,6 +257,19 @@ function generateTranslationSchemaForDataFolder(dir: string) {
     console.debug(`Finished generating translation schema for ${dir}`);
 }
 
+function generateTranslationOverrideSchemaForDataFolder(dir: string) {
+    const nonScriptObjects = types.filter(x => x !== 'scripts').flatMap(type => getJsonObjectsWithSchema(dir, type));
+    const scriptObjects = getJsonObjectsWithSchemaWithoutSubfolder(dir, 'scripts');
+    const nonScriptStrings = nonScriptObjects.flat().flatMap(obj => [`${obj.id}.name`]);
+
+    const uniqueStrings = [...new Set([...nonScriptStrings,].map(x => x.trim()).filter(x => x.length > 0))].sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
+
+    writeOverrideSchema(uniqueStrings, dir);
+    console.debug(`Finished generating translation schema for ${dir}`);
+}
+
+
+
 // generate translation schema for each folder under data
 function getSubFolders(dir: string): string[] {
     const subFolders: string[] = [];
@@ -234,6 +285,7 @@ function getSubFolders(dir: string): string[] {
 }
 const dataFolders = getSubFolders('./data');
 dataFolders.forEach(generateTranslationSchemaForDataFolder);
+dataFolders.forEach(generateTranslationOverrideSchemaForDataFolder);
 console.log('Finished generating translation schemas for data folders');
 
 
