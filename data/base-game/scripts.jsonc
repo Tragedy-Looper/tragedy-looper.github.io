@@ -1220,6 +1220,80 @@
       "mastermindHints": "You’ll aim for Intrigue at the Shrine by using several methods, such as An Unsettling Rumor, Missing Person, and Action cards, as well as a killing of the Illusion by the Serial Killer or Faraway Murder. It’s easiest if you don’t put all your eggs in one basket though. \n\nAs the Illusion is there, the setting of Action cards on the board is much more powerful. For example, assume that you’ve set Intrigue +1 on the Shrine and Unease +1 on the School. If the Illusion is in the School, you’ll get 1 Unease on her, which looks good, as well as an unsettling Intrigue on the Shrine. Try to use this as a way of confusing the Protagonists as much as you can. Bluntly put, you can put an Action card on the board where the Illusion is, every single day. \n\nWinning by Faraway Murder is a safe bet. The Protagonists will probably pump Goodwill on the Illusion to remove her from the board. You can’t completely stop that with Forbid Goodwill but try to mess with that as much as you can. \n\nFor the Final Guess, hide the Conspiracy Theorist or the Brain. Once the Godly Being enters in loop 3, it’s easy to hide either of them. "
     },
     {
+      "title": "A Little Friend",
+      "creator": "BakaFire+R",
+      "set": [
+        {
+          "name": "New Tragedies",
+          "number": 12
+        }
+      ],
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 4
+        },
+        {
+          "numberOfLoops": 5,
+          "difficulty": 3
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "changeOfFuture"
+      ],
+      "subPlots": [
+        "hiddenFreak",
+        "paranoiaVirus"
+      ],
+      "daysPerLoop": 5,
+      "cast": {
+        "godlyBeing": [
+          "cultist",
+          {
+            "enters on loop": 3
+          }
+        ],
+        "journalist": "timeTraveler",
+        "classRep": "serialKiller",
+        "youngGirl": "friend",
+        "richStudent": "conspiracyTheorist",
+        "blackCat": "person",
+        "alien": "person",
+        "informer": "person",
+        "forensicSpecialist": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "increasingUnease",
+          "culprit": "richStudent"
+        },
+        {
+          "day": 2,
+          "incident": "missingPerson",
+          "culprit": "youngGirl"
+        },
+        {
+          "day": 4,
+          "incident": "increasingUnease",
+          "culprit": "informer"
+        },
+        {
+          "day": 5,
+          "incident": "butterflyEffect",
+          "culprit": "classRep"
+        }
+      ],
+      "description": "This is a script for players who have played at least once. It’s made to make full use of the abilities of the Little Girl and is a good script to get to know her usefulness.",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "* Note: Due to Subplot, Paranoia Virus, the Alien, Black Cat, Informant, and Forensic Specialist become Serial Killers while they have 3 or more Unease on them. \n\n1. At the end of day 5, have at least 2 Unease on the Class Rep, triggering the Butterfly Effect, thus triggering the loss condition of “Changing the Future” at loop end. \n\n2. At loop end, have 2 or less Goodwill on the Journalist, triggering the loss condition of the Time Traveler at loop end. \n\n3. At any day end, have the Little Girl alone with the Class Rep, triggering the Serial Killer’s ability, thus triggering the loss condition of the Friend at loop end. \n\n4. At any day end, have at least 3 Unease on Alien, Black Cat, Informant, or Forensic Specialist, triggering the effect of Paranoia Virus, turning them into Serial Killers, and alone with the Little Girl, triggering the loss condition of the Friend at loop end.",
+      "story": "There was a serial killer who threatened to kill a girl. A visitor from the future comes back to create killers to stop the first killer from succeeding. Things got out of control. \n\nThe Protagonists must reveal the visitor’s identity and persuade him to stop. And they will need the power of the young girl. She and only she can help them!",
+      "mastermindHints": "The first loop, aim to win by killing the Friend (Little Girl). Put a Horizontal Movement on the Rich Student, and Unease +1 on the Little Girl and Class Rep. Then put an Unease on the Rich Student using the Conspiracy Theorist’s ability, trigger Spreading Unease, and put two Unease on the Class Rep and an Intrigue on the Alien. This way, you can kill the Friend all the while hiding a lot of other information. If you succeed, just keep hiding information for all remaining loops. It’s important to keep the Class Rep’s Unease at 3 or more. If you fail, keep going in loop 2 as per below, and try to hide the Main Plot. \n\nFrom loop 2 and on, keep killing the Friend. If her power is used on day 1, use that to put Intrigue on the Shrine with Missing Person. Generally, it’s easy to win, but the Serial Killers are hard to contain, and things are hard to hide. Try as much as you can to hide the Journalist’s role of Time Traveler and try to keep the Main Plot hidden. It’s easy to camouflage the Main Plot as anything but Premeditated Murder. Put Intrigue on the Shrine and on the girls, to keep things fuzzy. \n\nFor the Final Guess, keep either Main Plot, the Paranoia Virus Subplot, who the first Serial Killer is, or who the Time Traveler and the Conspiracy Theorist are, hidden."
+    },
+    {
       "title": "脚本家Ｘの献身 (Devotion of Mastermind X)",
       "creator": "Lapras-hst@パーソン",
       "difficultySets": [
