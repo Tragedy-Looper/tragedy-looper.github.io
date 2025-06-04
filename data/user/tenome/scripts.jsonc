@@ -353,11 +353,11 @@
             "title": "Crushed by the Hospital Building in Doronoki",
             "creator": "ロキルス",
             "set": [
-            {
-              "name": "New Tragedies",
-              "number": 6
-            }
-          ],
+                {
+                    "name": "New Tragedies",
+                    "number": 6
+                }
+            ],
             "difficultySets": [
                 {
                     "numberOfLoops": 5,
