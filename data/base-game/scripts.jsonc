@@ -1585,5 +1585,80 @@
       "story": "",
       "mastermindHints": "This whole script revolves around :missingPerson:. It will let you drag the :nurse: into the maiden's path, and also let you stack some more :intrigue: on the school. It's your \"easy out\", everything else in the script lives in service of it. The first day you should aim to serial kill the nurse. LOL! Gotem. Another loop, drop :paranoia: on the OW, and move the :girlStudent: left. By doing this, you will be in a good spot to MP. If people don't die, stack the school and set to work adding :intrigue:. If people do die, try to position the :shrineMaiden: alone so that you can MP the nurse over. Another loop, try and stack people in the school and obfuscate who exactly the :cultist: is. Finally, try and win the final loop via :missingPerson: shenanigans, which is surprisingly hard to do. You might consider playing this instead of the first script, or in place of the second script if your players don't mind you crushing their spirits by doing the same BS strat that characterizes the first script, a second time in a row. I believe this is very balanced. But of course you have to contend with the repetition of :serialKiller: if you're playing this after the first script. "
     },
+    {
+      "title": "悪辣なる報道 (Scathing Report)",
+      "creator": "ペンスキー",
+      "difficultySets": [
+            {
+                "numberOfLoops": 6,
+                "difficulty": 8
+            }
+        ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+            "murderPlan"
+        ],
+      "subPlots": [
+            "hiddenFreak",
+            "threadsFate"
+        ],
+      "daysPerLoop": 5,
+      "cast": {
+            "officeWorker": "keyPerson",
+            "boss": [
+                "killer",
+                {
+                    "Turf": "Hospital"
+                }
+            ],
+            "transferStudent": [
+                "brain",
+                {}
+            ],
+            "ai": "serialKiller",
+            "journalist": "friend",
+            "godlyBeing": [
+                "person",
+                {}
+            ],
+            "patient": "person",
+            "soldier": "person",
+            "classRep": "person",
+            "richStudent": "person"
+        },
+      "incidents": [
+            {
+                "day": 1,
+                "incident": "suicide",
+                "culprit": "officeWorker"
+            },
+            {
+                "day": 2,
+                "incident": "butterflyEffect",
+                "culprit": "godlyBeing"
+            },
+            {
+                "day": 3,
+                "incident": "increasingUnease",
+                "culprit": "journalist"
+            },
+            {
+                "day": 4,
+                "incident": "farawayMurder",
+                "culprit": "transferStudent"
+            },
+            {
+                "day": 5,
+                "incident": "spreading",
+                "culprit": "richStudent"
+            }
+        ],
+      "specialRules": [
+            ""
+        ],
+      "description": "This is a very unreasonable script. Although six loops seems long at first glance, the time given to the protagonist is shorter than expected.\nThe final battle is a game of luck, so it is recommended to escape the loop, but you will be required to understand the entire script and place your cards perfectly. ",
+      "story": "",
+      "mastermindHints": "Up until the third loop, the scriptwriter's means of victory are strictly defined. By following this, you can make the protagonist feel despair with each loop.\n\n-1st loop: Murder of :friend: by :serialKiller:\n\n-2nd loop: :suicide: of :keyPerson:\n\n-3rd loop onwards: PP1 with :farawayMurder: The 2nd loop is preparation time. By following the template, you can set up a vicious PP from the 3rd loop onwards. However, if you do not place a :goodwill: counter on the :officeWorker: in the 1st loop, the script will fall apart. Keep placing Forbid :goodwill: on the :boss: and encourage the :officeWorker: to use his ability. The 3rd loop is where the real action begins. From this point onwards, keep placing Forbid :goodwill: on the :ai: and :paranoia:+1 on the :journalist: every day to cause :increasingUnease:. Put that :paranoia: on :transferStudent: and :intrigue: on the :officeWorker:. By following the template the next day, you can be sure to win with :farawayMurder:. Note that you don't have to place :intrigue: on the :journalist: and :officeWorker: on the 4th day. If the :journalist: doesn't have :paranoia:-1, prepare :intrigue: the next day. By doing so, you can place Forbid :goodwill: on the :ai: on the 4th day as well. Aim for Spreading to occur on the 4th loop. If Spreading occurs after the 4th loop, you can prevent the :officeWorker: from padding their :goodwill: and losing the chance to escape the loop. Hide the Killer in the final battle. Do not refuse the :boss:'s :goodwill: ability.\n\nThe way for the protagonist to win is to cause Spreading with the :ai: and remove the :goodwill: counter from the :journalist:. The steps to do this are as follows.\n\nFirst, place :paranoia:-1 on the :journalist: until the 2nd day, and place 3 :goodwill: on :richStudent.\n\nThen, on the third day, make sure :richStudent: is not in the Shrine, and if there is a card on :transferStudent:, put :paranoia:-1 on it. During this time, the :officeWorker: must not have :intrigue:, so keep Forbid :intrigue: on it until the third day. However, if the :officeWorker: is free, try :goodwill:+1 on the :ai:\n\nThen the writer must follow the template for the fourth day, and the :ai: and :richStudent: will be free, so the :ai:'s :goodwill: ability can be used all at once.\n\nNote that you can take care of Spreading by putting Forbid :intrigue: on the :journalist: here. Thus, by removing the :goodwill: counter from the :journalist: here, you can almost certainly seal Increasing Unease in the next loop.\n\nIf you get this far, the protagonist's victory is almost certain."
+    },
   ]
 }
