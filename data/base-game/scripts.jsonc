@@ -51,6 +51,52 @@
       "mastermindHints": "See Tragedy Looper Mastermind Handbook"
     },
     {
+      "title": "The First Script (NT)",
+      "creator": "BakaFire",
+      "set": [
+        {
+          "name": "New Tragedies",
+          "number": 1
+        }
+      ],
+      "difficultySets": [
+        {
+          "numberOfLoops": 3,
+          "difficulty": 1
+        }
+      ],
+      "tragedySet": "firstSteps",
+      "mainPlot": [
+        "murderPlan"
+      ],
+      "subPlots": [
+        "shadowRipper"
+      ],
+      "daysPerLoop": 3,
+      "cast": {
+        "girlStudent": "keyPerson",
+        "officeWorker": "killer",
+        "doctor": "brain",
+        "popIdol": "conspiracyTheorist",
+        "shrineMaiden": "serialKiller",
+        "boyStudent": "person"
+      },
+      "incidents": [
+        {
+          "day": 3,
+          "incident": "suicide",
+          "culprit": "girlStudent"
+        }
+      ],
+      "description": "This script is designed to be used directly after having explained the game, and everyone, both Mastermind and Protagonists, plays Tragedy Looper for the first time. So, you can play it fairly relaxed and focus on getting everything right. As it’s a practice script, it’s not very difficult. Don’t worry about winning or losing.",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "Killing the Key Person (:girlStudent:) \n1. At any day end, have :shrineMaiden: and :girlStudent: alone in a location, triggering the Serial Killer’s effect to kill the :girlStudent:, triggering the Key Person’s loss condition immediately. \n2. At any day end, have 2 or more Intrigue on the :girlStudent: in the same location as the :officeWorker:, triggering the Murderer’s Key Person kill effect, and thus the Key Person’s loss condition immediately. \n3. At end of day 3, have 3 or more Unease on the :girlStudent:, triggering her Suicide, and thus triggering the Key Person’s loss condition immediately. \n\nKilling the Protagonists \n• At any day end, have 4 or more Intrigue on the Offce Worker, triggering the Murderer’s Protagonist kill effect.",
+      "story": "Welcome to the First Script. We’ll start with a simple tragedy to try out what you have learned. \n\nA girl has learned a secret. And to silence her, some organization has sent out an assassin to silence her. Her best friend, a :popIdol:, isn’t much help, due to being a bit paranoid. To make matters worse, there’s also a serial killer in town. Do you think the heroes will be able to defend the :youngGirl:?",
+      "mastermindHints": "Aim to kill the :girlStudent:. The possible ways to kill her are listed in the “Victory Conditions” below. Just playing a card on the :girlStudent: will have people wonder what card it is, so play a card on her every single day. \n\nIn the first loop, the Protagonists have no idea of what’s happening. It’s recommended to just move the :girlStudent: to the :shrineMaiden: (Serial Killer). \n\nFrom the second loop and on, the Protagonists will be wary of the Serial Killer. Use that to get the :girlStudent: to commit suicide. Use the Conspiracy Theorist’s ability to place Unease, and the card Unease +1, to get her to 3 Unease by the third day. \n\nIn the third loop, you’ll have to aim for every possible way to kill her. You can place 2 Intrigue on her to get the :officeWorker: to kill her or put 4 Intrigue on the :officeWorker: to kill the Protagonists. (Remember, you can’t move the :officeWorker: to the School as he is not allowed there.) Finally, use the Brain’s power when you can.\n\nHelping the Protagonists\n\nIf the Protagonists seem to struggle as to what to do, tell them this: “Winning the first loop is next to impossible. What you want to do is gather information. This is best done by playing Goodwill +1 or Goodwill +2 on some characters to use their abilities.” Also, to use the Reference sheet to figure out what occurred and possibly how it occurred.\n\nA PLAY GUIDE FOR “THE FIRST SCRIPT” \n\nAs this is the very first script, we give you suggestions on how to play out the script. Try it out the first time you play the script. \n\n(1) First loop, Day 1: Card playing step\nThe very first round, play the following cards: \n• :girlStudent:: Vertical Movement \n• :officeWorker:: Intrigue +1 \n• :doctor:: Unease +1 \nAfter the cards resolve, if the result is that the :girlStudent: is alone with the :shrineMaiden:, you’ve won, go to Bad Ending 1. If not, go to (2) \n\n(2) Day 1 to 3: Mastermind ability step\nIf the :popIdol: and the :girlStudent: are in the same location, place an Unease token on the :girlStudent: (using the Idol’s Conspiracy Theorist ability). If the :doctor: and the :officeWorker: or the :girlStudent: are in the same area, place one Intrigue on the :officeWorker: or :girlStudent: (using the :doctor:’s Brain ability) \n• Check the Bad Ending list; if any are fulfilled, you’ve won. But if it’s the third day, and nothing has happened, the Protagonists have won. Otherwise, go to (3).\n\n(3) Day 2 or 3: Card playing phase\nBelow you will find several tactics depending on the situation. They are in priority order. Also, if you can combine 2 tactics, do so. \n• Tactic 1: Kill the :girlStudent: with the Serial Killer (if the Serial Killer is divulged, the players will hamper this): Move the :shrineMaiden: and the :girlStudent: so that they end up together. You can use this tactic even if the Serial Killer is divulged if you have a card play to spare or if it’s the only way out. \n• Tactic 2: Suicide the :girlStudent: (she must have at least 1 Unease if it’s day 2, and at least 2 if it’s day 3): Put an Unease +1 on the :girlStudent:, move the :popIdol: to the :girlStudent:, and put Forbid Goodwill on the :boyStudent:. \n• Tactic 3: Kill the Protagonists with the Murderer (:officeWorker: must have at least 1 Intrigue, hopefully 2, if it’s day 3): Put Intrigue +1 or +2 on the :officeWorker: and move the :doctor: to where the :officeWorker: is. \n• Tactic 4: Kill the :girlStudent: with the Murderer: Put Intrigue +1, Intrigue +2 on the :girlStudent:, or move her to the :officeWorker:. Move the :officeWorker: to where the :girlStudent: is (remember, he cannot go to the School!). Move the :doctor: to the :girlStudent:’s location. \nIf either tactic is fulfilled, no need to do anything in (2) and go to the Bad Ending in question. If neither is fulfilled, go to (2).  \n\n(4) Second loop, Day 1: Card playing phase\nIf the Serial Killer hasn’t been divulged, go to (1). \nIf the Serial Killer has been divulged, do the following: \n• Play Unease +1 on the :girlStudent:, Horizontal Movement on the Idol, Vertical Movement on the :doctor:. Then go to (2). \n\n(5) Third loop, Day 1: Card playing phase \nTry to fight it out your way in loop 3. If you are at a loss as to what to do, check (3). \n\nBad Ending 1: Meeting at night. \nCondition: If the :shrineMaiden: and the :girlStudent: are alone in one location \nDon’t do anything during the Mastermind ability step. Then, when the day ends, the :girlStudent: dies (turn her sideways) and tell the Protagonists she’s dead, they’ve lost, and the loop ends. \n\nBad Ending 2: So, you were the ones snooping around! \nCondition: There are 4 Intrigue counters on the :officeWorker: \nIf it’s already a sure thing, you don’t need to do anything during the Mastermind ability step. If you don’t have enough Intrigue, but can use the Brain’s ability, then do so. Then, at the end of the day, tell the Protagonists that they are dead, they’ve lost, and the loop ends. \n\nBad Ending 3: Who was the assassin? \nCondition: If the :girlStudent: has 2 Intrigue on her and is in the same location as the :officeWorker: \nDon’t do anything during the Mastermind ability step if she already has enough Intrigue, however, if she’s with the :doctor:, do place an Intrigue on her to get the :officeWorker: to kill her at day end. Tell the Protagonists she’s dead, they’ve lost, and the loop ends. \n\nBad Ending 4: Couldn’t stand the strain. \nCondition: If the :girlStudent: has 3 or more Unease on day 3 \nIf it’s already a sure thing, don’t use any Mastermind ability to put another Unease on her. If you need the Conspiracy Theorist to put the third Unease on her, do so. Then, during the Incident step, she dies. Tell the Protagonists that she’s dead, they’ve lost, and the loop ends. \n\nAfter the ending, if this was the first loop, reset the board and go to (4). \nIf this was the second loop, reset the board and go to (5) \nIf this was the third loop, you’ve won!"
+    },
+    {
       "title": "In the Godless Temple",
       "creator": "Kaijin",
       "set": [
