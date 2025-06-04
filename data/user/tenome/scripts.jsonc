@@ -4,55 +4,6 @@
     // "$schema": "../scripts.schema.json",
     "scripts": [
         {
-            "title": "A Cruel Shrine Maiden's Thesis",
-            "creator": "Redless",
-            "difficultySets": [
-                {
-                    "numberOfLoops": 3,
-                    "difficulty": 0
-                },
-                {
-                    "numberOfLoops": 4,
-                    "difficulty": 0
-                }
-            ],
-            "tragedySet": "firstSteps",
-            "mainPlot": [
-                "placeProtect"
-            ],
-            "subPlots": [
-                "shadowRipper"
-            ],
-            "daysPerLoop": 4,
-            "cast": {
-                "nurse": "keyPerson",
-                "popIdol": "cultist",
-                "girlStudent": "conspiracyTheorist",
-                "shrineMaiden": "serialKiller",
-                "classRep": "person",
-                "patient": "person",
-                "officeWorker": "person"
-            },
-            "incidents": [
-                {
-                    "day": 1,
-                    "incident": "increasingUnease",
-                    "culprit": "officeWorker"
-                },
-                {
-                    "day": 4,
-                    "incident": "missingPerson",
-                    "culprit": "nurse"
-                }
-            ],
-            "specialRules": [
-                ""
-            ],
-            "victory-conditions": "",
-            "story": "",
-            "mastermindHints": "This whole script revolves around :missingPerson:. It will let you drag the :nurse: into the maiden's path, and also let you stack some more :intrigue: on the school. It's your \"easy out\", everything else in the script lives in service of it. The first day you should aim to serial kill the nurse. LOL! Gotem. Another loop, drop :paranoia: on the OW, and move the :girlStudent: left. By doing this, you will be in a good spot to MP. If people don't die, stack the school and set to work adding :intrigue:. If people do die, try to position the :shrineMaiden: alone so that you can MP the nurse over. Another loop, try and stack people in the school and obfuscate who exactly the :cultist: is. Finally, try and win the final loop via :missingPerson: shenanigans, which is surprisingly hard to do. You might consider playing this instead of the first script, or in place of the second script if your players don't mind you crushing their spirits by doing the same BS strat that characterizes the first script, a second time in a row. I believe this is very balanced. But of course you have to contend with the repetition of :serialKiller: if you're playing this after the first script. "
-        },
-        {
             "title": "悪辣なる報道 (Scathing Report)",
             "creator": "ペンスキー",
             "difficultySets": [

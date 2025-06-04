@@ -1536,5 +1536,54 @@
       "story": "",
       "mastermindHints": "This script is in an awkward spot, since it requires a fair bit of skill to solve and because it's very long, yet it's a :firstSteps: script. the kind of people who would like this script would definitely be good at this game, and if that's the case, why play a :firststeps: script with them? maybe if some people haven't played it before and some have? anyways, this script is meant to introduce the players to deep bluffing and trickery, 'coverups' in other words. to do that, we have the :brain: and :increasingUnease: subplot to obfuscate who the :brain: is. loop 1, you should try to place an :intrigue: on the city, school, and hospital. I'd put the 2 on the city since it's most important and they're less likely to block it, and one on the hospital to make it easier to set the incident off (if you definitely don't want the incident, you can also do school). then, you want to set off the :hospitalIncident: by placing a :paranoia: AND using the contheorist's ability on the :boyStudent: on day 3, to surprise the protagonists, while placing :paranoia: on other people to bluff the culprits. alternately, if they blocked on hospital or something, try to get them to block there again for the free school :intrigue:, move the :journalist: or :popIdol: over (:journalist: probably better) and/or trigger :missingPerson: so that you can go for the :placeProtect: bluff. in future loops, try to confuse the protagonists about who and where the :brain: is, and who does the :hospitalIncident:. the presence of the :murder: incident makes it harder to bluff that RMD does the :hospitalIncident:, but makes it easier to bluff place to protect and ultimately a hideous script. slowly, more and more things will be revealed over the course of five loops. it's subtle, it's a marathon, and it requires GOOD play from the protagonists to have any chance at all, but I hope and think it does a suitable job introducing the more trickery focused side of looper."
     },
+    {
+      "title": "A Cruel Shrine Maiden's Thesis",
+      "creator": "Redless",
+      "difficultySets": [
+            {
+                "numberOfLoops": 3,
+                "difficulty": 0
+            },
+            {
+                "numberOfLoops": 4,
+                "difficulty": 0
+            }
+        ],
+      "tragedySet": "firstSteps",
+      "mainPlot": [
+            "placeProtect"
+        ],
+      "subPlots": [
+            "shadowRipper"
+        ],
+      "daysPerLoop": 4,
+      "cast": {
+            "nurse": "keyPerson",
+            "popIdol": "cultist",
+            "girlStudent": "conspiracyTheorist",
+            "shrineMaiden": "serialKiller",
+            "classRep": "person",
+            "patient": "person",
+            "officeWorker": "person"
+        },
+      "incidents": [
+            {
+                "day": 1,
+                "incident": "increasingUnease",
+                "culprit": "officeWorker"
+            },
+            {
+                "day": 4,
+                "incident": "missingPerson",
+                "culprit": "nurse"
+            }
+        ],
+      "specialRules": [
+            ""
+        ],
+      "victory-conditions": "",
+      "story": "",
+      "mastermindHints": "This whole script revolves around :missingPerson:. It will let you drag the :nurse: into the maiden's path, and also let you stack some more :intrigue: on the school. It's your \"easy out\", everything else in the script lives in service of it. The first day you should aim to serial kill the nurse. LOL! Gotem. Another loop, drop :paranoia: on the OW, and move the :girlStudent: left. By doing this, you will be in a good spot to MP. If people don't die, stack the school and set to work adding :intrigue:. If people do die, try to position the :shrineMaiden: alone so that you can MP the nurse over. Another loop, try and stack people in the school and obfuscate who exactly the :cultist: is. Finally, try and win the final loop via :missingPerson: shenanigans, which is surprisingly hard to do. You might consider playing this instead of the first script, or in place of the second script if your players don't mind you crushing their spirits by doing the same BS strat that characterizes the first script, a second time in a row. I believe this is very balanced. But of course you have to contend with the repetition of :serialKiller: if you're playing this after the first script. "
+    },
   ]
 }
