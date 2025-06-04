@@ -1002,6 +1002,10 @@
         {
           "name": "Tragedy Looper",
           "number": 9
+        },
+        {
+          "name": "New Tragedies",
+          "number": 9
         }
       ],
       "tragedySet": "basicTragedy",
