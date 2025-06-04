@@ -19,6 +19,7 @@
   let page_margin = $state(0.5);
 
   let printCardBacks = $state(true);
+  let printdead = $state(true);
 
   let selectedCards: string[] = $state([]);
   let selectedImage: Record<string, string> = $state(
@@ -86,6 +87,10 @@
       <label>
         Print card backs
         <input type="checkbox" bind:checked={printCardBacks} role="switch" />
+      </label>
+      <label>
+        Print card backs as dead
+        <input type="checkbox" bind:checked={printdead} role="switch" />
       </label>
     </details>
 
@@ -185,7 +190,7 @@
       <div class="page">
         {#each page as card}
           <div style="background-color: black;padding: 0.3cm;">
-            <Card {card} face="back" />
+            <Card {card} face={printdead ? 'dead' : 'back'} />
           </div>
         {/each}
       </div>

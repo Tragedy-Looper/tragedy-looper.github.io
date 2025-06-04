@@ -56,7 +56,7 @@
           type: 'character';
           key: CharacterName;
         } & Partial<Card>);
-    face?: 'front' | 'back';
+    face?: 'front' | 'back' | 'dead';
   } = $props();
 
   let actualCard = $derived(getCarddataFromName(card));
@@ -251,6 +251,7 @@
       >
         <div
           class="card"
+          class:blood={face == 'dead'}
           data-number="132"
           data-set="swsh9"
           data-subtypes="supporter"
@@ -259,12 +260,27 @@
           data-trainer-gallery="false"
           style="--scale:{scale};"
         >
-          {#if face == 'front'}
+          {#if face != 'back'}
             <img src="{base}/cards/general/background.png" alt="Character" class="back" />
+            <img src="{base}/cards/general/blood.png" alt="Character" class="back splatter" />
             <div class="card__shine back transformable"></div>
             <div class="card__glare back transformable"></div>
 
-            <img src={actualCard.image} alt="Character" class="back image" />
+            <img src={actualCard.image} alt="Character" class="back image character" />
+
+            <div class="back glow">
+              <div
+                data-clip={actualCard.image}
+                style="--mask: url('{actualCard.image}');"
+                class="bitten outer back"
+              >
+                <div class="blurred back">
+                  <div data-clip={actualCard.image} class="back glow bitten"></div>
+                  <!-- <div class="bitten"></div> -->
+                </div>
+              </div>
+            </div>
+
             <img
               src="{base}/cards/general/{actualCard.gender}.png"
               alt="Cardbackground"
@@ -392,10 +408,68 @@
 
     font-size: calc(8pt * var(--scale));
 
+    .splatter {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .splatter,
+    .glow {
+      display: none;
+    }
+    &.blood {
+      .image {
+        display: none;
+      }
+
+      .splatter{
+        z-index: 0;
+      }
+
+      .splatter,
+      .glow {
+        display: block;
+      }
+
+      .blurred {
+        filter: blur(calc(8px * var(--scale)));
+      }
+
+      .bitten {
+        background: #4a8ad3b6;
+        // clip-path: polygon(0 0, 0 100%, 80% 100%, 100% 0);
+        mask-image: var(--mask);
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: bottom center;
+        margin-top: calc(0.2cm * var(--scale));
+        &[data-clip*='tree'] {
+          // hack for sacred tree
+          // need to find a better way, but don't want to change every image
+          mask-size: cover;
+          margin: 0;
+        }
+      }
+
+      .bitten.outer {
+        position: relative;
+        background: #ffffff;
+        opacity: 0.5;
+      }
+    }
+
+    .image {
+      filter: drop-shadow(0 0 calc(5px * var(--scale)) #b5add273);
+    }
     .image {
       object-fit: contain;
       object-position: bottom center;
       padding-top: calc(0.2cm * var(--scale));
+      // glow
       &[src*='tree'] {
         // hack for sacred tree
         // need to find a better way, but don't want to change every image
