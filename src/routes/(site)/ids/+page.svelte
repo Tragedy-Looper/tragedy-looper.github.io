@@ -150,6 +150,7 @@
 
     // if obj is an object, create a new object with replaced text
     const newObj: Record<string, any> = {};
+    const keysToSkip = ['id', 'name', 'mainPlot', 'subPlots', 'cast', 'incidents', 'title']; // keys that should not be replaced
     for (const [key, value] of Object.entries(obj)) {
       if (typeof value === 'string') {
         // we do not want to replace text in all fields
@@ -160,12 +161,12 @@
           'mastermindHints',
           'prerequisite',
         ];
-        if (fieldsToReplace.includes(key)) {
-          newObj[key] = replaceText(value);
-        } else {
+        if (!fieldsToReplace.includes(key)) {
           newObj[key] = value; // keep original name
+          continue; // skip further processing for this key
         }
-
+      } else if (keysToSkip.includes(key)) {
+        newObj[key] = value; // keep original id/name
         continue; // skip further processing for this key
       }
       newObj[key] = replaceTextInObject(value);
