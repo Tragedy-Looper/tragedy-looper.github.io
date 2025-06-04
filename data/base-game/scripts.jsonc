@@ -1,6 +1,4 @@
 {
-  //"$schema": "https://tragedy-looper.github.io/scripts.schema.json",
-  // For dev purposes
   "$schema": "../scripts.schema.json",
   "scripts": [
     {
@@ -92,9 +90,9 @@
       "specialRules": [
         ""
       ],
-      "victory-conditions": "Killing the Key Person (:girlStudent:) \n1. At any day end, have :shrineMaiden: and :girlStudent: alone in a location, triggering the Serial Killer’s effect to kill the :girlStudent:, triggering the Key Person’s loss condition immediately. \n2. At any day end, have 2 or more Intrigue on the :girlStudent: in the same location as the :officeWorker:, triggering the Murderer’s Key Person kill effect, and thus the Key Person’s loss condition immediately. \n3. At end of day 3, have 3 or more Unease on the :girlStudent:, triggering her Suicide, and thus triggering the Key Person’s loss condition immediately. \n\nKilling the Protagonists \n• At any day end, have 4 or more Intrigue on the Offce Worker, triggering the Murderer’s Protagonist kill effect.",
+      "victory-conditions": "Killing the :keyPerson: (:girlStudent:) \n1. At any day end, have :shrineMaiden: and :girlStudent: alone in a location, triggering the :serialKiller:’s effect to kill the :girlStudent:, triggering the :keyPerson:’s loss condition immediately. \n2. At any day end, have 2 or more :intrigue: on the :girlStudent: in the same location as the :officeWorker:, triggering the :murder:er’s :keyPerson: kill effect, and thus the :keyPerson:’s loss condition immediately. \n3. At end of day 3, have 3 or more :paranoia: on the :girlStudent:, triggering her :suicide:, and thus triggering the :keyPerson:’s loss condition immediately. \n\nKilling the Protagonists \n• At any day end, have 4 or more :intrigue: on the Offce Worker, triggering the :murder:er’s Protagonist kill effect.",
       "story": "Welcome to the First Script. We’ll start with a simple tragedy to try out what you have learned. \n\nA girl has learned a secret. And to silence her, some organization has sent out an assassin to silence her. Her best friend, a :popIdol:, isn’t much help, due to being a bit paranoid. To make matters worse, there’s also a serial killer in town. Do you think the heroes will be able to defend the :youngGirl:?",
-      "mastermindHints": "Aim to kill the :girlStudent:. The possible ways to kill her are listed in the “Victory Conditions” below. Just playing a card on the :girlStudent: will have people wonder what card it is, so play a card on her every single day. \n\nIn the first loop, the Protagonists have no idea of what’s happening. It’s recommended to just move the :girlStudent: to the :shrineMaiden: (Serial Killer). \n\nFrom the second loop and on, the Protagonists will be wary of the Serial Killer. Use that to get the :girlStudent: to commit suicide. Use the Conspiracy Theorist’s ability to place Unease, and the card Unease +1, to get her to 3 Unease by the third day. \n\nIn the third loop, you’ll have to aim for every possible way to kill her. You can place 2 Intrigue on her to get the :officeWorker: to kill her or put 4 Intrigue on the :officeWorker: to kill the Protagonists. (Remember, you can’t move the :officeWorker: to the School as he is not allowed there.) Finally, use the Brain’s power when you can.\n\nHelping the Protagonists\n\nIf the Protagonists seem to struggle as to what to do, tell them this: “Winning the first loop is next to impossible. What you want to do is gather information. This is best done by playing Goodwill +1 or Goodwill +2 on some characters to use their abilities.” Also, to use the Reference sheet to figure out what occurred and possibly how it occurred.\n\nA PLAY GUIDE FOR “THE FIRST SCRIPT” \n\nAs this is the very first script, we give you suggestions on how to play out the script. Try it out the first time you play the script. \n\n(1) First loop, Day 1: Card playing step\nThe very first round, play the following cards: \n• :girlStudent:: Vertical Movement \n• :officeWorker:: Intrigue +1 \n• :doctor:: Unease +1 \nAfter the cards resolve, if the result is that the :girlStudent: is alone with the :shrineMaiden:, you’ve won, go to Bad Ending 1. If not, go to (2) \n\n(2) Day 1 to 3: Mastermind ability step\nIf the :popIdol: and the :girlStudent: are in the same location, place an Unease token on the :girlStudent: (using the Idol’s Conspiracy Theorist ability). If the :doctor: and the :officeWorker: or the :girlStudent: are in the same area, place one Intrigue on the :officeWorker: or :girlStudent: (using the :doctor:’s Brain ability) \n• Check the Bad Ending list; if any are fulfilled, you’ve won. But if it’s the third day, and nothing has happened, the Protagonists have won. Otherwise, go to (3).\n\n(3) Day 2 or 3: Card playing phase\nBelow you will find several tactics depending on the situation. They are in priority order. Also, if you can combine 2 tactics, do so. \n• Tactic 1: Kill the :girlStudent: with the Serial Killer (if the Serial Killer is divulged, the players will hamper this): Move the :shrineMaiden: and the :girlStudent: so that they end up together. You can use this tactic even if the Serial Killer is divulged if you have a card play to spare or if it’s the only way out. \n• Tactic 2: Suicide the :girlStudent: (she must have at least 1 Unease if it’s day 2, and at least 2 if it’s day 3): Put an Unease +1 on the :girlStudent:, move the :popIdol: to the :girlStudent:, and put Forbid Goodwill on the :boyStudent:. \n• Tactic 3: Kill the Protagonists with the Murderer (:officeWorker: must have at least 1 Intrigue, hopefully 2, if it’s day 3): Put Intrigue +1 or +2 on the :officeWorker: and move the :doctor: to where the :officeWorker: is. \n• Tactic 4: Kill the :girlStudent: with the Murderer: Put Intrigue +1, Intrigue +2 on the :girlStudent:, or move her to the :officeWorker:. Move the :officeWorker: to where the :girlStudent: is (remember, he cannot go to the School!). Move the :doctor: to the :girlStudent:’s location. \nIf either tactic is fulfilled, no need to do anything in (2) and go to the Bad Ending in question. If neither is fulfilled, go to (2).  \n\n(4) Second loop, Day 1: Card playing phase\nIf the Serial Killer hasn’t been divulged, go to (1). \nIf the Serial Killer has been divulged, do the following: \n• Play Unease +1 on the :girlStudent:, Horizontal Movement on the Idol, Vertical Movement on the :doctor:. Then go to (2). \n\n(5) Third loop, Day 1: Card playing phase \nTry to fight it out your way in loop 3. If you are at a loss as to what to do, check (3). \n\nBad Ending 1: Meeting at night. \nCondition: If the :shrineMaiden: and the :girlStudent: are alone in one location \nDon’t do anything during the Mastermind ability step. Then, when the day ends, the :girlStudent: dies (turn her sideways) and tell the Protagonists she’s dead, they’ve lost, and the loop ends. \n\nBad Ending 2: So, you were the ones snooping around! \nCondition: There are 4 Intrigue counters on the :officeWorker: \nIf it’s already a sure thing, you don’t need to do anything during the Mastermind ability step. If you don’t have enough Intrigue, but can use the Brain’s ability, then do so. Then, at the end of the day, tell the Protagonists that they are dead, they’ve lost, and the loop ends. \n\nBad Ending 3: Who was the assassin? \nCondition: If the :girlStudent: has 2 Intrigue on her and is in the same location as the :officeWorker: \nDon’t do anything during the Mastermind ability step if she already has enough Intrigue, however, if she’s with the :doctor:, do place an Intrigue on her to get the :officeWorker: to kill her at day end. Tell the Protagonists she’s dead, they’ve lost, and the loop ends. \n\nBad Ending 4: Couldn’t stand the strain. \nCondition: If the :girlStudent: has 3 or more Unease on day 3 \nIf it’s already a sure thing, don’t use any Mastermind ability to put another Unease on her. If you need the Conspiracy Theorist to put the third Unease on her, do so. Then, during the Incident step, she dies. Tell the Protagonists that she’s dead, they’ve lost, and the loop ends. \n\nAfter the ending, if this was the first loop, reset the board and go to (4). \nIf this was the second loop, reset the board and go to (5) \nIf this was the third loop, you’ve won!"
+      "mastermindHints": "Aim to kill the :girlStudent:. The possible ways to kill her are listed in the “Victory Conditions” below. Just playing a card on the :girlStudent: will have people wonder what card it is, so play a card on her every single day. \n\nIn the first loop, the Protagonists have no idea of what’s happening. It’s recommended to just move the :girlStudent: to the :shrineMaiden: (:serialKiller:). \n\nFrom the second loop and on, the Protagonists will be wary of the :serialKiller:. Use that to get the :girlStudent: to commit suicide. Use the :conspiracyTheorist:’s ability to place :paranoia:, and the card :paranoia: +1, to get her to 3 :paranoia: by the third day. \n\nIn the third loop, you’ll have to aim for every possible way to kill her. You can place 2 :intrigue: on her to get the :officeWorker: to kill her or put 4 :intrigue: on the :officeWorker: to kill the Protagonists. (Remember, you can’t move the :officeWorker: to the School as he is not allowed there.) Finally, use the :brain:’s power when you can.\n\nHelping the Protagonists\n\nIf the Protagonists seem to struggle as to what to do, tell them this: “Winning the first loop is next to impossible. What you want to do is gather information. This is best done by playing :goodwill: +1 or :goodwill: +2 on some characters to use their abilities.” Also, to use the Reference sheet to figure out what occurred and possibly how it occurred.\n\nA PLAY GUIDE FOR “THE FIRST SCRIPT” \n\nAs this is the very first script, we give you suggestions on how to play out the script. Try it out the first time you play the script. \n\n(1) First loop, Day 1: Card playing step\nThe very first round, play the following cards: \n• :girlStudent:: Vertical Movement \n• :officeWorker:: :intrigue: +1 \n• :doctor:: :paranoia: +1 \nAfter the cards resolve, if the result is that the :girlStudent: is alone with the :shrineMaiden:, you’ve won, go to Bad Ending 1. If not, go to (2) \n\n(2) Day 1 to 3: Mastermind ability step\nIf the :popIdol: and the :girlStudent: are in the same location, place an :paranoia: token on the :girlStudent: (using the Idol’s :conspiracyTheorist: ability). If the :doctor: and the :officeWorker: or the :girlStudent: are in the same area, place one :intrigue: on the :officeWorker: or :girlStudent: (using the :doctor:’s :brain: ability) \n• Check the Bad Ending list; if any are fulfilled, you’ve won. But if it’s the third day, and nothing has happened, the Protagonists have won. Otherwise, go to (3).\n\n(3) Day 2 or 3: Card playing phase\nBelow you will find several tactics depending on the situation. They are in priority order. Also, if you can combine 2 tactics, do so. \n• Tactic 1: Kill the :girlStudent: with the :serialKiller: (if the :serialKiller: is divulged, the players will hamper this): Move the :shrineMaiden: and the :girlStudent: so that they end up together. You can use this tactic even if the :serialKiller: is divulged if you have a card play to spare or if it’s the only way out. \n• Tactic 2: :suicide: the :girlStudent: (she must have at least 1 :paranoia: if it’s day 2, and at least 2 if it’s day 3): Put an :paranoia: +1 on the :girlStudent:, move the :popIdol: to the :girlStudent:, and put Forbid :goodwill: on the :boyStudent:. \n• Tactic 3: Kill the Protagonists with the :murder:er (:officeWorker: must have at least 1 :intrigue:, hopefully 2, if it’s day 3): Put :intrigue: +1 or +2 on the :officeWorker: and move the :doctor: to where the :officeWorker: is. \n• Tactic 4: Kill the :girlStudent: with the :murder:er: Put :intrigue: +1, :intrigue: +2 on the :girlStudent:, or move her to the :officeWorker:. Move the :officeWorker: to where the :girlStudent: is (remember, he cannot go to the School!). Move the :doctor: to the :girlStudent:’s location. \nIf either tactic is fulfilled, no need to do anything in (2) and go to the Bad Ending in question. If neither is fulfilled, go to (2).  \n\n(4) Second loop, Day 1: Card playing phase\nIf the :serialKiller: hasn’t been divulged, go to (1). \nIf the :serialKiller: has been divulged, do the following: \n• Play :paranoia: +1 on the :girlStudent:, Horizontal Movement on the Idol, Vertical Movement on the :doctor:. Then go to (2). \n\n(5) Third loop, Day 1: Card playing phase \nTry to fight it out your way in loop 3. If you are at a loss as to what to do, check (3). \n\nBad Ending 1: Meeting at night. \nCondition: If the :shrineMaiden: and the :girlStudent: are alone in one location \nDon’t do anything during the Mastermind ability step. Then, when the day ends, the :girlStudent: dies (turn her sideways) and tell the Protagonists she’s dead, they’ve lost, and the loop ends. \n\nBad Ending 2: So, you were the ones snooping around! \nCondition: There are 4 :intrigue: counters on the :officeWorker: \nIf it’s already a sure thing, you don’t need to do anything during the Mastermind ability step. If you don’t have enough :intrigue:, but can use the :brain:’s ability, then do so. Then, at the end of the day, tell the Protagonists that they are dead, they’ve lost, and the loop ends. \n\nBad Ending 3: Who was the assassin? \nCondition: If the :girlStudent: has 2 :intrigue: on her and is in the same location as the :officeWorker: \nDon’t do anything during the Mastermind ability step if she already has enough :intrigue:, however, if she’s with the :doctor:, do place an :intrigue: on her to get the :officeWorker: to kill her at day end. Tell the Protagonists she’s dead, they’ve lost, and the loop ends. \n\nBad Ending 4: Couldn’t stand the strain. \nCondition: If the :girlStudent: has 3 or more :paranoia: on day 3 \nIf it’s already a sure thing, don’t use any Mastermind ability to put another :paranoia: on her. If you need the :conspiracyTheorist: to put the third :paranoia: on her, do so. Then, during the Incident step, she dies. Tell the Protagonists that she’s dead, they’ve lost, and the loop ends. \n\nAfter the ending, if this was the first loop, reset the board and go to (4). \nIf this was the second loop, reset the board and go to (5) \nIf this was the third loop, you’ve won!"
     },
     {
       "title": "In the Godless Temple",
@@ -270,7 +268,7 @@
         {
           "name": "New Tragedies",
           "number": 3
-        },
+        }
       ],
       "difficultySets": [
         {
@@ -320,9 +318,9 @@
       "specialRules": [
         ""
       ],
-      "victory-conditions": "This is a script recommended for those who are playing Basic Tragedy for the first time. This is where it begins for real. Now you have 2 Subplots and seven people in the cast. Also, there are 5 days each loop!\n\nThat said, the difficulty is still set to very low. Protagonists who come from First Steps won’t feel super confused and will be able to enjoy the extra additions well enough. It’s not difficult to play as Mastermind either. But beware of the Final Guess. If all roles are clear, then you will lose, and that is more stressful than it may seem.",
+      "victory-conditions": "This is a script recommended for those who are playing :basicTragedy: for the first time. This is where it begins for real. Now you have 2 Subplots and seven people in the cast. Also, there are 5 days each loop!\n\nThat said, the difficulty is still set to very low. Protagonists who come from :firstSteps: won’t feel super confused and will be able to enjoy the extra additions well enough. It’s not difficult to play as Mastermind either. But beware of the Final Guess. If all roles are clear, then you will lose, and that is more stressful than it may seem.",
       "story": "For boys and girls, the world is a constant battlefield. Each tiny little disturbance will shake their inexperienced souls. Especially in this town, where seductors lure with the promise of magic powers – without explaining the consequences!\n\nThe school was bubbling with talk. “Spells” and “magic”, and everyone knows that you CAN become a magical girl, if you just sign the contract. Eventually, the :popIdol: will sign, and she will die. Can the Protagonists stop this tragedy from happening?",
-      "mastermindHints": "The best way to win is through the Hospital Horror and to place :intrigue: on the Idol. This reveals the least information.\n\nStart day 1 and 2 with Unease +1 on the :patient:, and a bluff and :intrigue: +1 on the Shrine and Hospital respectively.\n\nAlso from day 1, use the Conspiracy Theorist and trigger Spreading Unease. If you get some :intrigue: on the Hospital, put 2 Unease on the :shrineMaiden:, and trigger the Hospital Horror.\n\nOn day 3, you can use the Unsettling Rumor effect to put the second :intrigue: on the Hospital and kill the Protagonists.\n\nIf you can’t seem to get any :intrigue: on the Hospital, put instead 2 :intrigue: on the Idol and if possible, also on the Shrine, Rich Student, and shrineMaiden. For this, Spreading Unease and An Unsettling Rumor will help you.\n\nHide the Serial Killer as long as you can and use him to kill the Key Person as your last resort. Killing the Friend will make the Final Guess easy for the Protagonists, so avoid that as much as possible.\n\nThe Final Guess can easily become your downfall. Either you hide the Conspiracy Theorist or the Friend. Try to make it look like a Murderer or a Brain instead.\n\nVictory conditions\n1. At any day end, have the popIdol and the boyStudent alone in a location, triggering the Serial Killer effect and thus the Key Person’s loss condition immediately.\n\n2. At end of day 3, have at least 1 :intrigue: on the Hospital, at least 2 Unease on the shrineMaiden, and the popIdol in the Hospital, triggering Hospital Horror, killing the popIdol and triggering the Key Person’s loss condition immediately.\n\n3. At loop end, have 2 :intrigue: on the popIdol, triggering the loss condition for “Sign with Me!”.\n\n4. At any day end, have the shrineMaiden and the boyStudent alone in a location, triggering the Serial Killer effect and thus the Friend’s loss condition at loop end.\n\n5. At end of day 3, have at least 1 :intrigue: on the Hospital, at least 2 Unease on the shrineMaiden who should be in the Hospital, triggering the Hospital Horror, killing the shrineMaiden, and triggering the Friend’s loss condition at loop end.\n\n6. At the end of day 3, have at least 2 :intrigue: on the Hospital, at least 2 Unease on the shrineMaiden, triggering the Hospital Horror killing the Protagonists."
+      "mastermindHints": "The best way to win is through the Hospital :horror: and to place :intrigue: on the Idol. This reveals the least information.\n\nStart day 1 and 2 with :paranoia: +1 on the :patient:, and a bluff and :intrigue: +1 on the Shrine and Hospital respectively.\n\nAlso from day 1, use the :conspiracyTheorist: and trigger :spreading: :paranoia:. If you get some :intrigue: on the Hospital, put 2 :paranoia: on the :shrineMaiden:, and trigger the Hospital :horror:.\n\nOn day 3, you can use the Unsettling Rumor effect to put the second :intrigue: on the Hospital and kill the Protagonists.\n\nIf you can’t seem to get any :intrigue: on the Hospital, put instead 2 :intrigue: on the Idol and if possible, also on the Shrine, Rich :student:, and shrineMaiden. For this, :spreading: :paranoia: and :unsettlingRumor: will help you.\n\nHide the :serialKiller: as long as you can and use him to kill the :keyPerson: as your last resort. Killing the :friend: will make the Final Guess easy for the Protagonists, so avoid that as much as possible.\n\nThe Final Guess can easily become your downfall. Either you hide the :conspiracyTheorist: or the :friend:. Try to make it look like a :murder:er or a :brain: instead.\n\nVictory conditions\n1. At any day end, have the popIdol and the boy:student: alone in a location, triggering the :serialKiller: effect and thus the :keyPerson:’s loss condition immediately.\n\n2. At end of day 3, have at least 1 :intrigue: on the Hospital, at least 2 :paranoia: on the shrineMaiden, and the popIdol in the Hospital, triggering Hospital :horror:, killing the popIdol and triggering the :keyPerson:’s loss condition immediately.\n\n3. At loop end, have 2 :intrigue: on the popIdol, triggering the loss condition for “Sign with Me!”.\n\n4. At any day end, have the shrineMaiden and the boy:student: alone in a location, triggering the :serialKiller: effect and thus the :friend:’s loss condition at loop end.\n\n5. At end of day 3, have at least 1 :intrigue: on the Hospital, at least 2 :paranoia: on the shrineMaiden who should be in the Hospital, triggering the Hospital :horror:, killing the shrineMaiden, and triggering the :friend:’s loss condition at loop end.\n\n6. At the end of day 3, have at least 2 :intrigue: on the Hospital, at least 2 :paranoia: on the shrineMaiden, triggering the Hospital :horror: killing the Protagonists."
     },
     {
       "title": "The Cat Box",
@@ -331,7 +329,7 @@
         {
           "name": "New Tragedies",
           "number": 4
-        },
+        }
       ],
       "difficultySets": [
         {
@@ -378,13 +376,13 @@
           "culprit": "alien"
         }
       ],
-      "description": "The Cat Box is a perfect script to play as your second Basic Tragedy script. The complexity is slightly higher, and there are now 8 characters in the cast. The idea of this script is to introduce two new things. \n\nThe first is the :mysteryBoy: and the :blackCat:; both a bit strange. It’s a good chance to get to know rather complicated characters. But don’t fret; neither of them will mess up things too badly. \n\nThe second is the trick to find the Witch, who has mandatory Goodwill Refusal. This will have the Protagonists learn how to use this technique.",
+      "description": "The Cat Box is a perfect script to play as your second :basicTragedy: script. The complexity is slightly higher, and there are now 8 characters in the cast. The idea of this script is to introduce two new things. \n\nThe first is the :mysteryBoy: and the :blackCat:; both a bit strange. It’s a good chance to get to know rather complicated characters. But don’t fret; neither of them will mess up things too badly. \n\nThe second is the trick to find the :witch:, who has mandatory :goodwill: Refusal. This will have the Protagonists learn how to use this technique.",
       "specialRules": [
         ""
       ],
-      "victory-conditions": "1. At loop end, have 2 Intrigue on the Hospital, triggering the loss condition of “Giant Time Bomb.”\n\n2. At any day end, have 3 or more Unease and 1 or more Intrigue on the :officeWorker:, triggering the Loved One'’s Protagonist kill.",
+      "victory-conditions": "1. At loop end, have 2 :intrigue: on the Hospital, triggering the loss condition of “:giantTimeBomb:.”\n\n2. At any day end, have 3 or more :paranoia: and 1 or more :intrigue: on the :officeWorker:, triggering the :lovedOne:'’s Protagonist kill.",
       "story": "The witch laughs and the cat familiar meows. A mistake in a ritual has summoned a strange existence from another world. And to make matters worse, it fell in love with a human. \n\nThe witch decides to burn the entire town to hide the evidence. But to do that, she needs to stay hidden. Time is of the essence: kill the witch and shut the lid on this box forever.",
-      "mastermindHints": "You can win with either 2 Intrigue on the Hospital or the ability of the Loved One. Your first choice should be the former, but the latter hides more information. \n\nFirst day on loop 1 should be an Intrigue +2 on the School, an Intrigue +1 on the Hospital, and a bluff card on the Shrine. Then put an Unease on the Rich Student using the Conspiracy Theorist and kill her with Suicide. This is to give the impression that she might be the Witch! \n\nAfter that, try triggering both Missing Person Incidents by putting out Unease. Use the Conspiracy Theorist’s and Factor’s abilities (Subplot “Unknown Factor”: Putting 2 Intrigue on the School makes the :blackCat: able to act as a Conspiracy Theorist!) when you need. Putting Unease on the :officeWorker: is effective both for Missing Person and for the Loved One ability. \n\nFinally, if you can get 2 Intrigue on the School, Shrine, and Hospital, the first loop is perfected. You can try to get that result in future loops too, but it’ll be hard with Forbid Intrigue and trying to prevent the Protagonists from finding the Witch with Goodwill Refusal. \n\nIt’s super easy to hide the Factor, so you don’t need to worry about the Final Guess."
+      "mastermindHints": "You can win with either 2 :intrigue: on the Hospital or the ability of the :lovedOne:. Your first choice should be the former, but the latter hides more information. \n\nFirst day on loop 1 should be an :intrigue: +2 on the School, an :intrigue: +1 on the Hospital, and a bluff card on the Shrine. Then put an :paranoia: on the Rich :student: using the :conspiracyTheorist: and kill her with :suicide:. This is to give the impression that she might be the :witch:! \n\nAfter that, try triggering both :missingPerson: Incidents by putting out :paranoia:. Use the :conspiracyTheorist:’s and :factor:’s abilities (Subplot “Unknown :factor:”: Putting 2 :intrigue: on the School makes the :blackCat: able to act as a :conspiracyTheorist:!) when you need. Putting :paranoia: on the :officeWorker: is effective both for :missingPerson: and for the :lovedOne: ability. \n\nFinally, if you can get 2 :intrigue: on the School, Shrine, and Hospital, the first loop is perfected. You can try to get that result in future loops too, but it’ll be hard with Forbid :intrigue: and trying to prevent the Protagonists from finding the :witch: with :goodwill: Refusal. \n\nIt’s super easy to hide the :factor:, so you don’t need to worry about the Final Guess."
     },
     {
       "title": "Crushed by the Hospital Building in Doronoki",
@@ -454,9 +452,9 @@
       "specialRules": [
         ""
       ],
-      "victory-conditions": "Note: Due to Subplot, Paranoia Virus, the :shrineMaiden:, :alien:, :officeWorker:, and :henchman: become Serial Killers while they have 3 or more Unease on them. \n\n1. At any day end, have the Informant alone in a location with any of the Serial Killers, activating that ability, and triggering the loss condition for the Key Person immediately. \n\n2. At any day end, have at least 2 Intrigue on the Informant in the same location as the :classRep:, activating the Murderer’s ability and thus triggering the Key Person’s loss condition immediately. \n\n3. At the end of day 4, have the Informant in the Hospital, at least 1 Intrigue on the Hospital, and at least 1 Unease on the :henchman:, triggering the Hospital Horror, killing the Informant, and triggering the loss condition of the Key Person immediately. \n\n4. At the end of day 6, have at least 2 Unease on the :transferStudent:, triggering the Faraway Murder, and at least 2 Intrigue on the Informant, choosing her to be the target, triggering the loss condition for the Key Person immediately. \n\n5. Having at least 2 Intrigue on the City, causing the Factor (:boyStudent:) to gain the Key Person’s effect, and applying any of (1) to (4) on the Factor instead of the Informant. \n\n6. At the end of day 2, having at least 2 Intrigue on the City, causing the Factor to gain the Key Person’s effect, and having at least 2 Unease on the :boyStudent:, triggering Suicide, and triggering the loss condition of the Key Person immediately. \n\n7. At the end of day 4, have at least 2 Intrigue on the Hospital and at least 1 Unease on the :henchman:, triggering the Hospital Horror’s Protagonist kill. \n\n8. At any day end, have at least 4 Intrigue on the :classRep:, triggering the Murderer’s Protagonist kill.",
+      "victory-conditions": "Note: Due to Subplot, :paranoiaVirus:, the :shrineMaiden:, :alien:, :officeWorker:, and :henchman: become :serialKiller:s while they have 3 or more :paranoia: on them. \n\n1. At any day end, have the Informant alone in a location with any of the :serialKiller:s, activating that ability, and triggering the loss condition for the :keyPerson: immediately. \n\n2. At any day end, have at least 2 :intrigue: on the Informant in the same location as the :classRep:, activating the :murder:er’s ability and thus triggering the :keyPerson:’s loss condition immediately. \n\n3. At the end of day 4, have the Informant in the Hospital, at least 1 :intrigue: on the Hospital, and at least 1 :paranoia: on the :henchman:, triggering the Hospital :horror:, killing the Informant, and triggering the loss condition of the :keyPerson: immediately. \n\n4. At the end of day 6, have at least 2 :paranoia: on the :transferStudent:, triggering the :farawayMurder:, and at least 2 :intrigue: on the Informant, choosing her to be the target, triggering the loss condition for the :keyPerson: immediately. \n\n5. Having at least 2 :intrigue: on the City, causing the :factor: (:boyStudent:) to gain the :keyPerson:’s effect, and applying any of (1) to (4) on the :factor: instead of the Informant. \n\n6. At the end of day 2, having at least 2 :intrigue: on the City, causing the :factor: to gain the :keyPerson:’s effect, and having at least 2 :paranoia: on the :boyStudent:, triggering :suicide:, and triggering the loss condition of the :keyPerson: immediately. \n\n7. At the end of day 4, have at least 2 :intrigue: on the Hospital and at least 1 :paranoia: on the :henchman:, triggering the Hospital :horror:’s Protagonist kill. \n\n8. At any day end, have at least 4 :intrigue: on the :classRep:, triggering the :murder:er’s Protagonist kill.",
       "story": "The hospital was empty, a ruin. Shut down by a combination of unfortunate events and political decisions. Forgotten, and abandoned. \n\nBut it harbored a secret. Here, in this very building, they had researched a new type of virus. One woman who worked as an informant had gotten ahold of this information, and the former CEO of the hospital, the :boss:, decided to silence her once and for all. Dedicated to his task, the :boss: plans to send his :henchman: to eliminate the evidence by destroying the building entirely, together with the boy who had contracted the virus. \n\nBut, one day a girl shows up, transferred back to the school in town. A girl with ties to the hospital and a burning hatred, accelerating the looming tragedy. \n\nCan the players outmaneuver the :henchman: and the vengeful girl?",
-      "mastermindHints": "The :henchman: should start in the Hospital in every loop. \n\nThe first thing to aim for is a Factor kill. First loop, :intrigue: +2 :intrigue: on the School, :intrigue: +1 on the City and a bluff on the Hospital. If the :boss: is in the City, use him to place the second :intrigue: on the City there, and :suicide: the :factor:. Use the same cards in Loop 2 but interchange them. \n\nIf that gets stopped, then you should aim for a :hospitalIorror:. The :boss: can spread :intrigue: here and there. The :goodwill: effects of the :henchman: and :alien: will get in your way. Spread out Unease everywhere to make it hard to pinpoint the culprit. \n\nIf that also gets stopped, then it’s the :transferStudent:. With the :conspiracyTheorist:’s ability, you will for sure be able to activate :farawayMurder:, so have 2 :intrigue: on the :informant: (and :boyStudent:). \n\nWith the :paranoiaVirus:, you might activate a lot of :serialKillers:, but beware so you don’t get trapped in that. You can use that to get a win if you need. \n\nFor the Final Guess, you need to hide the Murderer. Don’t use the Murderer’s ability unless you can safely do so. "
+      "mastermindHints": "The :henchman: should start in the Hospital in every loop. \n\nThe first thing to aim for is a :factor: kill. First loop, :intrigue: +2 :intrigue: on the School, :intrigue: +1 on the City and a bluff on the Hospital. If the :boss: is in the City, use him to place the second :intrigue: on the City there, and :suicide: the :factor:. Use the same cards in Loop 2 but interchange them. \n\nIf that gets stopped, then you should aim for a :hospitalIorror:. The :boss: can spread :intrigue: here and there. The :goodwill: effects of the :henchman: and :alien: will get in your way. Spread out :paranoia: everywhere to make it hard to pinpoint the culprit. \n\nIf that also gets stopped, then it’s the :transferStudent:. With the :conspiracyTheorist:’s ability, you will for sure be able to activate :farawayMurder:, so have 2 :intrigue: on the :informant: (and :boyStudent:). \n\nWith the :paranoiaVirus:, you might activate a lot of :serial:killer:s:, but beware so you don’t get trapped in that. You can use that to get a win if you need. \n\nFor the Final Guess, you need to hide the :murder:er. Don’t use the :murder:er’s ability unless you can safely do so. "
     },
     {
       "title": "Those with Antibodies (NT)",
@@ -523,148 +521,148 @@
       "specialRules": [
         ""
       ],
-      "victory-conditions": "* Note: Due to Subplot, Paranoia Virus, the :classRep:, :officeWorker:, :forensicSpecialist:, :doctor:, :soldier:, and :henchman: become Serial Killers while they have 3 or more Unease on them. \n\n1. At the end of day 1, have at least 1 Unease on the Rich Student, triggering the Butterfly Effect, thus triggering the loss condition in “Changing the Future” at loop end. \n\n2. End the final day with 2 or less Goodwill tokens on the Informant, triggering the loss condition of the Time Traveler.",
+      "victory-conditions": "* Note: Due to Subplot, :paranoiaVirus:, the :classRep:, :officeWorker:, :forensicSpecialist:, :doctor:, :soldier:, and :henchman: become :serialKiller:s while they have 3 or more :paranoia: on them. \n\n1. At the end of day 1, have at least 1 :paranoia: on the Rich :student:, triggering the :butterflyEffect:, thus triggering the loss condition in “Changing the Future” at loop end. \n\n2. End the final day with 2 or less :goodwill: tokens on the Informant, triggering the loss condition of the :timeTraveler:.",
       "story": "Cascading viruses—this is the future that we have no way to avoid. An insignificant start, small as the fluuttering of a butterfly’s wing, soon weaves its threads into a spiral, gradually turning it into an unavoidable maelstrom. The Protagonists cannot escape. They cannot change the future. Whatever plan of change they may have, it’s fruitless. Pointless. Completely in vain. \n\nThey must accept the future to live on and grasp the possibility of escaping the virus. Yes. That is the answer. They must find Those with Antibodies.",
-      "mastermindHints": "The :henchman: should always start at the School.\n\nUnless you mess up badly, you should be able to win in every loop. In loop 1, put Unease on Rich Student and the :henchman:, and Forbid Goodwill on the :forensicSpecialist:. Activate the Butterfly Effect, if necessary, by using the Conspiracy Theorist’s ability, and place a Goodwill token on the Rich Student. In this way, you’ll be able to trigger the Butterfly Effect in all subsequent loops. \n\nAfter that, place Intrigue tokens on the Shrine by the Foul Evil effect, and delay the discovery of the Main Plot by, for example, placing Intrigue on a girl. It’s recommended to use Forbid Goodwill somewhere every single round. \n\nOne winning strategy for the Protagonists will be to try to use the effect from Paranoia Virus, that Persons change into Serial Killers with enough Unease counters, and by this method, discover which characters don’t change and which don’t die. Threads of Fate can also be used to pile up the Unease tokens. So, once the Protagonists catch this one, make their lives miserable with Unease -1 and Forbid Unease."
+      "mastermindHints": "The :henchman: should always start at the School.\n\nUnless you mess up badly, you should be able to win in every loop. In loop 1, put :paranoia: on Rich :student: and the :henchman:, and Forbid :goodwill: on the :forensicSpecialist:. Activate the :butterflyEffect:, if necessary, by using the :conspiracyTheorist:’s ability, and place a :goodwill: token on the Rich :student:. In this way, you’ll be able to trigger the :butterflyEffect: in all subsequent loops. \n\nAfter that, place :intrigue: tokens on the Shrine by the :foulEvil: effect, and delay the discovery of the Main Plot by, for example, placing :intrigue: on a girl. It’s recommended to use Forbid :goodwill: somewhere every single round. \n\nOne winning strategy for the Protagonists will be to try to use the effect from :paranoiaVirus:, that :person:s change into :serialKiller:s with enough :paranoia: counters, and by this method, discover which characters don’t change and which don’t die. :threadsFate: can also be used to pile up the :paranoia: tokens. So, once the Protagonists catch this one, make their lives miserable with :paranoia: -1 and Forbid :paranoia:."
     },
     {
-            "title": "The Assassin from the Future",
-            "creator": "unun",
-            "set": [
-            {
-                "name": "Midnight Circle",
-                "number": 3
-            },
-            {
-                "name": "New Tragedies",
-                "number": 5
-            }
-            ],
-            "tragedySet": "basicTragedy",
-            "mainPlot": [
-                "changeOfFuture"
-            ],
-            "subPlots": [
-                "hiddenFreak",
-                "circleFriends"
-            ],
-            "difficultySets": [
-                {
-                    "numberOfLoops": 5,
-                    "difficulty": 3
-                },
-                {
-                    "numberOfLoops": 4,
-                    "difficulty": 5
-                }
-            ],
-            "daysPerLoop": 5,
-            "cast": {
-                "girlStudent": "person",
-                "classRep": "friend",
-                "shrineMaiden": "friend",
-                "alien": "person",
-                "informer": "conspiracyTheorist",
-                "popIdol": "cultist",
-                "journalist": "person",
-                "doctor": "serialKiller",
-                "patient": "timeTraveler"
-            },
-            "incidents": [
-                {
-                    "day": 2,
-                    "incident": "butterflyEffect",
-                    "culprit": "classRep"
-                },
-                {
-                    "day": 4,
-                    "incident": "farawayMurder",
-                    "culprit": "doctor"
-                },
-                {
-                    "day": 5,
-                    "incident": "hospitalIncident",
-                    "culprit": "informer"
-                }
-            ],
-            "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
-            "story": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
-            "mastermindHints": "See Tragedy Looper: Midnight Circle Mastermind Handbook"
-    },
-{
-  "title": "Un Rerum",
-  "creator": "GaRSoBaG",
-  "set": [
-    {
-      "name": "New Tragedies",
-      "number": 8
-    }
-  ],
-  "difficultySets": [
-    {
-      "numberOfLoops": 4,
-      "difficulty": 6
-    }
-  ],
-  "tragedySet": "basicTragedy",
-  "mainPlot": [
-    "sealedItem"
-  ],
-  "subPlots": [
-    "circleFriends",
-    "threadsFate"
-  ],
-  "daysPerLoop": 6,
-  "cast": {
-    "ai": "brain",
-    "richStudent": "cultist",
-    "alien": "friend",
-    "officeWorker": "friend",
-    "blackCat": "conspiracyTheorist",
-    "mysteryBoy": "lover",
-    "classRep": "person",
-    "forensicSpecialist": "person"
-  },
-  "incidents": [
-    {
-      "day": 1,
-      "incident": "suicide",
-      "culprit": "blackCat"
+      "title": "The Assassin from the Future",
+      "creator": "unun",
+      "set": [
+        {
+          "name": "Midnight Circle",
+          "number": 3
+        },
+        {
+          "name": "New Tragedies",
+          "number": 5
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "changeOfFuture"
+      ],
+      "subPlots": [
+        "hiddenFreak",
+        "circleFriends"
+      ],
+      "difficultySets": [
+        {
+          "numberOfLoops": 5,
+          "difficulty": 3
+        },
+        {
+          "numberOfLoops": 4,
+          "difficulty": 5
+        }
+      ],
+      "daysPerLoop": 5,
+      "cast": {
+        "girlStudent": "person",
+        "classRep": "friend",
+        "shrineMaiden": "friend",
+        "alien": "person",
+        "informer": "conspiracyTheorist",
+        "popIdol": "cultist",
+        "journalist": "person",
+        "doctor": "serialKiller",
+        "patient": "timeTraveler"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "butterflyEffect",
+          "culprit": "classRep"
+        },
+        {
+          "day": 4,
+          "incident": "farawayMurder",
+          "culprit": "doctor"
+        },
+        {
+          "day": 5,
+          "incident": "hospitalIncident",
+          "culprit": "informer"
+        }
+      ],
+      "victory-conditions": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
+      "story": "See Tragedy Looper: Midnight Circle Mastermind Handbook",
+      "mastermindHints": "See Tragedy Looper: Midnight Circle Mastermind Handbook"
     },
     {
-      "day": 2,
-      "incident": "foulEvil",
-      "culprit": "ai"
+      "title": "Un Rerum",
+      "creator": "GaRSoBaG",
+      "set": [
+        {
+          "name": "New Tragedies",
+          "number": 8
+        }
+      ],
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 6
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "sealedItem"
+      ],
+      "subPlots": [
+        "circleFriends",
+        "threadsFate"
+      ],
+      "daysPerLoop": 6,
+      "cast": {
+        "ai": "brain",
+        "richStudent": "cultist",
+        "alien": "friend",
+        "officeWorker": "friend",
+        "blackCat": "conspiracyTheorist",
+        "mysteryBoy": "lover",
+        "classRep": "person",
+        "forensicSpecialist": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "suicide",
+          "culprit": "blackCat"
+        },
+        {
+          "day": 2,
+          "incident": "foulEvil",
+          "culprit": "ai"
+        },
+        {
+          "day": 3,
+          "incident": "missingPerson",
+          "culprit": "mysteryBoy"
+        },
+        {
+          "day": 4,
+          "incident": "spreading",
+          "culprit": "officeWorker"
+        },
+        {
+          "day": 5,
+          "incident": "butterflyEffect",
+          "culprit": "classRep"
+        },
+        {
+          "day": 6,
+          "incident": "murder",
+          "culprit": "alien"
+        }
+      ],
+      "description": "“un rerum”’s specialty is its usage of :threadsFate:. Horribly enough, if you fail in loop 3, you won’t be able to win the last loop. Also, the :ai: appears, and you’ll need to use that one’s abilities.",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "1. At loop end, have 2 :intrigue: on the Shrine, triggering the loss condition for “:sealedItem:”. \n\n2. At the end of day 6, have the :officeWorker: in the same location as the :alien:, and at least 2 :paranoia: on the :alien:, triggering Homicide, and thus triggering the loss condition of :friend: at loop end.",
+      "story": "In a corner of the city, a lot of electronics have started blinking. One advanced computer, said to be able to change the world, has become self-aware. And it tries to replace reality with supernaturality, truly changing the world. The last hope IS the Shrine; that area has not yet fallen victim to this new order. If that one falls, then the entire city is lost",
+      "mastermindHints": "Thanks to the :blackCat:, you can win by placing that needed :intrigue: on the Shrine. \n\nOn day 1, move the Rich :student: vertically, play :intrigue: +1 on the Shrine, and :intrigue: +2 on the City. If the Shrine’s :intrigue: is blocked, then you’ll have to use the :cultist:’s power to unblock it. After that, place :paranoia: tokens to trigger Transfer :friend:ship and :butterflyEffect:. \n\nIn loops 2 and 3, you’ll probably have :paranoia: on the :ai: and the :mysteryBoy:. If you trigger :foulEvil: or :missingPerson:, you’ll win. Specifically, in loop 2, the Protagonists will probably place :goodwill: tokens on the :mysteryBoy:, so you’ll mostly win by :missingPerson: in loop 3. \n\nIt’s also important to place :goodwill: on the :ai: and :mysteryBoy: with Transfer :friend:ship and :butterflyEffect:. If you start a loop with :paranoia: on both, place :intrigue: +2 on the :ai:, :intrigue: +1 on the Shrine, and :paranoia: +1 on the :mysteryBoy:, and you’ll have it. \n\nIf you avoid using :goodwill: Refusal on the :ai:, it’ll take time for the Protagonists to realize she’s the :brain:. Use the :goodwill: Refusal with wisdom. \n\nFor the Final Guess, hide either the :friend: or :conspiracyTheorist:."
     },
-    {
-      "day": 3,
-      "incident": "missingPerson",
-      "culprit": "mysteryBoy"
-    },
-    {
-      "day": 4,
-      "incident": "spreading",
-      "culprit": "officeWorker"
-    },
-    {
-      "day": 5,
-      "incident": "butterflyEffect",
-      "culprit": "classRep"
-    },
-    {
-      "day": 6,
-      "incident": "murder",
-      "culprit": "alien"
-    }
-  ],
-  "description": "“un rerum”’s specialty is its usage of Threads of Fate. Horribly enough, if you fail in loop 3, you won’t be able to win the last loop. Also, the A.I. appears, and you’ll need to use that one’s abilities.",
-  "specialRules": [
-    ""
-  ],
-  "victory-conditions": "1. At loop end, have 2 Intrigue on the Shrine, triggering the loss condition for “The Sealed Item”. \n\n2. At the end of day 6, have the Office Worker in the same location as the Alien, and at least 2 Unease on the Alien, triggering Homicide, and thus triggering the loss condition of Friend at loop end.",
-  "story": "In a corner of the city, a lot of electronics have started blinking. One advanced computer, said to be able to change the world, has become self-aware. And it tries to replace reality with supernaturality, truly changing the world. The last hope IS the Shrine; that area has not yet fallen victim to this new order. If that one falls, then the entire city is lost",
-  "mastermindHints": "Thanks to the Black Cat, you can win by placing that needed Intrigue on the Shrine. \n\nOn day 1, move the Rich Student vertically, play Intrigue +1 on the Shrine, and Intrigue +2 on the City. If the Shrine’s Intrigue is blocked, then you’ll have to use the Cultist’s power to unblock it. After that, place Unease tokens to trigger Transfer Friendship and Butterfly Effect. \n\nIn loops 2 and 3, you’ll probably have Unease on the A.I. and the Mystery Boy. If you trigger Foul Evil or Missing Person, you’ll win. Specifically, in loop 2, the Protagonists will probably place Goodwill tokens on the Mystery Boy, so you’ll mostly win by Missing Person in loop 3. \n\nIt’s also important to place Goodwill on the A.I. and Mystery Boy with Transfer Friendship and Butterfly Effect. If you start a loop with Unease on both, place Intrigue +2 on the A.I., Intrigue +1 on the Shrine, and Unease +1 on the Mystery Boy, and you’ll have it. \n\nIf you avoid using Goodwill Refusal on the A.I., it’ll take time for the Protagonists to realize she’s the Brain. Use the Goodwill Refusal with wisdom. \n\nFor the Final Guess, hide either the Friend or Conspiracy Theorist."
-},
     {
       "title": "Lesser of Two Evils",
       "creator": "GEnd",
@@ -1212,11 +1210,11 @@
       ],
       "description": "This is a script with special rules aimed at intermediate to advanced players who are accustomed to playing Tragedy Looper. I recommend getting the protagonist's consent before playing, as this may ruin the original enjoyment of the game.\n\nAlso, make sure everyone knows beforehand that this is a script in which the protagonist is guaranteed to win if played correctly.",
       "specialRules": [
-        "Mastermind can't use \"Intrigue +1,\" \"Paranoia -1,\" or \"Diagonal Movement.\"\n\nThere is no Final Guess.\n\nThere is one Secret Rule known only to the Mastermind."
+        "Mastermind can't use \":intrigue: +1,\" \":paranoia: -1,\" or \"Diagonal Movement.\"\n\nThere is no Final Guess.\n\nThere is one Secret Rule known only to the Mastermind."
       ],
       "victory-conditions": "Hidden Special Rule:\n\nThe Mastermind wins if the Protagonists win. However, the Protagonists' optional Loss Condition will be forcibly triggered if other Loss Conditions are not met.",
       "story": "A scriptwriter weaves a tragedy spanning countless timelines. The protagonists are struggling to keep up, failing every time.  However, there is something strange about the world they have wandered into this time.\n\nWhen you find yourself hanging on the edge of despair, reach out and grasp the flickering light of hope.\n\nAll you need is a flash of inspiration.\n\nDon't give up. Let's start the next loop.",
-      "mastermindHints": "Contrary to the usual rules, the screenwriter's true goal is to \"support the Protagonists and free them from the Loop.\"\n\nPlay with a poker face so that your goal is not revealed. We recommend that you keep your communication with the Protagonists to a minimum except for answering their questions, and leave your seat between Loops.\n\nWhen the Public Sheet is presented, the Protagonists may laugh at the limitations on the Mastermind, but they won't be laughing much longer.\n\nBasically, aim for Spreading and Hospital Incident to occur, and for Immortal to take effect by involving :godlyBeing:. Move :doctor: to City (preparing for Goodwill and Paranoia boost), and keep placing Paranoia on :forensicSpecialist: and :boss:. Move :blackCat: to Hospital, and at the same time, place Intrigue +2 on Hospital. \n\nAlthough the Protagonists will initially see this as a normal power play and try to thwart it, you should make full use of the abilities of the Conspiracy Theorist and Cultist.\n\nIn the unlikely event that Spreading does occur, remove it from :richStudent: and place it on :doctor:, :godlyBeing:, or :forensicSpecialist:.\n\nIf you have extra hands, place Forbid Goodwill on :richStudent: or move it to the City (so that you can use :forensicSpecialist: to remove it if Goodwill is placed). The Protagonists will probably not understand your intentions, and a spiteful Protagonist who is used to the game will sneak through and place Paranoia or Goodwill on it, not realizing that they're tying their own noose.\n\nWhen the Culprit behind Butterfly Effect and role of the :godlyBeing: are revealed, the Protagonists will feel the difficulty of breaking the loop, and the strange discomfort caused by the Mastermind's actions. Once they realize the true purpose behind everything, it's time for telepathic cooperation. Let's break out of this accursed Loop, together.\n\nTo break the loop, you need to do the following 4 things:\n\n- Cause a Hospital Incident\n\n- Move the :patient: out of the Hospital before the Incident occurs\n\n- Involve the :blackCat: in the Hospital Incident\n\n- Place 3 Goodwill on :godlyBeing:\n\nThere are two routes: use :godlyBeing: to remove one Intrigue from the Hospital, or use the :soldier: to make the Protagonists Immortal.\n\nIf the role of :richStudent: is exposed due to the whims of the Protagonists, it will be more difficult to break through the Loop. In that case, on the first day, place a Vertical Movement on :doctor:, a Horizontal Movement on :richStudent:, and a Paranoia +1 on :forensicSpecialist: or :boss: to support them.\n\nIn any case, if the Protagonists and Mastermind work together perfectly, at the end of the last day:\n\n- All characters except :blackCat: will survive and gather in the City\n- All Paranoia counters will be zero\n- Everyone will have Goodwill counters on them\n\nYou can do it. Good luck."
+      "mastermindHints": "Contrary to the usual rules, the screenwriter's true goal is to \"support the Protagonists and free them from the Loop.\"\n\nPlay with a poker face so that your goal is not revealed. We recommend that you keep your communication with the Protagonists to a minimum except for answering their questions, and leave your seat between Loops.\n\nWhen the Public Sheet is presented, the Protagonists may laugh at the limitations on the Mastermind, but they won't be laughing much longer.\n\nBasically, aim for :spreading: and :hospitalIncident: to occur, and for :immortal: to take effect by involving :godlyBeing:. Move :doctor: to City (preparing for :goodwill: and :paranoia: boost), and keep placing :paranoia: on :forensicSpecialist: and :boss:. Move :blackCat: to Hospital, and at the same time, place :intrigue: +2 on Hospital. \n\nAlthough the Protagonists will initially see this as a normal power play and try to thwart it, you should make full use of the abilities of the :conspiracyTheorist: and :cultist:.\n\nIn the unlikely event that :spreading: does occur, remove it from :richStudent: and place it on :doctor:, :godlyBeing:, or :forensicSpecialist:.\n\nIf you have extra hands, place Forbid :goodwill: on :richStudent: or move it to the City (so that you can use :forensicSpecialist: to remove it if :goodwill: is placed). The Protagonists will probably not understand your intentions, and a spiteful Protagonist who is used to the game will sneak through and place :paranoia: or :goodwill: on it, not realizing that they're tying their own noose.\n\nWhen the Culprit behind :butterflyEffect: and role of the :godlyBeing: are revealed, the Protagonists will feel the difficulty of breaking the loop, and the strange discomfort caused by the Mastermind's actions. Once they realize the true purpose behind everything, it's time for telepathic cooperation. Let's break out of this accursed Loop, together.\n\nTo break the loop, you need to do the following 4 things:\n\n- Cause a :hospitalIncident:\n\n- Move the :patient: out of the Hospital before the Incident occurs\n\n- Involve the :blackCat: in the :hospitalIncident:\n\n- Place 3 :goodwill: on :godlyBeing:\n\nThere are two routes: use :godlyBeing: to remove one :intrigue: from the Hospital, or use the :soldier: to make the Protagonists :immortal:.\n\nIf the role of :richStudent: is exposed due to the whims of the Protagonists, it will be more difficult to break through the Loop. In that case, on the first day, place a Vertical Movement on :doctor:, a Horizontal Movement on :richStudent:, and a :paranoia: +1 on :forensicSpecialist: or :boss: to support them.\n\nIn any case, if the Protagonists and Mastermind work together perfectly, at the end of the last day:\n\n- All characters except :blackCat: will survive and gather in the City\n- All :paranoia: counters will be zero\n- Everyone will have :goodwill: counters on them\n\nYou can do it. Good luck."
     }
   ]
 }
