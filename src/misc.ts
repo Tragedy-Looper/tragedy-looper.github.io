@@ -329,3 +329,7 @@ export function cssesc(string: string, options?: Partial<Options>) {
     return output;
 };
 
+
+export function escapeRegExp(string: string): string {
+    return string.replaceAll(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
