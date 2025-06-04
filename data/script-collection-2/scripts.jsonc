@@ -10,7 +10,8 @@
             {
               "name": "Script Collection 2",
               "number": 1
-            },
+            }
+      ],
       "difficultySets": [
         {
           "numberOfLoops": 4,
