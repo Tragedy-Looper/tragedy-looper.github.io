@@ -340,6 +340,78 @@
       "mastermindHints": "You can win with either 2 Intrigue on the Hospital or the ability of the Loved One. Your first choice should be the former, but the latter hides more information. \n\nFirst day on loop 1 should be an Intrigue +2 on the School, an Intrigue +1 on the Hospital, and a bluff card on the Shrine. Then put an Unease on the Rich Student using the Conspiracy Theorist and kill her with Suicide. This is to give the impression that she might be the Witch! \n\nAfter that, try triggering both Missing Person Incidents by putting out Unease. Use the Conspiracy Theorist’s and Factor’s abilities (Subplot “Unknown Factor”: Putting 2 Intrigue on the School makes the Black Cat able to act as a Conspiracy Theorist!) when you need. Putting Unease on the Office Worker is effective both for Missing Person and for the Loved One ability. \n\nFinally, if you can get 2 Intrigue on the School, Shrine, and Hospital, the first loop is perfected. You can try to get that result in future loops too, but it’ll be hard with Forbid Intrigue and trying to prevent the Protagonists from finding the Witch with Goodwill Refusal. \n\nIt’s super easy to hide the Factor, so you don’t need to worry about the Final Guess."
     },
     {
+      "title": "Crushed by the Hospital Building in Doronoki",
+      "creator": "ロキルス",
+      "set": [
+        {
+          "name": "New Tragedies",
+          "number": 6
+        }
+      ],
+      "difficultySets": [
+        {
+          "numberOfLoops": 5,
+          "difficulty": 4
+        },
+        {
+          "numberOfLoops": 4,
+          "difficulty": 5
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "murderPlan"
+      ],
+      "subPlots": [
+        "paranoiaVirus",
+        "unknownFactor"
+      ],
+      "daysPerLoop": 6,
+      "cast": {
+        "informer": "keyPerson",
+        "classRep": "killer",
+        "boss": [
+          "brain",
+          {
+            "Turf": "Hospital"
+          }
+        ],
+        "transferStudent": [
+          "conspiracyTheorist",
+          {}
+        ],
+        "boyStudent": "factor",
+        "shrineMaiden": "person",
+        "alien": "person",
+        "officeWorker": "person",
+        "henchman": "person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "suicide",
+          "culprit": "boyStudent"
+        },
+        {
+          "day": 4,
+          "incident": "hospitalIncident",
+          "culprit": "henchman"
+        },
+        {
+          "day": 5,
+          "incident": "farawayMurder",
+          "culprit": "transferStudent"
+        }
+      ],
+      "description": "The special additions in this script are the presence of the powerful Boss character and the capricious Transfer Student. Have fun with the slightly higher complexity and the rather hard-to-use-well characters.",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "Note: Due to Subplot, Paranoia Virus, the Shrine Maiden, Alien, Office Worker, and Henchman become Serial Killers while they have 3 or more Unease on them. \n\n1. At any day end, have the Informant alone in a location with any of the Serial Killers, activating that ability, and triggering the loss condition for the Key Person immediately. \n\n2. At any day end, have at least 2 Intrigue on the Informant in the same location as the Class Rep, activating the Murderer’s ability and thus triggering the Key Person’s loss condition immediately. \n\n3. At the end of day 4, have the Informant in the Hospital, at least 1 Intrigue on the Hospital, and at least 1 Unease on the Henchman, triggering the Hospital Horror, killing the Informant, and triggering the loss condition of the Key Person immediately. \n\n4. At the end of day 6, have at least 2 Unease on the Transfer Student, triggering the Faraway Murder, and at least 2 Intrigue on the Informant, choosing her to be the target, triggering the loss condition for the Key Person immediately. \n\n5. Having at least 2 Intrigue on the City, causing the Factor (Boy Student) to gain the Key Person’s effect, and applying any of (1) to (4) on the Factor instead of the Informant. \n\n6. At the end of day 2, having at least 2 Intrigue on the City, causing the Factor to gain the Key Person’s effect, and having at least 2 Unease on the Boy Student, triggering Suicide, and triggering the loss condition of the Key Person immediately. \n\n7. At the end of day 4, have at least 2 Intrigue on the Hospital and at least 1 Unease on the Henchman, triggering the Hospital Horror’s Protagonist kill. \n\n8. At any day end, have at least 4 Intrigue on the Class Rep, triggering the Murderer’s Protagonist kill.",
+      "story": "The hospital was empty, a ruin. Shut down by a combination of unfortunate events and political decisions. Forgotten, and abandoned. \n\nBut it harbored a secret. Here, in this very building, they had researched a new type of virus. One woman who worked as an informant had gotten ahold of this information, and the former CEO of the hospital, the boss, decided to silence her once and for all. Dedicated to his task, the boss plans to send his henchman to eliminate the evidence by destroying the building entirely, together with the boy who had contracted the virus. \n\nBut, one day a girl shows up, transferred back to the school in town. A girl with ties to the hospital and a burning hatred, accelerating the looming tragedy. \n\nCan the players outmaneuver the henchman and the vengeful girl?",
+      "mastermindHints": "The :henchman: should start in the Hospital in every loop. \n\nThe first thing to aim for is a Factor kill. First loop, :intrigue: +2 :intrigue: on the School, :intrigue: +1 on the City and a bluff on the Hospital. If the :boss: is in the City, use him to place the second :intrigue: on the City there, and :suicide: the :factor:. Use the same cards in Loop 2 but interchange them. \n\nIf that gets stopped, then you should aim for a :hospitalIorror:. The :boss: can spread :intrigue: here and there. The :goodwill: effects of the :henchman: and :alien: will get in your way. Spread out Unease everywhere to make it hard to pinpoint the culprit. \n\nIf that also gets stopped, then it’s the :transferStudent:. With the :conspiracyTheorist:’s ability, you will for sure be able to activate :farawayMurder:, so have 2 :intrigue: on the :informant: (and :boyStudent:). \n\nWith the :paranoiaVirus:, you might activate a lot of :serialKillers:, but beware so you don’t get trapped in that. You can use that to get a win if you need. \n\nFor the Final Guess, you need to hide the Murderer. Don’t use the Murderer’s ability unless you can safely do so. "
+    },
+    {
             "title": "The Future Assassin",
             "creator": "unun",
             "set": [
