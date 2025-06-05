@@ -2,11 +2,6 @@
   "$schema": "../scripts.schema.json",
   "scripts": [
     {
-      "title": "Tainted Candy",
-      "source": "https://www.tragedylooperscripts.com/scripts/taintedCandy",
-      // …
-    }
-    {
       "title": "The First Script",
       "creator": "BakaFire",
       "set": [
