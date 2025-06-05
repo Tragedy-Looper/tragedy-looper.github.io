@@ -242,7 +242,9 @@
     <Translation translationKey={'Tragedy'} />
     <strong>
       {#if s.tragedySet}
-        <Translation translationKey={tragedysLookup[s.tragedySet].name} />
+        <Translation
+          translationKey={tragedysLookup[s.tragedySet].name}
+        />{#if s.incidents.some((x) => x.notTragedySpecified)}+{/if}
       {:else}
         <Translation translationKey={'No Set'} />
       {/if}

@@ -231,7 +231,7 @@
     <strong
       ><Translation
         translationKey={tragedysLookup[script.tragedySet ?? 'basicTragedy'].name}
-      /></strong
+      />{#if script.incidents.some((x) => x.notTragedySpecified)}+{/if}</strong
     >
   </div>
   <div>
