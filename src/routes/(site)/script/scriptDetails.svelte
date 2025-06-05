@@ -2,7 +2,7 @@
   import { type isScriptName, toPlayerIncident } from '../../../model/script';
 
   import { onMount } from 'svelte';
-
+  import qrcode from 'qrcode-generator';
   import {
     characterscomesInLater,
     isLocationName,
@@ -106,21 +106,44 @@
     }
     try {
       await navigator.clipboard.writeText(shareLink);
-      message = `Copied <a href='${shareLink}' target='_blank' >Link</a> to Clipboard.`;
+      message = {
+        link: shareLink,
+        message: `Copied <a href='${shareLink}' target='_blank' >Link</a> to Clipboard.`,
+      };
       return;
     } catch (error) {
       console.error(error);
     }
-    message = `Please copy the <a href='${shareLink}' target='_blank' >Link</a> and share it.`;
+    message = {
+      message: `Please copy the <a href='${shareLink}' target='_blank' >Link</a> and share it.`,
+      link: shareLink,
+    };
   }
-  let message: string | undefined;
+  let message: { message: string; link: string } | undefined;
+
+  function generateDataUrl(link: string): string {
+    const qr = qrcode(0, 'L');
+    qr.addData(link);
+    qr.make();
+    return qr.createDataURL(4);
+  }
 </script>
 
 <dialog open={message !== undefined}>
-  <div>
-    {@html message}
-    <button on:click={() => (message = undefined)}>Close</button>
-  </div>
+  <article style="display: flex; flex-direction: column; gap: 0.5em;">
+    <img
+      src={generateDataUrl(message?.link ?? '')}
+      alt="QR Code for the link"
+      style=" object-fit: cover;"
+    />
+
+    <div>
+      {@html message?.message ?? ''}
+    </div>
+    <footer>
+      <button on:click={() => (message = undefined)}>Close</button>
+    </footer>
+  </article>
 </dialog>
 
 {#if script}
