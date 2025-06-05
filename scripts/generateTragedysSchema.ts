@@ -711,6 +711,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                     "title": { "type": "string" },
                                     "creator": { "type": "string" },
                                     "description": { "type": "string" },
+                                    "source": { "type": "string" },
                                     "rating": {
                                         "type": "number",
                                         "minimum": 1,
