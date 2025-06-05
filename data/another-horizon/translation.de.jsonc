@@ -2,9 +2,7 @@
     "$schema": "./translations.schema.json",
     "translations": {
         "de": {
-            "Actually, I Am….translated by megakun.title": "Eigentlich bin ich…",
-            "Actually, I Am….translated by megakun.description": "Eine Geschichte über eine Person, die sich selbst nicht versteht.",
-            "Actually, I Am….translated by megakun.story": "In einer Welt, in der die Menschen ihre eigenen Emotionen nicht verstehen, lebt ein Protagonist, der sich selbst nicht versteht. Er ist von seinen eigenen Gefühlen und Gedanken entfremdet und weiß nicht, wie er mit ihnen umgehen soll. Eines Tages trifft er auf eine Person, die ihm hilft, sich selbst zu verstehen und seine Emotionen zu akzeptieren. Durch diese Begegnung lernt er, dass es in Ordnung ist, nicht perfekt zu sein und dass es wichtig ist, sich selbst zu akzeptieren.",
+            "Actually, I Am….translated by megakun.title": "Eigentlich bin ich…"
         }
     }
 }
