@@ -18,6 +18,15 @@
             ]
         },
         {
+            "id": "brainwashing",
+            "name": "Brainwashing",
+            "effect": [
+                {
+                    "description": "Place 2 :paranoia: on a character of your choice, and 2 :goodwill: on another character of your choice."
+                }
+            ]
+        },
+        {
             "id": "assassination",
             "name": "Assassination",
             "effect": [
