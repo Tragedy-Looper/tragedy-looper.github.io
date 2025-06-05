@@ -63,7 +63,8 @@ export interface ICustomScriptIncidentSelection<TCharacters extends CharacterNam
     readonly script: CustomScript;
     readonly selectedCharacter: Writable<TCharacters>;
     readonly currentDay: number;
-    readonly notInTragedy: Writable<boolean>;
+    // readonly notInTragedy: Writable<boolean>;
+    readonly inTragedy: Writable<boolean>;
     readonly selectedIncident: Writable<IncidentName | undefined>;
     readonly availableCharacters: Readable<readonly TCharacters[]>;
     readonly options: Readable<readonly AdditionalOptions[]>;
@@ -73,7 +74,8 @@ class CustomScriptIncidentSelection<TCharacters extends CharacterName> implement
     public readonly script: CustomScript;
     public readonly selectedCharacter: Writable<TCharacters>;
     public readonly currentDay: number;
-    public readonly notInTragedy: Writable<boolean>;
+    // public readonly notInTragedy: Writable<boolean>;
+    public readonly inTragedy: Writable<boolean>;
     public readonly selectedIncident: Writable<IncidentName | undefined>;
     public readonly availableCharacters: Readable<readonly TCharacters[]>;
     public readonly options: Readable<readonly AdditionalOptions[]>;
@@ -92,7 +94,7 @@ class CustomScriptIncidentSelection<TCharacters extends CharacterName> implement
         // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         this.selectedCharacter = writable(undefined!);
         this.selectedIncident = writable(undefined);
-        this.notInTragedy = writable(false);
+        this.inTragedy = writable(true);
         this._availableCharacters = writable(writable([]));
         this.availableCharacters = storeStore(this._availableCharacters);
 
@@ -771,7 +773,7 @@ export class CustomScript {
             const index = ince.day - 1;
             incidents[index];
             incidents[index].selectedCharacter.set(ince.culprit as any); // Its not correct typed for mob incidents…
-
+            incidents[index].inTragedy.set(!('notTragedySpecified' in ince) || !ince.notTragedySpecified);
             if (typeof ince.incident == 'string') {
                 const name = ince.incident;
                 incidents[index].selectedIncident.set(name);
@@ -863,7 +865,7 @@ export class CustomScript {
 
                 return {
                     day: x.currentDay,
-                    notTragedySpecified: get(x.notInTragedy) ? true : undefined,
+                    notTragedySpecified: !get(x.inTragedy) ? true : undefined,
 
                     incident: isFakeIncident(incidentName) ? [incidentName, get(get(x.options).filter(x => x.option.name == 'Faked as')[0].value)] as const : incidentName,
                     culprit: get(x.selectedCharacter)
