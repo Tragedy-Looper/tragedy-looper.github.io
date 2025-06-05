@@ -15,7 +15,7 @@ import { exit } from 'process';
 
 
 const types = ['keywords', 'characters', 'plots', 'roles', 'tragedys', 'incidents', 'scripts', 'tags'] as const;
-const schemaTypes = [...types, 'translations'] as const;
+const schemaTypes = [...types, 'translations', 'translationOverrides'] as const;
 
 type getJsonObjectsWithSchemaResult<T> = T extends 'translations'
     ? Record<string, Record<string, string>>
@@ -203,14 +203,14 @@ function writeOverrideSchema(translationStrings: string[], location: string) {
     }
     const translationSchema = {
         $schema: "http://json-schema.org/draft-07/schema#",
-        title: "Translations",
+        title: "TranslationOverrides",
         type: "object",
         "additionalProperties": false,
         properties: {
             "$schema": {
                 type: "string"
             },
-            translations: {
+            translationOverrides: {
                 type: "object",
                 "additionalProperties": {
                     "$ref": "#/definitions/laguages",
@@ -232,8 +232,8 @@ function writeOverrideSchema(translationStrings: string[], location: string) {
 
         }
     };
-    fs.writeFileSync(path.join(location, 'translationsOverride.schema.json'), JSON.stringify(translationSchema, undefined, 2));
-    console.debug(`Finished writing translationOveride schema to ${path.join(location, 'translationsOverride.schema.json')}`);
+    fs.writeFileSync(path.join(location, 'translationOverrides.schema.json'), JSON.stringify(translationSchema, undefined, 2));
+    console.debug(`Finished writing translationOveride schema to ${path.join(location, 'translationOverrides.schema.json')}`);
 }
 
 // first we make the jsons cshemas for each data folder,
@@ -329,6 +329,7 @@ function quoteString(text: string) {
 }
 
 
+
 const translationObject = `export const ui_strings = [\n${uniqueStrings.map(quoteString).reduce((p, c) => `${p}${p.length == 0 ? '' : ','}\n${c}`, "")}\n] as const;`;
 fs.writeFileSync('./src/data-ui-strings.ts', translationObject);
 
@@ -337,16 +338,39 @@ fs.writeFileSync('./src/data-ui-strings.ts', translationObject);
 
 //since we have spectal handling for script files we first get all scripts
 
-const scriptReplacement = Object.fromEntries(getJsonObjectsWithSchema('./data', 'scripts').flat().flatMap(script => {
-    return ([
-        [`${script.title}.${script.creator ?? 'Unknown'}.description`, script.description ?? ''],
-        [`${script.title}.${script.creator ?? 'Unknown'}.title`, script.title ?? ''],
-        [`${script.title}.${script.creator ?? 'Unknown'}.mastermindHints`, script.mastermindHints ?? ''],
-        [`${script.title}.${script.creator ?? 'Unknown'}.specialRules`, script.specialRules?.join('\n\n') ?? ''],
-        [`${script.title}.${script.creator ?? 'Unknown'}.story`, script.story ?? ''],
-        [`${script.title}.${script.creator ?? 'Unknown'}.victory-conditions`, script['victory-conditions'] ?? '']
-    ] as const)
-}));
+// const scriptReplacement = Object.fromEntries(getJsonObjectsWithSchema('./data', 'scripts').flat().flatMap(script => {
+//     return ([
+//         [`${script.title}.${script.creator ?? 'Unknown'}.description`, script.description ?? ''],
+//         [`${script.title}.${script.creator ?? 'Unknown'}.title`, script.title ?? ''],
+//         [`${script.title}.${script.creator ?? 'Unknown'}.mastermindHints`, script.mastermindHints ?? ''],
+//         [`${script.title}.${script.creator ?? 'Unknown'}.specialRules`, script.specialRules?.join('\n\n') ?? ''],
+//         [`${script.title}.${script.creator ?? 'Unknown'}.story`, script.story ?? ''],
+//         [`${script.title}.${script.creator ?? 'Unknown'}.victory-conditions`, script['victory-conditions'] ?? '']
+//     ] as const)
+// }));
+
+const replaceMents = Object.fromEntries(types.map((key) => {
+
+    const entryes =
+        key == 'scripts' ? Object.fromEntries(getJsonObjectsWithSchema('./data', key).flat().flatMap(script => {
+            return ([
+                [`${script.title}.${script.creator ?? 'Unknown'}.description`, script.description ?? ''],
+                [`${script.title}.${script.creator ?? 'Unknown'}.title`, script.title ?? ''],
+                [`${script.title}.${script.creator ?? 'Unknown'}.mastermindHints`, script.mastermindHints ?? ''],
+                [`${script.title}.${script.creator ?? 'Unknown'}.specialRules`, script.specialRules?.join('\n\n') ?? ''],
+                [`${script.title}.${script.creator ?? 'Unknown'}.story`, script.story ?? ''],
+                [`${script.title}.${script.creator ?? 'Unknown'}.victory-conditions`, script['victory-conditions'] ?? '']
+            ] as const);
+        }))
+
+            : Object.fromEntries(getJsonObjectsWithSchema('./data', key).flat().flatMap(element => {
+                return ([
+                    [`${element.id}.name`, element.name ?? ''],
+                ] as const);
+            }));
+
+    return [key, entryes] as const;
+})) as Record<typeof types[number], Record<string, string>>
 
 const allTranslations = getJsonObjectsWithSchema('.', 'translations');
 
@@ -357,8 +381,8 @@ const mergedTranslations = allTranslations.reduce((acc, curr) => {
             acc[lang] = {};
         }
         Object.entries(data).forEach(([key, value]) => {
-            if (key in scriptReplacement) {
-                key = scriptReplacement[key];
+            if (key in replaceMents.scripts) {
+                key = replaceMents.scripts[key];
             }
             if (!acc[lang][key]) {
                 acc[lang][key] = value;
@@ -370,6 +394,43 @@ const mergedTranslations = allTranslations.reduce((acc, curr) => {
     });
     return acc;
 }, {} as Record<string, Record<string, string>>);
+
+function generateOverrideUi() {
+    const rawOverrides = getJsonObjectsWithSchema('./data', 'translationOverrides');
+    const overrideData = rawOverrides.reduce((acc, curr) => {
+        Object.entries(curr).forEach(([lang, data]) => {
+            if (!acc[lang]) {
+                acc[lang] = {};
+            }
+            Object.entries(data).forEach(([key, value]) => {
+
+
+
+                for (const [replacementType, replacements] of Object.entries(replaceMents)) {
+                    if (key in replacements) {
+                        if (!acc[lang][replacements[key]]) {
+                            acc[lang][replacements[key]] = [];
+                        }
+
+
+                        acc[lang][replacements[key]].push({
+                            id: key,
+                            text: value
+                        });
+
+                    }
+                }
+
+            });
+        });
+        return acc;
+    }, {} as Record<string, Record<string, { id: string, text: string }[]>>);
+
+    fs.writeFileSync('./src/data-translationOverrides.g.ts', `export const translationOverirdes = ${JSON.stringify(overrideData, undefined, 2)}\n`);
+
+
+}
+generateOverrideUi();
 
 
 fs.writeFileSync('./src/data-translations.ts', `export const translations = ${JSON.stringify(mergedTranslations, undefined, 2)}\n`);

@@ -122,15 +122,15 @@
   {#if ownScripts.length > 0 && tab == 'own'}
     <article>
       <header>
-        <h2>Your Creations</h2>
+        <h2><Translation translationKey={'Your Creations'} /></h2>
       </header>
       {#each ownScripts as s}
         <div style="display: flex; align-items: center;  gap: 0.5rem;">
           <a style="flex-grow: 2;" href={linkOverview({ script: s })}>
-            {s.title} by {s.creator} [{s.tragedySet}] difficulty {join(
-              s.difficultySets?.map((x) => x.difficulty.toString()) ?? [],
-              ' / '
-            )}</a
+            <Translation translationKey={s.title} /> by {s.creator} [<Translation
+              translationKey={tragedysLookup[s.tragedySet!]?.name}
+            />] <Translation translationKey={'difficulty'} />
+            {join(s.difficultySets?.map((x) => x.difficulty.toString()) ?? [], ' / ')}</a
           >
           <button
             aria-label="Delete Script"
@@ -166,7 +166,7 @@
         .sort( (a, b) => (a == undefined ? (b == undefined ? 0 : -1) : b == undefined ? 1 : a.localeCompare(b)) )) as set}
       <article>
         <header>
-          <h2><Translation translationKey={tragedysLookup[set].name}/></h2>
+          <h2><Translation translationKey={tragedysLookup[set].name} /></h2>
         </header>
         {#each scripts
           .filter((x) => x.tragedySet == set)
@@ -226,7 +226,9 @@
 
 {#snippet scriptEntry(s: Script)}
   <div style="margin-bottom: 0.5em;">
-    <a href={linkOverview({ title: s.title })}> {s.title} by {s.creator}</a><br />
+    <a href={linkOverview({ title: s.title })}>
+      <Translation translationKey={s.title} /> <Translation translationKey={'by'} /> {s.creator}</a
+    ><br />
 
     <em style="display: block;">
       {#each s.set ?? [] as set}
@@ -240,7 +242,9 @@
     <Translation translationKey={'Tragedy'} />
     <strong>
       {#if s.tragedySet}
-        <Translation translationKey={tragedysLookup[s.tragedySet].name} />
+        <Translation
+          translationKey={tragedysLookup[s.tragedySet].name}
+        />{#if s.incidents.some((x) => x.notTragedySpecified)}+{/if}
       {:else}
         <Translation translationKey={'No Set'} />
       {/if}
@@ -253,7 +257,22 @@
       )}
     {/if}
     {#if s.rating}
-      <br /><Rating rating={s.rating} />
+      {@const r =
+        s.rating == undefined
+          ? s.rating
+          : (Math.min(Math.max(0, s.rating), 10) as
+              | undefined
+              | 1
+              | 2
+              | 3
+              | 4
+              | 5
+              | 6
+              | 7
+              | 8
+              | 9
+              | 10)}
+      <br /><Rating rating={r} />
     {/if}
   </div>
 {/snippet}

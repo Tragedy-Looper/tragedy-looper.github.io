@@ -176,7 +176,15 @@
 
     <hgroup style="align-self: start; justify-self: start;">
       <h4>{script.creator}</h4>
-      <h1>{script.title}</h1>
+      <h1><Translation translationKey={script.title} /></h1>
+      {#if script.source}
+        <h5>
+          {$getString('Source')}
+          <a href={script.source} target="_blank" rel="noopener noreferrer" class="outline">
+            <small>{new URL(script.source).host}</small>
+          </a>
+        </h5>
+      {/if}
 
       <h2>
         {#if script.set}
@@ -187,6 +195,7 @@
         {/if}
       </h2>
     </hgroup>
+
     <div>
       {#if script.description}
         <div class="description">
@@ -202,7 +211,12 @@
 
     {#each script.difficultySets ?? [] as e}
       <div style="align-self: end; justify-self: start;">
-        Loops: {e.numberOfLoops} / difficulty:
+        <Translation
+          translationKey={[
+            'Loops: {numberOfLoops} / difficulty:',
+            { numberOfLoops: e.numberOfLoops },
+          ]}
+        />
         {#each Array.from({ length: e.difficulty }) as d}
           <div
             style="width: 1em; height: 1em; background-color: var(--pico-primary); display: inline-block; border-radius: 1em; border: 1px solid var(--pico-secondary)"
@@ -217,11 +231,12 @@
     <strong
       ><Translation
         translationKey={tragedysLookup[script.tragedySet ?? 'basicTragedy'].name}
-      /></strong
+      />{#if script.incidents.some((x) => x.notTragedySpecified)}+{/if}</strong
     >
   </div>
   <div>
-    <strong><Translation translationKey={'Days per Loop'} /></strong>{script.daysPerLoop}
+    <strong><Translation translationKey={'Days per Loop'} /></strong>
+    {script.daysPerLoop}
   </div>
 
   <div style="display: grid; justify-content: start; align-content:  baseline; gap: 0.3em;">

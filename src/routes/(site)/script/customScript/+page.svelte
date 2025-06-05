@@ -202,7 +202,7 @@
       <PlotSelection {plotSelection} />
     {/each}
 
-    <h2>Dificulty</h2>
+    <h2><Translation translationKey= {'Difficulty'}/></h2>
 
     <Difficulty {difSet} />
 

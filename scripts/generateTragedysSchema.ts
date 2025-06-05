@@ -711,6 +711,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                     "title": { "type": "string" },
                                     "creator": { "type": "string" },
                                     "description": { "type": "string" },
+                                    "source": { "type": "string" },
                                     "rating": {
                                         "type": "number",
                                         "minimum": 1,
@@ -844,10 +845,10 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                         "additionalProperties": false,
                                                         "properties": {
                                                             "day": { "type": "number" },
-                                                            ...Object.fromEntries([["notTragedySpecified", {
+                                                            "notTragedySpecified": {
                                                                 "type": "boolean",
-                                                                "enum": [true]
-                                                            }]].filter(() => index === 1)),
+                                                                "enum": [index === 1]
+                                                            },
                                                             "incident":
                                                             {
                                                                 "type": "string",
@@ -862,12 +863,10 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                         "additionalProperties": false,
                                                         "properties": {
                                                             "day": { "type": "number" },
-                                                            ...Object.fromEntries([["notTragedySpecified", {
-
+                                                            "notTragedySpecified": {
                                                                 "type": "boolean",
-                                                                "enum": [true]
-
-                                                            }]].filter(() => index === 1)),
+                                                                "enum": [index === 1]
+                                                            },
                                                             "incident":
                                                             {
                                                                 "type": "string",
@@ -884,10 +883,10 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                         "additionalProperties": false,
                                                         "properties": {
                                                             "day": { "type": "number" },
-                                                            ...Object.fromEntries([["notTragedySpecified", {
+                                                            "notTragedySpecified": {
                                                                 "type": "boolean",
-                                                                "enum": [true]
-                                                            }]].filter(() => index === 1)),
+                                                                "enum": [index === 1]
+                                                            },
                                                             "incident":
                                                             {
                                                                 type: "array",
@@ -911,10 +910,10 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                         "additionalProperties": false,
                                                         "properties": {
                                                             "day": { "type": "number" },
-                                                            ...Object.fromEntries([["notTragedySpecified", {
+                                                            "notTragedySpecified": {
                                                                 "type": "boolean",
-                                                                "enum": [true]
-                                                            }]].filter(() => index === 1)),
+                                                                "enum": [index === 1]
+                                                            },
                                                             "incident":
                                                             {
                                                                 type: "array",

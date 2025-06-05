@@ -17,7 +17,7 @@
   });
   $: options = incident.options;
   $: selectedCharacter = incident.selectedCharacter;
-  $: isNotInTragedy = incident.notInTragedy;
+  $: isInTragedy = incident.inTragedy;
   $: selectedDay = incident.currentDay;
   $: selectedIncident = incident.selectedIncident;
   $: allTragedyIncidents = derived(incident.script.incidents, (a) =>
@@ -28,9 +28,9 @@
   );
 
   $: allIncidents = derived(
-    [allTragedyIncidents, allNotTragedyIncidents, isNotInTragedy],
-    ([$allTragedyIncidents, $allNotTragedyIncidents, $isNotInTragedy]) => {
-      return $isNotInTragedy ? $allNotTragedyIncidents : $allTragedyIncidents;
+    [allTragedyIncidents, allNotTragedyIncidents, isInTragedy],
+    ([$allTragedyIncidents, $allNotTragedyIncidents, $isInTragedy]) => {
+      return $isInTragedy ? $allTragedyIncidents : $allNotTragedyIncidents;
     }
   );
 </script>
@@ -42,11 +42,11 @@
   <td>
     <div role="group">
       <label>
-        {$isNotInTragedy ? $getString('Is not in Tragedy') : $getString('Is in Tragedy')}
+        {$isInTragedy ? $getString('Is in Tragedy') : $getString('Is not in Tragedy')}
         <input
           role="switch"
           type="checkbox"
-          bind:checked={$isNotInTragedy}
+          bind:checked={$isInTragedy}
           title="Check if this incident is not in the tragedy"
         />
       </label>
@@ -65,7 +65,7 @@
       <select bind:value={$selectedCharacter}>
         <option value="" disabled selected>{$getString('Select a character')}</option>
         {#each $availableCharacters as day}
-          <option value={day} ><Translation translationKey={charactersLookup[day].name} /></option>
+          <option value={day}><Translation translationKey={charactersLookup[day].name} /></option>
         {/each}
       </select>
     {:else}{/if}
