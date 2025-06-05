@@ -1,6 +1,6 @@
 {
-    "$schema": "./translationsOverride.schema.json",
-    "translations": {
+    "$schema": "./translationOverrides.schema.json",
+    "translationOverrides": {
         "en": {
             "richStudent.name": [
                 "Rich Student"
