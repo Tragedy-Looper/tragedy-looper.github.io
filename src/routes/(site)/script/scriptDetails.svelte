@@ -202,7 +202,7 @@
       <h1><Translation translationKey={script.title} /></h1>
       {#if script.source}
         <h5>
-          {$getString('Source')}
+          <Translation translationKey={'Source'} />
           <a href={script.source} target="_blank" rel="noopener noreferrer" class="outline">
             <small>{new URL(script.source).host}</small>
           </a>
