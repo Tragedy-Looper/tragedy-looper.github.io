@@ -16,14 +16,14 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "When the Loop ends—if the Key Person is not in the initial starting location of the Sub Heroine, the Key Person dies."
+                    "prerequisite": "When the Loop ends—if the :keyPerson: is not in the initial starting location of the :subHeroine:, the :keyPerson: dies."
                 },
                 {
                     "type": "Mandatory",
                     "timing": [
                         "Mastermind Action step"
                     ],
-                    "description": "The Mastermind cannot place any Movement Actions on the Key Person."
+                    "description": "The Mastermind cannot place any Movement Actions on the :keyPerson:."
                 }
             ]
         },
@@ -57,15 +57,15 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "The Key Person does not have more than \"X\" :goodwill:. \"X\" is half the number of Days in one Loop, rounded down."
+                    "prerequisite": "The :keyPerson: does not have more than \"X\" :goodwill:. \"X\" is half the number of Days in one Loop, rounded down."
                 },
                 {
                     "type": "Mandatory",
                     "timing": [
                         "Loop Start"
                     ],
-                    "prerequisite": "\"Promise of a Smile\" Loss condition was met in the previous Loop.",
-                    "description": "Key Person gets +1 :goodwill:."
+                    "prerequisite": "\":promiseSmile:\" Loss condition was met in the previous Loop.",
+                    "description": ":keyPerson: gets +1 :goodwill:."
                 }
             ]
         },
