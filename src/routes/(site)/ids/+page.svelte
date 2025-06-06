@@ -1,4 +1,6 @@
 <script lang="ts">
+    import '@picocss/pico/css/pico.css';
+
   import {
     charactersLookup,
     incidentsLookup,

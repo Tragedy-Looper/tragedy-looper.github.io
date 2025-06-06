@@ -1,5 +1,4 @@
 <script lang="ts" module>
-  import '@picocss/pico/css/pico.css';
 
   export const languageOverride = writable<string | undefined>(undefined);
 
