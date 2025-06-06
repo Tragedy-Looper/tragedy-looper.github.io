@@ -53,7 +53,7 @@
             "abilities": [
                 {
                     "type": "Optional",
-                    "description": "Mad Genius acquirs Body Parts.",
+                    "description": ":madGenius: acquirs Body Parts.",
                     "timing": [
                         "Day End"
                     ],
@@ -90,7 +90,7 @@
             "abilities": [
                 {
                     "type": "Loss condition: Tragedy",
-                    "prerequisite": "Seeder is killed.",
+                    "prerequisite": ":seeder: is killed.",
                     "timing": [
                         "On character death"
                     ]
@@ -101,7 +101,7 @@
                         "Mastermind Ability"
                     ],
                     "timesPerLoop": 1,
-                    "description": "Add one :paranoia: to another non-:supernaturalTag: chracter in the same Location and change the Characters role to Key Person. Teh Seeder looses all abilities and Effects after using this ability."
+                    "description": "Add one :paranoia: to another non-:supernaturalTag: chracter in the same Location and change the Characters role to :keyPerson:. Teh :seeder: looses all abilities and Effects after using this ability."
                 }
             ]
         },
@@ -111,8 +111,8 @@
             "abilities": [
                 {
                     "type": "Mandatory",
-                    "prerequisite": "The Supplicant has 1 :intrigue: and is in the same location as the Lover",
-                    "description": "The Supplicant gainst :supernaturalTag: tag.",
+                    "prerequisite": "The :supplicant: has 1 :intrigue: and is in the same location as the :lover:",
+                    "description": "The :supplicant: gainst :supernaturalTag: tag.",
                     "timing": [
                         "Day End"
                     ]

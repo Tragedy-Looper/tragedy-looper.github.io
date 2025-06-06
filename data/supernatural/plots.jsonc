@@ -16,7 +16,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "Mad Genius has Body Parts and is alive"
+                    "prerequisite": ":madGenius: has Body Parts and is alive"
                 }
             ]
         },
@@ -34,7 +34,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "Supplicant is alive and has the :supernaturalTag: tag"
+                    "prerequisite": ":supplicant: is alive and has the :supernaturalTag: tag"
                 }
             ]
         },
@@ -51,7 +51,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "Every location contains a Facsimile."
+                    "prerequisite": "Every location contains a :facsimile:."
                 }
             ]
         },
@@ -92,11 +92,11 @@
             "rules": [
                 {
                     "type": "Mandatory",
-                    "prerequisite": "No Facsimile are alive.",
+                    "prerequisite": "No :facsimile: are alive.",
                     "timing": [
                         "Day End"
                     ],
-                    "description": "The Key Persons role changes to Person."
+                    "description": "The :keyPerson:s role changes to :person:."
                 }
             ]
         },
@@ -145,7 +145,7 @@
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "If there is two :intrigue: on the Mad Genius's starting location and the Mad Genius is alive and not at that location."
+                    "prerequisite": "If there is two :intrigue: on the :madGenius:'s starting location and the :madGenius: is alive and not at that location."
                 }
             ]
         },
@@ -162,7 +162,7 @@
                         "Day End",
                         "Last Day"
                     ],
-                    "prerequisite": "If any of the Cult Members have no Goddwill"
+                    "prerequisite": "If any of the :cultMember:s have no :goodwill:"
                 }
             ]
         },
