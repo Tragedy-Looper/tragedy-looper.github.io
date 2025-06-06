@@ -155,7 +155,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "The Loved One dies",
+                    "prerequisite": "The :lovedOne: dies",
                     "description": "This character gets 6 :paranoia:."
                 }
             ]
@@ -169,7 +169,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "The Lover dies",
+                    "prerequisite": "The :lover: dies",
                     "description": "This character gets 6 :paranoia:."
                 },
                 {

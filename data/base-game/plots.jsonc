@@ -76,7 +76,7 @@
             "rules": [
                 {
                     "type": "Script creation",
-                    "description": "Script writer may choose 0 or 1 or 2 Curmudgeons."
+                    "description": "Script writer may choose 0 or 1 or 2 :curmudgeon:s."
                 }
             ]
         },
@@ -199,7 +199,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "All Persons with at least 3 :paranoia: turn into :serialKiller:s."
+                    "description": "All :person:s with at least 3 :paranoia: turn into :serialKiller:s."
                 }
             ]
         },
