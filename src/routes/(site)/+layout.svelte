@@ -180,10 +180,10 @@
           role="switch"
           bind:checked={enableTranslationUi.editLocals}
         />
-        <Translation translationKey={'Allow editiung localy stored translations'} />
+        <Translation translationKey={'Allow editing locally stored translations'} />
         <small>
           <Translation
-            translationKey={'When you have stored local translations, this will allow you to odit it with a click.'}
+            translationKey={'When you have stored local translations, this will allow you to edit it with a click.'}
           />
         </small>
       </label>
