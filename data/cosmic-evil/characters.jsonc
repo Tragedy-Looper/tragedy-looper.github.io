@@ -19,13 +19,13 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "Pick a Student in this location, and add or remove a :paranoia: from that student."
+                    "description": "Pick a :student: in this location, and add or remove a :paranoia: from that student."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 4,
                     "timesPerLoop": 1,
-                    "description": "Reveal the role of one Student in this location."
+                    "description": "Reveal the role of one :student: in this location."
                 }
             ]
         },

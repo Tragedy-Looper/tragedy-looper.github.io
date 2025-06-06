@@ -15,7 +15,7 @@
             "rules": [
                 {
                     "type": "Script creation",
-                    "description": "Key Person and Vampire must be of oposing sex."
+                    "description": ":keyPerson: and :vampire: must be of oposing sex."
                 }
             ]
         },

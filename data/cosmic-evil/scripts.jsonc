@@ -1,15 +1,17 @@
 {
-      "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
+    "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
     // For dev purposes
     // "$schema": "../scripts.schema.json",
     "scripts": [
         {
             "title": "Secret Cat Walk",
             "creator": "GEnd",
-            "set": [{
-                "name": "Cosmic Evil",
-                "number": 1
-            }],
+            "set": [
+                {
+                    "name": "Cosmic Evil",
+                    "number": 1
+                }
+            ],
             "tragedySet": "basicTragedy",
             "mainPlot": [
                 "sealedItem"
@@ -64,10 +66,12 @@
         {
             "title": "Master Thief Seven Tails",
             "creator": "BakaFire",
-            "set": [{
-                "name": "Cosmic Evil",
-                "number": 2
-            }],
+            "set": [
+                {
+                    "name": "Cosmic Evil",
+                    "number": 2
+                }
+            ],
             "tragedySet": "primeEvil",
             "mainPlot": [
                 "cursedLand"
@@ -119,10 +123,12 @@
         {
             "title": "Vamp",
             "creator": "ENTEI",
-            "set": [{
-                "name": "Cosmic Evil",
-                "number": 3
-            }],
+            "set": [
+                {
+                    "name": "Cosmic Evil",
+                    "number": 3
+                }
+            ],
             "tragedySet": "primeEvil",
             "mainPlot": [
                 "nobleBloodline"
@@ -177,10 +183,12 @@
         {
             "title": "Zombi Hero",
             "creator": "GEnd",
-            "set": [{
-                "name": "Cosmic Evil",
-                "number": 4
-            }],
+            "set": [
+                {
+                    "name": "Cosmic Evil",
+                    "number": 4
+                }
+            ],
             "tragedySet": "primeEvil",
             "mainPlot": [
                 "OnesFromGrave"
@@ -246,10 +254,12 @@
         {
             "title": "Ultimate Halloween",
             "creator": "BakaFire",
-            "set": [{
-                "name": "Cosmic Evil",
-                "number": 5
-            }],
+            "set": [
+                {
+                    "name": "Cosmic Evil",
+                    "number": 5
+                }
+            ],
             "tragedySet": "primeEvil",
             "mainPlot": [
                 "moonlightBeast"
@@ -333,10 +343,12 @@
         {
             "title": "Banquet School Life",
             "creator": "BakaFire",
-            "set": [{
-                "name": "Cosmic Evil",
-                "number": 6
-            }],
+            "set": [
+                {
+                    "name": "Cosmic Evil",
+                    "number": 6
+                }
+            ],
             "tragedySet": "cosmicMythology",
             "mainPlot": [
                 "giantTimeBombAgain"
@@ -389,10 +401,12 @@
         {
             "title": "Eyes Without Vision",
             "creator": "Nightly Moonfire Group",
-            "set": [{
-                "name": "Cosmic Evil",
-                "number": 7
-            }],
+            "set": [
+                {
+                    "name": "Cosmic Evil",
+                    "number": 7
+                }
+            ],
             "tragedySet": "cosmicMythology",
             "mainPlot": [
                 "bloodyRites"
@@ -448,10 +462,12 @@
         {
             "title": "Bella Stellarum",
             "creator": "Gaijin",
-            "set": [{
-                "name": "Cosmic Evil",
-                "number": 8
-            }],
+            "set": [
+                {
+                    "name": "Cosmic Evil",
+                    "number": 8
+                }
+            ],
             "tragedySet": "cosmicMythology",
             "mainPlot": [
                 "kingYellow"
@@ -521,10 +537,12 @@
         {
             "title": "An Ordinary Day In Misuka City",
             "creator": "Rokirusu",
-            "set": [{
-                "name": "Cosmic Evil",
-                "number": 9
-            }],
+            "set": [
+                {
+                    "name": "Cosmic Evil",
+                    "number": 9
+                }
+            ],
             "tragedySet": "cosmicMythology",
             "mainPlot": [
                 "sacredWordsDagon"
@@ -584,10 +602,12 @@
         {
             "title": "Cosmic Insignificance",
             "creator": "M. Hydromel and her automatons",
-            "set": [{
-                "name": "Cosmic Evil",
-                "number": 10
-            }],
+            "set": [
+                {
+                    "name": "Cosmic Evil",
+                    "number": 10
+                }
+            ],
             "tragedySet": "cosmicMythology",
             "mainPlot": [
                 "kingYellow"
