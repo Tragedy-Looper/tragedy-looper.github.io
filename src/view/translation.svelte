@@ -197,8 +197,35 @@
     return md;
   });
 
+  export const getKeyToName = (key: string) => {
+    return (
+      Object.values({
+        ...charactersLookup,
+        ...keywordsLookup,
+        ...plotsLookup,
+        ...tagsLookup,
+        ...incidentsLookup,
+        ...rolesLookup,
+        ...tragedysLookup,
+      })
+        .filter((x) => x.name == key)
+        .map((x) => x.id)[0] ?? key
+    );
+  };
+
+  function replacedNames(params: string): string {
+    const original = getKeyToName(params);
+    const altered = $getAlternative(original);
+    if (altered) {
+      return altered;
+    }
+    return params;
+  }
+
   let text = $derived(
-    block ? md.render($getString(key, parametrs)) : md.renderInline($getString(key, parametrs))
+    block
+      ? md.render(replacedNames($getString(key, parametrs)))
+      : md.renderInline(replacedNames($getString(key, parametrs)))
   );
   let doesTranslationExists = $derived(translationExists($language, key));
 

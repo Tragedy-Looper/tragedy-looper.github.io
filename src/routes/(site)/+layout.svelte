@@ -53,7 +53,7 @@
     [alternatives, language],
     ([alternatives, currentLang]) =>
       (key: string) => {
-        if(alternatives[currentLang]?.[key]){
+        if (alternatives[currentLang]?.[key]) {
           console.warn(
             `Using alternative for ${key} in ${currentLang}, but this is not a good idea, as it might not be the same as the original text.`
           );
@@ -92,6 +92,22 @@
   import { browser } from '$app/environment';
   import Translation, { imageSets } from '../../view/translation.svelte';
   import { enableTranslationUi } from '../+layout.svelte';
+  import {
+    charactersLookup,
+    incidentsLookup,
+    isCharacterId,
+    isKeywordId,
+    isPlotId,
+    isTagId,
+    keywordsLookup,
+    plotsLookup,
+    rolesLookup,
+    tagsLookup,
+    tragedysLookup,
+  } from '../../data';
+  import { isTragedySetName } from '../../model/tragedySets';
+  import { isRoleName, singleRolenames } from '../../model/roles';
+  import { isIncidentName } from '../../model/incidents';
 
   let showOptionsDialog = $state(false);
 
