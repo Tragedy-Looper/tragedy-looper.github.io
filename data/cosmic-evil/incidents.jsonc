@@ -116,9 +116,9 @@
         {
             "id": "fireDemise",
             "name": "Fire of Demise",
-            "timesPerGame": 1,
             "effect": [
                 {
+                    "timesPerGame": 1,
                     "type": "Mandatory Loss condition: Protagonists Death",
                     "description": "All characters and the Protagonists are killed."
                 }

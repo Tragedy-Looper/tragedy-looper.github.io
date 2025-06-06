@@ -1,5 +1,4 @@
 <script lang="ts" module>
-
   export const languageOverride = writable<string | undefined>(undefined);
 
   const safedLang = browser ? window.localStorage?.getItem('languageOverride') : null;
@@ -38,11 +37,51 @@
       return getStringForLanguage(key, $language, ...args);
     }) as any; // not sure why this is needed, the signature seems to be the same
   });
+
+  function loadAlternatives(): Record<string, Record<string, string>> {
+    if (!browser) {
+      return {};
+    }
+    const currentValue = JSON.parse(
+      localStorage.getItem('tragedyLooper:Alternetives') ?? '{}'
+    ) as Record<string, Record<string, string>>;
+    return currentValue;
+  }
+  const alternatives = writable(loadAlternatives());
+
+  export const getAlternative = derived(
+    [alternatives, language],
+    ([alternatives, currentLang]) =>
+      (key: string) => {
+        if(alternatives[currentLang]?.[key]){
+          console.warn(
+            `Using alternative for ${key} in ${currentLang}, but this is not a good idea, as it might not be the same as the original text.`
+          );
+        }
+        return alternatives[currentLang]?.[key];
+      }
+  );
+
+  export function updateAlternative(lang: string, key: string, value: string | undefined) {
+    const alt = get(alternatives);
+    if (!alt[lang]) {
+      alt[lang] = {};
+    }
+    if (value != alt[lang][key]) {
+      if (value) {
+        alt[lang][key] = value;
+      } else {
+        delete alt[lang][key];
+      }
+      localStorage.setItem('tragedyLooper:Alternetives', JSON.stringify(alt));
+      alternatives.set(alt);
+    }
+  }
 </script>
 
 <script lang="ts">
   import { base } from '$app/paths';
-  import { derived, writable, type Readable, type Writable } from 'svelte/store';
+  import { derived, get, writable, type Readable, type Writable } from 'svelte/store';
   import {
     getAllKeys,
     getDeployedLanguage,

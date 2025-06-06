@@ -78,7 +78,7 @@
       ...value,
       forbiddenLocation:
         'forbiddenLocation' in value && value.forbiddenLocation ? value.forbiddenLocation : [],
-      name: value.name,
+      name: `:${key}:`,
       gender:
         (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
         (value.tags.includes('girl' as never) || value.tags.includes('woman' as never))

@@ -5,10 +5,12 @@
   import { type CharacterName } from '../../../model/characters';
   import Iron from './iron.svelte';
   import Card from './card.svelte';
-  import { getString } from '../+layout.svelte';
+  import { getString, language } from '../+layout.svelte';
   import { getAvialableCharacterImages } from '../../+layout.svelte';
   import Translation from '../../../view/translation.svelte';
   import { charactersLookup } from '../../../data';
+  import { translationOverirdes } from '../../../data-translationOverrides.g';
+  import AlternativeSelector from './alternativeSelector.svelte';
 
   const characterImages = getAvialableCharacterImages();
 
@@ -122,6 +124,13 @@
           >Invert selection</button
         >
       </div>
+    </details>
+    <details>
+      <summary><Translation translationKey={'Alternate Card Names'} /></summary>
+
+      {#each Object.entries(translationOverirdes[$language as keyof typeof translationOverirdes] ?? {}) as [originalText, alternatives]}
+        <AlternativeSelector lang={$language} key={originalText} {alternatives} />
+      {/each}
     </details>
 
     <details>
@@ -248,6 +257,7 @@
       }
     }
   }
+
 
   .page {
     // DIN A4 landscape

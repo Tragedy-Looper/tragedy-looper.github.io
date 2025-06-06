@@ -522,13 +522,13 @@ function generateIncidentsSchema({ incidentNames }: Names) {
                         "repeatedCulprit": { "type": "boolean" },
                         "mob": { "type": "number" },
                         ...scriptSpecified,
-                        "type": {
-                            "type": "string",
-                            "enum": SpecificationType
-                        },
-                        "optional": {
-                            "type": "boolean"
-                        },
+                        // "type": {
+                        //     "type": "string",
+                        //     "enum": SpecificationType
+                        // },
+                        // "optional": {
+                        //     "type": "boolean"
+                        // },
                         "effect": {
                             "type": "array",
                             "items":
@@ -538,6 +538,8 @@ function generateIncidentsSchema({ incidentNames }: Names) {
                                 "properties": {
                                     "description": { "type": "string" },
                                     "prerequisite": { "type": "string" },
+                                    "timesPerGame": { "type": "number" },
+                                    "timesPerLoop": { "type": "number" },
                                     "type": { "type": "string", enum: AbilityType }
                                 },
                                 "anyOf": [
