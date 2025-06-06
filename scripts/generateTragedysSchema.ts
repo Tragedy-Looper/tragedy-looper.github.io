@@ -63,7 +63,7 @@ const names = {
 } as const;
 
 
-const locations = ['Hospital', 'Shrine', 'City', 'School'] as const;
+const locations = ['Hospital', 'Shrine', 'City', 'School', 'The Far Side'] as const;
 
 
 
@@ -103,6 +103,9 @@ const scriptSpecified = {
                         "type": "string",
                         "enum": SpecificationType.filter(x => x != 'plot')
                     },
+                    "description": {
+                        "type": "string",
+                    },
                     "optional": {
                         "type": "boolean"
                     },
@@ -118,6 +121,9 @@ const scriptSpecified = {
                     "type": {
                         "type": "string",
                         "enum": SpecificationType.filter(x => x == 'plot')
+                    },
+                    "description": {
+                        "type": "string",
                     },
                     "addRolesForPlot": {
                         "type": "boolean"

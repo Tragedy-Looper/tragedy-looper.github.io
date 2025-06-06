@@ -53,11 +53,6 @@
     [alternatives, language],
     ([alternatives, currentLang]) =>
       (key: string) => {
-        if (alternatives[currentLang]?.[key]) {
-          console.warn(
-            `Using alternative for ${key} in ${currentLang}, but this is not a good idea, as it might not be the same as the original text.`
-          );
-        }
         return alternatives[currentLang]?.[key];
       }
   );
