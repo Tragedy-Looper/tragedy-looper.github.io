@@ -1,5 +1,5 @@
 <script lang="ts">
-    import '@picocss/pico/css/pico.css';
+  import '@picocss/pico/css/pico.css';
 
   import {
     charactersLookup,
@@ -152,7 +152,16 @@
 
     // if obj is an object, create a new object with replaced text
     const newObj: Record<string, any> = {};
-    const keysToSkip = ['id', 'name', 'mainPlot', 'subPlots', 'cast', 'incidents', 'title']; // keys that should not be replaced
+    const keysToSkip = [
+      'id',
+      'name',
+      'timing',
+      'mainPlot',
+      'subPlots',
+      'cast',
+      'incidents',
+      'title',
+    ]; // keys that should not be replaced
     for (const [key, value] of Object.entries(obj)) {
       if (typeof value === 'string') {
         // we do not want to replace text in all fields
