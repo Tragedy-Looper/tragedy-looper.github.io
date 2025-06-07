@@ -78,7 +78,7 @@
       ...value,
       forbiddenLocation:
         'forbiddenLocation' in value && value.forbiddenLocation ? value.forbiddenLocation : [],
-      name: value.name,
+      name: `:${key}:`,
       gender:
         (value.tags.includes('boy' as never) || value.tags.includes('man' as never)) &&
         (value.tags.includes('girl' as never) || value.tags.includes('woman' as never))
@@ -266,28 +266,29 @@
             <div class="card__shine back transformable"></div>
             <div class="card__glare back transformable"></div>
 
-            <img src={actualCard.image} alt="Character" class="back image character" />
+            {#if actualCard.image}
+              <img src={actualCard.image} alt="Character" class="back image character" />
 
-            <div class="back glow">
-              <div
-                data-clip={actualCard.image}
-                style="--mask: url('{actualCard.image}');"
-                class="bitten outer back"
-              >
-                <div class="blurred back">
-                  <div data-clip={actualCard.image} class="back glow bitten"></div>
-                  <!-- <div class="bitten"></div> -->
+              <div class="back glow">
+                <div
+                  data-clip={actualCard.image}
+                  style="--mask: url('{actualCard.image}');"
+                  class="bitten outer back"
+                >
+                  <div class="blurred back">
+                    <div data-clip={actualCard.image} class="back glow bitten"></div>
+                    <!-- <div class="bitten"></div> -->
+                  </div>
                 </div>
               </div>
-            </div>
-
+            {/if}
             <img
               src="{base}/cards/general/{actualCard.gender}.png"
               alt="Cardbackground"
               class="back"
             />
 
-            {#each locations as location}
+            {#each locations.filter((x) => x !== 'The Far Side') as location}
               {#if actualCard.startLocation == undefined}
                 <!-- If no start location is defined, show all no icons -->
               {:else if actualCard.startLocation.includes(location)}
@@ -426,7 +427,7 @@
         display: none;
       }
 
-      .splatter{
+      .splatter {
         z-index: 0;
       }
 

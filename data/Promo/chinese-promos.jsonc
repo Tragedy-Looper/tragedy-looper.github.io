@@ -1,0 +1,73 @@
+{
+    //"$schema": "https://tragedy-looper.github.io/characters.schema.json",
+    // For dev purposes
+    "$schema": "../characters.schema.json",
+    "characters": [
+        {
+            "id": "sennin",
+            "name": "Sennin",
+            // https://w.atwiki.jp/rooper/pages/114.html
+            "edition": "Promo",
+            "paranoiaLimit": 0,
+            "tags": [
+                "adult",
+                "man"
+            ],
+            "startLocation": [
+                "Hospital",
+                "Shrine"
+                // The Far Side: The Far Side is an area without a board. No one can place action cards on this Location. All Movement in and out is nullified (except with the ability of the Sennin). If the Uploader is the culprit of Missing Person, they can't select The Far Side.
+            ],
+            "scriptSpecified": [
+                {
+                    "type": "number",
+                    "name": "Paranoia Limit",
+                    "description": "Specify a number for X to be the :paranoia: Limit. When checking the :paranoia: Limit for anything besides an Incident, treat this character's :paranoia: Limit as 0.",
+                    "optional": false
+                }
+            ],
+            "forbiddenLocation": [],
+            "abilities": [
+                {
+                    "type": "passive",
+                    "description": "Script Creation: Specify a number for X to be the :paranoia: Limit. When checking the :paranoia: Limit for anything besides an Incident, treat this character's :paranoia: Limit as 0."
+                },
+                {
+                    "type": "passive",
+                    "description": "If this Character is the Culprit of an Incident, this Character may be treated as if they are in the next adjacent Location (Hospital is Shrine, etc.)."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 5,
+                    "description": "Move this Character to any Location, and revive one corpse in that area. Put X :goodwill: on the revived Character (X equals the set :paranoia: Limit at script creation).",
+                    "timesPerLoop": 1
+                }
+            ]
+        },
+        {
+            "id": "uploader",
+            "name": "Uploader",
+            "edition": "Promo",
+            "paranoiaLimit": 2,
+            "tags": [
+                "student",
+                "boy"
+            ],
+            "startLocation": [
+                "The Far Side"
+            ],
+            "forbiddenLocation": [],
+            "abilities": [
+                {
+                    "type": "passive",
+                    "description": "When the first Incident of the Loop occurs, during that Day's End Phase, the Mastermind sets an EX Card on a boy or girl. If the :uploader: uses a mandatory Ability, it is treated as being in the location of the EX Card."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 3,
+                    "description": "+1 :goodwill: and -1 :paranoia: on a character in this Location. You can then transfer the EX Card to another character in the same area (who is not the :uploader:)."
+                }
+            ]
+        }
+    ]
+}

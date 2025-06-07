@@ -1,15 +1,17 @@
 {
-    "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
-    // For dev purposes
-    // "$schema": "../scripts.schema.json",
+  "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
+  // For dev purposes
+  // "$schema": "../scripts.schema.json",
   "scripts": [
     {
       "title": "孤独ノ隠レンボ (Lonely Hide and Seek)",
       "creator": "siro_xx",
-      "set": [{
-        "name": "Haunted Stage",
-        "number": 1
-      }],
+      "set": [
+        {
+          "name": "Haunted Stage",
+          "number": 1
+        }
+      ],
       "tragedySet": "hauntedStage",
       "mainPlot": [
         "cursedDoll"
@@ -60,10 +62,12 @@
     {
       "title": "ジブン観察日記 (Self-Observation Diary)",
       "creator": "siro_xx",
-      "set": [{
-        "name": "Haunted Stage",
-        "number": 2
-      }],
+      "set": [
+        {
+          "name": "Haunted Stage",
+          "number": 2
+        }
+      ],
       "tragedySet": "hauntedStage",
       "mainPlot": [
         "primeEvilPlot"
@@ -114,10 +118,12 @@
     {
       "title": "ニセモノ注意報 (Perfect Crime Love Letter)",
       "creator": "siro_xx",
-      "set": [{
-        "name": "Haunted Stage",
-        "number": 3
-      }],
+      "set": [
+        {
+          "name": "Haunted Stage",
+          "number": 3
+        }
+      ],
       "tragedySet": "hauntedStage",
       "mainPlot": [
         "fullMoonNight"
@@ -168,10 +174,12 @@
     {
       "title": "完全犯罪ラブレター (Perfect Crime Love Letter)",
       "creator": "siro_xx",
-      "set": [{
-        "name": "Haunted Stage",
-        "number": 4
-      }],
+      "set": [
+        {
+          "name": "Haunted Stage",
+          "number": 4
+        }
+      ],
       "tragedySet": "hauntedStage",
       "mainPlot": [
         "fullMoonNight"
@@ -222,10 +230,12 @@
     {
       "title": "猿マネ椅子盗りゲーム (Aimless Imitation Musical Chairs)",
       "creator": "siro_xx",
-      "set": [{
-        "name": "Haunted Stage",
-        "number": 5
-      }],
+      "set": [
+        {
+          "name": "Haunted Stage",
+          "number": 5
+        }
+      ],
       "tragedySet": "hauntedStage",
       "mainPlot": [
         "primeEvilPlot"
@@ -286,10 +296,12 @@
     {
       "title": "代行天使 (Proxy Angel)",
       "creator": "Translated by megakun",
-      "set": [{
-        "name": "Haunted Stage",
-        "number": 6
-      }],
+      "set": [
+        {
+          "name": "Haunted Stage",
+          "number": 6
+        }
+      ],
       "tragedySet": "hauntedStage",
       "mainPlot": [
         "ancientShrine"
@@ -350,10 +362,12 @@
     {
       "title": "蘇る幻影（マボロシ） (Reviving illusion)",
       "creator": "Translated by megakun",
-      "set": [{
-        "name": "Haunted Stage",
-        "number": 7
-      }],
+      "set": [
+        {
+          "name": "Haunted Stage",
+          "number": 7
+        }
+      ],
       "tragedySet": "hauntedStage",
       "mainPlot": [
         "primeEvilPlot"
@@ -417,10 +431,12 @@
     {
       "title": "幻想は都市で死ぬ (illusions Die in the City)",
       "creator": "Translated by megakun",
-      "set": [{
-        "name": "Haunted Stage",
-        "number": 8
-      }],
+      "set": [
+        {
+          "name": "Haunted Stage",
+          "number": 8
+        }
+      ],
       "tragedySet": "hauntedStage",
       "mainPlot": [
         "fullMoonNight"

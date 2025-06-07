@@ -26,14 +26,14 @@
                     "timing": [
                         "Day End"
                     ],
-                    "description": "You may kill one Character in the same location who has 1+ :intrigue: Counter(s) on them, unless a Slayer is in the same Location."
+                    "description": "You may kill one Character in the same location who has 1+ :intrigue: Counter(s) on them, unless a :slayer: is in the same Location."
                 },
                 {
                     "type": "Optional",
                     "timing": [
                         "Day End"
                     ],
-                    "prerequisite": "The Creature has at least 5 :intrigue:",
+                    "prerequisite": "The :creature: has at least 5 :intrigue:",
                     "description": "Kill the Protagonist."
                 }
             ]

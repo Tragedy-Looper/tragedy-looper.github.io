@@ -435,8 +435,7 @@
         ` char-header-${cssesc(char.id, { isIdentifier: true })} `,
         ` char-header-${cssesc(char.id, { isIdentifier: true })} `,
         ...ince.map(
-          (incident) =>
-            ` incdent-char-${incident.day}-${cssesc(char.id, { isIdentifier: true })} `
+          (incident) => ` incdent-char-${incident.day}-${cssesc(char.id, { isIdentifier: true })} `
         ),
         'rest-2',
         'rest-3',
@@ -667,19 +666,19 @@
       {#if i.faked}
         <h2><Translation translationKey={'Faked'} /></h2>
       {:else}
-        <h2>{$getString('Day {day}', { day: i.day })}</h2>
+        <Translation translationKey={['Day {day}', { day: i.day }]} />
       {/if}
 
       {#each i.effect as e}
         <p>
           {#if e.type}
-            <b>[{$getString(e.type)}]</b>
+            <b>[<Translation translationKey={e.type} />]</b>
           {/if}
           {#if e.prerequisite}
-            [<i>{$getString(e.prerequisite)}</i>]{#if e.description}⇒{/if}
+            [<i><Translation translationKey={e.prerequisite} /></i>]{#if e.description}⇒{/if}
           {/if}
           {#if e.description}
-            {$getString(e.description)}
+            <Translation translationKey={e.description} />
           {/if}
         </p>
       {/each}

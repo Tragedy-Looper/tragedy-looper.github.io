@@ -39,7 +39,7 @@
                         "Day End"
                     ],
                     "prerequisite": "The :keyPerson: has at least 2 :intrigue: and is in this character‘s location",
-                    "description": "Kill the keyPerson:"
+                    "description": "Kill the :keyPerson:"
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",
@@ -155,7 +155,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "The Loved One dies",
+                    "prerequisite": "The :lovedOne: dies",
                     "description": "This character gets 6 :paranoia:."
                 }
             ]
@@ -169,7 +169,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "The Lover dies",
+                    "prerequisite": "The :lover: dies",
                     "description": "This character gets 6 :paranoia:."
                 },
                 {
@@ -214,7 +214,7 @@
                         "Always"
                     ],
                     "prerequisite": "There is at least 2 :intrigue: on the City",
-                    "description": "This character gains the keyPerson:’s ability, but not its role."
+                    "description": "This character gains the :keyPerson:’s ability, but not its role."
                 }
             ]
         }

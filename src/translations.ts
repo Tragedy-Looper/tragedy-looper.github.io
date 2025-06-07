@@ -149,12 +149,13 @@ export function getStringForLanguage<TKey extends string | undefined>(key: TKey,
     }
 
     if (!lang) {
-        let translated = keyTrimed;
-        Object.entries(params[0] ?? {}).forEach(([name, value]) => {
-            translated = translated.replaceAll(`{${name.toString()}}`, `${value}`);
-        })
+        lang = 'en'; // Default to English if no language is provided
+        // let translated = keyTrimed;
+        // Object.entries(params[0] ?? {}).forEach(([name, value]) => {
+        //     translated = translated.replaceAll(`{${name.toString()}}`, `${value}`);
+        // })
 
-        return keyTrimed;
+        // return keyTrimed;
     }
     let translated = translation[lang]?.[keyTrimed] ?? keyTrimed;
     if (translated == undefined || translated.length == 0) {

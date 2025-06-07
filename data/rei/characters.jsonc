@@ -104,7 +104,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "Place 1 Hope or Despair counter on any character at this location. If this character has :goodwill: Refusal and at least 1 :goodwill: counter, the Mastermind may use this ability as their own",
+                    "description": "Place 1 :hope: or :despair: counter on any character at this location. If this character has :goodwill: Refusal and at least 1 :goodwill: counter, the Mastermind may use this ability as their own",
                     "timesPerLoop": 1
                 }
             ]
@@ -130,7 +130,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 5,
-                    "description": "Use a :goodwill: ability from an Adult at this location, ignoring :goodwill: counters. It cannot be refused by :goodwill: Refusal, but counts towards that ability's 'Once per Loop' limit."
+                    "description": "Use a :goodwill: ability from an :adult: at this location, ignoring :goodwill: counters. It cannot be refused by :goodwill: Refusal, but counts towards that ability's 'Once per Loop' limit."
                 }
             ]
         },

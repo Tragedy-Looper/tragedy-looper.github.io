@@ -73,7 +73,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "This character cannot have the role Person."
+                    "description": "This character cannot have the role :person:."
                 },
                 {
                     "type": "passive",

@@ -167,7 +167,7 @@
                     "timing": [
                         "When this role is to be reveald"
                     ],
-                    "description": "You may, insead of saying the truth, state any other non-Person role that is in this script"
+                    "description": "You may, insead of saying the truth, state any other non-:person: role that is in this script"
                 },
                 {
                     "type": "Optional Loss condition: Protagonists Death",

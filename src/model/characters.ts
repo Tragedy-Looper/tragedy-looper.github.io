@@ -6,7 +6,7 @@ import type { Character } from "../characters.g";
 
 
 
-export const locations = ['Hospital', 'Shrine', 'City', 'School'] as const;
+export const locations = ['Hospital', 'Shrine', 'City', 'School', 'The Far Side'] as const;
 export type LocationName = typeof locations[number];
 export type Tag = 'boy' | 'girl' | 'student' | "man" | "woman" | "adult" | 'construct' | 'animal' | 'tree' | 'little sister';
 

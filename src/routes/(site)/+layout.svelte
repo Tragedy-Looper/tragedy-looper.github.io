@@ -1,6 +1,4 @@
 <script lang="ts" module>
-  import '@picocss/pico/css/pico.css';
-
   export const languageOverride = writable<string | undefined>(undefined);
 
   const safedLang = browser ? window.localStorage?.getItem('languageOverride') : null;
@@ -39,11 +37,46 @@
       return getStringForLanguage(key, $language, ...args);
     }) as any; // not sure why this is needed, the signature seems to be the same
   });
+
+  function loadAlternatives(): Record<string, Record<string, string>> {
+    if (!browser) {
+      return {};
+    }
+    const currentValue = JSON.parse(
+      localStorage.getItem('tragedyLooper:Alternetives') ?? '{}'
+    ) as Record<string, Record<string, string>>;
+    return currentValue;
+  }
+  const alternatives = writable(loadAlternatives());
+
+  export const getAlternative = derived(
+    [alternatives, language],
+    ([alternatives, currentLang]) =>
+      (key: string) => {
+        return alternatives[currentLang]?.[key];
+      }
+  );
+
+  export function updateAlternative(lang: string, key: string, value: string | undefined) {
+    const alt = get(alternatives);
+    if (!alt[lang]) {
+      alt[lang] = {};
+    }
+    if (value != alt[lang][key]) {
+      if (value) {
+        alt[lang][key] = value;
+      } else {
+        delete alt[lang][key];
+      }
+      localStorage.setItem('tragedyLooper:Alternetives', JSON.stringify(alt));
+      alternatives.set(alt);
+    }
+  }
 </script>
 
 <script lang="ts">
   import { base } from '$app/paths';
-  import { derived, writable, type Readable, type Writable } from 'svelte/store';
+  import { derived, get, writable, type Readable, type Writable } from 'svelte/store';
   import {
     getAllKeys,
     getDeployedLanguage,
@@ -54,6 +87,22 @@
   import { browser } from '$app/environment';
   import Translation, { imageSets } from '../../view/translation.svelte';
   import { enableTranslationUi } from '../+layout.svelte';
+  import {
+    charactersLookup,
+    incidentsLookup,
+    isCharacterId,
+    isKeywordId,
+    isPlotId,
+    isTagId,
+    keywordsLookup,
+    plotsLookup,
+    rolesLookup,
+    tagsLookup,
+    tragedysLookup,
+  } from '../../data';
+  import { isTragedySetName } from '../../model/tragedySets';
+  import { isRoleName, singleRolenames } from '../../model/roles';
+  import { isIncidentName } from '../../model/incidents';
 
   let showOptionsDialog = $state(false);
 
@@ -131,10 +180,10 @@
           role="switch"
           bind:checked={enableTranslationUi.editLocals}
         />
-        <Translation translationKey={'Allow editiung localy stored translations'} />
+        <Translation translationKey={'Allow editing locally stored translations'} />
         <small>
           <Translation
-            translationKey={'When you have stored local translations, this will allow you to odit it with a click.'}
+            translationKey={'When you have stored local translations, this will allow you to edit it with a click.'}
           />
         </small>
       </label>

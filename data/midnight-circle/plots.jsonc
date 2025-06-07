@@ -293,7 +293,7 @@
                         "Mastermind Ability"
                     ],
                     "timesPerLoop": 1,
-                    "prerequisite": "The Factor is alive.",
+                    "prerequisite": "The :factor: is alive.",
                     "description": "You may place 1 Intruge counter on the :factor:’s location"
                 }
             ]
@@ -307,14 +307,14 @@
             "rules": [
                 {
                     "type": "Script creation",
-                    "description": "There must be at least one Suicide Incident"
+                    "description": "There must be at least one :suicide: Incident"
                 },
                 {
                     "type": "Mandatory",
                     "timing": [
                         "Incident step"
                     ],
-                    "prerequisite": "The Culprit is a :person: and the Prophet is alive.",
+                    "prerequisite": "The Culprit is a :person: and the :prophet: is alive.",
                     "description": "When determning whether an Incident triggers, the culprit is regarded as having 1 less than its printed :paranoia: limit."
                 }
             ]

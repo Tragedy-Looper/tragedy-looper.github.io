@@ -16,7 +16,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "At least 1 :intrigue:, 1 :goodwill:, and 1 :paranoia: are placed on the character whose original role is a Person",
+                    "prerequisite": "At least 1 :intrigue:, 1 :goodwill:, and 1 :paranoia: are placed on the character whose original role is a :person:",
                     "description": "The character gains :goodwill: Outburst and :marionette:’s ability."
                 }
             ]
@@ -72,7 +72,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "The current world is Normal world and there are at least 2 :intrigue: on the Brain‘s starting Location"
+                    "prerequisite": "The current world is Normal world and there are at least 2 :intrigue: on the :brain:‘s starting Location"
                 },
                 {
                     "type": "Loss condition: Tragedy",
@@ -95,7 +95,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "All characters whose original role is Person gain :goodwill: Outburst."
+                    "description": "All characters whose original role is :person: gain :goodwill: Outburst."
                 }
             ]
         },
@@ -164,7 +164,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "At least three other characters with the same sex as Fanatic died"
+                    "prerequisite": "At least three other characters with the same sex as :fanatic: died"
                 }
             ]
         },

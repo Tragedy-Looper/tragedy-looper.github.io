@@ -68,7 +68,7 @@
                         "Loop Start"
                     ],
                     "prerequisite": "If the Extra Gauge was 3 or more at the end of the previous loop",
-                    "description": "The Protagonists add \"Hope +1\" to hand."
+                    "description": "The Protagonists add \":hope: +1\" to hand."
                 }
             ]
         },
@@ -113,7 +113,7 @@
                     ],
                     "timesPerLoop": 1,
                     "prerequisite": "If the Extra Gauge is 1 or higher",
-                    "description": "Place 1 Hope counter on each other character at this character’s location."
+                    "description": "Place 1 :hope: counter on each other character at this character’s location."
                 }
             ]
         },
@@ -127,7 +127,7 @@
                         "Loop Start"
                     ],
                     "prerequisite": "If this character was dead at the end of the previous loop",
-                    "description": "The Mastermind adds \"Despair +1\" to hand."
+                    "description": "The Mastermind adds \":despair: +1\" to hand."
                 },
                 {
                     "type": "Mandatory",
@@ -135,7 +135,7 @@
                         "Loop Start"
                     ],
                     "prerequisite": "If this character was alive and had 2 or more :goodwill: at the end of the previous loop",
-                    "description": "The Protagonists add \"Hope +1\" to hand."
+                    "description": "The Protagonists add \":hope: +1\" to hand."
                 }
             ]
         },
@@ -186,7 +186,7 @@
                     "timing": [
                         "On character death"
                     ],
-                    "description": "Place 1 Despair counter on a character at this character’s location, and you may trigger a Warp."
+                    "description": "Place 1 :despair: counter on a character at this character’s location, and you may trigger a Warp."
                 }
             ]
         }

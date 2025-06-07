@@ -15,7 +15,7 @@
             "rules": [
                 {
                     "type": "Script creation",
-                    "description": "Key Person and Vampire must be of oposing sex."
+                    "description": ":keyPerson: and :vampire: must be of oposing sex."
                 }
             ]
         },
@@ -154,7 +154,7 @@
         },
         {
             "id": "choirOuterGod",
-            "name": "Choir to the Outside God",
+            "name": "Choir to the Outer God",
             "roles": {
                 "keyPerson": 1,
                 "sacrifice": 1,
@@ -262,7 +262,7 @@
         },
         {
             "id": "greatRace",
-            "name": "The Profound Race",
+            "name": "The Great Race",
             "roles": {
                 "serialKiller": 1,
                 "timeTraveler": 1

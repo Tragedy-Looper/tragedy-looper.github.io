@@ -384,6 +384,7 @@ const mergedTranslations = allTranslations.reduce((acc, curr) => {
             if (key in replaceMents.scripts) {
                 key = replaceMents.scripts[key];
             }
+            key = key.trim();
             if (!acc[lang][key]) {
                 acc[lang][key] = value;
             } else {
@@ -408,13 +409,18 @@ function generateOverrideUi() {
 
                 for (const [replacementType, replacements] of Object.entries(replaceMents)) {
                     if (key in replacements) {
-                        if (!acc[lang][replacements[key]]) {
-                            acc[lang][replacements[key]] = [];
+                        
+                        const [actualKey, type] = key.split('.');
+                        if (type !== 'name') {
+                            console.warn(`Unexpected type "${type}" for key "${key}". Expected "name".`);
+                            continue;
                         }
-
-
-                        acc[lang][replacements[key]].push({
-                            id: key,
+                        if (!acc[lang][actualKey]) {
+                            acc[lang][actualKey] = [];
+                        }
+                        acc[lang][actualKey].push({
+                            original: replacements[key],
+                            type: type,
                             text: value
                         });
 
@@ -424,7 +430,7 @@ function generateOverrideUi() {
             });
         });
         return acc;
-    }, {} as Record<string, Record<string, { id: string, text: string }[]>>);
+    }, {} as Record<string, Record<string, { original: string, type: 'name', text: string }[]>>);
 
     fs.writeFileSync('./src/data-translationOverrides.g.ts', `export const translationOverirdes = ${JSON.stringify(overrideData, undefined, 2)}\n`);
 

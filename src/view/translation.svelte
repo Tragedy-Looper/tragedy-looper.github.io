@@ -41,7 +41,7 @@
 
 <script lang="ts" generics="TKey extends string | undefined">
   import { onDestroy, onMount, tick } from 'svelte';
-  import { getString, language } from '../routes/(site)/+layout.svelte';
+  import { getAlternative, getString, language } from '../routes/(site)/+layout.svelte';
   import { addTranslation } from '../storage';
   import {
     hasLocalTranslation,
@@ -72,6 +72,7 @@
   import { isIncidentName } from '../model/incidents';
   import { isRoleName, singleRolenames } from '../model/roles';
   import { isTragedySetName } from '../model/tragedySets';
+  import { browser } from '$app/environment';
 
   type Parameters = {
     translationKey:
@@ -114,84 +115,117 @@
     ...Object.keys(tagsLookup).map((char) => [char, char] as const),
   ]);
 
-  const md = markdownit({
-    html: false,
-    linkify: false,
-    typographer: true,
-  })
-    .use(markdomnItKdb)
-    .use(emoji, {
-      defs,
-      enabled: Object.keys(defs),
-    });
-  md.renderer.rules.emoji = (
-    tokens: Token[],
-    idx: number,
-    options: Options,
-    env: unknown,
-    self: Renderer
-  ) => {
-    const token = tokens[idx];
-    const emojiName = token.content;
-    // If the emoji is not paranoia, return the default rendering
-    if (emojiName in imageSets[set]) {
-      const placholder = imageSets[set][emojiName as keyof (typeof imageSets)[typeof set]];
-      if (placholder.type === 'text') {
-        return placholder.text;
-      } else if (placholder.type === 'icon') {
-        return `<span class="emoji" title="${$getString(emojiName)}"><img src="${placholder.imagePath}" ></img></span>`;
-      } else {
-        return self.renderToken(tokens, idx, options);
+  const md = $derived.by(() => {
+    const md = markdownit({
+      html: false,
+      linkify: false,
+      typographer: true,
+    })
+      .use(markdomnItKdb)
+      .use(emoji, {
+        defs,
+        enabled: Object.keys(defs),
+      });
+    md.renderer.rules.emoji = (
+      tokens: Token[],
+      idx: number,
+      options: Options,
+      env: unknown,
+      self: Renderer
+    ) => {
+      const token = tokens[idx];
+      const emojiName = token.content;
+      // If the emoji is not paranoia, return the default rendering
+      if (emojiName in imageSets[set]) {
+        const placholder = imageSets[set][emojiName as keyof (typeof imageSets)[typeof set]];
+        if (placholder.type === 'text') {
+          return placholder.text;
+        } else if (placholder.type === 'icon') {
+          return `<span class="emoji" title="${$getString(emojiName)}"><img src="${placholder.imagePath}" ></img></span>`;
+        } else {
+          return self.renderToken(tokens, idx, options);
+        }
+      } else if ($getAlternative(emojiName)) {
+        return $getAlternative(emojiName);
+      } else if (isCharacterId(emojiName)) {
+        const character = charactersLookup[emojiName];
+        return $getString(character.name);
+      } else if (isIncidentName(emojiName)) {
+        const incident = incidentsLookup[emojiName];
+        return $getString(incident.name);
+      } else if (isRoleName(emojiName)) {
+        const roleNames = singleRolenames(emojiName);
+
+        return roleNames
+          .map((roleName) => {
+            const role = rolesLookup[roleName];
+            return $getString(role.name);
+          })
+          .join(', ');
+      } else if (isPlotId(emojiName)) {
+        const plot = plotsLookup[emojiName];
+        return $getString(plot.name);
+      } else if (isTragedySetName(emojiName)) {
+        const tragedy = tragedysLookup[emojiName];
+        return $getString(tragedy.name);
+      } else if (isKeywordId(emojiName)) {
+        const keyword = keywordsLookup[emojiName];
+        return $getString(keyword.name);
+      } else if (isTagId(emojiName)) {
+        const tag = tagsLookup[emojiName];
+        return $getString(tag.name);
       }
-    } else if (isCharacterId(emojiName)) {
-      const character = charactersLookup[emojiName];
-      return $getString(character.name);
-    } else if (isIncidentName(emojiName)) {
-      const incident = incidentsLookup[emojiName];
-      return $getString(incident.name);
-    } else if (isRoleName(emojiName)) {
-      const roleNames = singleRolenames(emojiName);
+      return `EMOCO: ${emojiName}`;
+      return self.renderToken(tokens, idx, options);
+    };
 
-      return roleNames
-        .map((roleName) => {
-          const role = rolesLookup[roleName];
-          return $getString(role.name);
-        })
-        .join(', ');
-    } else if (isPlotId(emojiName)) {
-      const plot = plotsLookup[emojiName];
-      return $getString(plot.name);
-    } else if (isTragedySetName(emojiName)) {
-      const tragedy = tragedysLookup[emojiName];
-      return $getString(tragedy.name);
-    } else if (isKeywordId(emojiName)) {
-      const keyword = keywordsLookup[emojiName];
-      return $getString(keyword.name);
-    } else if (isTagId(emojiName)) {
-      const tag = tagsLookup[emojiName];
-      return $getString(tag.name);
-    }
-    return `EMOCO: ${emojiName}`;
-    return self.renderToken(tokens, idx, options);
+    // add base to links
+
+    const proxy = (tokens: Token[], idx: number, options: Options, env: unknown, self: Renderer) =>
+      self.renderToken(tokens, idx, options);
+    const defaultBulletListOpenRenderer = md.renderer.rules.link_open || proxy;
+
+    md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
+      const href = tokens[idx].attrGet('href');
+
+      if (href && href.startsWith('/')) {
+        tokens[idx].attrSet('href', `${base}${href}`);
+      }
+      return defaultBulletListOpenRenderer(tokens, idx, options, env, self);
+    };
+
+    return md;
+  });
+
+  export const getKeyToName = (key: string) => {
+    return (
+      Object.values({
+        ...charactersLookup,
+        ...keywordsLookup,
+        ...plotsLookup,
+        ...tagsLookup,
+        ...incidentsLookup,
+        ...rolesLookup,
+        ...tragedysLookup,
+      })
+        .filter((x) => x.name == key)
+        .map((x) => x.id)[0] ?? key
+    );
   };
 
-  // add base to links
-
-  const proxy = (tokens: Token[], idx: number, options: Options, env: unknown, self: Renderer) =>
-    self.renderToken(tokens, idx, options);
-  const defaultBulletListOpenRenderer = md.renderer.rules.link_open || proxy;
-
-  md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
-    const href = tokens[idx].attrGet('href');
-
-    if (href && href.startsWith('/')) {
-      tokens[idx].attrSet('href', `${base}${href}`);
+  function replacedNames(params: string): string {
+    const original = getKeyToName(params);
+    const altered = $getAlternative(original);
+    if (altered) {
+      return altered;
     }
-    return defaultBulletListOpenRenderer(tokens, idx, options, env, self);
-  };
+    return params;
+  }
 
   let text = $derived(
-    block ? md.render($getString(key, parametrs)) : md.renderInline($getString(key, parametrs))
+    block
+      ? md.render(replacedNames($getString(key, parametrs)))
+      : md.renderInline(replacedNames($getString(key, parametrs)))
   );
   let doesTranslationExists = $derived(translationExists($language, key));
 
@@ -203,23 +237,27 @@
   );
 </script>
 
-{#if !highiligt}{@html text}{:else}
-  <span
-    class:interactive={enableTranslationUi.inlineEdit}
-    onclick={() => {
-      if (!enableTranslationUi.inlineEdit) {
-        return;
-      }
-      showTranslationMissingDialog(translationKey, async () => {
-        const tmp = translationKey;
-        await tick();
-        translationKey = undefined;
-        await tick();
-        translationKey = tmp;
-      });
-    }}
-    class="missingTranslation">{@html text}</span
-  >{/if}
+{#if browser}
+  {#if !highiligt}{@html text}{:else}
+    <span
+      class:interactive={enableTranslationUi.inlineEdit}
+      onclick={() => {
+        if (!enableTranslationUi.inlineEdit) {
+          return;
+        }
+        showTranslationMissingDialog(translationKey, async () => {
+          const tmp = translationKey;
+          await tick();
+          translationKey = undefined;
+          await tick();
+          translationKey = tmp;
+        });
+      }}
+      class="missingTranslation">{@html text}</span
+    >{/if}
+{:else}
+  {@html text}
+{/if}
 
 <style>
   .missingTranslation {
