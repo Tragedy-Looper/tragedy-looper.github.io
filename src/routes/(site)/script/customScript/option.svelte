@@ -3,7 +3,7 @@
   import type { AdditionalOptions } from '../../../../model/customScript';
   import Translation from '../../../../view/translation.svelte';
   import { charactersLookup, incidentsLookup, plotsLookup, rolesLookup } from '../../../../data';
-  import { singleRolenames } from '../../../../model/roles';
+  import { singleRolenames, type RoleNameSingle } from '../../../../model/roles';
 
   // export let option: AdditionalOptions;
 
@@ -69,6 +69,11 @@
           <option value={p}><Translation translationKey={incidentsLookup[p].name} /></option>
         {/each}
       {:else if option.option.type == 'role not in plot'}
+        {#if $selection}
+          <option value={$selection}>
+            <Translation translationKey={rolesLookup[$selection as RoleNameSingle].name} />
+          </option>
+        {/if}
         {#each $unusedRoles as p}
           <option value={p}
             >{#each singleRolenames(p) as role}<Translation
