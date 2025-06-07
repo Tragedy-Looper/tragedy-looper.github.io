@@ -69,6 +69,11 @@
           <option value={p}><Translation translationKey={incidentsLookup[p].name} /></option>
         {/each}
       {:else if option.option.type == 'role not in plot'}
+        {#if $selection}
+          <option value={$selection}>
+            <Translation translationKey={rolesLookup[$selection].name} />
+          </option>
+        {/if}
         {#each $unusedRoles as p}
           <option value={p}
             >{#each singleRolenames(p) as role}<Translation
