@@ -1,0 +1,83 @@
+{
+    "$schema": "https://tragedy-looper.github.io/characters.schema.json",
+    // For dev purposes
+    // "$schema": "../characters.schema.json",
+    "characters": [
+        {
+            "id": "mimic",
+            "name": "Mimic",
+            "edition": "Fan",
+            "paranoiaLimit": 2,
+            "tags": [
+                "adult",
+                "man"
+            ],
+            "startLocation": [
+                "City"
+            ],
+            "forbiddenLocation": [],
+            "abilities": [
+                {
+                    "type": "active",
+                    "goodwillRank": 2,
+                    "description": "Use an Available (counter requirement on target Character met) Goodwill ability from another Character in the same location. This is regarded as the Mimic using the ability. Twice per Loop."
+                }
+            ]
+        },
+        {
+            "id": "automaton",
+            "name": "Automaton",
+            "edition": "Fan",
+            "paranoiaLimit": 4,
+            "tags": [
+                "construct"
+            ],
+            "startLocation": [
+                "City"
+            ],
+            "forbiddenLocation": [],
+            "abilities": [
+                {
+                    "type": "passive",
+                    "description": "Movement actions do not affect this Character."
+                },
+                {
+                    "type": "passive",
+                    "description": "Day 2 onward: At the start of each day, move to the next clockwise Location."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 3,
+                    "description": "Choose a Character in this Location, then choose a Character in another Location (The target Location must be legal for that Character). Switch their places.  Once per Loop"
+                }
+            ]
+        },
+        {
+            "id": "servant",
+            "name": "Servant",
+            "edition": "Promo",
+            "paranoiaLimit": 3,
+            "tags": [
+                "adult",
+                "woman"
+            ],
+            "startLocation": [
+                "City",
+                "School"
+            ],
+            "forbiddenLocation": [],
+            "abilities": [
+                {
+                    "type": "passive",
+                    "description": "The :servant: serves the :richStudent: and the :boss:. If one of them moves and she shares the location, the Leader moves her with one of them ignoring her own movement. If any onf them dies at her location, she dies instead."
+                },
+                {
+                    "type": "active",
+                    "goodwillRank": 4,
+                    "description": "Choose any other character. For the remainder of the Loop, she also serves that character.",
+                    "timesPerLoop": 1
+                }
+            ]
+        }
+    ]
+}
