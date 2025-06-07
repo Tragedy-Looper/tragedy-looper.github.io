@@ -617,23 +617,8 @@ export class CustomScript {
 
         this.selectedPlots = derived([selectodMainPlots, selectodSubplots], ([mainPlots, subPlots]) => [...mainPlots, ...subPlots]);
         this.allRoles = derived([this.tragedySet], ([tg]) => {
-            const allRoles = getTragedySetRoles(tg);
+            const allRoles = [...getTragedySetRoles(tg), 'person'] as const;
             return allRoles;
-        });
-        this.usedRoles = derived([this.selectedPlots], ([...selectedPlots]) => {
-            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plotsLookup[y.id]?.roles ?? [])));
-            const plotlist = selectedPlots.flatMap(x => x.flatMap(y => y));
-            selectedPlots.flatMap(x => x).map(x => {
-                const plot = plotsLookup[x.id];
-                plot.scriptSpecified?.map(x => x.type)
-            })
-
-            const additionalPlots = plotlist.flatMap(x => plotsLookup[x.id].scriptSpecified?.filter(x => x.type == 'plot' && x.addRolesForPlot).flatMap(additionalPlot => keys(plotsLookup[additionalPlot.name as PlotName]?.roles ?? {}) ?? []) ?? [])
-            return [...new Set([...used, ...additionalPlots])];
-        });
-
-        this.unusedRoles = derived([this.allRoles, this.usedRoles], ([allRoles, usedRoles]) => {
-            return allRoles.filter(x => !usedRoles.includes(x as any));
         });
 
 
@@ -644,8 +629,73 @@ export class CustomScript {
             ];
             return generateRoleSelection(this, sumGroups(...roleData), keys(charactersLookup).filter(x => {
                 const char = charactersLookup[x];
-                return !('nonSelectableCharacter' in char && char.nonSelectableCharacter);
+                return !(char.nonSelectableCharacter);
             }))
+        });
+
+        const numberOfPersons = derived(storeStores(this.roles, x => derived(x.selectedNumber, n => ({ role: x.role, count: n }))), selected => {
+            return selected.filter(x => x.role == 'person').map(x => x.count)[0] ?? 0;
+        })
+
+        const actuallySelectedRolesPart1 = storeStores(storeStores(derived(storeStores(this.roles, roles => derived(roles.selectors, selectors => ({ roles: roles.role, seleced: selectors }))), x => x.flatMap(x => x.seleced.map(y => derived([y.selectedCharacter, y.options], ([selectedCharacter, options]) => ({
+            role: x.roles,
+            selectedCharacter: selectedCharacter,
+            options:
+                options.map(x => derived(x.value, value => ({ value, option: x.option })))
+
+        }))))), x => derived(x, x => {
+            return {
+                role: x.role,
+                selectedCharacter: x.selectedCharacter,
+                options: derived(x.options, x => x)
+            }
+        }
+        )),
+            x => derived(x.options, options => ({
+                role: x.role,
+                selectedCharacter: x.selectedCharacter,
+                options: options.map(o => ({
+                    settings: o.option,
+                    value: o.value
+                }))
+            })))
+
+            ;
+
+
+        this.usedRoles = derived([numberOfPersons, actuallySelectedRolesPart1, this.selectedPlots], ([numberOfPersons, actuallySelectedRoles, ...selectedPlots]) => {
+
+
+            const acualRoles = (actuallySelectedRoles.flatMap(x => {
+                const roleDatas = singleRolenames(x.role).map(x => rolesLookup[x]);
+                const character = charactersLookup[x.selectedCharacter]
+                if (isCharacterPlotless(character)) {
+                    const roles = x.options.filter(x => x.settings.type == 'role in plot' || x.settings.type == 'role not in plot' || x.settings.type == 'role in tragedy set').map(x => x.value as RoleName)
+                    return roles;
+                }
+                return [x.role];
+            })).filter(isRoleName)
+
+            const used = selectedPlots.flatMap(x => x.flatMap(y => keys(plotsLookup[y.id]?.roles ?? [])));
+            const plotlist = selectedPlots.flatMap(x => x.flatMap(y => y));
+            selectedPlots.flatMap(x => x).map(x => {
+                const plot = plotsLookup[x.id];
+                if (!plot) {
+                    console.warn(`Plot ${x.id} not found in plotsLookup`);
+                    return [];
+                }
+                plot.scriptSpecified?.map(x => x.type)
+            })
+
+            const personRoles = (numberOfPersons > 0)
+                ? ['person'] as const
+                : [];
+            const additionalPlots = plotlist.map(x => plotsLookup[x.id]).filter(x => x).flatMap(plot => plot.scriptSpecified?.filter(x => x.type == 'plot' && x.addRolesForPlot).flatMap(additionalPlot => keys(plotsLookup[additionalPlot.name as PlotName]?.roles ?? {}) ?? []) ?? [])
+            return [...new Set([...used, ...additionalPlots, ...acualRoles])];
+        });
+
+        this.unusedRoles = derived([this.allRoles, this.usedRoles], ([allRoles, usedRoles]) => {
+            return allRoles.filter(x => !usedRoles.includes(x as any));
         });
 
 
