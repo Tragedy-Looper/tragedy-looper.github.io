@@ -1731,6 +1731,75 @@
       "mastermindHints": ""
     },
     {
+      "title": "Tough to Name",
+      "creator": "Hal",
+      "difficultySets": [
+        {
+          "numberOfLoops": 3,
+          "difficulty": 0
+        },
+        {
+          "numberOfLoops": 4,
+          "difficulty": 0
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "giantTimeBomb"
+      ],
+      "subPlots": [
+        "loveAffair",
+        "hiddenFreak"
+      ],
+      "daysPerLoop": 6,
+      "cast": {
+        "popIdol": "witch",
+        "patient": "lover",
+        "boyStudent": "lovedOne",
+        "shrineMaiden": "serialKiller",
+        "godlyBeing": [
+          "friend",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "nurse": "person",
+        "journalist": "person",
+        "officeWorker": "person",
+        "richStudent": "person",
+        "classRep": "person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "missingPerson",
+          "culprit": "boyStudent"
+        },
+        {
+          "day": 4,
+          "incident": "increasingUnease",
+          "culprit": "journalist"
+        },
+        {
+          "day": 5,
+          "incident": "hospitalIncident",
+          "culprit": "shrineMaiden"
+        },
+        {
+          "day": 6,
+          "incident": "suicide",
+          "culprit": "patient"
+        }
+      ],
+      "description": "",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "",
+      "story": "",
+      "mastermindHints": "The witch might get discovered quite early - the Pop Idol's goodwill ability is a tempting one, so her goodwill refusal will probably be outed in the first loop. Given this, Max (our mastermind) decided to try and win through intrigue on the City in day one, and spread about some intrigue and paranoia elsewhere so it wasn't too obvious.\n\nThe hospital incident is another way for the mastermind to win, especially coupled with increasing unease. But you don't have many ways of getting intrigue out, and no cultist to block you forbid intrigues. The only one you do have is Missing Person, and that's quite one use as the culprit reveals themselves. Once the Godly Being is in play, the players could stack goodwill on them too to get the ability to remove intrigue, and to discover the culprit. So the hospital incident looks quite tough to pull off. On the plus side, the culprit is the serial killer, so she won't get offed. It did trigger with one intrigue in the hospital in loop 2 for us, which isn't great for the mastermind, as it might reveal the Patient as the lover. It killed the patient and the boy student, which was a happy coincidence for Max.\n\nThe Shrine Maiden serial killer is a good secret weapon for loop 2, if you can avoid her being discovered. The Godly Being appears in the shrine in loop 2, so if the protagonists don't move the two apart, you can kill the friend and spend the rest of the loop misleading them.\n\nI'm not sure what the best role to try and hide is for the mastermind. My suspicion is that it's the lover/loved one. You have the option of pulling a win out of the bag on the last day using the suicide on the patient, but it looks like you might have trouble surviving the final guess if you did that. Maybe you can get away with hiding the Witch, but you'd have to be lucky I think."
+    },
+    {
       "title": "Was it Just the Wind?",
       "creator": "Tuxian",
       "difficultySets": [
