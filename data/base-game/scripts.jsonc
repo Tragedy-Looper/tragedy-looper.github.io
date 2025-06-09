@@ -1731,6 +1731,82 @@
       "mastermindHints": ""
     },
     {
+      "title": "Was it Just the Wind?",
+      "creator": "Tuxian",
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 0
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "murderPlan"
+      ],
+      "subPlots": [
+        "threadsFate",
+        "unsettlingRumor"
+      ],
+      "daysPerLoop": 7,
+      "cast": {
+        "illusion": "keyPerson",
+        "alien": "killer",
+        "journalist": "brain",
+        "shrineMaiden": "conspiracyTheorist",
+        "patient": "person",
+        "doctor": "person",
+        "popIdol": "person",
+        "richStudent": "person",
+        "classRep": "person",
+        "henchman": "person",
+        "mysteryBoy": "factor"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "butterflyEffect",
+          "culprit": "richStudent"
+        },
+        {
+          "day": 2,
+          "incident": "missingPerson",
+          "culprit": "shrineMaiden"
+        },
+        {
+          "day": 3,
+          "incident": "increasingUnease",
+          "culprit": "henchman"
+        },
+        {
+          "day": 4,
+          "incident": "increasingUnease",
+          "culprit": "alien"
+        },
+        {
+          "day": 5,
+          "incident": "farawayMurder",
+          "culprit": "patient"
+        },
+        {
+          "day": 6,
+          "incident": "spreading",
+          "culprit": "doctor"
+        },
+        {
+          "day": 7,
+          "incident": "suicide",
+          "culprit": "mysteryBoy"
+        }
+      ],
+      "description": "",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "",
+      "story": "",
+      "mastermindHints": "Loop 1, suicide the factor if you can. \nLoop 2 you can consider killer-killing the illusion. \nLoop 3 maybe faraway murder. \nLoop 4 try to pull stuff off without revealing the last few roles. \n\nhttps://boardgamegeek.com/thread/1548338/tragedy-looper-pbf-35-custom-script-game-over and \nhttps://boardgamegeek.com/thread/1550297/tragedy-looper-pbf-36-custom-script-game-over \nare two logs of this script played where the mastermind wins, so you can study those if you're trying to optimize"
+    },
+    {
       "title": "Escort Mission",
       "creator": "davidchaeB",
       "difficultySets": [
