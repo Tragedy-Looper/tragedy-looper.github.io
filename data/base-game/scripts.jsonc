@@ -1845,6 +1845,127 @@
       "mastermindHints": "脚本家の勝利条件は以下の通りです。\n①キーパーソンの殺害\n②学校に暗躍2(守るべき場所)\n\n手先の初期は学校か学校に隣接するボードがおすすめです。\n\n第一ループは行方不明を発生させ、お嬢様をシリアルキラーに殺させます。アイドルに『移動横』、お嬢様に『不安+1』、ブラフを置き、行方不明でお嬢様を病院に送りつけて勝ちです。\n\n第二ループ以降はシリアルキラーをケアさせている間に、殺人事件による勝利か、学校に暗躍2を乗せることを狙います。\n\n黒猫は目くらましであり、今回はさほど悪さをしません。キーパーソンが判明すれば、ルールY「復讐者の灯火」が否定されるため、神社の暗躍をケアする必要が無くなることに気づいてもらいましょう。\n\n殺人事件による勝利はアイドルに『移動禁止』or『不安-1』、学校への暗躍は『暗躍禁止』でケアされます。手先を学校に置いておけばカルティストの能力 で暗躍を通して必ず勝つことができます。しかし、カルティストが割れれば主人公に妨害され、学校への暗躍は途端に通しにくくなるでしょう。\n\n脚本家ができる初日の最大の抵抗は、手先を学校に置き学校『暗躍+2』、アイドル『移動横』、お嬢様『不安+1』でしょうが、シリアルキラーとカルティストを同じ場所に動かすことで突破できます。\n\n最終ループは移動の読み合いになるでしょう。できれば、カルティスト候補を絞らせたくないところですが、移動禁止が複数枚生きている場合脚本家が勝つのは なかなか困難だと思います。お嬢様と医者もしくはお嬢様とアイドルの組み合わせを作れるよう、移動カードで読み合いを作りましょう。\n\n主人公は殺人事件の犯人および各役職を推理してロックを突破し、ゲームをクリアする、王道的な体験ができるように作っています。シリアルキラーでアイドルを殺害する解法にも気付ければ、また一興"
     },
     {
+      "title": "噂の果ての真相 (The Truth Behind the Rumors)",
+      "creator": "ペンスキー",
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 5
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "giantTimeBomb"
+      ],
+      "subPlots": [
+        "unsettlingRumor",
+        "unknownFactor"
+      ],
+      "daysPerLoop": 6,
+      "cast": {
+        "officeWorker": "witch",
+        "girlStudent": "conspiracyTheorist",
+        "teacher": "factor",
+        "soldier": "person",
+        "informer": "person",
+        "godlyBeing": [
+          "person",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "richStudent": "person"
+      },
+      "incidents": [
+        {
+          "day": 3,
+          "incident": "murder",
+          "culprit": "richStudent"
+        },
+        {
+          "day": 5,
+          "incident": "hospitalIncident",
+          "culprit": "girlStudent"
+        },
+        {
+          "day": 6,
+          "incident": "suicide",
+          "culprit": "teacher"
+        }
+      ],
+      "description": "ルールX『不穏な噂』を最大限活用した脚本です。このルールすげぇよ！",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "1\n    巨大時限爆弾Xの存在\n    都市へ暗躍カウンターを2つ置く\n2\n    主人公の殺害\n    病院の事件",
+      "story": "",
+      "mastermindHints": "脚本家の勝利手段は病院の事件で主人公を殺害するか、都市に暗躍カウンターを２つ置くかのいずれかです。そして、不穏な噂の強力なサポートによって、そのうちいずれかはほぼ確実に実行可能となっています。\n1ループ目はできれば巨大時限爆弾で勝利したいところ。初日に病院へ暗躍+2、都市へ暗躍+1を置きましょう。都市への暗躍が通ったら、最終日に不穏な噂で2個目を置いて勝利確定です。もし都市の方を防がれたら、仕方ないので病院の事件での勝利を目指します。\n病院の事件を狙う場合、基本的にミスリーダーは隠す必要ありません。能力をガンガン使い、不安+1も置きまくりましょう。病院の事件を起こすとしても、犯人候補を増やせればそれだけ主人公を手間取らせる事ができます。\n\n軍人は脚本家にとって脅威となります。病院の事件を防がれたり、ファクターの自殺を誘発されたりします。そうなると敗北一直線なので、友好能力を使われないよう警戒しましょう。\n神格の犯人割りも厄介です。自殺の犯人を明かされないためにも、病院の事件の犯人候補は可能な限り増やしておきましょう。\n\n最後の戦いで隠すのは、もちろんファクターです。3日目の殺人事件で露見しないよう、不穏な噂で都市に暗躍を置くのは最終日にしましょう。また、最終日の自殺は絶対に起こしてはなりません。\n\n置き方テンプレ\n各ループ共通\n\n初日\n病院\n    「暗躍+2」\n都市\n    「暗躍+1」"
+    },
+    {
+      "title": "隠れ潜むタイムトラベラー (The Hidden Time Traveler)",
+      "creator": "ペンスキー",
+      "difficultySets": [
+        {
+          "numberOfLoops": 5,
+          "difficulty": 5
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "changeOfFuture"
+      ],
+      "subPlots": [
+        "circleFriends",
+        "threadsFate"
+      ],
+      "daysPerLoop": 5,
+      "cast": {
+        "shrineMaiden": "cultist",
+        "informer": "timeTraveler",
+        "popIdol": "friend",
+        "classRep": "friend",
+        "teacher": "conspiracyTheorist",
+        "alien": "person",
+        "forensicSpecialist": "person",
+        "godlyBeing": [
+          "person",
+          {
+            "enters on loop": 5
+          }
+        ],
+        "girlStudent": "person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "butterflyEffect",
+          "culprit": "forensicSpecialist"
+        },
+        {
+          "day": 3,
+          "incident": "murder",
+          "culprit": "teacher"
+        },
+        {
+          "day": 4,
+          "incident": "farawayMurder",
+          "culprit": "classRep"
+        },
+        {
+          "day": 5,
+          "incident": "suicide",
+          "culprit": "informer"
+        }
+      ],
+      "description": "難易度の割には少々長めな脚本です。3つのルールも多くの役職も比較的簡単に割れますが、タイムトラベラーだけはある1点を除いて特定が難しいです。",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "",
+      "story": "",
+      "mastermindHints": "メインとなる勝利手段はフレンドの殺害です。教師がミスリーダーかつ殺人事件の犯人なので、委員長の殺害を優先して狙いましょう。タイムトラベラーの能力による勝利は極力控えるべきですが、他に勝利手段がないときは仕方ないので使いましょう。\n鑑識官の友好能力は罠です。一度友好を積まれれば、因果の糸と蝶の羽ばたきで大きなプレッシャーをかけられます。蝶の羽ばたきが発生したら、鑑識官自身に友好カウンターを置き、翌ループも同様に狙いましょう。\n自殺はこの脚本のアキレス腱です。主人公が事件を起こす動きをして来た場合、非常に苦しい展開となります。幸い、情報屋の能力が活きる場面はごく限られるため、偶発的に自殺を狙えるチャンスは１回きりでしょう。"
+    },
+    {
       "title": "Was it Just the Wind?",
       "creator": "Tuxian",
       "difficultySets": [
