@@ -2190,49 +2190,63 @@
   "mastermindHints": "脚本家の勝利条件は以下の通りです。\n①キーパーソン(巫女)の死亡\n②フレンド(軍人)の死亡\n③学校に暗躍2\n④主人公の死亡(病院の事件)\n\n第1ループでは巫女の自殺を狙います。医者に「移動横」、巫女に「不安+1」、お嬢様に「不安+1」を配置し、ミスリーダーの能力で巫女に不安を乗せ勝利します。\n\n第2ループは学校に暗躍2を乗せることを狙います。軍人に「不安+1」、病院に「暗躍+2」、学校に「暗躍+1」を配置します。カルティストの能力はガン ガン使っていいです。2日目の軍人の行方不明を合わせれば学校に暗躍が載せられます。学校の暗躍が阻止された場合は病院の事件を起こし勝利しましょう。そ の際はフレンドが割れない方が良いです。(2ループ目にフレンドが死亡した場合、主人公は3ループ目で勝ち確定の手順があります)\n\n最終ループでも病院の事件を確実に起こすよう立ち回りましょう。主人公もカルティストの存在を察して病院への暗躍禁止は無駄と悟るはずです。\n\n巫女の自殺は簡単に阻止されますが、カルティストとお嬢様のおかげで病院の事件での勝利は非常に起こしやすくしてあります。ミスリーダーを駆使して病院の事件の犯人候補をできるだけ増やしてください。\n\n主人公がループを抜ける方法としては、①異世界人の能力でお嬢様を殺害するか、②軍人の能力で不死になることです。ただし、①では病院の事件の犯人の確定 が必要になります。②では病院の事件の犯人を割る必要はありませんが、軍人を病院の事件に巻き込まないために、医者と軍人の能力を使い行方不明を利用する か、フレンドの友好1を利用して1手を確保する必要があります。「軍人使うだけで勝てるじゃんw」などという安易な解答は脚本家としてしっかりお仕置きし ましょう。\n\nなお、力業の解法として、「不安-1」を3日間お嬢様に使い続けても勝利できます。異世界人と「不安-1」で病院の事件の犯人候補を封殺することが、主人公にとって最も手っ取り早い解法でしょう。\n脚本家としては少し腹立たしいですが、FSでサクサク遊べる脚本として作成したのでこれも正解としています。 "
 },
 {
-  "title": "学校の惨劇 (School Tragedy)",
-  "creator": "ペンスキー",
+  "title": "Tragedy at the Academy",
+  "creator": "れう",
   "difficultySets": [
     {
-      "numberOfLoops": 3,
-      "difficulty": 1
+      "numberOfLoops": 4,
+      "difficulty": 4
     }
   ],
-  "tragedySet": "firstSteps",
+  "tragedySet": "basicTragedy",
   "mainPlot": [
-    "placeProtect"
+    "sealedItem"
   ],
   "subPlots": [
+    "circleFriends",
     "unsettlingRumor"
   ],
-  "daysPerLoop": 2,
+  "daysPerLoop": 4,
   "cast": {
-    "classRep": "keyPerson",
-    "officeWorker": "cultist",
-    "popIdol": "conspiracyTheorist",
+    "doctor": "brain",
+    "popIdol": "cultist",
+    "classRep": "friend",
+    "transferStudent": [
+      "friend",
+      {
+        "enters on day": 3
+      }
+    ],
+    "girlStudent": "conspiracyTheorist",
+    "mysteryBoy": "serialKiller",
     "shrineMaiden": "person",
-    "richStudent": "person",
-    "boyStudent": "person"
+    "officeWorker": "person",
+    "informer": "person"
   },
   "incidents": [
     {
       "day": 1,
-      "incident": "missingPerson",
-      "culprit": "popIdol"
+      "incident": "increasingUnease",
+      "culprit": "shrineMaiden"
     },
     {
       "day": 2,
-      "incident": "suicide",
+      "incident": "hospitalIncident",
       "culprit": "classRep"
+    },
+    {
+      "day": 4,
+      "incident": "missingPerson",
+      "culprit": "transferStudent"
     }
   ],
-  "description": "ボードへの暗躍を重視した練習用脚本です。暗躍カウンターの効果と、ルールを絞らせない事の重要性を理解するのに適しています。",
+  "description": "This script is for beginner to intermediate players. It becomes much easier to win once you understand the rules and who the culprit is.",
   "specialRules": [
     ""
   ],
   "victory-conditions": "",
   "story": "",
-  "mastermindHints": "1ループ目は初日にアイドルへ不安+1、男子学生へ不安+1、学校へ暗躍+1をセットします。\nアイドル自身のミスリーダー能力と合わせて行方不明を起こし、初日に学校へ暗躍カウンターを２つ乗せて勝利します。必要に応じて不穏な噂の効果も使用して下さい。\n\n無事に暗躍を乗せられたら、2日目はブラフを置いて情報を与えないようにしましょう。学校以外のボードへ暗躍+2を通せると強力なCSになります。ただし、カルティストの能力は使ってはいけません。\n\n2ループ目、アイドルへの不安は警戒されるはずなので、そのスキを突いて委員長の自殺を狙います。\n初日に委員長へ不安+1、アイドルへ移動横、男子学生へ友好禁止を置いて下さい。\nやはりミスリーダー能力も使って、委員長の不安臨界を初日に満たしてしまいましょう。\n\n3ループ目は厳しいゲームとなるでしょう。\nどちらの事件を起こすか、それを目指してどのカードをどこに配置するか。主人公との読み合いになります。"
+  "mastermindHints": "1st Loop\nPlace :intrigue: on the Girl Student, City, and Shrine. Basically you want to end the game via The Sealed Item or by killing the Friend, but it's best to hide the fact that Mystery Boy is a Serial Killer.\n\n2nd Loop\nFrom hereon, we'll rely on Incidents and Serial Killers. The Culprit of a crime can usually be prevent by placing Paranoia -1. The Girl Student's ability is offset by the Conspiracy Theorist's ability.\n\nIf Increasing Unease is successful, placing :intrigue: on both the Hospital and Shrine, combined with Hospital Incident, will almost always guarantee victory, but you'll need the Conspiracy Theorist.\n\nThe Protagonists can be stopped dead in their tracks by placing Goodwill +2 on the Girl Student (Mastermind needs Shrine Maiden Paranoia +1 to cause Increasing Unease, and the Girl Student is guaranteed to move, so you can't use Forbid Goodwill).\n\nIf the Conspiracy Theorist is revealed and the Culprit is exposed, the Incident will easily be stopped, along with your chances of winning the Final Guess. Be careful.\n\nDeciding on whether to use the Doctor's Ability depends mainly on how much information the Protagonists have acquired, but generally it's better to hide him.\n\nIn Basic Tragedy, the only role from a Sub-Plot that has Goodwill Refusal is the Factor.\n　・The Pop Idol is revealed because of Goodwill Refusal.\n　・The Loop ends with two Intrigue in the City.\nIn this case, it's better not to use the Doctor since it might hint at the Main Plot \\\"Giant Time Bomb.\\\" On the other hand, if the Intrigue onto City isn't successful, Refusal may be a better option here since it gives you two options for Cultists.\n\nHowever, it's easier to win if you hide your Brain amongst the Persons, so you might as well use it when you don't want the Doctor to use his Mandatory ability.\n\n3rd Loop\nUse Transfer Student's Missing Person and An Unsettling Rumor to go for the win. However, you should avoid using An Unsettling Rumor up to this point.\n\nIf you hint at placing Intrigue+1 on the Shrine and Intrigue+2 on the Hospital in the previous Loop, you can snatch a victory with An Unsettling Rumor. Just be wary of the Shrine Maiden's Goodwill ability.\n\n4th Loop\nMost of the roles will have been exposed by now, but try to hide the Brain and the Conspiracy Theorist. If the Protagonists get the optimal solution at this point, you won't be able to win, so in the end you should aim for a Serial Killer strike or the Brain/Cultist's mandatory ability.\n\nThe Protagonists can win by:\n\nPlaving Forbid Intrigue on the Shrine, Paranoia-1 on Class Rep and Transfer Student, and not meeting up with the Conspiracy Theorist (or by using Goodwill+2 so it doesn't matter if they do).\n\nAnd finally, locking the movement of the Brain and the Cultist, and preventing the Serial Killer from killing your friends."
 },
 {
   "title": "豆腐殺人事件 (Tofu Murder Case)",
@@ -3224,65 +3238,6 @@
   "victory-conditions": "",
   "story": "",
   "mastermindHints": "脚本家は妹にカードをセットできません。\nそのため、大人の能力は妹経由で撃たれ放題です。\n\n鑑識官の能力は不安の調整や死体の役職当て、\n刑事の能力はフレンドである自分に護衛カウンターを乗せることができ、\nそして手先の能力を使って事件を止めることが出来ればループ抜けすることも出来ます。\n\n脚本家の基本戦術は、手先を神社に配置したうえで病院の事件のブラフを交えながら暗躍2を貯める方法です。\n手先は可変ですので、見破られそうならば初期位置を変えましょう。\nただその場合、最後の戦い用のミスリーダー隠しは慎重に。\n\n基本は手先に不安を積めば勝てますが、シリアルキラーで手先を殺害されたり、妹を利用されて手先の能力を起動されるととてもつらい戦いになります。\n遠隔殺人は場所の暗躍との択を迫れるので強いですが、刑事の護衛カウンターなどで妨害されることもあるので、慎重に。\n\n蝶の羽ばたきはブラフ、CSに使えるほか、次ループ用に事件の犯人に友好を乗せる動きが出来れば強いです。\n\nこれは身内以外で初めて回した時に作った脚本でした。（その時は相談ありの3ループ抜け） "
-},
-{
-  "title": "学園の惨劇 (The School Tragedy)",
-  "creator": "",
-  "difficultySets": [
-    {
-      "numberOfLoops": 4,
-      "difficulty": 4
-    }
-  ],
-  "tragedySet": "basicTragedy",
-  "mainPlot": [
-    "sealedItem"
-  ],
-  "subPlots": [
-    "circleFriends",
-    "unsettlingRumor"
-  ],
-  "daysPerLoop": 4,
-  "cast": {
-    "doctor": "brain",
-    "popIdol": "cultist",
-    "classRep": "friend",
-    "transferStudent": [
-      "friend",
-      {
-        "enters on day": 3
-      }
-    ],
-    "girlStudent": "conspiracyTheorist",
-    "mysteryBoy": "serialKiller",
-    "shrineMaiden": "person",
-    "officeWorker": "person",
-    "informer": "person"
-  },
-  "incidents": [
-    {
-      "day": 1,
-      "incident": "increasingUnease",
-      "culprit": "shrineMaiden"
-    },
-    {
-      "day": 2,
-      "incident": "hospitalIncident",
-      "culprit": "classRep"
-    },
-    {
-      "day": 4,
-      "incident": "missingPerson",
-      "culprit": "transferStudent"
-    }
-  ],
-  "description": "初心者〜中級者向けの脚本です。\nルールと事件の犯人が分かるとかなり勝ちやすくなります。 ",
-  "specialRules": [
-    ""
-  ],
-  "victory-conditions": "",
-  "story": "",
-  "mastermindHints": "1ループ目\n脚本家は少女や都市に暗躍を置きながら、神社に暗躍を通す。\n基本的にルールYかフレンドの殺害で終わらせたいが、イレギュラーがシリアルキラーである情報はなるべく隠した方がよい感じです。\n\n2ループ目\nここからは事件やシリアルキラーにも頼っていきます。\n事件の犯人は不安-1を使われるとほぼ防がれます。女子学生の能力はミスリーダーの能力と相殺されます。\n不安拡大は決まれば病院と神社の暗躍両置き＋病院の事件でほぼ勝確ですがミスリーダーが必須です。\n主人公は女子学生に友好2を載せれば確定で止められます。(脚本家が不安拡大を起こすためには巫女不安＋1、女子学生上下移動or移動左右読み移動斜めは確定なので友好禁止が置かれない)\nミスリーダーバレて犯人が割れると事件がほぼ確実に止められますし、最後の戦いでの勝率が下がるので気を付けてください。\n医者の能力は使用させるかどうかは、主人公がどれくらい情報を取得しているかによります。（基本的に隠した方がいいですが）\nBTXはルールXから追加される友好無視の役職がファクターのみのため\n　・アイドルが友好無視だと割れている\n　・都市に暗躍を2個乗せてループを終了している\nこの場合、巨大時限爆弾Xの存在が匂わせられるため、医者は使わない方がいいです。\n一方、都市への暗躍が成功していない場合、カルティストを2択に出来るメリットがあるので拒否した方がいい場合もあります。\nただ、パーソンの中にクロマク隠す方が勝ちやすいので、医者の能力使われたくない時などにでも。\n\n3ループ目\n転校生の行方不明や不穏な噂も使って勝ちに行きましょう。\n逆に言うとここまでは不穏な噂は使わないようにしておくべきです。\n神社に暗躍1、病院に暗躍2を置くように前のループから匂わせておくと、不穏な噂での勝利がきれいに決まります。\n巫女の友好能力にはお気をつけて。\n\n4ループ目\nほとんどの役職が割られているかと思いますが、ミスリーダーとクロマクの位置は隠すように頑張りましょう。\n基本的に主人公が最適解を出すと勝てないので、最後はシリアルキラーの移動事故やクロマクカルティストの能力発動を狙いましょう。\n\n主人公は下記で勝てます。\n暗躍禁止を神社に鉄板張りし、委員長、転校生に不安-1を使用し、ミスリーダーと合流しない（あるいはしても問題ないように友好2をおいておく）\nまた、クロマクやカルティストの移動を妨害する\nシリアルキラーでフレンドを殺害されるのを妨害する "
 },
 {
   "title": "脚本ツクール (Script Maker)",
