@@ -1966,6 +1966,1662 @@
       "mastermindHints": "メインとなる勝利手段はフレンドの殺害です。教師がミスリーダーかつ殺人事件の犯人なので、委員長の殺害を優先して狙いましょう。タイムトラベラーの能力による勝利は極力控えるべきですが、他に勝利手段がないときは仕方ないので使いましょう。\n鑑識官の友好能力は罠です。一度友好を積まれれば、因果の糸と蝶の羽ばたきで大きなプレッシャーをかけられます。蝶の羽ばたきが発生したら、鑑識官自身に友好カウンターを置き、翌ループも同様に狙いましょう。\n自殺はこの脚本のアキレス腱です。主人公が事件を起こす動きをして来た場合、非常に苦しい展開となります。幸い、情報屋の能力が活きる場面はごく限られるため、偶発的に自殺を狙えるチャンスは１回きりでしょう。"
     },
     {
+  "title": "彼はパーソン (He's a Person)",
+  "creator": "ペンスキー",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 4
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "signWithMe"
+  ],
+  "subPlots": [
+    "circleFriends",
+    "loveAffair"
+  ],
+  "daysPerLoop": 5,
+  "cast": {
+    "alien": "keyPerson",
+    "ai": "friend",
+    "richStudent": "friend",
+    "teacher": "conspiracyTheorist",
+    "transferStudent": [
+      "lover",
+      {
+        "enters on day": 2
+      }
+    ],
+    "patient": "lovedOne",
+    "godlyBeing": [
+      "person",
+      {
+        "enters on loop": 2
+      }
+    ],
+    "officeWorker": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "spreading",
+      "culprit": "ai"
+    },
+    {
+      "day": 2,
+      "incident": "increasingUnease",
+      "culprit": "teacher"
+    },
+    {
+      "day": 3,
+      "incident": "murder",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 4,
+      "incident": "suicide",
+      "culprit": "transferStudent"
+    },
+    {
+      "day": 5,
+      "incident": "butterflyEffect",
+      "culprit": "patient"
+    }
+  ],
+  "description": "惨劇RoopeRを2,3回経験した主人公向けです。ルールXを豪快に活用したロックギミックと、それによるルールYの隠蔽が特徴です。",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "1\n    主人公の殺害\n    メインラバーズの能力\n2\n    フレンドの殺害\n    A.I.の友好能力、異世界人の友好能力、殺人事件\n3\n    僕と契約しようよ！\n    キーパーソンに暗躍カウンターを２つ乗せる",
+  "story": "",
+  "mastermindHints": "ミスリーダーの能力は毎日使って下さい。隠す必要は全くありません。その上で不安拡大と転校生の自殺を発生させるのが必達目標です。逆に3日目の殺人事件は起こしてはいけません。\n不安拡大で暗躍カウンター、転校生の自殺で不安カウンターを入院患者へ供給し、全てのループでメインラバーズによる主人公殺害を狙います。\nここまでルールYの要素を一切必要としていないため、ルールYの特定がゲームの焦点となるでしょう。\n\nなお、全キャラクターの友好能力が使われるとルールYを特定されます。\nこの脚本にはキャラクターが8人しかおらず、5人はルールXの役職、サラリーマンはパーソンなので、ルールYの役職は2人までしか割り振れません。よってサラリーマンがパーソンと割れた時点で、殺人計画は候補から外れます。\n残る4つのルールYのうち、僕と契約しようよ！以外は全てのルールで絶対友好無視が追加されます。しかしこの脚本では友好無視がいないので、そこがバレるとルールY、ひいては役職の配役まで確定してしまいます。\n\nゲーム中でまだ友好能力を使われていないキャラクターが誰なのかは意識し、最低1人はゲーム中通して友好能力を使われないよう警戒しましょう。最有力候補は神格です。\n\n行動カードの置き方のテンプレを記しますが、絶対ではありません。特に終盤に近づくにつれて、テンプレが有効でない局面も出てくるでしょう。\n\n置き方テンプレ\nA.I.に友好が乗っていないなら↓\n初日\n教師\n「不安+1」\t\n異世界人\n「友好禁止」\n\n2日\n教師\n「不安+1」\n転校生\n「不安+1」\n\n3日\n転校生\n「不安+1」\n\n4日\n転校生\n「不安+1」\n\nフレンドの能力でA.I.に友好が乗っていたら↓\n初日\n教師\n「不安+1」\nA.I.\n「暗躍+2」\n\n2日\n教師\n「不安+1」\n転校生\n「不安+1」\n\n3日\n転校生\n「不安+1」\n\n4日\n転校生\n「不安+1」"
+},
+{
+  "title": "彼女は来た (She's Here)",
+  "creator": "Ryo.Shin.",
+  "difficultySets": [
+    {
+      "numberOfLoops": 3,
+      "difficulty": 2
+    }
+  ],
+  "tragedySet": "firstSteps",
+  "mainPlot": [
+    "murderPlan"
+  ],
+  "subPlots": [
+    "shadowRipper"
+  ],
+  "daysPerLoop": 3,
+  "cast": {
+    "girlStudent": "keyPerson",
+    "policeOfficer": "killer",
+    "henchman": "brain",
+    "alien": "conspiracyTheorist",
+    "transferStudent": [
+      "serialKiller",
+      {
+        "enters on day": 2
+      }
+    ],
+    "officeWorker": "person",
+    "forensicSpecialist": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "increasingUnease",
+      "culprit": "henchman"
+    },
+    {
+      "day": 2,
+      "incident": "farawayMurder",
+      "culprit": "policeOfficer"
+    },
+    {
+      "day": 3,
+      "incident": "missingPerson",
+      "culprit": "transferStudent"
+    }
+  ],
+  "description": "FSを使った短編作品です。\n手先や転校生の挙動が鍵を握ります。\n\n特に難しいギミックやPPは要求しておらず、初心者でも遊びやすい設計にしています。 ",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "",
+  "story": "たまたま刑事の汚職現場を目撃してしまった女子学生。彼は犯罪組織と裏で繋がっているようです。\n刑事は仲間と協力して彼女の口を封じようとその機を伺っています。\n\n警察は助けてくれるかわかりません。\n怯える彼女の元へやってきたのは、一人の転校生でした。\n\n彼女を手助けすると手を差し伸べる転校生ですが…本当に信じてよいのでしょうか？ ",
+  "mastermindHints": "脚本家は以下の勝利条件を持ちます。\n①キーパーソンの殺害(キラー、シリアルキラー、遠隔殺人)\n②主人公の殺害(キラー)\n\n第一ループは、刑事に『移動横』、女子学生に『暗躍+2』、異世界人に『移動縦』を置いてキラーの能力で女子学生を殺害します。暗躍禁止をケアするなら、 手先を学校スタートさせ『不安+1』で不安拡大を起こし、クロマクの能力で2個目の暗躍を女子学生に置いてもいいです。\n\n第二ループも同様に女子学生の殺害を狙いますが、遠隔殺人の存在から女子学生への暗躍は警戒されるはずです。手先を神社スタートさせ、ミスリーダー経由で 不安拡大を発生させる+手先を移動させクロマクの能力で暗躍を女子学生に乗せることを狙いましょう。その後は遠隔殺人かキラーでの殺害を狙います。\n2日目に転校生がやってきます。転校生は友好2で暗躍を減らしてくれるため、主人公は喜んで使ってくれると思います。安心してください。彼女はシリアルキラーです。手先が学校にいなければ喜んで仕事をしてくれるでしょう。\n\n最終ループは厳しい戦いになるでしょうが、脚本家にもいくつか武器があります。\n・手先の都市スタートによるキラーへの暗躍蓄積\n・3日目の転校生の行方不明\nなどを使って、キーパーソンもしくは主人公の殺害を目指してください。手先の配置先は病院以外ならばそれぞれメリットがあります。(神社:不安拡大を起こしやすい、学校:女子学生に暗躍を置ける、都市:刑事に暗躍が置ける)\n\n主人公も\n・異世界人によるクロマク・キラーの始末\n・シリアルキラーによるクロマク・キラーの始末\n・鑑識官の能力による暗躍の操作\n・転校生の能力による暗躍の操作\nなど、使える武器はたくさんあります。主人公は女子学生を神社へ逃してやれば、キラー、シリアルキラーでの殺害は難しくなります。『不安-1』『移動禁止』といった強力なカードをうまく使いましょう。 "
+},
+{
+  "title": "最低の配役 (A Hideous Cast)",
+  "creator": "ペンスキー",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 5
+    }
+  ],
+  "tragedySet": "firstSteps",
+  "mainPlot": [
+    "lightAvenger"
+  ],
+  "subPlots": [
+    "hideousScript"
+  ],
+  "daysPerLoop": 1,
+  "cast": {
+    "patient": "brain",
+    "scientist": "conspiracyTheorist",
+    "ai": "curmudgeon",
+    "officeWorker": "friend",
+    "littleSister": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "farawayMurder",
+      "culprit": "scientist"
+    }
+  ],
+  "description": "最低の却本には、役職人数を減らしてもよいという唯一無二の特徴があります。この脚本は、その特徴に最大限フォーカスしたものになります。\nコンパクトかつ難易度もそれほどでもないので、惨劇会の合間の箸休めにどうぞ。 ",
+  "specialRules": [
+    " 主人公は最後の戦いを実施してもよい。 \n\nThe Protagonists may make a Final Guess."
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "各ループで必ず学者に不安カウンターを置いて下さい。その上で、毎回以下のテンプレ通りにカードを置いてください。\n\n病院→暗躍+1、サラリーマン→暗躍+2、学者→不安+1\n\n病院の暗躍が通ればルールYで、サラリーマンの暗躍が通れば遠隔殺人で確実に惨劇を起こせます。\n\n主人公はループ抜けができませんが、特殊ルールにより最後の戦いに臨めます。そして、敗北条件とそれに係るパワープレイを逆手に取る事で、全ての役職を明かせるようになっています。\n\nルールYで敗北すればクロマクが、事件で敗北すればフレンドが明かせます。そして学者に不安-1を張ることでミスリーダーも明らかになります。\nそこまで明かせば、残るはマイナスの配置だけです。そしてそれは、妹とA.I.の特性により確定できます。"
+},
+{
+  "title": "邪教蔓延る教場 (Heresy Prevails in the Classroom)",
+  "creator": "Ryo.Shin.",
+  "difficultySets": [
+    {
+      "numberOfLoops": 3,
+      "difficulty": 4
+    }
+  ],
+  "tragedySet": "firstSteps",
+  "mainPlot": [
+    "placeProtect"
+  ],
+  "subPlots": [
+    "hideousScript"
+  ],
+  "daysPerLoop": 3,
+  "cast": {
+    "shrineMaiden": "keyPerson",
+    "patient": "cultist",
+    "doctor": "conspiracyTheorist",
+    "boyStudent": "curmudgeon",
+    "richStudent": "curmudgeon",
+    "soldier": "friend",
+    "alien": "person",
+    "informer": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "suicide",
+      "culprit": "shrineMaiden"
+    },
+    {
+      "day": 2,
+      "incident": "missingPerson",
+      "culprit": "soldier"
+    },
+    {
+      "day": 3,
+      "incident": "hospitalIncident",
+      "culprit": "richStudent"
+    }
+  ],
+  "description": "First Stepsを使った短編の中難易度脚本を作りたくて作りました。軍人と異世界人の友好能力の使用が鍵になります。\n\n難易度調整は以下の通り。\n\n難易度を下げる場合\n・ループ数を4ループに変更(⭐︎2相当)\n・3日目の犯人を男子学生に変更(⭐︎3相当)\n・男子学生をパーソンに変更(⭐︎3.5相当)\nを行ってください。\n\n難易度を上げたい場合\n・特殊ルール:主人公は『不安-1』を使用できない(⭐︎6相当)\n\nもしくは相談禁止を追加してください。\n\n適切な推理と動きができる経験者が主人公ならば、3ループで良い勝負になるでしょう。初心者の場合は4ループでのプレイを推奨します。 ",
+  "specialRules": [
+    " 脚本家は『友好禁止』を使えない。 \n\nMastermind can't use \"Forbid Goodwill.\""
+  ],
+  "victory-conditions": "",
+  "story": "\n    若者の間で邪悪な教えが静かに広まっていた…若者は次々と心を病ませていく。その犯人のカルト教団は学生を利用した病院のテロをも企んでいる。調査を依頼 された軍人は目的を同じくして出会った異世界人や主人公と協力して、陰謀の阻止へ動き出す。\n",
+  "mastermindHints": "脚本家の勝利条件は以下の通りです。\n①キーパーソン(巫女)の死亡\n②フレンド(軍人)の死亡\n③学校に暗躍2\n④主人公の死亡(病院の事件)\n\n第1ループでは巫女の自殺を狙います。医者に「移動横」、巫女に「不安+1」、お嬢様に「不安+1」を配置し、ミスリーダーの能力で巫女に不安を乗せ勝利します。\n\n第2ループは学校に暗躍2を乗せることを狙います。軍人に「不安+1」、病院に「暗躍+2」、学校に「暗躍+1」を配置します。カルティストの能力はガン ガン使っていいです。2日目の軍人の行方不明を合わせれば学校に暗躍が載せられます。学校の暗躍が阻止された場合は病院の事件を起こし勝利しましょう。そ の際はフレンドが割れない方が良いです。(2ループ目にフレンドが死亡した場合、主人公は3ループ目で勝ち確定の手順があります)\n\n最終ループでも病院の事件を確実に起こすよう立ち回りましょう。主人公もカルティストの存在を察して病院への暗躍禁止は無駄と悟るはずです。\n\n巫女の自殺は簡単に阻止されますが、カルティストとお嬢様のおかげで病院の事件での勝利は非常に起こしやすくしてあります。ミスリーダーを駆使して病院の事件の犯人候補をできるだけ増やしてください。\n\n主人公がループを抜ける方法としては、①異世界人の能力でお嬢様を殺害するか、②軍人の能力で不死になることです。ただし、①では病院の事件の犯人の確定 が必要になります。②では病院の事件の犯人を割る必要はありませんが、軍人を病院の事件に巻き込まないために、医者と軍人の能力を使い行方不明を利用する か、フレンドの友好1を利用して1手を確保する必要があります。「軍人使うだけで勝てるじゃんw」などという安易な解答は脚本家としてしっかりお仕置きし ましょう。\n\nなお、力業の解法として、「不安-1」を3日間お嬢様に使い続けても勝利できます。異世界人と「不安-1」で病院の事件の犯人候補を封殺することが、主人公にとって最も手っ取り早い解法でしょう。\n脚本家としては少し腹立たしいですが、FSでサクサク遊べる脚本として作成したのでこれも正解としています。 "
+},
+{
+  "title": "学校の惨劇 (School Tragedy)",
+  "creator": "ペンスキー",
+  "difficultySets": [
+    {
+      "numberOfLoops": 3,
+      "difficulty": 1
+    }
+  ],
+  "tragedySet": "firstSteps",
+  "mainPlot": [
+    "placeProtect"
+  ],
+  "subPlots": [
+    "unsettlingRumor"
+  ],
+  "daysPerLoop": 2,
+  "cast": {
+    "classRep": "keyPerson",
+    "officeWorker": "cultist",
+    "popIdol": "conspiracyTheorist",
+    "shrineMaiden": "person",
+    "richStudent": "person",
+    "boyStudent": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "missingPerson",
+      "culprit": "popIdol"
+    },
+    {
+      "day": 2,
+      "incident": "suicide",
+      "culprit": "classRep"
+    }
+  ],
+  "description": "ボードへの暗躍を重視した練習用脚本です。暗躍カウンターの効果と、ルールを絞らせない事の重要性を理解するのに適しています。",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "1ループ目は初日にアイドルへ不安+1、男子学生へ不安+1、学校へ暗躍+1をセットします。\nアイドル自身のミスリーダー能力と合わせて行方不明を起こし、初日に学校へ暗躍カウンターを２つ乗せて勝利します。必要に応じて不穏な噂の効果も使用して下さい。\n\n無事に暗躍を乗せられたら、2日目はブラフを置いて情報を与えないようにしましょう。学校以外のボードへ暗躍+2を通せると強力なCSになります。ただし、カルティストの能力は使ってはいけません。\n\n2ループ目、アイドルへの不安は警戒されるはずなので、そのスキを突いて委員長の自殺を狙います。\n初日に委員長へ不安+1、アイドルへ移動横、男子学生へ友好禁止を置いて下さい。\nやはりミスリーダー能力も使って、委員長の不安臨界を初日に満たしてしまいましょう。\n\n3ループ目は厳しいゲームとなるでしょう。\nどちらの事件を起こすか、それを目指してどのカードをどこに配置するか。主人公との読み合いになります。"
+},
+{
+  "title": "豆腐殺人事件 (Tofu Murder Case)",
+  "creator": "じーちゃん",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 0
+    }
+  ],
+  "tragedySet": "firstSteps",
+  "mainPlot": [
+    "murderPlan"
+  ],
+  "subPlots": [
+    "hideousScript"
+  ],
+  "daysPerLoop": 5,
+  "cast": {
+    "popIdol": "keyPerson",
+    "girlStudent": "killer",
+    "policeOfficer": "brain",
+    "richStudent": "conspiracyTheorist",
+    "patient": "curmudgeon",
+    "shrineMaiden": "friend",
+    "boyStudent": "person"
+  },
+  "incidents": [
+    {
+      "day": 2,
+      "incident": "suicide",
+      "culprit": "shrineMaiden"
+    },
+    {
+      "day": 3,
+      "incident": "murder",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 5,
+      "incident": "increasingUnease",
+      "culprit": "patient"
+    }
+  ],
+  "description": " ・シナリオの対象プレイヤー\n惨劇RoopeR Xの未経験者向けに作ってみたシナリオです。\nとはいえ、難易度的にはさほど簡単でもなく、どちらかといえばやや難しい部類になります。惨劇RoopeR自体に関しては未経験でも楽しんでもらえるとは 思いますが、論理パズルが苦手な人やボードゲームそのものが初心者という場合には、あまりオススメできないと思います。（まぁ、こういうケースの場合は惨 劇RoopeRで遊ぶという選択にはならないと思いますが（＾＾；\n未経験者（または経験数回の初心者）の方に相談可で遊んでもらうことを前提としているシナリオになります。\n\n相談不可だと主人公同士の連携が難しくなり難易度が跳ね上がります。相談不可で遊ぶ場合は中級者以上のプレイヤーであることが望ましいです。\n・シナリオの特徴\n計4ループからなるシナリオなのですが、まず最初の3ループは惨劇RoopeRの核となる要素「情報収集」を経験してもらいます。これは「敗北した盤面が こうだから、ルールはこれに違いない」とか「前回はこれで負けたから、今度はこうしてみよう」といったようなプレイングによる情報収集を行ってもらうのが メインとなります。\n脚本家は、最終ループに入る前には、ルールYとルールX、すべての役職、すべての事件の犯人が明らかになるように誘導しつつ主人公を敗北させていきます。（FirstStepには最後の戦いがないために、すべて明らかになっても脚本家は敗北しません）\n\nそして、最終ループは出揃った情報を元に、脚本家との読みあい勝負をしてもらいます。すべての情報が出揃った状態で、主人公側には敗北条件を回避するようにプレイしてもらうことを狙いとしています。",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "キーパーソンの殺害\nキラーの能力、殺人事件\n\nフレンドの殺害\n自殺、殺人事件\n\n主人公の殺害\nキラーの能力",
+  "story": "",
+  "mastermindHints": "【1ループ目】\n一番難易度が高い「キラーに暗躍4」を乗せて勝利することを目指します。\n女子学生（キラー）に暗躍4を乗せればいいのですが、5日目の不安拡大の事件を発生させられれば暗躍1個乗るので、女子学生（キラー）に暗躍を3つ乗せることを目標とします。\n\n1日目 \tアイドル：暗躍+1　入院患者：不安+1　女子学生：不安+1（ブラフなので他でも可）\n\n不安拡大の事件を発生させるべく患者には毎ターン不安+1を置いていきます。主人公側の不安-1は合計3枚なので、基本的には毎ターン不安+1を置いていけば最終日には臨界に達するはずです。\nただし、今回、キャラクターにアイドルがいます。アイドルの能力で不安を除去される可能性があるので、アイドルに友好カウンターが溜まり始めるようならば、友好禁止を連打するなり、病院に移動させないようにするなり、素直にカードで暗躍4つめ置くなりすれば良いかと。\n\nなお、アイドル、女子学生、入院患者の3枚に置くのは次ループの布石でもあるので、この3枚に置いておくことを推奨します。\n\n2日目 \t女子学生：暗躍+1　入院患者：不安+1　アイドル：不安+1（ブラフなので他でも可）\n\n前日に引き続き、入院患者に不安を乗せていきます。\nそして、女子学生（本命）に暗躍+1を乗せます。\n事件（自殺）の発生する日ですが、脚本家が不安を置かなければ犯人（巫女）が臨界に達することはないはずです。\n\n3日目 \t女子学生：暗躍+2　入院患者：不安+1　アイドル：お嬢様と同じ位置になるように移動\n\nここらでバシっと暗躍2を起きます。お嬢様を移動させつつ、暗躍2を試みるのが大事なポイントです。\nというのも、万が一暗躍2に対して暗躍禁止を張られてしまうと、脚本家が主人公を敗北させる道がぐっと狭まってしまうからです。（キーパーソンに暗躍2を乗せてキラーで殺す・・・しかないんじゃないかな？）\n暗躍2が無効化されてしまった時の保険としてアイドル（キーパーソン）をお嬢様（ミスリーダー）に向けて移動させておきます。こうすることによって、お嬢 様はミスリーダーなので自身に不安カウンターを乗せて、殺人事件を発生させてキーパーソンを殺害し、主人公を敗北させられるようになります。\n無事に暗躍2が女子学生（キラー）に乗った場合は、ミスリーダーの能力を使用せずに「事件は発生しませんでした」として続けましょう。\n\n4日目 \t女子学生：暗躍+1　入院患者：不安+1　アイドル：不安+1（ブラフなので他でも可）\n\n女子学生に暗躍4つ目が乗ったら主人公を死亡させてループ終了させてしまいましょう。\nとはいえ、主人公側も暗躍が3つ乗った女子学生は警戒しているでしょうから暗躍禁止を置いてくるはずです。最終日の事件の犯人がアイドルか入院患者か確定できないようにアイドルも臨界に達するように不安を置いていくと良いでしょう。\n\n5日目 \t女子学生：暗躍+1　入院患者：不安+1　アイドル：不安+1（ブラフなので他でも可）\n\n4日目と同じです。\n予定通りだと、女子学生に暗躍3が乗っているはずなので、もはや止められない（はずの）不安拡大の事件を起こして暗躍4つめをキラーに乗せて、ターン終了時に主人公を殺害してループを終了させましょう。\n\n2ループ目】\n2ループ目の方針は「1ターンキルを目指せ！」「1ターンキルができなければキラーでキーパーソンを殺せ」です。\n\n1日目 \tアイドル：暗躍+2　女子学生：都市へ移動　入院患者：不安+1\n\n1ターンキルを狙います！ｗ\n前ループと同じキャラクターにカードを置いているのと、筋書き通りだと前ループはキラーの暗躍4の能力で主人公が死亡して敗北しているはずなので、主人公はおそらく女子学生（キラー）に暗躍禁止を置いてくるはずです。\nま、1ターンキルの危険性を回避するためにアイドルを移動させてくる可能性もありますが、そうしたら次の日以降キラーで追いかけましょうｗ\n\n2日目以降 \t\nさて、1ターンキルは成功しましたでしょうか？\nいや、あなたが2日目のここを読んでいるということは、きっと成功していないのでしょうｗ（いや、もちろんそうとは限らないのですが、未来への手紙風に言ってみたかっただけですｗ）\n\nここからは刑事（クロマク）の能力を積極的に使って、キーパーソンやキラーに暗躍Cを乗せていくことを目指しましょう。\nFirstStepの惨劇セットでは最後の戦いがないので役職の能力を出し惜しみする必要はありません。\nまた、保険要員のお嬢様（ミスリーダー）の3日目の殺人事件で巫女（フレンド）もしくはアイドル（キーパーソン）を殺害するのを狙うのも良いでしょう。\n\n【3ループ目】\n3ループ目は巫女の自殺を狙ってみましょう。\n1日目 \t\n巫女：不安+1　お嬢様：移動上下　アイドル：暗躍+1\n\nお嬢様が無事神社に到達して巫女と一緒になれたら、脚本家能力フェイズにお嬢様（ミスリーダー）の能力で巫女に不安を置きます。\n\n2日目 \t巫女：不安+1　男子学生：移動左右（神社に来ないようにする）　アイドル：暗躍+1\n\nここまで予定通りいけば巫女（フレンド）が自殺するので、このループは敗北条件を満たします。\nうまく行かないようであれば、お嬢様（ミスリーダー）の3日目の殺人事件で巫女（フレンド）もしくはアイドル（キーパーソン）を殺害するのを狙いましょう。（これも外れると脚本家大ピンチになりますがｗ）\n\n【4ループ目】\nシナリオ通り進むとここまでですべての事件の犯人と各キャラクターの役職が明らかになっているはずです。\nそのため、最後の4ループ目は「脚本家vs主人公の読み合い勝負」となります。\n\nあとはがんばってくださいｗ"
+},
+{
+  "title": "KILL BOSS: The Looper",
+  "creator": "Ryo.Shin.",
+  "difficultySets": [
+    {
+      "numberOfLoops": 3,
+      "difficulty": 0
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "signWithMe"
+  ],
+  "subPlots": [
+    "threadsFate",
+    "paranoiaVirus"
+  ],
+  "daysPerLoop": 3,
+  "cast": {
+    "boss": [
+      "keyPerson",
+      {
+        "Turf": "Hospital"
+      }
+    ],
+    "journalist": "conspiracyTheorist",
+    "officeWorker": "person",
+    "doctor": "person",
+    "patient": "person",
+    "nurse": "person",
+    "teacher": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "increasingUnease",
+      "culprit": "teacher"
+    },
+    {
+      "day": 2,
+      "incident": "murder",
+      "culprit": "officeWorker"
+    },
+    {
+      "day": 3,
+      "incident": "hospitalIncident",
+      "culprit": "nurse"
+    }
+  ],
+  "description": "社畜TRPG『キルボス』のリスペクトです。\n軽く遊べるネタ脚本として作ってあります。",
+  "specialRules": [
+    "①キーパーソンのルールを以下の通り変更する。\n【常時】このキャラクターは「少女」としても扱う。\n【強制:このキャラクターの死亡時】主人公は勝利し、ループを終了する。(同時に敗北条件を満たしても主人公の勝利となる)\n【敗北条件:ループ終了時】このキャラクターが生存している。\n\n②キーパーソンは「大物」である。\n\n③事件が発生した場合、結果の処理はリーダーが行う。"
+  ],
+  "victory-conditions": "",
+  "story": "「明日暇？なら会社来れるよね」\n「これならChatGPTの方が仕事できるよ」\n「今どきの若い子はちょっとさあ…」\n「あ、これ頼むよ。3日でできるよね？」\n\nもううんざりだ。\nこの繰り返す日々を終わりにしましょう。\n\n\n1日目: 不安拡大(教師)\n増える業務、変わらぬ給料。流石にヤバいと思うのでSNSで拡散しておこう。\n2日目: 殺人事件(サラリーマン)\nもう殺すしかなくなっちゃったよお。\n納期？いや年貢の納め時です。\n3日目:病院の事件(ナース)\n医療機器の故障？薬剤の誤投与？\n事故だから仕方ないよね。\n\n最後の戦い\nもう限界だ！テレビ局に垂れ込んでやる！\n\n※この脚本はフィクションです。 ",
+  "mastermindHints": "大物を頑張って生存させましょう。\n病院から遠く、サラリーマンが入れない学校が安全ではあります。しかし、因果の糸と妄想拡大ウィルスに主人公が気づくと、単独での逃走はかなり危険になります。\n\n第一ループでは、友好禁止と不安禁止を使っていれば、まず死ぬことはないはずです。事件の犯人探しは妨害しておきましょう。そしてできるだけ友好カウン ターを撒かれないことを祈りましょう。ミスリーダーの能力は絶対に使わないでください。\n\n第二ループ以降はシリアルキラーがそこかしこに現れます。2人きりの状況は避けてください。\nまた、サラリーマンが不安臨界に達していれば、サラリーマンと大物に移動カードを配置し続けましょう。移動禁止は3枚しかないので、2日目の殺人事件を回避できます。\n\n最終ループは地獄です。因果の糸と妄想拡大ウィルスに主人公が気づいていれば、前ループで友好をばら撒かれているでしょう。脚本家には『不安-1』『不安 禁止』しか抵抗手段がないにも関わらず、主人公は3枚の『不安+1』、マスコミ、医者の能力で不安と暗躍を大量供給してきます。頑張って耐えましょう。\n\n最後の戦いではミスリーダーが焦点になります。隠す余裕があればですが…\n\n脚本家の勝率は悪いと思いますので、最後の戦いは行わなくてよいかもしれません。"
+},
+{
+  "title": "ホシに願いを (When You Wish Upon A Star)",
+  "creator": "ペンスキー",
+  "difficultySets": [
+    {
+      "numberOfLoops": 3,
+      "difficulty": 5
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "changeOfFuture"
+  ],
+  "subPlots": [
+    "circleFriends",
+    "threadsFate"
+  ],
+  "daysPerLoop": 6,
+  "cast": {
+    "henchman": "cultist",
+    "littleSister": "timeTraveler",
+    "illusion": "friend",
+    "ai": "friend",
+    "policeOfficer": "conspiracyTheorist",
+    "nurse": "person",
+    "officeWorker": "person",
+    "informer": "person",
+    "boyStudent": "person",
+    "richStudent": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "increasingUnease",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 2,
+      "incident": "increasingUnease",
+      "culprit": "officeWorker"
+    },
+    {
+      "day": 3,
+      "incident": "increasingUnease",
+      "culprit": "boyStudent"
+    },
+    {
+      "day": 4,
+      "incident": "increasingUnease",
+      "culprit": "nurse"
+    },
+    {
+      "day": 5,
+      "incident": "butterflyEffect",
+      "culprit": "henchman"
+    }
+  ],
+  "description": "Note: There are two Illusions in this script, but due to limitations, the second Friend is displayed as \"A.I.\" Treat it as an Illusion instead.\n\n特殊ルールについて、「役職は過不足なく配役される」原則は守られた脚本である事を必ず説明して下さい。幻想はイレギュラーやコピーキャットではありません。\n惨劇RoopeR Be Playing Stage Game の登場人物で構成された脚本です。\nループ数も短く、特殊ルールによって１ループ目開始時点からルールXが1つ確定しているため、比較的短い時間で遊ぶ事ができます。",
+  "specialRules": [
+    "幻想はフレンドである。"
+  ],
+  "victory-conditions": "1\n    未来改変プラン\n    蝶の羽ばたきを起こす\n2\n    タイムトラベラーの能力\n    ループ最終日にタイムトラベラーの友好カウンターが2つ以下",
+  "story": "",
+  "mastermindHints": "１ループ目開始前からフレンドが公開されているので、各ループ開始時に2人の幻想へ友好カウンターを置いて下さい。\n\n脚本家の勝利手段は蝶の羽ばたきとタイムトラベラーの能力ですが、メインは蝶の羽ばたきです。\n蝶の羽ばたきは勝利条件なので起こすべきですが、事件の犯人へ友好カウンターを乗せられる点も見逃せません。お嬢様を筆頭に、どの事件の犯人でも友好カウンターを乗せる価値があります。\n\n不安拡大を起こすのは簡単ですが、1ループ目から全て起こすのはやめておきましょう。犯人バレを防ぐために重要です。\n\nなお、実は犯人を特定されると、不安カウンターに関係なく事件を防がれてしまいます。その鍵を握るのは幻想と妹です。また、刑事の友好4能力も少々厄介です。\n\n\n主人公の勝ち筋は、妹で手先の事件を止める事です。\n一見難しそうですが、幻想への友好+2を通すだけで達成できます。\n幻想に友好3が乗った時点で、2人の幻想の友好3能力を連続使用して、全てのキャラクターを妹の元へと誘う事ができるようになります。あとは妹に友好5を溜めて手先を呼び寄せ、事件を起こさないようお願いすれば、主人公の勝利確定となります。\n\n置き方テンプレ\n\n1ループ目\n\nループ開始時:手先は都市に配置\n    初日\n    お嬢様\n    「移動横」\n    サラリーマン\n    「不安+1\n    \nサラリーマンに不安+2スタート\n\nループ開始時:手先は学校に配置\n    初日\n    ナース\n    「移動横」\n    サラリーマン\n    「不安+1」\n    2日\n    サラリーマン\n    「不安+1」"
+},
+{
+  "title": "A Will.",
+  "creator": "比良坂右京",
+  "difficultySets": [
+    {
+      "numberOfLoops": 3,
+      "difficulty": 4
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "changeOfFuture"
+  ],
+  "subPlots": [
+    "unsettlingRumor",
+    "loveAffair"
+  ],
+  "daysPerLoop": 5,
+  "cast": {
+    "patient": "cultist",
+    "partTimer": "timeTraveler",
+    "informer": "conspiracyTheorist",
+    "doctor": "lover",
+    "classRep": "lovedOne",
+    "richStudent": "person",
+    "teacher": "person",
+    "officeWorker": "person",
+    "popIdol": "person"
+  },
+  "incidents": [
+    {
+      "day": 2,
+      "incident": "increasingUnease",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 3,
+      "incident": "hospitalIncident",
+      "culprit": "officeWorker"
+    },
+    {
+      "day": 4,
+      "incident": "butterflyEffect",
+      "culprit": "popIdol"
+    },
+    {
+      "day": 5,
+      "incident": "foulEvil",
+      "culprit": "teacher"
+    }
+  ],
+  "description": "惨劇Rooperの初級者～中級者に向けた脚本。\nどちらかというとPPではなくCS寄り、主人公に対して友好能力の起動の大事さを教える脚本。",
+  "specialRules": [
+    "脚本家の手札から「友好禁止」を取り除く。\nいずれの場合もターンにおいても、このカードを使うことは出来ない。"
+  ],
+  "victory-conditions": "勝利条件1:タイムトラベラーにループ終了時に友好カウンターが2つ以下である。\n勝利条件2:蝶の羽ばたきが発生している。\n勝利条件3:病院の事件による主人公の殺害。\n勝利条件4:メインラバーズによる主人公の殺害。",
+  "story": "残された装置と残された死体。未来から移動可能な不可思議物体を遺して、青年は死んだ。\n「……だってさ。知らなかったでしょ？\n私が……未来から来たってこと。内緒だよ？」 ",
+  "mastermindHints": "基本的に「封印されしモノ」か「僕と契約しようよ！」とのCSを組む。また、カルティストの能力は使用せず、発覚するまでタイムトラベラーでの勝利も狙わ ない。（4日目にアルバイトを殺害出来ればお嬢様、アイドル経由での友好カウンターが無い限り勝利できるが、不安定なので次善の案として構えること。）\n（アルバイトの能力が起動するとルールYが発覚する。また、X1、X2は情報屋の能力や病院の事件でラバーズの死により発覚する。）\n\n以上を踏まえた上で以下の通りに行動する。\n第一ループ。蝶の羽ばたきを起こして勝利する。なるべくCSのルールを増やしたい。神社、病院に暗躍カウンターを2つ、もしくはお嬢様やアイドルに暗躍カウンターを置いておきたい。不安拡大や邪気の汚染の発生を起こしておきたい。\n第二ループ。病院の事件での勝利を狙いたい。不穏な噂の能力は使用して構わない。暗躍カウンターを2つ置けるようならそのまま主人公を殺害、1つしか置け ない場合はメインラバーズ経由での殺害を行う。（どちらにせよ3日目の行動カードセット時に暗躍カウンターを委員長に置いておくこと、メインラバーズ発覚 後は暗躍禁止を置かれやすい）\n第三ループ。ルールYが絞られているのであればタイムトラベラーでの勝利を狙う。（この時友好カウンターを置かれないように細心の注意を払うこと、アイド ルと同じ場所に居ないようにする）そうでなければメインラバーズ、もしくはルールYでの勝利を狙うこと。\n\n最後の戦いは苦しい。ミスリーダーを確定させないように立ち回れれば上々。カルティストの隠し先が焦点になりやすい。タイムトラベラーがバレている場合、消去法的に入院患者がカルティストに指定される可能性が高い。\n主人公側としては、アルバイトへカウンターを置いてアルバイト？に変貌させ、友好能力を使うことがカギとなる。\n"
+},
+{
+  "title": "ウイルス対策友情戦線 (Antivirus Friendship Front)",
+  "creator": "れう",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 4
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "changeOfFuture"
+  ],
+  "subPlots": [
+    "circleFriends",
+    "paranoiaVirus"
+  ],
+  "daysPerLoop": 6,
+  "cast": {
+    "popIdol": "cultist",
+    "patient": "timeTraveler",
+    "girlStudent": "friend",
+    "richStudent": "friend",
+    "doctor": "conspiracyTheorist",
+    "officeWorker": "person",
+    "informer": "person",
+    "shrineMaiden": "person"
+  },
+  "incidents": [
+    {
+      "day": 2,
+      "incident": "butterflyEffect",
+      "culprit": "popIdol"
+    },
+    {
+      "day": 4,
+      "incident": "hospitalIncident",
+      "culprit": "officeWorker"
+    },
+    {
+      "day": 5,
+      "incident": "murder",
+      "culprit": "shrineMaiden"
+    },
+    {
+      "day": 6,
+      "incident": "murder",
+      "culprit": "informer"
+    }
+  ],
+  "description": "シンプルな構成の脚本です。\nあまりつよい脚本ではないので、相談不可を初めて行う場合や初心者が多い場合に最適\nまた、妄想拡大ウイルスを使用してミスリーダーやタイムトラベラーの位置を割っていくことに気づけば、主人公はかなり楽に勝てます ",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "勝ち手段は以下の4つ\n\nフレンドの殺害\n蝶の羽ばたきの発生\n病院の事件\nタイムトラベラー",
+  "story": "",
+  "mastermindHints": "またフレンドの殺害には殺人事件、病院の事件、シリアルキラーによる殺害が用意されています。\n\n一番優先したいのは殺人事件によるフレンドの殺害です。\nただし、事件を起こそうと不安を重ねるとサラリーマン、巫女、情報屋はシリアルキラーになり、\n消去法で役職が割られるため、最後の戦いがつらいものになっていきます。\nそのため、事件を起こす場合でも不安Cの個数には常に気を払って調整する必要があります。\n\n蝶の羽ばたきで勝つ場合は犯人が割れてしまうとミスリーダーなしで事件が起こせなくなるため、\n犯人候補を用意し、そちらにも不安Cを貼るのを忘れないように。\n\n病院の事件はタイムトラベラーの位置が割れてしまうので注意。\n\n隠すべき役職はフレンドのうちどちらか1人とミスリーダー\nそのために妄想拡大ウイルスによるシリアルキラーはなるべく発生させないように努めましょう。 "
+},
+{
+  "title": "もしも百合の世界の間に男が入ってきたら (What if a Man Fell into the World of Yuri?)",
+  "creator": "白獅子のケイ",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 4
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "signWithMe"
+  ],
+  "subPlots": [
+    "loveAffair",
+    "paranoiaVirus"
+  ],
+  "daysPerLoop": 6,
+  "cast": {
+    "transferStudent": [
+      "keyPerson",
+      {
+        "enters on day": 3
+      }
+    ],
+    "nurse": "lover",
+    "richStudent": "lovedOne",
+    "henchman": "conspiracyTheorist",
+    "girlStudent": "person",
+    "popIdol": "person",
+    "shrineMaiden": "person",
+    "alien": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "increasingUnease",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 2,
+      "incident": "increasingUnease",
+      "culprit": "henchman"
+    },
+    {
+      "day": 3,
+      "incident": "butterflyEffect",
+      "culprit": "shrineMaiden"
+    },
+    {
+      "day": 4,
+      "incident": "butterflyEffect",
+      "culprit": "popIdol"
+    },
+    {
+      "day": 5,
+      "incident": "increasingUnease",
+      "culprit": "transferStudent"
+    },
+    {
+      "day": 6,
+      "incident": "murder",
+      "culprit": "nurse"
+    }
+  ],
+  "description": "比較的入門用の脚本をイメージして作りました。どこからともなく現れるシリアルキラーにご注意を。",
+  "specialRules": [
+    "相談禁止にした場合ループ数+1 "
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "【メインラバーズの効果で主人公を殺そう】\n【ラバーズをうまく隠そう】\n【少女達で転校生を殺そう】\n\n\nお嬢様と手先の事件で暗躍や不安をばら撒き、メインラバーズの効果で主人公の殺害を狙います。\n\n最初のループからメインラバーズか不安3のパーソンで早々に主人公や転校生を殺害してループを終了させましょう。\n\nミスリーダーの能力は毎日使います。\n不安の優先は事件の発生です。\n少女は全員不安を置く意味があります。\n\n1日目の動き\nお嬢様　不安+1\n巫女　不安+1\n女子学生　友好禁止\n\n\n不安拡大が発生したら、\n暗躍はお嬢様、不安はアイドルか、巫女に乗せましょう。\n事件が発生したら、\n\n2日目の事件が発生したら\nお嬢様に暗躍と少女に不安を乗せます。\nなるべく多くの少女が不安2の状態を作ります。\n\n3日目に転校生が登場します。\n3日目か4日目に転校生に暗躍+2を置きましょう。\n\n事件が発生した場合、巫女に不安を置きます。\n\n4日目の動き\n3日目に暗躍+2をしていないなら今日暗躍を置いてみましょう。\n事件が発生した場合、転校生に暗躍が2つ置かれていないなら不安を、置かれてる場合は暗躍を置きます。\n\n5日目・6日目\n転校生が暗躍2なら、何れかの少女に暗躍を置いて、なるべく暗躍1不安3の少女をたくさん用意しましょう。\n\n置かれてない場合は、不安と移動を駆使して、転校生か主人公の殺害を狙います。\n\n【この脚本の弱点】\n手先を上手く移動させられて、事件の発生を抑えられた場合、ループから抜けられる可能性があります。\n\n最後の戦いでは、ルールYが「殺人計画」か「僕と契約しようよ」の二択を迫りつつ、ラバーズが誰かを探す事になります。\nしかし、少女全員が一度でもシリアルキラーとして動いたことがある場合、ルールYが確定する上に、ラバーズがナースしかあり得ないと判明するため、脚本家が勝つのは難しいかもしれません。 "
+},
+{
+  "title": "凶刃の向かう先は (The Assassin Blade's Target)",
+  "creator": "ペンスキー",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 3
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "murderPlan"
+  ],
+  "subPlots": [
+    "circleFriends",
+    "threadsFate"
+  ],
+  "daysPerLoop": 3,
+  "cast": {
+    "informer": "keyPerson",
+    "popIdol": "killer",
+    "soldier": "brain",
+    "officeWorker": "friend",
+    "teacher": "friend",
+    "boyStudent": "conspiracyTheorist",
+    "blackCat": "person",
+    "patient": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "murder",
+      "culprit": "officeWorker"
+    },
+    {
+      "day": 2,
+      "incident": "increasingUnease",
+      "culprit": "boyStudent"
+    },
+    {
+      "day": 3,
+      "incident": "missingPerson",
+      "culprit": "popIdol"
+    }
+  ],
+  "description": "初日の殺人事件がこの脚本のコンセプトです。\n起こすも起こさないもそれぞれメリットデメリットがあるため、主人公と脚本家の思惑が錯綜します。それらが絶妙に噛み合ったとき、至る結末は果たして平穏な日常か、あるいは惨劇か… ",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "脚本家の勝利条件は、基本的にキーパーソンの殺害だけです。\n\n1ループ目は初日からキーパーソンへ暗躍+2を通してしまいましょう。不安拡大をほぼ確実に起こせる上、行方不明の犯人がキラーなので、キーパーソンへの 暗躍さえ通せれば問題なく敗北条件を満たせるでしょう。ミスリーダーはバラしてしまっても問題ありません。\n\n2ループ目以降は、初日の殺人事件のせめぎ合いとなります。初日は必ずサラリーマンと情報屋には行動カードを配置してください。\n\n殺人事件を起こすパターンと防ぐパターン、どちらのパターンでいくかはゲームの流れ次第です。\n\n起こす場合のメリットは、もちろんキーパーソンの殺害を狙えることです。\n起こす場合、初日は移動３枚使ってしまってもよいでしょう。また、クロマクを隠すならフレンドも殺害対象にカウントできます。\n\n起こさない場合のメリットは、殺人事件でキラーが殺される事故を防げることです。\n起こさない場合、サラリーマンには移動縦か不安-1を張ります。主人公が不安+1を張ったとしても、病院で事件を起こせれば致命傷は避けられます。\n\n最後の戦いで隠すべきは、クロマクか２人目のフレンドです。\nクロマクを隠すルートの場合、フレンドは初日の殺人事件の対象になります。移動を張って1ループ稼がせてもらいましょう。\nフレンドを隠すルートの場合、キラーによる主人公殺害能力の重要度が高まります。このルートでは、初日の殺人事件は起こさないほうが良いでしょう。とはいえ、結局は主人公との読み合いにはなりますが。 "
+},
+{
+  "title": "友の死を乗り越えて (Overcoming the Death of a Friend)",
+  "creator": "ペンスキー",
+  "difficultySets": [
+    {
+      "numberOfLoops": 6,
+      "difficulty": 6
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "sealedItem"
+  ],
+  "subPlots": [
+    "hiddenFreak",
+    "circleFriends"
+  ],
+  "daysPerLoop": 3,
+  "cast": {
+    "ai": "brain",
+    "doctor": "cultist",
+    "transferStudent": [
+      "serialKiller",
+      {
+        "enters on day": 2
+      }
+    ],
+    "alien": "friend",
+    "sacredTree": "friend",
+    "patient": "conspiracyTheorist",
+    "copycat": "friend",
+    "littleSister": "person",
+    "richStudent": "person",
+    "henchman": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "increasingUnease",
+      "culprit": "henchman"
+    },
+    {
+      "day": 2,
+      "incident": "missingPerson",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 3,
+      "incident": "foulEvil",
+      "culprit": "patient"
+    }
+  ],
+  "description": "脚本家の行動が大きく制限された、パズル脚本です。\nコンセプトレベルのギミックが2つも併載されており、主人公はその両方を発見しなくてはなりません。\n\n普通の惨劇RoopeRとは趣きが少々異なるため、プレイ経験の少ない方にはおすすめできません。",
+  "specialRules": [
+    " 脚本家は移動と友好禁止を使用できない。 "
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "Henchman starts in Hospital.\n\n手先の初期配置は常に病院にしてください。\n3日目の邪気の汚染を非常に安定して起こせる上、起これば勝利確定です。主人公としてこれを止めるには一手間かかるため、序盤のループで即抜けされる事はありえません。\n\nまず序盤は不安をばらまいて、3つの事件を全て起こすように動きます。\n手先の初期配置を病院にすることで確実に不安拡大を起こせるので、この不安を入院患者に乗せて下さい。\n行方不明はシリアルキラーの発覚を遅らせる役目があります。\n並行して妹へ暗躍を積んで、僕と契約しようよ！のCSも狙います。\n\n妹への暗躍は比較的簡単に止められるので、その時点で契約のCSは崩れます。そうしたら神社へ暗躍+1を置き、主人公の手数を制限しましょう。\n\n最後の戦いでは、ミスリーダーが手先or患者、クロマクとカルティストが医者orA.I.と、2つの2択を迫ります。A.I.の友好能力は常に拒否して下さい。クロマクとカルティストの見分けがつかなくなります。\n\nいずれも明かす手順は存在しますが、複雑なギミックであるため主人公の発想力が問われます。下にそれぞれの手順を示してるので参考にして下さい。\n最大のポイントは「主人公が2人のフレンドを殺害すること」です。\n\nミスリーダーの割り方はご神木の特性がポイントになります。\nご神木と異世界人に友好+1してループが始まれば、初日に異世界人の友好能力を使用できます。それで手先を殺害すれば、脚本家としてはミスリーダーを明かさざるを得ません。\n\nクロマクとカルティストについてですが、異世界人の能力で3日目の犯人である入院患者を殺害することで、カルティストを割る事ができます。\n全力で妹と異世界人に友好を積めば、2日目に妹経由で医者の友好能力を起動し、3日目に異世界人による入院患者の殺害が間に合います。\nそうなると、脚本家はカルティストの能力を使わなければ勝利できません。しかしそれを使った時点で最後の戦いでの主人公勝利が確定するでしょう。 "
+},
+{
+  "title": "友達100人計画  (100-Friends Plan)",
+  "creator": "白獅子のケイ",
+  "difficultySets": [
+    {
+      "numberOfLoops": 5,
+      "difficulty": 5
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "sealedItem"
+  ],
+  "subPlots": [
+    "unknownFactor",
+    "circleFriends"
+  ],
+  "daysPerLoop": 6,
+  "cast": {
+    "boss": [
+      "brain",
+      {
+        "Turf": "School"
+      }
+    ],
+    "doctor": "cultist",
+    "teacher": "factor",
+    "shrineMaiden": "friend",
+    "richStudent": "friend",
+    "classRep": "conspiracyTheorist",
+    "mysteryBoy": "timeTraveler",
+    "transferStudent": [
+      "person",
+      {
+        "enters on day": 2
+      }
+    ],
+    "popIdol": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "missingPerson",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 3,
+      "incident": "increasingUnease",
+      "culprit": "mysteryBoy"
+    },
+    {
+      "day": 5,
+      "incident": "farawayMurder",
+      "culprit": "teacher"
+    },
+    {
+      "day": 6,
+      "incident": "hospitalIncident",
+      "culprit": "transferStudent"
+    }
+  ],
+  "description": "潤沢な敗北方法を使って、CSを広げつつ、主人公側は友好能力を解放して、フレンドを見つける事に全力を出す脚本。",
+  "specialRules": [
+    "相談禁止にする場合ループ数+1 "
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "1ループ目は、タイムトラベラーの能力で勝つため、脚本家の能力は使用せず、事件も発生させず移動カードを置いて、静かにループを過ごす。\n\n2ループ目からは、ファクターの死亡、神社への暗躍をメインに主人公達を敗北させていこう。\n\n1日目\nお嬢様　不安+1\n都市　不安+1or暗躍+1\n学校　暗躍+1or不安+1 "
+},
+{
+  "title": "圧倒する者たち (Those Who Overwhelm)",
+  "creator": "ペンスキー",
+  "difficultySets": [
+    {
+      "numberOfLoops": 3,
+      "difficulty": 2
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "signWithMe"
+  ],
+  "subPlots": [
+    "threadsFate",
+    "hiddenFreak"
+  ],
+  "daysPerLoop": 4,
+  "cast": {
+    "transferStudent": [
+      "keyPerson",
+      {
+        "enters on day": 2
+      }
+    ],
+    "blackCat": "serialKiller",
+    "ai": "friend",
+    "soldier": "person",
+    "copycat": "person",
+    "boss": [
+      "person",
+      {
+        "Turf": "School"
+      }
+    ],
+    "illusion": "person",
+    "godlyBeing": [
+      "person",
+      {
+        "enters on loop": 1
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "suicide",
+      "culprit": "transferStudent"
+    },
+    {
+      "day": 4,
+      "incident": "spreading",
+      "culprit": "blackCat"
+    }
+  ],
+  "description": "風変わりなキャラクターが多数登場しますが、その割には非常に初心者向けな脚本です。\n逆に脚本家はかなり勝ちにくいため、ある程度の経験や慣れが求められます。",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "1ループ目は転校生を狙いますが、暗躍と殺害のどちらのルートも選択肢となります。暗躍を狙うなら、いずれかのボードへも暗躍を2つ置いてCSとしたいです。黒猫と幻想の特性を最大限活かして主人公を惑わせましょう。\n殺害を目指すなら、1ループ目からシリアルキラーを使っていきましょう。その場合はルールYを殺人計画に見せかけるため、キャラクターへの暗躍は重要度が高まります。\n\n2ループ目以降はルールYとシリアルキラーを活用し、キーパーソンの殺害と暗躍の両面から圧力をかけていきます。フレンドが割れているならA.I.もターゲットになります。3ループ目も、シリアルキラーの活用が必要となるでしょう。\n\n最後の戦いでは、イレギュラーとコピーキャットの役職が鍵を握ります。片方だけでも友好能力を使わせないまま逃げ切れば、最後の戦いは勝ったも同然です。\n大物の能力とA.I.の流布があるため真っ当に隠し切るのは困難ですが、シリアルキラーで殺害しても口封じはできます。情報隠蔽にも勝利条件にも、シリアルキラーは大いに活躍するでしょう。"
+},
+{
+  "title": "地を這う羽 (Wings Slithering on the Ground)",
+  "creator": "ぶー太郎",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 4
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "changeOfFuture"
+  ],
+  "subPlots": [
+    "unsettlingRumor",
+    "unknownFactor"
+  ],
+  "daysPerLoop": 5,
+  "cast": {
+    "girlStudent": "cultist",
+    "partTimer": "timeTraveler",
+    "teacher": "conspiracyTheorist",
+    "informer": "factor",
+    "classRep": "person",
+    "shrineMaiden": "person",
+    "officeWorker": "person",
+    "patient": "person"
+  },
+  "incidents": [
+    {
+      "day": 2,
+      "incident": "spreading",
+      "culprit": "teacher"
+    },
+    {
+      "day": 4,
+      "incident": "increasingUnease",
+      "culprit": "classRep"
+    }
+  ],
+  "description": "１ギミックに頼り切った脚本。BTXのこの構成である程度以上戦えるようにはなっているはず。",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "勝利条件はただ１つ。\nアルバイト？のタイムトラベラー能力だけ。\n\nつまり、４日目にアルバイトを殺す事が脚本家唯一の勝利条件。これをふまえて、各日の目標を記す。",
+  "story": "ここにはまだ蝶はいない。蝶になるべく地を這う虫がいるだけだ。",
+  "mastermindHints": "初日アルバイトに友好禁止、委員長に不安＋１、学校に暗躍＋２（暗躍１）\n教師に対してミスリーダーを起動する。\n女子学生移動、学校に暗躍禁止であってもファクターの偽装が失敗していても教師自身に起動すること。\n教師がファクターでないことがわかっている場合は選択問題になる。\n教師に不安＋１が固いか。\n\n２日目は初日の行動で分岐する\n教師に不安が２個ないなら不安＋１を置く。２個あるなら放置。\n委員長に不安＋１は義務。\nアルバイトに不安が１→不安禁止を置く\nアルバイトに不安が０→自由行動。\n友好禁止を置くのも手。\n自由行動としては学校に暗躍が通っていないなら学校に暗躍１を置く手もある。\n（教師がファクターではなくミスリーダーだとバレているなら微妙ではある。）\n不安が足らないなら教師のミスリーダーを起動し、１００％流布を起こす。\nアルバイトの友好を除去するのが１番手，教師の友好を取るのが２番手。\nアルバイトに友好禁止が置けているなら教師の友好を取るべし。\n友好カウンターはサラリーマンに置くのがよいかもしれない。\nタイムトラベラー候補を無闇に減らさないことが重要。\nこれによって、アルバイトに友好０状態で３日目を迎えることを狙う。\nこうすると、どうやっても不安カウンター１までしか乗らない。\n\n不安カウンターの数で分岐する。３日目にアルバイトには不安カウンターが１→基本的に友好禁止を置く。\n読みあいに勝てる自信があるなら不安禁止。\n不安カウンターが０→移動or暗躍＋１or不安＋１。\nここで勝負している。\n委員長に不安＋１（義務）\n学校に暗躍＋１or友好禁止or教師＝委員長の合流狙いor教師＝アルバイトの合流狙い\nこれを組み合わせて行う。\n要約するとこの状況でカウンターが３つにならないように留意する。\nミスリーダーとファクターとカルティストで囲んでいるのでカウンター１～２個で固定するのがよい。\n４日目は逆に不安拡大を発生させてアルバイトをターン終了時に自壊させるのを狙う。\n委員長不安＋１アルバイト暗躍or不安＋１ミスリーダー起動などなど全てを使って自壊狙いをする。\n委員長の不安拡大は教師を逃がして不安ー１を３回置かれると起きないのだが「委員長に不安ー１をすべて使っているので主人公の不安ー１がなくなる」のでそ の場合は４日目の脚本家の不安＋１が必ず通る。よってカウンター２個で３日目を迎えると確定勝利。\n５日目には友好禁止と移動を置くのみ。\n勝利確定してるハズなので勝とう。\n逆にアルバイトが自壊していなかったり、３日目に自壊していたら確定負け。\n情報屋を使われた場合は適宜答えること。基本は不穏な噂と答えた方がいいとは思う。"
+},
+{
+  "title": "女だらけの場所に紛れ込んだサラリーマン (A Businessman Wanders into a Place Full of Women)",
+  "creator": "yurei(ʘᴗʘ✿)",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 2
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "signWithMe"
+  ],
+  "subPlots": [
+    "hiddenFreak",
+    "loveAffair"
+  ],
+  "daysPerLoop": 5,
+  "cast": {
+    "shrineMaiden": "keyPerson",
+    "alien": "serialKiller",
+    "officeWorker": "friend",
+    "classRep": "lover",
+    "richStudent": "lovedOne",
+    "informer": "person",
+    "popIdol": "person"
+  },
+  "incidents": [
+    {
+      "day": 3,
+      "incident": "butterflyEffect",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 5,
+      "incident": "hospitalIncident",
+      "culprit": "popIdol"
+    }
+  ],
+  "description": "初作成した脚本",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "",
+  "story": "女の子がリーマンを狙ってるけど、一番重要なのは巫女",
+  "mastermindHints": "1ループ目はシリアルキラーでフレンドを倒す。\n2ループ目はシリアルキラーでキーパーソンを倒す。\n3ループ目は病院の事件をダミーとして、キーパーソンに暗躍を乗せる。\n4ループ目は蝶の羽ばたきで暗躍を1個乗せることにより暗躍をキーパーソンに乗せる。\n無理ならメインラバーズで突破する。\n\n慣れている人相手なら3ループで問題なし"
+},
+{
+  "title": "女の戦い (Battle Between Women)",
+  "creator": "ペンスキー",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 1
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "signWithMe"
+  ],
+  "subPlots": [
+    "hiddenFreak",
+    "threadsFate"
+  ],
+  "daysPerLoop": 4,
+  "cast": {
+    "popIdol": "keyPerson",
+    "girlStudent": "serialKiller",
+    "nurse": "friend",
+    "shrineMaiden": "person",
+    "officeWorker": "person",
+    "classRep": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "increasingUnease",
+      "culprit": "officeWorker"
+    },
+    {
+      "day": 2,
+      "incident": "increasingUnease",
+      "culprit": "shrineMaiden"
+    },
+    {
+      "day": 4,
+      "incident": "murder",
+      "culprit": "girlStudent"
+    }
+  ],
+  "description": "BTXを初めて回す脚本家に向けた脚本です。惨劇RoopeRの脚本家自体初めてでも問題ありません。\nルールの組み合わせにより安定した勝利手段を持ち、脚本家初心者でも扱いやすくなっています。\nなお、練習用の割りには主人公の勝利は難しいです。",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "1\n\n\n\n    キーパーソンの殺害\n    シリアルキラー、殺人事件\n\n2\n\n\n\n    僕と契約しようよ！\n    キーパーソンへ暗躍カウンターを2つ置く、不安拡大×2",
+  "story": "",
+  "mastermindHints": "それぞれのループにおいて、以下の勝利条件を目指して動くのがおすすめです。\n\n・1ループ目：シリアルキラーによるキーパーソン殺害\n・2ループ目：不安拡大によってキーパーソンへ暗躍+2\n・3ループ目：2ループ目と同様\n・4ループ目：暗躍+2を通すかシリアルキラーの殺人事件\n\nまず1ループ目はシリアルキラーでキーパーソンを殺害し、初日で終わらせてしまいます。万が一初日で終わらなかった場合、サラリーマンの友好能力を使用されないように友好禁止を張り続けて下さい。\n\n2ループ目は因果の糸により、サラリーマンに不安+2されて始まる事でしょう。そうなれば2つの不安拡大を確実に起こし、アイドルへ暗躍カウンターを2つ乗せて勝利できます。\n\nサラリーマンの不安拡大が起こせない場合、行動カードの読み合いになります。\nアイドルには毎日カードをセットして下さい。置くカードは移動か暗躍がおすすめです。それと並行して巫女と女子学生に不安を積み、事件発生を狙います。アイドルに暗躍+2さえ通せれば勝利できるので、頑張って読み合いに打ち勝って下さい。\n\n最後の戦いではフレンドを隠します。一応巫女で割られますが、不安のやり取りなどで忙しいため、あまり警戒しなくても良いでしょう。それよりもシリアルキ ラーの方が要注意です。フレンド候補はナースの他に巫女、委員長なので、この2人がフレンドでないとバレただけでアウトです。主人公がシリアルキラーを活 用しだしたら警戒して下さい。"
+},
+{
+  "title": "女の戦い (Battle Between Women)",
+  "creator": "ペンスキー",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 1
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "signWithMe"
+  ],
+  "subPlots": [
+    "hiddenFreak",
+    "threadsFate"
+  ],
+  "daysPerLoop": 4,
+  "cast": {
+    "popIdol": "keyPerson",
+    "girlStudent": "serialKiller",
+    "nurse": "friend",
+    "shrineMaiden": "person",
+    "officeWorker": "person",
+    "classRep": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "increasingUnease",
+      "culprit": "officeWorker"
+    },
+    {
+      "day": 2,
+      "incident": "increasingUnease",
+      "culprit": "shrineMaiden"
+    },
+    {
+      "day": 4,
+      "incident": "murder",
+      "culprit": "girlStudent"
+    }
+  ],
+  "description": "BTXを初めて回す脚本家に向けた脚本です。惨劇RoopeRの脚本家自体初めてでも問題ありません。\nルールの組み合わせにより安定した勝利手段を持ち、脚本家初心者でも扱いやすくなっています。\nなお、練習用の割りには主人公の勝利は難しいです。",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "1\n\n\n\n    キーパーソンの殺害\n    シリアルキラー、殺人事件\n\n2\n\n\n\n    僕と契約しようよ！\n    キーパーソンへ暗躍カウンターを2つ置く、不安拡大×2",
+  "story": "",
+  "mastermindHints": "それぞれのループにおいて、以下の勝利条件を目指して動くのがおすすめです。\n\n・1ループ目：シリアルキラーによるキーパーソン殺害\n・2ループ目：不安拡大によってキーパーソンへ暗躍+2\n・3ループ目：2ループ目と同様\n・4ループ目：暗躍+2を通すかシリアルキラーの殺人事件\n\nまず1ループ目はシリアルキラーでキーパーソンを殺害し、初日で終わらせてしまいます。万が一初日で終わらなかった場合、サラリーマンの友好能力を使用されないように友好禁止を張り続けて下さい。\n\n2ループ目は因果の糸により、サラリーマンに不安+2されて始まる事でしょう。そうなれば2つの不安拡大を確実に起こし、アイドルへ暗躍カウンターを2つ乗せて勝利できます。\n\nサラリーマンの不安拡大が起こせない場合、行動カードの読み合いになります。\nアイドルには毎日カードをセットして下さい。置くカードは移動か暗躍がおすすめです。それと並行して巫女と女子学生に不安を積み、事件発生を狙います。アイドルに暗躍+2さえ通せれば勝利できるので、頑張って読み合いに打ち勝って下さい。\n\n最後の戦いではフレンドを隠します。一応巫女で割られますが、不安のやり取りなどで忙しいため、あまり警戒しなくても良いでしょう。それよりもシリアルキ ラーの方が要注意です。フレンド候補はナースの他に巫女、委員長なので、この2人がフレンドでないとバレただけでアウトです。主人公がシリアルキラーを活 用しだしたら警戒して下さい。\n\n\n\n置き方テンプレ\n\n\n\n1ループ目 \n\n初日\n\n    委員長\n    「移動縦」\n\n    アイドル\n    「移動横」\n\n    神社\n    「暗躍+1」\n\n    \n因果の糸でサラリーマンに不安+2されたら\n\n\n\n    \n\n初日\n\n    サラリーマン\n    「不安+1」\n\n    アイドル\n    「移動横」 \t\n    \n\n2日\n\n    巫女\n    「不安+1」 \n\n    \n最終ループ\n\n\n\n    \n\n初日\n\n    巫女\n    「不安+1」\n\n    女子学生\n    「不安+1」\n\n    アイドル\n    「移動横」\n    \n\n2日\n\n    巫女\n    「不安+1」\n\n    女子学生\n    「不安+1」 \t"
+},
+{
+  "title": "妹★無双 (★Unrivaled Little Sister★)",
+  "creator": "KM(キャクホンカミナライ)",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 6
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "changeOfFuture"
+  ],
+  "subPlots": [
+    "paranoiaVirus",
+    "unknownFactor"
+  ],
+  "daysPerLoop": 6,
+  "cast": {
+    "henchman": "cultist",
+    "littleSister": "timeTraveler",
+    "ai": "conspiracyTheorist",
+    "officeWorker": "factor",
+    "informer": "person",
+    "journalist": "person",
+    "sectFounder": "person",
+    "copycat": "person",
+    "metaworldDenizen": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "murder",
+      "culprit": "journalist"
+    },
+    {
+      "day": 2,
+      "incident": "increasingUnease",
+      "culprit": "copycat"
+    },
+    {
+      "day": 4,
+      "incident": "butterflyEffect",
+      "culprit": "ai"
+    },
+    {
+      "day": 5,
+      "incident": "foulEvil",
+      "culprit": "henchman"
+    },
+    {
+      "day": 6,
+      "incident": "spreading",
+      "culprit": "sectFounder"
+    }
+  ],
+  "description": "本脚本は、キャラクターの中でも比較的新しい、珍しいキャラクターを豊富に取り揃えてみました。\n彼ら彼女らの友好能力を駆使して、キャクホンカを蹂躙するものとなります。",
+  "specialRules": [
+    "リーダーは、自身の使用済み1L1回のカードを行動フェイズに使用しても良い。使用の際は別のカードをセットし、カードを公開する直前に使用済みのカードとセットしたカードを入れ替えること。 "
+  ],
+  "victory-conditions": "",
+  "story": "やぁ、こんにちは。カナヱはカナヱ。世界を上位から見ているよ。\n「あっ、カナヱさまだー」\n「カナヱさま、ありがたや」\n「カナヱさま、その方は？」\n\nは、はじめまして。【いもうと】のヤツハです。\n「ヤツハさまー！」\n「ヤツハさまはじめましてー！」\n「ヤツハさまはどんな方なのですかー！」\nやいのやいの・・・\n\n\nうん、この様子なら大丈夫そうだね。カナヱの出番はここまでだ。\n「あ、あれぇ？？カナヱさまー！！？？」",
+  "mastermindHints": "AIの蝶の羽ばたきを起こすことは非常に容易なため、ループ突破は防ぎやすい構造です。\n一方で役職者の数は少なく、直接役職を割る手段があるため、いかに役職バレを防ぐかが\n課題となってきます。\n役職の候補を増やすため、CSを組むことも大事です。殺人計画以外のCSは組みやすい\n構成になっているため、可能なら複数の要素を満たしに行くことが望ましいです。\n2日目の不安拡大は積極的に起こしましょう。自前の不安＋1と、AIの能力で、\nコピーキャットが移動されない限りはほぼ起こせます。暗躍カウンターを上位存在か妹に\n置いて、僕と契約しようよ！の布石とできます。5日目の邪気の汚染も、手先の初期配置\nが神社ならば、封印されしモノと巨大時限爆弾2つのCSとなります。（もちろん封印だけ\nでも有効ですが）\n一方で、手先を都市スタートとする択もあり、この場合はマスコミの殺人事件を使って\nサラリーマンを1DayKillすることが目的となります。こちらの択はサラリーマンが友好を\n使用した時点でファクターだと自白するに等しいので、どうしてもループを稼ぎたいか、\n何も知らない最初のうちに撃って、残りのループの手先はCSに全力を注ぐかのどちらか\nとなるでしょう。\n最後の戦いに向けて、極力ルールYを絞らせないことと、コピーキャットでパーソンを\n全て抜かれないよう注意してください。時には自分からシリアルキラーを作ることも\n必要となります。 "
+},
+{
+  "title": "蔓延する不安と信頼  (Spreading Paranoia and Trust)",
+  "creator": "ペンスキー",
+  "difficultySets": [
+    {
+      "numberOfLoops": 6,
+      "difficulty": 6
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "changeOfFuture"
+  ],
+  "subPlots": [
+    "threadsFate",
+    "unknownFactor"
+  ],
+  "daysPerLoop": 1,
+  "cast": {
+    "patient": "cultist",
+    "sacredTree": "timeTraveler",
+    "ai": "factor",
+    "alien": "person",
+    "journalist": "person",
+    "informer": "person",
+    "officeWorker": "person",
+    "richStudent": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "hospitalIncident",
+      "culprit": "officeWorker"
+    }
+  ],
+  "description": "奇妙な特殊ルールを携えた1日脚本です。\n因果の糸との相互作用により、爆発的に不安と友好が拡大していきます。\n1日脚本とは思えないような、ダイナミックなゲームをお楽しみ下さい。 ",
+  "specialRules": [
+    "脚本家は友好禁止と不安-1を使用できない。\n不安カウンターは友好カウンターとしても扱う。"
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "不安カウンターを置いたキャラは次ループ以降、特殊ルールと因果の糸によってループ開始時に不安+2され続けます。\n\n毎ループ必ず、サラリーマン→不安+1、病院→暗躍+2を積んで下さい。それによって、2ループ目以降は確実に病院の事件を起こせます。\n入院患者がカルティストなので、暗躍+2を強引に通して主人公の死亡を狙ってください。\n\n1ループ目だけは事件を起こせませんが、そこはタイムトラベラーでなんとかします。\nサラリーマンへ不安-1を合わせられると脚本崩壊の危険があるため、神社やお嬢様にカードを置いてサラリーマンから注意をそらしましょう。\n\n主人公は最後の戦いでしか勝てませんが、勝利の鍵を握るのは異世界人と情報屋です。\n\n異世界人はタイムトラベラーを割る役割があります。放っておくと殺害能力をすぐ使われるため、常に神社から移動させるようにしましょう。\n\nタイムトラベラーが割れている状況なら、情報屋の友好能力によって最後の情報が手に入ります。すなわち、AIの役職とその他の全員がパーソンである事が判明します。\nここまで来れば、最後の戦いでの主人公勝利が確定します。 "
+},
+{
+  "title": "妹様におまかせ！(Leave it to Lil' Sis!)",
+  "creator": "れう",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 6
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "giantTimeBomb"
+  ],
+  "subPlots": [
+    "threadsFate",
+    "circleFriends"
+  ],
+  "daysPerLoop": 7,
+  "cast": {
+    "henchman": "witch",
+    "godlyBeing": [
+      "friend",
+      {
+        "enters on loop": 3
+      }
+    ],
+    "littleSister": "friend",
+    "policeOfficer": "conspiracyTheorist",
+    "richStudent": "person",
+    "shrineMaiden": "person",
+    "officeWorker": "person",
+    "forensicSpecialist": "person",
+    "blackCat": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "suicide",
+      "culprit": "shrineMaiden"
+    },
+    {
+      "day": 2,
+      "incident": "murder",
+      "culprit": "policeOfficer"
+    },
+    {
+      "day": 3,
+      "incident": "hospitalIncident",
+      "culprit": "blackCat"
+    },
+    {
+      "day": 4,
+      "incident": "spreading",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 5,
+      "incident": "butterflyEffect",
+      "culprit": "officeWorker"
+    },
+    {
+      "day": 6,
+      "incident": "farawayMurder",
+      "culprit": "forensicSpecialist"
+    },
+    {
+      "day": 7,
+      "incident": "missingPerson",
+      "culprit": "henchman"
+    }
+  ],
+  "description": "凶悪な事件が多いPPよりの脚本です。\n主人公は妹の力を借りて惨劇を防いでいく脚本です。 ",
+  "specialRules": [
+    "脚本家はあるキャラクターに行動カードをセットできない。\nそれは非公開シートで定められていて各ループで固定である。"
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "脚本家は妹にカードをセットできません。\nそのため、大人の能力は妹経由で撃たれ放題です。\n\n鑑識官の能力は不安の調整や死体の役職当て、\n刑事の能力はフレンドである自分に護衛カウンターを乗せることができ、\nそして手先の能力を使って事件を止めることが出来ればループ抜けすることも出来ます。\n\n脚本家の基本戦術は、手先を神社に配置したうえで病院の事件のブラフを交えながら暗躍2を貯める方法です。\n手先は可変ですので、見破られそうならば初期位置を変えましょう。\nただその場合、最後の戦い用のミスリーダー隠しは慎重に。\n\n基本は手先に不安を積めば勝てますが、シリアルキラーで手先を殺害されたり、妹を利用されて手先の能力を起動されるととてもつらい戦いになります。\n遠隔殺人は場所の暗躍との択を迫れるので強いですが、刑事の護衛カウンターなどで妨害されることもあるので、慎重に。\n\n蝶の羽ばたきはブラフ、CSに使えるほか、次ループ用に事件の犯人に友好を乗せる動きが出来れば強いです。\n\nこれは身内以外で初めて回した時に作った脚本でした。（その時は相談ありの3ループ抜け） "
+},
+{
+  "title": "学園の惨劇 (The School Tragedy)",
+  "creator": "",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 4
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "sealedItem"
+  ],
+  "subPlots": [
+    "circleFriends",
+    "unsettlingRumor"
+  ],
+  "daysPerLoop": 4,
+  "cast": {
+    "doctor": "brain",
+    "popIdol": "cultist",
+    "classRep": "friend",
+    "transferStudent": [
+      "friend",
+      {
+        "enters on day": 3
+      }
+    ],
+    "girlStudent": "conspiracyTheorist",
+    "mysteryBoy": "serialKiller",
+    "shrineMaiden": "person",
+    "officeWorker": "person",
+    "informer": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "increasingUnease",
+      "culprit": "shrineMaiden"
+    },
+    {
+      "day": 2,
+      "incident": "hospitalIncident",
+      "culprit": "classRep"
+    },
+    {
+      "day": 4,
+      "incident": "missingPerson",
+      "culprit": "transferStudent"
+    }
+  ],
+  "description": "初心者〜中級者向けの脚本です。\nルールと事件の犯人が分かるとかなり勝ちやすくなります。 ",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "1ループ目\n脚本家は少女や都市に暗躍を置きながら、神社に暗躍を通す。\n基本的にルールYかフレンドの殺害で終わらせたいが、イレギュラーがシリアルキラーである情報はなるべく隠した方がよい感じです。\n\n2ループ目\nここからは事件やシリアルキラーにも頼っていきます。\n事件の犯人は不安-1を使われるとほぼ防がれます。女子学生の能力はミスリーダーの能力と相殺されます。\n不安拡大は決まれば病院と神社の暗躍両置き＋病院の事件でほぼ勝確ですがミスリーダーが必須です。\n主人公は女子学生に友好2を載せれば確定で止められます。(脚本家が不安拡大を起こすためには巫女不安＋1、女子学生上下移動or移動左右読み移動斜めは確定なので友好禁止が置かれない)\nミスリーダーバレて犯人が割れると事件がほぼ確実に止められますし、最後の戦いでの勝率が下がるので気を付けてください。\n医者の能力は使用させるかどうかは、主人公がどれくらい情報を取得しているかによります。（基本的に隠した方がいいですが）\nBTXはルールXから追加される友好無視の役職がファクターのみのため\n　・アイドルが友好無視だと割れている\n　・都市に暗躍を2個乗せてループを終了している\nこの場合、巨大時限爆弾Xの存在が匂わせられるため、医者は使わない方がいいです。\n一方、都市への暗躍が成功していない場合、カルティストを2択に出来るメリットがあるので拒否した方がいい場合もあります。\nただ、パーソンの中にクロマク隠す方が勝ちやすいので、医者の能力使われたくない時などにでも。\n\n3ループ目\n転校生の行方不明や不穏な噂も使って勝ちに行きましょう。\n逆に言うとここまでは不穏な噂は使わないようにしておくべきです。\n神社に暗躍1、病院に暗躍2を置くように前のループから匂わせておくと、不穏な噂での勝利がきれいに決まります。\n巫女の友好能力にはお気をつけて。\n\n4ループ目\nほとんどの役職が割られているかと思いますが、ミスリーダーとクロマクの位置は隠すように頑張りましょう。\n基本的に主人公が最適解を出すと勝てないので、最後はシリアルキラーの移動事故やクロマクカルティストの能力発動を狙いましょう。\n\n主人公は下記で勝てます。\n暗躍禁止を神社に鉄板張りし、委員長、転校生に不安-1を使用し、ミスリーダーと合流しない（あるいはしても問題ないように友好2をおいておく）\nまた、クロマクやカルティストの移動を妨害する\nシリアルキラーでフレンドを殺害されるのを妨害する "
+},
+{
+  "title": "脚本ツクール (Script Maker)",
+  "creator": "Lapras-hst@パーソン",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 0
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "sealedItem"
+  ],
+  "subPlots": [
+    "circleFriends",
+    "paranoiaVirus"
+  ],
+  "daysPerLoop": 5,
+  "cast": {
+    "doctor": "brain",
+    "ai": "cultist",
+    "patient": "friend",
+    "shrineMaiden": "friend",
+    "girlStudent": "conspiracyTheorist",
+    "mysteryBoy": "lovedOne",
+    "policeOfficer": "person",
+    "informer": "person",
+    "richStudent": "person"
+  },
+  "incidents": [
+    {
+      "day": 2,
+      "incident": "murder",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 3,
+      "incident": "murder",
+      "culprit": "patient"
+    },
+    {
+      "day": 4,
+      "incident": "murder",
+      "culprit": "shrineMaiden"
+    },
+    {
+      "day": 5,
+      "incident": "murder",
+      "culprit": "ai"
+    }
+  ],
+  "description": "Note: The Incidents are listed as \"Murder\" due to technical limitations, but they are all actually \"???.\"\n\n脚本を作ったことがない主人公の方に、その場で脚本作成の一部を手伝ってもらう、という超変則脚本です。\n脚本家にとっては、究極のアドリブ力が求められる難易度★８です。\nどの事件が選ばれても戦える要素を散りばめました。最後の戦いを目指して、頑張って下さい。 ",
+  "specialRules": [
+    "毎ループの開始時に、リーダーは２～５日目のそれぞれの事件の事件名※を宣言する。\nそのループ中、事件の効果は宣言したものとなり、脚本家はルール上可能な範囲で効果を解決する。\n※登録の関係で、公開シート上では暫定的に殺人事件と記載しています "
+  ],
+  "victory-conditions": "基本方針として、神社への暗躍により勝利を目指しますが、同時にどのようにＣＳを用意し、どのように役職を１つ隠すかが、脚本家の腕が問われる重要課題になります。\n    ルールＹのＣＳは僕と契約しようよ！、巨大時限爆弾Ｘの存在にほぼ限られますが、ルールＸや役職の隠し方を上手く調整して下さい。\n\n    事件に関する活用方法は主に以下の通りです。\n    ・殺人事件：フレンドの殺害\n    ・不安拡大：メインラバーズの起動、シリアルキラー作成\n    ・邪気の汚染：ラッキー！ＣＳに全力を\n    ・自殺：フレンドの殺害\n    ・病院の事件：フレンド、主人公の殺害\n    ・遠隔殺人：フレンドの殺害\n    ・流布：主人公の妨害、医者の友好能力悪用\n    ・蝶の羽ばたき：色々",
+  "story": "「ＢＴＸがお好き？結構。ではますます気になりますよ。さあさどうぞ、ＢＴＸのニューモデルです。快適でしょう？んああー仰らないで。ルールが特殊、でも 普通のＢＴＸなんてシンプルなだけで発展性は低いし、よく外道主人公に読まれるわすぐループ突破されるわ、ろくな事はない。難易度もたっぷりありますよ （脚本家側に）、どんな超人（脚本家）の方でも大丈夫。どうぞ回してみて下さい、いい音でしょう。悲鳴の音だ、馬カが違いますよ」\n「一番気に入ってるのは」\n「何です？」\n「事件ＤＡ」 ",
+  "mastermindHints": ""
+},
+{
+  "title": "自殺日和 (A Perfect Day for Suicide)",
+  "creator": "竹美香",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 4
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "murderPlan"
+  ],
+  "subPlots": [
+    "circleFriends",
+    "loveAffair"
+  ],
+  "daysPerLoop": 4,
+  "cast": {
+    "littleSister": "keyPerson",
+    "policeOfficer": "killer",
+    "servant": "brain",
+    "richStudent": "friend",
+    "youngGirl": "friend",
+    "sacredTree": "conspiracyTheorist",
+    "officeWorker": "lover",
+    "patient": "lovedOne"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "suicide",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 2,
+      "incident": "suicide",
+      "culprit": "patient"
+    },
+    {
+      "day": 3,
+      "incident": "suicide",
+      "culprit": "officeWorker"
+    },
+    {
+      "day": 4,
+      "incident": "suicide",
+      "culprit": "youngGirl"
+    }
+  ],
+  "description": "妹使いたいとの事で、妹を使わないと絶対にフレンドの女の子が死ぬ脚本を作ってみました。\n妹の能力の同一エリア縛りがきつく見えるので従者か刑事の片方と一緒に学校にいればいいように、かつご神木で友好溜めやすいようにと組みました。\nこんな感じかなと即興で作ったので難易度は分かりません！ ",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "女の子に不安を置き続ければ確実に自殺します。刑事、従者は友好無視なので、妹で能力を女の子に使わないと抜けれないです。\n役職当ても妹が使われなければ、キーパーソン、ミスリーダー、キラー、クロマクは分からないので難しいです。\n早めに自殺は発生させてルールX2つを明らかにしてあげる方が良いかも、フレンド、ラバーズ、メインラバーズは早めに公開して殴り合いで抜けるしかないことに気付かせてあげましょう。 "
+},
+{
+  "title": "自殺日和 (A Perfect Day for Suicide)",
+  "creator": "竹美香",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 4
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "murderPlan"
+  ],
+  "subPlots": [
+    "circleFriends",
+    "loveAffair"
+  ],
+  "daysPerLoop": 4,
+  "cast": {
+    "littleSister": "keyPerson",
+    "policeOfficer": "killer",
+    "servant": "brain",
+    "richStudent": "friend",
+    "youngGirl": "friend",
+    "sacredTree": "conspiracyTheorist",
+    "officeWorker": "lover",
+    "patient": "lovedOne"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "suicide",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 2,
+      "incident": "suicide",
+      "culprit": "patient"
+    },
+    {
+      "day": 3,
+      "incident": "suicide",
+      "culprit": "officeWorker"
+    },
+    {
+      "day": 4,
+      "incident": "suicide",
+      "culprit": "youngGirl"
+    }
+  ],
+  "description": "妹使いたいとの事で、妹を使わないと絶対にフレンドの女の子が死ぬ脚本を作ってみました。\n妹の能力の同一エリア縛りがきつく見えるので従者か刑事の片方と一緒に学校にいればいいように、かつご神木で友好溜めやすいようにと組みました。\nこんな感じかなと即興で作ったので難易度は分かりません！ ",
+  "specialRules": [
+    "友好禁止禁止\n(斜め移動禁止入れると更に難易度減少) "
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "女の子に不安を置き続ければ確実に自殺します。刑事、従者は友好無視なので、妹で能力を女の子に使わないと抜けれないです。\n役職当ても妹が使われなければ、キーパーソン、ミスリーダー、キラー、クロマクは分からないので難しいです。\n早めに自殺は発生させてルールX2つを明らかにしてあげる方が良いかも、フレンド、ラバーズ、メインラバーズは早めに公開して殴り合いで抜けるしかないことに気付かせてあげましょう。 "
+},
+{
+  "title": "虚空より愛を込めて (With Love, From the Void)",
+  "creator": "Ryo.Shin.",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 6
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "changeOfFuture"
+  ],
+  "subPlots": [
+    "circleFriends",
+    "unsettlingRumor"
+  ],
+  "daysPerLoop": 3,
+  "cast": {
+    "henchman": "cultist",
+    "blackCat": "timeTraveler",
+    "patient": "friend",
+    "ai": "friend",
+    "informer": "conspiracyTheorist",
+    "doctor": "person",
+    "alien": "person",
+    "classRep": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "spreading",
+      "culprit": "blackCat"
+    },
+    {
+      "day": 2,
+      "incident": "hospitalIncident",
+      "culprit": "henchman"
+    },
+    {
+      "day": 3,
+      "incident": "suicide",
+      "culprit": "ai"
+    }
+  ],
+  "description": "AIを活用したギミック突破型脚本。\n病院の事件をうまく切り抜けることができるかが鍵。難易度はそれなりに高め。\n特殊ルールはバランス調整です。(短編であること、主人公の手を制限してストレスを与えないことを優先した結果です)\n\n難易度を下げる場合、\n・ループ数を追加\n・委員長を取り除く\nを行ってください。 ",
+  "specialRules": [
+    "①脚本家は『友好禁止』『移動縦』を使えない。\n②手先の初期配置は『都市』で固定である。\n③脚本家はあるキャラクターに暗躍C、不安Cを乗せることができない(主人公行動カード、友好能力による場合は可)。\nそのキャラクターは非公開シートで決められ、どのループでも同じである。 "
+  ],
+  "victory-conditions": "",
+  "story": "病弱な天才が作り出した人工知能。自然言語すら自在に扱うそれは、まさにヒトが作り出した意識を持った存在であった。彼は病弱の身に鞭打ち、開発を進めていた。彼とAIはまさに一心同体ともいえる仲間だった。\n\nしかし、それは同時に世界のパワーバランスをも揺るがしかねない技術でもある。その情報を掴んだ某国のスパイは、彼とその造物の存在を消し去ろうと企んで いる。彼の技術は後の時代を大きく変える。世界を狂わせるわけにはいかない。主人公たちはタイムリープし、改変を阻止するために動き出す。\n\nAIにできるのは、ただ人類の平安を祈るのみ。\n\n\nWith Love, from the Void",
+  "mastermindHints": "主人公がギミックに気づかなければ、脚本家はフレンドの入院患者を殺して勝利できます。\n\n病院のギミック\n初日は病院に『暗躍+1』、手先に『不安+1』、異世界人か委員長か神社に『暗躍+2』(ルールYのブラフ)を置きます。手先が病院の事件の犯人であり、 情報屋がミスリーダーなので脚本家は確定で病院の事件が起こせます。通常入院患者が動けるようになるのは3日目なので、不穏な噂で病院に暗躍を乗せればサ クッと入院患者を殺して勝利できます。\n\n主人公が病院の事件を切り抜けるには、AIの力が必要になります。AIを(能力or事件で)自殺させ、友好1を乗せた後のループで、AIに『友好+2』、 医者に『友好+1』を使い、流布を発生させAIの友好カウンターを医者に乗せます。そうすれば、医者の友好3能力を初日に使うことができ、入院患者が脱出 できます。(手先の能力は友好無視なので使えません)\n\n情報屋で「不穏な噂」を宣言すれば「友情サークル」が返ってくるため、二人目のフレンドに気づきます。\n\n病院の事件を切り抜けた後はタイムトラベラー探しです。とはいえ、こちらはメインではないので異世界人で比較的簡単に割れるようにしています。フレンド探し(という名の殺戮)の途中でも見つかります。\n\n最後の戦い\n病院のギミックをクリアしたかに依存します。AIのフレンドが割れていない場合ミスリーダーと区別がつかないうえ、ルールYが確定できないため問題ありま せん。主人公が病院のギミックを解いた場合、脚本家はタイムトラベラーをさらす他勝つ方法がありません。候補は3人(異世界人、黒猫、委員長)の上、病院 の事件や異世界人で殺したり、3日目に友好を積む余裕があるので、わりとすぐバレます。\n\nちなみにAIとタイトルの「愛」はシャレです。ふへへ。"
+},
+{
+  "title": "豆腐メンタルをみんなでいじめる会 (Everyone Gathers to Bully the Tofu-Minded)",
+  "creator": "Lapras-hst@パーソン",
+  "difficultySets": [
+    {
+      "numberOfLoops": 5,
+      "difficulty": 4
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "murderPlan"
+  ],
+  "subPlots": [
+    "unknownFactor",
+    "paranoiaVirus"
+  ],
+  "daysPerLoop": 5,
+  "cast": {
+    "richStudent": "keyPerson",
+    "shrineMaiden": "killer",
+    "girlStudent": "brain",
+    "boyStudent": "factor",
+    "teacher": "conspiracyTheorist",
+    "mysteryBoy": "serialKiller",
+    "classRep": "person",
+    "popIdol": "person",
+    "transferStudent": [
+      "person",
+      {
+        "enters on day": 3
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "increasingUnease",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 3,
+      "incident": "missingPerson",
+      "culprit": "popIdol"
+    },
+    {
+      "day": 5,
+      "incident": "farawayMurder",
+      "culprit": "classRep"
+    }
+  ],
+  "description": "女子学生たちがよってたかってお嬢様を殺しにくる、学生だらけのの脚本です。\n主人公が慣れていない場合は、相談可にしましょう。逆に熟練者が相手ならば、４ループで良いです。\n\nＰＰがかなり強めで、前半はワンターンキルが何回も狙えます。上手く決まれば、３連続も可能です。\n後半はヒリヒリした読み合いバトルが続きます。キラーだけでなく、妄想拡大ウイルスの効果をフル活用して、ひたすらお嬢様をいじめましょう。\n\n余談ですが、ルールＹを「僕と契約しようよ！」に変えたり、ルールＸを他のいずれかに変えたりしても、だいたい成立します。\nルール・役職をお好きにシャッフルして遊んでみてください。シリアルキラー入りを推奨します。 ",
+  "specialRules": [
+    "脚本家の「友好禁止」カードの効果は無効化される。 "
+  ],
+  "victory-conditions": "",
+  "story": "ちょっとお高く止まったあの子が、淑女協定を破ってクラスで人気の男子と個人的に絡んでしまったものだから、さあ大変。\nクラス中の女子の恨みを買ってしまった！\n彼は味方でいてくれる・・・よね？\n\nドジっ子先生と一匹狼、何も知らない転校生も加わって、クラス全体を巻き込んだ大騒動が始まる！ ",
+  "mastermindHints": "ひたすら、お嬢様の殺害を目指しましょう。\n\n１ループ目は妨害がなければ、キラーの能力でお嬢様を殺害して勝利できます。\n暗躍が止められたら、ミスリーダーの能力でお嬢様に不安Ｃを置いて事件を発生させ、クロマクの能力と合わせてお嬢様に暗躍Ｃを２つ載せ、キラーの能力を使用して殺害して下さい。\n\n２ループ目は、主人公が暗躍を止めにくる素直な方の場合は、１ループ目と同じ伏せでも、前述のクロマク・ミスリーダーのコンボを使用できます。\n\nなお、２～３ループ目に、主人公が学校を危険と判断し、お嬢様を動かす場合があります。この時、縦移動してくる巫女を怪しんで、横に動かす傾向がありま す。そこで、お嬢様に不安＋１、アイドルに不安＋１と手を変えることで、事件発生→不安Ｃ２つをアイドルへ→アイドルがシリアルキラー化してお嬢様を殺 害、と更なるワンターンキルを狙うことができます。\n\n１日目にお嬢様が殺害できない場合は、以下の行動をして下さい。\n・アイドル・委員長に不安を載せて、事件発生やシリアルキラー化させる。\n・ミスリーダーの能力は毎日使用する\n・お嬢様に暗躍を２つ載せる\n・巫女に暗躍を４つ載せる（お嬢様への暗躍禁止が置かれ続ける場合）\n・各キャラを移動させて、お嬢様とキラーやシリアルキラーが二人きりになるようにする\n\n３日目の事件は、アイドルがシリアルキラー化していると、奇襲ができます。\nイレギュラーがシリアルキラーと判明すると、主人公が積極的に使ってきますので、注意しましょう。\n\n最後の戦いはファクターを隠します。そのため、男子学生の友好能力は無視しないようにしてください。\n\n１日目の動き\n１ループ目\n巫女：↓\nお嬢様：暗躍＋２\nアイドル：→\n\n２ループ目\n巫女：↓\nお嬢様：暗躍＋２または不安＋１\nアイドル：→\n\n２～３ループ目（お嬢様左移動読み）\n巫女：↓または暗躍＋２\nお嬢様：不安＋１\nアイドル：不安＋１\n\n３ループ目以降\n巫女：↓または暗躍＋２、＋１\nお嬢様：暗躍＋２、＋１または不安＋１\nアイドル：不安＋１ "
+},
+{
+  "title": "逃げ惑うタイムトラベラー (Time Traveler on the Run)",
+  "creator": "ペンスキー",
+  "difficultySets": [
+    {
+      "numberOfLoops": 4,
+      "difficulty": 2
+    }
+  ],
+  "tragedySet": "basicTragedy",
+  "mainPlot": [
+    "changeOfFuture"
+  ],
+  "subPlots": [
+    "unknownFactor",
+    "unsettlingRumor"
+  ],
+  "daysPerLoop": 4,
+  "cast": {
+    "patient": "cultist",
+    "informer": "timeTraveler",
+    "girlStudent": "factor",
+    "richStudent": "conspiracyTheorist",
+    "doctor": "person",
+    "alien": "person",
+    "shrineMaiden": "person",
+    "officeWorker": "person",
+    "policeOfficer": "person"
+  },
+  "incidents": [
+    {
+      "day": 1,
+      "incident": "hospitalIncident",
+      "culprit": "girlStudent"
+    },
+    {
+      "day": 3,
+      "incident": "spreading",
+      "culprit": "richStudent"
+    },
+    {
+      "day": 4,
+      "incident": "foulEvil",
+      "culprit": "shrineMaiden"
+    }
+  ],
+  "description": "BTX未経験か、または１回くらいしか遊んだことのない初心者に向けた脚本です。\n脚本家としても回しやすい脚本になっているため、脚本家初心者の方にもおすすめな脚本です。 ",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "",
+  "story": "",
+  "mastermindHints": "まず、１ループ目は病院の事件で勝利します。病院に暗躍＋２、学校に暗躍＋１、女子学生に不安＋１を置きましょう。\n病院に暗躍禁止が置かれたらカルティストで無効化します。そして脚本家能力フェイズに不穏な噂で学校へ暗躍＋１して、ファクターにミスリーダー能力を与え ます。そのままミスリーダー能力を使って女子学生へ不安＋１、さらに本来のミスリーダーも能力を使用して女子学生へ不安を乗せ、病院の事件を起こしてルー プを終了させます。\n大量の能力を使用し、主人公に情報の洪水を叩きつける形になりますが、一つ一つ情報を整理していくとルールXが２つとも確定することがわかります。\n直後の時の狭間では十分に時間を取り、ルールXが両方とも確定していることを主人公に気づかせるようにしてください。そうすることで情報屋へ友好が乗せられることを回避できます。\n\n病院の事件がなければタイムトラベラーでしか勝てない脚本なので、ここでルールXを明かして「情報屋に友好乗せてもムダ」と思わせることは重要です。\n\n2ループ目は、邪気の汚染を狙います。起こしても勝敗には影響しませんが、そう動く事でルールYを封印されしものに見せかけ、主人公を誘導できます。\n2ループ目からタイムトラベラー探しをされたら脚本家としては非常に厳しいので、この誘導も必要な時間稼ぎです。 "
+},
+    {
       "title": "Was it Just the Wind?",
       "creator": "Tuxian",
       "difficultySets": [
