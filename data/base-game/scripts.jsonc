@@ -1668,7 +1668,7 @@
       ],
       "description": "This is a very unreasonable script. Although six loops seems long at first glance, the time given to the protagonist is shorter than expected.\nThe final battle is a game of luck, so it is recommended to escape the loop, but you will be required to understand the entire script and place your cards perfectly. ",
       "story": "",
-      "mastermindHints": "Up until the third loop, the scriptwriter's means of victory are strictly defined. By following this, you can make the protagonist feel despair with each loop.\n\n-1st loop: Murder of :friend: by :serialKiller:\n\n-2nd loop: :suicide: of :keyPerson:\n\n-3rd loop onwards: PP1 with :farawayMurder: The 2nd loop is preparation time. By following the template, you can set up a vicious PP from the 3rd loop onwards. However, if you do not place a :goodwill: counter on the :officeWorker: in the 1st loop, the script will fall apart. Keep placing Forbid :goodwill: on the :boss: and encourage the :officeWorker: to use his ability. The 3rd loop is where the real action begins. From this point onwards, keep placing Forbid :goodwill: on the :ai: and :paranoia:+1 on the :journalist: every day to cause :increasingUnease:. Put that :paranoia: on :transferStudent: and :intrigue: on the :officeWorker:. By following the template the next day, you can be sure to win with :farawayMurder:. Note that you don't have to place :intrigue: on the :journalist: and :officeWorker: on the 4th day. If the :journalist: doesn't have :paranoia:-1, prepare :intrigue: the next day. By doing so, you can place Forbid :goodwill: on the :ai: on the 4th day as well. Aim for :spreading: to occur on the 4th loop. If :spreading: occurs after the 4th loop, you can prevent the :officeWorker: from padding their :goodwill: and losing the chance to escape the loop. Hide the :killer: in the final battle. Do not refuse the :boss:'s :goodwill: ability.\n\nThe way for the protagonist to win is to cause :spreading: with the :ai: and remove the :goodwill: counter from the :journalist:. The steps to do this are as follows.\n\nFirst, place :paranoia:-1 on the :journalist: until the 2nd day, and place 3 :goodwill: on :richStudent:.\n\nThen, on the third day, make sure :richStudent: is not in the Shrine, and if there is a card on :transferStudent:, put :paranoia:-1 on it. During this time, the :officeWorker: must not have :intrigue:, so keep Forbid :intrigue: on it until the third day. However, if the :officeWorker: is free, try :goodwill:+1 on the :ai:\n\nThen the writer must follow the template for the fourth day, and the :ai: and :richStudent: will be free, so the :ai:'s :goodwill: ability can be used all at once.\n\nNote that you can take care of :spreading: by putting Forbid :intrigue: on the :journalist: here. Thus, by removing the :goodwill: counter from the :journalist: here, you can almost certainly seal :increasingUnease: in the next loop.\n\nIf you get this far, the protagonist's victory is almost certain.\n\nFirst Loop\n\nDay 1\n\n\n    :boss:\n    「Forbid :goodwill:」\n    Shrine\n    「:intrigue:+1」\n\nDay 2\n\n\n    :officeWorker:\n    「Vertical Movement」\n    :boss:\n    「Horizontal Movement」\n    \nDay 3\n\n\n    :boss:\n    「Forbid :goodwill:」\n\nDay 4\n\n\n    :boss:\n    「Forbid :goodwill:」\n\nDay 5\n\n\n    :boss:\n    「Forbid :goodwill:」\n    \n2nd Loop\n\nDay 1\n\n\n    :officeWorker:\n    「:paranoia:+1」\n    :ai:\n    「Diagonal Movement」\n    Shrine\n    「:intrigue:+2」\n    \n3rd Loop\n\nDay 1\n\n\n    :ai:\n    「Forbid :goodwill:」\n    :journalist:\n    「:paranoia:+1」\n    :officeWorker:\n    「:intrigue:+1」\n    \nDay 2\n\n\n    :ai:\n    「Forbid :goodwill:」\n    :journalist:\n    「:paranoia:+1」\n    :richStudent:\n    「Vertical Movement」\n\nDay 3\n\n\n    :ai:\n    「Forbid :goodwill:」\n    :journalist:\n    「:paranoia:+1」\n    :transferStudent:\n    「Vertical Movement」\n\nDay 4\n\n\n    :transferStudent:\n    「:paranoia:+1」\n    :officeWorker:\n    「:intrigue:+1」\n    :journalist:\n    「:intrigue:+2」\n\n4th Loop (if the breakthrough is discovered)\n\nDay 1\n\n\n    :ai:\n    「Forbid :goodwill:」\n    :journalist:\n    「:paranoia:+1」\n    Rich :man:'s Daughter\n    「:paranoia:+1」\n\nDay 2\n\n\n    :ai:\n    「Forbid :goodwill:」\n    :journalist:\n    「:paranoia:+1」\n    :richStudent:\n    「Vertical Movement」\n\nDay 3\n\n\n    :ai:\n    「Forbid :goodwill:」\n    :journalist:\n    「:paranoia:+1」\n    :transferStudent:\n    「:paranoia:+1」\nDay 4\n\n\n    :transferStudent:\n    「:paranoia:+1」\n    :officeWorker:\n    「:intrigue:+1」\n    :journalist:\n    「:intrigue:+2」\n\n\n\nProtagonists' winning strategy (not Mastermind's strategy)\n\nDay 1\n\n\n    :journalist:\n    「:paranoia:-1」\n    :richStudent:\n    「:goodwill:+2」\n    :officeWorker:\n    「Forbid :intrigue:」\n\nDay 2\n\n\n    :journalist:\n    「:paranoia:-1」\n    :richStudent:\n    「:goodwill:+1」\n\nDay 3\n\n\n    :transferStudent:\n    「:paranoia:-1」\n    :classRep:\n    「:goodwill:+2」\n    :richStudent:\n    「Move to City」\n\nDay 4\n\n\n    :journalist:\n    「:intrigue:Forbid」\n    :ai:\n    「:goodwill:+2」\n    :richStudent:\n    「Move to City」"
+      "mastermindHints": "Up until the third loop, the scriptwriter's means of victory are strictly defined. By following this, you can make the protagonist feel despair with each loop.\n\n-1st loop: :murder: of :friend: by :serialKiller:\n\n-2nd loop: :suicide: of :keyPerson:\n\n-3rd loop onwards: PP1 with :farawayMurder: The 2nd loop is preparation time. By following the template, you can set up a vicious PP from the 3rd loop onwards. However, if you do not place a :goodwill: counter on the :officeWorker: in the 1st loop, the script will fall apart. Keep placing Forbid :goodwill: on the :boss: and encourage the :officeWorker: to use his ability. The 3rd loop is where the real action begins. From this point onwards, keep placing Forbid :goodwill: on the :ai: and :paranoia:+1 on the :journalist: every day to cause :increasingUnease:. Put that :paranoia: on :transferStudent: and :intrigue: on the :officeWorker:. By following the template the next day, you can be sure to win with :farawayMurder:. Note that you don't have to place :intrigue: on the :journalist: and :officeWorker: on the 4th day. If the :journalist: doesn't have :paranoia:-1, prepare :intrigue: the next day. By doing so, you can place Forbid :goodwill: on the :ai: on the 4th day as well. Aim for :spreading: to occur on the 4th loop. If :spreading: occurs after the 4th loop, you can prevent the :officeWorker: from padding their :goodwill: and losing the chance to escape the loop. Hide the :killer: in the final battle. Do not refuse the :boss:'s :goodwill: ability.\n\nThe way for the protagonist to win is to cause :spreading: with the :ai: and remove the :goodwill: counter from the :journalist:. The steps to do this are as follows.\n\nFirst, place :paranoia:-1 on the :journalist: until the 2nd day, and place 3 :goodwill: on :richStudent:.\n\nThen, on the third day, make sure :richStudent: is not in the Shrine, and if there is a card on :transferStudent:, put :paranoia:-1 on it. During this time, the :officeWorker: must not have :intrigue:, so keep Forbid :intrigue: on it until the third day. However, if the :officeWorker: is free, try :goodwill:+1 on the :ai:\n\nThen the writer must follow the template for the fourth day, and the :ai: and :richStudent: will be free, so the :ai:'s :goodwill: ability can be used all at once.\n\nNote that you can take care of :spreading: by putting Forbid :intrigue: on the :journalist: here. Thus, by removing the :goodwill: counter from the :journalist: here, you can almost certainly seal :increasingUnease: in the next loop.\n\nIf you get this far, the protagonist's victory is almost certain.\n\nFirst Loop\n\nDay 1\n\n\n    :boss:\n    「Forbid :goodwill:」\n    Shrine\n    「:intrigue:+1」\n\nDay 2\n\n\n    :officeWorker:\n    「Vertical Movement」\n    :boss:\n    「Horizontal Movement」\n    \nDay 3\n\n\n    :boss:\n    「Forbid :goodwill:」\n\nDay 4\n\n\n    :boss:\n    「Forbid :goodwill:」\n\nDay 5\n\n\n    :boss:\n    「Forbid :goodwill:」\n    \n2nd Loop\n\nDay 1\n\n\n    :officeWorker:\n    「:paranoia:+1」\n    :ai:\n    「Diagonal Movement」\n    Shrine\n    「:intrigue:+2」\n    \n3rd Loop\n\nDay 1\n\n\n    :ai:\n    「Forbid :goodwill:」\n    :journalist:\n    「:paranoia:+1」\n    :officeWorker:\n    「:intrigue:+1」\n    \nDay 2\n\n\n    :ai:\n    「Forbid :goodwill:」\n    :journalist:\n    「:paranoia:+1」\n    :richStudent:\n    「Vertical Movement」\n\nDay 3\n\n\n    :ai:\n    「Forbid :goodwill:」\n    :journalist:\n    「:paranoia:+1」\n    :transferStudent:\n    「Vertical Movement」\n\nDay 4\n\n\n    :transferStudent:\n    「:paranoia:+1」\n    :officeWorker:\n    「:intrigue:+1」\n    :journalist:\n    「:intrigue:+2」\n\n4th Loop (if the breakthrough is discovered)\n\nDay 1\n\n\n    :ai:\n    「Forbid :goodwill:」\n    :journalist:\n    「:paranoia:+1」\n    Rich :man:'s Daughter\n    「:paranoia:+1」\n\nDay 2\n\n\n    :ai:\n    「Forbid :goodwill:」\n    :journalist:\n    「:paranoia:+1」\n    :richStudent:\n    「Vertical Movement」\n\nDay 3\n\n\n    :ai:\n    「Forbid :goodwill:」\n    :journalist:\n    「:paranoia:+1」\n    :transferStudent:\n    「:paranoia:+1」\nDay 4\n\n\n    :transferStudent:\n    「:paranoia:+1」\n    :officeWorker:\n    「:intrigue:+1」\n    :journalist:\n    「:intrigue:+2」\n\n\n\nProtagonists' winning strategy (not Mastermind's strategy)\n\nDay 1\n\n\n    :journalist:\n    「:paranoia:-1」\n    :richStudent:\n    「:goodwill:+2」\n    :officeWorker:\n    「Forbid :intrigue:」\n\nDay 2\n\n\n    :journalist:\n    「:paranoia:-1」\n    :richStudent:\n    「:goodwill:+1」\n\nDay 3\n\n\n    :transferStudent:\n    「:paranoia:-1」\n    :classRep:\n    「:goodwill:+2」\n    :richStudent:\n    「Move to City」\n\nDay 4\n\n\n    :journalist:\n    「:intrigue:Forbid」\n    :ai:\n    「:goodwill:+2」\n    :richStudent:\n    「Move to City」"
     },
     {
       "title": "Trouble in Paradise",
@@ -1801,7 +1801,7 @@
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "The witch might get discovered quite early - the Pop Idol's goodwill ability is a tempting one, so her goodwill refusal will probably be outed in the first loop. Given this, Max (our mastermind) decided to try and win through intrigue on the City in day one, and spread about some intrigue and paranoia elsewhere so it wasn't too obvious.\n\nThe hospital incident is another way for the mastermind to win, especially coupled with increasing unease. But you don't have many ways of getting intrigue out, and no cultist to block you forbid intrigues. The only one you do have is Missing Person, and that's quite one use as the culprit reveals themselves. Once the Godly Being is in play, the players could stack goodwill on them too to get the ability to remove intrigue, and to discover the culprit. So the hospital incident looks quite tough to pull off. On the plus side, the culprit is the serial killer, so she won't get offed. It did trigger with one intrigue in the hospital in loop 2 for us, which isn't great for the mastermind, as it might reveal the Patient as the lover. It killed the patient and the boy student, which was a happy coincidence for Max.\n\nThe Shrine Maiden serial killer is a good secret weapon for loop 2, if you can avoid her being discovered. The Godly Being appears in the shrine in loop 2, so if the protagonists don't move the two apart, you can kill the friend and spend the rest of the loop misleading them.\n\nI'm not sure what the best role to try and hide is for the mastermind. My suspicion is that it's the lover/loved one. You have the option of pulling a win out of the bag on the last day using the suicide on the patient, but it looks like you might have trouble surviving the final guess if you did that. Maybe you can get away with hiding the Witch, but you'd have to be lucky I think."
+      "mastermindHints": "The witch might get discovered quite early - the :popIdol:'s goodwill ability is a tempting one, so her goodwill refusal will probably be outed in the first loop. Given this, Max (our mastermind) decided to try and win through intrigue on the City in day one, and spread about some intrigue and paranoia elsewhere so it wasn't too obvious.\n\nThe hospital incident is another way for the mastermind to win, especially coupled with increasing unease. But you don't have many ways of getting intrigue out, and no cultist to block you forbid intrigues. The only one you do have is :missingPerson:, and that's quite one use as the culprit reveals themselves. Once the :godlyBeing: is in play, the players could stack goodwill on them too to get the ability to remove intrigue, and to discover the culprit. So the hospital incident looks quite tough to pull off. On the plus side, the culprit is the serial killer, so she won't get offed. It did trigger with one intrigue in the hospital in loop 2 for us, which isn't great for the mastermind, as it might reveal the :patient: as the lover. It killed the patient and the boy student, which was a happy coincidence for Max.\n\nThe :shrineMaiden: serial killer is a good secret weapon for loop 2, if you can avoid her being discovered. The :godlyBeing: appears in the shrine in loop 2, so if the protagonists don't move the two apart, you can kill the friend and spend the rest of the loop misleading them.\n\nI'm not sure what the best role to try and hide is for the mastermind. My suspicion is that it's the lover/loved one. You have the option of pulling a win out of the bag on the last day using the suicide on the patient, but it looks like you might have trouble surviving the final guess if you did that. Maybe you can get away with hiding the :witch:, but you'd have to be lucky I think."
     },
     {
       "title": "Unstable Life",
@@ -1970,284 +1970,284 @@
       "mastermindHints": "メインとなる勝利手段はフレンドの殺害です。教師がミスリーダーかつ殺人事件の犯人なので、委員長の殺害を優先して狙いましょう。タイムトラベラーの能力による勝利は極力控えるべきですが、他に勝利手段がないときは仕方ないので使いましょう。\n鑑識官の友好能力は罠です。一度友好を積まれれば、因果の糸と蝶の羽ばたきで大きなプレッシャーをかけられます。蝶の羽ばたきが発生したら、鑑識官自身に友好カウンターを置き、翌ループも同様に狙いましょう。\n自殺はこの脚本のアキレス腱です。主人公が事件を起こす動きをして来た場合、非常に苦しい展開となります。幸い、情報屋の能力が活きる場面はごく限られるため、偶発的に自殺を狙えるチャンスは１回きりでしょう。"
     },
     {
-  "title": "彼はパーソン (He's a Person)",
-  "creator": "ペンスキー",
-  "difficultySets": [
-    {
-      "numberOfLoops": 4,
-      "difficulty": 4
-    }
-  ],
-  "tragedySet": "basicTragedy",
-  "mainPlot": [
-    "signWithMe"
-  ],
-  "subPlots": [
-    "circleFriends",
-    "loveAffair"
-  ],
-  "daysPerLoop": 5,
-  "cast": {
-    "alien": "keyPerson",
-    "ai": "friend",
-    "richStudent": "friend",
-    "teacher": "conspiracyTheorist",
-    "transferStudent": [
-      "lover",
-      {
-        "enters on day": 2
-      }
-    ],
-    "patient": "lovedOne",
-    "godlyBeing": [
-      "person",
-      {
-        "enters on loop": 2
-      }
-    ],
-    "officeWorker": "person"
-  },
-  "incidents": [
-    {
-      "day": 1,
-      "incident": "spreading",
-      "culprit": "ai"
+      "title": "彼はパーソン (He's a Person)",
+      "creator": "ペンスキー",
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 4
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "signWithMe"
+      ],
+      "subPlots": [
+        "circleFriends",
+        "loveAffair"
+      ],
+      "daysPerLoop": 5,
+      "cast": {
+        "alien": "keyPerson",
+        "ai": "friend",
+        "richStudent": "friend",
+        "teacher": "conspiracyTheorist",
+        "transferStudent": [
+          "lover",
+          {
+            "enters on day": 2
+          }
+        ],
+        "patient": "lovedOne",
+        "godlyBeing": [
+          "person",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "officeWorker": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "spreading",
+          "culprit": "ai"
+        },
+        {
+          "day": 2,
+          "incident": "increasingUnease",
+          "culprit": "teacher"
+        },
+        {
+          "day": 3,
+          "incident": "murder",
+          "culprit": "richStudent"
+        },
+        {
+          "day": 4,
+          "incident": "suicide",
+          "culprit": "transferStudent"
+        },
+        {
+          "day": 5,
+          "incident": "butterflyEffect",
+          "culprit": "patient"
+        }
+      ],
+      "description": "惨劇RoopeRを2,3回経験した主人公向けです。ルールXを豪快に活用したロックギミックと、それによるルールYの隠蔽が特徴です。",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "1\n    主人公の殺害\n    メインラバーズの能力\n2\n    フレンドの殺害\n    :ai:の友好能力、異世界人の友好能力、殺人事件\n3\n    僕と契約しようよ！\n    キーパーソンに暗躍カウンターを２つ乗せる",
+      "story": "",
+      "mastermindHints": "ミスリーダーの能力は毎日使って下さい。隠す必要は全くありません。その上で不安拡大と転校生の自殺を発生させるのが必達目標です。逆に3日目の殺人事件は起こしてはいけません。\n不安拡大で暗躍カウンター、転校生の自殺で不安カウンターを入院患者へ供給し、全てのループでメインラバーズによる主人公殺害を狙います。\nここまでルールYの要素を一切必要としていないため、ルールYの特定がゲームの焦点となるでしょう。\n\nなお、全キャラクターの友好能力が使われるとルールYを特定されます。\nこの脚本にはキャラクターが8人しかおらず、5人はルールXの役職、サラリーマンはパーソンなので、ルールYの役職は2人までしか割り振れません。よってサラリーマンがパーソンと割れた時点で、殺人計画は候補から外れます。\n残る4つのルールYのうち、僕と契約しようよ！以外は全てのルールで絶対友好無視が追加されます。しかしこの脚本では友好無視がいないので、そこがバレるとルールY、ひいては役職の配役まで確定してしまいます。\n\nゲーム中でまだ友好能力を使われていないキャラクターが誰なのかは意識し、最低1人はゲーム中通して友好能力を使われないよう警戒しましょう。最有力候補は神格です。\n\n行動カードの置き方のテンプレを記しますが、絶対ではありません。特に終盤に近づくにつれて、テンプレが有効でない局面も出てくるでしょう。\n\n置き方テンプレ\n:ai:に友好が乗っていないなら↓\n初日\n教師\n「不安+1」\t\n異世界人\n「友好禁止」\n\n2日\n教師\n「不安+1」\n転校生\n「不安+1」\n\n3日\n転校生\n「不安+1」\n\n4日\n転校生\n「不安+1」\n\nフレンドの能力で:ai:に友好が乗っていたら↓\n初日\n教師\n「不安+1」\n:ai:\n「暗躍+2」\n\n2日\n教師\n「不安+1」\n転校生\n「不安+1」\n\n3日\n転校生\n「不安+1」\n\n4日\n転校生\n「不安+1」"
     },
     {
-      "day": 2,
-      "incident": "increasingUnease",
-      "culprit": "teacher"
+      "title": "彼女は来た (She's Here)",
+      "creator": "Ryo.Shin.",
+      "difficultySets": [
+        {
+          "numberOfLoops": 3,
+          "difficulty": 2
+        }
+      ],
+      "tragedySet": "firstSteps",
+      "mainPlot": [
+        "murderPlan"
+      ],
+      "subPlots": [
+        "shadowRipper"
+      ],
+      "daysPerLoop": 3,
+      "cast": {
+        "girlStudent": "keyPerson",
+        "policeOfficer": "killer",
+        "henchman": "brain",
+        "alien": "conspiracyTheorist",
+        "transferStudent": [
+          "serialKiller",
+          {
+            "enters on day": 2
+          }
+        ],
+        "officeWorker": "person",
+        "forensicSpecialist": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "increasingUnease",
+          "culprit": "henchman"
+        },
+        {
+          "day": 2,
+          "incident": "farawayMurder",
+          "culprit": "policeOfficer"
+        },
+        {
+          "day": 3,
+          "incident": "missingPerson",
+          "culprit": "transferStudent"
+        }
+      ],
+      "description": "FSを使った短編作品です。\n手先や転校生の挙動が鍵を握ります。\n\n特に難しいギミックやPPは要求しておらず、初心者でも遊びやすい設計にしています。 ",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "",
+      "story": "たまたま刑事の汚職現場を目撃してしまった女子学生。彼は犯罪組織と裏で繋がっているようです。\n刑事は仲間と協力して彼女の口を封じようとその機を伺っています。\n\n警察は助けてくれるかわかりません。\n怯える彼女の元へやってきたのは、一人の転校生でした。\n\n彼女を手助けすると手を差し伸べる転校生ですが…本当に信じてよいのでしょうか？ ",
+      "mastermindHints": "脚本家は以下の勝利条件を持ちます。\n①キーパーソンの殺害(キラー、シリアルキラー、遠隔殺人)\n②主人公の殺害(キラー)\n\n第一ループは、刑事に『移動横』、女子学生に『暗躍+2』、異世界人に『移動縦』を置いてキラーの能力で女子学生を殺害します。暗躍禁止をケアするなら、 手先を学校スタートさせ『不安+1』で不安拡大を起こし、クロマクの能力で2個目の暗躍を女子学生に置いてもいいです。\n\n第二ループも同様に女子学生の殺害を狙いますが、遠隔殺人の存在から女子学生への暗躍は警戒されるはずです。手先を神社スタートさせ、ミスリーダー経由で 不安拡大を発生させる+手先を移動させクロマクの能力で暗躍を女子学生に乗せることを狙いましょう。その後は遠隔殺人かキラーでの殺害を狙います。\n2日目に転校生がやってきます。転校生は友好2で暗躍を減らしてくれるため、主人公は喜んで使ってくれると思います。安心してください。彼女はシリアルキラーです。手先が学校にいなければ喜んで仕事をしてくれるでしょう。\n\n最終ループは厳しい戦いになるでしょうが、脚本家にもいくつか武器があります。\n・手先の都市スタートによるキラーへの暗躍蓄積\n・3日目の転校生の行方不明\nなどを使って、キーパーソンもしくは主人公の殺害を目指してください。手先の配置先は病院以外ならばそれぞれメリットがあります。(神社:不安拡大を起こしやすい、学校:女子学生に暗躍を置ける、都市:刑事に暗躍が置ける)\n\n主人公も\n・異世界人によるクロマク・キラーの始末\n・シリアルキラーによるクロマク・キラーの始末\n・鑑識官の能力による暗躍の操作\n・転校生の能力による暗躍の操作\nなど、使える武器はたくさんあります。主人公は女子学生を神社へ逃してやれば、キラー、シリアルキラーでの殺害は難しくなります。『不安-1』『移動禁止』といった強力なカードをうまく使いましょう。 "
     },
     {
-      "day": 3,
-      "incident": "murder",
-      "culprit": "richStudent"
+      "title": "最低の配役 (A Hideous Cast)",
+      "creator": "ペンスキー",
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 5
+        }
+      ],
+      "tragedySet": "firstSteps",
+      "mainPlot": [
+        "lightAvenger"
+      ],
+      "subPlots": [
+        "hideousScript"
+      ],
+      "daysPerLoop": 1,
+      "cast": {
+        "patient": "brain",
+        "scientist": "conspiracyTheorist",
+        "ai": "curmudgeon",
+        "officeWorker": "friend",
+        "littleSister": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "farawayMurder",
+          "culprit": "scientist"
+        }
+      ],
+      "description": "最低の却本には、役職人数を減らしてもよいという唯一無二の特徴があります。この脚本は、その特徴に最大限フォーカスしたものになります。\nコンパクトかつ難易度もそれほどでもないので、惨劇会の合間の箸休めにどうぞ。 ",
+      "specialRules": [
+        " 主人公は最後の戦いを実施してもよい。 \n\nThe Protagonists may make a Final Guess."
+      ],
+      "victory-conditions": "",
+      "story": "",
+      "mastermindHints": "各ループで必ず学者に不安カウンターを置いて下さい。その上で、毎回以下のテンプレ通りにカードを置いてください。\n\n病院→暗躍+1、サラリーマン→暗躍+2、学者→不安+1\n\n病院の暗躍が通ればルールYで、サラリーマンの暗躍が通れば遠隔殺人で確実に惨劇を起こせます。\n\n主人公はループ抜けができませんが、特殊ルールにより最後の戦いに臨めます。そして、敗北条件とそれに係るパワープレイを逆手に取る事で、全ての役職を明かせるようになっています。\n\nルールYで敗北すればクロマクが、事件で敗北すればフレンドが明かせます。そして学者に不安-1を張ることでミスリーダーも明らかになります。\nそこまで明かせば、残るはマイナスの配置だけです。そしてそれは、妹と:ai:の特性により確定できます。"
     },
     {
-      "day": 4,
-      "incident": "suicide",
-      "culprit": "transferStudent"
+      "title": "邪教蔓延る教場 (Heresy Prevails in the Classroom)",
+      "creator": "Ryo.Shin.",
+      "difficultySets": [
+        {
+          "numberOfLoops": 3,
+          "difficulty": 4
+        }
+      ],
+      "tragedySet": "firstSteps",
+      "mainPlot": [
+        "placeProtect"
+      ],
+      "subPlots": [
+        "hideousScript"
+      ],
+      "daysPerLoop": 3,
+      "cast": {
+        "shrineMaiden": "keyPerson",
+        "patient": "cultist",
+        "doctor": "conspiracyTheorist",
+        "boyStudent": "curmudgeon",
+        "richStudent": "curmudgeon",
+        "soldier": "friend",
+        "alien": "person",
+        "informer": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "suicide",
+          "culprit": "shrineMaiden"
+        },
+        {
+          "day": 2,
+          "incident": "missingPerson",
+          "culprit": "soldier"
+        },
+        {
+          "day": 3,
+          "incident": "hospitalIncident",
+          "culprit": "richStudent"
+        }
+      ],
+      "description": ":firstSteps:を使った短編の中難易度脚本を作りたくて作りました。軍人と異世界人の友好能力の使用が鍵になります。\n\n難易度調整は以下の通り。\n\n難易度を下げる場合\n・ループ数を4ループに変更(⭐︎2相当)\n・3日目の犯人を男子学生に変更(⭐︎3相当)\n・男子学生をパーソンに変更(⭐︎3.5相当)\nを行ってください。\n\n難易度を上げたい場合\n・特殊ルール:主人公は『不安-1』を使用できない(⭐︎6相当)\n\nもしくは相談禁止を追加してください。\n\n適切な推理と動きができる経験者が主人公ならば、3ループで良い勝負になるでしょう。初心者の場合は4ループでのプレイを推奨します。 ",
+      "specialRules": [
+        " 脚本家は『友好禁止』を使えない。 \n\nMastermind can't use \"Forbid :goodwill:.\""
+      ],
+      "victory-conditions": "",
+      "story": "\n    若者の間で邪悪な教えが静かに広まっていた…若者は次々と心を病ませていく。その犯人のカルト教団は学生を利用した病院のテロをも企んでいる。調査を依頼 された軍人は目的を同じくして出会った異世界人や主人公と協力して、陰謀の阻止へ動き出す。\n",
+      "mastermindHints": "脚本家の勝利条件は以下の通りです。\n①キーパーソン(巫女)の死亡\n②フレンド(軍人)の死亡\n③学校に暗躍2\n④主人公の死亡(病院の事件)\n\n第1ループでは巫女の自殺を狙います。医者に「移動横」、巫女に「不安+1」、お嬢様に「不安+1」を配置し、ミスリーダーの能力で巫女に不安を乗せ勝利します。\n\n第2ループは学校に暗躍2を乗せることを狙います。軍人に「不安+1」、病院に「暗躍+2」、学校に「暗躍+1」を配置します。カルティストの能力はガン ガン使っていいです。2日目の軍人の行方不明を合わせれば学校に暗躍が載せられます。学校の暗躍が阻止された場合は病院の事件を起こし勝利しましょう。そ の際はフレンドが割れない方が良いです。(2ループ目にフレンドが死亡した場合、主人公は3ループ目で勝ち確定の手順があります)\n\n最終ループでも病院の事件を確実に起こすよう立ち回りましょう。主人公もカルティストの存在を察して病院への暗躍禁止は無駄と悟るはずです。\n\n巫女の自殺は簡単に阻止されますが、カルティストとお嬢様のおかげで病院の事件での勝利は非常に起こしやすくしてあります。ミスリーダーを駆使して病院の事件の犯人候補をできるだけ増やしてください。\n\n主人公がループを抜ける方法としては、①異世界人の能力でお嬢様を殺害するか、②軍人の能力で不死になることです。ただし、①では病院の事件の犯人の確定 が必要になります。②では病院の事件の犯人を割る必要はありませんが、軍人を病院の事件に巻き込まないために、医者と軍人の能力を使い行方不明を利用する か、フレンドの友好1を利用して1手を確保する必要があります。「軍人使うだけで勝てるじゃんw」などという安易な解答は脚本家としてしっかりお仕置きし ましょう。\n\nなお、力業の解法として、「不安-1」を3日間お嬢様に使い続けても勝利できます。異世界人と「不安-1」で病院の事件の犯人候補を封殺することが、主人公にとって最も手っ取り早い解法でしょう。\n脚本家としては少し腹立たしいですが、FSでサクサク遊べる脚本として作成したのでこれも正解としています。 "
     },
     {
-      "day": 5,
-      "incident": "butterflyEffect",
-      "culprit": "patient"
-    }
-  ],
-  "description": "惨劇RoopeRを2,3回経験した主人公向けです。ルールXを豪快に活用したロックギミックと、それによるルールYの隠蔽が特徴です。",
-  "specialRules": [
-    ""
-  ],
-  "victory-conditions": "1\n    主人公の殺害\n    メインラバーズの能力\n2\n    フレンドの殺害\n    A.I.の友好能力、異世界人の友好能力、殺人事件\n3\n    僕と契約しようよ！\n    キーパーソンに暗躍カウンターを２つ乗せる",
-  "story": "",
-  "mastermindHints": "ミスリーダーの能力は毎日使って下さい。隠す必要は全くありません。その上で不安拡大と転校生の自殺を発生させるのが必達目標です。逆に3日目の殺人事件は起こしてはいけません。\n不安拡大で暗躍カウンター、転校生の自殺で不安カウンターを入院患者へ供給し、全てのループでメインラバーズによる主人公殺害を狙います。\nここまでルールYの要素を一切必要としていないため、ルールYの特定がゲームの焦点となるでしょう。\n\nなお、全キャラクターの友好能力が使われるとルールYを特定されます。\nこの脚本にはキャラクターが8人しかおらず、5人はルールXの役職、サラリーマンはパーソンなので、ルールYの役職は2人までしか割り振れません。よってサラリーマンがパーソンと割れた時点で、殺人計画は候補から外れます。\n残る4つのルールYのうち、僕と契約しようよ！以外は全てのルールで絶対友好無視が追加されます。しかしこの脚本では友好無視がいないので、そこがバレるとルールY、ひいては役職の配役まで確定してしまいます。\n\nゲーム中でまだ友好能力を使われていないキャラクターが誰なのかは意識し、最低1人はゲーム中通して友好能力を使われないよう警戒しましょう。最有力候補は神格です。\n\n行動カードの置き方のテンプレを記しますが、絶対ではありません。特に終盤に近づくにつれて、テンプレが有効でない局面も出てくるでしょう。\n\n置き方テンプレ\nA.I.に友好が乗っていないなら↓\n初日\n教師\n「不安+1」\t\n異世界人\n「友好禁止」\n\n2日\n教師\n「不安+1」\n転校生\n「不安+1」\n\n3日\n転校生\n「不安+1」\n\n4日\n転校生\n「不安+1」\n\nフレンドの能力でA.I.に友好が乗っていたら↓\n初日\n教師\n「不安+1」\nA.I.\n「暗躍+2」\n\n2日\n教師\n「不安+1」\n転校生\n「不安+1」\n\n3日\n転校生\n「不安+1」\n\n4日\n転校生\n「不安+1」"
-},
-    {
-  "title": "彼女は来た (She's Here)",
-  "creator": "Ryo.Shin.",
-  "difficultySets": [
-    {
-      "numberOfLoops": 3,
-      "difficulty": 2
-    }
-  ],
-  "tragedySet": "firstSteps",
-  "mainPlot": [
-    "murderPlan"
-  ],
-  "subPlots": [
-    "shadowRipper"
-  ],
-  "daysPerLoop": 3,
-  "cast": {
-    "girlStudent": "keyPerson",
-    "policeOfficer": "killer",
-    "henchman": "brain",
-    "alien": "conspiracyTheorist",
-    "transferStudent": [
-      "serialKiller",
-      {
-        "enters on day": 2
-      }
-    ],
-    "officeWorker": "person",
-    "forensicSpecialist": "person"
-  },
-  "incidents": [
-    {
-      "day": 1,
-      "incident": "increasingUnease",
-      "culprit": "henchman"
+      "title": "The Academy Tragedy",
+      "creator": "れう",
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 4
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "sealedItem"
+      ],
+      "subPlots": [
+        "circleFriends",
+        "unsettlingRumor"
+      ],
+      "daysPerLoop": 4,
+      "cast": {
+        "doctor": "brain",
+        "popIdol": "cultist",
+        "classRep": "friend",
+        "transferStudent": [
+          "friend",
+          {
+            "enters on day": 3
+          }
+        ],
+        "girlStudent": "conspiracyTheorist",
+        "mysteryBoy": "serialKiller",
+        "shrineMaiden": "person",
+        "officeWorker": "person",
+        "informer": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "increasingUnease",
+          "culprit": "shrineMaiden"
+        },
+        {
+          "day": 2,
+          "incident": "hospitalIncident",
+          "culprit": "classRep"
+        },
+        {
+          "day": 4,
+          "incident": "missingPerson",
+          "culprit": "transferStudent"
+        }
+      ],
+      "description": "This script is for beginner to intermediate players. It becomes much easier to win once you understand the rules and who the culprit is.",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "",
+      "story": "",
+      "mastermindHints": "1st Loop\nPlace :intrigue: on the :girlStudent:, City, and Shrine. Basically you want to end the game via :sealedItem: or by killing the :friend:, but it's best to hide the fact that :mysteryBoy: is a :serialKiller:.\n\n2nd Loop\nFrom hereon, we'll rely on Incidents and :serialKiller:s. The Culprit of a crime can usually be prevent by placing :paranoia: -1. The :girlStudent:'s ability is offset by the :conspiracyTheorist:'s ability.\n\nIf :increasingUnease: is successful, placing :intrigue: on both the Hospital and Shrine, combined with :hospitalIncident:, will almost always guarantee victory, but you'll need the :conspiracyTheorist:.\n\nThe Protagonists can be stopped dead in their tracks by placing :goodwill: +2 on the :girlStudent: (Mastermind needs :shrineMaiden: :paranoia: +1 to cause :increasingUnease:, and the :girlStudent: is guaranteed to move, so you can't use Forbid :goodwill:).\n\nIf the :conspiracyTheorist: is revealed and the Culprit is exposed, the Incident will easily be stopped, along with your chances of winning the Final Guess. Be careful.\n\nDeciding on whether to use the :doctor:'s Ability depends mainly on how much information the Protagonists have acquired, but generally it's better to hide him.\n\nIn :basicTragedy:, the only role from a Sub-Plot that has :goodwill: Refusal is the :factor:.\n　・The :popIdol: is revealed because of :goodwill: Refusal.\n　・The Loop ends with two :intrigue: in the City.\nIn this case, it's better not to use the :doctor: since it might hint at the Main Plot \\\":giantTimeBomb:.\\\" On the other hand, if the :intrigue: onto City isn't successful, Refusal may be a better option here since it gives you two options for :cultist:s.\n\nHowever, it's easier to win if you hide your :brain: amongst the :person:s, so you might as well use it when you don't want the :doctor: to use his :man:datory ability.\n\n3rd Loop\nUse :transferStudent:'s :missingPerson: and :unsettlingRumor: to go for the win. However, you should avoid using :unsettlingRumor: up to this point.\n\nIf you hint at placing :intrigue:+1 on the Shrine and :intrigue:+2 on the Hospital in the previous Loop, you can snatch a victory with :unsettlingRumor:. Just be wary of the :shrineMaiden:'s :goodwill: ability.\n\n4th Loop\nMost of the roles will have been exposed by now, but try to hide the :brain: and the :conspiracyTheorist:. If the Protagonists get the optimal solution at this point, you won't be able to win, so in the end you should aim for a :serialKiller: strike or the :brain:/:cultist:'s mandatory ability.\n\nThe Protagonists can win by:\n\nPlaving Forbid :intrigue: on the Shrine, :paranoia:-1 on :classRep: and :transferStudent:, and not meeting up with the :conspiracyTheorist: (or by using :goodwill:+2 so it doesn't matter if they do).\n\nAnd finally, locking the movement of the :brain: and the :cultist:, and preventing the :serialKiller: from killing your friends."
     },
-    {
-      "day": 2,
-      "incident": "farawayMurder",
-      "culprit": "policeOfficer"
-    },
-    {
-      "day": 3,
-      "incident": "missingPerson",
-      "culprit": "transferStudent"
-    }
-  ],
-  "description": "FSを使った短編作品です。\n手先や転校生の挙動が鍵を握ります。\n\n特に難しいギミックやPPは要求しておらず、初心者でも遊びやすい設計にしています。 ",
-  "specialRules": [
-    ""
-  ],
-  "victory-conditions": "",
-  "story": "たまたま刑事の汚職現場を目撃してしまった女子学生。彼は犯罪組織と裏で繋がっているようです。\n刑事は仲間と協力して彼女の口を封じようとその機を伺っています。\n\n警察は助けてくれるかわかりません。\n怯える彼女の元へやってきたのは、一人の転校生でした。\n\n彼女を手助けすると手を差し伸べる転校生ですが…本当に信じてよいのでしょうか？ ",
-  "mastermindHints": "脚本家は以下の勝利条件を持ちます。\n①キーパーソンの殺害(キラー、シリアルキラー、遠隔殺人)\n②主人公の殺害(キラー)\n\n第一ループは、刑事に『移動横』、女子学生に『暗躍+2』、異世界人に『移動縦』を置いてキラーの能力で女子学生を殺害します。暗躍禁止をケアするなら、 手先を学校スタートさせ『不安+1』で不安拡大を起こし、クロマクの能力で2個目の暗躍を女子学生に置いてもいいです。\n\n第二ループも同様に女子学生の殺害を狙いますが、遠隔殺人の存在から女子学生への暗躍は警戒されるはずです。手先を神社スタートさせ、ミスリーダー経由で 不安拡大を発生させる+手先を移動させクロマクの能力で暗躍を女子学生に乗せることを狙いましょう。その後は遠隔殺人かキラーでの殺害を狙います。\n2日目に転校生がやってきます。転校生は友好2で暗躍を減らしてくれるため、主人公は喜んで使ってくれると思います。安心してください。彼女はシリアルキラーです。手先が学校にいなければ喜んで仕事をしてくれるでしょう。\n\n最終ループは厳しい戦いになるでしょうが、脚本家にもいくつか武器があります。\n・手先の都市スタートによるキラーへの暗躍蓄積\n・3日目の転校生の行方不明\nなどを使って、キーパーソンもしくは主人公の殺害を目指してください。手先の配置先は病院以外ならばそれぞれメリットがあります。(神社:不安拡大を起こしやすい、学校:女子学生に暗躍を置ける、都市:刑事に暗躍が置ける)\n\n主人公も\n・異世界人によるクロマク・キラーの始末\n・シリアルキラーによるクロマク・キラーの始末\n・鑑識官の能力による暗躍の操作\n・転校生の能力による暗躍の操作\nなど、使える武器はたくさんあります。主人公は女子学生を神社へ逃してやれば、キラー、シリアルキラーでの殺害は難しくなります。『不安-1』『移動禁止』といった強力なカードをうまく使いましょう。 "
-},
-    {
-  "title": "最低の配役 (A Hideous Cast)",
-  "creator": "ペンスキー",
-  "difficultySets": [
-    {
-      "numberOfLoops": 4,
-      "difficulty": 5
-    }
-  ],
-  "tragedySet": "firstSteps",
-  "mainPlot": [
-    "lightAvenger"
-  ],
-  "subPlots": [
-    "hideousScript"
-  ],
-  "daysPerLoop": 1,
-  "cast": {
-    "patient": "brain",
-    "scientist": "conspiracyTheorist",
-    "ai": "curmudgeon",
-    "officeWorker": "friend",
-    "littleSister": "person"
-  },
-  "incidents": [
-    {
-      "day": 1,
-      "incident": "farawayMurder",
-      "culprit": "scientist"
-    }
-  ],
-  "description": "最低の却本には、役職人数を減らしてもよいという唯一無二の特徴があります。この脚本は、その特徴に最大限フォーカスしたものになります。\nコンパクトかつ難易度もそれほどでもないので、惨劇会の合間の箸休めにどうぞ。 ",
-  "specialRules": [
-    " 主人公は最後の戦いを実施してもよい。 \n\nThe Protagonists may make a Final Guess."
-  ],
-  "victory-conditions": "",
-  "story": "",
-  "mastermindHints": "各ループで必ず学者に不安カウンターを置いて下さい。その上で、毎回以下のテンプレ通りにカードを置いてください。\n\n病院→暗躍+1、サラリーマン→暗躍+2、学者→不安+1\n\n病院の暗躍が通ればルールYで、サラリーマンの暗躍が通れば遠隔殺人で確実に惨劇を起こせます。\n\n主人公はループ抜けができませんが、特殊ルールにより最後の戦いに臨めます。そして、敗北条件とそれに係るパワープレイを逆手に取る事で、全ての役職を明かせるようになっています。\n\nルールYで敗北すればクロマクが、事件で敗北すればフレンドが明かせます。そして学者に不安-1を張ることでミスリーダーも明らかになります。\nそこまで明かせば、残るはマイナスの配置だけです。そしてそれは、妹とA.I.の特性により確定できます。"
-},
-    {
-  "title": "邪教蔓延る教場 (Heresy Prevails in the Classroom)",
-  "creator": "Ryo.Shin.",
-  "difficultySets": [
-    {
-      "numberOfLoops": 3,
-      "difficulty": 4
-    }
-  ],
-  "tragedySet": "firstSteps",
-  "mainPlot": [
-    "placeProtect"
-  ],
-  "subPlots": [
-    "hideousScript"
-  ],
-  "daysPerLoop": 3,
-  "cast": {
-    "shrineMaiden": "keyPerson",
-    "patient": "cultist",
-    "doctor": "conspiracyTheorist",
-    "boyStudent": "curmudgeon",
-    "richStudent": "curmudgeon",
-    "soldier": "friend",
-    "alien": "person",
-    "informer": "person"
-  },
-  "incidents": [
-    {
-      "day": 1,
-      "incident": "suicide",
-      "culprit": "shrineMaiden"
-    },
-    {
-      "day": 2,
-      "incident": "missingPerson",
-      "culprit": "soldier"
-    },
-    {
-      "day": 3,
-      "incident": "hospitalIncident",
-      "culprit": "richStudent"
-    }
-  ],
-  "description": "First Stepsを使った短編の中難易度脚本を作りたくて作りました。軍人と異世界人の友好能力の使用が鍵になります。\n\n難易度調整は以下の通り。\n\n難易度を下げる場合\n・ループ数を4ループに変更(⭐︎2相当)\n・3日目の犯人を男子学生に変更(⭐︎3相当)\n・男子学生をパーソンに変更(⭐︎3.5相当)\nを行ってください。\n\n難易度を上げたい場合\n・特殊ルール:主人公は『不安-1』を使用できない(⭐︎6相当)\n\nもしくは相談禁止を追加してください。\n\n適切な推理と動きができる経験者が主人公ならば、3ループで良い勝負になるでしょう。初心者の場合は4ループでのプレイを推奨します。 ",
-  "specialRules": [
-    " 脚本家は『友好禁止』を使えない。 \n\nMastermind can't use \"Forbid Goodwill.\""
-  ],
-  "victory-conditions": "",
-  "story": "\n    若者の間で邪悪な教えが静かに広まっていた…若者は次々と心を病ませていく。その犯人のカルト教団は学生を利用した病院のテロをも企んでいる。調査を依頼 された軍人は目的を同じくして出会った異世界人や主人公と協力して、陰謀の阻止へ動き出す。\n",
-  "mastermindHints": "脚本家の勝利条件は以下の通りです。\n①キーパーソン(巫女)の死亡\n②フレンド(軍人)の死亡\n③学校に暗躍2\n④主人公の死亡(病院の事件)\n\n第1ループでは巫女の自殺を狙います。医者に「移動横」、巫女に「不安+1」、お嬢様に「不安+1」を配置し、ミスリーダーの能力で巫女に不安を乗せ勝利します。\n\n第2ループは学校に暗躍2を乗せることを狙います。軍人に「不安+1」、病院に「暗躍+2」、学校に「暗躍+1」を配置します。カルティストの能力はガン ガン使っていいです。2日目の軍人の行方不明を合わせれば学校に暗躍が載せられます。学校の暗躍が阻止された場合は病院の事件を起こし勝利しましょう。そ の際はフレンドが割れない方が良いです。(2ループ目にフレンドが死亡した場合、主人公は3ループ目で勝ち確定の手順があります)\n\n最終ループでも病院の事件を確実に起こすよう立ち回りましょう。主人公もカルティストの存在を察して病院への暗躍禁止は無駄と悟るはずです。\n\n巫女の自殺は簡単に阻止されますが、カルティストとお嬢様のおかげで病院の事件での勝利は非常に起こしやすくしてあります。ミスリーダーを駆使して病院の事件の犯人候補をできるだけ増やしてください。\n\n主人公がループを抜ける方法としては、①異世界人の能力でお嬢様を殺害するか、②軍人の能力で不死になることです。ただし、①では病院の事件の犯人の確定 が必要になります。②では病院の事件の犯人を割る必要はありませんが、軍人を病院の事件に巻き込まないために、医者と軍人の能力を使い行方不明を利用する か、フレンドの友好1を利用して1手を確保する必要があります。「軍人使うだけで勝てるじゃんw」などという安易な解答は脚本家としてしっかりお仕置きし ましょう。\n\nなお、力業の解法として、「不安-1」を3日間お嬢様に使い続けても勝利できます。異世界人と「不安-1」で病院の事件の犯人候補を封殺することが、主人公にとって最も手っ取り早い解法でしょう。\n脚本家としては少し腹立たしいですが、FSでサクサク遊べる脚本として作成したのでこれも正解としています。 "
-},
-    {
-  "title": "The Academy Tragedy",
-  "creator": "れう",
-  "difficultySets": [
-    {
-      "numberOfLoops": 4,
-      "difficulty": 4
-    }
-  ],
-  "tragedySet": "basicTragedy",
-  "mainPlot": [
-    "sealedItem"
-  ],
-  "subPlots": [
-    "circleFriends",
-    "unsettlingRumor"
-  ],
-  "daysPerLoop": 4,
-  "cast": {
-    "doctor": "brain",
-    "popIdol": "cultist",
-    "classRep": "friend",
-    "transferStudent": [
-      "friend",
-      {
-        "enters on day": 3
-      }
-    ],
-    "girlStudent": "conspiracyTheorist",
-    "mysteryBoy": "serialKiller",
-    "shrineMaiden": "person",
-    "officeWorker": "person",
-    "informer": "person"
-  },
-  "incidents": [
-    {
-      "day": 1,
-      "incident": "increasingUnease",
-      "culprit": "shrineMaiden"
-    },
-    {
-      "day": 2,
-      "incident": "hospitalIncident",
-      "culprit": "classRep"
-    },
-    {
-      "day": 4,
-      "incident": "missingPerson",
-      "culprit": "transferStudent"
-    }
-  ],
-  "description": "This script is for beginner to intermediate players. It becomes much easier to win once you understand the rules and who the culprit is.",
-  "specialRules": [
-    ""
-  ],
-  "victory-conditions": "",
-  "story": "",
-  "mastermindHints": "1st Loop\nPlace :intrigue: on the Girl Student, City, and Shrine. Basically you want to end the game via The Sealed Item or by killing the Friend, but it's best to hide the fact that Mystery Boy is a Serial Killer.\n\n2nd Loop\nFrom hereon, we'll rely on Incidents and Serial Killers. The Culprit of a crime can usually be prevent by placing Paranoia -1. The Girl Student's ability is offset by the Conspiracy Theorist's ability.\n\nIf Increasing Unease is successful, placing :intrigue: on both the Hospital and Shrine, combined with Hospital Incident, will almost always guarantee victory, but you'll need the Conspiracy Theorist.\n\nThe Protagonists can be stopped dead in their tracks by placing Goodwill +2 on the Girl Student (Mastermind needs Shrine Maiden Paranoia +1 to cause Increasing Unease, and the Girl Student is guaranteed to move, so you can't use Forbid Goodwill).\n\nIf the Conspiracy Theorist is revealed and the Culprit is exposed, the Incident will easily be stopped, along with your chances of winning the Final Guess. Be careful.\n\nDeciding on whether to use the Doctor's Ability depends mainly on how much information the Protagonists have acquired, but generally it's better to hide him.\n\nIn Basic Tragedy, the only role from a Sub-Plot that has Goodwill Refusal is the Factor.\n　・The Pop Idol is revealed because of Goodwill Refusal.\n　・The Loop ends with two Intrigue in the City.\nIn this case, it's better not to use the Doctor since it might hint at the Main Plot \\\"Giant Time Bomb.\\\" On the other hand, if the Intrigue onto City isn't successful, Refusal may be a better option here since it gives you two options for Cultists.\n\nHowever, it's easier to win if you hide your Brain amongst the Persons, so you might as well use it when you don't want the Doctor to use his Mandatory ability.\n\n3rd Loop\nUse Transfer Student's Missing Person and An Unsettling Rumor to go for the win. However, you should avoid using An Unsettling Rumor up to this point.\n\nIf you hint at placing Intrigue+1 on the Shrine and Intrigue+2 on the Hospital in the previous Loop, you can snatch a victory with An Unsettling Rumor. Just be wary of the Shrine Maiden's Goodwill ability.\n\n4th Loop\nMost of the roles will have been exposed by now, but try to hide the Brain and the Conspiracy Theorist. If the Protagonists get the optimal solution at this point, you won't be able to win, so in the end you should aim for a Serial Killer strike or the Brain/Cultist's mandatory ability.\n\nThe Protagonists can win by:\n\nPlaving Forbid Intrigue on the Shrine, Paranoia-1 on Class Rep and Transfer Student, and not meeting up with the Conspiracy Theorist (or by using Goodwill+2 so it doesn't matter if they do).\n\nAnd finally, locking the movement of the Brain and the Cultist, and preventing the Serial Killer from killing your friends."
-},
     {
       "title": "豆腐殺人事件 (Tofu Murder Case)",
       "creator": "じーちゃん",
@@ -2413,7 +2413,7 @@
           "culprit": "henchman"
         }
       ],
-      "description": "Note: There are two Illusions in this script, but due to limitations, the second Friend is displayed as \"A.I.\" Treat it as an Illusion instead.\n\n特殊ルールについて、「役職は過不足なく配役される」原則は守られた脚本である事を必ず説明して下さい。幻想はイレギュラーやコピーキャットではありません。\n惨劇RoopeR Be Playing Stage Game の登場人物で構成された脚本です。\nループ数も短く、特殊ルールによって１ループ目開始時点からルールXが1つ確定しているため、比較的短い時間で遊ぶ事ができます。",
+      "description": "Note: There are two :illusion:s in this script, but due to limitations, the second :friend: is displayed as \":ai:\" Treat it as an :illusion: instead.\n\n特殊ルールについて、「役職は過不足なく配役される」原則は守られた脚本である事を必ず説明して下さい。幻想はイレギュラーやコピーキャットではありません。\n惨劇RoopeR Be Playing Stage Game の登場人物で構成された脚本です。\nループ数も短く、特殊ルールによって１ループ目開始時点からルールXが1つ確定しているため、比較的短い時間で遊ぶ事ができます。",
       "specialRules": [
         "幻想はフレンドである。"
       ],
@@ -2722,7 +2722,7 @@
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "Henchman starts in Hospital.\n\n手先の初期配置は常に病院にしてください。\n3日目の邪気の汚染を非常に安定して起こせる上、起これば勝利確定です。主人公としてこれを止めるには一手間かかるため、序盤のループで即抜けされる事はありえません。\n\nまず序盤は不安をばらまいて、3つの事件を全て起こすように動きます。\n手先の初期配置を病院にすることで確実に不安拡大を起こせるので、この不安を入院患者に乗せて下さい。\n行方不明はシリアルキラーの発覚を遅らせる役目があります。\n並行して妹へ暗躍を積んで、僕と契約しようよ！のCSも狙います。\n\n妹への暗躍は比較的簡単に止められるので、その時点で契約のCSは崩れます。そうしたら神社へ暗躍+1を置き、主人公の手数を制限しましょう。\n\n最後の戦いでは、ミスリーダーが手先or患者、クロマクとカルティストが医者orA.I.と、2つの2択を迫ります。A.I.の友好能力は常に拒否して下さい。クロマクとカルティストの見分けがつかなくなります。\n\nいずれも明かす手順は存在しますが、複雑なギミックであるため主人公の発想力が問われます。下にそれぞれの手順を示してるので参考にして下さい。\n最大のポイントは「主人公が2人のフレンドを殺害すること」です。\n\nミスリーダーの割り方はご神木の特性がポイントになります。\nご神木と異世界人に友好+1してループが始まれば、初日に異世界人の友好能力を使用できます。それで手先を殺害すれば、脚本家としてはミスリーダーを明かさざるを得ません。\n\nクロマクとカルティストについてですが、異世界人の能力で3日目の犯人である入院患者を殺害することで、カルティストを割る事ができます。\n全力で妹と異世界人に友好を積めば、2日目に妹経由で医者の友好能力を起動し、3日目に異世界人による入院患者の殺害が間に合います。\nそうなると、脚本家はカルティストの能力を使わなければ勝利できません。しかしそれを使った時点で最後の戦いでの主人公勝利が確定するでしょう。 "
+      "mastermindHints": ":henchman: starts in Hospital.\n\n手先の初期配置は常に病院にしてください。\n3日目の邪気の汚染を非常に安定して起こせる上、起これば勝利確定です。主人公としてこれを止めるには一手間かかるため、序盤のループで即抜けされる事はありえません。\n\nまず序盤は不安をばらまいて、3つの事件を全て起こすように動きます。\n手先の初期配置を病院にすることで確実に不安拡大を起こせるので、この不安を入院患者に乗せて下さい。\n行方不明はシリアルキラーの発覚を遅らせる役目があります。\n並行して妹へ暗躍を積んで、僕と契約しようよ！のCSも狙います。\n\n妹への暗躍は比較的簡単に止められるので、その時点で契約のCSは崩れます。そうしたら神社へ暗躍+1を置き、主人公の手数を制限しましょう。\n\n最後の戦いでは、ミスリーダーが手先or患者、クロマクとカルティストが医者or:ai:と、2つの2択を迫ります。:ai:の友好能力は常に拒否して下さい。クロマクとカルティストの見分けがつかなくなります。\n\nいずれも明かす手順は存在しますが、複雑なギミックであるため主人公の発想力が問われます。下にそれぞれの手順を示してるので参考にして下さい。\n最大のポイントは「主人公が2人のフレンドを殺害すること」です。\n\nミスリーダーの割り方はご神木の特性がポイントになります。\nご神木と異世界人に友好+1してループが始まれば、初日に異世界人の友好能力を使用できます。それで手先を殺害すれば、脚本家としてはミスリーダーを明かさざるを得ません。\n\nクロマクとカルティストについてですが、異世界人の能力で3日目の犯人である入院患者を殺害することで、カルティストを割る事ができます。\n全力で妹と異世界人に友好を積めば、2日目に妹経由で医者の友好能力を起動し、3日目に異世界人による入院患者の殺害が間に合います。\nそうなると、脚本家はカルティストの能力を使わなければ勝利できません。しかしそれを使った時点で最後の戦いでの主人公勝利が確定するでしょう。 "
     },
     {
       "title": "友達100人計画  (100-Friends Plan)",
@@ -2854,7 +2854,7 @@
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "1ループ目は転校生を狙いますが、暗躍と殺害のどちらのルートも選択肢となります。暗躍を狙うなら、いずれかのボードへも暗躍を2つ置いてCSとしたいです。黒猫と幻想の特性を最大限活かして主人公を惑わせましょう。\n殺害を目指すなら、1ループ目からシリアルキラーを使っていきましょう。その場合はルールYを殺人計画に見せかけるため、キャラクターへの暗躍は重要度が高まります。\n\n2ループ目以降はルールYとシリアルキラーを活用し、キーパーソンの殺害と暗躍の両面から圧力をかけていきます。フレンドが割れているならA.I.もターゲットになります。3ループ目も、シリアルキラーの活用が必要となるでしょう。\n\n最後の戦いでは、イレギュラーとコピーキャットの役職が鍵を握ります。片方だけでも友好能力を使わせないまま逃げ切れば、最後の戦いは勝ったも同然です。\n大物の能力とA.I.の流布があるため真っ当に隠し切るのは困難ですが、シリアルキラーで殺害しても口封じはできます。情報隠蔽にも勝利条件にも、シリアルキラーは大いに活躍するでしょう。"
+      "mastermindHints": "1ループ目は転校生を狙いますが、暗躍と殺害のどちらのルートも選択肢となります。暗躍を狙うなら、いずれかのボードへも暗躍を2つ置いてCSとしたいです。黒猫と幻想の特性を最大限活かして主人公を惑わせましょう。\n殺害を目指すなら、1ループ目からシリアルキラーを使っていきましょう。その場合はルールYを殺人計画に見せかけるため、キャラクターへの暗躍は重要度が高まります。\n\n2ループ目以降はルールYとシリアルキラーを活用し、キーパーソンの殺害と暗躍の両面から圧力をかけていきます。フレンドが割れているなら:ai:もターゲットになります。3ループ目も、シリアルキラーの活用が必要となるでしょう。\n\n最後の戦いでは、イレギュラーとコピーキャットの役職が鍵を握ります。片方だけでも友好能力を使わせないまま逃げ切れば、最後の戦いは勝ったも同然です。\n大物の能力と:ai:の流布があるため真っ当に隠し切るのは困難ですが、シリアルキラーで殺害しても口封じはできます。情報隠蔽にも勝利条件にも、シリアルキラーは大いに活躍するでしょう。"
     },
     {
       "title": "地を這う羽 (Wings Slithering on the Ground)",
@@ -3290,7 +3290,7 @@
           "culprit": "ai"
         }
       ],
-      "description": "Note: The Incidents are listed as \"Murder\" due to technical limitations, but they are all actually \"???.\"\n\n脚本を作ったことがない主人公の方に、その場で脚本作成の一部を手伝ってもらう、という超変則脚本です。\n脚本家にとっては、究極のアドリブ力が求められる難易度★８です。\nどの事件が選ばれても戦える要素を散りばめました。最後の戦いを目指して、頑張って下さい。 ",
+      "description": "Note: The Incidents are listed as \":murder:\" due to technical limitations, but they are all actually \"???.\"\n\n脚本を作ったことがない主人公の方に、その場で脚本作成の一部を手伝ってもらう、という超変則脚本です。\n脚本家にとっては、究極のアドリブ力が求められる難易度★８です。\nどの事件が選ばれても戦える要素を散りばめました。最後の戦いを目指して、頑張って下さい。 ",
       "specialRules": [
         "毎ループの開始時に、リーダーは２～５日目のそれぞれの事件の事件名※を宣言する。\nそのループ中、事件の効果は宣言したものとなり、脚本家はルール上可能な範囲で効果を解決する。\n※登録の関係で、公開シート上では暫定的に殺人事件と記載しています "
       ],
