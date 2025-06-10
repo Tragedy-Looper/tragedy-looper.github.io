@@ -3657,6 +3657,51 @@
       "mastermindHints": "Loop 1, suicide the factor if you can. \nLoop 2 you can consider killer-killing the illusion. \nLoop 3 maybe faraway murder. \nLoop 4 try to pull stuff off without revealing the last few roles. \n\nhttps://boardgamegeek.com/thread/1548338/tragedy-looper-pbf-35-custom-script-game-over and \nhttps://boardgamegeek.com/thread/1550297/tragedy-looper-pbf-36-custom-script-game-over \nare two logs of this script played where the mastermind wins, so you can study those if you're trying to optimize"
     },
     {
+      "title": "The School Tragedy",
+      "creator": "ペンスキー",
+      "difficultySets": [
+        {
+          "numberOfLoops": 3,
+          "difficulty": 1
+        }
+      ],
+      "tragedySet": "firstSteps",
+      "mainPlot": [
+        "placeProtect"
+      ],
+      "subPlots": [
+        "unsettlingRumor"
+      ],
+      "daysPerLoop": 2,
+      "cast": {
+        "classRep": "keyPerson",
+        "officeWorker": "cultist",
+        "popIdol": "conspiracyTheorist",
+        "shrineMaiden": "person",
+        "richStudent": "person",
+        "boyStudent": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "missingPerson",
+          "culprit": "popIdol"
+        },
+        {
+          "day": 2,
+          "incident": "suicide",
+          "culprit": "classRep"
+        }
+      ],
+      "description": "This is a practice script that focuses on Intrigue to the board, with an emphasis on understanding the effects of Intrigue.",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "",
+      "story": "",
+      "mastermindHints": "On the first day of the first loop, set Paranoia+1 to Pop Idol, Paranoia+1 to Boy Student, and Intrigue+1 to School.\n\nUse Pop Idol's Conspiracy Theorist ability to activate Missing Person, and place 2 Intrigue on the School on the first day to win. Use An Unsettling Rumor too, if necessary.\n\nIf you can successfully get Intrigue on the Locations, place a bluff on the second Day to avoid giving away information. If you can get Intrigue+2 on Locations other than School, that'll be a powerful CS. However, don't use the Cultist's mandatory ability.\n\nIn the second Loop, they'll likely be on guard against Paranoia on the Pop Idol, so instead take advantage of that opportunity to trigger Class Rep's Suicide.\n\nOn Day 1, put Paranoia+1 on the Class Rep, move to Pop Idol, and place Forbid Goodwill on the Boy Student. Use Conspiracy Theorist's mandatory ability as well to hit the Class Rep's Paranoia limit on the first day.\n\nThe third Loop will be a tough game. Which Incident will you trigger, and where will you place your cards to achieve it? You're now in a battle of wits with the Protagonists. Good luck."
+    },
+    {
       "title": "Escort Mission",
       "creator": "davidchaeB",
       "difficultySets": [
