@@ -3,7 +3,5 @@
   // For dev purposes
   "$schema": "../scripts.schema.json",
   "scripts": [
-    {
-    }
   ]
 }
