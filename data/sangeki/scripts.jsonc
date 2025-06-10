@@ -6,6 +6,13 @@
     {
       "title": "The School Tragedy",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 7
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/7",
       "difficultySets": [
         {
           "numberOfLoops": 3,
@@ -51,6 +58,13 @@
     {
       "title": "逃げ惑うタイムトラベラー (Time Traveler on the Run)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 8
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/8",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -105,6 +119,13 @@
     {
       "title": "豆腐メンタルをみんなでいじめる会 (Everyone Gathers to Bully the Tofu-Minded)",
       "creator": "Lapras-hst@パーソン",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 13
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/13",
       "difficultySets": [
         {
           "numberOfLoops": 5,
@@ -164,6 +185,13 @@
     {
       "title": "虚空より愛を込めて (With Love, From the Void)",
       "creator": "Ryo.Shin.",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 89
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/89",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -217,6 +245,13 @@
     {
       "title": "自殺日和 (A Perfect Day for Suicide)",
       "creator": "竹美香",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 57
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/57",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -275,6 +310,13 @@
     {
       "title": "脚本ツクール (Script Maker)",
       "creator": "Lapras-hst@パーソン",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 19
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/19",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -334,6 +376,13 @@
     {
       "title": "妹様におまかせ！(Leave it to Lil' Sis!)",
       "creator": "れう",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 24
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/24",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -413,6 +462,13 @@
     {
       "title": "女の戦い (Battle Between Women)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 2
+        }
+      ],
+      "source": "http://www.boardgame.work/sangeki/kyakuhon/detail.php?id=1006",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -464,6 +520,13 @@
     {
       "title": "妹★無双 (★Unrivaled Little Sister★)",
       "creator": "KM(キャクホンカミナライ)",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 94
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/94",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -528,6 +591,13 @@
     {
       "title": "蔓延する不安と信頼  (Spreading Paranoia and Trust)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 100
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/100",
       "difficultySets": [
         {
           "numberOfLoops": 6,
@@ -571,6 +641,13 @@
     {
       "title": "Unstable Life",
       "creator": "Ryo.Shin.",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 90
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/90",
       "difficultySets": [
         {
           "numberOfLoops": 3,
@@ -616,6 +693,13 @@
     {
       "title": "噂の果ての真相 (The Truth Behind the Rumors)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 8
+        }
+      ],
+      "source": "http://www.boardgame.work/sangeki/kyakuhon/detail.php?id=1005",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -673,6 +757,13 @@
     {
       "title": "隠れ潜むタイムトラベラー (The Hidden Time Traveler)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 7
+        }
+      ],
+      "source": "http://www.boardgame.work/sangeki/kyakuhon/detail.php?id=1002",
       "difficultySets": [
         {
           "numberOfLoops": 5,
@@ -737,6 +828,13 @@
     {
       "title": "彼はパーソン (He's a Person)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 5
+        }
+      ],
+      "source": "http://www.boardgame.work/sangeki/kyakuhon/detail.php?id=1003",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -810,6 +908,13 @@
     {
       "title": "彼女は来た (She's Here)",
       "creator": "Ryo.Shin.",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 91
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/91",
       "difficultySets": [
         {
           "numberOfLoops": 3,
@@ -866,6 +971,13 @@
     {
       "title": "最低の配役 (A Hideous Cast)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 102
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/102",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -905,6 +1017,13 @@
     {
       "title": "邪教蔓延る教場 (Heresy Prevails in the Classroom)",
       "creator": "Ryo.Shin.",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 88
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/88",
       "difficultySets": [
         {
           "numberOfLoops": 3,
@@ -957,6 +1076,13 @@
     {
       "title": "The Academy Tragedy",
       "creator": "れう",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 28
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/28",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -1014,59 +1140,15 @@
       "mastermindHints": "1st Loop\nPlace :intrigue: on the :girlStudent:, City, and Shrine. Basically you want to end the game via :sealedItem: or by killing the :friend:, but it's best to hide the fact that :mysteryBoy: is a :serialKiller:.\n\n2nd Loop\nFrom hereon, we'll rely on Incidents and :serialKiller:s. The Culprit of a crime can usually be prevent by placing :paranoia: -1. The :girlStudent:'s ability is offset by the :conspiracyTheorist:'s ability.\n\nIf :increasingUnease: is successful, placing :intrigue: on both the Hospital and Shrine, combined with :hospitalIncident:, will almost always guarantee victory, but you'll need the :conspiracyTheorist:.\n\nThe Protagonists can be stopped dead in their tracks by placing :goodwill: +2 on the :girlStudent: (Mastermind needs :shrineMaiden: :paranoia: +1 to cause :increasingUnease:, and the :girlStudent: is guaranteed to move, so you can't use Forbid :goodwill:).\n\nIf the :conspiracyTheorist: is revealed and the Culprit is exposed, the Incident will easily be stopped, along with your chances of winning the Final Guess. Be careful.\n\nDeciding on whether to use the :doctor:'s Ability depends mainly on how much information the Protagonists have acquired, but generally it's better to hide him.\n\nIn :basicTragedy:, the only role from a Sub-Plot that has :goodwill: Refusal is the :factor:.\n　・The :popIdol: is revealed because of :goodwill: Refusal.\n　・The Loop ends with two :intrigue: in the City.\nIn this case, it's better not to use the :doctor: since it might hint at the Main Plot \\\":giantTimeBomb:.\\\" On the other hand, if the :intrigue: onto City isn't successful, Refusal may be a better option here since it gives you two options for :cultist:s.\n\nHowever, it's easier to win if you hide your :brain: amongst the :person:s, so you might as well use it when you don't want the :doctor: to use his :man:datory ability.\n\n3rd Loop\nUse :transferStudent:'s :missingPerson: and :unsettlingRumor: to go for the win. However, you should avoid using :unsettlingRumor: up to this point.\n\nIf you hint at placing :intrigue:+1 on the Shrine and :intrigue:+2 on the Hospital in the previous Loop, you can snatch a victory with :unsettlingRumor:. Just be wary of the :shrineMaiden:'s :goodwill: ability.\n\n4th Loop\nMost of the roles will have been exposed by now, but try to hide the :brain: and the :conspiracyTheorist:. If the Protagonists get the optimal solution at this point, you won't be able to win, so in the end you should aim for a :serialKiller: strike or the :brain:/:cultist:'s mandatory ability.\n\nThe Protagonists can win by:\n\nPlaving Forbid :intrigue: on the Shrine, :paranoia:-1 on :classRep: and :transferStudent:, and not meeting up with the :conspiracyTheorist: (or by using :goodwill:+2 so it doesn't matter if they do).\n\nAnd finally, locking the movement of the :brain: and the :cultist:, and preventing the :serialKiller: from killing your friends."
     },
     {
-      "title": "豆腐殺人事件 (Tofu Murder Case)",
-      "creator": "じーちゃん",
-      "difficultySets": [
-        {
-          "numberOfLoops": 4,
-          "difficulty": 0
-        }
-      ],
-      "tragedySet": "firstSteps",
-      "mainPlot": [
-        "murderPlan"
-      ],
-      "subPlots": [
-        "hideousScript"
-      ],
-      "daysPerLoop": 5,
-      "cast": {
-        "popIdol": "keyPerson",
-        "girlStudent": "killer",
-        "policeOfficer": "brain",
-        "richStudent": "conspiracyTheorist",
-        "patient": "curmudgeon",
-        "shrineMaiden": "friend",
-        "boyStudent": "person"
-      },
-      "incidents": [
-        {
-          "day": 2,
-          "incident": "suicide",
-          "culprit": "shrineMaiden"
-        },
-        {
-          "day": 3,
-          "incident": "murder",
-          "culprit": "richStudent"
-        },
-        {
-          "day": 5,
-          "incident": "increasingUnease",
-          "culprit": "patient"
-        }
-      ],
-      "description": " ・シナリオの対象プレイヤー\n惨劇RoopeR Xの未経験者向けに作ってみたシナリオです。\nとはいえ、難易度的にはさほど簡単でもなく、どちらかといえばやや難しい部類になります。惨劇RoopeR自体に関しては未経験でも楽しんでもらえるとは 思いますが、論理パズルが苦手な人やボードゲームそのものが初心者という場合には、あまりオススメできないと思います。（まぁ、こういうケースの場合は惨 劇RoopeRで遊ぶという選択にはならないと思いますが（＾＾；\n未経験者（または経験数回の初心者）の方に相談可で遊んでもらうことを前提としているシナリオになります。\n\n相談不可だと主人公同士の連携が難しくなり難易度が跳ね上がります。相談不可で遊ぶ場合は中級者以上のプレイヤーであることが望ましいです。\n・シナリオの特徴\n計4ループからなるシナリオなのですが、まず最初の3ループは惨劇RoopeRの核となる要素「情報収集」を経験してもらいます。これは「敗北した盤面が こうだから、ルールはこれに違いない」とか「前回はこれで負けたから、今度はこうしてみよう」といったようなプレイングによる情報収集を行ってもらうのが メインとなります。\n脚本家は、最終ループに入る前には、ルールYとルールX、すべての役職、すべての事件の犯人が明らかになるように誘導しつつ主人公を敗北させていきます。（FirstStepには最後の戦いがないために、すべて明らかになっても脚本家は敗北しません）\n\nそして、最終ループは出揃った情報を元に、脚本家との読みあい勝負をしてもらいます。すべての情報が出揃った状態で、主人公側には敗北条件を回避するようにプレイしてもらうことを狙いとしています。",
-      "specialRules": [
-        ""
-      ],
-      "victory-conditions": "キーパーソンの殺害\nキラーの能力、殺人事件\n\nフレンドの殺害\n自殺、殺人事件\n\n主人公の殺害\nキラーの能力",
-      "story": "",
-      "mastermindHints": "【1ループ目】\n一番難易度が高い「キラーに暗躍4」を乗せて勝利することを目指します。\n女子学生（キラー）に暗躍4を乗せればいいのですが、5日目の不安拡大の事件を発生させられれば暗躍1個乗るので、女子学生（キラー）に暗躍を3つ乗せることを目標とします。\n\n1日目 \tアイドル：暗躍+1　入院患者：不安+1　女子学生：不安+1（ブラフなので他でも可）\n\n不安拡大の事件を発生させるべく患者には毎ターン不安+1を置いていきます。主人公側の不安-1は合計3枚なので、基本的には毎ターン不安+1を置いていけば最終日には臨界に達するはずです。\nただし、今回、キャラクターにアイドルがいます。アイドルの能力で不安を除去される可能性があるので、アイドルに友好カウンターが溜まり始めるようならば、友好禁止を連打するなり、病院に移動させないようにするなり、素直にカードで暗躍4つめ置くなりすれば良いかと。\n\nなお、アイドル、女子学生、入院患者の3枚に置くのは次ループの布石でもあるので、この3枚に置いておくことを推奨します。\n\n2日目 \t女子学生：暗躍+1　入院患者：不安+1　アイドル：不安+1（ブラフなので他でも可）\n\n前日に引き続き、入院患者に不安を乗せていきます。\nそして、女子学生（本命）に暗躍+1を乗せます。\n事件（自殺）の発生する日ですが、脚本家が不安を置かなければ犯人（巫女）が臨界に達することはないはずです。\n\n3日目 \t女子学生：暗躍+2　入院患者：不安+1　アイドル：お嬢様と同じ位置になるように移動\n\nここらでバシっと暗躍2を起きます。お嬢様を移動させつつ、暗躍2を試みるのが大事なポイントです。\nというのも、万が一暗躍2に対して暗躍禁止を張られてしまうと、脚本家が主人公を敗北させる道がぐっと狭まってしまうからです。（キーパーソンに暗躍2を乗せてキラーで殺す・・・しかないんじゃないかな？）\n暗躍2が無効化されてしまった時の保険としてアイドル（キーパーソン）をお嬢様（ミスリーダー）に向けて移動させておきます。こうすることによって、お嬢 様はミスリーダーなので自身に不安カウンターを乗せて、殺人事件を発生させてキーパーソンを殺害し、主人公を敗北させられるようになります。\n無事に暗躍2が女子学生（キラー）に乗った場合は、ミスリーダーの能力を使用せずに「事件は発生しませんでした」として続けましょう。\n\n4日目 \t女子学生：暗躍+1　入院患者：不安+1　アイドル：不安+1（ブラフなので他でも可）\n\n女子学生に暗躍4つ目が乗ったら主人公を死亡させてループ終了させてしまいましょう。\nとはいえ、主人公側も暗躍が3つ乗った女子学生は警戒しているでしょうから暗躍禁止を置いてくるはずです。最終日の事件の犯人がアイドルか入院患者か確定できないようにアイドルも臨界に達するように不安を置いていくと良いでしょう。\n\n5日目 \t女子学生：暗躍+1　入院患者：不安+1　アイドル：不安+1（ブラフなので他でも可）\n\n4日目と同じです。\n予定通りだと、女子学生に暗躍3が乗っているはずなので、もはや止められない（はずの）不安拡大の事件を起こして暗躍4つめをキラーに乗せて、ターン終了時に主人公を殺害してループを終了させましょう。\n\n2ループ目】\n2ループ目の方針は「1ターンキルを目指せ！」「1ターンキルができなければキラーでキーパーソンを殺せ」です。\n\n1日目 \tアイドル：暗躍+2　女子学生：都市へ移動　入院患者：不安+1\n\n1ターンキルを狙います！ｗ\n前ループと同じキャラクターにカードを置いているのと、筋書き通りだと前ループはキラーの暗躍4の能力で主人公が死亡して敗北しているはずなので、主人公はおそらく女子学生（キラー）に暗躍禁止を置いてくるはずです。\nま、1ターンキルの危険性を回避するためにアイドルを移動させてくる可能性もありますが、そうしたら次の日以降キラーで追いかけましょうｗ\n\n2日目以降 \t\nさて、1ターンキルは成功しましたでしょうか？\nいや、あなたが2日目のここを読んでいるということは、きっと成功していないのでしょうｗ（いや、もちろんそうとは限らないのですが、未来への手紙風に言ってみたかっただけですｗ）\n\nここからは刑事（クロマク）の能力を積極的に使って、キーパーソンやキラーに暗躍Cを乗せていくことを目指しましょう。\nFirstStepの惨劇セットでは最後の戦いがないので役職の能力を出し惜しみする必要はありません。\nまた、保険要員のお嬢様（ミスリーダー）の3日目の殺人事件で巫女（フレンド）もしくはアイドル（キーパーソン）を殺害するのを狙うのも良いでしょう。\n\n【3ループ目】\n3ループ目は巫女の自殺を狙ってみましょう。\n1日目 \t\n巫女：不安+1　お嬢様：移動上下　アイドル：暗躍+1\n\nお嬢様が無事神社に到達して巫女と一緒になれたら、脚本家能力フェイズにお嬢様（ミスリーダー）の能力で巫女に不安を置きます。\n\n2日目 \t巫女：不安+1　男子学生：移動左右（神社に来ないようにする）　アイドル：暗躍+1\n\nここまで予定通りいけば巫女（フレンド）が自殺するので、このループは敗北条件を満たします。\nうまく行かないようであれば、お嬢様（ミスリーダー）の3日目の殺人事件で巫女（フレンド）もしくはアイドル（キーパーソン）を殺害するのを狙いましょう。（これも外れると脚本家大ピンチになりますがｗ）\n\n【4ループ目】\nシナリオ通り進むとここまでですべての事件の犯人と各キャラクターの役職が明らかになっているはずです。\nそのため、最後の4ループ目は「脚本家vs主人公の読み合い勝負」となります。\n\nあとはがんばってくださいｗ"
-    },
-    {
       "title": "KILL BOSS: The Looper",
       "creator": "Ryo.Shin.",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 92
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/92",
       "difficultySets": [
         {
           "numberOfLoops": 3,
@@ -1124,6 +1206,13 @@
     {
       "title": "ホシに願いを (When You Wish Upon A Star)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 9
+        }
+      ],
+      "source": "http://www.boardgame.work/sangeki/kyakuhon/detail.php?id=1010",
       "difficultySets": [
         {
           "numberOfLoops": 3,
@@ -1189,6 +1278,13 @@
     {
       "title": "A Will.",
       "creator": "比良坂右京",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 53
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/53",
       "difficultySets": [
         {
           "numberOfLoops": 3,
@@ -1248,6 +1344,13 @@
     {
       "title": "ウイルス対策友情戦線 (Antivirus Friendship Front)",
       "creator": "れう",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 12
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/12",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -1306,6 +1409,13 @@
     {
       "title": "もしも百合の世界の間に男が入ってきたら (What if a Man Fell into the World of Yuri?)",
       "creator": "白獅子のケイ",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 72
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/72",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -1379,6 +1489,13 @@
     {
       "title": "凶刃の向かう先は (The Assassin Blade's Target)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 59
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/59",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -1432,6 +1549,13 @@
     {
       "title": "友の死を乗り越えて (Overcoming the Death of a Friend)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 58
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/58",
       "difficultySets": [
         {
           "numberOfLoops": 6,
@@ -1492,6 +1616,13 @@
     {
       "title": "友達100人計画  (100-Friends Plan)",
       "creator": "白獅子のケイ",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 71
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/71",
       "difficultySets": [
         {
           "numberOfLoops": 5,
@@ -1561,6 +1692,13 @@
     {
       "title": "圧倒する者たち (Those Who Overwhelm)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 56
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/56",
       "difficultySets": [
         {
           "numberOfLoops": 3,
@@ -1624,6 +1762,13 @@
     {
       "title": "地を這う羽 (Wings Slithering on the Ground)",
       "creator": "ぶー太郎",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 27
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/27",
       "difficultySets": [
         {
           "numberOfLoops": 4,
@@ -1670,7 +1815,7 @@
       "mastermindHints": "初日アルバイトに友好禁止、委員長に不安＋１、学校に暗躍＋２（暗躍１）\n教師に対してミスリーダーを起動する。\n女子学生移動、学校に暗躍禁止であってもファクターの偽装が失敗していても教師自身に起動すること。\n教師がファクターでないことがわかっている場合は選択問題になる。\n教師に不安＋１が固いか。\n\n２日目は初日の行動で分岐する\n教師に不安が２個ないなら不安＋１を置く。２個あるなら放置。\n委員長に不安＋１は義務。\nアルバイトに不安が１→不安禁止を置く\nアルバイトに不安が０→自由行動。\n友好禁止を置くのも手。\n自由行動としては学校に暗躍が通っていないなら学校に暗躍１を置く手もある。\n（教師がファクターではなくミスリーダーだとバレているなら微妙ではある。）\n不安が足らないなら教師のミスリーダーを起動し、１００％流布を起こす。\nアルバイトの友好を除去するのが１番手，教師の友好を取るのが２番手。\nアルバイトに友好禁止が置けているなら教師の友好を取るべし。\n友好カウンターはサラリーマンに置くのがよいかもしれない。\nタイムトラベラー候補を無闇に減らさないことが重要。\nこれによって、アルバイトに友好０状態で３日目を迎えることを狙う。\nこうすると、どうやっても不安カウンター１までしか乗らない。\n\n不安カウンターの数で分岐する。３日目にアルバイトには不安カウンターが１→基本的に友好禁止を置く。\n読みあいに勝てる自信があるなら不安禁止。\n不安カウンターが０→移動or暗躍＋１or不安＋１。\nここで勝負している。\n委員長に不安＋１（義務）\n学校に暗躍＋１or友好禁止or教師＝委員長の合流狙いor教師＝アルバイトの合流狙い\nこれを組み合わせて行う。\n要約するとこの状況でカウンターが３つにならないように留意する。\nミスリーダーとファクターとカルティストで囲んでいるのでカウンター１～２個で固定するのがよい。\n４日目は逆に不安拡大を発生させてアルバイトをターン終了時に自壊させるのを狙う。\n委員長不安＋１アルバイト暗躍or不安＋１ミスリーダー起動などなど全てを使って自壊狙いをする。\n委員長の不安拡大は教師を逃がして不安ー１を３回置かれると起きないのだが「委員長に不安ー１をすべて使っているので主人公の不安ー１がなくなる」のでそ の場合は４日目の脚本家の不安＋１が必ず通る。よってカウンター２個で３日目を迎えると確定勝利。\n５日目には友好禁止と移動を置くのみ。\n勝利確定してるハズなので勝とう。\n逆にアルバイトが自壊していなかったり、３日目に自壊していたら確定負け。\n情報屋を使われた場合は適宜答えること。基本は不穏な噂と答えた方がいいとは思う。"
     },
     {
-      "title": "女だらけの場所に紛れ込んだサラリーマン (A Businessman Wanders into a Place Full of Women)",
+      "title": "女だらけの場所に紛れ込んだサラリーマン (A Salaryman Wanders into a Place Full of Women)",
       "creator": "yurei(ʘᴗʘ✿)",
       "difficultySets": [
         {
@@ -1719,6 +1864,13 @@
     {
       "title": "悪辣なる報道 (Scathing Report)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 12
+        }
+      ],
+      "source": "http://www.boardgame.work/sangeki/kyakuhon/detail.php?id=1901",
       "difficultySets": [
         {
           "numberOfLoops": 6,
@@ -1794,6 +1946,13 @@
     {
       "title": "脚本家Ｘの献身 (Devotion of Mastermind X)",
       "creator": "Lapras-hst@パーソン",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 20
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/20",
       "difficultySets": [
         {
           "numberOfLoops": 6,
@@ -1869,6 +2028,13 @@
     {
       "title": "邪悪なる汚染領域 (Evil Contaminated Realm)",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 6
+        }
+      ],
+      "source": "http://www.boardgame.work/sangeki/kyakuhon/detail.php?id=1004",
       "difficultySets": [
         {
           "numberOfLoops": 4,
