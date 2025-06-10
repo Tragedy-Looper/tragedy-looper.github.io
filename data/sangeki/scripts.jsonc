@@ -2097,6 +2097,72 @@
       "mastermindHints": "It's very easy to trigger Butterfly Effect via the A.I., so it's trivial to prevent loop breakthroughs. On the other hand, the number of Roles is few, and there are ways to split them up, so the issue becomes trying not to let them get revealed.\n\nIt's also important to organize a CS to increase the number of possible candidate roles. Except for Murder Plan, CS are easy to organize, so it's best to go for multiple elements if possible.\n\nOn Day 2, try to aggressively trigger Increasing Unease. With Paranoia+1 and the A.I.'s mandatory ability, you can almost always trigger it unless the Copycat is moved. You can place an Intrigue counter on Metaworld Denizen or Little Sister to set up Sign With Me!\n\nFor Day 5's Foul Evil, if the Henchman's initial placement is a Shrine, the CS will be The Sealed Item and Giant Time Bomb (of course, Sealed by itself is effective).\n\nOn the other hand, if you start the Henchman in the City, your goal should be to use the Journalist's Murder Incident to kill the Office Worker on Day 1. This choice is the same as admitting that the Office Worker is a Factor when he uses Goodwill, so you'll either want to score Loops at all cost, or kill him at the beginning when the Protagonists don't know anything and focus all your efforts on the CS with the remaining Henchman.\n\nAs you approach the Final Guess, try to keep them in the dark about which Main Plot it might be, and be careful to avoid the Copycat neutralizing all your Persons. Sometimes, it might be necessary to make a Serial Killer."
     },
     {
+      "title": "Script Maker",
+      "creator": "Lapras-hst@パーソン",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 19
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/19",
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 0
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "sealedItem"
+      ],
+      "subPlots": [
+        "circleFriends",
+        "paranoiaVirus"
+      ],
+      "daysPerLoop": 5,
+      "cast": {
+        "doctor": "brain",
+        "ai": "cultist",
+        "patient": "friend",
+        "shrineMaiden": "friend",
+        "girlStudent": "conspiracyTheorist",
+        "mysteryBoy": "lovedOne",
+        "policeOfficer": "person",
+        "informer": "person",
+        "richStudent": "person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "murder",
+          "culprit": "richStudent"
+        },
+        {
+          "day": 3,
+          "incident": "murder",
+          "culprit": "patient"
+        },
+        {
+          "day": 4,
+          "incident": "murder",
+          "culprit": "shrineMaiden"
+        },
+        {
+          "day": 5,
+          "incident": "murder",
+          "culprit": "ai"
+        }
+      ],
+      "description": "This is a highly unconventional script in which the Protagonists, who have never created a script before, can help write the script on the spot.\n\nFor the Masterminds, the difficulty is Nightmare level at 8★ and requires top-tier improvisation skills and on-the-fly thinking.\n\nNo matter which Incident you choose, there are elements you can fight for. Do your best to reach the Final Guess!",
+      "specialRules": [
+        "At the start of each Loop, the Protagonist Leader declares the name of each Incident for Days 2–5. During that Loop, the effects of each Incident will resolve as declared, to the extent allowed by the rules.\n\nNote: The Incidents are listed as \"Murder\" due to technical limitations, but they are all actually \"???.\""
+      ],
+      "victory-conditions": "",
+      "story": "\"Do you like Basic Tragedy? Good, good. Now I'm curious what you might think of this. Here you go, it's a new Basic Tragedy model. It's pretty good, right? Ahh, come on now, don't be like that. The rules might be unique, but regular Basic Tragedy scripts don't have much room for development, you have to deal with demonic Protagonists, and the Loops are easily broken, nothing good ever comes out them. No good! There's plenty of difficulty in this one (for the Mastermind), so any super genius [Mastermind] can handle it. Please give it a whirl, it'll make a nice sound. Ahh, that's a very nice scream, it's a different kind of energy.\"\n\n\"My favorite part is...\"\n\n\"What?\"\n\n\"The incidents!\"",
+      "mastermindHints": "The basic way to win is by placing Intrigue on the Shrine. At the same time, however, how you prepare your CS and how you hide one of your roles are the important tests for your skill as a Mastermind.\n\nThe CS for the Main Plot is mostly limited to Sign with Me! and the presence of Giant Time Bomb, but you should adjust to the Sub Plot and how you hide your roles as well.\n\nThe main ways to use Incidents are as follows:\n・Murder: Kill a Friend\n・Increasing Unease: Activate Loved One and create a Serial Killer\n・Foul Evil: Lucky! Put all your effort into CS.\n・Suicide: Kill a Friend\n・Hospital Incident: Kill a Friend or the Protagonist.\n・Faraway Murder: Kill a Friend\n・Spreading: Interfere with the Protagonists by using Doctor's mandatory Goodwill ability.\n・Butterfly Effect: Various methods"
+    },
+    {
       "title": "邪悪なる汚染領域 (Evil Contaminated Realm)",
       "creator": "ペンスキー",
       "set": [
