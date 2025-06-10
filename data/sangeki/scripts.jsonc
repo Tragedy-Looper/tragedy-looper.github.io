@@ -2026,6 +2026,77 @@
       "mastermindHints": "Contrary to the usual rules, the screenwriter's true goal is to \"support the Protagonists and free them from the Loop.\"\n\nPlay with a poker face so that your goal is not revealed. We recommend that you keep your communication with the Protagonists to a minimum except for answering their questions, and leave your seat between Loops.\n\nWhen the Public Sheet is presented, the Protagonists may laugh at the limitations on the Mastermind, but they won't be laughing much longer.\n\nBasically, aim for :spreading: and :hospitalIncident: to occur, and for :immortal: to take effect by involving :godlyBeing:. Move :doctor: to City (preparing for :goodwill: and :paranoia: boost), and keep placing :paranoia: on :forensicSpecialist: and :boss:. Move :blackCat: to Hospital, and at the same time, place :intrigue: +2 on Hospital. \n\nAlthough the Protagonists will initially see this as a normal power play and try to thwart it, you should make full use of the abilities of the :conspiracyTheorist: and :cultist:.\n\nIn the unlikely event that :spreading: does occur, remove it from :richStudent: and place it on :doctor:, :godlyBeing:, or :forensicSpecialist:.\n\nIf you have extra hands, place Forbid :goodwill: on :richStudent: or move it to the City (so that you can use :forensicSpecialist: to remove it if :goodwill: is placed). The Protagonists will probably not understand your intentions, and a spiteful Protagonist who is used to the game will sneak through and place :paranoia: or :goodwill: on it, not realizing that they're tying their own noose.\n\nWhen the Culprit behind :butterflyEffect: and role of the :godlyBeing: are revealed, the Protagonists will feel the difficulty of breaking the loop, and the strange discomfort caused by the Mastermind's actions. Once they realize the true purpose behind everything, it's time for telepathic cooperation. Let's break out of this accursed Loop, together.\n\nTo break the loop, you need to do the following 4 things:\n\n- Cause a :hospitalIncident:\n\n- Move the :patient: out of the Hospital before the Incident occurs\n\n- Involve the :blackCat: in the :hospitalIncident:\n\n- Place 3 :goodwill: on :godlyBeing:\n\nThere are two routes: use :godlyBeing: to remove one :intrigue: from the Hospital, or use the :soldier: to make the Protagonists :immortal:.\n\nIf the role of :richStudent: is exposed due to the whims of the Protagonists, it will be more difficult to break through the Loop. In that case, on the first day, place a Vertical Movement on :doctor:, a Horizontal Movement on :richStudent:, and a :paranoia: +1 on :forensicSpecialist: or :boss: to support them.\n\nIn any case, if the Protagonists and Mastermind work together perfectly, at the end of the last day:\n\n- All characters except :blackCat: will survive and gather in the City\n- All :paranoia: counters will be zero\n- Everyone will have :goodwill: counters on them\n\nYou can do it. Good luck."
     },
     {
+      "title": "Unrivaled ★ Little Sister",
+      "creator": "KM(キャクホンカミナライ)",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 94
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/94",
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 6
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "changeOfFuture"
+      ],
+      "subPlots": [
+        "paranoiaVirus",
+        "unknownFactor"
+      ],
+      "daysPerLoop": 6,
+      "cast": {
+        "henchman": "cultist",
+        "littleSister": "timeTraveler",
+        "ai": "conspiracyTheorist",
+        "officeWorker": "factor",
+        "informer": "person",
+        "journalist": "person",
+        "sectFounder": "person",
+        "copycat": "person",
+        "metaworldDenizen": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "murder",
+          "culprit": "journalist"
+        },
+        {
+          "day": 2,
+          "incident": "increasingUnease",
+          "culprit": "copycat"
+        },
+        {
+          "day": 4,
+          "incident": "butterflyEffect",
+          "culprit": "ai"
+        },
+        {
+          "day": 5,
+          "incident": "foulEvil",
+          "culprit": "henchman"
+        },
+        {
+          "day": 6,
+          "incident": "spreading",
+          "culprit": "sectFounder"
+        }
+      ],
+      "description": "This script features a wide selection of relatively new and unusual characters who will use their Goodwill abilities to overwhelm the Mastermind.",
+      "specialRules": [
+        "The Leader may use one of their expended Once per Loop cards in the Action phase. When using that card, set another card first, and then swap that card with the expended Once per Loop card just before revealing."
+      ],
+      "victory-conditions": "",
+      "story": "Yo, hello there. I am Kanae. I look down on the world from my seat up here.\n\"Ah, it's Kanae-sama.\"\n\"Thank you, Kanae-sama.\"\n\"Is that Kanae-sama?\"\n\nUm, nice to meet you. I'm Yatsuha, your younger sister.\n\"Yatsuha-sama—!\"\n\"Nice to meet you, Yatsuha-sama—!\"\n\"I want to get to know Yatsuha-sama—!\"\n...\n\nYep, everything looks good. My work is here is done.\n\n\"H-huh?? Kanae-sama—!!??\"",
+      "mastermindHints": "It's very easy to trigger Butterfly Effect via the A.I., so it's trivial to prevent loop breakthroughs. On the other hand, the number of Roles is few, and there are ways to split them up, so the issue becomes trying not to let them get revealed.\n\nIt's also important to organize a CS to increase the number of possible candidate roles. Except for Murder Plan, CS are easy to organize, so it's best to go for multiple elements if possible.\n\nOn Day 2, try to aggressively trigger Increasing Unease. With Paranoia+1 and the A.I.'s mandatory ability, you can almost always trigger it unless the Copycat is moved. You can place an Intrigue counter on Metaworld Denizen or Little Sister to set up Sign With Me!\n\nFor Day 5's Foul Evil, if the Henchman's initial placement is a Shrine, the CS will be The Sealed Item and Giant Time Bomb (of course, Sealed by itself is effective).\n\nOn the other hand, if you start the Henchman in the City, your goal should be to use the Journalist's Murder Incident to kill the Office Worker on Day 1. This choice is the same as admitting that the Office Worker is a Factor when he uses Goodwill, so you'll either want to score Loops at all cost, or kill him at the beginning when the Protagonists don't know anything and focus all your efforts on the CS with the remaining Henchman.\n\nAs you approach the Final Guess, try to keep them in the dark about which Main Plot it might be, and be careful to avoid the Copycat neutralizing all your Persons. Sometimes, it might be necessary to make a Serial Killer."
+    },
+    {
       "title": "邪悪なる汚染領域 (Evil Contaminated Realm)",
       "creator": "ペンスキー",
       "set": [
