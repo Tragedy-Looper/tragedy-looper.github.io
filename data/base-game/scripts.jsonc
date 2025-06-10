@@ -3693,13 +3693,13 @@
           "culprit": "classRep"
         }
       ],
-      "description": "This is a practice script that focuses on Intrigue to the board, with an emphasis on understanding the effects of Intrigue.",
+      "description": "This is a practice script that focuses on :intrigue: to the board, with an emphasis on understanding the effects of :intrigue:.",
       "specialRules": [
         ""
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "On the first day of the first loop, set Paranoia+1 to Pop Idol, Paranoia+1 to Boy Student, and Intrigue+1 to School.\n\nUse Pop Idol's Conspiracy Theorist ability to activate Missing Person, and place 2 Intrigue on the School on the first day to win. Use An Unsettling Rumor too, if necessary.\n\nIf you can successfully get Intrigue on the Locations, place a bluff on the second Day to avoid giving away information. If you can get Intrigue+2 on Locations other than School, that'll be a powerful CS. However, don't use the Cultist's mandatory ability.\n\nIn the second Loop, they'll likely be on guard against Paranoia on the Pop Idol, so instead take advantage of that opportunity to trigger Class Rep's Suicide.\n\nOn Day 1, put Paranoia+1 on the Class Rep, move to Pop Idol, and place Forbid Goodwill on the Boy Student. Use Conspiracy Theorist's mandatory ability as well to hit the Class Rep's Paranoia limit on the first day.\n\nThe third Loop will be a tough game. Which Incident will you trigger, and where will you place your cards to achieve it? You're now in a battle of wits with the Protagonists. Good luck."
+      "mastermindHints": "On the first day of the first loop, set :paranoia:+1 to :popIdol:, :paranoia:+1 to :boyStudent:, and :intrigue:+1 to School.\n\nUse :popIdol:'s :conspiracyTheorist: ability to activate :missingPerson:, and place 2 :intrigue: on the School on the first day to win. Use :unsettlingRumor: too, if necessary.\n\nIf you can successfully get :intrigue: on the Locations, place a bluff on the second Day to avoid giving away information. If you can get :intrigue:+2 on Locations other than School, that'll be a powerful CS. However, don't use the :cultist:'s mandatory ability.\n\nIn the second Loop, they'll likely be on guard against :paranoia: on the :popIdol:, so instead take advantage of that opportunity to trigger :classRep:'s :suicide:.\n\nOn Day 1, put :paranoia:+1 on the :classRep:, move to :popIdol:, and place Forbid :goodwill: on the :boyStudent:. Use :conspiracyTheorist:'s mandatory ability as well to hit the :classRep:'s :paranoia: limit on the first day.\n\nThe third Loop will be a tough game. Which Incident will you trigger, and where will you place your cards to achieve it? You're now in a battle of wits with the Protagonists. Good luck."
     },
     {
       "title": "Escort Mission",
