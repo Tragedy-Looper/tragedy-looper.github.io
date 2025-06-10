@@ -577,7 +577,7 @@
       li {
         list-style: none;
 
-        margin-left: calc(-0.45cm * var(--scale));
+        margin-left: calc(-0.25cm * var(--scale));
       }
       img {
         width: calc(0.55cm * var(--scale));
