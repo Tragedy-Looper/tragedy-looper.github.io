@@ -2160,7 +2160,71 @@
       ],
       "victory-conditions": "",
       "story": "Now that the slightly-standoffish girl broke the Girl Code and chummed up to the most popular boy in class, things are about to get dicey. She's incurred the wrath of the entire female body! All bets are off!\n\nHe'll be on her side... right?\n\nThrow in a clumsy teacher, a mysterious lone wolf, and a clueless transfer student, the situation is about to explode and drag the entire class down with it!",
-      "mastermindHints": "Let's just focus on putting Rich Man's Daughter into the grave.\n\nIn the first Loop, if there's no interference, you can just use the Killer's mandatory ability to kill the Rich Man's Daughter. If Intrigue gets blocked, use the Conspiracy Theorist's ability to put Paranoia on the Rich Man's Daughter to cause an Incident, then combine it with Brain's ability to place 2 more Intrigue on her, and then finally use the Killer's ability to take her down.\n\nIn the second loop, if the Protagonists are obedient enough to block Intrigue, you can use the aforementioned Brain/Conspiracy Theorist combo even if the face down Action cards are in the same positions as the first Loop.\n\nIn the second or third Loop, the Protagonists may decide that the School is dangerous and move Rich Man's Daughter. At this point, they'll be suspicious of the Shrine Maiden moving vertically and move her horizontally instead. Therefore, by switching it up and giving Rich Man's Daughter and Pop Idol Paranoia+1 each, an Incident will occur: Two Paranoia will be sent to Pop Idol, turning her into a Serial Killer to take our Rich Man's Daughter. Another one-turn kill!\n\nIf you're unable to kill Rich Man's Daughter on the first day, take the following actions:\n\n- Place Paranoia on Pop Idol and Class Rep to cause an Incident, or make her a Serial Killer.\n- Use the Consporacy Theorist's mandatory ability every day.\n- Place two Intrigue on Rich Man's Daughter\n- Place four Intrigue on the Shrine Maiden instead if Rich Man's Daughter has Forbid Intrigue on her.\n- Move each character so that Rich Man's Daughter is alone with the Killer or Serial Killer.\n\nOn the third Day, if the Pop Idol is a Serial Killer, you can perform a surprise attack. If the Mystery Boy is exposed as a Serial Killer, the Protagonists will use him aggressively, so be careful.\n\nYou'll want the Final Guess to hide the Factor, so don't ignore the Boy Student's mandatory Goodwill ability.\n\nDay 1 guide:\n\n1st Loop:\n\n\n\nShrine Maiden: Move Down\n\nRich Man's Daughter: Intrigue+2\n\nPop Idol: Move Right\n\n2nd Loop:\n\n\n\nShrine Maiden: Move Down\n\nRich Man's Daughter: Intrigue+2 or Paranoia+1\n\nPop Idol: Move Right\n\n2nd–3rd Loop (Rich Man's Daughter moves Left)\n\n\n\nShrine Maiden: Move Down, or Intrigue+2\n\nRich Man's Daughter: Paranoia+1\n\nPop Idol: Paranoia+1\n\n3rd Loop onward:\n\n\n\nShrine Maiden: Move Down, or Intrigue +2, +1\n\nRich Man's Daughter: Intrigue +2, +1, or Paranoia+1\n\nPop Idol: Paranoia+1"
+      "mastermindHints": "Let's just focus on putting Rich Man's Daughter into the grave.\n\nIn the first Loop, if there's no interference, you can just use the Killer's mandatory ability to kill the Rich Man's Daughter. If Intrigue gets blocked, use the Conspiracy Theorist's ability to put Paranoia on the Rich Man's Daughter to cause an Incident, then combine it with Brain's ability to place 2 more Intrigue on her, and then finally use the Killer's ability to take her down.\n\nIn the second loop, if the Protagonists are obedient enough to block Intrigue, you can use the aforementioned Brain/Conspiracy Theorist combo even if the face down Action cards are in the same positions as the first Loop.\n\nIn the second or third Loop, the Protagonists may decide that the School is dangerous and move Rich Man's Daughter. At this point, they'll be suspicious of the Shrine Maiden moving vertically and move her horizontally instead. Therefore, by switching it up and giving Rich Man's Daughter and Pop Idol Paranoia+1 each, an Incident will occur: Two Paranoia will be sent to Pop Idol, turning her into a Serial Killer to take our Rich Man's Daughter. Another one-turn kill!\n\nIf you're unable to kill Rich Man's Daughter on the first day, take the following actions:\n\n- Place Paranoia on Pop Idol and Class Rep to cause an Incident, or make her a Serial Killer.\n- Use the Conspiracy Theorist's mandatory ability every day.\n- Place two Intrigue on Rich Man's Daughter\n- Place four Intrigue on the Shrine Maiden instead if Rich Man's Daughter has Forbid Intrigue on her.\n- Move each character so that Rich Man's Daughter is alone with the Killer or Serial Killer.\n\nOn the third Day, if the Pop Idol is a Serial Killer, you can perform a surprise attack. If the Mystery Boy is exposed as a Serial Killer, the Protagonists will use him aggressively, so be careful.\n\nYou'll want the Final Guess to hide the Factor, so don't ignore the Boy Student's mandatory Goodwill ability.\n\nDay 1 guide:\n\n1st Loop:\n\n\n\nShrine Maiden: Move Down\n\nRich Man's Daughter: Intrigue+2\n\nPop Idol: Move Right\n\n2nd Loop:\n\n\n\nShrine Maiden: Move Down\n\nRich Man's Daughter: Intrigue+2 or Paranoia+1\n\nPop Idol: Move Right\n\n2nd–3rd Loop (Rich Man's Daughter moves Left)\n\n\n\nShrine Maiden: Move Down, or Intrigue+2\n\nRich Man's Daughter: Paranoia+1\n\nPop Idol: Paranoia+1\n\n3rd Loop onward:\n\n\n\nShrine Maiden: Move Down, or Intrigue +2, +1\n\nRich Man's Daughter: Intrigue +2, +1, or Paranoia+1\n\nPop Idol: Paranoia+1"
+    },
+    {
+      "title": "KILL BOSS: The Looper",
+      "creator": "Ryo.Shin.",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 92
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/92",
+      "difficultySets": [
+        {
+          "numberOfLoops": 3,
+          "difficulty": 0
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "signWithMe"
+      ],
+      "subPlots": [
+        "threadsFate",
+        "paranoiaVirus"
+      ],
+      "daysPerLoop": 3,
+      "cast": {
+        "boss": [
+          "keyPerson",
+          {
+            "Turf": "Hospital"
+          }
+        ],
+        "journalist": "conspiracyTheorist",
+        "officeWorker": "person",
+        "doctor": "person",
+        "patient": "person",
+        "nurse": "person",
+        "teacher": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "increasingUnease",
+          "culprit": "teacher"
+        },
+        {
+          "day": 2,
+          "incident": "murder",
+          "culprit": "officeWorker"
+        },
+        {
+          "day": 3,
+          "incident": "hospitalIncident",
+          "culprit": "nurse"
+        }
+      ],
+      "description": "This is a tribute to the corporate slave TRPG \"Kill Boss.\"\nIt was made as a light-hearted, fun script.",
+      "specialRules": [
+        "Key Person rules:\n\n1. [Always] This character is also treated as a \"Girl.\"\n2. [Mandatory: Upon Key Person's death] The Protagonists win and the Loop ends, even if a Defeat Condition is triggered.\n3. [Defeat Condition: At the end of Loop]: The Key Person survives.\n4. The Key Person is the \"Boss.\""
+      ],
+      "victory-conditions": "",
+      "story": "\"Are you free tomorrow? You can come in tomorrow, right?\"\n\"ChatGPT can do a better job than this.\"\n\"Young people these days are so...\"\n\"Ah, I'll leave this to you then. Can you get it done in three days?\"\n\nI'm sick of this.\nLet's put an end to these monotonous days once and for all.\n\nDay 1: Increasing Unease (Teacher)\nMy workload increases, but my salary remains the same. This is serious, I'll spread the word on social media about this.\n\nDay 2: Murder (Office Worker)\nI have no choice, he has to die. Deadlines? No, you should worry about your own deadline instead.\n\nDay 3: Hospital Incident (Nurse)\nMedical equipment malfunction? Accidentally gave the wrong dosage? Well, it was an accident, what can you do about it?\n\nFinal Guess\nI've had enough! I'm going to tell the news station everything!",
+      "mastermindHints": "Try your best to keep the Boss alive.\n\nThe School is safe because it's far from the Hospital, and the Office Worker can't enter it. However, if the Protagonists notice the Threads of Fate and Paranoia Virus Sub Plots, it'll be very dangerous to make it out alive.\n\nIn the first Loop, if you use Forbid Goodwill and Forbid Paranoia, you should be safe. Interfere with their search for the Incident's Culprit, and pray that you don't get any Goodwill. Never use the Conspiracy Theorist's mandatory ability.\n\nAfter the second Loop, the Serial Killer will appear here and there, so avoid being alone with them. Also, if the Office Worker has hit his Paranoia Limit, keep placing Movement cards on the Office Worker and the Boss. Since there are only three Forbid Movement cards, you can avoid Murder on the second Day.\n\nThe final Loop is pure hell, so brace yourself. If the Protagonists noticed Threads of Fate and the Paranoia Virus Sub Plots, they'll have scattered Goodwill in the previous Loop. The Mastermind can only fight back with Paranoia-1 and Forbid Paranoia, but the Protagonists have plenty of Paranoia and Intrigue with three Paranoia+1, and the mandatory abilities of the Journalist and Doctor. Grit your teeth and do your best to survive.\n\nFor the Final Guess, the Conspiracy Theorist will be the focus, so try to hide her if you can afford it...\n\nI think the Mastermind's chances of winning are slim, so you might want to consider cutting out the Final Guess altogether."
     },
     {
       "title": "邪悪なる汚染領域 (Evil Contaminated Realm)",
