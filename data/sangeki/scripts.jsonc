@@ -2097,6 +2097,72 @@
       "mastermindHints": "The basic way to win is by placing Intrigue on the Shrine. At the same time, however, how you prepare your CS and how you hide one of your roles are the important tests for your skill as a Mastermind.\n\nThe CS for the Main Plot is mostly limited to Sign with Me! and the presence of Giant Time Bomb, but you should adjust to the Sub Plot and how you hide your roles as well.\n\nThe main ways to use Incidents are as follows:\n・Murder: Kill a Friend\n・Increasing Unease: Activate Loved One and create a Serial Killer\n・Foul Evil: Lucky! Put all your effort into CS.\n・Suicide: Kill a Friend\n・Hospital Incident: Kill a Friend or the Protagonist.\n・Faraway Murder: Kill a Friend\n・Spreading: Interfere with the Protagonists by using Doctor's mandatory Goodwill ability.\n・Butterfly Effect: Various methods"
     },
     {
+      "title": "Everyone Gathers to Bully the Tofu-Minded",
+      "creator": "Lapras-hst@パーソン",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 13
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/13",
+      "difficultySets": [
+        {
+          "numberOfLoops": 5,
+          "difficulty": 4
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "murderPlan"
+      ],
+      "subPlots": [
+        "unknownFactor",
+        "paranoiaVirus"
+      ],
+      "daysPerLoop": 5,
+      "cast": {
+        "richStudent": "keyPerson",
+        "shrineMaiden": "killer",
+        "girlStudent": "brain",
+        "boyStudent": "factor",
+        "teacher": "conspiracyTheorist",
+        "mysteryBoy": "serialKiller",
+        "classRep": "person",
+        "popIdol": "person",
+        "transferStudent": [
+          "person",
+          {
+            "enters on day": 3
+          }
+        ]
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "increasingUnease",
+          "culprit": "richStudent"
+        },
+        {
+          "day": 3,
+          "incident": "missingPerson",
+          "culprit": "popIdol"
+        },
+        {
+          "day": 5,
+          "incident": "farawayMurder",
+          "culprit": "classRep"
+        }
+      ],
+      "description": "A script full of students, where the clique of girls gang up on the unfortunate ojou-sama to bully her to death. If the Protagonist is not familiar with the game, you can ask for their opinion. On the other hand, if you're facing an experienced opponent, 4 Loops is fine.\n\nThe Power Play is quite strong, so you can aim for one-turn kills many times in the first half. If you're lucky, you can even get three in a row. The second half is a tense battle of predicting your opponent's moves. Make full use of not only the Killer, but Paranoia Virus to bully the Rich Man's Daughter into the grave.\n\nAlso, even if you change the Main Plot to \\\"Sign with Me!\\\" or the Sub Plot to any other plot, the script will still work. Try shuffling the rules and roles as you please. I recommend including a Serial Killer.",
+      "specialRules": [
+        "Mastermind can't use \"Forbid Goodwill.\""
+      ],
+      "victory-conditions": "",
+      "story": "Now that the slightly-standoffish girl broke the Girl Code and chummed up to the most popular boy in class, things are about to get dicey. She's incurred the wrath of the entire female body! All bets are off!\n\nHe'll be on her side... right?\n\nThrow in a clumsy teacher, a mysterious lone wolf, and a clueless transfer student, the situation is about to explode and drag the entire class down with it!",
+      "mastermindHints": "Let's just focus on putting Rich Man's Daughter into the grave.\n\nIn the first Loop, if there's no interference, you can just use the Killer's mandatory ability to kill the Rich Man's Daughter. If Intrigue gets blocked, use the Conspiracy Theorist's ability to put Paranoia on the Rich Man's Daughter to cause an Incident, then combine it with Brain's ability to place 2 more Intrigue on her, and then finally use the Killer's ability to take her down.\n\nIn the second loop, if the Protagonists are obedient enough to block Intrigue, you can use the aforementioned Brain/Conspiracy Theorist combo even if the face down Action cards are in the same positions as the first Loop.\n\nIn the second or third Loop, the Protagonists may decide that the School is dangerous and move Rich Man's Daughter. At this point, they'll be suspicious of the Shrine Maiden moving vertically and move her horizontally instead. Therefore, by switching it up and giving Rich Man's Daughter and Pop Idol Paranoia+1 each, an Incident will occur: Two Paranoia will be sent to Pop Idol, turning her into a Serial Killer to take our Rich Man's Daughter. Another one-turn kill!\n\nIf you're unable to kill Rich Man's Daughter on the first day, take the following actions:\n\n- Place Paranoia on Pop Idol and Class Rep to cause an Incident, or make her a Serial Killer.\n- Use the Consporacy Theorist's mandatory ability every day.\n- Place two Intrigue on Rich Man's Daughter\n- Place four Intrigue on the Shrine Maiden instead if Rich Man's Daughter has Forbid Intrigue on her.\n- Move each character so that Rich Man's Daughter is alone with the Killer or Serial Killer.\n\nOn the third Day, if the Pop Idol is a Serial Killer, you can perform a surprise attack. If the Mystery Boy is exposed as a Serial Killer, the Protagonists will use him aggressively, so be careful.\n\nYou'll want the Final Guess to hide the Factor, so don't ignore the Boy Student's mandatory Goodwill ability.\n\nDay 1 guide:\n1st Loop:\nShrine Maiden: Move Down\nRich Man's Daughter: Intrigue+2\nPop Idol: Move Right\n\n2nd Loop:\nShrine Maiden: Move Down\nRich Man's Daughter: Intrigue+2 or Paranoia+1\nPop Idol: Move Right\n\n2nd–3rd Loop (Rich Man's Daughter moves Left)\nShrine Maiden: Move Down, or Intrigue+2\nRich Man's Daughter: Paranoia+1\nPop Idol: Paranoia+1\n\n3rd Loop onward:\nShrine Maiden: Move Down, or Intrigue +2, +1\nRich Man's Daughter: Intrigue +2, +1, or Paranoia+1\nPop Idol: Paranoia+1"
+    },
+    {
       "title": "邪悪なる汚染領域 (Evil Contaminated Realm)",
       "creator": "ペンスキー",
       "set": [
