@@ -232,6 +232,12 @@
       {/snippet}
 
       {@render entry(
+        'WizKids English release',
+        $getString('The current English edition for sale.'),
+        'https://shop.wizkids.com/products/tragedy-looper-new-tragedies',
+        ['en']
+      )}
+      {@render entry(
         'Rooper Udonarium',
         $getString('A website to play Tragedy Looper Online.'),
         `https://d3snr6xc5uvnuy.cloudfront.net/rooper-udonarium/udonarium/?lang=${lang == 'ja' ? 'ja' : 'en'}`,
@@ -261,6 +267,24 @@
         'Melodice Playlist',
         $getString('A playlist for Tragedy Looper'),
         'https://melodice.org/playlist/tragedy-looper-2011/'
+      )}
+      {@render entry(
+        'BoardGameGeek',
+        $getString('BGG page.'),
+        'https://boardgamegeek.com/boardgame/148319/tragedy-looper',
+        ['en']
+      )}
+      {@render entry(
+        'JP Wiki',
+        $getString('A fan wiki with lots of information.'),
+        'https://w.atwiki.jp/rooper',
+        ['ja']
+      )}
+      {@render entry(
+        'DLSite Store',
+        $getString('Japanese storefront.'),
+        'https://www.dlsite.com/home/fsr/=/title_id/SRI0000043091/order/title_d/from/work.titles',
+        ['ja']
       )}
     </ul>
   </article>
