@@ -252,7 +252,7 @@
       )}
       {@render entry(
         'TTS Club Discord',
-        $getString('Sessions are hosted semi-regularly here.'),
+        $getString('Sessions are hosted semi-regularly here. It's recommended to use the KeywordTracker plugin via BetterDiscord.'),
         'https://discord.com/channels/90897972715352064/208223653077319681',
         ['en']
       )}
