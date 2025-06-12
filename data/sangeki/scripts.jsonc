@@ -625,6 +625,69 @@
       "mastermindHints": "For the Henchman's starting Location, I recommend the School or an adjacent board.\n\nIn the first Loop, we'll use Missing Person to move the Rich Man's Daughter and then have the Serial Killer kill her. Place Horizontal Movement on the Pop Idol, Paranoia+1 on the Rich Man's Daughter, and a bluff, then send the Rich Man's Daughter to the Hospital with Missing Person to win.\n\nFrom the second Loop onward, aim to either win via Murder or put Intrigue+2 on the School while handling the Serial Killer.\n\nThe Black Cat is just a diversion and don't do much harm this time. Once the Key Person is revealed, the main plot \\\"Light of the Avenger\\\" will be negated, so keep in mind that you don't need to worry about the Shrine's Intrigue.\n\nWinning via Murder is done by placing Forbid Movement or Paranoia+1 on the Pop Idol, and the School's Intrigue is handled by using Forbid Intrigue. If you put the Henchman on the School, you can always win by Intrigue with the Cultist's mandatory ability. However, if the Cultist is revealed, the Protagonists will interfere and make placing Intrigue on the School difficult.\n\nThe best resistance the Mastermind can offer on Day 1 is probably School Intrigue+2 with the Henchman, placing Horizontal Movement on the Pop Idol, and Paranoia+1 on the Rich Man's Daughter. Although, this can be overcome by moving the Serial Killer and the Cultist to the same place.\n\nThe final Loop will be a guessing game. Ideally, you don't want to narrow down the Cultist candidates, but if there are multiple Forbid moves active, it'll be difficult for the Mastermind to win. Try to predict the Movement actions so that you setup meetings between the Rich Man's Daughter and the Doctor/Pop Idol."
     },
     {
+      "title": "She's Here",
+      "creator": "Ryo.Shin.",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 91
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/91",
+      "difficultySets": [
+        {
+          "numberOfLoops": 3,
+          "difficulty": 2
+        }
+      ],
+      "tragedySet": "firstSteps",
+      "mainPlot": [
+        "murderPlan"
+      ],
+      "subPlots": [
+        "shadowRipper"
+      ],
+      "daysPerLoop": 3,
+      "cast": {
+        "girlStudent": "keyPerson",
+        "policeOfficer": "killer",
+        "henchman": "brain",
+        "alien": "conspiracyTheorist",
+        "transferStudent": [
+          "serialKiller",
+          {
+            "enters on day": 2
+          }
+        ],
+        "officeWorker": "person",
+        "forensicSpecialist": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "increasingUnease",
+          "culprit": "henchman"
+        },
+        {
+          "day": 2,
+          "incident": "farawayMurder",
+          "culprit": "policeOfficer"
+        },
+        {
+          "day": 3,
+          "incident": "missingPerson",
+          "culprit": "transferStudent"
+        }
+      ],
+      "description": "This is a short First Steps script without any difficult gimmicks or PP, and is designed to be beginner-friendly. The behavior of the Henchman and the Transfer Student holds the key.",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "1. Kill the Key Person (via Killer, Serial Killer, or Faraway Murder)\n2. Kill the Protagonists (Killer)",
+      "story": "A female student happens to witness a police officer commiting a crime. He seems to have hidden connections with a criminal organization, and now he's teamed up with his associates to try and silence her.\n\nWill the police help her?\nIn the midst of her fear, a transfer student approaches her and offers to help. Can she really be trusted?",
+      "mastermindHints": "In the first Loop, place Horizontal Movement on the Police Officer, Intrigue+2 on the Girl Student, and Vertical Movement on the Alien, then use the Killer to kill the Girl Student. If you want to take care of Forbid Intrigue, you can start the Henchman in the School, trigger Increasing Unease with Paranoia+2, and place a second Intrigue on the Girl Student with the Brain's ability.\n\nIn the second Loop, you'll also aim to kill the Girl Student, but Faraway Murder should make you wary of Intrigue on the Girl Student. Start the Henchman in the Shrine, trigger Increasing Unease via the Conspiracy Theorist, move the Henchman, and aim to put Intrigue on the Girl Student via the Brain's ability. After that, aim to kill her with Faraway Murder or the Killer.\n\nOn the second Day, the Transfer Student will arrive. She can reduce Intrigue with 2 Goodwill, so the Protagonists will gladly make use of her. Don't worry, though, because she's the Serial Killer. If there is no Henchman in the School, she'll gladly get to work.\n\nThe final Loop will be tough, but the Mastermind have some weapons at his disposal.\n- Accumulate Intrigue on the Killer by having the Henchman start in the City\n- Use Missing Person on Transfer Student on the 3rd Day.\n\nAim to kil the Key Person or the Protagonists. There are advantages to placing Henchman anywhere other than the Hospital.\n- Shrine: Easy to trigger Increasing Unease\n- School: Can place Intrigue on the Girl Student\n- City: Can place Intrigue on the Police Officer\n\nThe Protagonists are not defenseless, either, and have weapons such as:\n- Using the Alien or Serial Killer to kill the Brain/Killer\n- Controlling Intrigue by using the Forensic Specialist's or the Tranfer Student's ability.\n\nIf the Protagonists let the Girl Student escape to the Shrine, it'll be difficult for the Killer or Serial Killer to reach her. Make good use of powerful actions such as Paranoia-1 or Forbid Movement."
+    },
+    {
       "title": "噂の果ての真相 (The Truth Behind the Rumors)",
       "creator": "ペンスキー",
       "set": [
