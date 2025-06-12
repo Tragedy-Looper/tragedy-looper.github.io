@@ -220,7 +220,7 @@
             </span>
           {/if}
           {#if partialLanguages.length > 0}
-            (<Translation translationKey={'partially'} />
+            (<Translation translationKey={''} />
             <span class="language">
               {#each partialLanguages as lang}
                 {languageToFlag[lang]}&nbsp;
