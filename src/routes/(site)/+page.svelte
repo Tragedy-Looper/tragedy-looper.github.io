@@ -193,11 +193,11 @@
   </article>
   <article>
     <header>
-      <strong><Translation translationKey={'Additional Tools'} /></strong>
+      <strong><Translation translationKey={'Additional Links'} /></strong>
     </header>
     <p>
       <Translation
-        translationKey={'Here are some additonal interesting tools when you Play Tragedy Looper'}
+        translationKey={'Here are some additonal interesting links related to Tragedy Looper.'}
       />
     </p>
     <ul>
@@ -220,7 +220,7 @@
             </span>
           {/if}
           {#if partialLanguages.length > 0}
-            (<Translation translationKey={'parrtially'} />
+            (<Translation translationKey={'partially'} />
             <span class="language">
               {#each partialLanguages as lang}
                 {languageToFlag[lang]}&nbsp;
@@ -233,7 +233,7 @@
 
       {@render entry(
         'Rooper Udonarium',
-        $getString('A website to play TragedyLooper Online.'),
+        $getString('A website to play Tragedy Looper Online.'),
         `https://d3snr6xc5uvnuy.cloudfront.net/rooper-udonarium/udonarium/?lang=${lang == 'ja' ? 'ja' : 'en'}`,
         ['ja'],
         ['en']
@@ -242,6 +242,12 @@
         'Tabletop Simulator',
         $getString('Tabletop Simulator Mod'),
         'https://steamcommunity.com/workshop/filedetails/?id=3460409203',
+        ['en']
+      )}
+      {@render entry(
+        'TTS Club Discord',
+        $getString('Sessions are hosted semi-regularly here.'),
+        'https://discord.com/channels/90897972715352064/208223653077319681',
         ['en']
       )}
       {@render entry(
