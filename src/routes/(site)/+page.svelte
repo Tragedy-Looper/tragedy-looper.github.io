@@ -220,7 +220,7 @@
             </span>
           {/if}
           {#if partialLanguages.length > 0}
-            (<Translation translationKey={''} />
+            (<Translation translationKey={'partially'} />
             <span class="language">
               {#each partialLanguages as lang}
                 {languageToFlag[lang]}&nbsp;
@@ -239,7 +239,7 @@
       )}
       {@render entry(
         'Rooper Udonarium',
-        $getString('A website to play Tragedy Looper Online, with an English interface and cards.'),
+        $getString('A website to play Tragedy Looper Online.'),
         `https://d3snr6xc5uvnuy.cloudfront.net/rooper-udonarium/udonarium/?lang=${lang == 'ja' ? 'ja' : 'en'}`,
         ['ja'],
         ['en']
@@ -252,7 +252,7 @@
       )}
       {@render entry(
         'TTS Club Discord',
-        $getString('Sessions are hosted semi-regularly here. It's recommended that you use the KeywordTracker plugin via BetterDiscord to be notified when a TL game is hosted.'),
+        $getString('Sessions are hosted semi-regularly here.'),
         'https://discord.com/channels/90897972715352064/208223653077319681',
         ['en']
       )}
