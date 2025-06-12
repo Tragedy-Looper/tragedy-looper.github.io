@@ -1605,7 +1605,11 @@
       "difficultySets": [
         {
           "numberOfLoops": 4,
-          "difficulty": 0
+          "difficulty": 4
+        },
+        {
+          "numberOfLoops": 3,
+          "difficulty": 6
         }
       ],
       "tragedySet": "basicTragedy",
@@ -1673,7 +1677,7 @@
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "Loop 1, suicide the factor if you can. \nLoop 2 you can consider killer-killing the illusion. \nLoop 3 maybe faraway murder. \nLoop 4 try to pull stuff off without revealing the last few roles. \n\nhttps://boardgamegeek.com/thread/1548338/tragedy-looper-pbf-35-custom-script-game-over and \nhttps://boardgamegeek.com/thread/1550297/tragedy-looper-pbf-36-custom-script-game-over \nare two logs of this script played where the mastermind wins, so you can study those if you're trying to optimize"
+      "mastermindHints": "Loop 1, activate the Factor as fast as possible, bluff Incidents to keep the Protagonists guessing and putting out fires. Kill Factor with either Faraway Murder (preferred) or Suicide. Ignore the Illusion to make them ignore it as well.\n\nLoop 2, attempt to kill the Illusion using the Killer. Gather several people together to hide who the Killer might be.\n\nLoop 3, use Faraway Murder to kill the Illusion or activated Factor, or Suicide the Factor.\n\nLoop 4, if playing, use whatever you need to.\n\nHide the Brain by using the Unsettling Rumor, and hide the Killer by having a crowd around the Illusion. Remember the Illusion can be used to bluff a different main plot because she gets tokens when you play a card on a Location, you can also use this to your advantage by bluffing something where she is and moving her to a location where she would get Intrigue.\n\nhttps://boardgamegeek.com/thread/1548338 and https://boardgamegeek.com/thread/1550297 are two logs of this script played where the Mastermind wins, so you can study those if you’re trying to optimize "
     },
     {
       "title": "豆腐殺人事件 (Tofu Murder Case)",
