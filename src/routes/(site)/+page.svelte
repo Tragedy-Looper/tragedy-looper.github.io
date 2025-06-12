@@ -239,7 +239,7 @@
       )}
       {@render entry(
         'Rooper Udonarium',
-        $getString('A website to play Tragedy Looper Online, with an English interface and cards.),
+        $getString('A website to play Tragedy Looper Online, with an English interface and cards.'),
         `https://d3snr6xc5uvnuy.cloudfront.net/rooper-udonarium/udonarium/?lang=${lang == 'ja' ? 'ja' : 'en'}`,
         ['ja'],
         ['en']
