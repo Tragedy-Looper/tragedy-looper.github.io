@@ -1614,6 +1614,13 @@
    {
       "title": "A Businessman Wanders into a Place Full of Women",
       "creator": "yurei(ʘᴗʘ✿)",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 11
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/11",
       "difficultySets": [
         {
           "numberOfLoops": 4,
