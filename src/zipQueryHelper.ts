@@ -1,4 +1,5 @@
 import { zip, unzip } from "gzip-js";
+import { enableTranslationUi } from "./routes/+layout.svelte";
 
 
 const zipParameterName = 'zip';
@@ -7,7 +8,7 @@ const zipParameterName = 'zip';
 export function generateUrl(url: string, params: Record<string, unknown>): string {
     const zipData = generateZipParameter(params);
     const rawData = generateRawParameter(params);
-    return `${url}${zipData.length < rawData.length ? zipData : rawData}`;
+    return `${url}${zipData.length < rawData.length && enableTranslationUi.shortenUrlsWithZip ? zipData : rawData}`;
 }
 
 function generateZipParameter(params: Record<string, unknown>): string {
@@ -17,7 +18,7 @@ function generateZipParameter(params: Record<string, unknown>): string {
     return `?${zipParameterName}=${encodeURIComponent(btoa(binaryString))}`;
 }
 function generateRawParameter(params: Record<string, unknown>): string {
-    const entries = Object.entries(params).map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(JSON.stringify(value))}`);
+    const entries = Object.entries(params).filter(([,value])=>value!=undefined).map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(JSON.stringify(value))}`);
     return `?${entries.join('&')}`;
 }
 
