@@ -1139,7 +1139,7 @@
       "mastermindHints": "基本的に「封印されしモノ」か「僕と契約しようよ！」とのCSを組む。また、カルティストの能力は使用せず、発覚するまでタイムトラベラーでの勝利も狙わ ない。（4日目にアルバイトを殺害出来ればお嬢様、アイドル経由での友好カウンターが無い限り勝利できるが、不安定なので次善の案として構えること。）\n（アルバイトの能力が起動するとルールYが発覚する。また、X1、X2は情報屋の能力や病院の事件でラバーズの死により発覚する。）\n\n以上を踏まえた上で以下の通りに行動する。\n第一ループ。蝶の羽ばたきを起こして勝利する。なるべくCSのルールを増やしたい。神社、病院に暗躍カウンターを2つ、もしくはお嬢様やアイドルに暗躍カウンターを置いておきたい。不安拡大や邪気の汚染の発生を起こしておきたい。\n第二ループ。病院の事件での勝利を狙いたい。不穏な噂の能力は使用して構わない。暗躍カウンターを2つ置けるようならそのまま主人公を殺害、1つしか置け ない場合はメインラバーズ経由での殺害を行う。（どちらにせよ3日目の行動カードセット時に暗躍カウンターを委員長に置いておくこと、メインラバーズ発覚 後は暗躍禁止を置かれやすい）\n第三ループ。ルールYが絞られているのであればタイムトラベラーでの勝利を狙う。（この時友好カウンターを置かれないように細心の注意を払うこと、アイド ルと同じ場所に居ないようにする）そうでなければメインラバーズ、もしくはルールYでの勝利を狙うこと。\n\n最後の戦いは苦しい。ミスリーダーを確定させないように立ち回れれば上々。カルティストの隠し先が焦点になりやすい。タイムトラベラーがバレている場合、消去法的に入院患者がカルティストに指定される可能性が高い。\n主人公側としては、アルバイトへカウンターを置いてアルバイト？に変貌させ、友好能力を使うことがカギとなる。\n"
     },
     {
-      "title": "ウイルス対策友情戦線 (Antivirus Friendship Front)",
+      "title": "Antivirus Friendship Front",
       "creator": "れう",
       "set": [
         {
@@ -1195,13 +1195,13 @@
           "culprit": "informer"
         }
       ],
-      "description": "シンプルな構成の脚本です。\nあまりつよい脚本ではないので、相談不可を初めて行う場合や初心者が多い場合に最適\nまた、妄想拡大ウイルスを使用してミスリーダーやタイムトラベラーの位置を割っていくことに気づけば、主人公はかなり楽に勝てます ",
+      "description": "This is a simple, easy script that's best suited for first-time players who want to get used to not allowing table talk, or when there are beginners. Also, if they realize that they can use Paranoia Virus to deduce the identities of the Conspiracy Theorist and Time Traveler, the Protagonists can win quite easily.",
       "specialRules": [
         ""
       ],
-      "victory-conditions": "勝ち手段は以下の4つ\n\nフレンドの殺害\n蝶の羽ばたきの発生\n病院の事件\nタイムトラベラー",
+      "victory-conditions": "There are 4 ways to win:\n- Kill a Friend\n- Butterfly Effect\n- Hospital Incident\n- Time Traveler",
       "story": "",
-      "mastermindHints": "またフレンドの殺害には殺人事件、病院の事件、シリアルキラーによる殺害が用意されています。\n\n一番優先したいのは殺人事件によるフレンドの殺害です。\nただし、事件を起こそうと不安を重ねるとサラリーマン、巫女、情報屋はシリアルキラーになり、\n消去法で役職が割られるため、最後の戦いがつらいものになっていきます。\nそのため、事件を起こす場合でも不安Cの個数には常に気を払って調整する必要があります。\n\n蝶の羽ばたきで勝つ場合は犯人が割れてしまうとミスリーダーなしで事件が起こせなくなるため、\n犯人候補を用意し、そちらにも不安Cを貼るのを忘れないように。\n\n病院の事件はタイムトラベラーの位置が割れてしまうので注意。\n\n隠すべき役職はフレンドのうちどちらか1人とミスリーダー\nそのために妄想拡大ウイルスによるシリアルキラーはなるべく発生させないように努めましょう。 "
+      "mastermindHints": "There are three ways to kill the Friend: Murder, Hospital Incident, or Serial Killer. Your first priority is to kill the Friend via the Murder Incident. However, if you stack Paranoia to trigger an Incident, the Office Worker, Shrine Maiden, or Informer will become Serial Killers, and the Roles will easily be deduced by process of elimination, making the Final Guess even harder for you. Therefore, even if you want to trigger an Incident, you should always be careful about the number of Paranoia you place.\n\nIf you want to win with Butterfly Effect, you will not be able to trigger an Incident without the Conspiracy Theorist if the Culprit is revealed, so prepare a Culprite candidate and don't forget to place Paranoia on it as well.\n\nBe careful with the Hospital Incident, as it will reveal the identity of the Time Traveler.\n\nThe Roles you want to hide are one of the Friends, and the Conspiracy Theorist. Therefore, try to avoid creating a Serial Killer via Paranoia Virus as much as possible."
     },
     {
       "title": "もしも百合の世界の間に男が入ってきたら (What if a Man Fell into the World of Yuri?)",
@@ -1603,7 +1603,7 @@
           "culprit": "classRep"
         }
       ],
-      "description": "A script that rlies too much on one gimmick, but you should be able to put up a decent fight.",
+      "description": "A script that relies too much on one gimmick, but you should be able to put up a decent fight.",
       "specialRules": [
         ""
       ],
