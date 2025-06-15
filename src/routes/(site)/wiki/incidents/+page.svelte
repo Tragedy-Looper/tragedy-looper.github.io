@@ -62,10 +62,10 @@
             <b>[<Translation translationKey={e.type} />]</b>
           {/if}
           {#if e.prerequisite}
-            [<i><Translation translationKey={e.prerequisite} /></i>]{#if e.description}⇒{/if}
+            [<i><Translation translationKey={e.prerequisite} link /></i>]{#if e.description}⇒{/if}
           {/if}
           {#if e.description}
-            <Translation translationKey={e.description} />
+            <Translation translationKey={e.description} link />
           {/if}
         </p>
         <footer>
