@@ -349,10 +349,10 @@ fs.writeFileSync('./src/data-ui-strings.ts', translationObject);
 //     ] as const)
 // }));
 
-const replaceMents = Object.fromEntries(types.map((key) => {
+const replaceMents = Object.fromEntries(types.map((type) => {
 
     const entryes =
-        key == 'scripts' ? Object.fromEntries(getJsonObjectsWithSchema('./data', key).flat().flatMap(script => {
+        type == 'scripts' ? Object.fromEntries(getJsonObjectsWithSchema('./data', type).flat().flatMap(script => {
             return ([
                 [`${script.title}.${script.creator ?? 'Unknown'}.description`, script.description ?? ''],
                 [`${script.title}.${script.creator ?? 'Unknown'}.title`, script.title ?? ''],
@@ -363,13 +363,13 @@ const replaceMents = Object.fromEntries(types.map((key) => {
             ] as const);
         }))
 
-            : Object.fromEntries(getJsonObjectsWithSchema('./data', key).flat().flatMap(element => {
+            : Object.fromEntries(getJsonObjectsWithSchema('./data', type).flat().flatMap(element => {
                 return ([
                     [`${element.id}.name`, element.name ?? ''],
                 ] as const);
             }));
 
-    return [key, entryes] as const;
+    return [type, entryes] as const;
 })) as Record<typeof types[number], Record<string, string>>
 
 const allTranslations = getJsonObjectsWithSchema('.', 'translations');
@@ -410,7 +410,11 @@ function generateOverrideUi() {
                 for (const [replacementType, replacements] of Object.entries(replaceMents)) {
                     if (key in replacements) {
                         
-                        const [actualKey, type] = key.split('.');
+                        
+                        const lastDotIndex = key.lastIndexOf('.');
+                        const actualKey = key.substring(0, lastDotIndex);
+                        const type = key.substring(lastDotIndex + 1);
+
                         if (type !== 'name') {
                             console.warn(`Unexpected type "${type}" for key "${key}". Expected "name".`);
                             continue;

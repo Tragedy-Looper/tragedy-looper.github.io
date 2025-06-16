@@ -68,7 +68,7 @@
                 {
                     "type": "Mandatory",
                     "timing": [
-                        ":goodwill: ablility step"
+                        "Goodwill ablility step"
                     ],
                     "description": "When this character’s :goodwill: ability is used, reveal this role after resolution. Then, the leader may increase the Extra Gauge one step."
                 }
@@ -217,10 +217,10 @@
                 {
                     "type": "Mandatory",
                     "timing": [
-                        ":goodwill: ablility step"
+                        "Goodwill ablility step"
                     ],
                     "prerequisite": "This charcter has more then 2 :paranoia:",
-                    "description": "This Character gains Mandatory :goodwill: Refusal."
+                    "description": "This Character gains Mandatory :goodwill: Refusel."
                 }
             ]
         },

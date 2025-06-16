@@ -176,10 +176,13 @@
 
 <div class="cardholder screen">
   {#each cards as card}
+    <div>
     <label class="card">
       <input type="checkbox" bind:group={selectedCards} value={card.key} />
       <Card {card} />
     </label>
+      <a href="{base}/wiki/character/{card.key}"><Translation translationKey="Details" /></a>
+    </div>
   {/each}
 </div>
 
@@ -257,7 +260,6 @@
       }
     }
   }
-
 
   .page {
     // DIN A4 landscape
