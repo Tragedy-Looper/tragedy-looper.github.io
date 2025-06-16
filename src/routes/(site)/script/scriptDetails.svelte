@@ -268,7 +268,7 @@
     >
     {#snippet plotEntry(s: PlotName | readonly [PlotName, Record<string, unknown>])}
       {#if typeof s == 'string'}
-        <Translation translationKey={plotsLookup[s].name} />
+        <Translation translationKey={`:${s}:`} link/>
       {:else}
         {@const plot = plotsLookup[s[0]]}
         {@const options = s[1] ?? {}}
@@ -303,7 +303,7 @@
         {#each Object.entries(script.cast) as [cast, role]}
           <tr>
             <td>
-              <Translation translationKey={charactersLookup[cast].name} />
+              <Translation translationKey={`:${cast}:`} link/>
             </td>
             <td>
               {#if isArray(role)}
@@ -340,12 +340,12 @@
             </td>
             <td>
               {#if isArray(incident)}
-                <Translation translationKey={incidentsLookup[incident[0]].name} /><br />
+                <Translation translationKey={`:${incident[0]}:`} link/><br />
                 <small>
-                  (<Translation translationKey={incidentsLookup[incident[1]].name} />)
+                  (<Translation translationKey={`:${incident[1]}:`} link/>)
                 </small>
               {:else}
-                <Translation translationKey={incidentsLookup[incident].name} />
+                <Translation translationKey={`:${incident}:`} link/>
               {/if}
             </td>
             <td>
@@ -367,7 +367,7 @@
     <div>
       {#each script.specialRules?.filter((x) => x.length > 0) as s}
         <p>
-          <Translation translationKey={s} />
+          <Translation translationKey={s} link/>
         </p>
       {/each}
     </div>
@@ -375,15 +375,15 @@
   <div>
     {#if script.story}
       <h5><Translation translationKey={'Story'} /></h5>
-      <Translation translationKey={script.story} block />
+      <Translation translationKey={script.story} block link/>
     {/if}
     {#if script.mastermindHints}
       <h5><Translation translationKey={'Hints for the Mastermind'} /></h5>
-      <Translation translationKey={script.mastermindHints} block />
+      <Translation translationKey={script.mastermindHints} block link/>
     {/if}
     {#if script['victory-conditions']}
       <h5><Translation translationKey={'Victory Conditions'} /></h5>
-      <Translation translationKey={script['victory-conditions']} block />
+      <Translation translationKey={script['victory-conditions']} block link/>
     {/if}
   </div>
   <hr />
@@ -404,7 +404,7 @@
           <li>
             <lable>
               <input type="checkbox" role="switch" bind:checked={alwaysTransmitCharacters[i]} />
-              <Translation translationKey={charactersLookup[a].name} />
+              <Translation translationKey={`:${a}:`} link/>
             </lable>
           </li>
         {/each}
@@ -416,7 +416,7 @@
 {#snippet renderRole(role: RoleName)}
   {@const roles = singleRolenames(role)}
   {#each roles as r, i}
-    <Translation translationKey={rolesLookup[r].name} />
+    <Translation translationKey={`:${r}:`} link/>
     {#if i < roles.length - 1},
     {/if}
   {/each}
