@@ -242,7 +242,7 @@
       "mastermindHints": "女の子に不安を置き続ければ確実に自殺します。刑事、従者は友好無視なので、妹で能力を女の子に使わないと抜けれないです。\n役職当ても妹が使われなければ、キーパーソン、ミスリーダー、キラー、クロマクは分からないので難しいです。\n早めに自殺は発生させてルールX2つを明らかにしてあげる方が良いかも、フレンド、ラバーズ、メインラバーズは早めに公開して殴り合いで抜けるしかないことに気付かせてあげましょう。 "
     },
     {
-      "title": "妹様におまかせ！(Leave it to Lil' Sis!)",
+      "title": "Leave it to Lil' Sis!",
       "creator": "れう",
       "set": [
         {
@@ -319,13 +319,13 @@
           "culprit": "henchman"
         }
       ],
-      "description": "凶悪な事件が多いPPよりの脚本です。\n主人公は妹の力を借りて惨劇を防いでいく脚本です。 ",
+      "description": "This script is more like PP, which has many violent crimes. The Protagonists will prevent tragedies with the help of their Little Sister.",
       "specialRules": [
-        "脚本家はあるキャラクターに行動カードをセットできない。\nそれは非公開シートで定められていて各ループで固定である。"
+        "The Mastermind can't set Actions cards on a certain secret, predetermined character in any Loop."
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "脚本家は妹にカードをセットできません。\nそのため、大人の能力は妹経由で撃たれ放題です。\n\n鑑識官の能力は不安の調整や死体の役職当て、\n刑事の能力はフレンドである自分に護衛カウンターを乗せることができ、\nそして手先の能力を使って事件を止めることが出来ればループ抜けすることも出来ます。\n\n脚本家の基本戦術は、手先を神社に配置したうえで病院の事件のブラフを交えながら暗躍2を貯める方法です。\n手先は可変ですので、見破られそうならば初期位置を変えましょう。\nただその場合、最後の戦い用のミスリーダー隠しは慎重に。\n\n基本は手先に不安を積めば勝てますが、シリアルキラーで手先を殺害されたり、妹を利用されて手先の能力を起動されるととてもつらい戦いになります。\n遠隔殺人は場所の暗躍との択を迫れるので強いですが、刑事の護衛カウンターなどで妨害されることもあるので、慎重に。\n\n蝶の羽ばたきはブラフ、CSに使えるほか、次ループ用に事件の犯人に友好を乗せる動きが出来れば強いです。\n\nこれは身内以外で初めて回した時に作った脚本でした。（その時は相談ありの3ループ抜け） "
+      "mastermindHints": "Special secret rule: The Mastermind can't place Action cards on the Little Sister.\n\nThe Mastermind can't set Actions on the Little Sister, so therefore she can use Adult Mandatory abilities at will. The Forensic Specialist can adjust Paranoia and identify the role of a corpse, the Police Officer can put an Escort Counter on yourself as a Friend, and if they  use the Henchman's ability to stop the Incidents, the Protagonists can escape the Loop.\n\nThe Mastermind's basic stragegy is to place the Henchman at the Shrine and accumulate 2 Intrigue while bluffing the Hospital Incident. The Henchman is adjustable, so change his starting position if you think you'll be discovered. In that case, however, be careful about hiding the Conspiracy Theorist for the Final Guess.\n\nBasically, you can win by putting Paranoia on Henchman, but if he is killed by the Serial Killer, or your Little Sister is used to activate the Henchman's ability, it'll be a very tough battle. Faraway Murder is strong because if forces you to choose between Locations for Intrigue, but it can also be hindered by the Police Officer's Escort counter, so be careful.\n\nButterfly Effect can be used for bluffing and CS, and it's also strong if you can put Goodwill on the Culprit for the next Loop."
     },
     {
       "title": "女の戦い (Battle Between Women)",
