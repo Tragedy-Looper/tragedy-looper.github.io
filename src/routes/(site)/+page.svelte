@@ -295,9 +295,9 @@
       <strong><Translation translationKey={'Wiki'} /></strong>
     </header>
     <ul>
-      <li><a href="/wiki/tragedys"><Translation translationKey={'Tragedys'} /></a></li>
-      <li><a href="/wiki/incidents"><Translation translationKey={'Incidents'} /></a></li>
-      <li><a href="/wiki/roles"><Translation translationKey={'Roles'} /></a></li>
+      <li><a href="{base}/wiki/tragedys"><Translation translationKey={'Tragedys'} /></a></li>
+      <li><a href="{base}/wiki/incidents"><Translation translationKey={'Incidents'} /></a></li>
+      <li><a href="{base}/wiki/roles"><Translation translationKey={'Roles'} /></a></li>
     </ul>
   </article>
 
