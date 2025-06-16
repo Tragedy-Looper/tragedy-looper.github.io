@@ -25,7 +25,6 @@
     highilghtMissing: true,
     inlineEdit: false,
     editLocals: false,
-    shortenUrlsWithZip: true,
     iconSet: 'zManText' as keyof typeof imageSets,
   };
 

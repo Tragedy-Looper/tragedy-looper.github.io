@@ -187,19 +187,6 @@
           />
         </small>
       </label>
-      <label>
-        <input
-          type="checkbox"
-          role="switch"
-          bind:checked={enableTranslationUi.shortenUrlsWithZip}
-        />
-        <Translation translationKey={'Shorten Urls'} />
-        <small>
-          <Translation
-            translationKey={'Urls will be gZipped to shorten them and prevent to long urls.'}
-          />
-        </small>
-      </label>
 
       <label>
         <Translation translationKey={'Icon Set'} />

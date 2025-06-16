@@ -80,10 +80,9 @@
       | [TKey, ...ObjectFromTagedArray<TKey>]
       | undefined;
     block?: boolean;
-    link?: boolean;
   };
 
-  let { translationKey, block = false, link = false }: Parameters = $props();
+  let { translationKey, block = false }: Parameters = $props();
 
   let key = $derived(
     Array.isArray(translationKey)
@@ -146,68 +145,35 @@
         } else {
           return self.renderToken(tokens, idx, options);
         }
-      }
-
-      let alternativeName: string | undefined = undefined;
-
-      if ($getAlternative(emojiName)) {
-        alternativeName = $getAlternative(emojiName);
-      }
-      if (isCharacterId(emojiName)) {
+      } else if ($getAlternative(emojiName)) {
+        return $getAlternative(emojiName);
+      } else if (isCharacterId(emojiName)) {
         const character = charactersLookup[emojiName];
-        const name = alternativeName ?? $getString(character.name);
-        if (link) {
-          return `<a href="${base}/wiki/character/${character.id}"><span class="emoji" title="${name}">${name}</span></a>`;
-        }
-        return name;
+        return $getString(character.name);
       } else if (isIncidentName(emojiName)) {
         const incident = incidentsLookup[emojiName];
-        const name = alternativeName ?? $getString(incident.name);
-        if (link) {
-          return `<a href="${base}/wiki/incident/${incident.id}"><span class="emoji" title="${name}">${name}</span></a>`;
-        }
-        return name;
+        return $getString(incident.name);
       } else if (isRoleName(emojiName)) {
         const roleNames = singleRolenames(emojiName);
 
         return roleNames
           .map((roleName) => {
             const role = rolesLookup[roleName];
-            const name = alternativeName ?? $getString(role.name);
-            if (link) {
-              return `<a href="${base}/wiki/role/${role.id}"><span class="emoji" title="${name}">${name}</span></a>`;
-            }
-            return name;
+            return $getString(role.name);
           })
           .join(', ');
       } else if (isPlotId(emojiName)) {
         const plot = plotsLookup[emojiName];
-        const name = alternativeName ?? $getString(plot.name);
-        if (link) {
-          return `<a href="${base}/wiki/plot/${plot.id}"><span class="emoji" title="${name}">${name}</span></a>`;
-        }
-        return name;
+        return $getString(plot.name);
       } else if (isTragedySetName(emojiName)) {
         const tragedy = tragedysLookup[emojiName];
-        const name = alternativeName ?? $getString(tragedy.name);
-        if (link) {
-          return `<a href="${base}/wiki/tragedy/${tragedy.id}"><span class="emoji" title="${name}">${name}</span></a>`;
-        }
-        return name;
+        return $getString(tragedy.name);
       } else if (isKeywordId(emojiName)) {
         const keyword = keywordsLookup[emojiName];
-        const name = alternativeName ?? $getString(keyword.name);
-        if (link) {
-          return `<a href="${base}/wiki/keyword/${keyword.id}"><span class="emoji" title="${name}">${name}</span></a>`;
-        }
-        return name;
+        return $getString(keyword.name);
       } else if (isTagId(emojiName)) {
         const tag = tagsLookup[emojiName];
-        const name = alternativeName ?? $getString(tag.name);
-        if (link) {
-          return `<a href="${base}/wiki/tag/${tag.id}"><span class="emoji" title="${name}">${name}</span></a>`;
-        }
-        return name;
+        return $getString(tag.name);
       }
       return `EMOCO: ${emojiName}`;
       return self.renderToken(tokens, idx, options);

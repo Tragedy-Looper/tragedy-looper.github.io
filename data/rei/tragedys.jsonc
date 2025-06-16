@@ -55,8 +55,8 @@
                     "description": "When determining if an Incident triggers, :goodwill: is counted instead of :paranoia:. When determining if a :goodwill: ability can be used, :paranoia: is counted instead of :goodwill:."
                 },
                 {
-                    "name": "Puppeted :goodwill: Refusel",
-                    "description": "Puppeted :goodwill: Refusel is a new form of :goodwill: Refusel. In addition to providing the basic effect of :goodwill: Refusel, the Mastermind may use the :goodwill: abilities of a character with Puppeted :goodwill: Refusel during the Mastermind abilities phase, provided that there are sufficient counters on that character. When they do, they must announce what ability is being used, and any targets that ability has, if applicable."
+                    "name": "Puppeted :goodwill: Refusal",
+                    "description": "Puppeted :goodwill: Refusal is a new form of :goodwill: Refusal. In addition to providing the basic effect of :goodwill: Refusal, the Mastermind may use the :goodwill: abilities of a character with Puppeted :goodwill: Refusal during the Mastermind abilities phase, provided that there are sufficient counters on that character. When they do, they must announce what ability is being used, and any targets that ability has, if applicable."
                 },
                 {
                     "name": "Dual Roles",

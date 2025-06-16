@@ -104,7 +104,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "Place 1 :hope: or :despair: counter on any character at this location. If this character has :goodwill: Refusel and at least 1 :goodwill: counter, the Mastermind may use this ability as their own",
+                    "description": "Place 1 :hope: or :despair: counter on any character at this location. If this character has :goodwill: Refusal and at least 1 :goodwill: counter, the Mastermind may use this ability as their own",
                     "timesPerLoop": 1
                 }
             ]
@@ -125,12 +125,12 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "During script creation, this character cannot be given a Role with :goodwill: Refusel."
+                    "description": "During script creation, this character cannot be given a Role with :goodwill: Refusal."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 5,
-                    "description": "Use a :goodwill: ability from an :adult: at this location, ignoring :goodwill: counters. It cannot be refused by :goodwill: Refusel, but counts towards that ability's 'Once per Loop' limit."
+                    "description": "Use a :goodwill: ability from an :adult: at this location, ignoring :goodwill: counters. It cannot be refused by :goodwill: Refusal, but counts towards that ability's 'Once per Loop' limit."
                 }
             ]
         },
@@ -153,7 +153,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "Each turn, the Leader may move 1 counter on this character to another character at this location. If this character has :goodwill: Refusel, the Mastermind must also do this during the Mastermind's ability step."
+                    "description": "Each turn, the Leader may move 1 counter on this character to another character at this location. If this character has :goodwill: Refusal, the Mastermind must also do this during the Mastermind's ability step."
                 }
             ]
         }

@@ -127,7 +127,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "prerequisite": "A Location where a character with :goodwill: Refusel is.",
+                    "prerequisite": "A Location where a character with :goodwill: Refusal is.",
                     "description": "Place an :intrigue: on one location."
                 }
             ]
