@@ -193,11 +193,11 @@
   </article>
   <article>
     <header>
-      <strong><Translation translationKey={'Additional Tools'} /></strong>
+      <strong><Translation translationKey={'Additional Links'} /></strong>
     </header>
     <p>
       <Translation
-        translationKey={'Here are some additonal interesting tools when you Play Tragedy Looper'}
+        translationKey={'Here are some additonal interesting links related to Tragedy Looper.'}
       />
     </p>
     <ul>
@@ -220,7 +220,7 @@
             </span>
           {/if}
           {#if partialLanguages.length > 0}
-            (<Translation translationKey={'parrtially'} />
+            (<Translation translationKey={'partially'} />
             <span class="language">
               {#each partialLanguages as lang}
                 {languageToFlag[lang]}&nbsp;
@@ -232,8 +232,14 @@
       {/snippet}
 
       {@render entry(
+        'WizKids English release',
+        $getString('The current English edition for sale.'),
+        'https://shop.wizkids.com/products/tragedy-looper-new-tragedies',
+        ['en']
+      )}
+      {@render entry(
         'Rooper Udonarium',
-        $getString('A website to play TragedyLooper Online.'),
+        $getString('A website to play Tragedy Looper Online, with an English interface and cards.'),
         `https://d3snr6xc5uvnuy.cloudfront.net/rooper-udonarium/udonarium/?lang=${lang == 'ja' ? 'ja' : 'en'}`,
         ['ja'],
         ['en']
@@ -242,6 +248,12 @@
         'Tabletop Simulator',
         $getString('Tabletop Simulator Mod'),
         'https://steamcommunity.com/workshop/filedetails/?id=3460409203',
+        ['en']
+      )}
+      {@render entry(
+        'TTS Club Discord',
+        $getString('Sessions are hosted semi-regularly here.'),
+        'https://discord.com/channels/90897972715352064/208223653077319681',
         ['en']
       )}
       {@render entry(
@@ -256,17 +268,36 @@
         $getString('A playlist for Tragedy Looper'),
         'https://melodice.org/playlist/tragedy-looper-2011/'
       )}
+      {@render entry(
+        'BoardGameGeek',
+        $getString('BGG page.'),
+        'https://boardgamegeek.com/boardgame/148319/tragedy-looper',
+        ['en']
+      )}
+      {@render entry(
+        'JP Wiki',
+        $getString('A fan wiki with lots of information.'),
+        'https://w.atwiki.jp/rooper',
+        ['ja']
+      )}
+      {@render entry(
+        'DLSite Store',
+        $getString('Japanese storefront.'),
+        'https://www.dlsite.com/home/fsr/=/title_id/SRI0000043091/order/title_d/from/work.titles',
+        ['ja']
+      )}
     </ul>
   </article>
+
 
   <article>
     <header>
       <strong><Translation translationKey={'Wiki'} /></strong>
     </header>
     <ul>
-      <li><a href="/wiki/tragedys"><Translation translationKey={'Tragedys'} /></a></li>
-      <li><a href="/wiki/incidents"><Translation translationKey={'Incidents'} /></a></li>
-      <li><a href="/wiki/roles"><Translation translationKey={'Roles'} /></a></li>
+      <li><a href="{base}/wiki/tragedys"><Translation translationKey={'Tragedys'} /></a></li>
+      <li><a href="{base}/wiki/incidents"><Translation translationKey={'Incidents'} /></a></li>
+      <li><a href="{base}/wiki/roles"><Translation translationKey={'Roles'} /></a></li>
     </ul>
   </article>
 

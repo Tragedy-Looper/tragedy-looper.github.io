@@ -6,8 +6,5 @@
         "markdown",
         "latex",
         "plaintext"
-    ],
-    "[markdown]": {
-        "editor.cursorSurroundingLines": 0
-    }
+    ]
 }

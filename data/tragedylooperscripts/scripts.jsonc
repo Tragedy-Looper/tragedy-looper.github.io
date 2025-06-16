@@ -909,10 +909,10 @@
         "unsettlingRumor",
         "facelessGod"
       ],
-      "story": "I tried writing a Cosmic Mythology script. You can find the relevant info for Plots, Sub-Plots, Roles, and Incidents in the Cosmic Evil Player's Handbook on Board Game Geek's Cosmic Evil page as of my writing this script, and I haven't used any of the new characters so it should all be playable with the base game materials. Note the changes to the informer's ability as given in the Cosmic Mythology Summary Sheet, which you can also find on Board Game Geek's Cosmic Evil page.",
-      "tragedySet": "cosmicMythology",
-      "mastermindHints": "If/when the protagonists get to 3 on the Extra Gauge, try to kill of the Deep One to finish them off, or the Faceless/Deep One :goodwill: Refusel? You can effectively decide whether or not Mass Suicide does anything by placing or not placing :intrigue: on the girlStudent with the girlStudent on Day 5. Be careful of the shrineMaiden's ability to remove :intrigue: from the Shrine. Don't forget the Unsettling Rumor ability!",
-      "specialRules": [
+  "story": "I tried writing a :cosmicMythology: script. You can find the relevant info for Plots, Sub-Plots, Roles, and Incidents in the Cosmic Evil Player's Handbook on Board Game Geek's Cosmic Evil page as of my writing this script, and I haven't used any of the new characters so it should all be playable with the base game materials. Note the changes to the informer's ability as given in the :cosmicMythology: Summary Sheet, which you can also find on Board Game Geek's Cosmic Evil page.",
+  "tragedySet": "cosmicMythology",
+  "mastermindHints": "If/when the protagonists get to 3 on the Extra Gauge, try to kill of the :deepOne: to finish them off, or the :faceless:/:deepOne: :goodwill: Refusel? You can effectively decide whether or not :massSuicide: does anything by placing or not placing :intrigue: on the girl:student: with the girl:student: on Day 5. Be careful of the shrineMaiden's ability to remove :intrigue: from the Shrine. Don't forget the Unsettling Rumor ability!",
+       "specialRules": [
         ""
       ],
       "victory-conditions": "At least as much :intrigue: on Shrine as the Extra Gauge shows (end of loop); Key Person dies (immediate); Wizard dies (end of loop); Protagonists die from Extra Gauge being at 4 (end of day); Loop loss from Extra Gauge Being at 4 (start of loop)\n\n",
@@ -1270,7 +1270,7 @@
       ],
       "story": "",
       "tragedySet": "basicTragedy",
-      "mastermindHints": "This is a script geared toward Protagonists still a bit unused to Tragedy Looper. We have few roles, so we need to hide at least the Witch as long as we can, else it's gg. On the other hand, Protagonists will need to focus on :goodwill: abilities, and the policeOfficer may never reveal his mandatory refusal. For the first loop, try using the Cultist to kill the nurse via Faraway Murder. Don't be afraid of over using his ability, he would have been discovered anyway pretty soon. \nThen, 2nd loop, Threads of Fate will make triggering Incidents considerably easier. Keep killing the nurse if you can, or try a steady win via Hospital Incident. It's up to you. 3rd loop is a battle of wits. If you succeed, you may still lose at The Final Guess unless you managed to hide the Witch so be careful.\nThe Cultist is your best friend. Beware, the Protagonists will try to kill him with the Serial Killer. If you can, try to keep the journalist's role concelead at least for the first loop; that will make your plays a lot easier. Use Spreading to choose a character you want :paranoia: on next loop. Faraway Murder is your midgame major threat, and your best bet to kill the nurse.",
+      "mastermindHints": "This is a script geared toward Protagonists still a bit unused to Tragedy Looper. We have few roles, so we need to hide at least the Witch as long as we can, else it's gg. On the other hand, Protagonists will need to focus on :goodwill: abilities, and the policeOfficer may never reveal his mandatory refusel. For the first loop, try using the Cultist to kill the nurse via Faraway Murder. Don't be afraid of over using his ability, he would have been discovered anyway pretty soon. \nThen, 2nd loop, Threads of Fate will make triggering Incidents considerably easier. Keep killing the nurse if you can, or try a steady win via Hospital Incident. It's up to you. 3rd loop is a battle of wits. If you succeed, you may still lose at The Final Guess unless you managed to hide the Witch so be careful.\nThe Cultist is your best friend. Beware, the Protagonists will try to kill him with the Serial Killer. If you can, try to keep the journalist's role concelead at least for the first loop; that will make your plays a lot easier. Use Spreading to choose a character you want :paranoia: on next loop. Faraway Murder is your midgame major threat, and your best bet to kill the nurse.",
       "specialRules": [
         ""
       ],
@@ -1920,14 +1920,14 @@
       "subPlots": [
         "hideousScript"
       ],
-      "story": "Young love often signaled a turbulent time of passion and change. Unfortunately for this city, when the boy became a patient at a mental ward, it also signaled the birth of a terrifying plan to elope, and the only thing in the lovers' way? The very nurse that had admitted him. And with the charm and resources of a very successful popIdol enrolled in an all-girls school? \"Collateral damage\" is all but certain, should the dark pair successfully enact their plan. But they are not outside of the public eye. A humble man of nine-to-fives is aware of the danger they pose, and must keep his secret, lest the lovers force him to take it to the grave.",
-      "tragedySet": "firstSteps",
-      "mastermindHints": "This is a very tricky First Steps script for Protagonist and Mastermind alike. You have a lot of tools to achieve your victory each loop, and there are several big threats that will draw the attention of the Protagonists very early on. However, your job is far from easy. While you are able to pull off some interesting plays off the special rule, including preventing movement and forcing the Protagonists into a catch-22, the School is a safe zone against some of your plays, especially if the popIdol ends up there. There are also 3 potentially useful :goodwill: 2 abilities, and none of them have :goodwill: Refusel, so expect these to be used to full effect, on top of the Friend (officeWorker) potentially being revealed before you can win using them. Finally, it is highly likely that the main plot will be discovered quickly, so you must take every opportunity to conceal the identities of your Key Person (nurse) and Killer (popIdol) during every loop but the last. Your most common route to victory early on will involve the Hospital Incident, using the Conspiracy Theorist as the culprit and your cards, you can easily pull off 2 :paranoia: on the patient. Between killing the Friend via the Murder incident and a :intrigue: turbo combo (Day 1: +2 :intrigue: on Killer, then +1 :intrigue: from Brain), you also have a couple of backup plans in case things go awry. If the Protagonists' strategy relies on a specific :goodwill: ability (notably the nurse or classRep), you can have the henchman steal 2 :goodwill: from that character using the Spreading incident, placing it on a useless :goodwill: ability (as his incident has already triggered).",
-      "specialRules": [
-        "[Always]: Characters with <Boy> or <Man> cannot move into the School by any means."
-      ],
-      "victory-conditions": "(1) The nurse is dead (Key Person) [Killer's Ability, Murder Incident, Hospital Incident] ; (2) The Friend (officeWorker) is dead at the end of the loop [Murder Incident, Hospital Incident] ; (3) The Protagonists are killed [Killer's Ability, Hospital Incident].\n\n",
-      "creator": "CipherCybr",
+     "story": "Young love often signaled a turbulent time of passion and change. Unfortunately for this city, when the boy became a patient at a mental ward, it also signaled the birth of a terrifying plan to elope, and the only thing in the lovers' way? The very nurse that had admitted him. And with the charm and resources of a very successful popIdol enrolled in an all-girls school? \"Collateral damage\" is all but certain, should the dark pair successfully enact their plan. But they are not outside of the public eye. A humble man of nine-to-fives is aware of the danger they pose, and must keep his secret, lest the lovers force him to take it to the grave.",
+  "tragedySet": "firstSteps",
+  "mastermindHints": "This is a very tricky :firstSteps: script for Protagonist and Mastermind alike. You have a lot of tools to achieve your victory each loop, and there are several big threats that will draw the attention of the Protagonists very early on. However, your job is far from easy. While you are able to pull off some interesting plays off the special rule, including preventing movement and forcing the Protagonists into a catch-22, the School is a safe zone against some of your plays, especially if the :popIdol: ends up there. There are also 3 potentially useful :goodwill: 2 abilities, and none of them have :goodwill: Refusel, so expect these to be used to full effect, on top of the :friend: (:officeWorker:) potentially being revealed before you can win using them. Finally, it is highly likely that the main plot will be discovered quickly, so you must take every opportunity to conceal the identities of your :keyPerson: (:nurse:) and :killer: (:popIdol:) during every loop but the last. Your most common route to victory early on will involve the :hospitalIncident:, using the :conspiracyTheorist: as the culprit and your cards, you can easily pull off 2 :paranoia: on the patient. Between killing the :friend: via the :murder: incident and a :intrigue: turbo combo (Day 1: +2 :intrigue: on :killer:, then +1 :intrigue: from :brain:), you also have a couple of backup plans in case things go awry. If the Protagonists' strategy relies on a specific :goodwill: ability (notably the :nurse: or :classRep:), you can have the :henchman: steal 2 :goodwill: from that character using the :spreading: incident, placing it on a useless :goodwill: ability (as his incident has already triggered).",
+  "specialRules": [
+    "[Always]: Characters with <:boy:> or <:man:> cannot move into the School by any means."
+  ],
+  "victory-conditions": "(1) The nurse is dead (:keyPerson:) [:killer:'s Ability, :murder: Incident, :hospitalIncident:] ; (2) The :friend: (:officeWorker:) is dead at the end of the loop [:murder: Incident, :hospitalIncident:] ; (3) The Protagonists are killed [:killer:'s Ability, :hospitalIncident:].\n\n",
+       "creator": "CipherCybr",
       "daysPerLoop": 4,
       "difficultySets": [
         {
@@ -2919,14 +2919,14 @@
         "unsettlingRumor",
         "unknownFactor"
       ],
-      "story": "A time traveller has travelled back in time to avoid a disastrous pandemic which originated in the city. He is immediately believed crazy and hospitalized. Unknown to him, however, the real trigger of the pandemic was not the Hospital Incident, but the event on a previous day when the popIdol was infected, becoming patient zero and transmitting the disease in the following weeks during her world tour. At the same time, other people mill around inciting strange events and muddling the investigation on what really happened.",
-      "tragedySet": "basicTragedy",
-      "mastermindHints": "This script should be very tricky for the Mastermind, as it relies completely on subterfuge. The key is to make the Protagonist waste cards on preventing the Hospital Incident, while in reality you don't want to trigger it at all (since it will reveal the patient as the Time Traveller when he will not die). Spread :paranoia: liberally in order to trigger Incidents and use every opportunity to lay down :intrigue: and hit every loss condition possible at the end of the loop (basically try having 2 :intrigue: on all locations and all girls). Thanks to the informer, the subplots will be known at some time, so the idea is to keep the Main Plot hidden as much as possible. Also, the officeWorker having Mandatory :goodwill: Refusel will whittle down the possible Plots, so try to keep them thinking that he could be the Factor instead.",
-      "specialRules": [
-        ""
-      ],
-      "victory-conditions": "1. Trigger \"Butterfly Effect\" (Change of Future victory condition)\n\nI like the idea of misleading the protagonists! Cool script!\n    Massola",
-      "creator": "vetinari7878",
+    "story": "A time traveller has travelled back in time to avoid a disastrous pandemic which originated in the city. He is immediately believed crazy and hospitalized. Unknown to him, however, the real trigger of the pandemic was not the :hospitalIncident:, but the event on a previous day when the :popIdol: was infected, becoming patient zero and transmitting the disease in the following weeks during her world tour. At the same time, other people mill around inciting strange events and muddling the investigation on what really happened.",
+  "tragedySet": "basicTragedy",
+  "mastermindHints": "This script should be very tricky for the Mastermind, as it relies completely on subterfuge. The key is to make the Protagonist waste cards on preventing the :hospitalIncident:, while in reality you don't want to trigger it at all (since it will reveal the :patient: as the Time Traveller when he will not die). Spread :paranoia: liberally in order to trigger Incidents and use every opportunity to lay down :intrigue: and hit every loss condition possible at the end of the loop (basically try having 2 :intrigue: on all locations and all girls). Thanks to the informer, the subplots will be known at some time, so the idea is to keep the Main Plot hidden as much as possible. Also, the :officeWorker: having :man:datory :goodwill: Refusel will whittle down the possible Plots, so try to keep them thinking that he could be the :factor: instead.",
+  "specialRules": [
+    ""
+  ],
+  "victory-conditions": "1. Trigger \":butterflyEffect:\" (:changeOfFuture: victory condition)\n\nI like the idea of misleading the protagonists! Cool script!\n    Massola",
+        "creator": "vetinari7878",
       "daysPerLoop": 7,
       "difficultySets": [
         {
@@ -3319,7 +3319,7 @@
       ],
       "story": "We just played through a custom script this afternoon written by our regular mastermind Max (our first custom script ever!), and it worked really well. The protagonists were one completely new player, one player who had only played an intro scenario, and me who has played about 12 times.\n\nThe protagonists won but it was close up until the final day of the final loop, so it might be a good script for those who are looking to play with a mixed group of new players and players who have already played the early scripts from the game.\n\nWe can't think of a decent name for the script though  Does anyone have any good ideas?",
       "tragedySet": "basicTragedy",
-      "mastermindHints": "The witch might get discovered quite early - the popIdol's :goodwill: ability is a tempting one, so her :goodwill: refusal will probably be outed in the first loop. Given this, Max (our mastermind) decided to try and win through :intrigue: on the City in day one, and spread about some :intrigue: and :paranoia: elsewhere so it wasn't too obvious.",
+      "mastermindHints": "The witch might get discovered quite early - the popIdol's :goodwill: ability is a tempting one, so her :goodwill: refusel will probably be outed in the first loop. Given this, Max (our mastermind) decided to try and win through :intrigue: on the City in day one, and spread about some :intrigue: and :paranoia: elsewhere so it wasn't too obvious.",
       "specialRules": [
         ""
       ],
@@ -3441,7 +3441,7 @@
       "specialRules": [
         ""
       ],
-      "victory-conditions": "patient dies by: Killer ability / Hospital Incident / Murder Incident / Suicide Incident\n\ndoctor :Killer, mastermind can be used :goodwill: refusal, key person how to run =)))) ....... ==> patient : Friend, nurse : Key Person\n    Tô Quốc Thái\n\nMastermind tip: use the brain ability as soon as the protagonists know that murder plan is the plot. This applies after day 2 when the Rich Man’s Daughter missing person's into the hospital.\n    Justin Karp",
+      "victory-conditions": "patient dies by: Killer ability / Hospital Incident / Murder Incident / Suicide Incident\n\ndoctor :Killer, mastermind can be used :goodwill: refusel, key person how to run =)))) ....... ==> patient : Friend, nurse : Key Person\n    Tô Quốc Thái\n\nMastermind tip: use the brain ability as soon as the protagonists know that murder plan is the plot. This applies after day 2 when the Rich Man’s Daughter missing person's into the hospital.\n    Justin Karp",
       "creator": "Res_kun",
       "daysPerLoop": 4,
       "difficultySets": [
