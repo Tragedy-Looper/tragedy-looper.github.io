@@ -57,7 +57,7 @@
       </header>
 
       {#each role.abilities ??[] as a}
-        <Ability {a} link />
+        <Ability {a} />
       {/each}
 
     </article>

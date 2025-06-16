@@ -693,16 +693,7 @@
   {#each r.filter((x) => !x.combined) as ri}
     <article class="role">
       <h1>
-        {#if data.isRoleId(ri.id)}
-          {#each singleRolenames(ri.id) as singleRole, i}
-            {#if i > 0}
-              <br />
-            {/if}
-            <Translation translationKey={data.rolesLookup[singleRole].name} />
-          {/each}
-        {:else}
-          <Translation translationKey={['ERROR findnig role with id {id}', { id: ri.id }]} />
-        {/if}
+        <Translation translationKey={ri.id} />
       </h1>
       {#if ri.goodwillRefusel}
         <h2>

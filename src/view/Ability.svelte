@@ -8,7 +8,6 @@
 
   export let a: Abilitie;
   export let compact: boolean = false;
-  export let link: boolean = false;
 
   $: ability = (a);
 </script>
@@ -24,8 +23,8 @@
       >{/if}]</span
   >
   {#if ability.prerequisite}
-    [<i><Translation translationKey={ability.prerequisite} {link} /></i>] {#if a.description !== undefined}⇒{/if}
+    [<i><Translation translationKey={ability.prerequisite} /></i>] {#if a.description !== undefined}⇒{/if}
   {/if}
-  <Translation translationKey={a.description ?? ''} {link} />
+  <Translation translationKey={a.description ?? ''} />
   <OncePer {ability} {compact} />
 </p>
