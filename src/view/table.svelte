@@ -441,10 +441,10 @@
         'rest-3',
       ]),
       () => [
-        'goodwillrefusel-header',
+        'goodwillrefusal-header',
         ...r
           .filter((x) => !x.skip)
-          .map((role) => `goodwillrefusel-${cssesc(role.id, { isIdentifier: true })}`),
+          .map((role) => `goodwillrefusal-${cssesc(role.id, { isIdentifier: true })}`),
         '.',
         '.',
         ...ince.map((incident) => `incident-rule-${incident.day}`),
@@ -604,13 +604,13 @@
       {/each}
     {/each}
 
-    <div class="header vertical-header role" style="grid-area: goodwillrefusel-header;">
+    <div class="header vertical-header role" style="grid-area: goodwillrefusal-header;">
       <div style="height: min-content; min-height: 100%;">
         <Translation translationKey={'Goodwill Refusel'} />
       </div>
     </div>
     {#each r.filter((x) => !x.skip) as ri}
-      <div class="vertical-header role" style="grid-area: goodwillrefusel-{cssesc(ri.id)};">
+      <div class="vertical-header role" style="grid-area: goodwillrefusal-{cssesc(ri.id)};">
         {#each [$getString(ri.goodwillRefusel ?? ''), ri.goodwillOutburst ? $getString('Goodwill Outburst') : '', ri.scriptSpecified?.some((x) => x.name == 'world') ? $getString('World Selection') : ''].filter((x) => x?.length > 0) as tag, i}
           {#if i > 0}
             <br />
@@ -693,7 +693,16 @@
   {#each r.filter((x) => !x.combined) as ri}
     <article class="role">
       <h1>
-        <Translation translationKey={ri.id} />
+        {#if data.isRoleId(ri.id)}
+          {#each singleRolenames(ri.id) as singleRole, i}
+            {#if i > 0}
+              <br />
+            {/if}
+            <Translation translationKey={data.rolesLookup[singleRole].name} />
+          {/each}
+        {:else}
+          <Translation translationKey={['ERROR findnig role with id {id}', { id: ri.id }]} />
+        {/if}
       </h1>
       {#if ri.goodwillRefusel}
         <h2>
