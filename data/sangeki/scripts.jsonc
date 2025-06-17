@@ -1485,7 +1485,7 @@
       "mastermindHints": "1ループ目は、タイムトラベラーの能力で勝つため、脚本家の能力は使用せず、事件も発生させず移動カードを置いて、静かにループを過ごす。\n\n2ループ目からは、ファクターの死亡、神社への暗躍をメインに主人公達を敗北させていこう。\n\n1日目\nお嬢様　不安+1\n都市　不安+1or暗躍+1\n学校　暗躍+1or不安+1 "
     },
     {
-      "title": "圧倒する者たち (Those Who Overwhelm)",
+      "title": "Those Who Overwhelm",
       "creator": "ペンスキー",
       "set": [
         {
@@ -1546,13 +1546,13 @@
           "culprit": "blackCat"
         }
       ],
-      "description": "風変わりなキャラクターが多数登場しますが、その割には非常に初心者向けな脚本です。\n逆に脚本家はかなり勝ちにくいため、ある程度の経験や慣れが求められます。",
+      "description": "Although it features a large number of eccentric characters, the script is quiet beginner-friendly. On the other hand, the Mastermind will have a difficult time, so they should be experienced.",
       "specialRules": [
         ""
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "1ループ目は転校生を狙いますが、暗躍と殺害のどちらのルートも選択肢となります。暗躍を狙うなら、いずれかのボードへも暗躍を2つ置いてCSとしたいです。黒猫と幻想の特性を最大限活かして主人公を惑わせましょう。\n殺害を目指すなら、1ループ目からシリアルキラーを使っていきましょう。その場合はルールYを殺人計画に見せかけるため、キャラクターへの暗躍は重要度が高まります。\n\n2ループ目以降はルールYとシリアルキラーを活用し、キーパーソンの殺害と暗躍の両面から圧力をかけていきます。フレンドが割れているなら:ai:もターゲットになります。3ループ目も、シリアルキラーの活用が必要となるでしょう。\n\n最後の戦いでは、イレギュラーとコピーキャットの役職が鍵を握ります。片方だけでも友好能力を使わせないまま逃げ切れば、最後の戦いは勝ったも同然です。\n大物の能力と:ai:の流布があるため真っ当に隠し切るのは困難ですが、シリアルキラーで殺害しても口封じはできます。情報隠蔽にも勝利条件にも、シリアルキラーは大いに活躍するでしょう。"
+      "mastermindHints": "In the first Loop, you'll aim for the :transferStudent:, but you can choose either the :intrigue: or the murder route. If you aim for :intrigue:, you'll want to place two :intrigue: on either Location as CS. Make the most of the :blackCat: and :illusion:s to confuse the Protagonists.\n\nIf you're aiming for murder, use the :serialKiller: in the first Loop. In that case, :intrigue: on characters becomes more important to make the Main Plot look like :murderPlan:.\n\nFrom the second Loop onward, use the Main Plot and :serialKiller: to put pressure on both the :keyPerson:'s murder and the :intrigue:. If the :friend: is exposed, the :ai: will also be a target. In the third Loop, you'll need to use the :serialKiller:.\n\nIn the Final Guess, the roles of :mysteryBoy: and :copycat: are the key. If you can escape without letting even one of them use their mandatory :goodwill: ability, you'll have the Final Guess in the bag. It's difficult to hide the BOss properly because of the :boss:' mandatory and the :ai:'s :spreading:, but you can silence them with the :serialKiller:. The :serialKiller: will be very useful for both hiding information and winning conditions."
     },
     {
       "title": "Wings Slithering on the Ground",
