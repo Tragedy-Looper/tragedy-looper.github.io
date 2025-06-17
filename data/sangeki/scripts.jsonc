@@ -1284,7 +1284,7 @@
       "mastermindHints": "【メインラバーズの効果で主人公を殺そう】\n【ラバーズをうまく隠そう】\n【少女達で転校生を殺そう】\n\n\nお嬢様と手先の事件で暗躍や不安をばら撒き、メインラバーズの効果で主人公の殺害を狙います。\n\n最初のループからメインラバーズか不安3のパーソンで早々に主人公や転校生を殺害してループを終了させましょう。\n\nミスリーダーの能力は毎日使います。\n不安の優先は事件の発生です。\n少女は全員不安を置く意味があります。\n\n1日目の動き\nお嬢様　不安+1\n巫女　不安+1\n女子学生　友好禁止\n\n\n不安拡大が発生したら、\n暗躍はお嬢様、不安はアイドルか、巫女に乗せましょう。\n事件が発生したら、\n\n2日目の事件が発生したら\nお嬢様に暗躍と少女に不安を乗せます。\nなるべく多くの少女が不安2の状態を作ります。\n\n3日目に転校生が登場します。\n3日目か4日目に転校生に暗躍+2を置きましょう。\n\n事件が発生した場合、巫女に不安を置きます。\n\n4日目の動き\n3日目に暗躍+2をしていないなら今日暗躍を置いてみましょう。\n事件が発生した場合、転校生に暗躍が2つ置かれていないなら不安を、置かれてる場合は暗躍を置きます。\n\n5日目・6日目\n転校生が暗躍2なら、何れかの少女に暗躍を置いて、なるべく暗躍1不安3の少女をたくさん用意しましょう。\n\n置かれてない場合は、不安と移動を駆使して、転校生か主人公の殺害を狙います。\n\n【この脚本の弱点】\n手先を上手く移動させられて、事件の発生を抑えられた場合、ループから抜けられる可能性があります。\n\n最後の戦いでは、ルールYが「殺人計画」か「僕と契約しようよ」の二択を迫りつつ、ラバーズが誰かを探す事になります。\nしかし、少女全員が一度でもシリアルキラーとして動いたことがある場合、ルールYが確定する上に、ラバーズがナースしかあり得ないと判明するため、脚本家が勝つのは難しいかもしれません。 "
     },
     {
-      "title": "凶刃の向かう先は (The Assassin Blade's Target)",
+      "title": "The Assassin Blade's Target",
       "creator": "ペンスキー",
       "set": [
         {
@@ -1335,14 +1335,14 @@
           "culprit": "popIdol"
         }
       ],
-      "description": "初日の殺人事件がこの脚本のコンセプトです。\n起こすも起こさないもそれぞれメリットデメリットがあるため、主人公と脚本家の思惑が錯綜します。それらが絶妙に噛み合ったとき、至る結末は果たして平穏な日常か、あるいは惨劇か… ",
+      "description": "The concept of this script is the first day Murder. There are pros and cons to either starting or not starting the Murder, so the intentions of the Mastermind and Protagonists become intertwined. When they intertwine in such an exquisite way, will the outcome be a peaceful everyday life, or a tragedy...?",
       "specialRules": [
         ""
       ],
-      "victory-conditions": "",
+      "victory-conditions": "Kill the Key Person, basically.",
       "story": "",
-      "mastermindHints": "脚本家の勝利条件は、基本的にキーパーソンの殺害だけです。\n\n1ループ目は初日からキーパーソンへ暗躍+2を通してしまいましょう。不安拡大をほぼ確実に起こせる上、行方不明の犯人がキラーなので、キーパーソンへの 暗躍さえ通せれば問題なく敗北条件を満たせるでしょう。ミスリーダーはバラしてしまっても問題ありません。\n\n2ループ目以降は、初日の殺人事件のせめぎ合いとなります。初日は必ずサラリーマンと情報屋には行動カードを配置してください。\n\n殺人事件を起こすパターンと防ぐパターン、どちらのパターンでいくかはゲームの流れ次第です。\n\n起こす場合のメリットは、もちろんキーパーソンの殺害を狙えることです。\n起こす場合、初日は移動３枚使ってしまってもよいでしょう。また、クロマクを隠すならフレンドも殺害対象にカウントできます。\n\n起こさない場合のメリットは、殺人事件でキラーが殺される事故を防げることです。\n起こさない場合、サラリーマンには移動縦か不安-1を張ります。主人公が不安+1を張ったとしても、病院で事件を起こせれば致命傷は避けられます。\n\n最後の戦いで隠すべきは、クロマクか２人目のフレンドです。\nクロマクを隠すルートの場合、フレンドは初日の殺人事件の対象になります。移動を張って1ループ稼がせてもらいましょう。\nフレンドを隠すルートの場合、キラーによる主人公殺害能力の重要度が高まります。このルートでは、初日の殺人事件は起こさないほうが良いでしょう。とはいえ、結局は主人公との読み合いにはなりますが。 "
-    },
+      "mastermindHints": "In the first Loop, place Intrigue+2 on the Key Person on the first Day. Increasing Unease is almost guaranteed, and the Missin Person's Culprit is the Killer, so as long as you can get Intrigue on the Key Person, you'll be able to meet the defeat conditions without any problems. It's okay if the Conspiracy Theorist gets exposed.\n\nFrom the second Loop onward, the game will be a struggle for the firt Day's Murder. On the first Day, be sure to place Action cards on the Office Worker and Informer. It depends on the flow of the game whether you go for preventing a Murder, or triggering it.\n\nThe advantage of triggering the Murder is, of course, that you can aim to kill the Key Person. If you cause a Murder, you can use up to three movement cards on the first Day. Also, if you hide the Brain, the  Friend can also be considered as a Murder target. \n\nThe advantage of not triggering the Murder is that you can prevent the Killer from being killed in a Murder. If you don't trigger it, use Move Vertical or Paranoia-1 on the Office Worker. Even if the Protagonists use Paranoia+1, you can avoid a fatal injury if the Incident occurs in the Hospital.\n\nFor the Final Guess, you should hide the Brain or the second Friend. If you hide the Brain, the Friend will be the target of the Murder on the first Day. Use Movement to earn yourself a Loop. If you hide the Friend, the importance of the Killer's ability to kill the Protagonists increases. On this route, it's better not to cause a Murder on the first Day. That said, in the end, it'll come down to a battle of wits between the Protagonists and you."
+},
     {
       "title": "友の死を乗り越えて (Overcoming the Death of a Friend)",
       "creator": "ペンスキー",
