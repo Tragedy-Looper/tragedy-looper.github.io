@@ -551,7 +551,7 @@
       "mastermindHints": "In the first Loop, place Horizontal Movement on the :policeOfficer:, :intrigue:+2 on the :girlStudent:, and Vertical Movement on the :alien:, then use the :killer: to kill the :girlStudent:. If you want to take care of Forbid :intrigue:, you can start the :henchman: in the School, trigger :increasingUnease: with :paranoia:+2, and place a second :intrigue: on the :girlStudent: with the :brain:'s ability.\n\nIn the second Loop, you'll also aim to kill the :girlStudent:, but :farawayMurder: should make you wary of :intrigue: on the :girlStudent:. Start the :henchman: in the Shrine, trigger :increasingUnease: via the :conspiracyTheorist:, move the :henchman:, and aim to put :intrigue: on the :girlStudent: via the :brain:'s ability. After that, aim to kill her with :farawayMurder: or the :killer:.\n\nOn the second Day, the :transferStudent: will arrive. She can reduce :intrigue: with 2 :goodwill:, so the Protagonists will gladly make use of her. Don't worry, though, because she's the :serialKiller:. If there is no :henchman: in the School, she'll gladly get to work.\n\nThe final Loop will be tough, but the Mastermind have some weapons at his disposal.\n- Accumulate :intrigue: on the :killer: by having the :henchman: start in the City\n- Use :missingPerson: on :transferStudent: on the 3rd Day.\n\nAim to kil the :keyPerson: or the Protagonists. There are advantages to placing :henchman: anywhere other than the Hospital.\n- Shrine: Easy to trigger :increasingUnease:\n- School: Can place :intrigue: on the :girlStudent:\n- City: Can place :intrigue: on the :policeOfficer:\n\nThe Protagonists are not defenseless, either, and have weapons such as:\n- Using the :alien: or :serialKiller: to kill the :brain:/:killer:\n- Controlling :intrigue: by using the :forensicSpecialist:'s or the Tranfer :student:'s ability.\n\nIf the Protagonists let the :girlStudent: escape to the Shrine, it'll be difficult for the :killer: or :serialKiller: to reach her. Make good use of powerful actions such as :paranoia:-1 or Forbid Movement."
     },
     {
-      "title": "噂の果ての真相 (The Truth Behind the Rumors)",
+      "title": "The Truth Behind the Rumors",
       "creator": "ペンスキー",
       "set": [
         {
@@ -606,13 +606,13 @@
           "culprit": "teacher"
         }
       ],
-      "description": "ルールX『不穏な噂』を最大限活用した脚本です。このルールすげぇよ！",
+      "description": "This is a script that heavily utilizes the plot \"Disturbing Rumors.\" This plot is amazing!",
       "specialRules": [
         ""
       ],
-      "victory-conditions": "1\n    巨大時限爆弾Xの存在\n    都市へ暗躍カウンターを2つ置く\n2\n    主人公の殺害\n    病院の事件",
+      "victory-conditions": "1\n    Giant Time Bomb\n    Place 2 Intrigue in the City\n2\n    Kill the Protagonists\n    Hospital Incident",
       "story": "",
-      "mastermindHints": "脚本家の勝利手段は病院の事件で主人公を殺害するか、都市に暗躍カウンターを２つ置くかのいずれかです。そして、不穏な噂の強力なサポートによって、そのうちいずれかはほぼ確実に実行可能となっています。\n1ループ目はできれば巨大時限爆弾で勝利したいところ。初日に病院へ暗躍+2、都市へ暗躍+1を置きましょう。都市への暗躍が通ったら、最終日に不穏な噂で2個目を置いて勝利確定です。もし都市の方を防がれたら、仕方ないので病院の事件での勝利を目指します。\n病院の事件を狙う場合、基本的にミスリーダーは隠す必要ありません。能力をガンガン使い、不安+1も置きまくりましょう。病院の事件を起こすとしても、犯人候補を増やせればそれだけ主人公を手間取らせる事ができます。\n\n軍人は脚本家にとって脅威となります。病院の事件を防がれたり、ファクターの自殺を誘発されたりします。そうなると敗北一直線なので、友好能力を使われないよう警戒しましょう。\n神格の犯人割りも厄介です。自殺の犯人を明かされないためにも、病院の事件の犯人候補は可能な限り増やしておきましょう。\n\n最後の戦いで隠すのは、もちろんファクターです。3日目の殺人事件で露見しないよう、不穏な噂で都市に暗躍を置くのは最終日にしましょう。また、最終日の自殺は絶対に起こしてはなりません。\n\n置き方テンプレ\n各ループ共通\n\n初日\n病院\n    「暗躍+2」\n都市\n    「暗躍+1」"
+      "mastermindHints": "The Mastermind's way to win is to either kill the Protagonists with Hospital Incident, or to place two Intrigue on the City. With the strong support of An Unsettling Rumor, you're almost certain to achieve one of these.\n\nIn the first Loop, you want to win with the Giant Time Bomb if possible. On the first Day, place Intrigue+2 and Intrigue+1 on the City. If the Intrigue on the City goes through, place the second one with An Unsettling Rumor on the last Day to guarantee victory. If the City is blocked, there is no choice but to aim for a Hospital Incident victory.\n\nIf you are aiming for Hospital Incident, you don't need to hide the Conspiracy Theorist. Use the mandatory ability as much as you can and place Paranoia+1 as well. Even if you trigger the Hospital Incident, the more troublesome Culprit candidates you can make for the Protagonists, the better.\n\nThe Soldier is a threat to the Mastermind. Your Hospital Incident might be blocked, or your Factor might commit Suicide. This will lead straight to your defeat, so be careful not to use the mandatory Goodwill ability.\n\nThe Godly Being is also tricky. In order to prevent the Suicide Culprit from being revealed, increase the number of suspects for the Hospital Incident as much as possible.\n\nOf course, the Factor is hiding in the Final Guess. To avoid it being revealed via Murder on the third Day, place Intrigue in the City with An Unsettling Rumor on the last Day. Also, don't trigger Suicide on the last Day.\n\nPlacement guide (same each Loop):\nFirst Day:\nHospital - Intrigue+2\nCity - Intrigue+1"
     },
     {
       "title": "隠れ潜むタイムトラベラー (The Hidden Time Traveler)",
