@@ -166,7 +166,13 @@
             "100-Friends Plan.白獅子のケイ.story": "",
             "100-Friends Plan.白獅子のケイ.mastermindHints": "1ループ目は、タイムトラベラーの能力で勝つため、脚本家の能力は使用せず、事件も発生させず移動カードを置いて、静かにループを過ごす。\n\n2ループ目からは、ファクターの死亡、神社への暗躍をメインに主人公達を敗北させていこう。\n\n1日目\nお嬢様　不安+1\n都市　不安+1or暗躍+1\n学校　暗躍+1or不安+1 ",
             "100-Friends Plan.白獅子のケイ.victory-conditions": "",
-            "100-Friends Plan.白獅子のケイ.specialRules": "相談禁止にする場合ループ数+1 "
+            "100-Friends Plan.白獅子のケイ.specialRules": "相談禁止にする場合ループ数+1 ",
+            "A Perfect Day for Suicide.竹美香.title": "自殺日和",
+            "A Perfect Day for Suicide.竹美香.description": "妹使いたいとの事で、妹を使わないと絶対にフレンドの女の子が死ぬ脚本を作ってみました。\n妹の能力の同一エリア縛りがきつく見えるので従者か刑事の片方と一緒に学校にいればいいように、かつご神木で友好溜めやすいようにと組みました。\nこんな感じかなと即興で作ったので難易度は分かりません！ ",
+            "A Perfect Day for Suicide.竹美香.story": "",
+            "A Perfect Day for Suicide.竹美香.mastermindHints": "女の子に不安を置き続ければ確実に自殺します。刑事、従者は友好無視なので、妹で能力を女の子に使わないと抜けれないです。\n役職当ても妹が使われなければ、キーパーソン、ミスリーダー、キラー、クロマクは分からないので難しいです。\n早めに自殺は発生させてルールX2つを明らかにしてあげる方が良いかも、フレンド、ラバーズ、メインラバーズは早めに公開して殴り合いで抜けるしかないことに気付かせてあげましょう。",
+            "A Perfect Day for Suicide.竹美香.victory-conditions": "",
+            "A Perfect Day for Suicide.竹美香.specialRules": "友好禁止禁止\n(斜め移動禁止入れると更に難易度減少) "
         }
     }
 }

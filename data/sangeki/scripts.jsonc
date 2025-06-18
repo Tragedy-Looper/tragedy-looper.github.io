@@ -177,7 +177,7 @@
       "mastermindHints": "Special rule: Mastermind can't place :intrigue: or :paranoia: on the :ai: in any Loop.\n\nIf the Protagonists don't notice the gimmick, the Mastermind can kill the :friend: in the Hospital and win.\n\nHospital gimmick:\nOn the first dya, place :intrigue:+1 on the Hospital, :paranoia:+1 on the :henchman:, and :intrigue:+2 (main plot bluff) on the :alien:, :classRep:, or Shrine. The :henchman: is the Culprit of the :hospitalIncident:, and the :informer: is a :conspiracyTheorist:, so you can definitely cause a :hospitalIncident:. Normally, the :patient: can only move on the third Day, so if you put :intrigue: on the Hospital with :unsettlingRumor:, you can quickly kill the :patient: (:friend:) and win.\n\nTo survive the :hospitalIncident:, the Protagonists need the power of the :ai: After killing the :ai: (with a mandatory Ability or an Incident), use :goodwill:+2 on the :ai: and :goodwill:+1 on the :doctor: in the Loop, which will trigger :spreading: and put the :ai:'s :goodwill: on the :doctor:. Then, you can use the :doctor:'s :goodwill: 3 ability on the first Day, allowing the :patient: to escape (:henchman: can't be used here because his ability ignores :goodwill:).\n\nIf you trigger :unsettlingRumor: with the :informer:, you'll get :circle:friend:s: in return, so you will expose the second :friend:.\n\nFinal Guess:\nThis will depend on whether you cleared the Hospital gimmick. If the :ai:'s :friend: has not been revealed, there's no difference between it and the :conspiracyTheorist:, and the Main Plot can't be determined, so you're safe. If the Protagonists are able to crack the gimmick, the Mastermind has no way to win other than exposing the :timeTraveler:. There are only three candidates (:alien:, :blackCat:, and :classRep:), and since there's time to kill them with the :hospitalIncident: or via the :alien:, or accumulating :goodwill: on the third Day, they'll be revealed pretty quickly.\n\nBy the way, the title and \\\"AI\\\" (\\\"love\\\") are puns. Hehe."
     },
     {
-      "title": "自殺日和 (A Perfect Day for Suicide)",
+      "title": "A Perfect Day for Suicide",
       "creator": "竹美香",
       "set": [
         {
@@ -233,13 +233,13 @@
           "culprit": "youngGirl"
         }
       ],
-      "description": "妹使いたいとの事で、妹を使わないと絶対にフレンドの女の子が死ぬ脚本を作ってみました。\n妹の能力の同一エリア縛りがきつく見えるので従者か刑事の片方と一緒に学校にいればいいように、かつご神木で友好溜めやすいようにと組みました。\nこんな感じかなと即興で作ったので難易度は分かりません！ ",
+      "description": "Since I wanted to use the Little Sister, I made a script in which the Young Girl Friend will definitely die if I didn't utlize her.\n\nThe Little Sister's Goodwill Location restriction seems strict, so I set it up so that she only needs to be in the School with either the Servant or the Police Officer, and it makes it easier to accumulate Goodwill at the Sacred Tree.\n\nI improvised this, so I'm not sure about the difficulty!",
       "specialRules": [
-        "友好禁止禁止\n(斜め移動禁止入れると更に難易度減少) "
+        "Goodwill actions can't be used. \n\n(Banning Move Diagonal will reduce the difficulty.)"
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "女の子に不安を置き続ければ確実に自殺します。刑事、従者は友好無視なので、妹で能力を女の子に使わないと抜けれないです。\n役職当ても妹が使われなければ、キーパーソン、ミスリーダー、キラー、クロマクは分からないので難しいです。\n早めに自殺は発生させてルールX2つを明らかにしてあげる方が良いかも、フレンド、ラバーズ、メインラバーズは早めに公開して殴り合いで抜けるしかないことに気付かせてあげましょう。 "
+      "mastermindHints": "If you keep placing Paranoia on the Young Girl, she will definitely trigger Suicide. Police Officer and Servant ignores Goodwill, so you can't get out unless you use the Little Sister's ability on the Young Girl.\n\nGuessing the Role is also difficult if you don't use the Little Sister, as they won't know the Key Person, Conspiracy Theorist, Killer, or Brain.\n\nIt may be better to trigger Suicide early and reveal the two Sub Plots, but it's better the reveal Friend, Lover, and Loved One early and make them realize that the only way to escape is by fighting."
     },
     {
       "title": "Leave it to Lil' Sis!",
