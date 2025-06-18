@@ -56,7 +56,7 @@
       "mastermindHints": "On the first day of the first loop, set :paranoia:+1 to :popIdol:, :paranoia:+1 to :boyStudent:, and :intrigue:+1 to School.\n\nUse :popIdol:'s :conspiracyTheorist: ability to activate :missingPerson:, and place 2 :intrigue: on the School on the first day to win. Use :unsettlingRumor: too, if necessary.\n\nIf you can successfully get :intrigue: on the Locations, place a bluff on the second Day to avoid giving away information. If you can get :intrigue:+2 on Locations other than School, that'll be a powerful CS. However, don't use the :cultist:'s mandatory ability.\n\nIn the second Loop, they'll likely be on guard against :paranoia: on the :popIdol:, so instead take advantage of that opportunity to trigger :classRep:'s :suicide:.\n\nOn Day 1, put :paranoia:+1 on the :classRep:, move to :popIdol:, and place Forbid :goodwill: on the :boyStudent:. Use :conspiracyTheorist:'s mandatory ability as well to hit the :classRep:'s :paranoia: limit on the first day.\n\nThe third Loop will be a tough game. Which Incident will you trigger, and where will you place your cards to achieve it? You're now in a battle of wits with the Protagonists. Good luck."
     },
     {
-      "title": "逃げ惑うタイムトラベラー (Time Traveler on the Run)",
+      "title": "Time Traveler on the Run",
       "creator": "ペンスキー",
       "set": [
         {
@@ -108,13 +108,13 @@
           "culprit": "shrineMaiden"
         }
       ],
-      "description": "BTX未経験か、または１回くらいしか遊んだことのない初心者に向けた脚本です。\n脚本家としても回しやすい脚本になっているため、脚本家初心者の方にもおすすめな脚本です。 ",
+      "description": "This script is aimed at beginner Masterminds and Protagonists who have never played Basic before, or at most a couple times.",
       "specialRules": [
         ""
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "まず、１ループ目は病院の事件で勝利します。病院に暗躍＋２、学校に暗躍＋１、女子学生に不安＋１を置きましょう。\n病院に暗躍禁止が置かれたらカルティストで無効化します。そして脚本家能力フェイズに不穏な噂で学校へ暗躍＋１して、ファクターにミスリーダー能力を与え ます。そのままミスリーダー能力を使って女子学生へ不安＋１、さらに本来のミスリーダーも能力を使用して女子学生へ不安を乗せ、病院の事件を起こしてルー プを終了させます。\n大量の能力を使用し、主人公に情報の洪水を叩きつける形になりますが、一つ一つ情報を整理していくとルールXが２つとも確定することがわかります。\n直後の時の狭間では十分に時間を取り、ルールXが両方とも確定していることを主人公に気づかせるようにしてください。そうすることで情報屋へ友好が乗せられることを回避できます。\n\n病院の事件がなければタイムトラベラーでしか勝てない脚本なので、ここでルールXを明かして「情報屋に友好乗せてもムダ」と思わせることは重要です。\n\n2ループ目は、邪気の汚染を狙います。起こしても勝敗には影響しませんが、そう動く事でルールYを封印されしものに見せかけ、主人公を誘導できます。\n2ループ目からタイムトラベラー探しをされたら脚本家としては非常に厳しいので、この誘導も必要な時間稼ぎです。 "
+      "mastermindHints": "First, win the first Loop with a Hospital Incident. Place Intrigue+2 on the Hospital, Intrigue+1 on the School, and Paranoia+1 on the Girl Student. If Forbid Intrigue is placed on the Hospital, nullify it with the Cultist. Then, in the Mastermind's mandatory phase, use An Unsettling Rumor to give Intrigue+1 to the School, and give Conspiracy Theorist's ability to the Factor. \n\nUse Conspiracy Theorist's ability to give Paranoia+1 to the Girl Student, and then use the original Conspiracy Theorist's ability to give Paranoia to the Girl Student again, triggering a Hospital Incident and ending the Loop.\n\nBy using a large amount of abilities, you'll be bombarding the Protagonists with a flood of information. But if they take the time to organize the information, they'll see that both Sub Plots are already confirmed. Take enough time in the Time Spiral immediately afterward to make the Protagonists realize this fact. Doing so will prevent Goodwill from being placed on the Informer. Since this is a script where only the Time Travel can win without the Hospital Incident, it's important to reveal the Sub Plot here and make them think that it's pointless to place Goodwill on the Informer.\n\nIn the second Loop, aim for Foul Evil. Triggering it won't affect the outcome of the game, but by doing so, you can make the Main Plot appear sealed offand lure the Protagonists away. If they start looking for the Time Traveler from the second Loop, it will be very tough for the mastermind, so this lure is also a necessary way to buy time."
     },
     {
       "title": "From the Nothing, with Love",
