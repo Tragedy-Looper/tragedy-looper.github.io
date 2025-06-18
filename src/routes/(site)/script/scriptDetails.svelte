@@ -130,7 +130,7 @@
   }
 
   $: githubIssueTitle = `[Script Submission] ${script?.title ?? 'Unknown Script'} by ${script?.creator ?? 'Unknown Creator'}`;
-  $: githubIssueBody = `Script submission from Website'}
+  $: githubIssueBody = `Script submission from Website
 
   <!-- DO NOT EDIT THIS SECTION!
 ${btoa(

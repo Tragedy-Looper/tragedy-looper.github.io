@@ -76,24 +76,6 @@ jobs:
           jq -n --argjson script '${{ steps.extract_json.outputs.json }}' '{"$schema": "https://tragedy-looper.github.io/scripts.schema.json", "scripts": [$script]}' > data/user/$CREATOR/script.$ISSUE_ID.jsonc
           echo "::set-output name=filepath::data/user/$CREATOR/script.$ISSUE_ID.jsonc"
 
-      - name: Set up Git user
-        run: |
-          GIT_USER=${{ steps.extract_json.outputs.submitter }}
-          if [ -n "$GIT_USER" ]; then
-            git config --global user.name "$GIT_USER (via github-actions)"
-            git config --global user.email "$GIT_USER@users.noreply.github.com"
-          else
-            git config --global user.name 'github-actions[bot]'
-            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          fi
-      - name: Create new branch
-        run: |
-          BRANCH=issue-script-${{ github.event.issue.number }}
-          git checkout -b $BRANCH
-          git add ${{ steps.write_json.outputs.filepath }}
-          git commit -m "Add script from issue #${{ github.event.issue.number }}"
-          git push origin $BRANCH
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
