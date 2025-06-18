@@ -388,6 +388,13 @@
     {
       "title": "Spreading Paranoia and Trust",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 100
+        }
+      ],
+      "source": "https://sangeki.boardgame.work/scenario/100",
       "difficultySets": [
         {
           "numberOfLoops": 6,
