@@ -129,24 +129,22 @@
     return qr.createDataURL(4);
   }
 
+  function removeLocal(script: Script & { local?: boolean }): Script {
+    const { local, ...rest } = script;
+    return rest;
+  }
+
   $: githubIssueTitle = `[Script Submission] ${script?.title ?? 'Unknown Script'} by ${script?.creator ?? 'Unknown Creator'}`;
   $: githubIssueBody = `Script submission from Website
 
   <!-- DO NOT EDIT THIS SECTION!
-${btoa(
-  String.fromCharCode.apply(
-    null,
-    zip(
-      JSON.stringify(script),
-      { level: 9 }
-    )
-  )
-).replace(/(.{30})/g, '$1\n')}
+${btoa(String.fromCharCode.apply(null, zip(JSON.stringify(removeLocal(script)), { level: 9 }))).replace(
+  /(.{30})/g,
+  '$1\n'
+)}
   -->
   
   `;
-
-
 </script>
 
 <dialog open={message !== undefined}>
@@ -211,10 +209,9 @@ ${btoa(
         role="button">Open Mastermind Aid</a
       >
       {#if script.local}
-          <a
+        <a
           role="button"
-          aria-disabled={script == undefined ||
-            script.title == undefined}
+          aria-disabled={script == undefined || script.title == undefined}
           href={`https://github.com/Tragedy-Looper/tragedy-looper.github.io/issues/new?title=${encodeURIComponent(githubIssueTitle)}&body=${encodeURIComponent(githubIssueBody)}&labels=${encodeURIComponent('script submission')}`}
           target="_blank"
           style="grid-row: 4; grid-column: 1 / span 2; margin-bottom: var(--spacing);"
@@ -231,7 +228,9 @@ ${btoa(
     <hgroup style="align-self: start; justify-self: start;">
       <h4>{script.creator}</h4>
       <h1><Translation translationKey={script.title} /></h1>
-      <small>{#if script.local}(<Translation translationKey="local script"/>){/if}</small>
+      <small
+        >{#if script.local}(<Translation translationKey="local script" />){/if}</small
+      >
       {#if script.source}
         <h5>
           <Translation translationKey={'Source'} />
