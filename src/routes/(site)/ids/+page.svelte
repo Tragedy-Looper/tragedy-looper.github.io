@@ -191,7 +191,7 @@
       (a, b) => b[0].length - a[0].length
     )) {
       // replace all occurrences if not enclosed in colons
-      const regex = new RegExp(`(?<!:)${escapeRegExp(name)}(?!:)`, 'g');
+      const regex = new RegExp(`(?<!\w)${escapeRegExp(name)}(?!\w)`, 'gi');
       result = result.replaceAll(regex, `:${id}:`);
     }
     return result;

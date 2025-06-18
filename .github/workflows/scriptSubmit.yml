@@ -1,0 +1,124 @@
+name: Script Submit
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  check-issue-for-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master branch
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Extract and decompress JSON from issue body
+        id: extract_json
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+            // Match <!-- DO NOT EDIT THIS SECTION! ... --> and extract only the base64 block after the marker
+            const match = body.match(/<!--\s*DO NOT EDIT THIS SECTION!\s*([\s\S]*?)\s*-->/);
+            if (!match) {
+              core.setFailed('No valid DO NOT EDIT THIS SECTION! block found in issue body.');
+              return;
+            }
+            const base64Gzip = match[1].replace(/\s+/g, '');
+            let json;
+            try {
+              // Buffer.from(..., 'base64') works in node
+              const gzipped = Buffer.from(base64Gzip, 'base64');
+              // Use zlib to decompress
+              const zlib = require('zlib');
+              const decompressed = zlib.gunzipSync(gzipped);
+              json = JSON.parse(decompressed.toString('utf-8'));
+              // Add submitter from issue user
+              json.submitter = context.payload.issue.user?.login || '';
+            } catch (e) {
+              core.setFailed('Failed to decompress or parse JSON: ' + e.message);
+              return;
+            }
+            // Extract fields for PR
+            const title = json.title || '';
+            const creator = json.creator || '';
+            const submitter = context.payload.issue.user?.login || '';
+            const description = json.description || '';
+            const tragedySet = json.tragedySet || '';
+            let set = '';
+            if (Array.isArray(json.set) && json.set.length > 0) {
+              set = json.set.map(s => `${s.name ?? ''} (${s.number ?? ''})`).join(', ');
+            }
+            core.setOutput('json', JSON.stringify(json));
+            core.setOutput('pr_title', `Script: ${title} by ${creator}`);
+            core.setOutput('pr_body',
+              `**Title:** ${title}\n` +
+              `**Creator:** ${creator}\n` +
+              (submitter ? `**Submitter:** @${submitter}\n` : '') +
+              (description ? `**Description:** ${description}\n` : '') +
+              (tragedySet ? `**Tragedy Set:** ${tragedySet}\n` : '') +
+              (set ? `**Set:** ${set}\n` : '')
+            );
+
+      - name: Sanitize creator name and write JSON to file
+        if: success()
+        id: write_json
+        run: |
+          CREATOR=$(echo '${{ steps.extract_json.outputs.creator }}' | tr -cd 'A-Za-z0-9_-')
+          ISSUE_ID=${{ github.event.issue.number }}
+          mkdir -p data/user/$CREATOR
+          # Embed the fragment in the full structure using jq for valid JSON
+          jq -n --argjson script '${{ steps.extract_json.outputs.json }}' '{"$schema": "https://tragedy-looper.github.io/scripts.schema.json", "scripts": [$script]}' > data/user/$CREATOR/script.$ISSUE_ID.jsonc
+          echo "::set-output name=filepath::data/user/$CREATOR/script.$ISSUE_ID.jsonc"
+      - name: Create new branch
+        run: |
+          BRANCH=issue-script-${{ github.event.issue.number }}
+          git checkout -b $BRANCH
+          git add ${{ steps.write_json.outputs.filepath }}
+          git commit -m "Add script from issue #${{ github.event.issue.number }}"
+          git push origin $BRANCH
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: ${{ steps.extract_json.outputs.pr_title }}
+          body: ${{ steps.extract_json.outputs.pr_body }}
+          base: master
+          branch: issue-script-${{ github.event.issue.number }}
+
+      - name: Comment and close Issue
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: `${context.repo.owner}:issue-script-${context.issue.number}`,
+              state: 'open',
+              per_page: 1
+            });
+            const prNumber = pr.data[0]?.number;
+            if (prNumber) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: `A pull request has been automatically created: #${prNumber}\n\nThis issue will be closed.`
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: `A pull request has been automatically created. This issue will be closed.`
+              });
+            }
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });

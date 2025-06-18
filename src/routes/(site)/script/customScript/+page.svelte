@@ -88,7 +88,7 @@
     const data = model.export();
     saveScript(data);
 
-    goto(linkOverview({ script: data }));
+    goto(linkOverview({ script: {...data, local: true }}));
   }
 </script>
 

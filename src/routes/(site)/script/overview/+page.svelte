@@ -11,10 +11,10 @@
       set: { name: string; number: number };
     }>
   ): string;
-  export function linkOverview(params: { script: Script }): string;
+  export function linkOverview(params: { script: Script & {local?:boolean} }): string;
   export function linkOverview(
     params:
-      | { script: Script }
+      | { script: Script & { local?: boolean } }
       | RequireAtLeastOne<{ title: string; author: string; set: { name: string; number: number } }>
   ): string {
     const transfareObject =
