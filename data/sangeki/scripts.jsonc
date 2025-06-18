@@ -386,15 +386,8 @@
       "mastermindHints": "In each Loop, it's recommended to aim for the following victory conditions.\n- 1st Loop: Kill the :keyPerson: with the :serialKiller:.\n- 2nd Loop: :increasingUnease: to give the :keyPerson: :intrigue:+2.\n- 3rd Loop: Same as the 2nd Loop.\n- 4th Loop: Use :intrigue:+2 or kill with the :serialKiller:\n\nIn the first Loop, kill the :keyPerson: with the :serialKiller: for an instant win. If it doesn't end on the first Day, keep putting Forbid :goodwill: on the :officeWorker: to prevent them from using his mandatory :goodwill: ability.\n\nThe second Loop will probably start with :threadsFate:, giving the :officeWorker: :paranoia:+2. If that happens, you can be sure to trigger two :increasingUnease: Incidents, place two :intrigue: on the :popIdol:, and win.\n\nIf you can't make the :officeWorker: trigger :increasingUnease:, you'll have to predict the Action cards. \n\nSet a card on the :popIdol: every day. It's recommended to place a Move or :intrigue: on her. At the same time, load :paranoia: on the :shrineMaiden: and :girlStudent: to trigger an Incident. You can win if you can get :intrigue:+2 through the :popIdol:, so do your best to win the guessing game.\n\nHide the :friend: for the Final Guess. It can be exposed by the :shrineMaiden:, but you will be busy with :paranoia: exchanges, so you don't need to be too careful. You should be more careful of the :serialKiller:. In addition to the :nurse:, the :shrineMaiden: and :classRep: are your :friend: candidates, so if they find out that these two are not the :friend:s, you're screwed. Be careful if the Protagonists start utilizing the :serialKiller:.\n\nPlacement Guide:\n\nFirst Loop\nFirst Day:\n- :classRep:: Move Vertical\n- :popIdol:: Move Horizontal\n- Shrine: :intrigue:+1\n\nIf the :officeWorker: gets :paranoia:+2 from :threadsFate:\nFirst Day:\n- :officeWorker:: :paranoia:+1\n- :popIdol:: Move Horizontal\n\nSecond Day:\n- :shrineMaiden:: :paranoia:+1\n\nFinal Loop:\nFirst Day\n- :shrineMaiden:: :paranoia:+1\n- :girlStudent: :paranoia:+1\n- :popIdol:: Move Horizontal\n\nSecond Day\n- :shrineMaiden:: :paranoia:+1\n- :girlStudent: :paranoia:+1"
     },
     {
-      "title": "蔓延する不安と信頼  (Spreading Paranoia and Trust)",
+      "title": "Spreading Paranoia and Trust",
       "creator": "ペンスキー",
-      "set": [
-        {
-          "name": "Sangeki",
-          "number": 100
-        }
-      ],
-      "source": "https://sangeki.boardgame.work/scenario/100",
       "difficultySets": [
         {
           "numberOfLoops": 6,
@@ -427,13 +420,13 @@
           "culprit": "officeWorker"
         }
       ],
-      "description": "奇妙な特殊ルールを携えた1日脚本です。\n因果の糸との相互作用により、爆発的に不安と友好が拡大していきます。\n1日脚本とは思えないような、ダイナミックなゲームをお楽しみ下さい。 ",
+      "description": "This is a one-day script with a strange special rules. Interaction with Threads of Fate will cause Paranoia and Goodwill to explosively pile up. Enjoy a dynamic game unlike anything you'd expect from a one-day script.",
       "specialRules": [
-        "脚本家は友好禁止と不安-1を使用できない。\n不安カウンターは友好カウンターとしても扱う。"
+        "Mastermind can't use Forbid Goodwill or Paranoia-1. Paranoia counters also count as Goodwill counters."
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "不安カウンターを置いたキャラは次ループ以降、特殊ルールと因果の糸によってループ開始時に不安+2され続けます。\n\n毎ループ必ず、サラリーマン→不安+1、病院→暗躍+2を積んで下さい。それによって、2ループ目以降は確実に病院の事件を起こせます。\n入院患者がカルティストなので、暗躍+2を強引に通して主人公の死亡を狙ってください。\n\n1ループ目だけは事件を起こせませんが、そこはタイムトラベラーでなんとかします。\nサラリーマンへ不安-1を合わせられると脚本崩壊の危険があるため、神社やお嬢様にカードを置いてサラリーマンから注意をそらしましょう。\n\n主人公は最後の戦いでしか勝てませんが、勝利の鍵を握るのは異世界人と情報屋です。\n\n異世界人はタイムトラベラーを割る役割があります。放っておくと殺害能力をすぐ使われるため、常に神社から移動させるようにしましょう。\n\nタイムトラベラーが割れている状況なら、情報屋の友好能力によって最後の情報が手に入ります。すなわち、AIの役職とその他の全員がパーソンである事が判明します。\nここまで来れば、最後の戦いでの主人公勝利が確定します。 "
+      "mastermindHints": "Characters who place Paranoia counters will have +2 Paranoia at the start of subsequent Loops due to the special rule and Threads of Fate. Make sure to put Paranoia+1 on Office Worker and Intrigue+2 on Hospital every Loop. This will ensure that you can trigger Hospital Incident from the second Loop onward.\n\nSince the Patient is a Cultist, force through Intrigue+2 and try to kill the Protagonists. \n\nYou can't cause an Incident in the first Loop, but you can manage that with the Time Traveler. If the Office Worker is hit with Paranoia-1, there's a risk of the script collapsing, so place cards on the Shrine and Rich Man's Daughter to distract them from the Office Worker.\n\nThe Protagonists can only win with the Final Guess, but the key to victory is the Alien and Informer. Alien's role is to break the Time Traveler. If you leave them alone, they'll use the mandatory murder ability right away, so always move them away from the Shrine. If the Time Traveler is broken, the Informer's Goodwill ability will give them the last piece of information. That is, they'll find out the A.I.'s role and that everyone else is a Person.\n\nIf you get this far, the Protagonists will win the Final Guess."
     },
     {
       "title": "Unstable Life",
