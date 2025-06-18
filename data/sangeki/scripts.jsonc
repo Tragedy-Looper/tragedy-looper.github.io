@@ -1140,7 +1140,7 @@
       "mastermindHints": "There are three ways to kill the Friend: :murder:, :hospitalIncident:, or :serialKiller:. Your first priority is to kill the :friend: via the :murder: Incident. However, if you stack :paranoia: to trigger an Incident, the :officeWorker:, :shrineMaiden:, or :informer: will become :serialKiller:s, and the Roles will easily be deduced by process of elimination, making the Final Guess even harder for you. Therefore, even if you want to trigger an Incident, you should always be careful about the number of :paranoia: you place.\n\nIf you want to win with :butterflyEffect:, you will not be able to trigger an Incident without the :conspiracyTheorist: if the Culprit is revealed, so prepare a Culprite candidate and don't forget to place :paranoia: on it as well.\n\nBe careful with the :hospitalIncident:, as it will reveal the identity of the :timeTraveler:.\n\nThe Roles you want to hide are one of the :friend:s, and the :conspiracyTheorist:. Therefore, try to avoid creating a :serialKiller: via :paranoiaVirus: as much as possible."
     },
     {
-      "title": "もしも百合の世界の間に男が入ってきたら (What if a Man Fell into the World of Yuri?)",
+      "title": "What if a Man Fell into the World of Yuri?",
       "creator": "白獅子のケイ",
       "set": [
         {
@@ -1211,13 +1211,13 @@
           "culprit": "nurse"
         }
       ],
-      "description": "比較的入門用の脚本をイメージして作りました。どこからともなく現れるシリアルキラーにご注意を。",
+      "description": "I intended for this to be a relatively beginner's script. Be careful of the Serial Killer who appears out of nowhere.",
       "specialRules": [
-        "相談禁止にした場合ループ数+1 "
+        "Is Table Talk is prohibited, increase the Loop count by 1."
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "【メインラバーズの効果で主人公を殺そう】\n【ラバーズをうまく隠そう】\n【少女達で転校生を殺そう】\n\n\nお嬢様と手先の事件で暗躍や不安をばら撒き、メインラバーズの効果で主人公の殺害を狙います。\n\n最初のループからメインラバーズか不安3のパーソンで早々に主人公や転校生を殺害してループを終了させましょう。\n\nミスリーダーの能力は毎日使います。\n不安の優先は事件の発生です。\n少女は全員不安を置く意味があります。\n\n1日目の動き\nお嬢様　不安+1\n巫女　不安+1\n女子学生　友好禁止\n\n\n不安拡大が発生したら、\n暗躍はお嬢様、不安はアイドルか、巫女に乗せましょう。\n事件が発生したら、\n\n2日目の事件が発生したら\nお嬢様に暗躍と少女に不安を乗せます。\nなるべく多くの少女が不安2の状態を作ります。\n\n3日目に転校生が登場します。\n3日目か4日目に転校生に暗躍+2を置きましょう。\n\n事件が発生した場合、巫女に不安を置きます。\n\n4日目の動き\n3日目に暗躍+2をしていないなら今日暗躍を置いてみましょう。\n事件が発生した場合、転校生に暗躍が2つ置かれていないなら不安を、置かれてる場合は暗躍を置きます。\n\n5日目・6日目\n転校生が暗躍2なら、何れかの少女に暗躍を置いて、なるべく暗躍1不安3の少女をたくさん用意しましょう。\n\n置かれてない場合は、不安と移動を駆使して、転校生か主人公の殺害を狙います。\n\n【この脚本の弱点】\n手先を上手く移動させられて、事件の発生を抑えられた場合、ループから抜けられる可能性があります。\n\n最後の戦いでは、ルールYが「殺人計画」か「僕と契約しようよ」の二択を迫りつつ、ラバーズが誰かを探す事になります。\nしかし、少女全員が一度でもシリアルキラーとして動いたことがある場合、ルールYが確定する上に、ラバーズがナースしかあり得ないと判明するため、脚本家が勝つのは難しいかもしれません。 "
+      "mastermindHints": "- Kill the Protagonists via Loved One\n- Hide the Lover well\n- Kill the Transfer Student with the girls\n\nSpread Intrigue and Paranoia with Rich Man's Daughter and Henchman's Incidents, and aim to kill the Protagonists with Loved One's effect.\n\nFrom the first Loop, kill the Protagonists and Transfer Student early on with Loved One or a Person with 3 Paraoia to end the Loop.\n\nUse Conspiracy Theorist's mandatory ability every day. The priority of Paranoia is to trigger an Incident, so it makes sense for her to dish out plenty of Paranoia.\n\nDay 1:\n- Rich Man's Daughter—Paranoia+1\n- Shrine Maiden—Paranoia+1\n- Girl Student—Forbid Goodwill\n\nIf Increasing Unease occurs, put Intrigue on Rich Man's Daughter and Paranoia on the Pop Idol or Shrine Maiden.\n\nIf an Incident occurs on the second day, put Intrigue on Rich Man's Daughter and Paranoia on the girl. Make as many girls as possible have at least 2 Paranoia.\n\nOn the third Day, the Transfer Student will appear. On the third or fourth Day, place Intrigue+2 on the Transfer Student. If an Incident occurs, put Paranoia on the Shrine Maiden.\n\nDay 4\nIf you did not place Intrigue+2 on the third Day, try placing Intrigue today. If an Incident occurs, place Paranoia if the Transfer Student does not have 2 Intrigue, otherwise place Intrigue.\n\nDay 5/6\nIf the Transfer Student is at 2 Intrigue, place Intrigue on oen of the girls, and prepare as many girls with 1 Intrigue and 3 Paranoia as possible. If they're not placed, use Paranoia and Movement to kill the Transfer Student or the Protagonists.\n\n[Weaknesses of this script]\nIf they can move the Henchman well and prevent the occurence of an Incident, they have a good chance at breaking out of the Loop.\n\nIn the Final Guess, the Main Plot forces the player to choose between Murder Plan or Sign With Me!, whie trying to find out who the Lover is. However, if all the girls have acted as Serial Killer at least once, the Main Plot is confirmed, and it becomes clear that the Lover can only be the Nurse, so it will be difficult for the Mastermind to win."
     },
     {
       "title": "The Assassin Blade's Target",
