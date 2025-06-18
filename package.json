@@ -10,7 +10,8 @@
 		"preview": "vite preview",
 		"prepare": "npx tsx scripts/generateTragedysSchema.ts && npx tsx scripts/perBulid.ts && svelte-kit sync ",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test": "npx tsx scripts/test.ts"
 	},
 	"devDependencies": {
 		"@apideck/better-ajv-errors": "^0.3.6",
@@ -45,5 +46,8 @@
 		"printWidth": 100,
 		"svelteAllowShorthand": true,
 		"quoteProps": "consistent"
+	},
+	"dependencies": {
+		"jsonc-parser": "^3.3.1"
 	}
 }
