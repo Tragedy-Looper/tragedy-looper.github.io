@@ -2,6 +2,9 @@ name: Test Schema
 
 on:
   pull_request:
+    types:
+      - opened
+      - synchronize
     branches:
       - master
       - main
