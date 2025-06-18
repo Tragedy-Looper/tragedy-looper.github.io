@@ -1347,7 +1347,7 @@
       "mastermindHints": ":henchman: starts in Hospital, and should always be placed in the Hospital as his starting Location.\n\nThis allows you to very reliably trigger :foulEvil: on the third Day, and if it does occur, you're guaranteed victory. It takes some effort for the Protagonists to stop this, so it's impossible for them to immediately clear the game in the early Loops.\n\nFirst, scatter :paranoia: in the early game and move to cause all three Incidents. By setting the initial placement of your :henchman: to the Hospital, you can ensure :increasingUnease:, so place :paranoia: on the :patient:.\n\n:missingPerson: will delay the discovery of the :serialKiller:. At the same time, stack :intrigue: on the :littleSister: and sime for a CS with Sign With Me!. It's relatively easy to stop :intrigue: on the :littleSister:, so the CS ov Sign With Me! will collapse at that point. Then, place :intrigue:+1 on the Shrine to limit the number of moves the Protagonists can make.\n\nIn the Final Guess, you will be forced to choose between two options: The :conspiracyTheorist: will be the :henchman: or the :patient:, and the :brain: and :cultist: will either be the :doctor: or :ai: Make sure you always refuse the :ai:'s :goodwill: ability. It will be difficult to differentiate between the :brain: and the :cultist:.\n\nThere are ways to reveal both, but they're complete gimmicks, so the Protagonists' imaginations will be tested. Please refer to the steps below.\n\nThe most important point is that the Protagonists kill the two :friend:s. The key to exposing the :conspiracyTheorist: is the characteristic of the :sacredTree:. If you give the :sacredTree: and the :alien: :goodwill:+1 and the Loop starts, you can use :alien:'s :goodwill: ability on the first Day. If you kill the :henchman: with that, the Mastermind will have no choice but to reveal the :conspiracyTheorist:.\n\nAs for the :brain: and :cultist:, you can crack the :cultist: by killing the :patient:, who is the Culprit on the third Day, with :alien:'s mandatory ability. If you put all your :goodwill: into the :littleSister: and :alien:, you can activate the :doctor:'s :goodwill: ability via the :littleSister: on the second Day, and have the :alien: kill the :patient: on the third Day. In that case, the Mastermind can't win unless he uses the :cultist:'s ability. However, as soon as he does that, the Protagonists are guaranteed a victory in the Final Guess."
     },
     {
-      "title": "友達100人計画  (100-Friends Plan)",
+      "title": "100-Friends Plan",
       "creator": "白獅子のケイ",
       "set": [
         {
@@ -1414,13 +1414,13 @@
           "culprit": "transferStudent"
         }
       ],
-      "description": "潤沢な敗北方法を使って、CSを広げつつ、主人公側は友好能力を解放して、フレンドを見つける事に全力を出す脚本。",
+      "description": "This script uses a variety of ways to defeat the various CS, while the Protagonists unleashes their Goodwill abilities and puts all their effort into finding Friends.",
       "specialRules": [
-        "相談禁止にする場合ループ数+1 "
+        "If Table Talk is prohibited, increase the Loop count by 1."
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "1ループ目は、タイムトラベラーの能力で勝つため、脚本家の能力は使用せず、事件も発生させず移動カードを置いて、静かにループを過ごす。\n\n2ループ目からは、ファクターの死亡、神社への暗躍をメインに主人公達を敗北させていこう。\n\n1日目\nお嬢様　不安+1\n都市　不安+1or暗躍+1\n学校　暗躍+1or不安+1 "
+      "mastermindHints": "In the first Loop, you'll win with the Time Traveler's ability, so don't use the Mastermind's mandatory ability, don't trigger ann Incident, and spend the Loop quietly placing Movement cards.\n\nFrom the second Loop onward, defeat the Protagonists by mainly killing the Factor and placing Intrigue on the Shrine.\n\nDay 1:\n- Rich Man's Daughter—Paranoia+1\n- City—Paranoia+1 or Intrigue+1\n- School—Paranoia+1 or Intrigue+1"
     },
     {
       "title": "Those Who Overwhelm",
