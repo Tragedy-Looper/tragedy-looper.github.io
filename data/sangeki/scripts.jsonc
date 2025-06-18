@@ -761,12 +761,12 @@
       "specialRules": [
         ""
       ],
-      "victory-conditions": "1.\n- Kill the Protagonists (Loved One's mandatory)\n\n2.\n- Kill a Friend (A.I.'s Goodwill ability, Alien's Goodwill ability, Murder)\n\n3.\nSign With Me! (place 2 Intrigue on Key Person)",
+      "victory-conditions": "1.\n- Kill the Protagonists (Loved One's mandatory)\n\n2.\n- Kill a Friend (A.I.'s Goodwill ability, Alien's Goodwill ability, Murder)\n\n3.\n- Sign With Me! (place 2 Intrigue on Key Person)",
       "story": "",
       "mastermindHints": "Use the Conspiracy Theorist's mandatory ability every day. There is no need to hide it. The absolute goal is to cause Increase Unease and Transfer Student's Suicide. However, Murder on the third Day must not occur.\n\nUse Increasing Unease to supply Intrigue and Transfer Student's Suicide to supply Paranoia to the Patient, and aim to have the Loved One kill the Protagonists in every Loop.\n\nSince no elements of the Main Plot are required up to this point, identifying the Main Plot will be the focus of the game.\n\nThe Main Plot will be identified when all characters use their mandatory Goodwill abilities.\n\nThe script only has eight characters, five of whom are Sub Plot Roles, and the Office Worker is a Person, so only two can be assigned to the Main Plot Role. Therefore, once the Office Worker is exposed as the Person, the Murder Plan will be removed from the list of candidates.\n\nOf the remaining four Main Plots, Goodwill Refusal is part of all plots except Sign With Me!. If the Protagonists discover that there is no Goodwill Refusal in this script, the Main Plot and even the role assignments will be confirmed.\n\nKeep track of which characters have not used their mandatory Goodwill abilities yet in the game, and be on guard to prevent at least one character from using their mandatory Goodwill ability throughout the game. The most likely candidate is Godly Being.\n\nHere's a template for the cards, but it's not mandatory. There will be situations where you'll have to improvise, especially as the game nears the end.\n\nIf Goodwill is not on the A.I., then:\n\nDay 1:\n- Teacher—Paranoia+1\n- Alien—Forbid Goodwill\n\nDay 2:\n- Teacher—Paranoia+1\n- Transfer Student—Paranoia+1\n\nDay 3:\n- Transfer Student—Paranoia+1\n\nDay 4:\n- Transfer Student—Paranoia+1\n\nIf Goodwill is on the A.I. via the Friend ability:\nDay 1:\n- Teacher—Paranoia+2\n- A.I.—Intrigue+2\n\nDay 2:\n- Teacher—Paranoia+1\n- Transfer Student—Paranoia+1\n\nDay 3:\n- Transfer Student—Paranoia+1\n\nDay 4:\n- Transfer Student—Paranoia+1"
     },
     {
-      "title": "最低の配役 (A Hideous Cast)",
+      "title": "A Hideous Cast",
       "creator": "ペンスキー",
       "set": [
         {
@@ -803,13 +803,13 @@
           "culprit": "scientist"
         }
       ],
-      "description": "最低の却本には、役職人数を減らしてもよいという唯一無二の特徴があります。この脚本は、その特徴に最大限フォーカスしたものになります。\nコンパクトかつ難易度もそれほどでもないので、惨劇会の合間の箸休めにどうぞ。 ",
+      "description": "A Hideous Script has the unique feature of allowing you to reduce the number of Roles. This script focuses on that feature to the full extent. It's compact and not too difficult, so please enjoy it as a break from the more difficult Tragedies.",
       "specialRules": [
-        " 主人公は最後の戦いを実施してもよい。 \n\nThe Protagonists may make a Final Guess."
+        "The Protagonists may make a Final Guess."
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "各ループで必ず学者に不安カウンターを置いて下さい。その上で、毎回以下のテンプレ通りにカードを置いてください。\n\n病院→暗躍+1、サラリーマン→暗躍+2、学者→不安+1\n\n病院の暗躍が通ればルールYで、サラリーマンの暗躍が通れば遠隔殺人で確実に惨劇を起こせます。\n\n主人公はループ抜けができませんが、特殊ルールにより最後の戦いに臨めます。そして、敗北条件とそれに係るパワープレイを逆手に取る事で、全ての役職を明かせるようになっています。\n\nルールYで敗北すればクロマクが、事件で敗北すればフレンドが明かせます。そして学者に不安-1を張ることでミスリーダーも明らかになります。\nそこまで明かせば、残るはマイナスの配置だけです。そしてそれは、妹と:ai:の特性により確定できます。"
+      "mastermindHints": "Make sure you place a Paranoia counter on the Scientist each Loop. Then, place cards according to the guideline here.\n\n- Hospital—Intrigue+1\n- Office Worker—Intrigue+2\n- Scientist—Paranoia+1\n\nIf the Hospital's Intrigue passes, you can definitely cause a Tragedy in the Main Plot, and if the Office Worker's Intrigue passes, you can also trigger Faraway Murder.\n\nProtagonists cannot escape the Loop, but they can go to the Final Guess due to the special rules. And by taking advantage of the Defeat Conditions and the PP related to them, you can reveal all the roles.\n\nIf you lose in the Main Plot, you can reveal the Brain, and if you lose in the Incident, you can reveal the Friend. By placing Paranoia-1 on the Scientist, you can also reveal the Conspiracy Theorist. \n\nOnce you have revealed that much, all that remains is the placement of the Curmudgeon. That can be determined by the characteristics of the Little Sister and A.I."
     },
     {
       "title": "Heresy Prevails in the Classroom",
