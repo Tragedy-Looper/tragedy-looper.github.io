@@ -684,7 +684,7 @@
       "mastermindHints": "メインとなる勝利手段はフレンドの殺害です。教師がミスリーダーかつ殺人事件の犯人なので、委員長の殺害を優先して狙いましょう。タイムトラベラーの能力による勝利は極力控えるべきですが、他に勝利手段がないときは仕方ないので使いましょう。\n鑑識官の友好能力は罠です。一度友好を積まれれば、因果の糸と蝶の羽ばたきで大きなプレッシャーをかけられます。蝶の羽ばたきが発生したら、鑑識官自身に友好カウンターを置き、翌ループも同様に狙いましょう。\n自殺はこの脚本のアキレス腱です。主人公が事件を起こす動きをして来た場合、非常に苦しい展開となります。幸い、情報屋の能力が活きる場面はごく限られるため、偶発的に自殺を狙えるチャンスは１回きりでしょう。"
     },
     {
-      "title": "彼はパーソン (He's a Person)",
+      "title": "He's a Person",
       "creator": "ペンスキー",
       "set": [
         {
@@ -755,13 +755,13 @@
           "culprit": "patient"
         }
       ],
-      "description": "惨劇RoopeRを2,3回経験した主人公向けです。ルールXを豪快に活用したロックギミックと、それによるルールYの隠蔽が特徴です。",
+      "description": "This is for Protagonists who have experienced Tragedy Looper a few times already. It features a lock gimmick that makes extensive use of the Sub Plot, and how it conceals the Main Plot.",
       "specialRules": [
         ""
       ],
-      "victory-conditions": "1\n    主人公の殺害\n    メインラバーズの能力\n2\n    フレンドの殺害\n    :ai:の友好能力、異世界人の友好能力、殺人事件\n3\n    僕と契約しようよ！\n    キーパーソンに暗躍カウンターを２つ乗せる",
+      "victory-conditions": "1.\n- Kill the Protagonists (Loved One's mandatory)\n\n2.\n- Kill a Friend (A.I.'s Goodwill ability, Alien's Goodwill ability, Murder)\n\n3.\nSign With Me! (place 2 Intrigue on Key Person)",
       "story": "",
-      "mastermindHints": "ミスリーダーの能力は毎日使って下さい。隠す必要は全くありません。その上で不安拡大と転校生の自殺を発生させるのが必達目標です。逆に3日目の殺人事件は起こしてはいけません。\n不安拡大で暗躍カウンター、転校生の自殺で不安カウンターを入院患者へ供給し、全てのループでメインラバーズによる主人公殺害を狙います。\nここまでルールYの要素を一切必要としていないため、ルールYの特定がゲームの焦点となるでしょう。\n\nなお、全キャラクターの友好能力が使われるとルールYを特定されます。\nこの脚本にはキャラクターが8人しかおらず、5人はルールXの役職、サラリーマンはパーソンなので、ルールYの役職は2人までしか割り振れません。よってサラリーマンがパーソンと割れた時点で、殺人計画は候補から外れます。\n残る4つのルールYのうち、僕と契約しようよ！以外は全てのルールで絶対友好無視が追加されます。しかしこの脚本では友好無視がいないので、そこがバレるとルールY、ひいては役職の配役まで確定してしまいます。\n\nゲーム中でまだ友好能力を使われていないキャラクターが誰なのかは意識し、最低1人はゲーム中通して友好能力を使われないよう警戒しましょう。最有力候補は神格です。\n\n行動カードの置き方のテンプレを記しますが、絶対ではありません。特に終盤に近づくにつれて、テンプレが有効でない局面も出てくるでしょう。\n\n置き方テンプレ\n:ai:に友好が乗っていないなら↓\n初日\n教師\n「不安+1」\t\n異世界人\n「友好禁止」\n\n2日\n教師\n「不安+1」\n転校生\n「不安+1」\n\n3日\n転校生\n「不安+1」\n\n4日\n転校生\n「不安+1」\n\nフレンドの能力で:ai:に友好が乗っていたら↓\n初日\n教師\n「不安+1」\n:ai:\n「暗躍+2」\n\n2日\n教師\n「不安+1」\n転校生\n「不安+1」\n\n3日\n転校生\n「不安+1」\n\n4日\n転校生\n「不安+1」"
+      "mastermindHints": "Use the Conspiracy Theorist's mandatory ability every day. There is no need to hide it. The absolute goal is to cause Increase Unease and Transfer Student's Suicide. However, Murder on the third Day must not occur.\n\nUse Increasing Unease to supply Intrigue and Transfer Student's Suicide to supply Paranoia to the Patient, and aim to have the Loved One kill the Protagonists in every Loop.\n\nSince no elements of the Main Plot are required up to this point, identifying the Main Plot will be the focus of the game.\n\nThe Main Plot will be identified when all characters use their mandatory Goodwill abilities.\n\nThe script only has eight characters, five of whom are Sub Plot Roles, and the Office Worker is a Person, so only two can be assigned to the Main Plot Role. Therefore, once the Office Worker is exposed as the Person, the Murder Plan will be removed from the list of candidates.\n\nOf the remaining four Main Plots, Goodwill Refusal is part of all plots except Sign With Me!. If the Protagonists discover that there is no Goodwill Refusal in this script, the Main Plot and even the role assignments will be confirmed.\n\nKeep track of which characters have not used their mandatory Goodwill abilities yet in the game, and be on guard to prevent at least one character from using their mandatory Goodwill ability throughout the game. The most likely candidate is Godly Being.\n\nHere's a template for the cards, but it's not mandatory. There will be situations where you'll have to improvise, especially as the game nears the end.\n\nIf Goodwill is not on the A.I., then:\n\nDay 1:\n- Teacher—Paranoia+1\n- Alien—Forbid Goodwill\n\nDay 2:\n- Teacher—Paranoia+1\n- Transfer Student—Paranoia+1\n\nDay 3:\n- Transfer Student—Paranoia+1\n\nDay 4:\n- Transfer Student—Paranoia+1\n\nIf Goodwill is on the A.I. via the Friend ability:\nDay 1:\n- Teacher—Paranoia+2\n- A.I.—Intrigue+2\n\nDay 2:\n- Teacher—Paranoia+1\n- Transfer Student—Paranoia+1\n\nDay 3:\n- Transfer Student—Paranoia+1\n\nDay 4:\n- Transfer Student—Paranoia+1"
     },
     {
       "title": "最低の配役 (A Hideous Cast)",
