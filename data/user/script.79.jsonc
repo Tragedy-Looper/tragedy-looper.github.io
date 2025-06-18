@@ -1,0 +1,71 @@
+{
+  "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
+  "scripts": [
+    {
+      "title": "Test",
+      "creator": "test creator",
+      "difficultySets": [
+        {
+          "numberOfLoops": 3,
+          "difficulty": 1
+        }
+      ],
+      "tragedySet": "anotherHorizon",
+      "mainPlot": [
+        "shadowDemonKing"
+      ],
+      "subPlots": [
+        "worldDollhouse",
+        "threadsFate"
+      ],
+      "daysPerLoop": 5,
+      "cast": {
+        "henchman": "twilight",
+        "journalist": "gossiper",
+        "boyStudent": "person",
+        "richStudent": "person",
+        "shrineMaiden": "person",
+        "doctor": "person",
+        "classRep": "person",
+        "alien": "person",
+        "popIdol": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "confession",
+          "culprit": "richStudent"
+        },
+        {
+          "day": 2,
+          "incident": "confession",
+          "culprit": "popIdol"
+        },
+        {
+          "day": 3,
+          "incident": "confession",
+          "culprit": "alien"
+        },
+        {
+          "day": 4,
+          "incident": "confession",
+          "culprit": "classRep"
+        },
+        {
+          "day": 5,
+          "incident": "confession",
+          "culprit": "shrineMaiden"
+        }
+      ],
+      "description": "",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "",
+      "story": "This is the story of somthig eles",
+      "mastermindHints": "",
+      "local": true,
+      "submitter": "LokiMidgard"
+    }
+  ]
+}
