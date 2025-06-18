@@ -79,7 +79,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PULL_SECRET }}
           title: ${{ steps.extract_json.outputs.pr_title }}
           body: ${{ steps.extract_json.outputs.pr_body }}
           base: master
