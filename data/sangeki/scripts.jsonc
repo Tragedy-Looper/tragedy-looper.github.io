@@ -615,7 +615,7 @@
       "mastermindHints": "The Mastermind's way to win is to either kill the Protagonists with :hospitalIncident:, or to place two :intrigue: on the City. With the strong support of :unsettlingRumor:, you're almost certain to achieve one of these.\n\nIn the first Loop, you want to win with the :giantTimeBomb: if possible. On the first Day, place :intrigue:+2 and :intrigue:+1 on the City. If the :intrigue: on the City goes through, place the second one with :unsettlingRumor: on the last Day to guarantee victory. If the City is blocked, there is no choice but to aim for a :hospitalIncident: victory.\n\nIf you are aiming for :hospitalIncident:, you don't need to hide the :conspiracyTheorist:. Use the mandatory ability as much as you can and place :paranoia:+1 as well. Even if you trigger the :hospitalIncident:, the more troublesome Culprit candidates you can make for the Protagonists, the better.\n\nThe :soldier: is a threat to the Mastermind. Your :hospitalIncident: might be blocked, or your :factor: might commit :suicide:. This will lead straight to your defeat, so be careful not to use the mandatory :goodwill: ability.\n\nThe :godlyBeing: is also tricky. In order to prevent the :suicide: Culprit from being revealed, increase the number of suspects for the :hospitalIncident: as much as possible.\n\nOf course, the :factor: is hiding in the Final Guess. To avoid it being revealed via :murder: on the third Day, place :intrigue: in the City with :unsettlingRumor: on the last Day. Also, don't trigger :suicide: on the last Day.\n\nPlacement guide (same each Loop):\n\nFirst Day:\n\nHospital - :intrigue:+2\n\nCity - :intrigue:+1"
     },
     {
-      "title": "隠れ潜むタイムトラベラー (The Hidden Time Traveler)",
+      "title": "The Hidden Time Traveler",
       "creator": "ペンスキー",
       "set": [
         {
@@ -677,13 +677,13 @@
           "culprit": "informer"
         }
       ],
-      "description": "難易度の割には少々長めな脚本です。3つのルールも多くの役職も比較的簡単に割れますが、タイムトラベラーだけはある1点を除いて特定が難しいです。",
+      "description": "This script is a little long considering its difficulty. The three rules and many of the Roles are relatively easy to crack, but the Time Traveler is difficult to pinpoint, with one exception.",
       "specialRules": [
         ""
       ],
       "victory-conditions": "",
       "story": "",
-      "mastermindHints": "メインとなる勝利手段はフレンドの殺害です。教師がミスリーダーかつ殺人事件の犯人なので、委員長の殺害を優先して狙いましょう。タイムトラベラーの能力による勝利は極力控えるべきですが、他に勝利手段がないときは仕方ないので使いましょう。\n鑑識官の友好能力は罠です。一度友好を積まれれば、因果の糸と蝶の羽ばたきで大きなプレッシャーをかけられます。蝶の羽ばたきが発生したら、鑑識官自身に友好カウンターを置き、翌ループも同様に狙いましょう。\n自殺はこの脚本のアキレス腱です。主人公が事件を起こす動きをして来た場合、非常に苦しい展開となります。幸い、情報屋の能力が活きる場面はごく限られるため、偶発的に自殺を狙えるチャンスは１回きりでしょう。"
+      "mastermindHints": "The main way to win is to kill the Friend. Since the Teacher is a Conspiracy Theorist and the Murder culprit, you should prioritize killing your Class Rep. You should avoid using Time Traveler's ability to win, but if you have no other choice, you can use it.\n\nThe Forensic Specialist's Goodwill ability is a trap. Once you have Goodwill, you can put a lot of pressure on your opponent via Forensic Specialist with Threads of Fate and Butterfly Effect. If Butterfly Effect occurs, place a Goodwill counter on Forensic Specialist and aim for the same in the next Loop.\n\nSuicide is the Achilles' heel of this script. If the Protagonists try to cause this Incident, it'll be a very difficult situation. Fortunately, there are very few situations where the Informer's mandatory ability can be used, so you will only have one chance to accidentally trigger the Suicide."
     },
     {
       "title": "He's a Person",
