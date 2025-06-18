@@ -9,6 +9,7 @@
     type CharacterName,
     type LocationName,
   } from '../../../model/characters';
+  import { zip, unzip } from 'gzip-js';
   import { distinct, isArray, keys } from '../../../misc';
   import { base } from '$app/paths';
   import Translation from '../../../view/translation.svelte';
@@ -31,7 +32,7 @@
   import { linkOverview } from './overview/+page.svelte';
   import { linkPlayerAid } from '../../player/+page.svelte';
   import { linkScriptEdit } from './customScript/+page.svelte';
-  export let script: Script | undefined;
+  export let script: (Script & { local: boolean }) | undefined;
 
   let alwaysTransmitCharacters: boolean[] = characterscomesInLater.map(() => true);
   $: allAdditionamCharacters = alwaysTransmitCharacters.every((x) => x == true)
@@ -127,6 +128,23 @@
     qr.make();
     return qr.createDataURL(4);
   }
+
+  function removeLocal(script: Script & { local?: boolean }): Script {
+    const { local, ...rest } = script;
+    return rest;
+  }
+
+  $: githubIssueTitle = `[Script Submission] ${script?.title ?? 'Unknown Script'} by ${script?.creator ?? 'Unknown Creator'}`;
+  $: githubIssueBody = `Script submission from Website
+
+  <!-- DO NOT EDIT THIS SECTION!
+${btoa(String.fromCharCode.apply(null, zip(JSON.stringify(removeLocal(script)), { level: 9 }))).replace(
+  /(.{30})/g,
+  '$1\n'
+)}
+  -->
+  
+  `;
 </script>
 
 <dialog open={message !== undefined}>
@@ -190,6 +208,16 @@
         style="grid-row: 3; grid-column: 1 / span 2"
         role="button">Open Mastermind Aid</a
       >
+      {#if script.local}
+        <a
+          role="button"
+          aria-disabled={script == undefined || script.title == undefined}
+          href={`https://github.com/Tragedy-Looper/tragedy-looper.github.io/issues/new?title=${encodeURIComponent(githubIssueTitle)}&body=${encodeURIComponent(githubIssueBody)}&labels=${encodeURIComponent('script submission')}`}
+          target="_blank"
+          style="grid-row: 4; grid-column: 1 / span 2; margin-bottom: var(--spacing);"
+          rel="noopener noreferrer">Publish on GitHub</a
+        >
+      {/if}
     </div>
     <!-- <span style="clear: right;"></span> -->
     <!-- <a style="float: right; clear: right;" href={`${base}/player/?${parameter}`} target="_blank"
@@ -200,6 +228,9 @@
     <hgroup style="align-self: start; justify-self: start;">
       <h4>{script.creator}</h4>
       <h1><Translation translationKey={script.title} /></h1>
+      <small
+        >{#if script.local}(<Translation translationKey="local script" />){/if}</small
+      >
       {#if script.source}
         <h5>
           <Translation translationKey={'Source'} />
@@ -253,7 +284,8 @@
   <div>
     <strong
       ><Translation
-        translationKey={`:${script.tragedySet}:`} link
+        translationKey={`:${script.tragedySet}:`}
+        link
       />{#if script.incidents.some((x) => x.notTragedySpecified)}+{/if}</strong
     >
   </div>
@@ -268,7 +300,7 @@
     >
     {#snippet plotEntry(s: PlotName | readonly [PlotName, Record<string, unknown>])}
       {#if typeof s == 'string'}
-        <Translation translationKey={`:${s}:`} link/>
+        <Translation translationKey={`:${s}:`} link />
       {:else}
         {@const plot = plotsLookup[s[0]]}
         {@const options = s[1] ?? {}}
@@ -303,7 +335,7 @@
         {#each Object.entries(script.cast) as [cast, role]}
           <tr>
             <td>
-              <Translation translationKey={`:${cast}:`} link/>
+              <Translation translationKey={`:${cast}:`} link />
             </td>
             <td>
               {#if isArray(role)}
@@ -340,12 +372,12 @@
             </td>
             <td>
               {#if isArray(incident)}
-                <Translation translationKey={`:${incident[0]}:`} link/><br />
+                <Translation translationKey={`:${incident[0]}:`} link /><br />
                 <small>
-                  (<Translation translationKey={`:${incident[1]}:`} link/>)
+                  (<Translation translationKey={`:${incident[1]}:`} link />)
                 </small>
               {:else}
-                <Translation translationKey={`:${incident}:`} link/>
+                <Translation translationKey={`:${incident}:`} link />
               {/if}
             </td>
             <td>
@@ -367,7 +399,7 @@
     <div>
       {#each script.specialRules?.filter((x) => x.length > 0) as s}
         <p>
-          <Translation translationKey={s} link/>
+          <Translation translationKey={s} link />
         </p>
       {/each}
     </div>
@@ -375,15 +407,15 @@
   <div>
     {#if script.story}
       <h5><Translation translationKey={'Story'} /></h5>
-      <Translation translationKey={script.story} block link/>
+      <Translation translationKey={script.story} block link />
     {/if}
     {#if script.mastermindHints}
       <h5><Translation translationKey={'Hints for the Mastermind'} /></h5>
-      <Translation translationKey={script.mastermindHints} block link/>
+      <Translation translationKey={script.mastermindHints} block link />
     {/if}
     {#if script['victory-conditions']}
       <h5><Translation translationKey={'Victory Conditions'} /></h5>
-      <Translation translationKey={script['victory-conditions']} block link/>
+      <Translation translationKey={script['victory-conditions']} block link />
     {/if}
   </div>
   <hr />
@@ -404,7 +436,7 @@
           <li>
             <lable>
               <input type="checkbox" role="switch" bind:checked={alwaysTransmitCharacters[i]} />
-              <Translation translationKey={`:${a}:`} link/>
+              <Translation translationKey={`:${a}:`} link />
             </lable>
           </li>
         {/each}
@@ -416,7 +448,7 @@
 {#snippet renderRole(role: RoleName)}
   {@const roles = singleRolenames(role)}
   {#each roles as r, i}
-    <Translation translationKey={`:${r}:`} link/>
+    <Translation translationKey={`:${r}:`} link />
     {#if i < roles.length - 1},
     {/if}
   {/each}

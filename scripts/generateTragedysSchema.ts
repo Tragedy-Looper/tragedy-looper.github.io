@@ -718,6 +718,8 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                 "properties": {
                                     "title": { "type": "string" },
                                     "creator": { "type": "string" },
+                                    "submitter": { "type": "string" },
+                                    "translator": { "type": "string" },
                                     "description": { "type": "string" },
                                     "source": { "type": "string" },
                                     "rating": {

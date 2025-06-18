@@ -159,7 +159,8 @@
         </div>
       {/each}
     </article>
-  {:else if tab == 'tragedy'}
+  {/if}
+  <div class:hide={tab != 'tragedy'}>
     {#each distinct(scripts
         .map((key) => key.tragedySet)
         .filter((x) => x != undefined)
@@ -177,7 +178,8 @@
         {/each}
       </article>
     {/each}
-  {:else}
+  </div>
+  <div class:hide={tab != 'set'}>
     {#each distinct(scripts
         .flatMap((x) => x.set ?? [])
         .map((key) => key.name)
@@ -219,7 +221,7 @@
         </label>
       {/each}
     </div>
-  {/if}
+  </div>
 
   <!-- </main> -->
 </main>
@@ -278,6 +280,11 @@
 {/snippet}
 
 <style>
+
+.hide{
+  display: none;
+}
+
   label > input {
     display: none;
   }
