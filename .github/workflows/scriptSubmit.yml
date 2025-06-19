@@ -40,6 +40,11 @@ jobs:
               json = JSON.parse(decompressed.toString('utf-8'));
               // Add submitter from issue user
               json.submitter = context.payload.issue.user?.login || '';
+            const now = new Date();
+            const yyyy = now.getFullYear();
+            const dd = String(now.getDate()).padStart(2, '0');
+            const mm = String(now.getMonth() + 1).padStart(2, '0');
+            json.submitDate = `${yyyy}-${dd}-${mm}`;
             } catch (e) {
               core.setFailed('Failed to decompress or parse JSON: ' + e.message);
               return;
