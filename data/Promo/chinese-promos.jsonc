@@ -30,16 +30,16 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "Script Creation: Specify a number for X to be the :paranoia: Limit. When checking the :paranoia: Limit for anything besides an Incident, treat this character's :paranoia: Limit as 0."
+                    "description": "Script Creation: Specify a number “X” to be the :paranoia: Limit. Treat this character’s :paranoia: Limit as 0 for anything besides an Incident."
                 },
                 {
                     "type": "passive",
-                    "description": "If this Character is the Culprit of an Incident, this Character may be treated as if they are in the next adjacent Location (Hospital is Shrine, etc.)."
+                    "description": "If this Character is an Incident Culprit, you may treat him as if he is in the next clockwise Location."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 5,
-                    "description": "Move this Character to any Location, and revive one corpse in that area. Put X :goodwill: on the revived Character (X equals the set :paranoia: Limit at script creation).",
+                    "description": "Move this Character to any Location, and revive one corpse in that area. Put “X” :goodwill: on the revived Character.",
                     "timesPerLoop": 1
                 }
             ]
