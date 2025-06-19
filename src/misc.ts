@@ -331,5 +331,10 @@ export function cssesc(string: string, options?: Partial<Options>) {
 
 
 export function escapeRegExp(string: string): string {
-    return string.replaceAll(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+    // In addition to the typical apostrophe (') and the typographic apostrophe (’),
+    // the following characters could also be used as apostrophes:
+    // ‘ (U+2018), ‛ (U+201B), ʻ (U+02BB), ʹ (U+02B9), ˈ (U+02C8), ´ (U+00B4), ` (U+0060)
+    // Here, the most common variants are included:
+    return string.replaceAll(/[.*+?^${}()|[\]\\]/g, '\\$&')// $& means the whole matched string
+        .replaceAll(/['’‘‛ʻʹˈ´`]/g, '[\'’‘‛ʻʹˈ´`]'); 
 }
