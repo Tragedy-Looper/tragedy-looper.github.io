@@ -1732,6 +1732,66 @@
   "mastermindHints": "First Loop\n\nThe goal is the won by putting 4 :intrigue: on the :killer:, which is the most difficult option. Since you can get 1 :intrigue: by triggering :increasingUnease: on the 5th Day, you only need to put 3 :intrigue: on the :girlStudent:.\n\nDay 1\n- Pop Idol: :intrigue:+1\n- Patient: :paranoia:+1\n- :girlStudent Student: :paranoia:+1 (this is a bluff, so you can use others if you want)\n\nPlace :paranoia:+1 on the :patient: every turn to trigger the :increasingUnease: Incident. The Protagonists have a total of 3 :paranoia:-1 cards, so you can reach the :paranoia: limit on the final Day if you put :paranoia:+1 out every turn. \n\nHowever, this time, there is a :popIdol:. Since there is a possibility of her removing :paranoia: via her mandatory, if she accumulates :goodwill: on her, you can counter it with repeated Forbid :goodwill:, preventing her from moving to the Hospital, or simply place a 4th :intrigue:. Additionally, placing it on :popIdol:, :girlStudent:, and :patient: is also a setup for the next Loop, so it's recommended to place it on these three Characters.\n\nDay 2\n- :girlStudent Student: :intrigue:+1\n- Patient: :paranoia:+1\n- Pop Idol: :paranoia:+1 (this is a bluff, so you can use others if you want)\n\nContinuing from the previous Day, place :paranoia: on the :patient:. Then place :intrigue:+1 on the :girlStudent:. This is the day when :suicide: occurs, but if the Mastermind does not place any :paranoia:, the :shrineMaiden: shouldn't hit her required limit.\n\nDay 3\n- :girlStudent Student: :intrigue:+2\n- Patient: :paranoia:+1\n- Pop Idol: Move to the same position as :richStudent:\n\nAt this point, it's important to place :intrigue:+2 while moving the :richStudent:. If :intrigue:+2 is blocked, your options for beating the Protagonists will be greatly narrowed (I think the only option then is to tput 2 :intrigue: on the :keyPerson: and kill him with the :killer:).\n\nAs insurance in case :intrigue:+2 is nullified, move :popIdol: (:keyPerson:) towards :richStudent: (:conspiracyTheorist:). By doing this, the Daughter, who is a :conspiracyTheorist:, will be abl to put a Paranoid counter on herself, trigger :murder:, kill the :keyPerson:, and defeat the Protagonists.\n\nIf :intrigue:+2 is successfully placed on the :girlStudent: (:killer:), don't use :conspiracyTheorist:'s mandatory ability and continue instead with \\\"No Incident occured.\\\"\n\nDay 4\n- :girlStudent Student: :intrigue:+1\n- Patient: :paranoia:+1\n- Pop Idol: :paranoia:+1 (this is a bluff, so you can use others if you want)\n\nWhen the :girlStudent: gets 4 :intrigue:, kill the Protagonists to end the Loop. However, the Protagonists will likely be wary of her since she has three :intrigue:, so they will likely place Forbid :intrigue:. It's a good idea to place :paranoia: so that the :popIdol: also reaches her Limit, so it makes it difficult to determine if the final Day's Culprit is the :popIdol: or the :patient:.\n\nDay 5\n- :girlStudent Student: :intrigue:+1\n- Patient: :paranoia:+1\n- Pop Idol: :paranoia:+1 (this is a bluff, so you can use others if you want)\n\nSame as Day 4. If everything goes according to plan, the :girlStudent: should have 3 :intrigue: on her. Now, trigger :increasingUnease: (which should be unstoppable) to put the 4th :intrigue: on the :killer:, and kill the Protagonists at the end of the turn to end the Loop.\n\n2nd Loop\n\nThe strategy for the 2nd Loop is to aim for a one-turn kill, or kill the :keyPerson: with the :killer: if you can't get a one-turn kill.\n\nDay 1\n- Pop Idol: :intrigue:+2\n- :girlStudent Student: Move to the City\n- Patient: :paranoia:+1\n\nLet's aim for a one-turn kill!\nSince you're placing cards on the same characters as in the previous Loop, and, according to the plot, the Protagonists lost the previous Loop due to the :killer:'s mandatory :intrigue: 4 ability, the Protagonists will probably place Forbid :intrigue: on the :girlStudent: (:killer:). Well, they may move the :popIdol: to avoid the risk of a one-turn kill, but if they, you can chase them down with the :killer: the next Day or later.\n\nDay 2 onward\n\nSo, did you get the one-turn kill? Well, you're reading this on Day 2, so probably not (lol). From hereon, use :policeOfficer: (:brain:)'s mandatory ability aggressively and aim to put :intrigue: on the :keyPerson: and :killer:.\n\nThere's no Final Guess in the First Step set, so there's no reason to be stingy with mandatory role abilities. It's also a good idea to aim to kill the :shrineMaiden: (:friend:), or :popIdol: (:keyPerson:) with the :richStudent: :murder: Incident on the 3rd Day.\n\n3rd Day\n\nFor the third Loop, try to kill the :shrineMaiden:.\n\nDay 1\n- Shrine Maiden: :paranoia:+1\n- :richStudent:: Move up or down\n- Pop Idol: :intrigue:+1\n\nIf the :richStudent: safely reaches the Shrine and is able to join the :shrineMaiden:, use her mandatory :conspiracyTheorist: ability to place :paranoia: on the :shrineMaiden:.\n\nDay 2\n- Shrine Maiden: :paranoia:+1\n- :boyStudent: Move left or right (avoid going to the Shrine)\n- Pop Idol: :intrigue:+1\n\nIf everything goes as planned up until now, the :shrineMaiden: (:friend:) will kill herself, so this Loop will end. If that doesn't work, try killing the :shrineMaiden: or :popIdol: on the third Day with :richStudent:'s :murder: Incident (if you miss this, too, you'll be in a lot of trouble lol).\n\n4th Loop\n\nIf you have been following the Hints, all Culprits and Roles should be revealed by now. Therefore, in the final 4th Loop, it'll be a battle of wits between the Mastermind and the Protagonists.\n\nGood luck!"
     },
     {
+      "title": "I'm Dying to Cause a Tragedy!",
+      "creator": "RooP",
+      "source": "http://asuwa.mistysky.net/rooper/rooper.cgi",
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 0
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "murderPlan"
+      ],
+      "subPlots": [
+        "hiddenFreak",
+        "threadsFate"
+      ],
+      "daysPerLoop": 5,
+      "cast": {
+        "doctor": "keyPerson",
+        "informer": "killer",
+        "officeWorker": "brain",
+        "patient": "serialKiller",
+        "richStudent": "friend",
+        "boyStudent": "person",
+        "girlStudent": "person",
+        "shrineMaiden": "person",
+        "policeOfficer": "person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "murder",
+          "culprit": "shrineMaiden"
+        },
+        {
+          "day": 3,
+          "incident": "suicide",
+          "culprit": "doctor"
+        },
+        {
+          "day": 4,
+          "incident": "increasingUnease",
+          "culprit": "richStudent"
+        },
+        {
+          "day": 5,
+          "incident": "hospitalIncident",
+          "culprit": "officeWorker"
+        }
+      ],
+      "description": "Doctor! I have no choice but to kill you!\nIf that ojou-sama has such a tofu mentality, she has no choice but to die!\nWho said that office worker is merely an ordinary person?!",
+      "specialRules": [
+        "Table talk is not allowed. There is a Final Guess."
+      ],
+      "victory-conditions": "- Killing the Key Person—Murder, Suicide, Hospital Incident, Serial Killer, and Killer.\n- Kill the Protagaonists—Hospital Incident, Killer\n- Kill the Friend—Murder, Hospital Incident, Serial Killer",
+      "story": "A man who lost his daughter to a medical error swore revenge. \n\nHe gives him a knife, hiding it in a condolence gift. \"You're dying to kill someone, aren't you? Now's your chance.\"\n\nHe hands the woman a heavy suitcase. \"You can get anything you want as long you have enough money, right? Information, even a life.\"\n\nHe offers the cursed sword to the shrine. \"I want it exorcised within two days. It's dangerous if it gets rushed? That's not my concern, just get it done.\"\n\nHe looks into his eyes that are tormented by guilt. \"If you really feel bad about what you've done, can't you just apologize by dying?\"\n\nHe whispers to the young lady, who's surrounded by her clique. \"Hey, I have an interesting story for you. Care to listen?\"\n\nFinally, he ends it with his own hands. \"Let's go out with a bang.\"",
+      "mastermindHints": "For the first Loop, you'll focus on the three students at the School, and you'll be able to avoid the Hospital. If there's no particular movement, you should be good.\n\nFor the second Loop, aim to kill the Rich Man's Daughter with a Murder or the Serial Killer.\n\nFor the third Loop, you'll be forced to choose between working behind the scenes with the Hospital, or working behind the scenes with the Doctor. Furthermore, the Doctor can be forced to choose between Paranoia and Intrigue until the third Day. The rest is flexible. The roles you need to hide are the Killer and the Brain. Use your ability after gathering a large number of people first."
+    },
+    {
       "title": "Escort Mission",
       "creator": "davidchaeB",
       "difficultySets": [
