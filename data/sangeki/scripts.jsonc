@@ -937,6 +937,13 @@
     {
       "title": "When You Wish Upon A Star",
       "creator": "ペンスキー",
+      "set": [
+        {
+          "name": "Sangeki",
+          "number": 9
+        }
+      ],
+      "source": "http://www.boardgame.work/sangeki/kyakuhon/detail.php?id=1010",
       "difficultySets": [
         {
           "numberOfLoops": 3,
