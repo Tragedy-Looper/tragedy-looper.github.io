@@ -960,16 +960,16 @@
       ],
       "daysPerLoop": 6,
       "cast": {
-        "henchman": ":cultist:",
+        "henchman": "cultist",
         "littleSister": "timeTraveler",
-        ":illusion:": ":friend:",
-        "ai": ":friend:",
+        ":illusion:": "friend",
+        "ai": "friend",
         "policeOfficer": "conspiracyTheorist",
-        "nurse": ":person:",
-        "officeWorker": ":person:",
-        "informer": ":person:",
-        "boyStudent": ":person:",
-        "richStudent": ":person:"
+        "nurse": "person",
+        "officeWorker": "person",
+        "informer": "person",
+        "boyStudent": "person",
+        "richStudent": "person"
       },
       "incidents": [
         {
