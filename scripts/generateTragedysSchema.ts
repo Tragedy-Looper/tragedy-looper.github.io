@@ -790,7 +790,8 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                                     : { type: "string" }
                                                                         ] as const;
                                                                     }) ?? [])
-                                                                }
+                                                                },
+                                                                "required": Object.keys(PlotData[plotName].scriptSpecified ?? {}).length > 0 ? Object.keys(PlotData[plotName].scriptSpecified ?? {}) : []
                                                             }
                                                         ],
                                                         "minItems": 2,
@@ -834,7 +835,9 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                                     : { type: "string" }
                                                                         ] as const;
                                                                     }) ?? [])
-                                                                }
+                                                                },
+                                                                "required": Object.keys(PlotData[plotName].scriptSpecified ?? {}).length > 0 ? Object.keys(PlotData[plotName].scriptSpecified ?? {}) : []
+
                                                             }
                                                         ],
                                                         "minItems": 2,
@@ -1043,7 +1046,11 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                                                 : { type: "string" }
                                                                                     ] as const;
                                                                                 }) ?? [])
-                                                                            }
+                                                                            },
+                                                                            "required": [
+                                                                                ...Object.keys(CharacterData[character].scriptSpecified ?? {}),
+                                                                                ...Object.keys(RolaData[role].scriptSpecified ?? {})
+                                                                            ]
                                                                         } as const
                                                                     ],
                                                                     "minItems": 2,
