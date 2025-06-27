@@ -32,7 +32,10 @@
   import { linkOverview } from './overview/+page.svelte';
   import { linkPlayerAid } from '../../player/+page.svelte';
   import { linkScriptEdit } from './customScript/+page.svelte';
+    import { getPlayedScripts, savePlayedScripts } from '../../../storage';
   export let script: (Script & { local: boolean }) | undefined;
+
+  let playedScripts: string[] = [];
 
   let alwaysTransmitCharacters: boolean[] = characterscomesInLater.map(() => true);
   $: allAdditionamCharacters = alwaysTransmitCharacters.every((x) => x == true)
@@ -73,6 +76,7 @@
   let protocoll = '';
 
   onMount(() => {
+    playedScripts = getPlayedScripts();
     host = document.location.host;
     protocoll = document.location.protocol;
   });
@@ -138,10 +142,9 @@
   $: githubIssueBody = `Script submission from Website
 
   <!-- DO NOT EDIT THIS SECTION!
-${btoa(String.fromCharCode.apply(null, zip(JSON.stringify(removeLocal(script)), { level: 9 }))).replace(
-  /(.{30})/g,
-  '$1\n'
-)}
+${btoa(
+  String.fromCharCode.apply(null, zip(JSON.stringify(removeLocal(script)), { level: 9 }))
+).replace(/(.{30})/g, '$1\n')}
   -->
   
   `;
@@ -227,7 +230,12 @@ ${btoa(String.fromCharCode.apply(null, zip(JSON.stringify(removeLocal(script)), 
 
     <hgroup style="align-self: start; justify-self: start;">
       <h4>{script.creator}</h4>
-      <h1><Translation translationKey={script.title} /></h1>
+      <h1>
+        <Translation translationKey={script.title} />
+        <input type="checkbox" bind:group={playedScripts} value={script.title} on:change={()=>{
+          savePlayedScripts(playedScripts);
+        }} />
+      </h1>
       <small
         >{#if script.local}(<Translation translationKey="local script" />){/if}</small
       >

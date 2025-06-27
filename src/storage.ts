@@ -97,6 +97,28 @@ function fromJson(str: string | undefined | null): Script | null {
     }
 }
 
+export function savePlayedScripts(scripts:string[]){
+    if (!browser) {
+        throw new Error('We need to run in Browser');
+    }
+    const data = JSON.stringify(scripts);
+    window.localStorage.setItem('tragedyLooperPlayedScripts', data);
+}
+export function getPlayedScripts(): string[] {
+    if (!browser) {
+        throw new Error('We need to run in Browser');
+    }
+    const data = window.localStorage.getItem('tragedyLooperPlayedScripts');
+    if (data) {
+        try {
+            return JSON.parse(data);
+        } catch (error) {
+            return [];
+        }
+    }
+    return [];
+}
+
 export async function loadAllScripts(): Promise<(Script & { local: true | undefined })[]> {
     const local = await loadAllLocalScripts();
     return [...local, ...Object.values(scripts).map(x => ({ ...x, local: undefined }))];

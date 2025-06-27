@@ -5,7 +5,13 @@
   import { base } from '$app/paths';
   import '@picocss/pico/css/pico.css';
   import ExportView from '../../../view/exportView.svelte';
-  import { deleteLocalScript, loadAllLocalScripts, loadScript } from '../../../storage';
+  import {
+    deleteLocalScript,
+    getPlayedScripts,
+    loadAllLocalScripts,
+    loadScript,
+    savePlayedScripts,
+  } from '../../../storage';
   import type { Script } from '../../../scripts.g';
   import Rating from './rating.svelte';
   import Translation from '../../../view/translation.svelte';
@@ -17,10 +23,13 @@
 
   let searchParams = $state(undefined as URLSearchParams | undefined);
 
+  let playedScripts: string[] = $state([]);
+
   let shouldDeleteScript = $state(undefined as Script | undefined);
 
   let ownScripts: Script[] = $state([]);
   onMount(async () => {
+    playedScripts = getPlayedScripts();
     searchParams = new URLSearchParams(document.location.search);
     const pushState = history.pushState;
     history.pushState = function (data: any, unused: string, url?: string | URL | null) {
@@ -230,7 +239,17 @@
   <div style="margin-bottom: 0.5em;">
     <a href={linkOverview({ title: s.title })}>
       <Translation translationKey={s.title} /> <Translation translationKey={'by'} /> {s.creator}</a
-    ><br />
+    >
+    <input
+      type="checkbox"
+      bind:group={playedScripts}
+      value={s.title}
+      onchange={() => {
+        savePlayedScripts(playedScripts);
+      }}
+    />
+
+    <br />
 
     <em style="display: block;">
       {#each s.set ?? [] as set}
@@ -280,10 +299,9 @@
 {/snippet}
 
 <style>
-
-.hide{
-  display: none;
-}
+  .hide {
+    display: none;
+  }
 
   label > input {
     display: none;
