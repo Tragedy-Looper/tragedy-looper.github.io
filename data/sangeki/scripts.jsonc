@@ -1634,13 +1634,17 @@
         ],
         "transferStudent": [
           "brain",
-          {}
+          {
+            "enters on day": 3
+          }
         ],
         "ai": "serialKiller",
         "journalist": "friend",
         "godlyBeing": [
           "person",
-          {}
+          {
+            "enters on loop": 3
+          }
         ],
         "patient": "person",
         "soldier": "person",
