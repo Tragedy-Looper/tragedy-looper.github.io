@@ -791,7 +791,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                         ] as const;
                                                                     }) ?? [])
                                                                 },
-                                                                "required": Object.keys(PlotData[plotName].scriptSpecified ?? {}).length > 0 ? Object.keys(PlotData[plotName].scriptSpecified ?? {}) : []
+                                                                "required": (PlotData[plotName].scriptSpecified?.map(x => x.name) ?? [])
                                                             }
                                                         ],
                                                         "minItems": 2,
@@ -836,7 +836,7 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                         ] as const;
                                                                     }) ?? [])
                                                                 },
-                                                                "required": Object.keys(PlotData[plotName].scriptSpecified ?? {}).length > 0 ? Object.keys(PlotData[plotName].scriptSpecified ?? {}) : []
+                                                                "required": (PlotData[plotName].scriptSpecified?.map(x => x.name) ?? [])
 
                                                             }
                                                         ],
@@ -1004,8 +1004,9 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                                             ? { "type": "string", "enum": Array.from(namesPerTragedySet[tragedySet].plotNames) }
                                                                                             : { type: "string" }
                                                                                 ] as const;
-                                                                            }) ?? [])
-                                                                        }
+                                                                            }) ?? []),
+                                                                        },
+                                                                        "required": (CharacterData[character].scriptSpecified?.map(x => x.name) ?? []),
                                                                     }],
                                                                 "minItems": 2,
                                                                 "maxItems": 2,
@@ -1048,8 +1049,8 @@ function generateScriptsSchema({ tragedySetNames, plotNames, CharacterData, Rola
                                                                                 }) ?? [])
                                                                             },
                                                                             "required": [
-                                                                                ...Object.keys(CharacterData[character].scriptSpecified ?? {}),
-                                                                                ...Object.keys(RolaData[role].scriptSpecified ?? {})
+                                                                                ...(CharacterData[character].scriptSpecified?.map(x => x.name) ?? []),
+                                                                                ...(RolaData[role].scriptSpecified?.map(x => x.name) ?? [])
                                                                             ]
                                                                         } as const
                                                                     ],
