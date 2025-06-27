@@ -1,10 +1,9 @@
 # Tragedy Looper
 
 [Tragedy Looper (惨劇 RoopeR)](https://boardgamegeek.com/boardgame/148319/tragedy-looper)
-is a scenario-based deduction board game where players take the roles of time
-loopers attempting to prevent a tragedy.
+is a scenario-based deduction board game where players take the roles of time loopers attempting to prevent a tragedy.
 
-Its Fun :)
+Its fun. :)
 
 ## So What's this?
 
@@ -13,16 +12,13 @@ This is the code for the website <https://tragedy-looper.github.io/>.
 It is a tool that generates script specific deduction matrix for the specific
 characters and a checklist for the Mastermind.
 
-It has all premade Scripts of the Z-Man version of the Base Game, Midnight
-Circle and Cosmic Evil, pre entered and ready to go. But you can of course made
-your own Scripts.
+It contains all both Z-Man and WizKids' published scripts, as well as many fan-made scripts. You can also easily make and submit your own.
 
-It will safe your custom scripts locally in your Browser, and you can ex-/import
-them to text. You can also share the script with others.
+Scripts are saved locally (unless you submit them), and can easily be shared with others.
 
 ## Board Game Geek
 
-There is also a thread on [Board Game Geek](https://boardgamegeek.com/thread/3066363/website-generate-script-specific-mastermind-and-pl) where you can discuss, (or fill bugs if you don't want to create a github account).
+There is also a thread on [Board Game Geek](https://boardgamegeek.com/thread/3066363/website-generate-script-specific-mastermind-and-pl) where you can discuss, (or report bugs if you don't want to create a github account).
 
 ## How to add new content?
 
@@ -30,9 +26,7 @@ This depends what you want to add.
 
 ### A new Script
 
-You can go to the website and hit the button to create a new script (under choose script).
-
-Fill out the fileds thats it. The Script is stored localy in your Browser, but you can send it to other persons. Changeng Browser or deleting the Application Data of the Website, will delete that. You have been warned.
+You can go to the website and hit the button to create a new script (under choose script). Create a Script and it'll be saved in your browser's local storage (so if you switch browsers or clear your data, you won't have access to it, so be careful).
 
 You can also write the script as text in JSON format (see below).
 
