@@ -425,7 +425,9 @@
         ],
         "transferStudent": [
           "conspiracyTheorist",
-          {}
+          {
+            "enters on day": 5
+          }
         ],
         "boyStudent": "factor",
         "shrineMaiden": "person",
