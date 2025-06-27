@@ -742,15 +742,15 @@
           "daysPerLoop": 7,
           "cast": {
             "boss": [
-              ":brain:",
+              "brain",
               {
                 "Turf": "School"
               }
             ],
-            "nurse": ":killer:",
+            "nurse": "killer",
             "journalist": "serialKiller",
-            "boyStudent": ":friend:",
-            ":alien:": ":friend:",
+            "boyStudent": "friend",
+            "alien": "friend",
             "informer": "conspiracyTheorist",
             "transferStudent": [
               "privateInvestigator",
@@ -759,19 +759,19 @@
               }
             ],
             "godlyBeing": [
-              ":person:",
+              "person",
               {
                 "enters on loop": 4
               }
             ],
-            "teacher": ":person:",
-            "popIdol": ":person:",
-            "classRep": ":person:"
+            "teacher": "person",
+            "popIdol": "person",
+            "classRep": "person"
           },
           "incidents": [
             {
               "day": 2,
-              "incident": ":terrorism:",
+              "incident": "terrorism",
               "culprit": "teacher"
             },
             {
@@ -781,8 +781,8 @@
             },
             {
               "day": 4,
-              "incident": ":suicide:",
-              "culprit": ":alien:"
+              "incident": "suicide",
+              "culprit": "alien"
             },
             {
               "day": 6,
