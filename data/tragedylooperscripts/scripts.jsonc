@@ -2818,62 +2818,6 @@
     },
     {
       "cast": {
-        "boyStudent": "friend",
-        "girlStudent": "friend",
-        "richStudent": "person",
-        "shrineMaiden": "person",
-        "policeOfficer": "person",
-        "officeWorker": "person",
-        "informer": "witch",
-        "doctor": "person"
-      },
-      "incidents": [
-        {
-          "day": 2,
-          "incident": "increasingUnease",
-          "culprit": "officeWorker"
-        },
-        {
-          "day": 4,
-          "incident": "suicide",
-          "culprit": "boyStudent"
-        },
-        {
-          "day": 6,
-          "incident": "suicide",
-          "culprit": "girlStudent"
-        }
-      ],
-      "title": "Kangerou Daze",
-      "mainPlot": [
-        "giantTimeBomb"
-      ],
-      "subPlots": [
-        "circleFriends",
-        "threadsFate"
-      ],
-      "story": "Originally written by RooP, translated by Sairanac of boardgamegeek.com. \"Kagerou Daze\" is a script that uses the same motif, from the vocaloid series made by Jin (aka Shinzen no Teki-P). The protagonists will probably have a tough time figuring out the main plot while watching the boy and girlStudent trying to help each other out. \nWhile the main plot is invisible, it is clear that there are things that need to be prevented. Thus, the key to this script lies with the :goodwill: abilities.",
-      "tragedySet": "basicTragedy",
-      "mastermindHints": "For loop 1, aim for the suicide of the boyStudent. Loop 2, use the unsettling rumor incident to trigger the suicide of the boyStudent. Loop 3, aim for the suicide of the girlStudent. For the first loop, try to add more :paranoia: to someone other that the girlStudent to bluff, to create a dilema for them to see who should be saved. However, the goal is still to aim for the suicide incident for the boyStudent.",
-      "specialRules": [
-        ""
-      ],
-      "victory-conditions": "1. Giant Time Bomb triggers (2 :intrigue: in the city)\n\nOriginally written by RooP, translated by Sairanac of boardgamegeek.com. \n    Alan Tran\n\nI dont understand. The Unsettling Rumor CANT INCIDENTS! The Unsettling Rumor is SubPlot!\n    csibu\n\n\nI have set it to increase unease, since that provides enough :paranoia: to trigger the suicted.",
-      "creator": "RooP",
-      "daysPerLoop": 6,
-      "difficultySets": [
-        {
-          "difficulty": 4,
-          "numberOfLoops": 3
-        }
-      ],
-      "set": [{
-        "name": "www.tragedylooperscripts.com (not reviewed)",
-        "number": 3
-      }]
-    },
-    {
-      "cast": {
         "girlStudent": "factor",
         "classRep": "conspiracyTheorist",
         "richStudent": "person",

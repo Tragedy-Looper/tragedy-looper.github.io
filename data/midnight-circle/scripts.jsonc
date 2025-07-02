@@ -719,6 +719,91 @@
             "mastermindHints": "See Tragedy Looper: Midnight Circle Mastermind Handbook"
         },
         {
+          "title": "Bag of Risks",
+          "creator": "Mew2mi",
+          "difficultySets": [
+            {
+              "numberOfLoops": 4,
+              "difficulty": 7
+            },
+            {
+              "numberOfLoops": 5,
+              "difficulty": 5
+            }
+          ],
+          "tragedySet": "mysteryCircle",
+          "mainPlot": [
+            "tightropePlan"
+          ],
+          "subPlots": [
+            "hiddenFreak",
+            "masterDetective"
+          ],
+          "daysPerLoop": 7,
+          "cast": {
+            "boss": [
+              "brain",
+              {
+                "Turf": "School"
+              }
+            ],
+            "nurse": "killer",
+            "journalist": "serialKiller",
+            "boyStudent": "friend",
+            "alien": "friend",
+            "informer": "conspiracyTheorist",
+            "transferStudent": [
+              "privateInvestigator",
+              {
+                "enters on day": 5
+              }
+            ],
+            "godlyBeing": [
+              "person",
+              {
+                "enters on loop": 4
+              }
+            ],
+            "teacher": "person",
+            "popIdol": "person",
+            "classRep": "person"
+          },
+          "incidents": [
+            {
+              "day": 2,
+              "incident": "terrorism",
+              "culprit": "teacher"
+            },
+            {
+              "day": 3,
+              "incident": "silverBullet",
+              "culprit": "popIdol"
+            },
+            {
+              "day": 4,
+              "incident": "suicide",
+              "culprit": "alien"
+            },
+            {
+              "day": 6,
+              "incident": "serialMurder",
+              "culprit": "classRep"
+            },
+            {
+              "day": 7,
+              "incident": "bestialMurder",
+              "culprit": "boss"
+            }
+          ],
+          "description": "This is not a script for the faintest of hearts. It is very hard on both the mastermind and the protagonists. For both the mastermind and the protagonists, it will require tons of knowledge about Mystery Circle. Additionally, this includes tricky characters like the :boss:, :godlyBeing: and :transferStudent:. Every character has a role to play and the slightest misplay from the mastermind could spell their doom, and every misdeduction by the Protagonists could end up being deadly.",
+          "specialRules": [
+            "None."
+          ],
+          "victory-conditions": "Protagonists die:\n- Day 2 :terrorism:.\n- :killer: ability (4 :intrigue: on :nurse:).\nLoop End:\n- :friend: has died (:boyStudent:/:alien:)\n- :tightropePlan: (Extra Gauge at 1 or less)",
+          "story": "Constant gunfire is being reported in both the school and the city streets. The yakuza have spread their influence and they will not surrender their territory to anyone, no matter the sacrifices.\nOrchestrated by an elusive figure and her partner in crime, these shootings aim to hold control over the Sinzuwa Ward, using the yakuza as a convenient cover up. Spreading misinformation by controlling the media and getting rid of those who try to uncover the truth, they rule the area with an iron fist, a cloak and a dagger.\nBut not everyone is willing to remain silent. The newly transferred student has quickly grasped the situation with the help of otherworldly assistance and has cooked up a plan on how to use their own secrecy against them. Will she be able to prevail with the help of the protagonists, or will the party fail to uncover the truth?",
+          "mastermindHints": "The Protagonists only have 3 paths towards victory. They either have to cause :terrorism: (without a :friend: dying) + :serialMurder:, or they have to cause :bestialMurder: (using :paranoia: and/or the :privateInvestigator:), or they have to win through the final guess. As the first option is highly unlikely, it becomes your job to try and hide the roles as well as possible, while also trying your hardest not to give away the main plot.\n\nThe main plot can be hidden easily if you give away the :brain: and/or the CT. :terrorism: and :silverBullet: are your bread and butter, and you need to threaten them every loop. For the first loop, try to trigger (and hopefully hide the culprit in the process) :silverBullet:. Cover up the main plot with :blackSchool:. For the second loop, try to either cause :terrorism: with 1 :intrigue: and kill a :friend:, or 2 :intrigue: and end the loop there. If that fails, then you should still be able to cause :silverBullet:, but you might be unable to hide the main plot in that case. To avoid that, you could try to get away with killing a :friend: (ideally the :alien:) instead, which would hide the main plot. The third loop is the most important one. It becomes very hard to cover up the main plot, so it might be a good idea to use your CT to force :silverBullet: and end the loop early. \n\nIf you have ended Loops 1, 2 and 3 on Day 2/3, then they should be able to figure out the main plot at this point, but they would not know about the :godlyBeing: + :transferStudent: that is awaiting them. If they are smart, they should be able to prevent the loop from ending on Day 2/3, while also getting the :godlyBeing: to 3 :goodwill:. If they succeed in doing so and use its ability to reveal either of the last 2 incident by day 3, your chances of winning nearly evaporate. Using :paranoia: and/or the :journalist:, they should be able to easily use whichever incident they need to trigger. Your final :hope: lies in the protagonists' weakness to cooperate. Even if they do get one of them, you might be able to get them to kill a :friend:. However depending on which abilities you have ended up using, that might also be the final role they need to win with the final guess, so you need to be extremely careful even then, as they should have been able to find the :serialKiller:, :brain:, one of the friends and/or the CT.\n\nHiding the :killer: is your best bet, however you might need to pop his ability on the last day in an emergency. If you have not used their ability, he is the primary role to hide in this script. Try to spread :intrigue: on random persons when possible to distract them from the :nurse:."
+        },
+        {
             "title": "Milestone",
             "creator": "AKITAGAWA Detective Bureau",
             "set": [
