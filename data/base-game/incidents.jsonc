@@ -76,7 +76,7 @@
             "name": "Spreading",
             "effect": [
                 {
-                    "description": "Move 2 :goodwill: from any character to any other character."
+                    "description": "Remove 2 :goodwill: (or 1 if they only have that) from a character, and then add 2 :goodwill: to another character."
                 }
             ]
         },
