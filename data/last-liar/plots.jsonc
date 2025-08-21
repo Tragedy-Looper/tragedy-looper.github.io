@@ -1,0 +1,180 @@
+{
+    "$schema": "https://tragedy-looper.github.io/plots.schema.json",
+    // For dev purposes
+    //"$schema": "../plots.schema.json",
+    "plots": [
+        {
+            "id": "finalPlan",
+            "name": "The Final Plan",
+            "roles": {
+                "keyPerson": 1,
+                "brain": 1,
+                "killer": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "1 or more :hope: counters on the Key Person.",
+                    "description": "Traitor(s) become normal Protagonists. If this is true at the end of the final Loop, this carries over to the Final Guess."
+                }
+            ]
+        },
+        {
+            "id": "sealedConclusion",
+            "name": "The Sealed Conclusion",
+            "roles": {
+                "factor": 1,
+                "fragment": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "2+ :intrigue: on the Shrine.",
+                    "description": "When counting :intrigue: on a Location, count :hope: and :despair: on Characters in the same Location as :intrigue:."
+                }
+            ]
+        },
+        {
+            "id": "worldRebellion",
+            "name": "World of Rebellion",
+            "roles": {
+                "keyPerson": 1,
+                "fragment": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "If there are 2+ :intrigue: on the :keyPerson:",
+                    "description": ":keyPerson: and :fragment: both must be a :girl:."
+                }
+            ]
+        },
+        {
+            "id": "demonsScript",
+            "name": "The Demon’s Script",
+            "roles": {
+                "watcher": 1,
+                "serialKiller": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "If Last Will or The Executioner have triggered in this Loop."
+                },
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "At the end of the last Day, if there are 1 or fewer total counters on the Watcher, you may kill the Protagonists."
+                }
+            ]
+        },
+        {
+            "id": "giantTimeBombYetAgain",
+            "name": "Giant Time Bomb Yet Again",
+            "roles": {
+                "brain": 1,
+                "witch": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Loop End"
+                    ],
+                    "prerequisite": "2+ :intrigue: on the :witch:'s starting Location."
+                }
+            ]
+        },
+        {
+            "id": "realMonster",
+            "name": "The Real Monster",
+            "roles": {
+                "serialKiller": 1,
+                "secretkeeper": 1,
+                "wildcard": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "Victory Condition A: There are 5 or more Perished tokens."
+                }
+            ]
+        },
+        {
+            "id": "keeperMythology",
+            "name": "Keeper of Mythology",
+            "roles": {
+                "influencer": 1,
+                "secretkeeper": 1,
+                "wildcard": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Protagonist Action Phase"
+                    ],
+                    "prerequisite": "Victory Condition B: There are 6 or more Acquainted tokens."
+                }
+            ]
+        },
+        {
+            "id": "trueDetective",
+            "name": "I Am the True Detective!",
+            "roles": {
+                "watcher": 1,
+                "secretkeeper": 1,
+                "wildcard": 1
+            },
+            "rules": [
+                {
+                    "type": "Loss condition: Tragedy",
+                    "timing": [
+                        "Final Guess Phase Start"
+                    ],
+                    "prerequisite": "Victory Condition C: Immediately before the Final Guess, Protagonist C correctly identifies the culprit of each :incident:."
+                }
+            ]
+        },
+        {
+            "id": "mythomaniacSecret",
+            "name": "The Mythomaniac's Secret",
+            "roles": {
+                "conspiracyTheorist": 1
+            },
+            "rules": [
+                {
+                    "type": "Script creation",
+                    "description": "The Secretkeeper gains :Goodwill: Refusal. If there is no Secretkeeper during script creation, instead add an additional :killer:, :brain:, or :fragment: to the script. (It does not count as a Role specified by this Plot.)"
+                }
+            ]
+        },
+        {
+            "id": "socialMediaParanoia",
+            "name": "Social Media Paranoia",
+            "roles": {
+                "serialKiller": 1,
+                "influencer": 1,
+                "conspiracyTheorist": 1
+            },
+            "rules": []
+        }
+    ]
+}
