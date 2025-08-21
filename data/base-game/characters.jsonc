@@ -324,12 +324,12 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "+1 :paranoia: on character in same location."
+                    "description": "+1 :paranoia: on any other character."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "+1 :goodwill: on character in same location."
+                    "description": "+1 :intrigue: on this Location or any character in this Location."
                 }
             ]
         },
