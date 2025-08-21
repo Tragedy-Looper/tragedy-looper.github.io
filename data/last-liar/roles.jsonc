@@ -1,0 +1,93 @@
+{
+    "$schema": "https://tragedy-looper.github.io/roles.schema.json",
+    // For dev purposes
+    //"$schema": "../roles.schema.json",
+    "roles": [
+        {
+            "id": "watcher",
+            "name": "Watcher",
+            "tags": [
+                "immortal"
+            ],
+            "max": 1,
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Incident trigger"
+                    ],
+                    "prerequisite": "In the same Location as an Incident triggered by a living Character who has 1+ :despair:",
+                    "description": "The :incident: always triggers, regardless of what other counters the Character has."
+                }
+            ]
+        },
+        {
+            "id": "influencer",
+            "name": "Influencer",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "This character dies.",
+                    "description": "Place 1 :paranoia: on each Character who shares this Character's starting Location."
+                },
+                {
+                    "type": "Mandatory",
+                    "timesPerLoop": 1,
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "This character's Goodwill ability has been triggered.",
+                    "description": "Place 1 :paranoia: and 1 :goodwill: on each Character who shares this Character's starting Location."
+                }
+            ]
+        },
+        {
+            "id": "secretkeeper",
+            "name": "Secretkeeper",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "This character has died, or their Goodwill ability has been triggered.",
+                    "description": "Reveal this Character's Role."
+                },
+                {
+                    "type": "Mandatory Loss condition: Protagonists Death",
+                    "timing": [
+                        "Day End"
+                    ],
+                    "prerequisite": "This character's Role has been revealed, and it's currently the 1st or 2nd Loop.",
+                    "description": "The Mastermind can only play 1 Action card on the following Day. At the end of that Day, or this Day if it's already the final Day, kill the Protagonists."
+                }
+            ]
+        },
+        {
+            "id": "wildcard",
+            "name": "Wildcard",
+            "tags": [
+                "immortal"
+            ],
+            "max": 1,
+            "goodwillRefusel": "Mandatory",
+            "abilities": [
+                {
+                    "type": "Mandatory",
+                    "timing": [
+                        "Day Start"
+                    ],
+                    "prerequisite": "The current Day is a multiple of 3",
+                    "description": "This Character gains the abilities of :conspiracyTheorist:, :brain:, and :serialKiller:."
+                },
+                {
+                    "type": "Script creation",
+                    "description": "This Character must be the Culprit of an Incident."
+                }
+            ]
+        }
+    ]
+}

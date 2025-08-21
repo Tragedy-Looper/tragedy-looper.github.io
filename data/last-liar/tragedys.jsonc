@@ -1,0 +1,43 @@
+{
+    "$schema": "https://tragedy-looper.github.io/tragedys.schema.json",
+    // For dev purposes
+    // "$schema": "../tragedys.schema.json",
+    "tragedys": [
+        {
+            "id": "lastLiar",
+            "name": "Last Liar",
+            "mainPlots": [
+                "finalPlan",
+                "sealedConclusion",
+                "worldRebellion",
+                "demonsScript",
+                "giantTimeBombYetAgain"
+            ],
+            "subPlots": [
+                "realMonster",
+                "keeperMythology",
+                "trueDetective",
+                "crossingWorldLines",
+                "unsafeTrigger",
+                "socialMediaParanoia",
+                "mythomaniacSecret"
+            ],
+            "numberOfMainPlots": 1,
+            "numberOfSubPlots": 2,
+            "extraRules": [],
+            "incidents": [
+                "murder",
+                "increasingUnease",
+                "missingPerson",
+                "hospitalIncident",
+                "executioner",
+                "distortion",
+                "lastWill",
+                "confession",
+                "spreading",
+                "lightHope",
+                "murkDespair"
+            ]
+        }
+    ]
+}

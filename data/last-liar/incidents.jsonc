@@ -1,0 +1,30 @@
+{
+    "$schema": "https://tragedy-looper.github.io/incidents.schema.json",
+    // For dev purposes
+    //"$schema": "../incidents.schema.json",
+    "incidents": [
+        {
+            "id": "distortion",
+            "name": "Distortion",
+            "effect": [
+                {
+                    "type": "Mandatory Loss condition: Protagonists Death",
+                    "prerequisite": "Culprit's starting Location has 2+ :intrigue:"
+                },
+                {
+                    "prerequisite": "Culprit's starting Location does not have 2+ :intrigue:",
+                    "description": "Place 2 :intrigue: on that Location."
+                }
+            ]
+        },
+        {
+            "id": "lightHope",
+            "name": "The Light of Hope",
+            "effect": [
+                {
+                    "description": "The Leader chooses a character. Place 1 :Hope: counter on that character. When determining if this Incident triggers, refer to the number of :Goodwill: counters on the culprit instead of the original type of counter."
+                }
+            ]
+        }
+    ]
+}
