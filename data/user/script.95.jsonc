@@ -1,0 +1,53 @@
+{
+  "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
+  "scripts": [
+    {
+      "title": "Foo",
+      "creator": "Bar",
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 3
+        }
+      ],
+      "tragedySet": "lastLiar",
+      "mainPlot": [
+        "demonsScript"
+      ],
+      "subPlots": [
+        "mythomaniacSecret",
+        "keeperMythology"
+      ],
+      "daysPerLoop": 4,
+      "cast": {
+        "illusion": "watcher",
+        "godlyBeing": [
+          "serialKiller",
+          {
+            "enters on loop": 2
+          }
+        ],
+        "automaton": "conspiracyTheorist",
+        "girlStudent": "influencer",
+        "boyStudent": "secretkeeper",
+        "metaworldDenizen": "wildcard"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "confession",
+          "culprit": "illusion"
+        }
+      ],
+      "description": "Test",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "",
+      "story": "",
+      "mastermindHints": "",
+      "submitter": "LokiMidgard",
+      "submitDate": "2025-23-08"
+    }
+  ]
+}
