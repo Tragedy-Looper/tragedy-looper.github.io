@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
-import { compile, JSONSchema } from 'json-schema-to-typescript'
+import { compile, type JSONSchema } from 'json-schema-to-typescript'
 import { toPascalCase } from './../src/misc';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -1108,6 +1108,14 @@ function generateTragedySetsSchema({ plotNames, incidentNames }: Names) {
                         "name": { "type": "string" },
                         "numberOfMainPlots": { "type": "integer" },
                         "numberOfSubPlots": { "type": "integer" },
+                        "maximumRoles": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": Object.fromEntries(Array.from(names.roleNames).map(rn => [rn, {
+                                "type": "integer" as const,
+                                "minimum": 0
+                            }]))
+                        },
                         "mainPlots": {
                             "type": "array",
                             "items": { "type": "string", "enum": Array.from(plotNames) }

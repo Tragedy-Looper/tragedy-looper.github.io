@@ -280,7 +280,7 @@ function storeStore<T>(target: Readable<Readable<T>>): Readable<T> {
 
 
 
-function generateRoleSelection<TCharacters extends CharacterName>(script: CustomScript, allRols: Partial<Record<RoleName, readonly [number, number]>>, characters: readonly TCharacters[]): ICustomScriptRoleExclusiveSelectionGroup<TCharacters>[] {
+function generateRoleSelection<TCharacters extends CharacterName>(script: CustomScript, tragedySet:Tragedy,allRols: Partial<Record<RoleName, readonly [number, number]>>, characters: readonly TCharacters[]): ICustomScriptRoleExclusiveSelectionGroup<TCharacters>[] {
 
     const additionalPersons = characters.length - (Object.values(allRols).map(x => x[0])).reduce((p, c) => p + c, 0);
     allRols.person = [0, additionalPersons];
@@ -289,7 +289,8 @@ function generateRoleSelection<TCharacters extends CharacterName>(script: Custom
         .map(([key, [min, max]]) => {
             // we may have a combined Role name, then it will not have a role maximum
             const roleMaximum = rolesLookup[key as unknown as RoleNameSingle]?.max ?? Number.MAX_SAFE_INTEGER;
-            return [key, [Math.min(Math.max(0, min), roleMaximum), Math.min(max, roleMaximum)]] as const;
+            const setMax = tragedySet.maximumRoles?.[key as unknown as RoleNameSingle]?? Number.MAX_SAFE_INTEGER;
+            return [key, [Math.min(Math.min(Math.max(0, min), roleMaximum),setMax), Math.min(max, roleMaximum)]] as const;
         })
         .map(([key, [min, max]]) => {
             return new CustomScriptRoleExclusiveSelectionGroup(script, key, min, max, characters)
@@ -622,12 +623,12 @@ export class CustomScript {
         });
 
 
-        this.roles = derived([this.selectedPlots], ([...selectiedPlots]) => {
+        this.roles = derived([this.tragedySet,this.selectedPlots], ([tragedySet,...selectiedPlots]) => {
             const roleData = [...selectiedPlots.flatMap(x => x.map(y => plotsLookup[y.id]?.roles ?? {})),
 
             ...selectiedPlots.flatMap(x => x.flatMap(y => y.options).filter(x => x.settings.type == 'plot' && x.settings.addRolesForPlot).map(x => plotsLookup[x.value as PlotName]?.roles ?? {}))
             ];
-            return generateRoleSelection(this, sumGroups(...roleData), keys(charactersLookup).filter(x => {
+            return generateRoleSelection(this,tragedySet, sumGroups(...roleData), keys(charactersLookup).filter(x => {
                 const char = charactersLookup[x];
                 return !(char.nonSelectableCharacter);
             }))

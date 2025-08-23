@@ -1,0 +1,77 @@
+{
+  "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
+  // For dev purposes
+  // "$schema": "../scripts.schema.json",
+  "scripts": [
+    {
+      "title": "The Demonic Password Game",
+      "creator": "Mew2mi",
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 8
+        }
+      ],
+      "tragedySet": "lastLiar",
+      "mainPlot": [
+        "demonsScript"
+      ],
+      "subPlots": [
+        "realMonster",
+        "keeperMythology"
+      ],
+      "daysPerLoop": 7,
+      "cast": {
+        "ai": "watcher",
+        "shrineMaiden": "serialKiller",
+        "officeWorker": "secretkeeper",
+        "youngGirl": "secretkeeper",
+        "blackCat": "wildcard",
+        "popIdol": "influencer",
+        "doctor": "person",
+        "richStudent": "person",
+        "girlStudent": "person",
+        "journalist": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "confession",
+          "culprit": "youngGirl"
+        },
+        {
+          "day": 2,
+          "incident": "increasingUnease",
+          "culprit": "journalist"
+        },
+        {
+          "day": 3,
+          "incident": "murkDespair",
+          "culprit": "doctor"
+        },
+        {
+          "day": 4,
+          "incident": "spreading",
+          "culprit": "officeWorker"
+        },
+        {
+          "day": 5,
+          "incident": "murder",
+          "culprit": "girlStudent"
+        },
+        {
+          "day": 7,
+          "incident": "lastWill",
+          "culprit": "blackCat"
+        }
+      ],
+      "description": "There is no mimic in this script and there is no second Serial Killer due to the 1 SK limit in Last Liar.\nThis is a script where the Mastermind will always win at the end of the Loop, but how he wins each loop will be very important. That said, while this looks like an impossible script at a first glance, it is not, as all  3 Protagonists do not care about winning the end of the Loop, as none of their win conditions require them to get there.",
+      "specialRules": [
+        "None"
+      ],
+      "victory-conditions": "-Secretkeepers dying/using their abilities on loops 1 and 2.\n-End of Loop always triggers from Last Will Black Cat.",
+      "story": "This is a story you might find familiar, but the demons feeding on the chaos, hope and despair in this world would beg to differ. Taking the form of a common feline, it feeds on the Shrine Maiden's jealousy towards her very popular and influential sister, whispering in her ears those dear to the Pop Idol. With no heroes in sight and nobody to save this world, it is doomed and destroyed. But from the ruins, a third demon emerges. One that feeds on the cycle of hope and despair. Sensing that there is still hope somewhere in these ruins, it approaches what appears to be a dying detective, grasping desperately onto a laptop. A grin appears on its deformed face. \"4 attempts\", it says. \"I will let you experience this tragedy from its beginnings, 4 times. At the end, I will ask of you the password to this PC that you have found. Guess it correctly, and it will contain all the answers you need to save this world. Guess it wrong, and this PC will forever disappear from this reality\". Its grin extends, showing sharp teeth and all 8 of its eyes burst in red flames. What appears to be a hand extends from its shadowy body. \"Deal?\"",
+      "mastermindHints": "Protagonist A will win by killing 5 Characters using the Serial Killer, Murder Incident and the Wildcard. Protagonist B will win by using 6 Goodwill abilities, which shouldn't be too easy, as everyone else will be working against this. Protagonist C's choices will impact the game the most. While they are not a Traitor, their gameplan is still the same as if they were, where they will be placing Paranoia around and trying to sabotage the rest.\nAs the Mastermind, for the first 2 loops, focus on Confession, don't place any cards on the Office Worker and try to end both the loops as fast as possible. If the Protagonists get the full 28 days, your odds of winning are very slim. The best way to accomplish that is to either kill off the Secretkeepers using murder/Serial Killer, or to goad Protagonist B into triggering their abilities by placing your cards very carefully each day. Where you place your cards is more important than which cards you place most of the time.\nOn Loop 3 and onwards, you need to fully focus on stopping protagonist A and B's win conditions. Since none of the Protagonists have a way to figure out who is traitor for sure and who isn't due to the plots combination, they will be fully sabotaging each other. If things have went badly, then you will win loop 3 at the end of the loop without 2 intrigue on the shrine and with 2+ different counters on the A.I, at which point Protagonist B will fully know that they are a Traitor, and if they haven't already, will fully focus on winning on the final loop. That is when it will be hardest for you to stop them, as you will need the help of both A and C. Thankfully, you do have 1 card up your sleeve - clever use of the AI. As both A and C should be interested in using it due to the listed incidents, this is your chance kill off some characters that have not used their abilities and if you succeed, all you have left to worry about is the A.I. meeting with the Serial Killer, or it using Confession/Last Will on itself and blocking off Protagonist A's win condition, which at this point should be either 3/5 or 4/5. If you succeed at both of these, you have 80% chance of victory, as the Watcher is very hard to find in this script, since its ability is not required for victory.\nDo note that with very clever use of the AI, protagonist C might be able to figure out all the roles easily, so be very careful with the AI, it's a double edged sword."
+    }
+  ]
+}

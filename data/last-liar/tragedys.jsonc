@@ -6,6 +6,9 @@
         {
             "id": "lastLiar",
             "name": "Last Liar",
+            "maximumRoles": {
+                "serialKiller": 1
+            },
             "mainPlots": [
                 "finalPlan",
                 "sealedConclusion",
