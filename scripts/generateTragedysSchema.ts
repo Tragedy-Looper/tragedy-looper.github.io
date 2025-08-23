@@ -84,9 +84,9 @@ const AbilityTypeLose = [
 ] as const;
 const AbilityType = [...AbilityTypeLose, ...AbilityTypeCreation, ...AbilityTypeDefault] as const;
 
-const timing = ['Always', 'Day Start', 'Day End', 'Mastermind Ability', 'Card resolve', 'Loop End', 'Loop Start'
+export const timing = ['Always', 'Day Start', 'Day End', 'Mastermind Ability', 'Card resolve', 'Loop End', 'Loop Start'
     , 'Last Day', 'First Day', 'Incident step', 'Incident trigger', 'On character death', 'When this role is to be reveald'
-    , 'Mastermind Action step', 'Goodwill ablility step', 'After Goodwill Ability used'] as const;
+    , 'Mastermind Action step', 'Goodwill ablility step', 'Final Guess', 'After Goodwill Ability used'] as const;
 
 const scriptSpecified = {
     "scriptSpecified": {

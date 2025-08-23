@@ -129,7 +129,7 @@
                 {
                     "type": "Loss condition: Tragedy",
                     "timing": [
-                        "Protagonist Action Phase"
+                        "Goodwill ablility step"
                     ],
                     "prerequisite": "Victory Condition B: There are 6 or more Acquainted tokens."
                 }
@@ -147,7 +147,7 @@
                 {
                     "type": "Loss condition: Tragedy",
                     "timing": [
-                        "Final Guess Phase Start"
+                        "Final Guess"
                     ],
                     "prerequisite": "Victory Condition C: Immediately before the Final Guess, Protagonist C correctly identifies the culprit of each :incident:."
                 }
