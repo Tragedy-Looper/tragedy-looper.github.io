@@ -149,6 +149,8 @@
                     "timing": [
                         "Final Guess"
                     ],
+                    
+                    "description": "Protagonist C wins.",
                     "prerequisite": "Victory Condition C: Immediately before the Final Guess, Protagonist C correctly identifies the culprit of each :incident:."
                 }
             ]
