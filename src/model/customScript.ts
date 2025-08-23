@@ -290,7 +290,7 @@ function generateRoleSelection<TCharacters extends CharacterName>(script: Custom
             // we may have a combined Role name, then it will not have a role maximum
             const roleMaximum = rolesLookup[key as unknown as RoleNameSingle]?.max ?? Number.MAX_SAFE_INTEGER;
             const setMax = tragedySet.maximumRoles?.[key as unknown as RoleNameSingle]?? Number.MAX_SAFE_INTEGER;
-            return [key, [Math.min(Math.min(Math.max(0, min), roleMaximum),setMax), Math.min(max, roleMaximum)]] as const;
+            return [key, [Math.min(Math.min(Math.max(0, min), roleMaximum),setMax), Math.min(Math.min(max, roleMaximum), setMax)]] as const;
         })
         .map(([key, [min, max]]) => {
             return new CustomScriptRoleExclusiveSelectionGroup(script, key, min, max, characters)
