@@ -77,8 +77,13 @@ jobs:
           CREATOR=$(echo '${{ steps.extract_json.outputs.creator }}' | tr -cd 'A-Za-z0-9_-')
           ISSUE_ID=${{ github.event.issue.number }}
           mkdir -p data/user/$CREATOR
+          # Write JSON to temp file to avoid shell escaping issues
+          cat << 'EOF' > temp_script.json
+          ${{ steps.extract_json.outputs.json }}
+          EOF
           # Embed the fragment in the full structure using jq for valid JSON
-          jq -n --argjson script '${{ steps.extract_json.outputs.json }}' '{"$schema": "https://tragedy-looper.github.io/scripts.schema.json", "scripts": [$script]}' > data/user/$CREATOR/script.$ISSUE_ID.jsonc
+          jq -n --slurpfile script temp_script.json '{"$schema": "https://tragedy-looper.github.io/scripts.schema.json", "scripts": $script}' > data/user/$CREATOR/script.$ISSUE_ID.jsonc
+          rm temp_script.json
           echo "::set-output name=filepath::data/user/$CREATOR/script.$ISSUE_ID.jsonc"
 
       - name: Create Pull Request

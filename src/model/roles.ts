@@ -4,6 +4,7 @@ import type { ScriptSpecified } from "./core";
 import type { DoseNotTriggerIncident } from "./incidents";
 import type { Role, Roles as RoleType } from '../roles.g'
 import type { Character } from "../characters.g";
+import type { timing as TimingType } from '../../scripts/generateTragedysSchema'
 
 export type AbilityType = Abilitie['type'];
 
@@ -15,9 +16,7 @@ export const loseTypes = [
     'Loss condition: Tragedy'
 ] as const;
 
-export type timing = 'Always' | 'Day Start' | 'Day End' | 'Mastermind Ability' | 'Card resolve' | 'Loop End' | 'Loop Start'
-    | 'Last Day' | 'First Day' | 'Incident step' | 'Incident trigger' | 'On character death' | 'When this role is to be reveald'
-    | 'Mastermind Action step' | 'Goodwill ablility step' | 'After Goodwill Ability used';
+export type timing = typeof TimingType[number];
 
 
 // export type RoleInternal = {
