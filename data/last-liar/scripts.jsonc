@@ -65,7 +65,7 @@
           "culprit": "blackCat"
         }
       ],
-      "description": "There is no mimic in this script and there is no second Serial Killer due to the 1 SK limit in Last Liar.\nThis is a script where the Mastermind will always win at the end of the Loop, but how he wins each loop will be very important. That said, while this looks like an impossible script at a first glance, it is not, as all  3 Protagonists do not care about winning the end of the Loop, as none of their win conditions require them to get there.",
+      "description": "This is a script where the Mastermind will always win at the end of the Loop, but how he wins each loop will be very important. That said, while this looks like an impossible script at a first glance, it is not, as all  3 Protagonists do not care about winning the end of the Loop, as none of their win conditions require them to get there.",
       "specialRules": [
         "None"
       ],
