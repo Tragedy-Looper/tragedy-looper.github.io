@@ -281,6 +281,12 @@
         ['ja']
       )}
       {@render entry(
+        'CN Wiki',
+        $getString('A fan wiki with lots of information.'),
+        'https://tragedyrooper.fandom.com/zh/wiki/%E6%83%A8%E5%89%A7%E8%BD%AE%E5%9B%9E_Wiki',
+        ['zh-CN']
+      )}
+      {@render entry(
         'DLSite Store',
         $getString('Japanese storefront.'),
         'https://www.dlsite.com/home/fsr/=/title_id/SRI0000043091/order/title_d/from/work.titles',
