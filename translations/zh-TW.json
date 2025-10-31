@@ -1,7 +1,7 @@
 {
   "$schema": "./translations.schema.json",
   "translations": {
-    "zh-CN": {
+    "zh-TW": {
       "Incident": "事件",
       "Culprit": "當事人",
       "Role": "身份",
