@@ -59,7 +59,7 @@
             "name": "Faked Suicide",
             "effect": [
                 {
-                    "description": "Set an Extra card on the culprit. Druing the remainder of the loop, the Protagonists may not play movement cards on characte(s) with an Extra card."
+                    "description": "Set an Extra Card on the culprit. The Protagonists may not play any cards on character(s) with an Extra Card."
                 }
             ]
         },
