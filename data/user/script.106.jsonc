@@ -1,0 +1,64 @@
+{
+  "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
+  "scripts": [
+    {
+      "title": "Techno-virus",
+      "creator": "null :D",
+      "difficultySets": [
+        {
+          "numberOfLoops": 4,
+          "difficulty": 3
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "signWithMe"
+      ],
+      "subPlots": [
+        "paranoiaVirus",
+        "loveAffair"
+      ],
+      "daysPerLoop": 4,
+      "cast": {
+        "popIdol": "keyPerson",
+        "ai": "conspiracyTheorist",
+        "metaworldDenizen": "lover",
+        "transferStudent": [
+          "lovedOne",
+          {
+            "enters on day": 2
+          }
+        ],
+        "classRep": "person",
+        "officeWorker": "person",
+        "richStudent": "person"
+      },
+      "incidents": [
+        {
+          "day": 2,
+          "incident": "farawayMurder",
+          "culprit": "classRep"
+        },
+        {
+          "day": 3,
+          "incident": "murder",
+          "culprit": "blackCat"
+        },
+        {
+          "day": 4,
+          "incident": "suicide",
+          "culprit": "popIdol"
+        }
+      ],
+      "description": "A strange game..",
+      "specialRules": [
+        ""
+      ],
+      "victory-conditions": "Being in a loop with no tragedies.",
+      "story": "",
+      "mastermindHints": "",
+      "submitter": "LoganEndreman",
+      "submitDate": "2026-28-01"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://tragedy-looper.github.io/scripts.schema.json",
+  "scripts": [
+    {
+      "title": "My First Tragedy Looper Scenario",
+      "creator": "Sawerux",
+      "difficultySets": [
+        {
+          "numberOfLoops": 3,
+          "difficulty": 5
+        },
+        {
+          "numberOfLoops": 4,
+          "difficulty": 4
+        }
+      ],
+      "tragedySet": "basicTragedy",
+      "mainPlot": [
+        "signWithMe"
+      ],
+      "subPlots": [
+        "threadsFate",
+        "unsettlingRumor"
+      ],
+      "daysPerLoop": 4,
+      "cast": {
+        "alien": "keyPerson",
+        "boyStudent": "conspiracyTheorist",
+        "mysteryBoy": "lovedOne",
+        "journalist": "person",
+        "richStudent": "person",
+        "shrineMaiden": "person"
+      },
+      "incidents": [
+        {
+          "day": 1,
+          "incident": "farawayMurder",
+          "culprit": "richStudent"
+        },
+        {
+          "day": 2,
+          "incident": "increasingUnease",
+          "culprit": "alien"
+        },
+        {
+          "day": 3,
+          "incident": "butterflyEffect",
+          "culprit": "shrineMaiden"
+        },
+        {
+          "day": 4,
+          "incident": "suicide",
+          "culprit": "mysteryBoy"
+        }
+      ],
+      "description": "Idk, more strange things in this scenario but i love idea of some things here.",
+      "specialRules": [
+        "Time Travaler Ability works at the end of the loop."
+      ],
+      "victory-conditions": "2 INTRIGUE ON KEY CHARACTER AT THE END OF THE LOOP; Alien.\nKILLING PROTAGONISTS; Loved One Ability.",
+      "story": "No story for this time :3",
+      "mastermindHints": "This Scenario made more for conceal, so be careful to Kill the Key Person or Shrine Maiden (Try to Stack intrigue of both of them.)\nAlso, try to Stack Intrigue on the Shrine and Don't play more Anti Goodwill cards without need.\nBe careful about Mystery Boy suicide, if you wanna win by their his ability. (Because they suicide faster then you win in 4 day.)\nDon't forget about Murder in First Day, try to guess between move in the city and paranoia stack on she to don't kill anyone.",
+      "submitter": "Sawerux",
+      "submitDate": "2026-25-01"
+    }
+  ]
+}
