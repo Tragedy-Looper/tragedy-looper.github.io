@@ -34,7 +34,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "description": "When determining whether \":serialMurde:,\" or \":suicide:\" triggers, count :intrigue: counters also as :paranoia: counters."
+                    "description": "When determining whether \":serialMurder:,\" or \":suicide:\" triggers, count :intrigue: counters also as :paranoia: counters."
                 }
             ]
         },
@@ -128,7 +128,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "There are a total of 12 or more :paranoia: counters on the remaining charactrs."
+                    "prerequisite": "There are a total of 12 or more :paranoia: counters on the remaining characters."
                 }
             ]
         },
@@ -204,8 +204,8 @@
                     "timing": [
                         "Loop Start"
                     ],
-                    "prerequisite": "A Character died the last turn.",
-                    "description": "Chose one of those. Plac any Extra Card on that character. Character(s) with an Extra card has their role changed into a :keyPerson:."
+                    "prerequisite": "One or more characters died during the previous loop.",
+                    "description": "Place any Extra Card on one of these characters. Character(s) with an Extra card have their role changed into a :keyPerson:."
                 }
             ]
         },
@@ -258,8 +258,8 @@
                     "timing": [
                         "Loop Start"
                     ],
-                    "prerequisite": "A Character died the last turn.",
-                    "description": "Chose one of those. Plac any Extra Card on that character."
+                    "prerequisite": "One or more characters died during the previous loop.",
+                    "description": "Place any Extra Card on one of these characters."
                 }
             ]
         },
@@ -276,7 +276,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "description": "\"Forbid :goodwill:\" has the effect of \"Forbid Movement\""
+                    "description": "\"Forbid :goodwill:\" also has the effect of \"Forbid Movement\""
                 }
             ]
         },
@@ -315,7 +315,7 @@
                         "Incident step"
                     ],
                     "prerequisite": "The Culprit is a :person: and the :prophet: is alive.",
-                    "description": "When determning whether an Incident triggers, the culprit is regarded as having 1 less than its printed :paranoia: limit."
+                    "description": "When determining whether an Incident triggers, the culprit is regarded as having 1 less than its printed :paranoia: limit."
                 }
             ]
         }

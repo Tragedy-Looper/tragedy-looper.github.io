@@ -40,7 +40,7 @@
             "extraRules": [
                 {
                     "name": "Extra Gauge: Number of Incidents",
-                    "description": "During \"removal and placment of counters\" set the Extra Gauge to 0. For each Incident that occurse, increase the Extra Gauge by 1. This is done regardless of whether the Event itself has any effect or not."
+                    "description": "During \"removal and placment of counters\" set the Extra Gauge to 0. For each Incident that occurs, increase the Extra Gauge by 1. This is done regardless of whether the Event itself has any effect or not."
                 },
                 {
                     "name": "Extra Cads",

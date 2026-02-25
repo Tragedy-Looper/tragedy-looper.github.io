@@ -26,7 +26,7 @@
             "name": "The Executioner",
             "effect": [
                 {
-                    "description": "The leader chooses one character. That charcter is killed."
+                    "description": "[When determning whether this Incident triggers or not, treat the culprit’s :paranoia: limit as 1 less then its printed limit] The leader chooses one character. That charcter is killed."
                 }
             ]
         },

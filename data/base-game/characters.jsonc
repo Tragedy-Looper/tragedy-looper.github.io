@@ -19,7 +19,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "-1 :paranoia: on student in same location."
+                    "description": "-1 :paranoia: on any other student in same location."
                 }
             ]
         },
@@ -39,7 +39,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "-1 :paranoia: on student in same location."
+                    "description": "-1 :paranoia: on any other student in same location."
                 }
             ]
         },
@@ -104,13 +104,13 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "Always has a role not associated with current plot."
+                    "description": "Always has a role not specified by any of the current plots."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 3,
                     "immuneToGoodwillRefusel": true,
-                    "description": "Reveal own role."
+                    "description": "Loop 2 or later: Reveal own role. This ability cannot be refused by :goodwill: Refusal."
                 }
             ]
         },
@@ -142,7 +142,7 @@
                     "type": "active",
                     "goodwillRank": 5,
                     "timesPerLoop": 1,
-                    "description": "Reveal role of character in same location"
+                    "description": "Reveal role of character in same location."
                 }
             ]
         },
@@ -165,7 +165,7 @@
                     "type": "active",
                     "goodwillRank": 4,
                     "timesPerLoop": 1,
-                    "description": "Kill one character in same location."
+                    "description": "Kill one other character in same location."
                 },
                 {
                     "type": "active",
@@ -197,7 +197,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "Enters game on predefined loop"
+                    "description": "Enters game on predefined loop."
                 },
                 {
                     "type": "active",
@@ -208,7 +208,7 @@
                 {
                     "type": "active",
                     "goodwillRank": 5,
-                    "description": "-1 :intrigue: on same location or Character in same location."
+                    "description": "-1 :intrigue: on same location or character in same location."
                 }
             ]
         },
@@ -229,13 +229,13 @@
                     "type": "active",
                     "goodwillRank": 4,
                     "timesPerLoop": 1,
-                    "description": "Reveal culprit for former incident."
+                    "description": "Reveal culprit of any incident that has occured this loop."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 5,
                     "timesPerLoop": 1,
-                    "description": "Put an Extra marker on another character in same location. Remove that marker to prevent that character from dying."
+                    "description": "Put an Extra marker on another character in same location. When that character would die, remove the marker instead."
                 }
             ]
         },
@@ -299,12 +299,12 @@
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "-1 :paranoia: on character in same location."
+                    "description": "-1 :paranoia: on any other character in same location."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 4,
-                    "description": "+1 :goodwill: on character in same location."
+                    "description": "+1 :goodwill: on any other character in same location."
                 }
             ]
         },
@@ -354,13 +354,13 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "May be regarded as in his turf."
+                    "description": "For all abilities (not incidents), the Boss may be regarded as in his turf."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 5,
                     "timesPerLoop": 1,
-                    "description": "Reveal role of character in his turf."
+                    "description": "Reveal role of any other character in his turf."
                 }
             ]
         },
@@ -380,12 +380,12 @@
                 {
                     "type": "active",
                     "goodwillRank": 2,
-                    "description": "+/-1 :paranoia: on character in same location."
+                    "description": "+/-1 :paranoia: on any other character in same location. If the Doctor has :goodwill: refusal, the Mastermind may use this ability as their own."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "revoke location restirction for :patient:."
+                    "description": "Revoke location restrictions for the :patient:."
                 }
             ]
         },
@@ -424,7 +424,7 @@
                     "type": "active",
                     "goodwillRank": 2,
                     "immuneToGoodwillRefusel": true,
-                    "description": "-1 :paranoia: on panicked character in same location. This ability cannot be refused by :goodwill: Refusel."
+                    "description": "-1 :paranoia: on panicked character in same location. This ability cannot be refused by :goodwill: Refusal."
                 }
             ]
         },
@@ -446,12 +446,12 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "Mastermind chooses start location each loop"
+                    "description": "Mastermind chooses start location each loop."
                 },
                 {
                     "type": "active",
                     "goodwillRank": 3,
-                    "description": "Dose not trigger incidents."
+                    "description": "Does not trigger incidents this loop."
                 }
             ]
         }

@@ -34,7 +34,7 @@
     {@render entry('Location Icons', true)}
     {@render entry('Intrigue Places', true, 'kind off')}
     {@render entry('Location background', true, 'could be better')}
-    {@render entry('Dispair place', false)}
+    {@render entry('Despair place', false)}
     {@render entry('Day stages', false, 'They are already prety clean, but images and not text.')}
     {@render entry('Day track', false)}
     {@render entry('Incident track', false)}

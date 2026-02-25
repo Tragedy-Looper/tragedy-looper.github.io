@@ -123,7 +123,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 :intrigue: on the :keyPerson:."
+                    "prerequisite": "At least 2 :intrigue: on the :keyPerson:."
                 }
             ]
         },
@@ -156,7 +156,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "2 :intrigue: on the :Witch:’s starting location."
+                    "prerequisite": "At least 2 :intrigue: on the :Witch:’s starting location."
                 }
             ]
         },
@@ -213,7 +213,7 @@
                     "timing": [
                         "Loop Start"
                     ],
-                    "description": "Place 2 :paranoia: on all characters who had :goodwill: last loop."
+                    "description": "Place 2 :paranoia: on all characters who or whose corpse had :goodwill: last loop."
                 }
             ]
         },

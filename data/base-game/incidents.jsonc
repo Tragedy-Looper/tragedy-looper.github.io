@@ -44,12 +44,12 @@
             "name": "Hospital Incident",
             "effect": [
                 {
-                    "prerequisite": "1 :intrigue: on the Hospital",
+                    "prerequisite": "1 or more :intrigue: on the Hospital",
                     "description": "Everyone in the Hospital dies."
                 },
                 {
                     "type": "Mandatory Loss condition: Protagonists Death",
-                    "prerequisite": "2 :intrigue: on the Hospital"
+                    "prerequisite": "2 or more :intrigue: on the Hospital"
                 }
             ]
         },
