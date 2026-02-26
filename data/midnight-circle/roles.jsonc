@@ -95,7 +95,7 @@
                     "timing": [
                         "Incident trigger"
                     ],
-                    "description": "When this character triggers an Incident, it is considered as being on the diagonally opposit location."
+                    "description": "When this character triggers an Incident, it is considered as being on the diagonally opposite location."
                 }
             ]
         },
@@ -194,7 +194,7 @@
                     "timing": [
                         "Incident step"
                     ],
-                    "prerequisite": "The culprit of an incident that would trigger is in another location",
+                    "prerequisite": "The culprit of an incident is another character in this location",
                     "description": "That incident does not trigger, regardless of the number of :paranoia: conters on the culprit."
                 }
             ]

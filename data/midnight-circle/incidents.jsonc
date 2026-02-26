@@ -18,7 +18,7 @@
             "name": "Portent",
             "effect": [
                 {
-                    "description": "[When determning wether this Incident triggers or not, treat the culprit’s :paranoia: limit ats 1 less then its printed limit] Put 1 :paranoia: counter on any character in the culprit’s location."
+                    "description": "[When determining whether this Incident triggers or not, treat the culprit’s :paranoia: limit as 1 less then its printed limit] Put 1 :paranoia: counter on any character in the culprit’s location."
                 }
             ]
         },
@@ -41,7 +41,7 @@
             "name": "Bestial Murder",
             "effect": [
                 {
-                    "description": "[When determinig wether this Incident triggers or not, treat the culprit’s :paranoia: limit as 1 more than its printed limit.] Resolve \":sserialMurder:\" and \":increasingUnease:\" in that order. Then increase the Extra Gauge by 1 more step."
+                    "description": "[When determining whether this Incident triggers or not, treat the culprit’s :paranoia: limit as 1 more than its printed limit.] Resolve \":serialMurder:\" and \":increasingUnease:\" in that order. Then increase the Extra Gauge by 1 more step."
                 }
             ]
         },

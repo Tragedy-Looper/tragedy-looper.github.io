@@ -1,5 +1,5 @@
 <script lang="ts" module>
-  const icons = ['paranoia', 'goodwill', 'intrigue', 'hope', 'dispair'] as const;
+  const icons = ['paranoia', 'goodwill', 'intrigue', 'hope', 'despair'] as const;
 
   export const imageSets = {
     zMan: {
@@ -7,28 +7,28 @@
       goodwill: { type: 'icon', imagePath: `${base}/icons/zMan/goodwill.png` },
       intrigue: { type: 'icon', imagePath: `${base}/icons/zMan/intrigue.png` },
       hope: { type: 'icon', imagePath: `${base}/icons/zMan/hope.png` },
-      dispair: { type: 'icon', imagePath: `${base}/icons/zMan/dispair.png` },
+      despair: { type: 'icon', imagePath: `${base}/icons/zMan/despair.png` },
     },
     wizKids: {
       paranoia: { type: 'icon', imagePath: `${base}/icons/wizKids/unease.svg` },
       goodwill: { type: 'icon', imagePath: `${base}/icons/wizKids/goodwill.svg` },
       intrigue: { type: 'icon', imagePath: `${base}/icons/wizKids/intrigue.svg` },
       hope: { type: 'icon', imagePath: `${base}/icons/zMan/hope.png` },
-      dispair: { type: 'icon', imagePath: `${base}/icons/zMan/dispair.png` },
+      despair: { type: 'icon', imagePath: `${base}/icons/zMan/despair.png` },
     },
     zManText: {
       paranoia: { type: 'text', text: `Paranoia` },
       goodwill: { type: 'text', text: `Goodwill` },
       intrigue: { type: 'text', text: `Intrigue` },
       hope: { type: 'text', text: `Hope` },
-      dispair: { type: 'text', text: `Dispair` },
+      despair: { type: 'text', text: `Despair` },
     },
     wizKidsText: {
       paranoia: { type: 'text', text: `Unease` },
       goodwill: { type: 'text', text: `Goodwill` },
       intrigue: { type: 'text', text: `Intrigue` },
       hope: { type: 'text', text: `Hope` },
-      dispair: { type: 'text', text: `Dispair` },
+      despair: { type: 'text', text: `Despair` },
     },
   } satisfies Record<
     string,

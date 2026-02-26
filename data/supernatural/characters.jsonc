@@ -18,7 +18,7 @@
             "abilities": [
                 {
                     "type": "passive",
-                    "description": "If this character gains :supernaturalTag: his :goodwill: abilities are automatically refused."
+                    "description": "If this character gains :supernaturalTag:, his :goodwill: abilities are automatically refused."
                 },
                 {
                     "type": "active",

@@ -49,7 +49,7 @@ const toCheck = [
     'kind off',
     'Location background',
     'could be better',
-    'Dispair place',
+    'Despair place',
     'Day stages',
     'They are already prety clean, but images and not text.',
     'Day track',

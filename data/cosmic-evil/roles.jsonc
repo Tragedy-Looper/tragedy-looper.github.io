@@ -42,14 +42,14 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "description": "You may place 1 Intruge on this location or on any character in this location."
+                    "description": "You may place 1 :intrigue: on this location or on any character in this location."
                 },
                 {
                     "type": "Mandatory",
                     "timing": [
                         "Always"
                     ],
-                    "description": "When this charcter dies, reveal the role and increast the Extra Gauge 1 step."
+                    "description": "When this charcter dies, reveal the role and increase the Extra Gauge 1 step."
                 }
             ]
         },
@@ -195,7 +195,7 @@
                         "Mastermind Ability"
                     ],
                     "prerequisite": "This card is a corpse",
-                    "description": "Palce 1 :paranoia: on any character in this location, or any character in the :ghost:’s starting location."
+                    "description": "Place 1 :paranoia: on any character in this location, or any character in the :ghost:’s starting location."
                 }
             ]
         },
@@ -211,7 +211,7 @@
                     "timing": [
                         "Always"
                     ],
-                    "prerequisite": "This charcter has more then 2 :paranoia:",
+                    "prerequisite": "This charcter has 2 or more :paranoia:",
                     "description": "This Character loses the :immortal: aspect."
                 },
                 {
@@ -219,8 +219,8 @@
                     "timing": [
                         "Goodwill ablility step"
                     ],
-                    "prerequisite": "This charcter has more then 2 :paranoia:",
-                    "description": "This Character gains Mandatory :goodwill: Refusel."
+                    "prerequisite": "This charcter has 2 or more :paranoia:",
+                    "description": "This Character gains Mandatory :goodwill: Refusal."
                 }
             ]
         },

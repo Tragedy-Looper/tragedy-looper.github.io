@@ -96,7 +96,7 @@
                     "timing": [
                         "Loop Start"
                     ],
-                    "description": "Place a Curse on the :witch:’s startiong location."
+                    "description": "Place a Curse on the :witch:’s starting location."
                 }
             ]
         },
@@ -127,7 +127,7 @@
                     "timing": [
                         "Mastermind Ability"
                     ],
-                    "prerequisite": "A Location where a character with :goodwill: Refusel is.",
+                    "prerequisite": "A Location where a character with :goodwill: Refusal is.",
                     "description": "Place an :intrigue: on one location."
                 }
             ]
@@ -184,7 +184,7 @@
                     "timing": [
                         "Loop End"
                     ],
-                    "prerequisite": "As manay or more :intrigue: on the Shrine then the Extra Gauge shows.",
+                    "prerequisite": "As many or more :intrigue: on the Shrine then the Extra Gauge shows.",
                     "description": " (If the Extra Gauge is at zero, the Protagonists always lose)"
                 }
             ]
@@ -319,7 +319,7 @@
                         "Loop Start"
                     ],
                     "prerequisite": "The Extra Gauge is on 2 or more.",
-                    "description": "Druing this loop, the original main plot is replaced by the \"extra\" main plot."
+                    "description": "During this loop, the original main plot is replaced by the \"extra\" main plot."
                 }
             ]
         }
